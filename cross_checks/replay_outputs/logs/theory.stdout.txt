@@ -1,0 +1,1 @@
+{"status": "PASSED", "primary_exact_networks": 60, "reference_trials_per_mode": 80, "physical_pairs": 294, "finite_design_predicates": 958, "origin_rows": 18, "output": "/workspace/scratch/78a48cc5fade/relocation_check/Nonagon Relocated 9.0/cross_checks/replay_outputs/theory.json"}

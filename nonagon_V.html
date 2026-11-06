@@ -1,0 +1,204 @@
+<title>Rank-Two Nonagon V</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<script>
+window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']], tags: 'none' }, chtml: { scale: 0.98 }, options: { skipHtmlTags: ['script','noscript','style','textarea','pre','svg'] } };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" async></script>
+<style>
+/* layout: single reading column, wide figure/table plates break out to the full frame */
+:root{
+  --paper:#f4ede0; --paper-2:#ece2d0; --ink:#271c17; --ink-soft:#5d4c41; --rule:#cdbba0;
+  --ox:#6d1424; --ox-soft:#9b3a4b; --slate:#3b5560; --wash:rgba(109,20,36,.06);
+  --display:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
+  --body:"EB Garamond",Garamond,"Georgia","Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#18120f; --paper-2:#211915; --ink:#ebe0cd; --ink-soft:#b7a691; --rule:#4a3b31;
+  --ox:#d77a8a; --ox-soft:#e59cab; --slate:#8fb3c0; --wash:rgba(215,122,138,.08); color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#18120f; --paper-2:#211915; --ink:#ebe0cd; --ink-soft:#b7a691; --rule:#4a3b31;
+  --ox:#d77a8a; --ox-soft:#e59cab; --slate:#8fb3c0; --wash:rgba(215,122,138,.08); color-scheme:dark }
+html{background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:19px;line-height:1.62;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 80px;
+  font-variant-numeric:oldstyle-nums proportional-nums;-webkit-font-smoothing:antialiased}
+main{max-width:46rem;margin:0 auto}
+.plate{max-width:min(62rem,100%);margin:2.2rem auto;position:relative;left:50%;transform:translateX(-50%);width:min(62rem,calc(100vw - 32px))}
+header.title{max-width:46rem;margin:0 auto;padding-top:4.5rem;padding-bottom:2.2rem;border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--display);font-variant:small-caps;letter-spacing:.14em;color:var(--ox);font-size:1rem;font-weight:600}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(2.6rem,6vw,4.1rem);line-height:1.02;margin:.6rem 0 .8rem;text-wrap:balance;letter-spacing:-.005em}
+h1 em{color:var(--ox);font-style:italic;font-weight:500}
+.sub{font-family:var(--display);font-style:italic;font-size:1.35rem;color:var(--ink-soft);line-height:1.35;text-wrap:balance}
+.byline{margin-top:1.4rem;font-size:.95rem;color:var(--ink-soft);font-variant:small-caps;letter-spacing:.06em}
+h2{font-family:var(--display);font-weight:600;font-size:2rem;line-height:1.1;margin:3.6rem 0 1rem;text-wrap:balance;display:flex;gap:.7rem;align-items:baseline}
+h2 .sn{color:var(--ox);font-size:1.15rem;font-variant:small-caps;letter-spacing:.08em;flex:none}
+h3{font-family:var(--display);font-weight:600;font-size:1.38rem;margin:2.2rem 0 .5rem;color:var(--ink)}
+p{margin:0 0 1.05rem;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+strong{font-weight:600;color:var(--ox)}
+.abstract{background:var(--wash);border-left:2px solid var(--ox);padding:1.1rem 1.4rem;margin:2rem 0}
+.abstract p:last-child{margin-bottom:0}
+.abstract .h{font-variant:small-caps;letter-spacing:.12em;color:var(--ox);font-family:var(--display);font-weight:700;font-size:1.05rem}
+.thm{margin:1.6rem 0;padding:1rem 1.2rem 0.3rem;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.thm .hd{font-family:var(--display);font-weight:700;font-size:1.12rem;margin-bottom:.35rem}
+.thm .hd i{font-weight:500}
+.proof{font-size:.96em;color:var(--ink)}
+.proof::before{content:"Proof. ";font-style:italic;color:var(--ink-soft)}
+.qed{float:right;color:var(--ink-soft)}
+.ep{font-family:var(--display);font-variant:small-caps;letter-spacing:.07em;font-size:.86rem;font-weight:700;padding:.05rem .45rem;border:1px solid currentColor;border-radius:2px;margin-left:.35rem;white-space:nowrap;vertical-align:.1em}
+.ep.pr{color:var(--ox)} .ep.nm{color:var(--slate)} .ep.mp{color:var(--ink-soft)} .ep.ct{color:var(--ox-soft)} .ep.op{color:var(--ink-soft);border-style:dashed}
+.tw{overflow-x:auto;margin:1.6rem 0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;font-variant-numeric:lining-nums tabular-nums}
+caption{caption-side:top;text-align:left;font-family:var(--display);font-size:1.02rem;font-weight:600;padding-bottom:.5rem;color:var(--ink)}
+caption span{font-weight:400;font-style:italic;color:var(--ink-soft)}
+th{font-family:var(--display);font-variant:small-caps;letter-spacing:.06em;font-weight:700;text-align:left;border-bottom:1.5px solid var(--ink);padding:.35rem .6rem;color:var(--ink);white-space:nowrap}
+td{border-bottom:1px solid var(--rule);padding:.35rem .6rem;vertical-align:top}
+td.n{text-align:right;white-space:nowrap;font-family:var(--body)}
+tr:last-child td{border-bottom:1.5px solid var(--ink)}
+figure{margin:0}
+figure svg{width:100%;height:auto;display:block;background:var(--paper-2);border:1px solid var(--rule)}
+figcaption{font-size:.92rem;color:var(--ink-soft);margin-top:.55rem;line-height:1.45;max-width:46rem}
+figcaption b{color:var(--ink);font-weight:600;font-variant:small-caps;letter-spacing:.05em}
+svg .lab{fill:var(--ink-soft);font-family:var(--body);font-size:13px}
+svg .small{font-size:11.5px;font-style:italic}
+svg .grid{stroke:var(--rule);stroke-width:.6;stroke-dasharray:2 3}
+svg .ax{stroke:var(--ink-soft);stroke-width:1}
+svg .eps{stroke:var(--ox);stroke-width:1;stroke-dasharray:5 4}
+svg .dot1{fill:var(--ox)} svg .dot2{fill:var(--slate);opacity:.75}
+svg .neg{fill:var(--paper-2);stroke:var(--ox);stroke-width:2}
+svg .negtxt{fill:var(--ox)}
+svg .bar1{fill:var(--slate);opacity:.85} svg .bar2{fill:var(--ox)}
+svg .line1{fill:none;stroke:var(--ox);stroke-width:1.6}
+svg .line2{fill:none;stroke:var(--slate);stroke-width:1.6}
+svg .line3{fill:none;stroke:var(--ink-soft);stroke-width:1.6;stroke-dasharray:6 3}
+svg .line4{fill:none;stroke:var(--ox-soft);stroke-width:1.4;stroke-dasharray:2 3}
+svg .lineq{fill:none;stroke:var(--ink);stroke-width:1.2;stroke-dasharray:8 4;opacity:.7}
+svg .linec{fill:none;stroke:var(--slate);stroke-width:1.2;stroke-dasharray:1 3}
+svg .lineb{fill:none;stroke:var(--ox);stroke-width:1;stroke-dasharray:3 3;opacity:.7}
+svg .band{fill:var(--wash)}
+svg .tile{fill:var(--wash);stroke:var(--slate);stroke-width:.9}
+.mjx-chtml{font-size:105%!important}
+mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;max-width:100%;padding:.2rem 0}
+.toc{columns:2;column-gap:2rem;font-size:.95rem;margin:1.6rem 0 0;padding:0;list-style:none;counter-reset:none}
+.toc li{break-inside:avoid;margin:.15rem 0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+.toc a:hover,.toc a:focus-visible{color:var(--ox);border-color:var(--ox)}
+.toc .sn{color:var(--ox);font-variant:small-caps;margin-right:.4rem}
+a:focus-visible{outline:2px solid var(--ox);outline-offset:2px}
+.colophon{margin-top:4rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.88rem;color:var(--ink-soft)}
+@media (max-width:640px){body{font-size:17.5px}p{text-align:left}.toc{columns:1}h2{flex-direction:column;gap:.1rem}}
+</style><header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v5.0 · Part V</div>
+  <h1>The Rank-Two Nonagon <em>V</em></h1>
+  <div class="sub">The plateau and the height: the off-diagonal completion of Berry's number variance, and batched rigorous certificates up to $t=10^{12}$</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 29 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Part IV left two extensions. Both are completed here. <strong>The plateau.</strong> Berry's diagonal prime sum reproduced the shape of the zeta number variance at height $6\times10^{5}$ but sat about 0.10 below it in level. The off-diagonal completion is the Bogomolny–Keating pair correlation, which coincides with the Conrey–Snaith ratios-conjecture formula. Evaluated with Euler products over the primes below $2\times10^{6}$ and integrated twice, it reproduces the measured $\Sigma^2(L)$ to within $3\times10^{-3}$ for every $L\in[0.5,16]$. It accounts for 98.8–99.6% of the departure from GUE for $L\ge1$, and agrees within one standard error at $L=1,2,4$. <strong>The height.</strong> The Taylor-model segments of Part IV were twice as conservative as necessary. Raising the order to $K=60$ and the segment half-length to $R_1/4$ lets each batch of 64 point values of $\zeta$ cover four times the contour. A full-strip certificate at the millionth zero then costs 6.3 s, against 23.4 s in Part IV, 121 s in Part III and 866 s in Part II. Tiles are independent, so they batch across cores. With this, root-free rigorous tiles certify zeros simple and on the critical line at $t=10^{10}$ and at $t=10^{12}$, the height of the Platt–Trudgian verification. At $10^{12}$ the certificate needs no Gram points, no Turing method and no zero list, and each tile's count is confirmed by independent sign changes of Hardy's $Z$.</p>
+</div>
+
+<h2 id="w1"><span class="sn">§V.1</span>The plateau: off-diagonal completion</h2>
+
+<p>The diagonal approximation keeps only pairs of identical prime powers in the double sum over periodic orbits. Bogomolny and Keating evaluated the off-diagonal pairs through the Hardy–Littlewood correlations of the primes, and the result coincides with the pair correlation that the ratios conjecture of Conrey, Farmer and Zirnbauer predicts. Write $\mathcal L=\log(t/2\pi)$, measure distances in mean spacings $\varepsilon$, and set $r=2\pi\varepsilon/\mathcal L$. Then $$R_2(\varepsilon)=1+\frac{2}{\mathcal L^{2}}\operatorname{Re}\Big[\Big(\frac{\zeta'}{\zeta}\Big)'(1+ir)+e^{-ir\mathcal L}\,\zeta(1+ir)\zeta(1-ir)\,A(ir)-B(ir)\Big],$$ $$A(\eta)=\prod_p\frac{\big(1-p^{-1-\eta}\big)\big(1-2p^{-1}+p^{-1-\eta}\big)}{(1-p^{-1})^{2}},\qquad B(\eta)=\sum_p\Big(\frac{\log p}{p^{1+\eta}-1}\Big)^{2}.$$</p>
+
+<div class="thm"><div class="hd">Lemma V.1.1 <i>(GUE limit)</i> <span class="ep pr">proved</span></div>
+<p>At fixed $\varepsilon$, as $t\to\infty$, $R_2(\varepsilon)\to1-\big(\sin\pi\varepsilon/\pi\varepsilon\big)^2$.</p>
+</div>
+<p class="proof">As $r\to0$: $(\zeta'/\zeta)'(1+ir)=-r^{-2}+O(1)$, $\zeta(1+ir)\zeta(1-ir)=r^{-2}+O(1)$, $A(0)=1$, and $B(0)$ is finite. Hence $R_2=1+\frac{2}{\mathcal L^2r^2}\big(\cos(r\mathcal L)-1\big)+O(\mathcal L^{-2})=1-\frac{2(1-\cos2\pi\varepsilon)}{4\pi^2\varepsilon^2}+O(\mathcal L^{-2})$. <span class="qed">∎</span></p>
+
+<p>The number variance follows from the cluster function $Y_2=1-R_2$ by $$\Sigma^2(L)=L-2\int_0^L(L-x)\,Y_2(x)\,dx.$$ We evaluated $R_2$ at the representative height $t=605{,}744$, the centre of the 20,000-zero window of Part IV. We used 1,601 points on $\varepsilon\in(0,16]$, mpmath for $\zeta$ and the derivative of $\zeta'/\zeta$, and the Euler product and prime sum over all primes below $2\times10^{6}$; both converge like $p^{-2}$. For the empirical side we recomputed $\Sigma^2(L)$ from the unfolded zeros with window starts every $0.01$ mean spacings. Standard errors come from five blocks of 4,000 zeros.</p>
+
+<div class="tw"><table>
+<caption>Table V.1. <span>Number variance of the 20,000 zeros beginning at the millionth, against GUE and the off-diagonal (Bogomolny–Keating) formula.</span></caption>
+<thead><tr><th>$L$</th><th>ζ zeros</th><th>std. error</th><th>Bogomolny–Keating</th><th>GUE</th><th>departure from GUE explained</th></tr></thead>
+<tbody>
+<tr><td class="n">0.5</td><td class="n">0.2775</td><td class="n">0.0005</td><td class="n">0.2769</td><td class="n">0.2803</td><td class="n">122.6%</td></tr>
+<tr><td class="n">1</td><td class="n">0.3285</td><td class="n">0.0005</td><td class="n">0.3286</td><td class="n">0.3443</td><td class="n">99.6%</td></tr>
+<tr><td class="n">2</td><td class="n">0.3815</td><td class="n">0.0004</td><td class="n">0.3817</td><td class="n">0.4161</td><td class="n">99.5%</td></tr>
+<tr><td class="n">4</td><td class="n">0.4266</td><td class="n">0.0003</td><td class="n">0.4269</td><td class="n">0.4871</td><td class="n">99.5%</td></tr>
+<tr><td class="n">8</td><td class="n">0.4267</td><td class="n">0.0001</td><td class="n">0.4279</td><td class="n">0.5583</td><td class="n">99.1%</td></tr>
+<tr><td class="n">16</td><td class="n">0.3717</td><td class="n">0.0004</td><td class="n">0.3747</td><td class="n">0.6301</td><td class="n">98.8%</td></tr>
+
+</tbody></table></div>
+
+<div class="plate"><figure>
+<svg viewBox="0 0 720 320" role="img" aria-label="Number variance with off-diagonal completion" xmlns="http://www.w3.org/2000/svg"><line x1="70" x2="540" y1="270.0" y2="270.0" class="grid"/><text x="62.0" y="274.0" class="lab" text-anchor="end">0.0</text><line x1="70" x2="540" y1="234.3" y2="234.3" class="grid"/><text x="62.0" y="238.3" class="lab" text-anchor="end">0.1</text><line x1="70" x2="540" y1="198.6" y2="198.6" class="grid"/><text x="62.0" y="202.6" class="lab" text-anchor="end">0.2</text><line x1="70" x2="540" y1="162.9" y2="162.9" class="grid"/><text x="62.0" y="166.9" class="lab" text-anchor="end">0.3</text><line x1="70" x2="540" y1="127.1" y2="127.1" class="grid"/><text x="62.0" y="131.1" class="lab" text-anchor="end">0.4</text><line x1="70" x2="540" y1="91.4" y2="91.4" class="grid"/><text x="62.0" y="95.4" class="lab" text-anchor="end">0.5</text><line x1="70" x2="540" y1="55.7" y2="55.7" class="grid"/><text x="62.0" y="59.7" class="lab" text-anchor="end">0.6</text><line x1="70" x2="540" y1="20.0" y2="20.0" class="grid"/><text x="62.0" y="24.0" class="lab" text-anchor="end">0.7</text><text x="70.0" y="288.0" class="lab" text-anchor="middle">0.5</text><text x="164.0" y="288.0" class="lab" text-anchor="middle">1</text><text x="258.0" y="288.0" class="lab" text-anchor="middle">2</text><text x="352.0" y="288.0" class="lab" text-anchor="middle">4</text><text x="446.0" y="288.0" class="lab" text-anchor="middle">8</text><text x="540.0" y="288.0" class="lab" text-anchor="middle">16</text><polyline points="70.0,169.9 164.0,147.0 258.0,121.4 352.0,96.0 446.0,70.6 540.0,45.0" class="line2"/><polyline points="70.0,212.2 164.0,187.5 258.0,169.8 352.0,154.3 446.0,154.6 540.0,173.7" class="lineq"/><polyline points="70.0,171.1 164.0,152.6 258.0,133.7 352.0,117.5 446.0,117.2 540.0,136.2" class="line1"/><circle cx="70.0" cy="170.9" r="4.5" class="neg"/><circle cx="164.0" cy="152.7" r="4.5" class="neg"/><circle cx="258.0" cy="133.7" r="4.5" class="neg"/><circle cx="352.0" cy="117.6" r="4.5" class="neg"/><circle cx="446.0" cy="117.6" r="4.5" class="neg"/><circle cx="540.0" cy="137.2" r="4.5" class="neg"/><line x1="555" x2="580" y1="40" y2="40" class="line2"/><text x="586.0" y="44.0" class="lab" text-anchor="start">GUE</text><line x1="555" x2="580" y1="60" y2="60" class="lineq"/><text x="586.0" y="64.0" class="lab" text-anchor="start">Berry diagonal sum</text><line x1="555" x2="580" y1="80" y2="80" class="line1"/><text x="586.0" y="84.0" class="lab" text-anchor="start">Bogomolny–Keating</text><circle cx="567" cy="100" r="4.5" class="neg"/><text x="586.0" y="104.0" class="lab" text-anchor="start">ζ zeros near 10⁶-th</text><text x="305.0" y="314.0" class="lab small" text-anchor="middle">window length L in mean spacings  →  number variance Σ²(L)</text></svg>
+<figcaption><b>Figure 14.</b> Number variance of the zeros near the millionth (points), GUE (slate), Berry's diagonal sum (dashed), and the off-diagonal completion (oxblood). The completed formula follows the zeros through the rise, the plateau and the turn-down.</figcaption>
+</figure></div>
+
+<div class="thm"><div class="hd">Result V.1.2 <i>(the plateau)</i> <span class="ep nm">verified · double</span></div>
+<p>The Bogomolny–Keating number variance matches the zeta zeros at height $6\times10^{5}$ to within $3.0\times10^{-3}$ for all $L\in[0.5,16]$, and within one standard error at $L=1,2,4$. The completion removes the 0.10 offset of the diagonal approximation and accounts for 98.8–99.6% of the departure from GUE for $L\ge1$. The residuals at $L=8$ and $16$ ($1.2\times10^{-3}$ and $3.0\times10^{-3}$) are of the size expected from evaluating at a single representative height and from the $O(T^{-1/2+\epsilon})$ error of the ratios formula.</p>
+</div>
+
+<p>The plateau therefore has a complete explanation at this height. The zeros are GUE-rigid at short range. At long range, correlations between nearby prime powers lower the variance, through both the diagonal sum and its off-diagonal correction, and turn it down after $L\approx8$. The discriminant meter of Part IV inherits the same structure: its local distribution is CUE, and its tile-to-tile count fluctuations are arithmetic.</p>
+
+<h2 id="w2"><span class="sn">§V.2</span>The height: batching the point values</h2>
+
+<p>Part IV's certificates spend their time in point evaluations of $\zeta$: 64 per Taylor segment. Arb computes each one with work growing like $\sqrt t$, about 7 ms at $t=10^{9}$, 13 ms at $10^{10}$, 36 ms at $10^{11}$ and 120–210 ms at $10^{12}$. There are two ways to spend fewer of them.</p>
+
+<div class="thm"><div class="hd">Proposition V.2.1 <i>(segment-length trade-off)</i> <span class="ep pr">proved</span></div>
+<p>With Taylor order $K$, $N\ge K+2$ point values per segment, and half-length $h=\theta R_1/2$, the truncation error of Theorem II.1.7 is at most $C\,\theta^{K+1}/(1-\theta)$ and the cost per unit of contour is $N/(\theta R_1)$. For a fixed target error $\epsilon$, the cost $\big(\log(1/\epsilon)/\log(1/\theta)+2\big)/\theta$ is minimized near $\theta\in[0.35,0.5]$. Part IV used $\theta=1/4$ with $K=40$ and $N=64$, about twice the optimal cost and four times the number of segments needed. With $\theta=1/2$ and $K=60$, the same $N=64$ gives error $2^{-61}C$.</p>
+</div>
+<p class="proof">The tail bound is the geometric series of Theorem II.1.7 with ratio $\theta$. The cost of a segment is $N$ point values for a contour length $2h=\theta R_1$. Differentiating the cost expression in $\theta$ gives the stated minimum. <span class="qed">∎</span></p>
+
+<div class="tw"><table>
+<caption>Table V.2. <span>The millionth zero, full strip ($b=0.6$), DFT mode with symmetric half-path. Every enclosure overlaps Arb's <code>zeta_zero</code>.</span></caption>
+<thead><tr><th>$K$</th><th>$h\le$</th><th>segments</th><th>point values</th><th>time</th><th>$\boldsymbol\mu_0$</th></tr></thead>
+<tbody>
+<tr><td class="n">40</td><td class="n">$R_1/8$ (Part IV)</td><td class="n">312</td><td class="n">19,968</td><td class="n">23.2 s</td><td class="n">$1\pm6.0\times10^{-14}$</td></tr>
+<tr><td class="n">60</td><td class="n">$R_1/4$</td><td class="n">79</td><td class="n">5,056</td><td class="n"><strong>6.3 s</strong></td><td class="n">$1\pm6.7\times10^{-14}$</td></tr>
+<tr><td class="n">60</td><td class="n">$R_1/3$</td><td class="n">59</td><td class="n">3,776</td><td class="n">4.5 s</td><td class="n">$1\pm6.8\times10^{-8}$</td></tr>
+</tbody></table></div>
+
+<p>The third row goes past the optimum. It is faster, but the convergence ratio $2/3$ costs six digits of radius, so $h=R_1/4$ is the setting used below. Across the four Parts, the cost of one full-strip certificate at the millionth zero has fallen from 866 s to 6.3 s, a factor of 137, while the guarantee was strengthened along the way from part of the strip to the whole strip.</p>
+
+<p>The second lever is parallelism across tiles. Root-free scanning places tiles on a fixed grid, so they share nothing and can be distributed one per core with no communication. The certificates below at $t=10^{12}$ ran as two concurrent processes on a two-core machine. The remaining lever is batching inside $\zeta$ itself: evaluating the Riemann–Siegel main sum $\sum_{n\le\sqrt{t/2\pi}}n^{-s}$ at all points of many segments at once, by Odlyzko–Schönhage or Platt-style band-limited multi-evaluation. That would replace the 64-fold repetition of an $O(\sqrt t)$ sum with one multipoint pass. It is a change of evaluator, not of certificate.</p>
+
+<h2 id="w3"><span class="sn">§V.3</span>Certificates at $10^{10}$ and $10^{12}$</h2>
+
+<p>At these heights zero lists are expensive, so the tiles are placed root-free at round heights. The rectangle is $[t_{\mathrm{lo}},t_{\mathrm{hi}}]\times[-0.45,0.45]$, covering $0.05\le\operatorname{Re}s\le0.95$, with Taylor disks capped at $R_2=0.1$, where the crude bounds stay finite at $t=10^{12}$ (at most about $10^{9}$, Table V.4). Every tile also gets an independent count: sign changes of Hardy's $Z(t)=e^{i\vartheta(t)}\zeta(\tfrac12+it)$ on a grid of 120 points per unit, with $\vartheta$ from Arb's $\log\Gamma$. That count is non-rigorous on its own, since a close pair could hide between grid points, but it is independent of the contour.</p>
+
+<div class="tw"><table>
+<caption>Table V.3. <span>Root-free rigorous tiles at large height.</span></caption>
+<thead><tr><th>tile</th><th>$n$</th><th>$\boldsymbol\mu_0$</th><th>Sylvester minors</th><th>all real, simple</th><th>Hardy $Z$ sign changes</th><th>segments</th><th>time</th></tr></thead>
+<tbody>
+<tr><td class="n">[10000000000.0, 10000000000.6]</td><td class="n">2</td><td class="n">[2.0000000 ± 7.34e-8]</td><td class="n">[2.0000000 ± 7.34e-8], [0.536089 ± 7.12e-7]</td><td>yes</td><td class="n">2</td><td class="n">128</td><td class="n">5.1 min</td></tr>
+<tr><td class="n">[1000000000000.0, 1000000000000.5]</td><td class="n">3</td><td class="n">[3.0000 ± 3.43e-5]</td><td class="n">[3.0000 ± 3.43e-5], [1.475 ± 3.62e-4], [0.13 ± 4.57e-3]</td><td>yes</td><td class="n">3</td><td class="n">146</td><td class="n">57.5 min</td></tr>
+<tr><td class="n">[1000000000000.5, 1000000000001.0]</td><td class="n">1</td><td class="n">[1.0000 ± 4.20e-5]</td><td class="n">[1.0000 ± 4.20e-5]</td><td>yes</td><td class="n">1</td><td class="n">150</td><td class="n">59.1 min</td></tr>
+
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result V.3.1 <i>(certificates at $t=10^{12}$)</i> <span class="ep pr">proved · arb</span></div><p>On $t\in[1000000000000.0,\,1000000000001.0]$, with $0.05\le\operatorname{Re}s\le0.95$, the box criterion certifies <strong>4 zeros of $\zeta$, every one simple and on the critical line</strong>, by strictly positive Sylvester minors of ball matrices assembled from Taylor-model contour moments. The independent Hardy-$Z$ counts agree tile by tile. Each tile ran on its own core, in 59 minutes for the slower one. The certificate uses no Gram points, no Turing method and no zero list.</p></div>
+
+<p>Two operational facts set the cost at this height. First, one Taylor segment costs about 21 s: 64 point values at roughly 0.2 s each, with two certificate processes sharing the cores. The adaptive disk grows by a factor of 1.5 after each accepted segment, and an instrumented run shows that 5 of 12 attempts are then rejected by the Rouché test, so about 40% of point-value batches are spent finding the local scale of $\zeta$. A gentler growth factor, or predicting the next radius from the decay of the previous segment's DFT coefficients, recovers most of that. Second, the enclosure radii widen from $10^{-14}$ at the millionth zero to $10^{-5}$ at $10^{12}$. The factor $\rho^{-j}$ of Theorem III.1.1 magnifies the 80-bit rounding of point values that are now computed from Riemann–Siegel sums of $4\times10^{5}$ terms. The certificates hold with wide margins (the smallest minor is $0.13\pm0.005$), and raising the working precision restores tight radii at a cost independent of $t$.</p>
+
+<div class="tw"><table>
+<caption>Table V.4. <span>Crude ball bounds $\sup|\zeta|$ on disks at $t=10^{12}$, by radius and real part. They enter certificates only through factors $2^{-41}$ to $2^{-64}$.</span></caption>
+<thead><tr><th>$\operatorname{Re}s$</th><th>$r=0.1$</th><th>$0.05$</th><th>$0.02$</th><th>$0.01$</th><th>$0.002$</th></tr></thead>
+<tbody>
+<tr><td>$-0.10$</td><td class="n">non-finite</td><td class="n">non-finite</td><td class="n">$1\times10^{9}$</td><td class="n">$4\times10^{8}$</td><td class="n">$8\times10^{7}$</td></tr>
+<tr><td>$0.05$</td><td class="n">$1\times10^{9}$</td><td class="n">$2\times10^{8}$</td><td class="n">$5\times10^{7}$</td><td class="n">$2\times10^{7}$</td><td class="n">$4\times10^{6}$</td></tr>
+<tr><td>$0.50$</td><td class="n">$2\times10^{6}$</td><td class="n">$6\times10^{5}$</td><td class="n">$2\times10^{5}$</td><td class="n">$7\times10^{4}$</td><td class="n">$1\times10^{4}$</td></tr>
+<tr><td>$0.95$</td><td class="n">$1\times10^{4}$</td><td class="n">$2\times10^{3}$</td><td class="n">$5\times10^{2}$</td><td class="n">$2\times10^{2}$</td><td class="n">$4\times10^{1}$</td></tr>
+<tr><td>$1.10$</td><td class="n">$3\times10^{3}$</td><td class="n">$8\times10^{2}$</td><td class="n">$2\times10^{2}$</td><td class="n">$8\times10^{1}$</td><td class="n">$1\times10^{1}$</td></tr>
+</tbody></table></div>
+
+<p>The left edge $\operatorname{Re}s=-0.1$ of a full-strip box needs disks of radius 0.02 or less at this height. A full-strip tile at $10^{12}$ therefore costs roughly five times a $b=0.45$ tile, almost all of it on that one side. That cost falls directly when a batched evaluator is in place.</p>
+
+<h2 id="w4"><span class="sn">§V.4</span>Completion</h2>
+
+<p>The program is complete. It began with a structural claim: ten equations scattered across two and a half centuries are rank-two displacement kernels with one conserved quantity. It ends with that claim proved, made computable, and pushed to the edge of what is known about the zeros of $\zeta$. The <strong>Chebyshev–Hermite box criterion</strong> started in Part I as a floating-point observation at $t\le76$. It is now a rigorous certificate over the full critical strip, computed in seconds at the millionth zero and in minutes at $t=10^{12}$. Its discriminant identity measures off-line distances, as it did for Davenport–Heilbronn, and gaps of near-collisions, as it did for the classic Lehmer pair, both to sixteen or more digits without locating a zero. Its meter carries the full random-matrix and arithmetic statistics of the zeros: CUE locally, and a number-variance plateau now explained in level as well as shape. On the engineering side, the same rank-two structure gives single-sweep identification of damped mechanical chains at 48 digits, with a proved forcing law for its branch structure. It gives exact passivity certificates over $\mathbb Q$, sampling with condition number near 1, and an identifiability threshold that comes from perturbation theory with no free constant.</p><p>What is left is engineering, not mathematics. A batched multipoint evaluator for the Riemann–Siegel sum would replace the 64-fold repetition of a $\sqrt t$ computation in every Taylor segment. With it, the box criterion becomes a production verification method whose certificates are inertia statements, independent of sign-change counting.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> Part V adds the following scripts:</p>
+<p><code>bk.py</code> and <code>bk2.py</code>: the Bogomolny–Keating pair correlation, its number variance, and the dense empirical estimates.</p>
+<p><code>tmint.py</code> with parameters <code>K</code>, <code>HFRAC</code> and <code>STEPDIV</code>, and <code>batchbench.py</code>: Table V.2.</p>
+<p><code>hscan.py</code>: root-free tiles at large height with the Hardy-$Z$ cross-check; outputs <code>hscan_e10.json</code>, <code>hscan_e12a.json</code> and <code>hscan_e12b.json</code>.</p>
+<p><code>figs5.py</code> and <code>assemble5.py</code>: Part V figures and assembly.</p>
+<p>Software: python-flint 0.9.0 (Arb), mpmath 1.4.1, NumPy 2.5.3, SciPy 1.18.1.</p>
+<p><b>Additional sources.</b> E. B. Bogomolny, J. P. Keating, Gutzwiller's trace formula and spectral statistics: beyond the diagonal approximation, Phys. Rev. Lett. 77 (1996); J. B. Conrey, N. C. Snaith, Applications of the L-functions ratios conjectures, Proc. London Math. Soc. 94 (2007); M. V. Berry, Semiclassical formula for the number variance of the Riemann zeros, Nonlinearity 1 (1988); A. M. Odlyzko, A. Schönhage, Trans. Amer. Math. Soc. 309 (1988); D. J. Platt, Isolating some non-trivial zeros of zeta, Math. Comp. 86 (2017).</p>
+</div>
+</main>

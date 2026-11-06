@@ -1,0 +1,141 @@
+{
+ "clamp_design": {
+  "u_opt": 0.7071078586381352,
+  "u_opt_exact": 0.7071067811865476,
+  "factor": 4.828427124749474,
+  "factor_exact": 4.82842712474619
+ },
+ "weak_link": [
+  {
+   "w": 0.001,
+   "G01": 0.0009980039920159684,
+   "sd_K11_protocol": 0.00780887326999186,
+   "two_point_tail_threshold": 0.0002898309898337303,
+   "two_point_minimax_rmse_lower_bound": 0.00014491549491686516,
+   "sd_over_tail_threshold": 26.942851330258502
+  },
+  {
+   "w": 0.0031622776601683794,
+   "G01": 0.003142403356302632,
+   "sd_K11_protocol": 0.0007557315129025876,
+   "two_point_tail_threshold": 2.923381653168977e-05,
+   "two_point_minimax_rmse_lower_bound": 1.4616908265844884e-05,
+   "sd_over_tail_threshold": 25.851277820101476
+  },
+  {
+   "w": 0.01,
+   "G01": 0.009803921568627453,
+   "sd_K11_protocol": 8.234797690383838e-05,
+   "two_point_tail_threshold": 3.0033761003244327e-06,
+   "two_point_minimax_rmse_lower_bound": 1.5016880501622164e-06,
+   "sd_over_tail_threshold": 27.418469799684075
+  },
+  {
+   "w": 0.03162277660168379,
+   "G01": 0.029741743575987738,
+   "sd_K11_protocol": 8.630447030045739e-06,
+   "two_point_tail_threshold": 3.263446723002034e-07,
+   "two_point_minimax_rmse_lower_bound": 1.631723361501017e-07,
+   "sd_over_tail_threshold": 26.44580335635637
+  },
+  {
+   "w": 0.1,
+   "G01": 0.08333333333333333,
+   "sd_K11_protocol": 1.1053862274620992e-06,
+   "two_point_tail_threshold": 4.156921938165306e-08,
+   "two_point_minimax_rmse_lower_bound": 2.078460969082653e-08,
+   "sd_over_tail_threshold": 26.591459832656156
+  },
+  {
+   "w": 0.31622776601683794,
+   "G01": 0.19371294336139652,
+   "sd_K11_protocol": 2.1901383253649553e-07,
+   "two_point_tail_threshold": 7.69293560102849e-09,
+   "two_point_minimax_rmse_lower_bound": 3.846467800514245e-09,
+   "sd_over_tail_threshold": 28.469474319688175
+  },
+  {
+   "w": 1.0,
+   "G01": 0.3333333333333333,
+   "sd_K11_protocol": 1.0302929058358138e-07,
+   "two_point_tail_threshold": 2.5980762113533163e-09,
+   "two_point_minimax_rmse_lower_bound": 1.2990381056766582e-09,
+   "sd_over_tail_threshold": 39.655992435231255
+  }
+ ],
+ "distance": [
+  {
+   "n": 3,
+   "experiments": 6,
+   "G0_far": 0.38095238095238093,
+   "sd_K_far": 1.012509307215407e-10,
+   "two_point_tail_threshold": 1.4065429382387786e-12,
+   "two_point_minimax_rmse_lower_bound": 7.032714691193893e-13,
+   "sd_over_tail_threshold": 71.98566639446031
+  },
+  {
+   "n": 5,
+   "experiments": 15,
+   "G0_far": 0.09384164222873899,
+   "sd_K_far": 1.6431288437867504e-09,
+   "two_point_tail_threshold": 1.4659973192719555e-11,
+   "two_point_minimax_rmse_lower_bound": 7.329986596359778e-12,
+   "sd_over_tail_threshold": 112.08266360287494
+  },
+  {
+   "n": 7,
+   "experiments": 28,
+   "G0_far": 0.02343893059879143,
+   "sd_K_far": 2.456412508765117e-08,
+   "two_point_tail_threshold": 1.7199483388628557e-10,
+   "two_point_minimax_rmse_lower_bound": 8.599741694314279e-11,
+   "sd_over_tail_threshold": 142.81897038774866
+  },
+  {
+   "n": 9,
+   "experiments": 45,
+   "G0_far": 0.005859397351827058,
+   "sd_K_far": 4.203556436148389e-07,
+   "two_point_tail_threshold": 2.170990117652887e-09,
+   "two_point_minimax_rmse_lower_bound": 1.0854950588264434e-09,
+   "sd_over_tail_threshold": 193.623932323237
+  }
+ ],
+ "strength": [
+  {
+   "u": 0.05,
+   "rel_sd_G01sq_over_sigma": 705.766925265972,
+   "Gjj_over_G01sq": 23.11111111111112,
+   "rms_model": 719.8675214197833
+  },
+  {
+   "u": 0.2,
+   "rel_sd_G01sq_over_sigma": 235.48146844116286,
+   "Gjj_over_G01sq": 23.11111111111112,
+   "rms_model": 232.12577263412115
+  },
+  {
+   "u": 0.7071067811865476,
+   "rel_sd_G01sq_over_sigma": 123.46780052175572,
+   "Gjj_over_G01sq": 23.11111111111112,
+   "rms_model": 124.76176584833105
+  },
+  {
+   "u": 2,
+   "rel_sd_G01sq_over_sigma": 132.07033856894267,
+   "Gjj_over_G01sq": 23.11111111111112,
+   "rms_model": 127.63528286527507
+  },
+  {
+   "u": 10,
+   "rel_sd_G01sq_over_sigma": 364.72636386553194,
+   "Gjj_over_G01sq": 23.11111111111112,
+   "rms_model": 366.0175479838349
+  }
+ ],
+ "statistical_contract": {
+  "tail_threshold_is_not_sd_floor": true,
+  "comparison_is_descriptive": true,
+  "raw_baseline_shared": true
+ }
+}

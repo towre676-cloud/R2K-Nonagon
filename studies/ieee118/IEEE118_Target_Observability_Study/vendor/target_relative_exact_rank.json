@@ -1,0 +1,21 @@
+{
+  "schema": "nonagon.target-relative-exact-rank.v1",
+  "case": "case118",
+  "selected_count": 179,
+  "parameter_count": 179,
+  "certificates": [
+    {
+      "prime": 1000000007,
+      "determinant_mod_prime": 102865312,
+      "nonzero": true
+    },
+    {
+      "prime": 1000000009,
+      "determinant_mod_prime": 237997625,
+      "nonzero": true
+    }
+  ],
+  "witness_point": "all 179 aggregate weights = 1; single shunts 1 and 2; pair shunts 1,1",
+  "meaning": "a nonzero determinant modulo either prime proves the selected 179 response rows have exact full Jacobian rank over Q at this rational witness point; two primes are retained as an implementation cross-check",
+  "does_not_prove": "rank at every positive weight/load choice or global injectivity of the nonlinear response map"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASSED",
+  "output": "/workspace/scratch/78a48cc5fade/relocation_check/Nonagon Relocated 9.0/cross_checks/replay_outputs/production.json",
+  "exact_certificates": 103,
+  "independent_exact_checks": 119902,
+  "derived_certificates": 3,
+  "derived_checks": 1139,
+  "independent_adversarial_rejections": 29,
+  "core_observation_rejections": 24,
+  "active_trials": 189,
+  "bounded_containment_checks": 6480,
+  "optional_offset_audit": {
+    "status": "REPRODUCED",
+    "optional": true,
+    "source_root": "/workspace/scratch/78a48cc5fade/relocation_check/Nonagon Relocated 9.0",
+    "gue_reference_rows": 6,
+    "archived_BK_rows": 18,
+    "finding": "BK and GUE quadrature omit [0, 1e-4]; this produces the apparent height-stable offset, approximately 2e-4 L.",
+    "BK_correction_status": "Universal leading endpoint correction; residual BK trapezoidal error is not recomputed or interval-certified.",
+    "production_endpoint_regression_checks": 48,
+    "new_zeta_zero_runs": 0,
+    "scope": "Numerical reproduction and universal endpoint correction, not an interval-certified full BK recomputation"
+  },
+  "elapsed_seconds": 8.889
+}

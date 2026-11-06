@@ -1,0 +1,53 @@
+{
+  "schema": "nonagon.integration.claude-isolated-replays.v1",
+  "source_sha256": {
+    "intervene.py": "e9605cf7bc6b75625cad0c8d0220377d36e2bab8fd789c0dbbb7398235ba9587",
+    "verify_intervention.py": "4efc58dd906cb35ba1f252a4d3f4e4c07bc6069ada0448f03174072efd8e7c74"
+  },
+  "runs": [
+    {
+      "name": "intervene",
+      "returncode": 0,
+      "elapsed_seconds": 0.536,
+      "stdout_path": "claude_runs/intervene.stdout.txt",
+      "stderr_path": "claude_runs/intervene.stderr.txt"
+    },
+    {
+      "name": "verifier",
+      "returncode": 0,
+      "elapsed_seconds": 0.262,
+      "stdout_path": "claude_runs/verifier.stdout.txt",
+      "stderr_path": "claude_runs/verifier.stderr.txt",
+      "result": {
+        "trials": 80,
+        "all_recovered_exactly_with_n(n+1)/2_measurements": true,
+        "sizes": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "name": "verifier_optimized",
+      "returncode": 0,
+      "elapsed_seconds": 0.37,
+      "stdout_path": "claude_runs/verifier_optimized.stdout.txt",
+      "stderr_path": "claude_runs/verifier_optimized.stderr.txt",
+      "result": {
+        "trials": 80,
+        "all_recovered_exactly_with_n(n+1)/2_measurements": true,
+        "sizes": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    }
+  ],
+  "all_passed": true
+}

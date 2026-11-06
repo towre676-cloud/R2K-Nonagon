@@ -1,0 +1,78 @@
+[
+ {
+  "box": [
+   10.0,
+   51.0
+  ],
+  "zeros": 10,
+  "moments": 22,
+  "prec_bits": 80,
+  "segments": 841,
+  "gen_time": 6.890085458755493,
+  "minors_decide": true,
+  "pivots_decide": true,
+  "worst_minor_rel_radius": 1.3847146732130615e-08,
+  "worst_pivot_rel_radius": 1.5660375099731747e-08,
+  "last_minor": "[0.013976 +/- 3.59e-7]",
+  "smallest_pivot": "[0.0066770 +/- 8.88e-9]",
+  "verifier_light": "CERTIFIED",
+  "verifier_reason": ""
+ },
+ {
+  "box": [
+   10.0,
+   76.5
+  ],
+  "zeros": 19,
+  "moments": 38,
+  "prec_bits": 80,
+  "segments": 1352,
+  "gen_time": 22.127321481704712,
+  "minors_decide": false,
+  "pivots_decide": false,
+  "worst_minor_rel_radius": Infinity,
+  "worst_pivot_rel_radius": 5.073819302402414,
+  "last_minor": "[+/- 2.70e-12]",
+  "smallest_pivot": "[+/- 7.38e-3]",
+  "verifier_light": "REJECTED",
+  "verifier_reason": "a Sylvester minor contains 0: inertia undecided"
+ },
+ {
+  "box": [
+   10.0,
+   100.0
+  ],
+  "zeros": 29,
+  "moments": 60,
+  "prec_bits": 80,
+  "segments": 1822,
+  "gen_time": 66.0273745059967,
+  "minors_decide": false,
+  "pivots_decide": false,
+  "worst_minor_rel_radius": Infinity,
+  "worst_pivot_rel_radius": 2.451068430075696,
+  "last_minor": "[+/- 1.91e+3]",
+  "smallest_pivot": "[+/- 0.399]",
+  "verifier_light": "REJECTED",
+  "verifier_reason": "a Sylvester minor contains 0: inertia undecided"
+ },
+ {
+  "box": [
+   10.0,
+   100.0
+  ],
+  "zeros": 29,
+  "moments": 60,
+  "prec_bits": 128,
+  "segments": 1824,
+  "gen_time": 82.83399796485901,
+  "minors_decide": false,
+  "pivots_decide": false,
+  "worst_minor_rel_radius": Infinity,
+  "worst_pivot_rel_radius": 1.6035748497452593,
+  "last_minor": "[+/- 0.697]",
+  "smallest_pivot": "[+/- 2.58]",
+  "verifier_light": "REJECTED",
+  "verifier_reason": "a Sylvester minor contains 0: inertia undecided"
+ }
+]

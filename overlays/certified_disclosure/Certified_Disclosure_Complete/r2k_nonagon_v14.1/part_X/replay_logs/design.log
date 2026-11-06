@@ -1,0 +1,30 @@
+{
+  "path": "/workspace/scratch/7978cacdb887/release/r2k_nonagon_v10.1/part_X/design_results.json",
+  "checks": {
+    "count": 12,
+    "passed": 12
+  },
+  "cases": [
+    {
+      "name": "four-node grounded path",
+      "greedy_logdet_gain": 39.29821878201539,
+      "optimal_logdet_gain": 39.29821878201539,
+      "greedy_D_efficiency_vs_optimal": 1.0,
+      "minimum_diminishing_return_gap": 9.592326932761353e-12
+    },
+    {
+      "name": "2x2 grounded grid",
+      "greedy_logdet_gain": 41.29238564012099,
+      "optimal_logdet_gain": 41.29238564012099,
+      "greedy_D_efficiency_vs_optimal": 1.0,
+      "minimum_diminishing_return_gap": 9.057927741196181e-09
+    },
+    {
+      "name": "asymmetric grounded diamond",
+      "greedy_logdet_gain": 41.24178754386185,
+      "optimal_logdet_gain": 41.24178754386185,
+      "greedy_D_efficiency_vs_optimal": 1.0,
+      "minimum_diminishing_return_gap": 1.044199393618328e-09
+    }
+  ]
+}

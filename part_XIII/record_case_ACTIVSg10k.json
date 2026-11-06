@@ -1,0 +1,92 @@
+{
+ "case": "case_ACTIVSg10k",
+ "buses": 10000,
+ "hidden_nodes": 9999,
+ "nodes_total": 9999,
+ "branches": 12216,
+ "grounds": 1,
+ "unknowns": 12217,
+ "port_bus": 11011,
+ "negative_reactance_branches": 193,
+ "readings": 32214,
+ "full_protocol_readings": 49995000,
+ "readings_per_unknown": 2.6368175493165262,
+ "saving_factor": 1551.964984168374,
+ "rank_mod_p": 12217,
+ "identifiable": true,
+ "primes": [
+  2147483647,
+  2147483629,
+  2147483587
+ ],
+ "exact_rational_recovery": true,
+ "rational_mismatches": 0,
+ "crt_log": [
+  {
+   "primes": 2,
+   "all_defined": true,
+   "stable": false
+  },
+  {
+   "primes": 3,
+   "all_defined": true,
+   "stable": true
+  }
+ ],
+ "log2_modulus": 93,
+ "max_height_bits_of_truth": 23,
+ "iterations": [
+  {
+   "iteration": 0,
+   "extra_sources": 0,
+   "rank": 12216,
+   "seconds": 3.255553722381592,
+   "kernel_log": [
+    "nnz(L) = 990496 t=0.0s",
+    "factorized t=2.0s",
+    "selected inverse done t=3.0s",
+    "pass 0 rank 6017 / 12217 t=3.1s",
+    "pass 1 rank 12216 / 12217 t=3.2s",
+    "pass 2 rank 12216 / 12217 t=3.2s",
+    "echelon nnz 86987"
+   ]
+  },
+  {
+   "iteration": 1,
+   "extra_sources": 4,
+   "rank": 12217,
+   "seconds": 3.096158742904663,
+   "kernel_log": [
+    "nnz(L) = 990496 t=0.0s",
+    "factorized t=1.9s",
+    "selected inverse done t=2.9s",
+    "pass 0 rank 6017 / 12217 t=2.9s",
+    "pass 1 rank 12216 / 12217 t=3.0s",
+    "pass 2 rank 12217 / 12217 t=3.0s",
+    "echelon nnz 86988"
+   ]
+  }
+ ],
+ "islands": {
+  "components": 1,
+  "invisible_nodes": 0,
+  "invisible_unknowns": 0
+ },
+ "physical": {
+  "K_positive_definite_binary64": false,
+  "negative_pivots": 193,
+  "port_column_min_over_max": 0.15709788240553418,
+  "port_column_all_positive": true
+ },
+ "extra_source_buses": [
+  21183,
+  21203,
+  21233,
+  21264
+ ],
+ "widened_sources": {},
+ "port_index": 1010,
+ "seconds_total": 13.843732833862305,
+ "ordering": "MMD_AT_PLUS_A",
+ "solution_sha256": "b632b262763b07630a8c304e62a2313f4cc4ba8cb68de2e43979f1adf7b0ab80"
+}

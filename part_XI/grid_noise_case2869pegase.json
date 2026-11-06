@@ -1,0 +1,66 @@
+{
+ "law": "relative sd(w_e) <= C sigma h0 G_vv K_vv / (G_0v^2 w_e), v = far endpoint, C = 2 x max ratio on IEEE 118",
+ "C_law": 661.0138515481488,
+ "case": "case2869pegase",
+ "n_hidden": 2868,
+ "edges": 3963,
+ "readings": 4114146,
+ "negative_weight_edges": 0,
+ "common_strength_t": 23.3282584747508,
+ "port_correlation_sq_quantiles": {
+  "0": 0.004215353884299433,
+  "0.01": 0.007522801659601508,
+  "0.1": 0.011731064878397956,
+  "0.5": 0.022395155733601648
+ },
+ "rows": [
+  {
+   "sigma_rel": 0.0,
+   "finite": true,
+   "precision": 1.0,
+   "recall": 1.0,
+   "median_edge_rel_err": 5.419298798500361e-14,
+   "frac_edges_within_1pct": 1.0,
+   "law_predicted_resolvable": 3963,
+   "law_agreement": 1.0,
+   "law_false_promises": 0,
+   "seconds": 4.373103141784668
+  },
+  {
+   "sigma_rel": 1e-12,
+   "finite": true,
+   "precision": 1.0,
+   "recall": 1.0,
+   "median_edge_rel_err": 1.662326173757833e-08,
+   "frac_edges_within_1pct": 1.0,
+   "law_predicted_resolvable": 3963,
+   "law_agreement": 1.0,
+   "law_false_promises": 0,
+   "seconds": 4.292062520980835
+  },
+  {
+   "sigma_rel": 1e-09,
+   "finite": true,
+   "precision": 0.07779740871613663,
+   "recall": 1.0,
+   "median_edge_rel_err": 1.665098661989262e-05,
+   "frac_edges_within_1pct": 0.9929346454706031,
+   "law_predicted_resolvable": 3805,
+   "law_agreement": 0.9656825637143578,
+   "law_false_promises": 3,
+   "seconds": 4.324055433273315
+  },
+  {
+   "sigma_rel": 1e-06,
+   "finite": true,
+   "precision": 0.0017662150909350015,
+   "recall": 0.8975523593237447,
+   "median_edge_rel_err": 0.14230056346111486,
+   "frac_edges_within_1pct": 0.08251324753974262,
+   "law_predicted_resolvable": 4,
+   "law_agreement": 0.9169820842795862,
+   "law_false_promises": 3,
+   "seconds": 6.03191065788269
+  }
+ ]
+}

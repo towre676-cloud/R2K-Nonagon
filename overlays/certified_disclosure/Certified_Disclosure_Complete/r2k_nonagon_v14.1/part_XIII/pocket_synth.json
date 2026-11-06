@@ -1,0 +1,155 @@
+{
+ "K4, |T|=2": {
+  "observed_deficiency": [
+   1,
+   1,
+   1
+  ],
+  "bound": [
+   1,
+   1,
+   1
+  ],
+  "dim_N_B": [
+   1,
+   1,
+   1
+  ]
+ },
+ "triangle off a cut vertex": {
+  "observed_deficiency": [
+   1,
+   1,
+   1
+  ],
+  "bound": [
+   1,
+   1,
+   1
+  ],
+  "dim_N_B": [
+   1,
+   1,
+   1
+  ]
+ },
+ "C4 off a cut vertex": {
+  "observed_deficiency": [
+   1,
+   1,
+   1
+  ],
+  "bound": [
+   1,
+   1,
+   1
+  ],
+  "dim_N_B": [
+   1,
+   1,
+   1
+  ]
+ },
+ "diamond, |T|=2 at the tips": {
+  "observed_deficiency": [
+   1,
+   1,
+   1
+  ],
+  "bound": [
+   1,
+   1,
+   1
+  ],
+  "dim_N_B": [
+   1,
+   1,
+   1
+  ]
+ },
+ "series chain, |T|=2": {
+  "observed_deficiency": [
+   0,
+   0,
+   0
+  ],
+  "bound": [
+   0,
+   0,
+   0
+  ],
+  "dim_N_B": [
+   0,
+   0,
+   0
+  ]
+ },
+ "K5, |T|=2": {
+  "observed_deficiency": [
+   3,
+   3,
+   3
+  ],
+  "bound": [
+   3,
+   3,
+   3
+  ],
+  "dim_N_B": [
+   3,
+   3,
+   3
+  ]
+ },
+ "K5, |T|=3": {
+  "observed_deficiency": [
+   1,
+   1,
+   1
+  ],
+  "bound": [
+   0,
+   0,
+   0
+  ],
+  "dim_N_B": [
+   1,
+   1,
+   1
+  ]
+ },
+ "K4, |T|=3": {
+  "observed_deficiency": [
+   0,
+   0,
+   0
+  ],
+  "bound": [
+   0,
+   0,
+   0
+  ],
+  "dim_N_B": [
+   0,
+   0,
+   0
+  ]
+ },
+ "leaf": {
+  "observed_deficiency": [
+   0,
+   0,
+   0
+  ],
+  "bound": [
+   0,
+   0,
+   0
+  ],
+  "dim_N_B": [
+   0,
+   0,
+   0
+  ]
+ }
+}

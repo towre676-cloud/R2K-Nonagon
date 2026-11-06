@@ -1,0 +1,104 @@
+<header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v11.0 · Part XI</div>
+  <h1>The Rank-Two Nonagon <em>XI</em></h1>
+  <div class="sub">External benchmarks, first campaign: standard power grids disclosed from one port in exact arithmetic, interval-certified topology under bounded reading error, the Kron boundary on a real grid, and a head-to-head with Vector Fitting on measured RF data</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 30 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Parts VIII–X proved what one port and calibrated interventions can reveal. Part XI tests those results on systems defined outside the program. <strong>Grids.</strong> The MATPOWER cases IEEE 118, IEEE 300, PEGASE 1354 and PEGASE 2869 are read from the MATPOWER repository unmodified. Each is converted to its grounded DC susceptance network, with the reference bus as ground, and hidden. From a single port bus and grounding interventions, the protocol of Theorem VIII.1.2 recovers <strong>IEEE 118 exactly</strong>: all 173 branches, 6 grounds and every susceptance, as an identity of rational matrices, from 6,903 readings in 2.4 s. It recovers <strong>IEEE 300 exactly</strong> from 44,850 readings in 26 s. <!--PEGEXACT--> With every reading known only to within a deterministic bound $\varepsilon$, Arb ball arithmetic through the explicit inverse <strong>certifies the complete topology and all weights of IEEE 118 for $\varepsilon\le10^{-11}$ of the port compliance</strong>. Every edge is certified present, every one of the 6,613 non-edges is certified below the declared gap, and every enclosure contains the truth. The same certificate covers all 1,705 branches and all 912,923 non-adjacent pairs of <strong>PEGASE 1354</strong> when readings are known to $10^{-15}G_{00}$, close to binary64 resolution. At $10^{-13}G_{00}$ every branch is still certified present and 98.6% of non-edges are certified below the gap. With load buses made inaccessible, the protocol returns exactly the Kron reduction onto the 53 generator buses. That reduction has 148 apparent branches where the grid has 45, the Kron boundary of Theorem VIII.1.4 measured on a real network. Under random reading noise, disclosure degrades in a way the binary64 runs at 2,868 hidden buses map out. A calibrated resolution index predicts per-edge success with log-correlation 0.87 but makes false promises out of sample, so per-edge claims must come from the interval certificate, not the index. <strong>Vector Fitting.</strong> On the measured responses shipped with scikit-rf, R2K and the scikit-rf Vector Fitting implementation reach comparable held-out accuracy. Vector Fitting is faster and uses fewer poles, and it is the better fitter on these data. The exact full-axis passivity decision applies to <em>both</em> methods' models, and agrees with the incumbent's own passivity test on all five of its reflection models while turning that test into a proof. <strong>Not run:</strong> Z24, IASC–ASCE, LANL three-story, CALCE and DaISy are not reachable from this computing environment and are left for a campaign with uploaded data.</p>
+</div>
+
+<h2 id="g1"><span class="sn">§XI.1</span>From MATPOWER to a hidden grounded network</h2>
+
+<p>Each case file is fetched from the MATPOWER GitHub repository, and its SHA-256 is recorded. Every in-service branch contributes its series susceptance $1/x$, read as an exact decimal rational. Parallel branches merge. The reference bus is grounded, as in DC power flow, so that buses adjacent to it acquire grounding conductances. The result is the reduced susceptance Laplacian $K$, an irreducible non-singular M-matrix whenever every branch reactance is positive. IEEE 118, PEGASE 1354 and PEGASE 2869 satisfy this. IEEE 300 contains one series capacitor, a branch with negative reactance, and lies outside the declared class: its $K$ has one negative eigenvalue. It is kept as a deliberate out-of-class case. The port is the bus maximizing the minimum port correlation $\min_j G_{pj}/\sqrt{G_{pp}G_{jj}}$. In practice this would come from a pilot; here it is reported.</p>
+
+<div class="tw"><table>
+<caption>Table XI.1. <span>The four grids as hidden networks. Port correlation is $\rho_j^2=G_{0j}^2/(G_{00}G_{jj})$, the visibility of node $j$ from the port.</span></caption>
+<thead><tr><th>case</th><th>hidden buses $n$</th><th>branches (merged)</th><th>negative-reactance branches</th><th>readings $n(n+1)/2$</th><th>min $\rho_j^2$</th><th>median $\rho_j^2$</th></tr></thead>
+<tbody>
+<!--GRIDROWS-->
+</tbody></table></div>
+
+<h2 id="g2"><span class="sn">§XI.2</span>Exact disclosure</h2>
+
+<p>The readings are generated from the exact rational inverse $G=K^{-1}$ (FLINT <code>fmpq_mat</code>) through the exact single-node and pair identities of Lemma VIII.1.1. As an independent check, 24 randomly chosen readings per case are also computed by direct exact solution of $(K+\Theta)x=e_0$, and every one agrees. The reconstruction is Theorem VIII.1.2 verbatim, with common strengths $t=1$, $2t$ and pair strength $1$ in susceptance units, followed by one exact inversion.</p>
+
+<div class="tw"><table>
+<caption>Table XI.2. <span>Exact one-port disclosure. "Exact" means the recovered stiffness matrix equals the true one as a rational matrix; precision and recall refer to the recovered branch set.</span></caption>
+<thead><tr><th>case</th><th>readings</th><th>exact $K$</th><th>precision</th><th>recall</th><th>direct-solve spot checks</th><th>largest denominator (digits)</th><th>time</th></tr></thead>
+<tbody>
+<!--EXACTROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result XI.2.1 <i>(exact disclosure of standard grids)</i> <span class="ep pr">proved · exact</span></div>
+<p>From one port and $n(n+1)/2$ grounding-intervention readings, the protocol of Theorem VIII.1.2 recovers the DC susceptance network of IEEE 118 exactly: every branch, every grounding and every weight, with no false branch. The same holds for IEEE 300. The theorem does not cover IEEE 300, which contains a negative-reactance branch, but the sign selections the inverse relies on happened to hold at the chosen port. That is a fact about this case, not a guarantee.</p></div>
+
+<p>This is identifiability made concrete on standard data, and it states its own cost. The readings grow as $n^2/2$, while a transmission grid has $O(n)$ unknown structural scalars: 179 for IEEE 118, so 38.6 readings per unknown, and about 4,600 for PEGASE 2869, where the ratio passes 890. The protocol is dimension-minimal for the dense class. A grid is sparse. A protocol that exploits known sparsity, or tests sparsity hypotheses, is the obvious next target. It is the measurement-efficiency question in its sharpest form.</p>
+
+<h2 id="g3"><span class="sn">§XI.3</span>Certified disclosure under bounded reading error</h2>
+
+<p>An instrument does not return exact rationals. Model each reading as known only to within a deterministic bound $\varepsilon$, with no distributional assumption. Every reading becomes an Arb ball of radius $\varepsilon$, the explicit inverse is evaluated in ball arithmetic at 128 bits, and $K=G^{-1}$ is enclosed by an interval matrix inverse. Square roots of discriminants whose ball meets zero are clipped soundly to $[0,\text{upper}]$. An edge is <em>certified present</em> when the enclosure of $-K_{ij}$ excludes zero. A non-adjacent pair is <em>certified below the gap</em> when $|K_{ij}|$ is enclosed below half the smallest branch susceptance. This is the declared-gap convention of the v9 production gate.</p>
+
+<div class="tw"><table>
+<caption>Table XI.3. <span>Interval-certified disclosure. $\varepsilon$ is relative to the port compliance $G_{00}$. "Truth contained" checks that every edge enclosure contains the true susceptance.</span></caption>
+<thead><tr><th>case</th><th>$\varepsilon/G_{00}$</th><th>edges certified present</th><th>non-edges certified below gap</th><th>max relative edge radius</th><th>truth contained</th><th>time</th></tr></thead>
+<tbody>
+<!--CERTROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result XI.3.1 <i>(certified topology of IEEE 118)</i> <span class="ep pr">proved · arb</span></div>
+<p>If every one of the 6,903 readings is known to within $10^{-11}G_{00}$, the ball computation certifies all 173 branches as present, all 6,613 non-adjacent pairs as below the gap, and every susceptance to a relative radius below $1.2\%$. At $10^{-9}G_{00}$ it still certifies 172 of the 173 branches and 3,032 of the non-edges. In IEEE 300 the negative-reactance branch can never be certified present by the sign test, because it is outside the class. That case drops from 407 of 408 certified edges at $10^{-13}$ to none at $10^{-9}$, reflecting the poorer conditioning of a network containing a series capacitor.</p></div>
+
+<p>At the scale of PEGASE 1354, 915,981 ball-valued readings pass through the explicit inverse and a $1353\times1353$ interval inversion, in about 70 seconds per error level. The certificate scales. What does not scale is the tolerable reading error. The largest edge radius grows by a factor of 100 for each factor of 100 in $\varepsilon$, and it reaches 37% at $10^{-13}$. Interval-certified disclosure of continental-size grids therefore needs either readings near instrument limits or the sparsity-aware protocols noted in §XI.2.</p>
+
+<h2 id="g4"><span class="sn">§XI.4</span>Random noise at scale, and what a resolution index can and cannot promise</h2>
+
+<p>With Gaussian noise of relative size $\sigma$ on every reading, the binary64 inverse was run on all four grids. The largest, PEGASE 2869, involves 4,114,146 readings and a dense $2868\times2868$ inversion, in about four seconds per noise level.</p>
+
+<div class="tw"><table>
+<caption>Table XI.4. <span>Noisy disclosure (binary64, one noise draw per level). Branch decisions threshold $-K_{ij}$ at half the smallest true susceptance; "within 1%" is the fraction of true branches whose recovered susceptance is within 1%.</span></caption>
+<thead><tr><th>case</th><th>$\sigma$</th><th>precision</th><th>recall</th><th>median rel. error</th><th>within 1%</th><th>index: predicted resolvable</th><th>index: false promises</th></tr></thead>
+<tbody>
+<!--NOISEROWS-->
+</tbody></table></div>
+
+<p>Three regularities stand out. Recall is robust: true branches survive to $\sigma=10^{-6}$ on every grid, failing only at the largest. Precision fails first: at $\sigma=10^{-9}$ on PEGASE 2869, and at $10^{-6}$ on all but IEEE 118, noise propagated through the dense inverse fills non-edges above the gap. And the median branch error scales linearly in $\sigma$ with a case-dependent constant, from about $1.6$–$1.9\times10^3$ on IEEE 118 to $1.7\times10^4$ on PEGASE 2869.</p>
+
+<p>The resolution laws of Parts VIII and X suggest an a-priori per-edge index. Calibrated on IEEE 118 alone, the best candidate is $q_e=G_{00}G_{vv}K_{vv}/(G_{0v}^2w_e)$, with $v$ the far endpoint. The factor $K_{vv}$ is the local amplification of inverting $G$ back to $K$. Its log-correlation with observed per-edge error is 0.87, against 0.67 without it. As a <em>promise</em>, however, the index fails out of sample even with a constant inflated to twice the worst calibration ratio. It is too conservative on IEEE 118 at $\sigma=10^{-6}$, predicting 3 resolvable branches where 153 were recovered within 1%. It also makes false promises on the held-out grids: 5 on IEEE 300, 1 on PEGASE 1354, and 3 at each of the two highest noise levels on PEGASE 2869. A resolution index is a planning tool. Any claim about an individual branch must come from the interval certificate of §XI.3, which never made a false claim in any run.</p>
+
+<h2 id="g5"><span class="sn">§XI.5</span>The Kron boundary on a real grid</h2>
+
+<p>In practice not every bus accepts a calibrated shunt. Suppose only the 53 generator (PV) buses are accessible and the 64 load buses of IEEE 118 are hidden. Then Theorem VIII.1.4 says the data determine exactly the Kron reduction onto the accessible set, and nothing more.</p>
+
+<div class="thm"><div class="hd">Result XI.5.1 <i>(the boundary, measured)</i> <span class="ep pr">proved · exact</span></div>
+<p>From $53\cdot54/2=1{,}431$ readings, the protocol returns a $53\times53$ rational matrix equal to the exact Kron reduction of IEEE 118 onto its generator buses. That reduction has 148 non-zero couplings among 1,378 possible pairs. The physical grid has 45 branches among those buses. The other 103 couplings are paths through hidden load buses that look like branches, and no one-port intervention data on generator buses can tell them apart from real lines.</p></div>
+
+<p>This is the practical form of the information boundary. Intervention access at a bus is what resolves that bus. A utility seeking a topology certificate must decide which buses can host a calibrated shunt, and the Kron reduction says exactly what the remaining uncertainty is.</p>
+
+<h2 id="g6"><span class="sn">§XI.6</span>Head-to-head with Vector Fitting</h2>
+
+<p>The incumbent is the scikit-rf 2.2.0 implementation of relaxed Vector Fitting (Gustavsen–Semlyen), run as its authors provide it. The test responses are those shipped with scikit-rf: a measured W-band ring-slot reflection, three measured radiating-open reflections at 500–750 GHz, and the two-port <code>ntwk1</code> (S11 and S21, 1–10 GHz). Splits are frozen as in Part VI, and each method selects its order on the selection split. R2K is the Löwner seed with variable-projection refinement of the poles (residues and constant eliminated), pole reflection, and the exact Routh–Hurwitz certificate. Passivity of a reflection model is decided exactly on the whole imaginary axis. The model's binary64 coefficients are taken as exact rationals, mapped to an impedance by the Cayley transform, and decided by the v10.1 Cayley/Brune checker. The same decision is applied to both methods' models.</p>
+
+<div class="tw"><table>
+<caption>Table XI.5. <span>Held-out confirmation error (NRMSE relative to the RMS response on the confirmation split), order, wall time, exact stability, and exact full-axis passivity for reflection models. The incumbent's own passivity test is shown alongside.</span></caption>
+<thead><tr><th>response</th><th>method</th><th>order</th><th>NRMSE</th><th>max rel. error</th><th>time</th><th>stable (exact)</th><th>passive (exact, full axis)</th><th>skrf <code>is_passive</code></th></tr></thead>
+<tbody>
+<!--VFROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result XI.6.1 <i>(the incumbent, met fairly)</i> <span class="ep nm">verified · double</span></div>
+<p>On these measured responses, Vector Fitting matches or beats the R2K fitter. Held-out NRMSE is equal within 10% on three of six responses. R2K is 13% lower on one radiating-open reflection, and Vector Fitting is lower by 21% on <code>ntwk1</code> S11 and by a factor of 1.9 on another radiating-open reflection. Vector Fitting is 2–5 times faster and uses fewer poles on five of six. Both produce certified-stable models in every case. In-band $|S|&lt;1$ does not imply passivity. Of the ten reflection models, four are exactly passive on the whole axis and six are not. Failures occur for both methods: ring slot and ro,1 for both, ro,3 for R2K, and <code>ntwk1</code> S11 for Vector Fitting. On all five Vector Fitting models the exact decision agrees with the incumbent's own numerical passivity test. The exact decision is a proof, given the model's coefficients, rather than a sampled check.</p></div>
+
+<p>The useful conclusion is not a ranking. The R2K certification layer is method-agnostic: exact stability, exact full-axis passivity, and, for networks, the interval disclosure of §XI.3. It applies to the models Vector Fitting produces, and that is where the program adds something the incumbent does not provide. As a fitter, R2K is competitive but not superior. As a certifier, it is complementary to whatever fitter an engineer already trusts.</p>
+
+<h2 id="g7"><span class="sn">§XI.7</span>Scope, and what the next campaign needs</h2>
+
+<p>The structural-health and battery benchmarks proposed for this campaign are Z24, IASC–ASCE, LANL three-story, CALCE impedance and DaISy. None of them can be reached from this computing environment, whose network access is restricted to package registries and GitHub. They are therefore not run, and nothing is claimed about them. Each needs its data uploaded, and each needs a modeling bridge the grid campaign did not: a dynamic-stiffness reduction from measured accelerations for Z24, LANL and IASC–ASCE, and a passive circuit class with an RL extension for CALCE. The grid results also carry their own limits. The DC model ignores resistance and shunt charging. Readings are simulated from the exact network, not measured. The protocol's $n^2/2$ reading count is far above the $O(n)$ unknowns of a sparse grid. The headline that survives is narrower but solid: standard grids with up to 300 buses are disclosed exactly from one port, and IEEE 118 is disclosed with an interval certificate under a stated reading-error bound.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> <code>part_XI/data/</code>: MATPOWER case files with SHA-256 in <code>part_XI/README.md</code>. <code>gridlib.py</code>: case parsing and grounded network. <code>grid_exact.py CASE</code>: Table XI.2. <code>grid_cert.py CASE [eps,...]</code>: Table XI.3. <code>grid_noise.py CASE</code> and <code>law_calib.py</code>: Table XI.4. <code>grid_kron.py</code>: Result XI.5.1. <code>vf_bench.py</code>: Table XI.5 (needs scikit-rf 2.2.0 and the v10.1 <code>lossless_passivity.py</code>). <code>assemble11.py</code>.</p>
+<p><b>Sources.</b> R. D. Zimmerman, C. E. Murillo-Sánchez, R. J. Thomas, MATPOWER: steady-state operations, planning and analysis tools for power systems research and education, IEEE Trans. Power Syst. 26 (2011); S. Fliscounakis, P. Panciatici, F. Capitanescu, L. Wehenkel, Contingency ranking with respect to overloads in very large power systems taking into account uncertainty, preventive and corrective actions, IEEE Trans. Power Syst. 28 (2013) (PEGASE cases); C. Josz et al., AC power flow data in MATPOWER and QCQP format: iTesla, RTE snapshots, and PEGASE, arXiv:1603.01533 (2016); B. Gustavsen, A. Semlyen, IEEE Trans. Power Delivery 14 (1999); A. Arsenovic et al., scikit-rf: an open source Python package for microwave network creation, analysis, and calibration, IEEE Microwave Magazine 23 (2022); F. Dörfler, F. Bullo, IEEE Trans. Circuits Syst. I 60 (2013).</p>
+</div>
+</main>

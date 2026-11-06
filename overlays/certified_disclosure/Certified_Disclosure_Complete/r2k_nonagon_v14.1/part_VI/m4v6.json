@@ -1,0 +1,46 @@
+{
+ "n": 400,
+ "fails": 119,
+ "fail_def": "max relative pole error > 1e-3",
+ "predictors": {
+  "rho_oracle": {
+   "threshold_train": 0.42926077171948607,
+   "test_accuracy": 0.965,
+   "test_accuracy_wilson95": [
+    0.9295285391333187,
+    0.9829446753626429
+   ],
+   "test_missed_failures": 7,
+   "test_false_alarms": 0,
+   "test_n": 200
+  },
+  "rho_operational_bootstrap": {
+   "threshold_train": 0.5661369956667596,
+   "test_accuracy": 0.965,
+   "test_accuracy_wilson95": [
+    0.9295285391333187,
+    0.9829446753626429
+   ],
+   "test_missed_failures": 5,
+   "test_false_alarms": 2,
+   "test_n": 200
+  },
+  "singular_gap_ratio": {
+   "threshold_train": 1.835578469284381,
+   "test_accuracy": 0.96,
+   "test_accuracy_wilson95": [
+    0.9230670617058012,
+    0.9795946128493436
+   ],
+   "test_missed_failures": 6,
+   "test_false_alarms": 2,
+   "test_n": 200
+  }
+ },
+ "weyl_sufficient": {
+  "cases_condition_holds": 257,
+  "failures_among_them": 5,
+  "failures_where_condition_fails": 114,
+  "successes_where_condition_fails": 29
+ }
+}

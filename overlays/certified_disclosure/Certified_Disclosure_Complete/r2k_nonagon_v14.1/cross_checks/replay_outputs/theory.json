@@ -1,0 +1,83 @@
+{
+  "status": "PASSED",
+  "tasks": [
+    {
+      "script": "intervene.py",
+      "exit_code": 0,
+      "unrelated_working_directory": true
+    },
+    {
+      "script": "origin.py",
+      "exit_code": 0,
+      "unrelated_working_directory": true
+    },
+    {
+      "script": "stability.py",
+      "exit_code": 0,
+      "unrelated_working_directory": true
+    },
+    {
+      "script": "finite_design_theory.py",
+      "exit_code": 0,
+      "unrelated_working_directory": true
+    },
+    {
+      "script": "assemble8.py",
+      "exit_code": 0,
+      "unrelated_working_directory": true
+    }
+  ],
+  "independent_algebraic_campaigns": [
+    {
+      "optimized_python": false,
+      "trials": 80,
+      "all_recovered_exactly_with_n(n+1)/2_measurements": true,
+      "sizes": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "optimized_python": true,
+      "trials": 80,
+      "all_recovered_exactly_with_n(n+1)/2_measurements": true,
+      "sizes": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "primary_exact_networks": 60,
+  "physical_pairs": 294,
+  "finite_design_controls": {
+    "status": "PASSED",
+    "predicates": 958,
+    "exact_differential_fixtures": 45,
+    "midpoint_control_loads": 360,
+    "gaussian_optimum_u": 0.9720604037152811,
+    "bounded_optimum_u": "1",
+    "bounded_factor": "16",
+    "scope": "First-order exact-load single-node extraction; bounded midpoint controls corroborate the separate mathematical proof."
+  },
+  "origin_correction_rows": 18,
+  "max_corrected_archived_se": 1.453576413170754,
+  "hp_samples_recomputed": false,
+  "uniform_origin_remainder_certified": false,
+  "reference_is_external_certificate_validator": false,
+  "source_sha256": {
+    "assemble8.py": "59a4952ac3981e97a19415f529bc19f9489cfeabc8699efb716e3fd72fff9bcd",
+    "finite_design_theory.py": "9830fd7ed8b1902f289bc4ecb4d82c18fe74eba33c2255862e35915cbbaf677c",
+    "intervene.py": "9312b8bd5c987c090d3db86c622de1c445c268090712bea86cc09caecbbceae3",
+    "origin.py": "8e33512b387db82e500124677b300941825808b361bf07619c972eb557260a8a",
+    "origin_hp.py": "55299dfb9b7fa324cb97e06cda09de47131c39b7d4f65fccd7b545c7fd5e3d7b",
+    "replay_theory.py": "44ee6785a15c1af9343d1e7d392f3c2de8ffdc4254e6459b37083a1b72c77616",
+    "stability.py": "68a03f615611637dff1212db8fac0bc0a4ca22be370fc2856321d71dc0cf4200",
+    "verify_intervention.py": "3911d310d74a0b9383bd10e008b015d888dc3a1ea2a3fabba788f53391b4f9c5"
+  }
+}

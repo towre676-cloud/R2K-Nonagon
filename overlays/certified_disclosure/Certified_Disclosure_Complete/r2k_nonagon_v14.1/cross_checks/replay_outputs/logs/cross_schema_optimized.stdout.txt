@@ -1,0 +1,20 @@
+{"cross_schema_progress": 20}
+{"cross_schema_progress": 40}
+{"cross_schema_progress": 60}
+{"cross_schema_progress": 80}
+{"cross_schema_progress": 100}
+{
+  "schema": "nonagon.integration.cross-schema.v1",
+  "source_sha256": {
+    "engineering_verifier": "c92fa01dd6764b43d5d338841576c750117df6b693db75fc9823df9fa9945d4b",
+    "claude_verifier": "3911d310d74a0b9383bd10e008b015d888dc3a1ea2a3fabba788f53391b4f9c5"
+  },
+  "status": "passed",
+  "certificates": 103,
+  "scalar_observations": 2430,
+  "heldout_observations": 309,
+  "strict_certificate_checks": 119902,
+  "independent_operator_and_response_checks": 6994,
+  "records_sha256": "cbf9005699313997f16a96986efb7e0613f3139560507fae7d1f2e1ba7beb402",
+  "elapsed_seconds": 5.219
+}

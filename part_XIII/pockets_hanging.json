@@ -1,0 +1,52 @@
+{
+ "case118": {
+  "hanging_cyclic_pockets": 1,
+  "total_cyclomatic": 5,
+  "pockets_without_interior_source": 0
+ },
+ "case300": {
+  "hanging_cyclic_pockets": 4,
+  "total_cyclomatic": 13,
+  "pockets_without_interior_source": 0
+ },
+ "case1354pegase": {
+  "hanging_cyclic_pockets": 35,
+  "total_cyclomatic": 56,
+  "pockets_without_interior_source": 0
+ },
+ "case2869pegase": {
+  "hanging_cyclic_pockets": 55,
+  "total_cyclomatic": 84,
+  "pockets_without_interior_source": 0
+ },
+ "case6515rte": {
+  "hanging_cyclic_pockets": 161,
+  "total_cyclomatic": 240,
+  "pockets_without_interior_source": 0
+ },
+ "case9241pegase": {
+  "hanging_cyclic_pockets": 157,
+  "total_cyclomatic": 272,
+  "pockets_without_interior_source": 0
+ },
+ "case_ACTIVSg10k": {
+  "hanging_cyclic_pockets": 1,
+  "total_cyclomatic": 1,
+  "pockets_without_interior_source": 0
+ },
+ "case13659pegase": {
+  "hanging_cyclic_pockets": 157,
+  "total_cyclomatic": 272,
+  "pockets_without_interior_source": 0
+ },
+ "case_ACTIVSg25k": {
+  "hanging_cyclic_pockets": 15,
+  "total_cyclomatic": 27,
+  "pockets_without_interior_source": 0
+ },
+ "case_ACTIVSg70k": {
+  "hanging_cyclic_pockets": 8,
+  "total_cyclomatic": 10,
+  "pockets_without_interior_source": 0
+ }
+}

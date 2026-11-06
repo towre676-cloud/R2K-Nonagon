@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Observed-pilot acquisition decision",
+  "type": "object",
+  "properties": {
+    "mode": {"type": "string", "enum": ["fixed_log", "experimental_gate"], "default": "fixed_log"},
+    "omega": {"type": "array", "minItems": 33, "maxItems": 33, "items": {"type": "number", "exclusiveMinimum": 0}},
+    "response_real": {"type": "array", "minItems": 33, "maxItems": 33, "items": {"type": "number"}},
+    "response_imag": {"type": "array", "minItems": 33, "maxItems": 33, "items": {"type": "number"}},
+    "order": {"type": "integer", "enum": [6, 8, 10]},
+    "band": {"type": "array", "prefixItems": [{"const": 0.03}, {"const": 8}], "minItems": 2, "maxItems": 2}
+  },
+  "allOf": [{"if": {"properties": {"mode": {"const": "experimental_gate"}}, "required": ["mode"]}, "then": {"required": ["omega", "response_real", "response_imag", "order"]}}],
+  "additionalProperties": false
+}

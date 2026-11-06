@@ -1,0 +1,5 @@
+Canonical integration note
+
+Read README.md and ../nonagon_VIII.html. The original Claude handoff brief is preserved at ../research/claude_v8/part_VIII/brief_intervention_and_origin.txt.
+
+The v9 corrections distinguish Gaussian two-point tail/RMSE bounds from standard deviation, finite t/2t acquisition from ideal clamp designs, sampled near-origin values from a uniform remainder proof, and ideal dynamic identification from physical Laplace acquisition. Part IX supplies the strict external-input certificate checker and engineering qualification.

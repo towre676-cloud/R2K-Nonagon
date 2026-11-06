@@ -1,0 +1,68 @@
+{
+ "ensemble": "GUE (Dumitriu-Edelman tridiagonal), central 20,000 of N, semicircle-unfolded",
+ "N": 40000,
+ "points_per_sample": 20000,
+ "replicates": 32,
+ "rows": [
+  {
+   "L": 0.5,
+   "exact": 0.2801579363727107,
+   "mean_estimate": 0.28032748053620976,
+   "bias": 0.0001695441634990691,
+   "bias_se": 0.00010944629669212415,
+   "true_sd_of_estimate": 0.0006191217485340464,
+   "mean_block_se": 0.0006781778494383934,
+   "se_ratio_true_over_block": 0.9129194488536422
+  },
+  {
+   "L": 1,
+   "exact": 0.34416259350987155,
+   "mean_estimate": 0.34474487415344385,
+   "bias": 0.0005822806435722971,
+   "bias_se": 0.0002873548204166701,
+   "true_sd_of_estimate": 0.0016255243369861603,
+   "mean_block_se": 0.0019475023549643243,
+   "se_ratio_true_over_block": 0.8346713075044974
+  },
+  {
+   "L": 2,
+   "exact": 0.4156716124805797,
+   "mean_estimate": 0.41633984918998335,
+   "bias": 0.0006682367094036357,
+   "bias_se": 0.0004477064209312998,
+   "true_sd_of_estimate": 0.002532609969770248,
+   "mean_block_se": 0.002862389360577894,
+   "se_ratio_true_over_block": 0.8847887728519693
+  },
+  {
+   "L": 4,
+   "exact": 0.48632616680728713,
+   "mean_estimate": 0.48626898722838574,
+   "bias": -5.717957890138958e-05,
+   "bias_se": 0.0005334312922625239,
+   "true_sd_of_estimate": 0.00301754307244747,
+   "mean_block_se": 0.004219976949684901,
+   "se_ratio_true_over_block": 0.7150615058863734
+  },
+  {
+   "L": 8,
+   "exact": 0.5566728963474485,
+   "mean_estimate": 0.5561959443161402,
+   "bias": -0.00047695203130837527,
+   "bias_se": 0.0008547711786323004,
+   "true_sd_of_estimate": 0.004835315974189739,
+   "mean_block_se": 0.006438542040786177,
+   "se_ratio_true_over_block": 0.7509954805854345
+  },
+  {
+   "L": 16,
+   "exact": 0.6269332002325356,
+   "mean_estimate": 0.6297506820031555,
+   "bias": 0.002817481770619912,
+   "bias_se": 0.0014255545079406857,
+   "true_sd_of_estimate": 0.008064154076127287,
+   "mean_block_se": 0.009279526731192478,
+   "se_ratio_true_over_block": 0.8690264395726346
+  }
+ ]
+}

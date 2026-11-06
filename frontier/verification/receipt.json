@@ -1,0 +1,15 @@
+{
+  "quick_replay_exit_code": 0,
+  "tests_replayed_in_fresh_copy": [
+    "257 physical network pairs and6684exactchecks",
+    "56 separate determinant/adjugate verification checks",
+    "150 passive fixtures and2400exactchecks",
+    "29 adversarialpassivity rejections",
+    "216 measuredmodel exactverifications"
+  ],
+  "module_frozen_hashes_verified": true,
+  "previous_package_identity_verified": true,
+  "all_python_sources_parse": true,
+  "log_sha256": "cf8cc2ca2f207b11f5cd5ce1e6bb70256796d897012733f0d87198a6707adf29",
+  "scope": "Full numerical experiments were generated and independently reviewed by module owners; exact suites were additionally replayed from a fresh aggregate-package copy. No global theorem/novelty claim."
+}

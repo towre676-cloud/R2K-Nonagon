@@ -1,0 +1,103 @@
+{
+  "format": "nonagon-standalone-solver-residual-v1",
+  "source_sha256": "c599a92d0a3146d2ff2d751eba269272376e3132add1b37ae338b0bb9e8c3ace",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "matrix_real": [
+    [
+      7.129079590979782,
+      -3.2311230701710416,
+      0.0
+    ],
+    [
+      -3.2311230701710416,
+      6.000980064284362,
+      -2.7709770127767612
+    ],
+    [
+      0.0,
+      -2.7709770127767612,
+      2.7702247834354887
+    ]
+  ],
+  "matrix_imag": [
+    [
+      0.005810544990543039,
+      -0.004153798919626957,
+      0.0
+    ],
+    [
+      -0.004153798919626957,
+      0.007260096541294973,
+      -0.0031062976216680153
+    ],
+    [
+      0.0,
+      -0.0031062976216680153,
+      0.0031062976216680153
+    ]
+  ],
+  "rhs": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "matrix_is_complex_symmetric": true,
+  "matrix_is_hermitian": false,
+  "matrix_condition_2": 14.947011974079023,
+  "results": [
+    {
+      "method": "scipy_auto",
+      "absolute_residual_2norm": 3.3306701326664856e-16,
+      "scaled_backward_residual": 5.964800185445824e-17,
+      "solution_real": [
+        0.2566679979829508,
+        0.256816824312339,
+        0.256886560463917
+      ],
+      "solution_imag": [
+        -0.00010914400857829459,
+        -0.00010939874892249291,
+        -0.00010950665142644006
+      ]
+    },
+    {
+      "method": "scipy_general",
+      "absolute_residual_2norm": 4.15407616187168e-16,
+      "scaled_backward_residual": 7.43941407396331e-17,
+      "solution_real": [
+        0.2566679979829506,
+        0.25681682431233865,
+        0.2568865604639167
+      ],
+      "solution_imag": [
+        -0.00010914400857829454,
+        -0.0001093987489224927,
+        -0.00010950665142643983
+      ]
+    },
+    {
+      "method": "numpy_general",
+      "absolute_residual_2norm": 4.1540743225421456e-16,
+      "scaled_backward_residual": 7.439410779961589e-17,
+      "solution_real": [
+        0.2566679979829506,
+        0.25681682431233865,
+        0.2568865604639167
+      ],
+      "solution_imag": [
+        -0.00010914400857829451,
+        -0.00010939874892249269,
+        -0.00010950665142643984
+      ]
+    }
+  ],
+  "auto_minus_general_solution_2norm": 4.871084750793537e-16,
+  "general_minus_numpy_solution_2norm": 3.319677625758101e-20,
+  "automatic_path_residual_exceeds_1e_minus_8": false,
+  "interpretation": "A residual test on this literal input and installed versions only. No blanket claim about every SciPy version or every automatic solve is made. Scientific generators should check residuals and retain the numerical context."
+}

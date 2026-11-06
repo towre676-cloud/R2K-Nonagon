@@ -1,0 +1,99 @@
+{
+ "case": "case300",
+ "n": 299,
+ "hw_buses": 80,
+ "branches": 408,
+ "schemes": {
+  "kron20": {
+   "readings": 210,
+   "rank": 102,
+   "unknowns": 409,
+   "identifiable_unknowns": 7,
+   "identifiable_branches": 7,
+   "branches": 408,
+   "seconds": 0.15795207023620605,
+   "rational_coordinate_classification_certified": false
+  },
+  "kron40": {
+   "readings": 820,
+   "rank": 163,
+   "unknowns": 409,
+   "identifiable_unknowns": 20,
+   "identifiable_branches": 20,
+   "branches": 408,
+   "seconds": 0.23957276344299316,
+   "rational_coordinate_classification_certified": false
+  },
+  "kron60": {
+   "readings": 1830,
+   "rank": 203,
+   "unknowns": 409,
+   "identifiable_unknowns": 62,
+   "identifiable_branches": 61,
+   "branches": 408,
+   "seconds": 0.5394613742828369,
+   "rational_coordinate_classification_certified": false
+  },
+  "hw5": {
+   "readings": 1215,
+   "rank": 213,
+   "unknowns": 409,
+   "identifiable_unknowns": 23,
+   "identifiable_branches": 23,
+   "branches": 408,
+   "seconds": 0.34092140197753906,
+   "rational_coordinate_classification_certified": false
+  },
+  "hw10": {
+   "readings": 4455,
+   "rank": 234,
+   "unknowns": 409,
+   "identifiable_unknowns": 78,
+   "identifiable_branches": 78,
+   "branches": 408,
+   "seconds": 1.3123469352722168,
+   "rational_coordinate_classification_certified": false
+  },
+  "hw20": {
+   "readings": 17010,
+   "rank": 242,
+   "unknowns": 409,
+   "identifiable_unknowns": 84,
+   "identifiable_branches": 84,
+   "branches": 408,
+   "seconds": 6.508134365081787,
+   "rational_coordinate_classification_certified": false
+  },
+  "ports2": {
+   "readings": 900,
+   "rank": 397,
+   "unknowns": 409,
+   "identifiable_unknowns": 374,
+   "identifiable_branches": 373,
+   "branches": 408,
+   "seconds": 0.2964060306549072,
+   "rational_coordinate_classification_certified": false
+  },
+  "ports5": {
+   "readings": 4500,
+   "rank": 406,
+   "unknowns": 409,
+   "identifiable_unknowns": 401,
+   "identifiable_branches": 400,
+   "branches": 408,
+   "seconds": 1.6596646308898926,
+   "rational_coordinate_classification_certified": false
+  },
+  "ports10": {
+   "readings": 16500,
+   "rank": 406,
+   "unknowns": 409,
+   "identifiable_unknowns": 401,
+   "identifiable_branches": 400,
+   "branches": 408,
+   "seconds": 8.33533525466919,
+   "rational_coordinate_classification_certified": false
+  }
+ },
+ "v14_1_scope_correction": "Legacy identifiable_* counts describe modular-kernel zero coordinates, not certified rational coordinate identifiability. Full column rank remains a rational certificate. See rational_access/ for exact replacement certificates."
+}

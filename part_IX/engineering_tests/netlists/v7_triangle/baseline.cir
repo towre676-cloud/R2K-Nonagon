@@ -1,0 +1,16 @@
+Nonagon external DC circuit v7_triangle baseline
+.options reltol=1e-12 abstol=1e-15 vntol=1e-12 gmin=1e-18
+Iinput 0 n1 DC 0.0001
+Redge_1_2 n1 n2 1083.3333333333333
+Redge_1_3 n1 n3 2600
+Rground_1 n1 0 371.42857142857144
+Redge_2_3 n2 n3 2864.406779661017
+Rground_2 n2 0 436.69250645994833
+Rground_3 n3 0 1420.1680672268908
+.control
+set numdgt=17
+op
+print v(n1) v(n2) v(n3)
+quit
+.endc
+.end

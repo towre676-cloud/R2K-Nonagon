@@ -1,0 +1,33 @@
+{
+  "schema": "nonagon.dynamic-step.protocol.v1",
+  "excitation": "calibrated unit step force at port 0; zero initial state",
+  "readout": "displacement at port 0",
+  "s": [
+    "0",
+    "1",
+    "2"
+  ],
+  "horizon": "80",
+  "sample_interval": "1/2048",
+  "sample_absolute_error": "1/1000000000000",
+  "transformed_numerical_error": "1/1000000000000",
+  "load_relative_error": "0",
+  "certification_prior": {
+    "beta": "1/2",
+    "mass_min": "1",
+    "mass_max": "7/4",
+    "ground_min": "2",
+    "stiffness_norm_inf_max": "16",
+    "source": "fixed class bounds, supplied independently of scalar records and hidden matrices"
+  },
+  "inverse": "existing finite t=1,2t=2,pair t=1 interval protocol",
+  "proof_scope": "C=2*beta*M, diagonal M in [1,7/4], ground>=2, norm_inf(K)<=16, beta=1/2",
+  "calibration_scope": "declared simultaneous sensor error; exact step force and loads; no drift/model mismatch beyond this envelope",
+  "fixture_seeds": [
+    910301,
+    910302,
+    910401,
+    910402
+  ],
+  "no_physical_hardware": true
+}

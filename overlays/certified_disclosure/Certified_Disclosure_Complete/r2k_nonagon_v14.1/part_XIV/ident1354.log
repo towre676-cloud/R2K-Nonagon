@@ -1,0 +1,7 @@
+case1354pegase kron20 {'readings': 210, 'rank': 187, 'unknowns': 1710, 'identifiable_unknowns': 0, 'identifiable_branches': 0, 'branches': 1705, 'seconds': 1.1354899406433105}
+case1354pegase kron40 {'readings': 820, 'rank': 314, 'unknowns': 1710, 'identifiable_unknowns': 17, 'identifiable_branches': 17, 'branches': 1705, 'seconds': 3.088366746902466}
+case1354pegase kron60 {'readings': 1830, 'rank': 394, 'unknowns': 1710, 'identifiable_unknowns': 91, 'identifiable_branches': 88, 'branches': 1705, 'seconds': 3.7828266620635986}
+case1354pegase hw2 {'readings': 4026, 'rank': 1655, 'unknowns': 1710, 'identifiable_unknowns': 1553, 'identifiable_branches': 1548, 'branches': 1705, 'seconds': 17.00289821624756}
+case1354pegase hw5 {'readings': 20130, 'rank': 1657, 'unknowns': 1710, 'identifiable_unknowns': 1561, 'identifiable_branches': 1556, 'branches': 1705, 'seconds': 162.39908361434937}
+case1354pegase ports2 {'readings': 4062, 'rank': 1668, 'unknowns': 1710, 'identifiable_unknowns': 1567, 'identifiable_branches': 1562, 'branches': 1705, 'seconds': 23.25852918624878}
+case1354pegase ports5 {'readings': 20310, 'rank': 1670, 'unknowns': 1710, 'identifiable_unknowns': 1575, 'identifiable_branches': 1570, 'branches': 1705, 'seconds': 106.03526020050049}

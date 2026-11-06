@@ -1,0 +1,27 @@
+{
+ "case": "case1354pegase",
+ "n": 1353,
+ "w_min": 9.710717719146622,
+ "rows": [
+  {
+   "eps_rel": 1e-15,
+   "edges_certified_present": 1705,
+   "edges": 1705,
+   "nonedges_certified_below_gap": 912923,
+   "nonedges": 912923,
+   "max_edge_rel_radius": 0.0037154100568033755,
+   "all_enclosures_contain_truth": true,
+   "seconds": 72.71093320846558
+  },
+  {
+   "eps_rel": 1e-13,
+   "edges_certified_present": 1705,
+   "edges": 1705,
+   "nonedges_certified_below_gap": 900113,
+   "nonedges": 912923,
+   "max_edge_rel_radius": 0.37177081437349324,
+   "all_enclosures_contain_truth": true,
+   "seconds": 66.90955352783203
+  }
+ ]
+}

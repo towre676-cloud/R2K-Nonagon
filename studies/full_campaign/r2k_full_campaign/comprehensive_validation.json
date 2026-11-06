@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "fresh_original_catalogue_full_replays": 49,
+  "fresh_segments": 5446,
+  "separate_full_fixture_replays": 2,
+  "all_fresh_segments_including_fixtures": 6434,
+  "high_counts": {
+    "V_e10": 2,
+    "V_e12a": 3,
+    "V_e12b": 1
+  },
+  "distinct_fixed_line_covariance_entries": 21,
+  "certified_Hermitian_DPP_obstruction_witnesses": 5,
+  "finite_prime_arithmetic_values": 15,
+  "open": [
+    "infinite-prime 3/4-point derivative tails",
+    "uniform coincidence quadrature",
+    "functional-equation correction in local model",
+    "ratios/RH and short-window transfer"
+  ],
+  "zeta_sampling_law_certified": false
+}

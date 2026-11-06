@@ -1,0 +1,193 @@
+{
+  "schema": "nonagon.finite-load-benchmark-results.v1",
+  "status": "PASSED",
+  "hardware_status": "synthetic calibration benchmark; no physical apparatus connected",
+  "protocol_sha256": "9a19e0f3bc54b347d18571e6f02f1f38865e939fecbce58fca788c0bb128ed75",
+  "fixture_count": 30,
+  "fresh_fixture_matrix_disjointness_checks": 30,
+  "prospective_cases": 90,
+  "arm_cases": 180,
+  "scalar_readings_counting_shared_pilot_per_arm": 3600,
+  "unique_generated_scalar_readings": 2910,
+  "truth_containment_checks": 12070,
+  "false_edge_calls": 0,
+  "escaped_truth": 0,
+  "summary": [
+    {
+      "budget": "ideal_reference",
+      "arm": "fixed_pilot_strength",
+      "cases": 30,
+      "matrix_enclosed": 30,
+      "full_graph": 30,
+      "disclosed_edges": 240,
+      "possible_edges": 240,
+      "scalar_readings": 600
+    },
+    {
+      "budget": "ideal_reference",
+      "arm": "pilot_selected_strength",
+      "cases": 30,
+      "matrix_enclosed": 30,
+      "full_graph": 30,
+      "disclosed_edges": 240,
+      "possible_edges": 240,
+      "scalar_readings": 600
+    },
+    {
+      "budget": "precision_calibration",
+      "arm": "fixed_pilot_strength",
+      "cases": 30,
+      "matrix_enclosed": 20,
+      "full_graph": 5,
+      "disclosed_edges": 45,
+      "possible_edges": 240,
+      "scalar_readings": 600
+    },
+    {
+      "budget": "precision_calibration",
+      "arm": "pilot_selected_strength",
+      "cases": 30,
+      "matrix_enclosed": 25,
+      "full_graph": 10,
+      "disclosed_edges": 85,
+      "possible_edges": 240,
+      "scalar_readings": 600
+    },
+    {
+      "budget": "readout_limited",
+      "arm": "fixed_pilot_strength",
+      "cases": 30,
+      "matrix_enclosed": 4,
+      "full_graph": 0,
+      "disclosed_edges": 1,
+      "possible_edges": 240,
+      "scalar_readings": 600
+    },
+    {
+      "budget": "readout_limited",
+      "arm": "pilot_selected_strength",
+      "cases": 30,
+      "matrix_enclosed": 8,
+      "full_graph": 1,
+      "disclosed_edges": 5,
+      "possible_edges": 240,
+      "scalar_readings": 600
+    }
+  ],
+  "selection_counts": [
+    {
+      "budget": "ideal_reference",
+      "base_load": "1",
+      "status": "recommended",
+      "count": 30
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "1",
+      "status": "recommended",
+      "count": 6
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "1/16",
+      "status": "recommended",
+      "count": 6
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "1/4",
+      "status": "recommended",
+      "count": 7
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "16",
+      "status": "recommended",
+      "count": 4
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "4",
+      "status": "recommended",
+      "count": 7
+    },
+    {
+      "budget": "readout_limited",
+      "base_load": "1",
+      "status": "fallback",
+      "count": 11
+    },
+    {
+      "budget": "readout_limited",
+      "base_load": "1",
+      "status": "recommended",
+      "count": 7
+    },
+    {
+      "budget": "readout_limited",
+      "base_load": "1/16",
+      "status": "recommended",
+      "count": 4
+    },
+    {
+      "budget": "readout_limited",
+      "base_load": "1/4",
+      "status": "recommended",
+      "count": 4
+    },
+    {
+      "budget": "readout_limited",
+      "base_load": "4",
+      "status": "recommended",
+      "count": 4
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "budget": "ideal_reference",
+      "planned_only_matrix_enclosed": 0,
+      "fixed_only_matrix_enclosed": 0,
+      "planned_only_full_graph": 0,
+      "fixed_only_full_graph": 0,
+      "paired_enclosures": 30,
+      "planned_width_smaller": 0,
+      "fixed_width_smaller": 0,
+      "equal_width": 30
+    },
+    {
+      "budget": "precision_calibration",
+      "planned_only_matrix_enclosed": 5,
+      "fixed_only_matrix_enclosed": 0,
+      "planned_only_full_graph": 5,
+      "fixed_only_full_graph": 0,
+      "paired_enclosures": 20,
+      "planned_width_smaller": 14,
+      "fixed_width_smaller": 0,
+      "equal_width": 6
+    },
+    {
+      "budget": "readout_limited",
+      "planned_only_matrix_enclosed": 4,
+      "fixed_only_matrix_enclosed": 0,
+      "planned_only_full_graph": 1,
+      "fixed_only_full_graph": 0,
+      "paired_enclosures": 4,
+      "planned_width_smaller": 2,
+      "fixed_width_smaller": 0,
+      "equal_width": 2
+    }
+  ],
+  "source_sha256": {
+    "planner.py": "f9ef5723db777d509cef548dc05e0aa2a3c0cdef5cd3cf476650a3203aae7fa9",
+    "benchmark.py": "f020c9e006f36152b62ceb4f0fec85346b5e41c3d951027aa010434bee5b5dd7"
+  },
+  "production_interval_source_sha256": "c85150fc822b668a85651a30c13af3bcdb8dfaf161ad0a68dd02845db0bdfaaa",
+  "records_sha256": "e8928dfe3cead5ce127dc527231967e8a4b086a8d1f60f8ad90617ba300bbe40",
+  "limits": [
+    "First-order planner score is a diagnostic; all matrix/graph claims use the unchanged nonlinear interval gate.",
+    "A single globally shared strength preserves the production fixed-t,2t,pair-t schema.",
+    "No averaging or square-root-of-repeat-count error reduction is used for bounded errors.",
+    "Full graph absence requires the explicitly declared minimum positive edge gap1/32.",
+    "Synthetic data and external calibration envelopes do not constitute hardware qualification."
+  ]
+}

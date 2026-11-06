@@ -1,0 +1,623 @@
+[
+  {
+    "rule": {
+      "id": "always_log",
+      "kind": "always_log"
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": true
+  },
+  {
+    "rule": {
+      "id": "always_adaptive",
+      "kind": "always_adaptive"
+    },
+    "selected_positive_cases": 30,
+    "selected_system_clusters": 10,
+    "capped_mean_error_ratio": 1.4102765611329722,
+    "dev_ratio_ci95": [
+      0.627450670823749,
+      2.2200522008448753
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "min_relative_pole_gap_le_0.005",
+      "kind": "threshold",
+      "feature": "min_relative_pole_gap",
+      "op": "le",
+      "threshold": 0.005
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "min_relative_pole_gap_le_0.01",
+      "kind": "threshold",
+      "feature": "min_relative_pole_gap",
+      "op": "le",
+      "threshold": 0.01
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "min_relative_pole_gap_le_0.02",
+      "kind": "threshold",
+      "feature": "min_relative_pole_gap",
+      "op": "le",
+      "threshold": 0.02
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "min_relative_pole_gap_le_0.05",
+      "kind": "threshold",
+      "feature": "min_relative_pole_gap",
+      "op": "le",
+      "threshold": 0.05
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "min_relative_pole_gap_le_0.1",
+      "kind": "threshold",
+      "feature": "min_relative_pole_gap",
+      "op": "le",
+      "threshold": 0.1
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "min_relative_pole_gap_le_0.2",
+      "kind": "threshold",
+      "feature": "min_relative_pole_gap",
+      "op": "le",
+      "threshold": 0.2
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "min_relative_pole_gap_le_0.4",
+      "kind": "threshold",
+      "feature": "min_relative_pole_gap",
+      "op": "le",
+      "threshold": 0.4
+    },
+    "selected_positive_cases": 19,
+    "selected_system_clusters": 9,
+    "capped_mean_error_ratio": 1.262091772991553,
+    "dev_ratio_ci95": [
+      0.7515206488627634,
+      1.7577941064465061
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "residue_ratio_le_1e-06",
+      "kind": "threshold",
+      "feature": "residue_ratio",
+      "op": "le",
+      "threshold": 1e-06
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "residue_ratio_le_1e-05",
+      "kind": "threshold",
+      "feature": "residue_ratio",
+      "op": "le",
+      "threshold": 1e-05
+    },
+    "selected_positive_cases": 4,
+    "selected_system_clusters": 4,
+    "capped_mean_error_ratio": 0.9758517132241774,
+    "dev_ratio_ci95": [
+      0.9542819595083337,
+      0.9996637786454802
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "residue_ratio_le_0.0001",
+      "kind": "threshold",
+      "feature": "residue_ratio",
+      "op": "le",
+      "threshold": 0.0001
+    },
+    "selected_positive_cases": 8,
+    "selected_system_clusters": 5,
+    "capped_mean_error_ratio": 0.9204674059003799,
+    "dev_ratio_ci95": [
+      0.8560591407061926,
+      0.9992572004591226
+    ],
+    "eligible": true
+  },
+  {
+    "rule": {
+      "id": "residue_ratio_le_0.001",
+      "kind": "threshold",
+      "feature": "residue_ratio",
+      "op": "le",
+      "threshold": 0.001
+    },
+    "selected_positive_cases": 17,
+    "selected_system_clusters": 7,
+    "capped_mean_error_ratio": 1.4868519169708287,
+    "dev_ratio_ci95": [
+      0.7436783729404112,
+      2.275062365563307
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "residue_ratio_le_0.01",
+      "kind": "threshold",
+      "feature": "residue_ratio",
+      "op": "le",
+      "threshold": 0.01
+    },
+    "selected_positive_cases": 21,
+    "selected_system_clusters": 10,
+    "capped_mean_error_ratio": 1.426516384744144,
+    "dev_ratio_ci95": [
+      0.6613735339571938,
+      2.235100892820095
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "residue_ratio_le_0.1",
+      "kind": "threshold",
+      "feature": "residue_ratio",
+      "op": "le",
+      "threshold": 0.1
+    },
+    "selected_positive_cases": 21,
+    "selected_system_clusters": 10,
+    "capped_mean_error_ratio": 1.426516384744144,
+    "dev_ratio_ci95": [
+      0.6613735339571938,
+      2.235100892820095
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "model_disagreement_ge_0.001",
+      "kind": "threshold",
+      "feature": "model_disagreement",
+      "op": "ge",
+      "threshold": 0.001
+    },
+    "selected_positive_cases": 16,
+    "selected_system_clusters": 9,
+    "capped_mean_error_ratio": 1.449045023224329,
+    "dev_ratio_ci95": [
+      0.6776898972841763,
+      2.251057568855474
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "model_disagreement_ge_0.01",
+      "kind": "threshold",
+      "feature": "model_disagreement",
+      "op": "ge",
+      "threshold": 0.01
+    },
+    "selected_positive_cases": 12,
+    "selected_system_clusters": 9,
+    "capped_mean_error_ratio": 1.5079537489221098,
+    "dev_ratio_ci95": [
+      0.699560231357833,
+      2.3394844699683763
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "model_disagreement_ge_0.1",
+      "kind": "threshold",
+      "feature": "model_disagreement",
+      "op": "ge",
+      "threshold": 0.1
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "model_disagreement_ge_1",
+      "kind": "threshold",
+      "feature": "model_disagreement",
+      "op": "ge",
+      "threshold": 1.0
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "training_nrmse_ge_0.0001",
+      "kind": "threshold",
+      "feature": "training_nrmse",
+      "op": "ge",
+      "threshold": 0.0001
+    },
+    "selected_positive_cases": 30,
+    "selected_system_clusters": 10,
+    "capped_mean_error_ratio": 1.4102765611329722,
+    "dev_ratio_ci95": [
+      0.627450670823749,
+      2.2200522008448753
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "training_nrmse_ge_0.001",
+      "kind": "threshold",
+      "feature": "training_nrmse",
+      "op": "ge",
+      "threshold": 0.001
+    },
+    "selected_positive_cases": 23,
+    "selected_system_clusters": 10,
+    "capped_mean_error_ratio": 1.4362951865780584,
+    "dev_ratio_ci95": [
+      0.6535133372945865,
+      2.247200619041298
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "training_nrmse_ge_0.01",
+      "kind": "threshold",
+      "feature": "training_nrmse",
+      "op": "ge",
+      "threshold": 0.01
+    },
+    "selected_positive_cases": 14,
+    "selected_system_clusters": 10,
+    "capped_mean_error_ratio": 1.5141230383900421,
+    "dev_ratio_ci95": [
+      0.7082855724160385,
+      2.340455296785986
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "training_nrmse_ge_0.05",
+      "kind": "threshold",
+      "feature": "training_nrmse",
+      "op": "ge",
+      "threshold": 0.05
+    },
+    "selected_positive_cases": 3,
+    "selected_system_clusters": 3,
+    "capped_mean_error_ratio": 0.9329962856769921,
+    "dev_ratio_ci95": [
+      0.8386214183806986,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "min_damping_ratio_le_0.005",
+      "kind": "threshold",
+      "feature": "min_damping_ratio",
+      "op": "le",
+      "threshold": 0.005
+    },
+    "selected_positive_cases": 12,
+    "selected_system_clusters": 6,
+    "capped_mean_error_ratio": 1.5489052606956462,
+    "dev_ratio_ci95": [
+      0.8612377024484512,
+      2.316306928387011
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "min_damping_ratio_le_0.01",
+      "kind": "threshold",
+      "feature": "min_damping_ratio",
+      "op": "le",
+      "threshold": 0.01
+    },
+    "selected_positive_cases": 20,
+    "selected_system_clusters": 8,
+    "capped_mean_error_ratio": 1.506163600802774,
+    "dev_ratio_ci95": [
+      0.7667793794392725,
+      2.2935940183849657
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "min_damping_ratio_le_0.025",
+      "kind": "threshold",
+      "feature": "min_damping_ratio",
+      "op": "le",
+      "threshold": 0.025
+    },
+    "selected_positive_cases": 30,
+    "selected_system_clusters": 10,
+    "capped_mean_error_ratio": 1.4102765611329722,
+    "dev_ratio_ci95": [
+      0.627450670823749,
+      2.2200522008448753
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "min_damping_ratio_le_0.05",
+      "kind": "threshold",
+      "feature": "min_damping_ratio",
+      "op": "le",
+      "threshold": 0.05
+    },
+    "selected_positive_cases": 30,
+    "selected_system_clusters": 10,
+    "capped_mean_error_ratio": 1.4102765611329722,
+    "dev_ratio_ci95": [
+      0.627450670823749,
+      2.2200522008448753
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "gap0.01_and_disagreement0.01",
+      "kind": "and",
+      "conditions": [
+        {
+          "kind": "threshold",
+          "feature": "min_relative_pole_gap",
+          "op": "le",
+          "threshold": 0.01
+        },
+        {
+          "kind": "threshold",
+          "feature": "model_disagreement",
+          "op": "ge",
+          "threshold": 0.01
+        }
+      ]
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "gap0.01_and_disagreement0.1",
+      "kind": "and",
+      "conditions": [
+        {
+          "kind": "threshold",
+          "feature": "min_relative_pole_gap",
+          "op": "le",
+          "threshold": 0.01
+        },
+        {
+          "kind": "threshold",
+          "feature": "model_disagreement",
+          "op": "ge",
+          "threshold": 0.1
+        }
+      ]
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "gap0.05_and_disagreement0.01",
+      "kind": "and",
+      "conditions": [
+        {
+          "kind": "threshold",
+          "feature": "min_relative_pole_gap",
+          "op": "le",
+          "threshold": 0.05
+        },
+        {
+          "kind": "threshold",
+          "feature": "model_disagreement",
+          "op": "ge",
+          "threshold": 0.01
+        }
+      ]
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "gap0.05_and_disagreement0.1",
+      "kind": "and",
+      "conditions": [
+        {
+          "kind": "threshold",
+          "feature": "min_relative_pole_gap",
+          "op": "le",
+          "threshold": 0.05
+        },
+        {
+          "kind": "threshold",
+          "feature": "model_disagreement",
+          "op": "ge",
+          "threshold": 0.1
+        }
+      ]
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "gap0.1_and_disagreement0.01",
+      "kind": "and",
+      "conditions": [
+        {
+          "kind": "threshold",
+          "feature": "min_relative_pole_gap",
+          "op": "le",
+          "threshold": 0.1
+        },
+        {
+          "kind": "threshold",
+          "feature": "model_disagreement",
+          "op": "ge",
+          "threshold": 0.01
+        }
+      ]
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  },
+  {
+    "rule": {
+      "id": "gap0.1_and_disagreement0.1",
+      "kind": "and",
+      "conditions": [
+        {
+          "kind": "threshold",
+          "feature": "min_relative_pole_gap",
+          "op": "le",
+          "threshold": 0.1
+        },
+        {
+          "kind": "threshold",
+          "feature": "model_disagreement",
+          "op": "ge",
+          "threshold": 0.1
+        }
+      ]
+    },
+    "selected_positive_cases": 0,
+    "selected_system_clusters": 0,
+    "capped_mean_error_ratio": 1.0,
+    "dev_ratio_ci95": [
+      1.0,
+      1.0
+    ],
+    "eligible": false
+  }
+]

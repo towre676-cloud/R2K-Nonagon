@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "counterexample": {
+    "circle_circumference": 3,
+    "nominal_intensity": 1,
+    "interval_length": "1/2",
+    "construction": "four sites spaced 3/4, independent jitter in [-1/16,1/16], common uniform rotation; occupancy laws differ only in fourth-order interaction",
+    "identical_factorial_moment_measures_through_order": 3,
+    "results": [
+      {
+        "law": "independent_occupancy",
+        "mean_anchor_variance": "11/48",
+        "sampling_variance_of_anchor_variance": "11/13824",
+        "factorial_order_second_moment_terms": [
+          "25/432",
+          "7/192",
+          "-3/64",
+          "3/512"
+        ]
+      },
+      {
+        "law": "fourth_order_perturbation",
+        "mean_anchor_variance": "11/48",
+        "sampling_variance_of_anchor_variance": "1/1152",
+        "factorial_order_second_moment_terms": [
+          "25/432",
+          "7/192",
+          "-3/64",
+          "41/6912"
+        ]
+      }
+    ],
+    "variance_difference": "1/13824"
+  },
+  "random_correlated_laws_covariance_checks": 20,
+  "scope": "general impossibility of deducing estimator sampling variance from only first/second/third-order correlations; not a claim that zeta zeros follow either example"
+}

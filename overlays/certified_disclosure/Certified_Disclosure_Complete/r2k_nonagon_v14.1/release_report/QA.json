@@ -1,0 +1,23 @@
+{
+  "status": "PASSED",
+  "pdf": "/workspace/scratch/78a48cc5fade/output/Nonagon_Integrated_Release.pdf",
+  "pages": 6,
+  "words": 1927,
+  "bytes": 150816,
+  "sha256": "c95410dcbf6fe6fefea543528d42a4dcc7616a6aced444fdd2a87e786139f740",
+  "visual_review": "All six final rendered pages inspected. No clipping, overlap, missing glyphs or orphan pages.",
+  "source_receipts": {
+    "part_IX/load_planning/results/benchmark_receipt.json": "7b8a7ae2dd94d901dd88f27c284a692076ceb4eec787f0903c959c3ad354c2d2",
+    "part_IX/dynamic_acquisition/dynamic_receipt.json": "7c35bf7768f9aeb041dae3a6ecde0b7b4d0645540b3eb6b8840c7c4eea62df84",
+    "cross_checks/integration_receipt.json": "43971fc6e2fdc801d13282e20abc31b9daeb9c7f84e772129b8c26236461efc0",
+    "cross_checks/relocation_receipt.json": "0e9cb72c3aa0b1414d46a8f9f2b5782dc96724948498e862440d7d2315e79816"
+  },
+  "facts_checks": "Fresh planner counts and dynamic scope/radius match final receipts.",
+  "integrated_replay": {
+    "status": "PASSED",
+    "stages": 16,
+    "seconds": 100.731,
+    "location": "Actual ZIP extraction; path with spaces; invoked from /tmp"
+  },
+  "pdf_sha256_confirmed_after_replay": true
+}

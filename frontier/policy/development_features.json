@@ -1,0 +1,762 @@
+[
+  {
+    "case_id": "ordinary-000-eta0",
+    "cluster": "ordinary-000",
+    "noise": 0.0,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.24867970907236717,
+      "residue_ratio": 0.12556593056919352,
+      "model_disagreement": 4.484376727975432e-14,
+      "min_damping_ratio": 0.006804135180728694,
+      "training_nrmse": 2.238578541286203e-15
+    },
+    "pilot_observation_sha256": "ec903e00bcf2c837f9fb4782db6df39dbba4dfbff52520e7cab0ada1f0f9855f",
+    "outcomes": {
+      "log_uniform": 5.4871059726687877e-14,
+      "adaptive_disagreement": 3.772271487106975e-14
+    }
+  },
+  {
+    "case_id": "ordinary-000-eta0.001",
+    "cluster": "ordinary-000",
+    "noise": 0.001,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.24911273009656623,
+      "residue_ratio": 0.12693289584664022,
+      "model_disagreement": 9.136262483599807e-07,
+      "min_damping_ratio": 0.006766773621052658,
+      "training_nrmse": 0.0006381536828592534
+    },
+    "pilot_observation_sha256": "df87ec9f91b0b35a53d4b9b0b18c8d879e7069443bad6920804c647d065b0639",
+    "outcomes": {
+      "log_uniform": 0.0011685971111459845,
+      "adaptive_disagreement": 0.0010184812378290096
+    }
+  },
+  {
+    "case_id": "ordinary-000-eta0.01",
+    "cluster": "ordinary-000",
+    "noise": 0.01,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.2855398498661684,
+      "residue_ratio": 0.00015695243128980487,
+      "model_disagreement": 5.0706245053806205e-05,
+      "min_damping_ratio": 0.006638062713457436,
+      "training_nrmse": 0.0240513993571376
+    },
+    "pilot_observation_sha256": "ea5193461d316327db9ba8e07fd27b4710859b091ed890983786493ceafd9707",
+    "outcomes": {
+      "log_uniform": 0.018663276741232356,
+      "adaptive_disagreement": 0.01799671030208578
+    }
+  },
+  {
+    "case_id": "ordinary-000-eta0.05",
+    "cluster": "ordinary-000",
+    "noise": 0.05,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.28262480361005166,
+      "residue_ratio": 0.0010441934039933211,
+      "model_disagreement": 9.91836997562545e-06,
+      "min_damping_ratio": 0.0051799011667777554,
+      "training_nrmse": 0.038773357693276694
+    },
+    "pilot_observation_sha256": "b2cfa8047376b45d4b87588ad879e3106174c8fbfb16282d8ce428651b119734",
+    "outcomes": {
+      "log_uniform": 0.05777084756639596,
+      "adaptive_disagreement": 0.05245654249268538
+    }
+  },
+  {
+    "case_id": "ordinary-001-eta0",
+    "cluster": "ordinary-001",
+    "noise": 0.0,
+    "order": 10,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.11430596732500348,
+      "residue_ratio": 0.013680798835659822,
+      "model_disagreement": 6.213174137827839e-15,
+      "min_damping_ratio": 0.009404633446549378,
+      "training_nrmse": 2.4185424484469273e-15
+    },
+    "pilot_observation_sha256": "866dbedffbcf984a062b0faecba5064be5479cafc0d00939be82f5eb96f88279",
+    "outcomes": {
+      "log_uniform": 2.8721111869426044e-14,
+      "adaptive_disagreement": 3.883388541779216e-14
+    }
+  },
+  {
+    "case_id": "ordinary-001-eta0.001",
+    "cluster": "ordinary-001",
+    "noise": 0.001,
+    "order": 10,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.3923662208844303,
+      "residue_ratio": 5.425666326853945e-06,
+      "model_disagreement": 0.0002696727169411533,
+      "min_damping_ratio": 0.009403005883176921,
+      "training_nrmse": 0.0016485634154097177
+    },
+    "pilot_observation_sha256": "cf87682beceb10f28d577c9296de9a3898ae8300e4e9d3c4c501fb3651e49067",
+    "outcomes": {
+      "log_uniform": 0.002973320996385938,
+      "adaptive_disagreement": 0.002736636494872682
+    }
+  },
+  {
+    "case_id": "ordinary-001-eta0.01",
+    "cluster": "ordinary-001",
+    "noise": 0.01,
+    "order": 10,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.40619731116938046,
+      "residue_ratio": 0.00012377050911964544,
+      "model_disagreement": 0.004918091766580078,
+      "min_damping_ratio": 0.009617115031203497,
+      "training_nrmse": 0.01683987864717381
+    },
+    "pilot_observation_sha256": "d12fe1b31bfc8768ae366e5edd96de4c4f3a56d0aa3c4db7083eb2802e30ed91",
+    "outcomes": {
+      "log_uniform": 0.023609831636683554,
+      "adaptive_disagreement": 0.018084832075649697
+    }
+  },
+  {
+    "case_id": "ordinary-001-eta0.05",
+    "cluster": "ordinary-001",
+    "noise": 0.05,
+    "order": 10,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.4083675566893819,
+      "residue_ratio": 0.00024317043749791695,
+      "model_disagreement": 0.027614074908831797,
+      "min_damping_ratio": 0.002360723608388404,
+      "training_nrmse": 0.029809155257235192
+    },
+    "pilot_observation_sha256": "7ee375d30a171764daffe585ce14957bd7660b7b5d5251ceca36a1ead8ae6c47",
+    "outcomes": {
+      "log_uniform": 0.09458145898149664,
+      "adaptive_disagreement": 0.03498324862064443
+    }
+  },
+  {
+    "case_id": "colored_noise-000-eta0",
+    "cluster": "colored_noise-000",
+    "noise": 0.0,
+    "order": 6,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.2659391113834746,
+      "residue_ratio": 0.5485900615102204,
+      "model_disagreement": 6.365004033394027e-15,
+      "min_damping_ratio": 0.015892758392792604,
+      "training_nrmse": 4.119099851000362e-15
+    },
+    "pilot_observation_sha256": "102a6f96bacb10741ce9587b41ab8a6177179b9bcfa7be5915ba1955fd0753b2",
+    "outcomes": {
+      "log_uniform": 1.205915717058419e-14,
+      "adaptive_disagreement": 1.1612387566968559e-14
+    }
+  },
+  {
+    "case_id": "colored_noise-000-eta0.001",
+    "cluster": "colored_noise-000",
+    "noise": 0.001,
+    "order": 6,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.2660504717620612,
+      "residue_ratio": 0.5490055680767673,
+      "model_disagreement": 1.3834506668019865e-07,
+      "min_damping_ratio": 0.01592788262901544,
+      "training_nrmse": 0.0004663836176045237
+    },
+    "pilot_observation_sha256": "532c22c67b43c216a01dd84ed0b8e9e6089e0bed79f3916cfb8ee637d1d222ec",
+    "outcomes": {
+      "log_uniform": 0.002788105210842898,
+      "adaptive_disagreement": 0.0009321755937814315
+    }
+  },
+  {
+    "case_id": "colored_noise-000-eta0.01",
+    "cluster": "colored_noise-000",
+    "noise": 0.01,
+    "order": 6,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.26703947537601397,
+      "residue_ratio": 0.5526302327606933,
+      "model_disagreement": 4.38022542842131e-06,
+      "min_damping_ratio": 0.01623219202419556,
+      "training_nrmse": 0.004627083870013787
+    },
+    "pilot_observation_sha256": "d90f5e10664623b2e7fabf3910cdc71965ae4dd7b6bde4b5c68c3c58e7a7d681",
+    "outcomes": {
+      "log_uniform": 0.02721109908762506,
+      "adaptive_disagreement": 0.008295515761649178
+    }
+  },
+  {
+    "case_id": "colored_noise-000-eta0.05",
+    "cluster": "colored_noise-000",
+    "noise": 0.05,
+    "order": 6,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.710185993541215,
+      "residue_ratio": 0.0017404462336987829,
+      "model_disagreement": 0.08825717912616872,
+      "min_damping_ratio": 0.01593775272481047,
+      "training_nrmse": 0.1059602662666703
+    },
+    "pilot_observation_sha256": "48270249881c5c04ba72c7ee6c4ec086f72f7d8fbd74d55cebd144df7f99394b",
+    "outcomes": {
+      "log_uniform": 0.13906042195537405,
+      "adaptive_disagreement": 0.08863689520213731
+    }
+  },
+  {
+    "case_id": "colored_noise-001-eta0",
+    "cluster": "colored_noise-001",
+    "noise": 0.0,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.20668640052387705,
+      "residue_ratio": 0.46617404438320553,
+      "model_disagreement": 2.685742132044669e-14,
+      "min_damping_ratio": 0.01016612134709275,
+      "training_nrmse": 1.8013871815871597e-15
+    },
+    "pilot_observation_sha256": "b6ffe017945b1ad3644be09d0871057554d64dc738bd8d610685aacabb9b05bd",
+    "outcomes": {
+      "log_uniform": 2.2983756781624955e-14,
+      "adaptive_disagreement": 1.408656762404194e-14
+    }
+  },
+  {
+    "case_id": "colored_noise-001-eta0.001",
+    "cluster": "colored_noise-001",
+    "noise": 0.001,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.20667504271973508,
+      "residue_ratio": 0.4663352791809822,
+      "model_disagreement": 2.6864970346829134e-14,
+      "min_damping_ratio": 0.010170257128664815,
+      "training_nrmse": 0.0004727707393605098
+    },
+    "pilot_observation_sha256": "778ef0514752d68297b3f10b049b144cec4e6172deb3bbd2bfdd00b57117f494",
+    "outcomes": {
+      "log_uniform": 0.0014556711813136797,
+      "adaptive_disagreement": 0.00023940854776867749
+    }
+  },
+  {
+    "case_id": "colored_noise-001-eta0.01",
+    "cluster": "colored_noise-001",
+    "noise": 0.01,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.20652911342703437,
+      "residue_ratio": 0.4677411047243603,
+      "model_disagreement": 0.08938014444070203,
+      "min_damping_ratio": 0.010203464981283654,
+      "training_nrmse": 0.004723547647959145
+    },
+    "pilot_observation_sha256": "b23338a2799c6399195ffeb1f9795f74476fe0f64c0e12dc7cea1851cb1e7785",
+    "outcomes": {
+      "log_uniform": 0.014442924564339056,
+      "adaptive_disagreement": 0.0027082825340832757
+    }
+  },
+  {
+    "case_id": "colored_noise-001-eta0.05",
+    "cluster": "colored_noise-001",
+    "noise": 0.05,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.4346934487755714,
+      "residue_ratio": 0.0010774569545994122,
+      "model_disagreement": 0.011084256556304045,
+      "min_damping_ratio": 0.010914252936851946,
+      "training_nrmse": 0.08456663044190182
+    },
+    "pilot_observation_sha256": "ae5464f47c98bf1418b8e7558c3f6864da6d018ca54c35c270797ac4ab4ec73e",
+    "outcomes": {
+      "log_uniform": 0.11953459477164012,
+      "adaptive_disagreement": 0.08097643953332415
+    }
+  },
+  {
+    "case_id": "weak_link-000-eta0",
+    "cluster": "weak_link-000",
+    "noise": 0.0,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.15945691049933503,
+      "residue_ratio": 0.0003027241028056499,
+      "model_disagreement": 1.2329340237556317e-14,
+      "min_damping_ratio": 0.004283449244205272,
+      "training_nrmse": 2.3097008762694108e-15
+    },
+    "pilot_observation_sha256": "7b0e62bff554aa5f6e076ef6e1b603a32cc600d1f2bae08b3e766a739d13851c",
+    "outcomes": {
+      "log_uniform": 3.471483244496432e-14,
+      "adaptive_disagreement": 2.0530467815837828e-14
+    }
+  },
+  {
+    "case_id": "weak_link-000-eta0.001",
+    "cluster": "weak_link-000",
+    "noise": 0.001,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.564268339437697,
+      "residue_ratio": 1.1282046128167695e-05,
+      "model_disagreement": 0.000390099487812382,
+      "min_damping_ratio": 0.0036497263079495264,
+      "training_nrmse": 0.0006112823623388812
+    },
+    "pilot_observation_sha256": "097c127417500a4a1297c70cd7d769b869558b65bb8b3f6cfa3a19f441246959",
+    "outcomes": {
+      "log_uniform": 0.0009233769466902235,
+      "adaptive_disagreement": 0.000958404738385408
+    }
+  },
+  {
+    "case_id": "weak_link-000-eta0.01",
+    "cluster": "weak_link-000",
+    "noise": 0.01,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.5641577225412079,
+      "residue_ratio": 0.00010846108703877506,
+      "model_disagreement": 0.01279654420796382,
+      "min_damping_ratio": 0.0020415480475733175,
+      "training_nrmse": 0.006144923129512223
+    },
+    "pilot_observation_sha256": "07cffdb53ea7ac60995c21fc046b5facfca86e82ecb12aab786b0af24f24703f",
+    "outcomes": {
+      "log_uniform": 0.00906407369101001,
+      "adaptive_disagreement": 0.009499932801255337
+    }
+  },
+  {
+    "case_id": "weak_link-000-eta0.05",
+    "cluster": "weak_link-000",
+    "noise": 0.05,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.2880592017962804,
+      "residue_ratio": 0.000695969130042714,
+      "model_disagreement": 0.02769782984004636,
+      "min_damping_ratio": 0.023000755939588724,
+      "training_nrmse": 0.03616004325469016
+    },
+    "pilot_observation_sha256": "58c8ac02e727cb8a34a25c9f7fed7853333b99b2c9aab3005d07824f63c5e94e",
+    "outcomes": {
+      "log_uniform": 0.04803764029802252,
+      "adaptive_disagreement": 0.025280905532274918
+    }
+  },
+  {
+    "case_id": "weak_link-001-eta0",
+    "cluster": "weak_link-001",
+    "noise": 0.0,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.27689885249815704,
+      "residue_ratio": 0.00010640050495207024,
+      "model_disagreement": 1.0231333757499113e-14,
+      "min_damping_ratio": 0.004353094668352436,
+      "training_nrmse": 8.395861731419918e-16
+    },
+    "pilot_observation_sha256": "742e6143d2667cf38c46d35a5da8351aa1fc159b41d79b9371d72869de3ca24d",
+    "outcomes": {
+      "log_uniform": 4.015622364325508e-14,
+      "adaptive_disagreement": 4.402764652265998e-14
+    }
+  },
+  {
+    "case_id": "weak_link-001-eta0.001",
+    "cluster": "weak_link-001",
+    "noise": 0.001,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.6222695410426362,
+      "residue_ratio": 4.369742419408847e-06,
+      "model_disagreement": 0.00027623375910988554,
+      "min_damping_ratio": 0.004312484934032447,
+      "training_nrmse": 0.0005126269779329435
+    },
+    "pilot_observation_sha256": "9cca620a5883b285fc0c8c8e7417b59292d5c63b31142ee334a15e0bf8d96b40",
+    "outcomes": {
+      "log_uniform": 0.0008580121180460585,
+      "adaptive_disagreement": 0.0005689967217989199
+    }
+  },
+  {
+    "case_id": "weak_link-001-eta0.01",
+    "cluster": "weak_link-001",
+    "noise": 0.01,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.6221688624009976,
+      "residue_ratio": 4.083998665945042e-05,
+      "model_disagreement": 0.0027093515367384398,
+      "min_damping_ratio": 0.003964365020206504,
+      "training_nrmse": 0.005020863241541354
+    },
+    "pilot_observation_sha256": "b9560c4af3718cf65c5c478855743a5770440faa5114fb1b6c0dde63496675df",
+    "outcomes": {
+      "log_uniform": 0.008550162280663132,
+      "adaptive_disagreement": 0.0052346920934000715
+    }
+  },
+  {
+    "case_id": "weak_link-001-eta0.05",
+    "cluster": "weak_link-001",
+    "noise": 0.05,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.6217453933505679,
+      "residue_ratio": 0.0002192854426165444,
+      "model_disagreement": 0.020062719242221527,
+      "min_damping_ratio": 0.002635784843974049,
+      "training_nrmse": 0.02485199400384908
+    },
+    "pilot_observation_sha256": "4221270e4e3b8d598981f1694a7da729864b1700e8a1f5a9749d20d4f39cd767",
+    "outcomes": {
+      "log_uniform": 0.04254551219154882,
+      "adaptive_disagreement": 0.45116561837232827
+    }
+  },
+  {
+    "case_id": "near_collision-000-eta0",
+    "cluster": "near_collision-000",
+    "noise": 0.0,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.00042332445525011467,
+      "residue_ratio": 0.04421262551886538,
+      "model_disagreement": 2.5586036505960383e-12,
+      "min_damping_ratio": 0.0032263091659937315,
+      "training_nrmse": 6.561606075057084e-16
+    },
+    "pilot_observation_sha256": "604ebb2d58279fedd8546c8c3b3ebd8c555ab574795c4813460c1e245d4a0a4e",
+    "outcomes": {
+      "log_uniform": 4.603595755846544e-12,
+      "adaptive_disagreement": 1.3646142450007572e-14
+    }
+  },
+  {
+    "case_id": "near_collision-000-eta0.001",
+    "cluster": "near_collision-000",
+    "noise": 0.001,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.3541183227760996,
+      "residue_ratio": 6.0751125505510115e-06,
+      "model_disagreement": 0.0004655283404591158,
+      "min_damping_ratio": 0.003231055795030262,
+      "training_nrmse": 0.0004024044142149904
+    },
+    "pilot_observation_sha256": "bcf9b7621dce360459f8120dfd5a3b7e7c11b31973e1721169749cc842cd6eb7",
+    "outcomes": {
+      "log_uniform": 0.02065541856693505,
+      "adaptive_disagreement": 0.0010049030016094555
+    }
+  },
+  {
+    "case_id": "near_collision-000-eta0.01",
+    "cluster": "near_collision-000",
+    "noise": 0.01,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.35449662332079124,
+      "residue_ratio": 5.969759751814722e-05,
+      "model_disagreement": 0.0047292672883376165,
+      "min_damping_ratio": 0.003187019774180402,
+      "training_nrmse": 0.003944197298857369
+    },
+    "pilot_observation_sha256": "8f113d97de27e483ef3cfda39c48ae1afde5a5d2a4aac5d4788b2f47b50e8ec2",
+    "outcomes": {
+      "log_uniform": 0.0808597880850374,
+      "adaptive_disagreement": 0.010752476700960894
+    }
+  },
+  {
+    "case_id": "near_collision-000-eta0.05",
+    "cluster": "near_collision-000",
+    "noise": 0.05,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.3544927796711711,
+      "residue_ratio": 0.0002954451752536877,
+      "model_disagreement": 0.02287855746782918,
+      "min_damping_ratio": 0.002985019474547616,
+      "training_nrmse": 0.019096241833912928
+    },
+    "pilot_observation_sha256": "c8f00770e30e2422c37e7d64caecbe5fc7c15a8bc20ae46027e180e838e55923",
+    "outcomes": {
+      "log_uniform": 0.3415662620871858,
+      "adaptive_disagreement": 1.3791122206694957
+    }
+  },
+  {
+    "case_id": "near_collision-001-eta0",
+    "cluster": "near_collision-001",
+    "noise": 0.0,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.000475367332708928,
+      "residue_ratio": 0.08706310587214612,
+      "model_disagreement": 2.513816037886471e-12,
+      "min_damping_ratio": 0.003931097757967642,
+      "training_nrmse": 2.540062326358147e-16
+    },
+    "pilot_observation_sha256": "05f3967d621ab2501a95f0f1ff7475c8c311e5cafe1a25310024efd408a68fe2",
+    "outcomes": {
+      "log_uniform": 7.565908707777071e-14,
+      "adaptive_disagreement": 2.173322186314144e-14
+    }
+  },
+  {
+    "case_id": "near_collision-001-eta0.001",
+    "cluster": "near_collision-001",
+    "noise": 0.001,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.30969103553055627,
+      "residue_ratio": 5.807191254411676e-06,
+      "model_disagreement": 0.000597241498962444,
+      "min_damping_ratio": 0.003975808242676902,
+      "training_nrmse": 0.000513885546857615
+    },
+    "pilot_observation_sha256": "f6cc0fbdab51dbb5b29839ecab6a904d4abd30f084bbec1725386b3dada30433",
+    "outcomes": {
+      "log_uniform": 0.018840651673284373,
+      "adaptive_disagreement": 0.0009211813386123814
+    }
+  },
+  {
+    "case_id": "near_collision-001-eta0.01",
+    "cluster": "near_collision-001",
+    "noise": 0.01,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.3258048670829708,
+      "residue_ratio": 4.292368204761913e-05,
+      "model_disagreement": 0.0050971339537395745,
+      "min_damping_ratio": 0.004290448421027798,
+      "training_nrmse": 0.0050542695227600186
+    },
+    "pilot_observation_sha256": "128bcfe95fbf54a98e884b041ab1f1ad3aa431a708913c16afbcddd095e96d28",
+    "outcomes": {
+      "log_uniform": 0.027632570981960012,
+      "adaptive_disagreement": 0.013647535564554987
+    }
+  },
+  {
+    "case_id": "near_collision-001-eta0.05",
+    "cluster": "near_collision-001",
+    "noise": 0.05,
+    "order": 8,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.32568089061910205,
+      "residue_ratio": 0.00020809985788007297,
+      "model_disagreement": 0.018810160623326966,
+      "min_damping_ratio": 0.005625708203314534,
+      "training_nrmse": 0.024669677616441545
+    },
+    "pilot_observation_sha256": "c25db855c7cd586566b4d928bb0d88add2dcdbc46800eef832bc0882bf2198d6",
+    "outcomes": {
+      "log_uniform": 0.14531413154720574,
+      "adaptive_disagreement": 0.07660543569405903
+    }
+  },
+  {
+    "case_id": "model_mismatch-000-eta0",
+    "cluster": "model_mismatch-000",
+    "noise": 0.0,
+    "order": 6,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.2334537992212543,
+      "residue_ratio": 0.47206535627594726,
+      "model_disagreement": 2.3511366110716385e-05,
+      "min_damping_ratio": 0.01725719478105182,
+      "training_nrmse": 0.008008659515559347
+    },
+    "pilot_observation_sha256": "ad68acea5f3bc9529db7c1a9cac9214cf7986cb0504d85298dcc030198577b11",
+    "outcomes": {
+      "log_uniform": 0.005425136734117396,
+      "adaptive_disagreement": 0.0055353668891590735
+    }
+  },
+  {
+    "case_id": "model_mismatch-000-eta0.001",
+    "cluster": "model_mismatch-000",
+    "noise": 0.001,
+    "order": 6,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.2336294598643024,
+      "residue_ratio": 0.4718587310743537,
+      "model_disagreement": 1.94229141090233e-05,
+      "min_damping_ratio": 0.01723771077131393,
+      "training_nrmse": 0.008002411528811664
+    },
+    "pilot_observation_sha256": "f4b45d5a69c66d0bea7cde775f286f679c1df1cffbbcaaebcb48a24c091c114a",
+    "outcomes": {
+      "log_uniform": 0.005675628612698352,
+      "adaptive_disagreement": 0.00556089686481628
+    }
+  },
+  {
+    "case_id": "model_mismatch-000-eta0.01",
+    "cluster": "model_mismatch-000",
+    "noise": 0.01,
+    "order": 6,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.23481141085195653,
+      "residue_ratio": 0.46961848352021823,
+      "model_disagreement": 0.0879675559447562,
+      "min_damping_ratio": 0.017064446385814544,
+      "training_nrmse": 0.00977982740717018
+    },
+    "pilot_observation_sha256": "4223ac168be461c49a3844e1dd4541ad0532943875f7ca3de36cb16238172d04",
+    "outcomes": {
+      "log_uniform": 0.013597919885573358,
+      "adaptive_disagreement": 0.008792399821049977
+    }
+  },
+  {
+    "case_id": "model_mismatch-000-eta0.05",
+    "cluster": "model_mismatch-000",
+    "noise": 0.05,
+    "order": 6,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.6509731617744885,
+      "residue_ratio": 0.0004695673251503206,
+      "model_disagreement": 0.017277627252761447,
+      "min_damping_ratio": 0.003598471583909917,
+      "training_nrmse": 0.08349945650171407
+    },
+    "pilot_observation_sha256": "03f14ec254c3cac8936b2207734e8084bcee402917b5add10759d34953d3e4cd",
+    "outcomes": {
+      "log_uniform": 0.09762053264493803,
+      "adaptive_disagreement": 0.08089896240049105
+    }
+  },
+  {
+    "case_id": "model_mismatch-001-eta0",
+    "cluster": "model_mismatch-001",
+    "noise": 0.0,
+    "order": 6,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.24044327127768095,
+      "residue_ratio": 0.13454905735225203,
+      "model_disagreement": 0.1097017089807317,
+      "min_damping_ratio": 0.009629471684468168,
+      "training_nrmse": 0.020328789048069888
+    },
+    "pilot_observation_sha256": "254e9f0dba514c79e50d8b33826c02ba4439bbe7a1a0a29a900e3c5cbcba2033",
+    "outcomes": {
+      "log_uniform": 0.05827462821178955,
+      "adaptive_disagreement": 0.05722893692495383
+    }
+  },
+  {
+    "case_id": "model_mismatch-001-eta0.001",
+    "cluster": "model_mismatch-001",
+    "noise": 0.001,
+    "order": 6,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.24047405960237114,
+      "residue_ratio": 0.13453285526044634,
+      "model_disagreement": 0.0001471250276996863,
+      "min_damping_ratio": 0.009629279082558704,
+      "training_nrmse": 0.02034986482155436
+    },
+    "pilot_observation_sha256": "ecaf0c194c025bb9f2d4716e8313c342f6915718d07184c58347beaf846bcc35",
+    "outcomes": {
+      "log_uniform": 0.058074515440131376,
+      "adaptive_disagreement": 0.06409630914771221
+    }
+  },
+  {
+    "case_id": "model_mismatch-001-eta0.01",
+    "cluster": "model_mismatch-001",
+    "noise": 0.01,
+    "order": 6,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.24057548402774243,
+      "residue_ratio": 0.1344566437415171,
+      "model_disagreement": 0.0345275764180129,
+      "min_damping_ratio": 0.00962776187711448,
+      "training_nrmse": 0.020612491090519266
+    },
+    "pilot_observation_sha256": "e46ae62c9b5af4a4c8c696a653d6cf77cf8439cf18aba650ebc7a289b6cfeb72",
+    "outcomes": {
+      "log_uniform": 0.05726735212159787,
+      "adaptive_disagreement": 0.06441883606011267
+    }
+  },
+  {
+    "case_id": "model_mismatch-001-eta0.05",
+    "cluster": "model_mismatch-001",
+    "noise": 0.05,
+    "order": 6,
+    "features": {
+      "valid": true,
+      "min_relative_pole_gap": 0.5424833848499422,
+      "residue_ratio": 0.001938111633753258,
+      "model_disagreement": 0.0004900106276339109,
+      "min_damping_ratio": 0.01022021061093884,
+      "training_nrmse": 0.031655989668743945
+    },
+    "pilot_observation_sha256": "a965d2bbc85c19064a7b19530a088cc050edffd8b3d2d33414d647f15ff9c4cb",
+    "outcomes": {
+      "log_uniform": 0.0972293252053738,
+      "adaptive_disagreement": 0.09634160423013302
+    }
+  }
+]

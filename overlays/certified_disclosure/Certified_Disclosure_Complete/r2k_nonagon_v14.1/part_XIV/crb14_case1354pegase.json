@@ -1,0 +1,85 @@
+{
+ "case": "case1354pegase",
+ "theta": 33.22129208600455,
+ "hw_buses": 1341,
+ "schemes": {
+  "lean": {
+   "readings": 5240,
+   "unknowns": 1710,
+   "median_k": 374.5179065445675,
+   "p90_k": 3400.4988543983777,
+   "unresolved_branches": 0,
+   "sigma_for_1pct_median": 2.6700992997273426e-05,
+   "frac_1pct_at_1e-3": 0.002346041055718475,
+   "frac_1pct_at_1e-4": 0.175366568914956,
+   "frac_1pct_at_1e-6": 0.9695014662756598,
+   "eig_ratio": 4.195131387001086e-13,
+   "seconds": 2.4285809993743896
+  },
+  "ports5": {
+   "readings": 20310,
+   "unknowns": 1710,
+   "median_k": 334.03169023881026,
+   "p90_k": 13344.463419987605,
+   "unresolved_branches": 139,
+   "sigma_for_1pct_median": 2.9937279282844902e-05,
+   "frac_1pct_at_1e-3": 0.0035190615835777126,
+   "frac_1pct_at_1e-4": 0.21055718475073315,
+   "frac_1pct_at_1e-6": 0.8926686217008798,
+   "eig_ratio": -6.020268244437555e-22,
+   "seconds": 34.29969906806946
+  },
+  "ports10": {
+   "readings": 74470,
+   "unknowns": 1710,
+   "median_k": 113.64576899802158,
+   "p90_k": 2754.335383160099,
+   "unresolved_branches": 118,
+   "sigma_for_1pct_median": 8.799271709071798e-05,
+   "frac_1pct_at_1e-3": 0.013489736070381233,
+   "frac_1pct_at_1e-4": 0.46392961876832844,
+   "frac_1pct_at_1e-6": 0.9219941348973607,
+   "eig_ratio": -8.796064932919869e-22,
+   "seconds": 38.96142864227295
+  },
+  "ports20": {
+   "readings": 284340,
+   "unknowns": 1710,
+   "median_k": 53.418281750596606,
+   "p90_k": 711.131881390159,
+   "unresolved_branches": 100,
+   "sigma_for_1pct_median": 0.00018720182814357025,
+   "frac_1pct_at_1e-3": 0.06979472140762463,
+   "frac_1pct_at_1e-4": 0.6656891495601173,
+   "frac_1pct_at_1e-6": 0.9384164222873901,
+   "eig_ratio": -6.794842267208118e-21,
+   "seconds": 64.49963617324829
+  },
+  "hw10": {
+   "readings": 73810,
+   "unknowns": 1710,
+   "median_k": 115.4109753644787,
+   "p90_k": 4124.666145274385,
+   "unresolved_branches": 132,
+   "sigma_for_1pct_median": 8.66468719150762e-05,
+   "frac_1pct_at_1e-3": 0.013489736070381233,
+   "frac_1pct_at_1e-4": 0.4574780058651026,
+   "frac_1pct_at_1e-6": 0.9137829912023461,
+   "eig_ratio": -8.549162590250308e-22,
+   "seconds": 38.50965857505798
+  },
+  "hw20": {
+   "readings": 281820,
+   "unknowns": 1710,
+   "median_k": 54.00106720716565,
+   "p90_k": 844.643946224587,
+   "unresolved_branches": 114,
+   "sigma_for_1pct_median": 0.00018518152542498371,
+   "frac_1pct_at_1e-3": 0.0686217008797654,
+   "frac_1pct_at_1e-4": 0.6592375366568914,
+   "frac_1pct_at_1e-6": 0.9302052785923753,
+   "eig_ratio": -4.1503251944556626e-20,
+   "seconds": 88.48645377159119
+  }
+ }
+}

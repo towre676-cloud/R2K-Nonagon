@@ -1,0 +1,30 @@
+{
+  "count": 1,
+  "mu0": "[1.0000 +/- 4.21e-5]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+    "[1.0000 +/- 4.21e-5]"
+  ],
+  "inertia": [
+    1,
+    0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "mode": "full",
+  "segments_checked": 150,
+  "segments_recomputed": 150,
+  "contract": {
+    "certificate_sha256": "1bb82fcbf4970ced3b6446fc9f6e8d955c14c5eb0580f45bac32c2356d061d3f",
+    "verifier_sha256": "803f39523636102ed4f3972c0c31800b4663068852b89e08c86c7045c8ead6d2",
+    "algorithm": "independent-segment-replay/1"
+  },
+  "elapsed_seconds": 931.9955494403839,
+  "scope": {
+    "lo": "0x1.d1a94a2001000p+39",
+    "hi": "0x1.d1a94a2002000p+39",
+    "b": "0x1.ccccccccccccdp-2"
+  },
+  "function": "xi"
+}

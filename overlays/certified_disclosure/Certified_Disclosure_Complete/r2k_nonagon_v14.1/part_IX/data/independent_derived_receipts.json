@@ -1,0 +1,102 @@
+{
+  "format": "nonagon-independent-derived-receipts/1",
+  "optimized_python": true,
+  "status": "CERTIFIED",
+  "accepted": 3,
+  "total": 3,
+  "checks": 1139,
+  "results": [
+    {
+      "file": "fault_localization.json",
+      "status": "CERTIFIED",
+      "valid": true,
+      "checks": 631,
+      "changed_edges": 1,
+      "changed_grounding": 0,
+      "scope": "Exact labeled coefficient changes between two independently certified static reconstructions; this does not infer a unique microscopic damage mechanism."
+    },
+    {
+      "file": "inverse_design.json",
+      "status": "CERTIFIED",
+      "valid": true,
+      "checks": 319,
+      "added_grounding_stiffness": "9/4",
+      "target_response": "19/72",
+      "scope": "Exact finite nonnegative local grounding change and its static target response, using an independently certified source reconstruction."
+    },
+    {
+      "file": "damped_twins.json",
+      "status": "CERTIFIED",
+      "valid": true,
+      "checks": 189,
+      "laplace_samples": 5,
+      "scope": "Exact orthogonal similarity proves equality of the original rational driving-point response away from pencil poles. The same physical local grounding update separates all retained real-Laplace samples."
+    }
+  ],
+  "rejected_alterations": 9,
+  "controls": [
+    {
+      "alteration": "design-load",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 316,
+      "reason": "rank-one inverse-design response identity"
+    },
+    {
+      "alteration": "design-target",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 312,
+      "reason": "design target must have a finite nonnegative-load solution"
+    },
+    {
+      "alteration": "design-vector",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 318,
+      "reason": "independent design force/displacement solve"
+    },
+    {
+      "alteration": "fault-difference",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 626,
+      "reason": "diagnosed interconnection changes"
+    },
+    {
+      "alteration": "fault-kind",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 626,
+      "reason": "diagnosed interconnection changes"
+    },
+    {
+      "alteration": "planted-change",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 631,
+      "reason": "planted weakening experiment matches reconstructed coefficient changes"
+    },
+    {
+      "alteration": "damped-matrix",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 36,
+      "reason": "exact damper similarity"
+    },
+    {
+      "alteration": "damped-sample",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 162,
+      "reason": "unperturbed Laplace sample agrees exactly"
+    },
+    {
+      "alteration": "similarity-label",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 37,
+      "reason": "similarity metadata agrees with exact identities"
+    }
+  ]
+}

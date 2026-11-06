@@ -1,0 +1,11 @@
+{
+ "case": "case300",
+ "negative_merged_branches_upper_bound": 1,
+ "binary64_negative_pivots": 1,
+ "witness_columns": 1,
+ "gram_negative_definite_by_exact_dominance": true,
+ "negative_index_exact": 1,
+ "max_offdiag_ratio": 0.0,
+ "seconds": 0.021536827087402344,
+ "seconds_gram": 0.0003752708435058594
+}

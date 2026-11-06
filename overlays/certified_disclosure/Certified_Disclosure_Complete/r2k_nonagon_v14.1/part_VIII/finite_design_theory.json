@@ -1,0 +1,10 @@
+{
+  "status": "PASSED",
+  "predicates": 958,
+  "exact_differential_fixtures": 45,
+  "midpoint_control_loads": 360,
+  "gaussian_optimum_u": 0.9720604037152811,
+  "bounded_optimum_u": "1",
+  "bounded_factor": "16",
+  "scope": "First-order exact-load single-node extraction; bounded midpoint controls corroborate the separate mathematical proof."
+}

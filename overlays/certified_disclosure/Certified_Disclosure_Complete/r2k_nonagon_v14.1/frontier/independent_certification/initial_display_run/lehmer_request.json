@@ -1,0 +1,19 @@
+{
+  "function": {
+    "kind": "riemann_xi_t"
+  },
+  "geometry": {
+    "lo": "7702023976989491/1099511627776",
+    "hi": "7702320845128991/1099511627776",
+    "b": "8106479329266893/18014398509481984"
+  },
+  "settings": {
+    "precision_bits": 100,
+    "tolerance_bits": 65,
+    "boundary_max_depth": 18,
+    "boundary_eval_limit": 4096,
+    "integral_eval_limit": 12000,
+    "integral_depth_limit": 20,
+    "max_count": 6
+  }
+}

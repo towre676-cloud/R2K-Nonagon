@@ -1,0 +1,11 @@
+{
+ "case": "case9241pegase",
+ "negative_merged_branches_upper_bound": 16,
+ "binary64_negative_pivots": 16,
+ "witness_columns": 16,
+ "gram_negative_definite_by_exact_dominance": true,
+ "negative_index_exact": 16,
+ "max_offdiag_ratio": 1.0727749968659241e-13,
+ "seconds": 7.462076425552368,
+ "seconds_gram": 1.1583924293518066
+}

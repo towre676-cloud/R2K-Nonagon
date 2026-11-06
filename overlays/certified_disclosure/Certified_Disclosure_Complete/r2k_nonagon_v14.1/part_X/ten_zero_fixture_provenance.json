@@ -1,0 +1,37 @@
+{
+  "full_verifier": {
+    "file_format": "r2k-contour-certificate/2",
+    "mode": "full",
+    "evaluator": "series",
+    "segments_checked": 841,
+    "segments_recomputed": 841,
+    "count": 10,
+    "mu0": "[10.0000000000000 +/- 6.49e-16]",
+    "imag_parts_contain_zero": true,
+    "minors": [
+      "[10.00000000 +/- 3e-13]",
+      "[29.73167267 +/- 4.71e-9]",
+      "[91.55185562 +/- 2.63e-9]",
+      "[246.2000229 +/- 2.38e-9]",
+      "[430.3066804 +/- 2.39e-8]",
+      "[351.6110982 +/- 4.99e-8]",
+      "[193.6248822 +/- 2.83e-8]",
+      "[50.41192456 +/- 4.31e-9]",
+      "[2.093206451 +/- 6.91e-10]",
+      "[0.013976358 +/- 3.58e-10]"
+    ],
+    "inertia": [
+      10,
+      0
+    ],
+    "all_zeros_simple_on_line": true,
+    "conjugate_pairs_off_line": 0,
+    "status": "CERTIFIED",
+    "scope": "zeros of xi with 10.0 <= Im s <= 51.0 and 0.04999999999999999 <= Re s <= 0.95"
+  },
+  "fixture_sha256": "de85c824b1b5e181b201a2f68e0498f5d48206e73a2460aa886dc353ad743521",
+  "producer_sha256": "61b843a7df87e3df43193345d1d68edcad33babf51e65f8baf833186a776e712",
+  "tmint_sha256": "64e0c2557ab353cf429eaf065d9c0220107455cd1477a03555856981ed2985c8",
+  "independent_verifier_sha256": "7c962371bedab99b3398366fd615f165db769b1029f31f386f59c3c732f55a7f",
+  "common_input": "generator_moments, unchanged Claude10[10,51] test parameters"
+}

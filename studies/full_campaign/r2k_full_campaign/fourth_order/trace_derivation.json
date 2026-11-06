@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "ordered_partitions": 75,
+  "positive_part_coefficients": {
+    "j": "2",
+    "j+k": "-1",
+    "j-k": "-1"
+  },
+  "exact_integer_cases": 980
+}

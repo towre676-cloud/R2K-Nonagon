@@ -1,0 +1,242 @@
+<title>Rank-Two Nonagon XV</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<script>
+window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']], tags: 'none' }, chtml: { scale: 0.98 }, options: { skipHtmlTags: ['script','noscript','style','textarea','pre','svg'] } };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" async></script>
+<style>
+/* layout: single reading column, wide figure/table plates break out to the full frame */
+:root{
+  --paper:#f4ede0; --paper-2:#ece2d0; --ink:#271c17; --ink-soft:#5d4c41; --rule:#cdbba0;
+  --ox:#6d1424; --ox-soft:#9b3a4b; --slate:#3b5560; --wash:rgba(109,20,36,.06);
+  --display:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
+  --body:"EB Garamond",Garamond,"Georgia","Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#18120f; --paper-2:#211915; --ink:#ebe0cd; --ink-soft:#b7a691; --rule:#4a3b31;
+  --ox:#d77a8a; --ox-soft:#e59cab; --slate:#8fb3c0; --wash:rgba(215,122,138,.08); color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#18120f; --paper-2:#211915; --ink:#ebe0cd; --ink-soft:#b7a691; --rule:#4a3b31;
+  --ox:#d77a8a; --ox-soft:#e59cab; --slate:#8fb3c0; --wash:rgba(215,122,138,.08); color-scheme:dark }
+html{background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:19px;line-height:1.62;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 80px;
+  font-variant-numeric:oldstyle-nums proportional-nums;-webkit-font-smoothing:antialiased}
+main{max-width:46rem;margin:0 auto}
+.plate{max-width:min(62rem,100%);margin:2.2rem auto;position:relative;left:50%;transform:translateX(-50%);width:min(62rem,calc(100vw - 32px))}
+header.title{max-width:46rem;margin:0 auto;padding-top:4.5rem;padding-bottom:2.2rem;border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--display);font-variant:small-caps;letter-spacing:.14em;color:var(--ox);font-size:1rem;font-weight:600}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(2.6rem,6vw,4.1rem);line-height:1.02;margin:.6rem 0 .8rem;text-wrap:balance;letter-spacing:-.005em}
+h1 em{color:var(--ox);font-style:italic;font-weight:500}
+.sub{font-family:var(--display);font-style:italic;font-size:1.35rem;color:var(--ink-soft);line-height:1.35;text-wrap:balance}
+.byline{margin-top:1.4rem;font-size:.95rem;color:var(--ink-soft);font-variant:small-caps;letter-spacing:.06em}
+h2{font-family:var(--display);font-weight:600;font-size:2rem;line-height:1.1;margin:3.6rem 0 1rem;text-wrap:balance;display:flex;gap:.7rem;align-items:baseline}
+h2 .sn{color:var(--ox);font-size:1.15rem;font-variant:small-caps;letter-spacing:.08em;flex:none}
+h3{font-family:var(--display);font-weight:600;font-size:1.38rem;margin:2.2rem 0 .5rem;color:var(--ink)}
+p{margin:0 0 1.05rem;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+strong{font-weight:600;color:var(--ox)}
+.abstract{background:var(--wash);border-left:2px solid var(--ox);padding:1.1rem 1.4rem;margin:2rem 0}
+.abstract p:last-child{margin-bottom:0}
+.abstract .h{font-variant:small-caps;letter-spacing:.12em;color:var(--ox);font-family:var(--display);font-weight:700;font-size:1.05rem}
+.thm{margin:1.6rem 0;padding:1rem 1.2rem 0.3rem;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.thm .hd{font-family:var(--display);font-weight:700;font-size:1.12rem;margin-bottom:.35rem}
+.thm .hd i{font-weight:500}
+.proof{font-size:.96em;color:var(--ink)}
+.proof::before{content:"Proof. ";font-style:italic;color:var(--ink-soft)}
+.qed{float:right;color:var(--ink-soft)}
+.ep{font-family:var(--display);font-variant:small-caps;letter-spacing:.07em;font-size:.86rem;font-weight:700;padding:.05rem .45rem;border:1px solid currentColor;border-radius:2px;margin-left:.35rem;white-space:nowrap;vertical-align:.1em}
+.ep.pr{color:var(--ox)} .ep.nm{color:var(--slate)} .ep.mp{color:var(--ink-soft)} .ep.ct{color:var(--ox-soft)} .ep.op{color:var(--ink-soft);border-style:dashed}
+.tw{overflow-x:auto;margin:1.6rem 0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;font-variant-numeric:lining-nums tabular-nums}
+caption{caption-side:top;text-align:left;font-family:var(--display);font-size:1.02rem;font-weight:600;padding-bottom:.5rem;color:var(--ink)}
+caption span{font-weight:400;font-style:italic;color:var(--ink-soft)}
+th{font-family:var(--display);font-variant:small-caps;letter-spacing:.06em;font-weight:700;text-align:left;border-bottom:1.5px solid var(--ink);padding:.35rem .6rem;color:var(--ink);white-space:nowrap}
+td{border-bottom:1px solid var(--rule);padding:.35rem .6rem;vertical-align:top}
+td.n{text-align:right;white-space:nowrap;font-family:var(--body)}
+tr:last-child td{border-bottom:1.5px solid var(--ink)}
+figure{margin:0}
+figure svg{width:100%;height:auto;display:block;background:var(--paper-2);border:1px solid var(--rule)}
+figcaption{font-size:.92rem;color:var(--ink-soft);margin-top:.55rem;line-height:1.45;max-width:46rem}
+figcaption b{color:var(--ink);font-weight:600;font-variant:small-caps;letter-spacing:.05em}
+svg .lab{fill:var(--ink-soft);font-family:var(--body);font-size:13px}
+svg .small{font-size:11.5px;font-style:italic}
+svg .grid{stroke:var(--rule);stroke-width:.6;stroke-dasharray:2 3}
+svg .ax{stroke:var(--ink-soft);stroke-width:1}
+svg .eps{stroke:var(--ox);stroke-width:1;stroke-dasharray:5 4}
+svg .dot1{fill:var(--ox)} svg .dot2{fill:var(--slate);opacity:.75}
+svg .neg{fill:var(--paper-2);stroke:var(--ox);stroke-width:2}
+svg .negtxt{fill:var(--ox)}
+svg .bar1{fill:var(--slate);opacity:.85} svg .bar2{fill:var(--ox)}
+svg .line1{fill:none;stroke:var(--ox);stroke-width:1.6}
+svg .line2{fill:none;stroke:var(--slate);stroke-width:1.6}
+svg .line3{fill:none;stroke:var(--ink-soft);stroke-width:1.6;stroke-dasharray:6 3}
+svg .line4{fill:none;stroke:var(--ox-soft);stroke-width:1.4;stroke-dasharray:2 3}
+svg .lineq{fill:none;stroke:var(--ink);stroke-width:1.2;stroke-dasharray:8 4;opacity:.7}
+svg .linec{fill:none;stroke:var(--slate);stroke-width:1.2;stroke-dasharray:1 3}
+svg .lineb{fill:none;stroke:var(--ox);stroke-width:1;stroke-dasharray:3 3;opacity:.7}
+svg .band{fill:var(--wash)}
+svg .tile{fill:var(--wash);stroke:var(--slate);stroke-width:.9}
+.mjx-chtml{font-size:105%!important}
+mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;max-width:100%;padding:.2rem 0}
+.toc{columns:2;column-gap:2rem;font-size:.95rem;margin:1.6rem 0 0;padding:0;list-style:none;counter-reset:none}
+.toc li{break-inside:avoid;margin:.15rem 0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+.toc a:hover,.toc a:focus-visible{color:var(--ox);border-color:var(--ox)}
+.toc .sn{color:var(--ox);font-variant:small-caps;margin-right:.4rem}
+a:focus-visible{outline:2px solid var(--ox);outline-offset:2px}
+.colophon{margin-top:4rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.88rem;color:var(--ink-soft)}
+@media (max-width:640px){body{font-size:17.5px}p{text-align:left}.toc{columns:1}h2{flex-direction:column;gap:.1rem}}
+</style><header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v15.0 · Part XV</div>
+  <h1>The Rank-Two Nonagon <em>XV</em></h1>
+  <div class="sub">Without switching: what generator steps and ambient load fluctuations reveal, the single ambiguity of ambient data and the one calibrated step that removes it, and how many hours of phasor data the whole grid costs</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 31 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Part XIV found that actuation, meaning grounding interventions at every bus, is what limits the intervention route, and it named the ambient route as the open question. Part XV answers it on the same grids with the same tools: exact Jacobian ranks modulo $p$, exact Cramér–Rao bounds, and an estimator checked against them. Two kinds of access that grids already have are studied. <strong>Generator steps.</strong> Known injection steps at every generator, read by phasor sensors at every bus, identify 125 of 173 branches of IEEE 118 and 344 of 408 of IEEE 300. Load-only regions stay dark. <strong>Ambient fluctuations.</strong> Angle covariances under random load fluctuations of unknown size identify everything except one direction. Proposition XV.2.1 proves that direction is forced: $(K,V)$ and $(cK,c^2V)$ produce identical covariances. Result XV.2.2 shows it is the only one. A single calibrated injection step, read at every bus, gives full rank on IEEE 118, IEEE 300 and PEGASE 1354, and every branch there becomes identifiable. Covariances between buses at graph distance at most 2 already suffice. <strong>The data bill.</strong> With noiseless sensors, about $10^5$ snapshots bring the median branch to 0.51% (IEEE 118), 0.42% (IEEE 300), 0.39% (PEGASE 1354). At 30 snapshots per second that is under an hour, if the snapshots are independent. Sensor noise sets the real price. At 1% of the ambient angle variance, the median after $10^6$ snapshots is 0.56% (IEEE 118), 1.36% (IEEE 300), 1.61% (PEGASE 1354). A Fisher-scoring maximum-likelihood estimator reaches the bound, with a median error-to-bound ratio of 0.58–0.74. <strong>The trade.</strong> Part XIII needed one port and switching at every bus. Part XIV needed 7 to 57 ports for full rank, about one per 6 buses for phasor-class accuracy, and switching at every bus. Part XV needs a sensor at every bus and one calibrated step, and it pays in data time.</p>
+</div>
+
+<h2 id="y1"><span class="sn">§XV.1</span>Two kinds of access a grid already has</h2>
+
+<p>Grounding a bus on command, the intervention of Parts VIII–XIV, is not available in a transmission grid. Two other kinds of access are. Generators change their output on command, by known amounts, which is the probing used in the inverter-probing literature. And loads fluctuate on their own, which conventional ambient methods exploit. In the DC model a bus-angle vector responds to injections through $G=K^{-1}$. A known step $\Delta p$ at generator $r$, read by phasor sensors at buses $s$, therefore gives $G_{sr}\Delta p$. Random load fluctuations with unknown variances $V=\operatorname{diag}(v_i)$ give angle covariances $C=GVG$, read at sensor pairs $(s,t)$, plus sensor noise. The unknowns are the branch weights and grounds as before. In the ambient model the $n$ variances join them. The Jacobians are explicit:
+$$\frac{\partial G_{sr}}{\partial w_e}=-(b_e^{\mathsf T}g_s)(b_e^{\mathsf T}g_r),\qquad \frac{\partial C_{st}}{\partial w_e}=-(b_e^{\mathsf T}g_s)(b_e^{\mathsf T}h_t)-(b_e^{\mathsf T}h_s)(b_e^{\mathsf T}g_t),\qquad \frac{\partial C_{st}}{\partial v_i}=G_{si}G_{ti},$$
+with $h_t=GVg_t$. They are evaluated exactly modulo $2^{31}-1$ at the source's rational values, with the variances fixed at random integers in $[1,100]$.</p>
+
+<h2 id="y2"><span class="sn">§XV.2</span>What is identifiable</h2>
+
+<div class="tw"><table>
+<caption>Table XV.1. <span>Exact identifiability modulo $2^{31}-1$ without grounding interventions. Sensors "all" means a phasor sensor at every bus; a number means that many sensors by farthest-point sampling. Unknowns include the $n$ load variances in the ambient models.</span></caption>
+<thead><tr><th>grid</th><th>access</th><th>sensors</th><th>readings</th><th>rank / unknowns</th><th>branches identifiable</th></tr></thead>
+<tbody>
+<tr><td>IEEE 118</td><td>one generator step</td><td class="n">all</td><td class="n">117</td><td class="n">100 / 179</td><td class="n">0 of 173</td></tr>
+<tr><td>IEEE 118</td><td>steps at every generator</td><td class="n">all</td><td class="n">6,201</td><td class="n">166 / 179</td><td class="n">125 of 173</td></tr>
+<tr><td>IEEE 118</td><td>steps at every generator</td><td class="n">20</td><td class="n">1,060</td><td class="n">106 / 179</td><td class="n">49 of 173</td></tr>
+<tr><td>IEEE 118</td><td>steps at every generator</td><td class="n">40</td><td class="n">2,120</td><td class="n">133 / 179</td><td class="n">78 of 173</td></tr>
+<tr><td>IEEE 118</td><td>ambient covariance</td><td class="n">all</td><td class="n">6,903</td><td class="n">295 / 296</td><td class="n">0 of 173</td></tr>
+<tr><td>IEEE 118</td><td>ambient covariance</td><td class="n">20</td><td class="n">210</td><td class="n">133 / 296</td><td class="n">0 of 173</td></tr>
+<tr><td>IEEE 118</td><td>ambient covariance</td><td class="n">40</td><td class="n">820</td><td class="n">213 / 296</td><td class="n">0 of 173</td></tr>
+<tr><td>IEEE 118</td><td>ambient covariance</td><td class="n">60</td><td class="n">1,830</td><td class="n">263 / 296</td><td class="n">0 of 173</td></tr>
+<tr><td>IEEE 118</td><td>ambient + one calibrated step</td><td class="n">all</td><td class="n">7,020</td><td class="n">296 / 296</td><td class="n">173 of 173</td></tr>
+<tr><td>IEEE 118</td><td>ambient (distance ≤ 2 entries) + one step</td><td class="n">all</td><td class="n">774</td><td class="n">296 / 296</td><td class="n">173 of 173</td></tr>
+<tr><td>IEEE 118</td><td>ambient (random entries) + one step</td><td class="n">all</td><td class="n">1,005</td><td class="n">284 / 296</td><td class="n">152 of 173</td></tr>
+<tr><td>IEEE 118</td><td>ambient + steps at every generator</td><td class="n">20</td><td class="n">1,270</td><td class="n">183 / 296</td><td class="n">55 of 173</td></tr>
+<tr><td>IEEE 118</td><td>ambient + steps at every generator</td><td class="n">40</td><td class="n">2,940</td><td class="n">244 / 296</td><td class="n">101 of 173</td></tr>
+<tr><td>IEEE 118</td><td>ambient + steps at every generator</td><td class="n">60</td><td class="n">5,010</td><td class="n">276 / 296</td><td class="n">139 of 173</td></tr>
+<tr><td>IEEE 118</td><td>ambient + one calibrated step</td><td class="n">60</td><td class="n">1,890</td><td class="n">264 / 296</td><td class="n">99 of 173</td></tr>
+<tr><td>IEEE 300</td><td>ambient covariance</td><td class="n">all</td><td class="n">44,850</td><td class="n">707 / 708</td><td class="n">0 of 408</td></tr>
+<tr><td>IEEE 300</td><td>ambient + one calibrated step</td><td class="n">all</td><td class="n">45,149</td><td class="n">708 / 708</td><td class="n">408 of 408</td></tr>
+<tr><td>IEEE 300</td><td>ambient (distance ≤ 2 entries) + one step</td><td class="n">all</td><td class="n">1,893</td><td class="n">708 / 708</td><td class="n">408 of 408</td></tr>
+<tr><td>IEEE 300</td><td>steps at every generator</td><td class="n">all</td><td class="n">20,332</td><td class="n">357 / 409</td><td class="n">344 of 408</td></tr>
+<tr><td>IEEE 300</td><td>steps at every generator</td><td class="n">60</td><td class="n">4,080</td><td class="n">233 / 409</td><td class="n">100 of 408</td></tr>
+<tr><td>IEEE 300</td><td>ambient covariance</td><td class="n">60</td><td class="n">1,830</td><td class="n">393 / 708</td><td class="n">0 of 408</td></tr>
+<tr><td>IEEE 300</td><td>ambient + one calibrated step</td><td class="n">60</td><td class="n">1,890</td><td class="n">394 / 708</td><td class="n">85 of 408</td></tr>
+<tr><td>PEGASE 1354</td><td>ambient (random entries) + one step</td><td class="n">all</td><td class="n">10,542</td><td class="n">2,319 / 3,063</td><td class="n">912 of 1,705</td></tr>
+<tr><td>PEGASE 1354</td><td>ambient (distance ≤ 2 entries) + one step</td><td class="n">all</td><td class="n">9,041</td><td class="n">3,063 / 3,063</td><td class="n">1,705 of 1,705</td></tr>
+
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Proposition XV.2.1 <i>(the ambient scale ambiguity)</i> <span class="ep pr">proved</span></div>
+<p>For every $c>0$, the pairs $(K,V)$ and $(cK,c^2V)$ give the same angle covariance. Ambient data alone therefore cannot determine any branch weight, ground or load variance in absolute terms, however many sensors and snapshots are available.</p></div>
+
+<p><em>Proof.</em> $(cK)^{-1}(c^2V)(cK)^{-1}=c^{-2}c^2\,K^{-1}VK^{-1}$. $\square$</p>
+
+<div class="thm"><div class="hd">Result XV.2.2 <i>(the scale is the only ambiguity, and one step removes it)</i> <span class="ep nm">verified · exact</span></div>
+<p>With a sensor at every bus, the ambient Jacobian has rank exactly one less than the number of unknowns: IEEE 118 295 of 296; IEEE 300 707 of 708. The missing direction is the scale of Proposition XV.2.1. One calibrated injection step at a single generator, read at every bus, makes the rank full, and every branch becomes identifiable: IEEE 118 296 of 296; IEEE 118 296 of 296; IEEE 300 708 of 708; IEEE 300 708 of 708; PEGASE 1354 3,063 of 3,063. The step does not have to be large. It only has to be known in absolute terms. Covariances between buses at graph distance at most 2 suffice for full rank. A random subset of covariance entries of comparable size does not suffice on IEEE 118 (rank 284 of 296), so the local entries carry the information.</p></div>
+
+<p>Generator steps alone, without ambient data, leave whole regions unidentified even with a sensor at every bus. A branch between load buses is seen only through the columns $g_r$ of generator buses. On a load region with no generator, every such column is harmonic. The region's internal branches then enter only through the action of their Laplacian on a space of dimension at most the region's number of terminals. That is the mechanism of Proposition XIII.2.2, with generators in place of sources, and it is the likely cause of the unidentified directions. They were not traced one by one. With fewer sensors both models lose most of their rank. At 60 sensors on IEEE 118, ambient data plus one step identify 99 of 173 branches. The no-switching route is therefore a full-coverage route.</p>
+
+<h2 id="y3"><span class="sn">§XV.3</span>The data bill</h2>
+
+<p>With a sensor at every bus, $N$ snapshots $x\sim\mathcal N(0,\,GVG+s^2I)$, and one injection step read to relative accuracy $10^{-3}$, the Fisher information is $\tfrac N2\operatorname{tr}(\Sigma^{-1}\partial_a\Sigma\,\Sigma^{-1}\partial_b\Sigma)$ plus the step's term. Each $\partial_a\Sigma$ has rank at most 2, so the bound is computed exactly in binary64 from $n\times2$ factors. The sensor noise enters as the ratio $\rho=s^2/\operatorname{median}C_{ii}$ of sensor-noise variance to ambient angle variance.</p>
+
+<div class="tw"><table>
+<caption>Table XV.2. <span>Cramér–Rao bound for the ambient route with one calibrated step: median and 90th-percentile relative standard deviation of the branch weights, and the share of branches below 1%, against the number of snapshots $N$ and the sensor-noise ratio $\rho$. Hours assume 30 independent snapshots per second.</span></caption>
+<thead><tr><th>grid</th><th>$\rho$</th><th>$N$</th><th>hours at 30/s</th><th>median sd</th><th>90th pct.</th><th>within 1%</th></tr></thead>
+<tbody>
+<tr><td>IEEE 118</td><td class="n">0</td><td class="n">1×10<sup>3</sup></td><td class="n">0.0093</td><td class="n">4.63%</td><td class="n">8.87%</td><td class="n">0%</td></tr>
+<tr><td>IEEE 118</td><td class="n">0</td><td class="n">1×10<sup>4</sup></td><td class="n">0.093</td><td class="n">1.54%</td><td class="n">2.83%</td><td class="n">13%</td></tr>
+<tr><td>IEEE 118</td><td class="n">0</td><td class="n">1×10<sup>5</sup></td><td class="n">0.93</td><td class="n">0.51%</td><td class="n">0.91%</td><td class="n">94%</td></tr>
+<tr><td>IEEE 118</td><td class="n">0</td><td class="n">1×10<sup>6</sup></td><td class="n">9.3</td><td class="n">0.17%</td><td class="n">0.29%</td><td class="n">100%</td></tr>
+<tr><td>IEEE 118</td><td class="n">0.01</td><td class="n">1×10<sup>3</sup></td><td class="n">0.0093</td><td class="n">15.82%</td><td class="n">95.88%</td><td class="n">0%</td></tr>
+<tr><td>IEEE 118</td><td class="n">0.01</td><td class="n">1×10<sup>4</sup></td><td class="n">0.093</td><td class="n">5.17%</td><td class="n">30.46%</td><td class="n">0.6%</td></tr>
+<tr><td>IEEE 118</td><td class="n">0.01</td><td class="n">1×10<sup>5</sup></td><td class="n">0.93</td><td class="n">1.76%</td><td class="n">9.64%</td><td class="n">17%</td></tr>
+<tr><td>IEEE 118</td><td class="n">0.01</td><td class="n">1×10<sup>6</sup></td><td class="n">9.3</td><td class="n">0.56%</td><td class="n">3.05%</td><td class="n">72%</td></tr>
+<tr><td>IEEE 118</td><td class="n">0.1</td><td class="n">1×10<sup>3</sup></td><td class="n">0.0093</td><td class="n">68.67%</td><td class="n">556.21%</td><td class="n">0%</td></tr>
+<tr><td>IEEE 118</td><td class="n">0.1</td><td class="n">1×10<sup>4</sup></td><td class="n">0.093</td><td class="n">22.57%</td><td class="n">176.71%</td><td class="n">0%</td></tr>
+<tr><td>IEEE 118</td><td class="n">0.1</td><td class="n">1×10<sup>5</sup></td><td class="n">0.93</td><td class="n">7.41%</td><td class="n">55.93%</td><td class="n">1%</td></tr>
+<tr><td>IEEE 118</td><td class="n">0.1</td><td class="n">1×10<sup>6</sup></td><td class="n">9.3</td><td class="n">2.35%</td><td class="n">17.69%</td><td class="n">20%</td></tr>
+<tr><td>IEEE 300</td><td class="n">0</td><td class="n">1×10<sup>3</sup></td><td class="n">0.0093</td><td class="n">4.00%</td><td class="n">7.57%</td><td class="n">2%</td></tr>
+<tr><td>IEEE 300</td><td class="n">0</td><td class="n">1×10<sup>4</sup></td><td class="n">0.093</td><td class="n">1.30%</td><td class="n">2.41%</td><td class="n">27%</td></tr>
+<tr><td>IEEE 300</td><td class="n">0</td><td class="n">1×10<sup>5</sup></td><td class="n">0.93</td><td class="n">0.42%</td><td class="n">0.77%</td><td class="n">96%</td></tr>
+<tr><td>IEEE 300</td><td class="n">0</td><td class="n">1×10<sup>6</sup></td><td class="n">9.3</td><td class="n">0.13%</td><td class="n">0.24%</td><td class="n">100%</td></tr>
+<tr><td>IEEE 300</td><td class="n">0.01</td><td class="n">1×10<sup>3</sup></td><td class="n">0.0093</td><td class="n">34.78%</td><td class="n">332.25%</td><td class="n">0%</td></tr>
+<tr><td>IEEE 300</td><td class="n">0.01</td><td class="n">1×10<sup>4</sup></td><td class="n">0.093</td><td class="n">12.18%</td><td class="n">105.07%</td><td class="n">0%</td></tr>
+<tr><td>IEEE 300</td><td class="n">0.01</td><td class="n">1×10<sup>5</sup></td><td class="n">0.93</td><td class="n">4.04%</td><td class="n">34.99%</td><td class="n">9%</td></tr>
+<tr><td>IEEE 300</td><td class="n">0.01</td><td class="n">1×10<sup>6</sup></td><td class="n">9.3</td><td class="n">1.36%</td><td class="n">11.07%</td><td class="n">42%</td></tr>
+<tr><td>IEEE 300</td><td class="n">0.1</td><td class="n">1×10<sup>3</sup></td><td class="n">0.0093</td><td class="n">142.29%</td><td class="n">2203.41%</td><td class="n">0%</td></tr>
+<tr><td>IEEE 300</td><td class="n">0.1</td><td class="n">1×10<sup>4</sup></td><td class="n">0.093</td><td class="n">51.35%</td><td class="n">696.84%</td><td class="n">0%</td></tr>
+<tr><td>IEEE 300</td><td class="n">0.1</td><td class="n">1×10<sup>5</sup></td><td class="n">0.93</td><td class="n">17.92%</td><td class="n">220.40%</td><td class="n">0.2%</td></tr>
+<tr><td>IEEE 300</td><td class="n">0.1</td><td class="n">1×10<sup>6</sup></td><td class="n">9.3</td><td class="n">6.18%</td><td class="n">69.70%</td><td class="n">12%</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">0</td><td class="n">1×10<sup>3</sup></td><td class="n">0.0093</td><td class="n">3.77%</td><td class="n">6.27%</td><td class="n">0.6%</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">0</td><td class="n">1×10<sup>4</sup></td><td class="n">0.093</td><td class="n">1.22%</td><td class="n">2.00%</td><td class="n">32%</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">0</td><td class="n">1×10<sup>5</sup></td><td class="n">0.93</td><td class="n">0.39%</td><td class="n">0.64%</td><td class="n">97%</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">0</td><td class="n">1×10<sup>6</sup></td><td class="n">9.3</td><td class="n">0.13%</td><td class="n">0.20%</td><td class="n">100%</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">0.01</td><td class="n">1×10<sup>3</sup></td><td class="n">0.0093</td><td class="n">49.59%</td><td class="n">9978.38%</td><td class="n">0.1%</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">0.01</td><td class="n">1×10<sup>4</sup></td><td class="n">0.093</td><td class="n">15.84%</td><td class="n">3155.44%</td><td class="n">0.2%</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">0.01</td><td class="n">1×10<sup>5</sup></td><td class="n">0.93</td><td class="n">5.01%</td><td class="n">997.84%</td><td class="n">3%</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">0.01</td><td class="n">1×10<sup>6</sup></td><td class="n">9.3</td><td class="n">1.61%</td><td class="n">315.54%</td><td class="n">41%</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">0.1</td><td class="n">1×10<sup>3</sup></td><td class="n">0.0093</td><td class="n">262.23%</td><td class="n">92348.98%</td><td class="n">0.1%</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">0.1</td><td class="n">1×10<sup>4</sup></td><td class="n">0.093</td><td class="n">84.03%</td><td class="n">29203.38%</td><td class="n">0.1%</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">0.1</td><td class="n">1×10<sup>5</sup></td><td class="n">0.93</td><td class="n">26.66%</td><td class="n">9234.92%</td><td class="n">0.3%</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">0.1</td><td class="n">1×10<sup>6</sup></td><td class="n">9.3</td><td class="n">8.43%</td><td class="n">2920.34%</td><td class="n">7%</td></tr>
+
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result XV.3.1 <i>(what the ambient route costs)</i> <span class="ep nm">verified · double</span></div>
+<p>With noiseless sensors, $10^5$ snapshots, under an hour at 30 per second, bring the median branch below 0.6% on all three grids. They put 94% to 97% of branches within 1%. The bound scales as $N^{-1/2}$ and barely depends on grid size. Sensor noise is what decides the cost. At $\rho=0.01$, $10^6$ snapshots, about 9 hours, give medians of 0.56% (IEEE 118), 1.36% (IEEE 300), 1.61% (PEGASE 1354), and the 90th percentile on PEGASE 1354 is above 300%. At $\rho=0.1$ the route fails at any practical length. In ambient identification, the ratio of sensor noise to natural angle variation matters more than the number of sensors, the number of snapshots or the size of the grid.</p></div>
+
+<h2 id="y4"><span class="sn">§XV.4</span>An estimator that reaches it</h2>
+
+<p>Simulated snapshots are reduced to their sample covariance. One injection step is read with noise. Fisher scoring on the Gaussian log-likelihood plus the step's term, in relative parameters, starts from a nominal model 10% off with flat variances. As in Part XIV, the truth is used only to score the result.</p>
+
+<div class="tw"><table>
+<caption>Table XV.3. <span>Maximum-likelihood estimation from ambient snapshots. "Error / CRB" as in Table XIV.2 (0.674 for an efficient estimator).</span></caption>
+<thead><tr><th>grid</th><th>$N$</th><th>$\rho$</th><th>median error</th><th>within 1%</th><th>error / CRB</th></tr></thead>
+<tbody>
+<tr><td>IEEE 118</td><td class="n">1×10<sup>5</sup></td><td class="n">0</td><td class="n">0.32%</td><td class="n">90%</td><td class="n">0.64</td></tr>
+<tr><td>IEEE 118</td><td class="n">1×10<sup>6</sup></td><td class="n">0</td><td class="n">0.12%</td><td class="n">100%</td><td class="n">0.69</td></tr>
+<tr><td>IEEE 118</td><td class="n">1×10<sup>6</sup></td><td class="n">0.01</td><td class="n">0.36%</td><td class="n">76%</td><td class="n">0.63</td></tr>
+<tr><td>IEEE 300</td><td class="n">1×10<sup>5</sup></td><td class="n">0</td><td class="n">0.29%</td><td class="n">94%</td><td class="n">0.74</td></tr>
+<tr><td>IEEE 300</td><td class="n">1×10<sup>6</sup></td><td class="n">0</td><td class="n">0.08%</td><td class="n">100%</td><td class="n">0.58</td></tr>
+<tr><td>IEEE 300</td><td class="n">1×10<sup>6</sup></td><td class="n">0.01</td><td class="n">0.90%</td><td class="n">53%</td><td class="n">0.74</td></tr>
+
+</tbody></table></div>
+
+<p>The estimator is efficient on both grids at every setting, with ratios 0.58–0.74. On IEEE 300 it stopped at the iteration cap of 60 with steps still above $10^{-9}$, but at errors already at the bound. On IEEE 118, one hour of noiseless 30-per-second data gives a median branch error of 0.32%. That is below the 0.3–0.8% of conventional phasor line-parameter estimation, and it covers every branch, not a subnetwork. Conventional ambient methods use data windows of a few hundred seconds at 10 snapshots per second on 9- to 39-bus systems, and they estimate system Jacobians rather than every line.</p>
+
+<h2 id="y5"><span class="sn">§XV.5</span>The trade</h2>
+
+<div class="tw"><table>
+<caption>Table XV.4. <span>The three routes of Parts XIII–XV, on IEEE 118 unless stated.</span></caption>
+<thead><tr><th>route</th><th>sensing</th><th>actuation</th><th>identifiability</th><th>accuracy at realistic noise</th></tr></thead>
+<tbody>
+<tr><td>Part XIII, one port</td><td>1 port</td><td>grounding at every bus, single and pair</td><td>exact, all ten grids</td><td>1% median needs noise $\le2\times10^{-5}$</td></tr>
+<tr><td>Part XIV, $k$ ports</td><td>7–57 ports for full rank (one per 17–43 buses)</td><td>grounding at every bus</td><td>full with a port in each pocket</td><td>0.37% median at $10^{-3}$ with 20 ports</td></tr>
+<tr><td>Part XV, ambient</td><td>a sensor at every bus</td><td>one calibrated generator step</td><td>full (Result XV.2.2)</td><td>0.32% after 1 h if sensor noise is negligible; much worse at $\rho\ge0.01$</td></tr>
+</tbody></table></div>
+
+<p>The three routes trade one resource for another. Actuation buys a small number of sensors. Full sensor coverage buys freedom from actuation. In both cases the remaining cost is noise, paid in sensor quality on one route and in data time on the other. The trade can be computed in advance for any grid and any proposed instrumentation, and these parts supply the computations: the exact rank test for identifiability, the Cramér–Rao bound for cost, and an efficient estimator to collect it.</p>
+
+<h2 id="y6"><span class="sn">§XV.6</span>What these numbers assume</h2>
+
+<p>The ambient numbers assume independent snapshots. Real load fluctuations are correlated in time, so the effective number of snapshots per hour is smaller than 108,000, by a factor set by the correlation time. That factor must come from data. They assume the grid is stationary over the window, with no switching or retuning. They assume the DC model with known load-fluctuation structure: independent across buses, unknown variances. Correlated loads would add unknowns, and the rank test would have to be rerun with them. The ratio $\rho$ of sensor noise to ambient angle variance is the key unknown, and it depends on the sensor class and the grid's operating point. It was not available here. Field data remain unreachable from this environment, so the real-data test recommended in Part XIII is still the first experiment to run.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> <code>part_XV/ambient15.py CASE SCHEMES</code> (Table XV.1; schemes <code>inj:S</code>, <code>inj1:S</code>, <code>amb:S</code>, <code>amb1:S</code>, <code>amb1l:all</code> local covariances, <code>amb1s:all</code> random subset, <code>both:S</code>); <code>crb15.py CASE</code> (Table XV.2); <code>est15.py CASE</code> (Table XV.3); <code>assemble15.py</code>. Uses <code>part_XIV/crb14.py</code> and <code>ident14.py</code> for loading and exact $G$.</p>
+<p><b>Sources.</b> Ambient phasor methods (system Jacobian from ambient rotor data, 9- and 39-bus systems): <a href="https://arxiv.org/pdf/1706.01114.pdf">arXiv:1706.01114</a>. Line-parameter estimation with phasor data: <a href="https://arxiv.org/pdf/2503.21202">arXiv:2503.21202</a>. Inverter probing: <a href="https://ar5iv.arxiv.org/html/1802.06027">arXiv:1802.06027</a>. Parts XIII and XIV of this monograph.</p>
+</div>
+</main>

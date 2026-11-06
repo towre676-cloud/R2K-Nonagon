@@ -1,0 +1,14 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: nonagon external dc circuit v7_triangle heldout_0
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+v(n1) = 2.51953034357935077e-02
+v(n2) = 7.17943164766486619e-03
+v(n3) = 6.63644942221121911e-03
+ngspice-39 done

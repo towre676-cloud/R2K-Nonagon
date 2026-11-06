@@ -1,0 +1,26 @@
+exact trial 0
+exact trial 10
+exact trial 20
+exact trial 30
+{
+  "exact_networks": 40,
+  "exact_all_pass": true,
+  "observation_only_API_all_pass": true,
+  "negative_controls_all_rejected": true,
+  "modular_witnesses": 12,
+  "modular_all_fullrank": false,
+  "raw_query_full_rank_count": 35,
+  "raw_query_total": 40,
+  "raw_query_exact_full_rank_witnesses": 35,
+  "raw_query_minimum_point_counts": {
+    "2": 3,
+    "3": 3,
+    "4": 4,
+    "5": 4,
+    "6": 5,
+    "7": 5,
+    "8": 6,
+    "9": 6,
+    "10": 7
+  }
+}

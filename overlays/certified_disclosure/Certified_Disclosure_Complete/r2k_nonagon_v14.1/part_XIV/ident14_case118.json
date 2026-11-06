@@ -1,0 +1,139 @@
+{
+ "case": "case118",
+ "n": 117,
+ "hw_buses": 61,
+ "branches": 173,
+ "schemes": {
+  "kron10": {
+   "readings": 55,
+   "rank": 41,
+   "unknowns": 179,
+   "identifiable_unknowns": 0,
+   "identifiable_branches": 0,
+   "branches": 173,
+   "seconds": 0.018675565719604492,
+   "rational_coordinate_classification_certified": false
+  },
+  "kron20": {
+   "readings": 210,
+   "rank": 72,
+   "unknowns": 179,
+   "identifiable_unknowns": 21,
+   "identifiable_branches": 19,
+   "branches": 173,
+   "seconds": 0.030338287353515625,
+   "rational_coordinate_classification_certified": false
+  },
+  "kron30": {
+   "readings": 465,
+   "rank": 87,
+   "unknowns": 179,
+   "identifiable_unknowns": 37,
+   "identifiable_branches": 35,
+   "branches": 173,
+   "seconds": 0.05302548408508301,
+   "rational_coordinate_classification_certified": false
+  },
+  "kron40": {
+   "readings": 820,
+   "rank": 115,
+   "unknowns": 179,
+   "identifiable_unknowns": 39,
+   "identifiable_branches": 37,
+   "branches": 173,
+   "seconds": 0.10415363311767578,
+   "rational_coordinate_classification_certified": false
+  },
+  "kron60": {
+   "readings": 1830,
+   "rank": 146,
+   "unknowns": 179,
+   "identifiable_unknowns": 82,
+   "identifiable_branches": 80,
+   "branches": 173,
+   "seconds": 0.22764134407043457,
+   "rational_coordinate_classification_certified": false
+  },
+  "hw1": {
+   "readings": 62,
+   "rank": 61,
+   "unknowns": 179,
+   "identifiable_unknowns": 0,
+   "identifiable_branches": 0,
+   "branches": 173,
+   "seconds": 0.018195629119873047,
+   "rational_coordinate_classification_certified": false
+  },
+  "hw5": {
+   "readings": 930,
+   "rank": 115,
+   "unknowns": 179,
+   "identifiable_unknowns": 55,
+   "identifiable_branches": 54,
+   "branches": 173,
+   "seconds": 0.095733642578125,
+   "rational_coordinate_classification_certified": false
+  },
+  "hw10": {
+   "readings": 3410,
+   "rank": 117,
+   "unknowns": 179,
+   "identifiable_unknowns": 57,
+   "identifiable_branches": 56,
+   "branches": 173,
+   "seconds": 0.3568110466003418,
+   "rational_coordinate_classification_certified": false
+  },
+  "hw20": {
+   "readings": 13020,
+   "rank": 127,
+   "unknowns": 179,
+   "identifiable_unknowns": 78,
+   "identifiable_branches": 74,
+   "branches": 173,
+   "seconds": 1.6903753280639648,
+   "rational_coordinate_classification_certified": false
+  },
+  "ports1": {
+   "readings": 118,
+   "rank": 117,
+   "unknowns": 179,
+   "identifiable_unknowns": 0,
+   "identifiable_branches": 0,
+   "branches": 173,
+   "seconds": 0.02752685546875,
+   "rational_coordinate_classification_certified": false
+  },
+  "ports2": {
+   "readings": 354,
+   "rank": 173,
+   "unknowns": 179,
+   "identifiable_unknowns": 160,
+   "identifiable_branches": 154,
+   "branches": 173,
+   "seconds": 0.04519820213317871,
+   "rational_coordinate_classification_certified": false
+  },
+  "ports5": {
+   "readings": 1770,
+   "rank": 178,
+   "unknowns": 179,
+   "identifiable_unknowns": 173,
+   "identifiable_branches": 167,
+   "branches": 173,
+   "seconds": 0.20106863975524902,
+   "rational_coordinate_classification_certified": false
+  },
+  "ports10": {
+   "readings": 6490,
+   "rank": 178,
+   "unknowns": 179,
+   "identifiable_unknowns": 173,
+   "identifiable_branches": 167,
+   "branches": 173,
+   "seconds": 0.7835807800292969,
+   "rational_coordinate_classification_certified": false
+  }
+ },
+ "v14_1_scope_correction": "Legacy identifiable_* counts describe modular-kernel zero coordinates, not certified rational coordinate identifiability. Full column rank remains a rational certificate. See rational_access/ for exact replacement certificates."
+}

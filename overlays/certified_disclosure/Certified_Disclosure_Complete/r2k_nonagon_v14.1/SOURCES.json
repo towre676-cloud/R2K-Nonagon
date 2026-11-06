@@ -1,0 +1,25 @@
+{
+  "schema": "nonagon.integration.sources.v1",
+  "release": "9.0",
+  "inputs": [
+    {
+      "name": "Claude v8 original",
+      "archive_sha256": "f57a15858685a500938c6fee398e40ca0811b4a6b5f749dfdb5a5dc76b9e6cb5",
+      "original_sources": "research/claude_v8",
+      "canonical_corrected_chapter": "part_VIII"
+    },
+    {
+      "name": "Checked applied branch v8.1",
+      "canonical_location": "part_IX",
+      "immutable_source_evidence": "cross_checks/source_preservation.json"
+    }
+  ],
+  "integration_replay": "cross_checks/integration_receipt.json",
+  "relocation_replay": "cross_checks/relocation_receipt.json",
+  "new_extensions": [
+    "part_IX/load_planning",
+    "part_IX/dynamic_acquisition"
+  ],
+  "published_laboratory": "https://nonagon-resonance-foundry-cody.towre676.chatgpt.site",
+  "physical_hardware_measurements": 0
+}

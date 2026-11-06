@@ -1,0 +1,114 @@
+{
+ "case": "case300",
+ "buses": 300,
+ "hidden_nodes": 299,
+ "nodes_total": 299,
+ "branches": 408,
+ "grounds": 1,
+ "unknowns": 409,
+ "port_bus": 9003,
+ "negative_reactance_branches": 1,
+ "readings": 1091,
+ "full_protocol_readings": 44850,
+ "readings_per_unknown": 2.667481662591687,
+ "saving_factor": 41.10907424381301,
+ "rank_mod_p": 409,
+ "identifiable": true,
+ "primes": [
+  2147483647,
+  2147483629,
+  2147483587
+ ],
+ "exact_rational_recovery": true,
+ "rational_mismatches": 0,
+ "crt_log": [
+  {
+   "primes": 2,
+   "all_defined": true,
+   "stable": false
+  },
+  {
+   "primes": 3,
+   "all_defined": true,
+   "stable": true
+  }
+ ],
+ "log2_modulus": 93,
+ "max_height_bits_of_truth": 17,
+ "iterations": [
+  {
+   "iteration": 0,
+   "extra_sources": 0,
+   "rank": 397,
+   "seconds": 0.008580446243286133,
+   "kernel_log": [
+    "nnz(L) = 2621 t=0.0s",
+    "factorized t=0.0s",
+    "selected inverse done t=0.0s",
+    "pass 0 rank 189 / 409 t=0.0s",
+    "pass 1 rank 397 / 409 t=0.0s",
+    "pass 2 rank 397 / 409 t=0.0s",
+    "echelon nnz 1763"
+   ]
+  },
+  {
+   "iteration": 1,
+   "extra_sources": 26,
+   "rank": 409,
+   "seconds": 0.01067209243774414,
+   "kernel_log": [
+    "nnz(L) = 2621 t=0.0s",
+    "factorized t=0.0s",
+    "selected inverse done t=0.0s",
+    "pass 0 rank 189 / 409 t=0.0s",
+    "pass 1 rank 397 / 409 t=0.0s",
+    "pass 2 rank 409 / 409 t=0.0s",
+    "echelon nnz 1792"
+   ]
+  }
+ ],
+ "islands": {
+  "components": 1,
+  "invisible_nodes": 0,
+  "invisible_unknowns": 0
+ },
+ "physical": {
+  "K_positive_definite_binary64": false,
+  "negative_pivots": 1,
+  "port_column_min_over_max": 0.018789892873109747,
+  "port_column_all_positive": true
+ },
+ "extra_source_buses": [
+  115,
+  116,
+  117,
+  118,
+  119,
+  120,
+  121,
+  122,
+  123,
+  124,
+  125,
+  126,
+  137,
+  138,
+  157,
+  158,
+  159,
+  160,
+  181,
+  186,
+  187,
+  188,
+  191,
+  192,
+  225,
+  1201
+ ],
+ "widened_sources": {},
+ "port_index": 266,
+ "seconds_total": 0.06696009635925293,
+ "ordering": "MMD_AT_PLUS_A",
+ "solution_sha256": "378405533e76c26280a1ba05bccadfbe6cc3ca66c56432d1c93c63dcb1664b90"
+}

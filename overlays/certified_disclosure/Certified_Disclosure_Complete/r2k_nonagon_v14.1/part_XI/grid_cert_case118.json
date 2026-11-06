@@ -1,0 +1,47 @@
+{
+ "case": "case118",
+ "n": 117,
+ "w_min": 2.4301336573511545,
+ "rows": [
+  {
+   "eps_rel": 1e-15,
+   "edges_certified_present": 173,
+   "edges": 173,
+   "nonedges_certified_below_gap": 6613,
+   "nonedges": 6613,
+   "max_edge_rel_radius": 1.1736441580865176e-06,
+   "all_enclosures_contain_truth": true,
+   "seconds": 0.184889554977417
+  },
+  {
+   "eps_rel": 1e-13,
+   "edges_certified_present": 173,
+   "edges": 173,
+   "nonedges_certified_below_gap": 6613,
+   "nonedges": 6613,
+   "max_edge_rel_radius": 0.00011736477451086103,
+   "all_enclosures_contain_truth": true,
+   "seconds": 0.2054286003112793
+  },
+  {
+   "eps_rel": 1e-11,
+   "edges_certified_present": 173,
+   "edges": 173,
+   "nonedges_certified_below_gap": 6613,
+   "nonedges": 6613,
+   "max_edge_rel_radius": 0.011748995610279962,
+   "all_enclosures_contain_truth": true,
+   "seconds": 0.14475202560424805
+  },
+  {
+   "eps_rel": 1e-09,
+   "edges_certified_present": 172,
+   "edges": 173,
+   "nonedges_certified_below_gap": 3032,
+   "nonedges": 6613,
+   "max_edge_rel_radius": 1.219057630226016,
+   "all_enclosures_contain_truth": true,
+   "seconds": 0.13507413864135742
+  }
+ ]
+}

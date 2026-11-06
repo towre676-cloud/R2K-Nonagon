@@ -1,0 +1,26 @@
+{
+  "format": "nonagon-independent-direct-campaign-v1",
+  "function": {
+    "kind": "riemann_xi_t"
+  },
+  "range": [
+    "10",
+    "100"
+  ],
+  "initial_width": "2",
+  "b": "3/5",
+  "max_split_depth": 6,
+  "settings": {
+    "precision_bits": 100,
+    "tolerance_bits": 65,
+    "boundary_max_depth": 18,
+    "boundary_eval_limit": 4096,
+    "integral_eval_limit": 12000,
+    "integral_depth_limit": 20,
+    "max_count": 6
+  },
+  "tile_placement": "fixed rational grid, no reference-zero input",
+  "acceptance": "zero-free full boundary, integer contained+isolated, all positive Hermite leading minors or empty",
+  "reference_policy": "no root-list use until all campaign certificates and coverage ledger are written",
+  "engine_sha256": "7c123778df29aa63bd6870d14bd41aa75343662910065ef812ce687f7cd4a228"
+}

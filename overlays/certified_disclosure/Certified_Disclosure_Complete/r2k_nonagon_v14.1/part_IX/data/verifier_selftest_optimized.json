@@ -1,0 +1,76 @@
+{
+  "status": "PASSED",
+  "valid_hand_fixture": {
+    "status": "CERTIFIED",
+    "valid": true,
+    "checks": 105,
+    "network_order": 2,
+    "acquisition_readings": 3,
+    "heldout_readings": 0,
+    "edge_count": 1,
+    "positive_ldl_pivots": [
+      "2",
+      "3/2"
+    ],
+    "scope": "Exact static stiffness, inverse, edge and grounding values, canonical local-load observations, and forward witnesses under the declared calibration and known-site premises."
+  },
+  "rejected_alterations": 11,
+  "controls": [
+    {
+      "alteration": "stiffness",
+      "status": "REJECTED",
+      "reason": "K G inverse identity"
+    },
+    {
+      "alteration": "output",
+      "status": "REJECTED",
+      "reason": "single_1_a: observed scalar differs from witness"
+    },
+    {
+      "alteration": "load",
+      "status": "REJECTED",
+      "reason": "observation differs from canonical plan"
+    },
+    {
+      "alteration": "sensor_gain",
+      "status": "REJECTED",
+      "reason": "sensor gain must be calibrated to one"
+    },
+    {
+      "alteration": "response_vector",
+      "status": "REJECTED",
+      "reason": "baseline: forward equation"
+    },
+    {
+      "alteration": "inverse",
+      "status": "REJECTED",
+      "reason": "K G inverse identity"
+    },
+    {
+      "alteration": "ground",
+      "status": "REJECTED",
+      "reason": "grounding values disagree with stiffness"
+    },
+    {
+      "alteration": "duplicate_label",
+      "status": "REJECTED",
+      "reason": "known coordinate labels must be unique"
+    },
+    {
+      "alteration": "noise_contract",
+      "status": "REJECTED",
+      "reason": "exact checker cannot certify noisy point data"
+    },
+    {
+      "alteration": "missing_reading",
+      "status": "REJECTED",
+      "reason": "acquisition reading count"
+    },
+    {
+      "alteration": "binary_float",
+      "status": "REJECTED",
+      "reason": "rational fields must be strings or integers"
+    }
+  ],
+  "optimized_python": true
+}

@@ -1,0 +1,10 @@
+{
+ "accessible_buses": 53,
+ "hidden_buses": 64,
+ "readings": 1431,
+ "recovered_equals_exact_kron_reduction": true,
+ "true_branches_among_accessible": 45,
+ "edges_in_kron_reduction": 148,
+ "possible_pairs": 1378,
+ "seconds": 0.9315855503082275
+}

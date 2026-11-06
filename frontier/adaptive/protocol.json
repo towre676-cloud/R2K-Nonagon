@@ -1,0 +1,74 @@
+{
+  "title": "Closed-loop real-frequency acquisition with common final Loewner/VF fitter",
+  "version": 2,
+  "development": {
+    "seed": 61739311,
+    "systems_per_scenario": 2
+  },
+  "confirmation": {
+    "seed": 27193693,
+    "systems_per_scenario": 10
+  },
+  "development_candidates": [
+    "adaptive_iopt",
+    "adaptive_disagreement"
+  ],
+  "selection_rule": "Choose candidate with smaller geometric mean heldout NRMSE over positive-noise development cases; retain both development outcomes; no selection/tuning using confirmation",
+  "scenarios": [
+    "ordinary",
+    "colored_noise",
+    "weak_link",
+    "near_collision",
+    "model_mismatch"
+  ],
+  "noise_fractions": [
+    0,
+    0.001,
+    0.01,
+    0.05
+  ],
+  "budget": {
+    "total_unique_positive_frequency_queries": 64,
+    "common_pilot": 33,
+    "candidate_frequencies": 1025,
+    "public_fixed_band": [
+      0.03,
+      8
+    ],
+    "heldout_grid": "1024 clean points disjoint from acquisition lattice"
+  },
+  "noise_table": "One frozen noise realization per system/candidate, shared by every strategy; colored scenario AR1 .95 along log-frequency lattice; same standardized noise scales across levels",
+  "baselines": [
+    "64-point log-uniform exact lattice subset",
+    "common pilot plus31 linear-coverage queries snapped uniquely to pool",
+    "common pilot plus31 random pool queries",
+    "closed-loop predicted-magnitude exploitation plus one exploration point per4-query batch"
+  ],
+  "adaptive": "Each4-query batch refits from observed data only; three I-optimal pole/residue sensitivity or model-disagreement queries plus one maximum log-gap exploration query; design fit failure falls back to coverage and is recorded",
+  "fitter": "Identical ordinary projected Loewner plus eight stable-pole vector-fitting iterations for every final strategy, known true chain McMillan order; model mismatch excludes extra oscillator order",
+  "input_isolation": "Acquisition gets public pool frequencies, noisy query callback, order, band; never scenario, noise level, true poles/residues/masses, clean responses or heldout grid. No oracle frequencies or repeats. Conjugates are inferred symmetry, not extra observations",
+  "primary": "Dev-selected adaptive strategy / log_uniform geometric mean clean heldout NRMSE across all positive-noise confirmation cases",
+  "uncertainty": "5000 paired bootstrap resamples of50 independent system clusters with shared noise levels retained, fixed seed771931",
+  "failure_scoring": {
+    "error_penalty": 1000000,
+    "error_floor": 1e-14
+  },
+  "limits": "Synthetic input isolation and local hash freeze, not external preregistration, measured hardware or unknown-order discovery; approximate Fisher covariance is design heuristic not confidence interval; mismatch oscillator numerator coefficient.025 not norm percentage",
+  "development_changes": [
+    "Previous pilot17/33 exploration and first confirmation invalidated because defaultauto complex-symmetric3x3 solve produced inaccurate physical generator values. All invalid receipts retained.",
+    "Explicit general linear solver and backward residual check now mandatory for every physical candidate and heldout evaluation. Fresh development and confirmation seeds. Pilot33 retained as fixed engineering choice, compare2adaptive rules again on valid development."
+  ],
+  "solver": "Every physical candidate and heldout response uses scipy.linalg.solve assume_a=gen; backward residual <=1e-11; independent numpy.linalg.solve relative agreement <=1e-9; both maxima recorded per generated system. Descriptor solves explicitgen as well.",
+  "selected_adaptive": "adaptive_disagreement",
+  "selected_pilot": 33,
+  "selection_result": {
+    "valid_development_error_ratios": {
+      "adaptive_disagreement": 0.5913468158453945,
+      "adaptive_iopt": 1.1442889472042792,
+      "linear_coverage": 1.6428759160171953,
+      "random": 1.318017519703165,
+      "resonance_directed": 1.1053968642848468
+    },
+    "choice": "adaptive_disagreement smallest valid development error among2candidates; pilot33 fixed engineering choice after invalidatedrun. Freshconfirmationunopened."
+  }
+}

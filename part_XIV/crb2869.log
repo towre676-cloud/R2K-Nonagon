@@ -1,0 +1,4 @@
+case2869pegase lean {'readings': 11341, 'unknowns': 3968, 'median_k': 1376.8739044975234, 'p90_k': 9851.757806496493, 'unresolved_branches': 0, 'sigma_for_1pct_median': 7.262829201232775e-06, 'frac_1pct_at_1e-3': 0.0, 'frac_1pct_at_1e-4': 0.09462528387585163, 'frac_1pct_at_1e-6': 0.9023467070401211, 'eig_ratio': 6.687995478428571e-14, 'seconds': 46.4314398765564}
+/usr/local/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:4596: RuntimeWarning: invalid value encountered in scalar subtract
+  diff_b_a = b - a
+case2869pegase ports10 {'readings': 157795, 'unknowns': 3968, 'median_k': 317.08740097056875, 'p90_k': nan, 'unresolved_branches': 560, 'sigma_for_1pct_median': 3.1537046156331435e-05, 'frac_1pct_at_1e-3': 0.02371940449154681, 'frac_1pct_at_1e-4': 0.27125914711077465, 'frac_1pct_at_1e-6': 0.8470855412566237, 'eig_ratio': -8.113726981402373e-17, 'seconds': 610.9520089626312}

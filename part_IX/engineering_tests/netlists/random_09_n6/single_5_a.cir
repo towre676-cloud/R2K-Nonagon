@@ -1,0 +1,23 @@
+Nonagon external DC circuit random_09_n6 single_5_a
+.options reltol=1e-12 abstol=1e-15 vntol=1e-12 gmin=1e-18
+Iinput 0 n1 DC 0.0001
+Redge_1_2 n1 n2 250
+Redge_1_4 n1 n4 250
+Redge_2_3 n2 n3 333.33333333333331
+Redge_2_6 n2 n6 1000
+Rground_2 n2 0 833.33333333333337
+Redge_3_5 n3 n5 250
+Redge_3_6 n3 n6 375
+Rground_3 n3 0 2000
+Redge_4_5 n4 n5 1666.6666666666667
+Redge_4_6 n4 n6 2000
+Rground_5 n5 0 200
+Rground_6 n6 0 4000
+Rload_6 n6 0 1000
+.control
+set numdgt=17
+op
+print v(n1) v(n2) v(n3) v(n4) v(n5) v(n6)
+quit
+.endc
+.end

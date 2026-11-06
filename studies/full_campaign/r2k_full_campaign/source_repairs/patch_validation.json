@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "patch": "root_hardening/r2kverify_hardening.patch",
+      "git_apply_check": "PASS"
+    },
+    {
+      "patch": "source_repairs/manuscript_corrections.patch",
+      "git_apply_check": "PASS"
+    }
+  ]
+}

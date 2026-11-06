@@ -1,0 +1,10 @@
+{
+ "case": "case118",
+ "prime": 1000000007,
+ "rows": 266,
+ "unknowns": 179,
+ "rank": 179,
+ "identifiable": true,
+ "agrees_with_record": true,
+ "seconds": 0.012119054794311523
+}

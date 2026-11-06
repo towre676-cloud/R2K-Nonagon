@@ -1,0 +1,968 @@
+{
+  "status": "complete",
+  "scope": "descriptive overlapping-batch means under sampling assumptions, no rigorous statistical interval",
+  "batch_lengths": [
+    250.0,
+    500.0,
+    1000.0,
+    2000.0,
+    4000.0
+  ],
+  "heights": [
+    {
+      "n0": 100000,
+      "rows": [
+        {
+          "L": 0.5,
+          "influence_mean_roundoff_difference": -8.987255384340642e-14,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0006001735204213494,
+              "batch_origin_breakpoints": 78994
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0005664944740751467,
+              "batch_origin_breakpoints": 77995
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0004999434747729798,
+              "batch_origin_breakpoints": 75993
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.00036712400930576615,
+              "batch_origin_breakpoints": 71996
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.00031916170958423625,
+              "batch_origin_breakpoints": 63994
+            }
+          ]
+        },
+        {
+          "L": 1.0,
+          "influence_mean_roundoff_difference": -7.216449660063518e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0009185618984508605,
+              "batch_origin_breakpoints": 78992
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0007343554340150352,
+              "batch_origin_breakpoints": 77993
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0005618209035294837,
+              "batch_origin_breakpoints": 75992
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.00038143627924773173,
+              "batch_origin_breakpoints": 71992
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.00035255964505433694,
+              "batch_origin_breakpoints": 63991
+            }
+          ]
+        },
+        {
+          "L": 2.0,
+          "influence_mean_roundoff_difference": -7.216449660063518e-16,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0007370800643459596,
+              "batch_origin_breakpoints": 78988
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0006540463042026818,
+              "batch_origin_breakpoints": 77988
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0006035364241479623,
+              "batch_origin_breakpoints": 75988
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.00044530719616745715,
+              "batch_origin_breakpoints": 71989
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0004336256020166296,
+              "batch_origin_breakpoints": 63988
+            }
+          ]
+        },
+        {
+          "L": 4.0,
+          "influence_mean_roundoff_difference": 6.106226635438361e-16,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0007572351301217149,
+              "batch_origin_breakpoints": 78979
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0006367781652963466,
+              "batch_origin_breakpoints": 77981
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.00048183352097085086,
+              "batch_origin_breakpoints": 75980
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0003926962613740599,
+              "batch_origin_breakpoints": 71982
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0003366998801370942,
+              "batch_origin_breakpoints": 63980
+            }
+          ]
+        },
+        {
+          "L": 8.0,
+          "influence_mean_roundoff_difference": -1.2212453270876722e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0006796799167065732,
+              "batch_origin_breakpoints": 78963
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0005986904828802345,
+              "batch_origin_breakpoints": 77964
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0005188294380466985,
+              "batch_origin_breakpoints": 75962
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0004759382836247894,
+              "batch_origin_breakpoints": 71964
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.00048326287872009385,
+              "batch_origin_breakpoints": 63962
+            }
+          ]
+        },
+        {
+          "L": 16.0,
+          "influence_mean_roundoff_difference": 2.0539125955565396e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0007147852352172827,
+              "batch_origin_breakpoints": 78931
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0006131603610481848,
+              "batch_origin_breakpoints": 77932
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0005068282468265843,
+              "batch_origin_breakpoints": 75931
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0004201894349567716,
+              "batch_origin_breakpoints": 71932
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.00032873123649972683,
+              "batch_origin_breakpoints": 63931
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n0": 1000000,
+      "rows": [
+        {
+          "L": 0.5,
+          "influence_mean_roundoff_difference": 5.856426454897701e-14,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0006480281143196942,
+              "batch_origin_breakpoints": 78994
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0006577147712934089,
+              "batch_origin_breakpoints": 77995
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0006432296055798632,
+              "batch_origin_breakpoints": 75995
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.000672594838408352,
+              "batch_origin_breakpoints": 71995
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0005857701415271485,
+              "batch_origin_breakpoints": 63996
+            }
+          ]
+        },
+        {
+          "L": 1.0,
+          "influence_mean_roundoff_difference": -9.43689570931383e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.001194952581438133,
+              "batch_origin_breakpoints": 78992
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0009815738100253891,
+              "batch_origin_breakpoints": 77992
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0008000789961982442,
+              "batch_origin_breakpoints": 75993
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0006996900924816642,
+              "batch_origin_breakpoints": 71993
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0006133237154833876,
+              "batch_origin_breakpoints": 63995
+            }
+          ]
+        },
+        {
+          "L": 2.0,
+          "influence_mean_roundoff_difference": 2.3314683517128287e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0008790751094730047,
+              "batch_origin_breakpoints": 78986
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.000736924069689344,
+              "batch_origin_breakpoints": 77987
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0006535952433514519,
+              "batch_origin_breakpoints": 75988
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0005602934018623068,
+              "batch_origin_breakpoints": 71989
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0005012522657991771,
+              "batch_origin_breakpoints": 63990
+            }
+          ]
+        },
+        {
+          "L": 4.0,
+          "influence_mean_roundoff_difference": 1.5543122344752192e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0009276061657394422,
+              "batch_origin_breakpoints": 78979
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0008771226866577075,
+              "batch_origin_breakpoints": 77981
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0008379912305123969,
+              "batch_origin_breakpoints": 75981
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0008001839408387497,
+              "batch_origin_breakpoints": 71982
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0007931897219156366,
+              "batch_origin_breakpoints": 63982
+            }
+          ]
+        },
+        {
+          "L": 8.0,
+          "influence_mean_roundoff_difference": -4.996003610813204e-16,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0008565431238168197,
+              "batch_origin_breakpoints": 78965
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0007539165343689086,
+              "batch_origin_breakpoints": 77966
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0006150453496115562,
+              "batch_origin_breakpoints": 75966
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0005146470121630515,
+              "batch_origin_breakpoints": 71964
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0003209436492733908,
+              "batch_origin_breakpoints": 63966
+            }
+          ]
+        },
+        {
+          "L": 16.0,
+          "influence_mean_roundoff_difference": -1.5543122344752192e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0008993538599476516,
+              "batch_origin_breakpoints": 78933
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0007664023067728981,
+              "batch_origin_breakpoints": 77934
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0007141890532022481,
+              "batch_origin_breakpoints": 75933
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0006077920829885023,
+              "batch_origin_breakpoints": 71935
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.00043207393094431393,
+              "batch_origin_breakpoints": 63935
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n0": 10000000,
+      "rows": [
+        {
+          "L": 0.5,
+          "influence_mean_roundoff_difference": 5.1514348342607263e-14,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0005645291579300424,
+              "batch_origin_breakpoints": 78995
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0005130817405426585,
+              "batch_origin_breakpoints": 77994
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.00047006425203524556,
+              "batch_origin_breakpoints": 75994
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.00040589707005277316,
+              "batch_origin_breakpoints": 71994
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.00031399293949745246,
+              "batch_origin_breakpoints": 63995
+            }
+          ]
+        },
+        {
+          "L": 1.0,
+          "influence_mean_roundoff_difference": 1.865174681370263e-14,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0013623949438156507,
+              "batch_origin_breakpoints": 78992
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0012489859992247628,
+              "batch_origin_breakpoints": 77991
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0011171326577403221,
+              "batch_origin_breakpoints": 75990
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0010007997403763205,
+              "batch_origin_breakpoints": 71992
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0008515140412615912,
+              "batch_origin_breakpoints": 63992
+            }
+          ]
+        },
+        {
+          "L": 2.0,
+          "influence_mean_roundoff_difference": -9.43689570931383e-16,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0009649722785415769,
+              "batch_origin_breakpoints": 78989
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0008135536650591681,
+              "batch_origin_breakpoints": 77988
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0007176439739986127,
+              "batch_origin_breakpoints": 75988
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0007081004149943294,
+              "batch_origin_breakpoints": 71988
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0006280822747822601,
+              "batch_origin_breakpoints": 63989
+            }
+          ]
+        },
+        {
+          "L": 4.0,
+          "influence_mean_roundoff_difference": -3.0531133177191805e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0011110707956004705,
+              "batch_origin_breakpoints": 78980
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0009272446797334859,
+              "batch_origin_breakpoints": 77979
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0007382386226962324,
+              "batch_origin_breakpoints": 75979
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0005810011872184435,
+              "batch_origin_breakpoints": 71980
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0005073192069340649,
+              "batch_origin_breakpoints": 63979
+            }
+          ]
+        },
+        {
+          "L": 8.0,
+          "influence_mean_roundoff_difference": -3.83026943495679e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0010788122613702568,
+              "batch_origin_breakpoints": 78964
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0008444954206078564,
+              "batch_origin_breakpoints": 77962
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0008485310483817785,
+              "batch_origin_breakpoints": 75961
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0008497219393701455,
+              "batch_origin_breakpoints": 71963
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0005868620015115085,
+              "batch_origin_breakpoints": 63963
+            }
+          ]
+        },
+        {
+          "L": 16.0,
+          "influence_mean_roundoff_difference": 2.4424906541753444e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0010370766343541491,
+              "batch_origin_breakpoints": 78933
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0009296935872439673,
+              "batch_origin_breakpoints": 77931
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0008380392939781904,
+              "batch_origin_breakpoints": 75932
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0006420543222896192,
+              "batch_origin_breakpoints": 71933
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0005136674933006145,
+              "batch_origin_breakpoints": 63934
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n0": 20000000,
+      "rows": [
+        {
+          "L": 0.5,
+          "influence_mean_roundoff_difference": -6.827871601444713e-14,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0005818852923500657,
+              "batch_origin_breakpoints": 78995
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0005411295477018601,
+              "batch_origin_breakpoints": 77996
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0004628666082279618,
+              "batch_origin_breakpoints": 75994
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.00033026827294302077,
+              "batch_origin_breakpoints": 71995
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.00024976929594055543,
+              "batch_origin_breakpoints": 63994
+            }
+          ]
+        },
+        {
+          "L": 1.0,
+          "influence_mean_roundoff_difference": -1.1546319456101628e-14,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0016007928298210645,
+              "batch_origin_breakpoints": 78994
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.001470424667978262,
+              "batch_origin_breakpoints": 77994
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.001241432020268398,
+              "batch_origin_breakpoints": 75994
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0009213523422833959,
+              "batch_origin_breakpoints": 71995
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0006939043218080016,
+              "batch_origin_breakpoints": 63993
+            }
+          ]
+        },
+        {
+          "L": 2.0,
+          "influence_mean_roundoff_difference": 1.609823385706477e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.001083971001332725,
+              "batch_origin_breakpoints": 78989
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0009112316221307523,
+              "batch_origin_breakpoints": 77989
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.000790004085971643,
+              "batch_origin_breakpoints": 75988
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0006055340627768087,
+              "batch_origin_breakpoints": 71989
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0004991037741913026,
+              "batch_origin_breakpoints": 63989
+            }
+          ]
+        },
+        {
+          "L": 4.0,
+          "influence_mean_roundoff_difference": -7.216449660063518e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0010641853871819645,
+              "batch_origin_breakpoints": 78981
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.000935700413367336,
+              "batch_origin_breakpoints": 77981
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0007749027166541037,
+              "batch_origin_breakpoints": 75980
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0006387916032044552,
+              "batch_origin_breakpoints": 71981
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0005729670700031562,
+              "batch_origin_breakpoints": 63979
+            }
+          ]
+        },
+        {
+          "L": 8.0,
+          "influence_mean_roundoff_difference": -4.274358644806853e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0010979411584116014,
+              "batch_origin_breakpoints": 78966
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0009200791563170681,
+              "batch_origin_breakpoints": 77966
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0008481718528610746,
+              "batch_origin_breakpoints": 75966
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.000646032870471735,
+              "batch_origin_breakpoints": 71966
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.000543020844708433,
+              "batch_origin_breakpoints": 63965
+            }
+          ]
+        },
+        {
+          "L": 16.0,
+          "influence_mean_roundoff_difference": -1.4432899320127035e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0011766687154065258,
+              "batch_origin_breakpoints": 78932
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0010105007835619988,
+              "batch_origin_breakpoints": 77933
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.000898203290844369,
+              "batch_origin_breakpoints": 75934
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0007461483021708922,
+              "batch_origin_breakpoints": 71933
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0005411741710247028,
+              "batch_origin_breakpoints": 63931
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n0": 50000000,
+      "rows": [
+        {
+          "L": 0.5,
+          "influence_mean_roundoff_difference": 1.0763612223740893e-13,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0006721781632782395,
+              "batch_origin_breakpoints": 78995
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0007072492495022523,
+              "batch_origin_breakpoints": 77994
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0007169902189500815,
+              "batch_origin_breakpoints": 75996
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0006721343759814144,
+              "batch_origin_breakpoints": 71996
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0006194497243616695,
+              "batch_origin_breakpoints": 63996
+            }
+          ]
+        },
+        {
+          "L": 1.0,
+          "influence_mean_roundoff_difference": -1.0935696792557792e-14,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0015645662963397456,
+              "batch_origin_breakpoints": 78992
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0014749788839103577,
+              "batch_origin_breakpoints": 77992
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0012981220747734317,
+              "batch_origin_breakpoints": 75994
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0010899509843947163,
+              "batch_origin_breakpoints": 71994
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0007725396313305352,
+              "batch_origin_breakpoints": 63994
+            }
+          ]
+        },
+        {
+          "L": 2.0,
+          "influence_mean_roundoff_difference": -2.7755575615628914e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0012592726952172987,
+              "batch_origin_breakpoints": 78988
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0009825823421832892,
+              "batch_origin_breakpoints": 77988
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0008410247966532092,
+              "batch_origin_breakpoints": 75989
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0007492971860497816,
+              "batch_origin_breakpoints": 71990
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0006336677644347071,
+              "batch_origin_breakpoints": 63989
+            }
+          ]
+        },
+        {
+          "L": 4.0,
+          "influence_mean_roundoff_difference": 1.3877787807814457e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0013540836446651614,
+              "batch_origin_breakpoints": 78981
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.0012276279620620956,
+              "batch_origin_breakpoints": 77981
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0010463098168484368,
+              "batch_origin_breakpoints": 75980
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0009399449412914596,
+              "batch_origin_breakpoints": 71981
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0009519282539778879,
+              "batch_origin_breakpoints": 63981
+            }
+          ]
+        },
+        {
+          "L": 8.0,
+          "influence_mean_roundoff_difference": -2.220446049250313e-16,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.0013809251861755841,
+              "batch_origin_breakpoints": 78965
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.001251102115123107,
+              "batch_origin_breakpoints": 77965
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0009870232910137665,
+              "batch_origin_breakpoints": 75964
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0009662280292783218,
+              "batch_origin_breakpoints": 71965
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0010001954061263697,
+              "batch_origin_breakpoints": 63966
+            }
+          ]
+        },
+        {
+          "L": 16.0,
+          "influence_mean_roundoff_difference": 1.7763568394002505e-15,
+          "profiles": [
+            {
+              "batch_length": 250.0,
+              "nominal_obm_se": 0.001313081099372324,
+              "batch_origin_breakpoints": 78932
+            },
+            {
+              "batch_length": 500.0,
+              "nominal_obm_se": 0.001186200133348319,
+              "batch_origin_breakpoints": 77932
+            },
+            {
+              "batch_length": 1000.0,
+              "nominal_obm_se": 0.0010537799967891247,
+              "batch_origin_breakpoints": 75932
+            },
+            {
+              "batch_length": 2000.0,
+              "nominal_obm_se": 0.0008356319147868424,
+              "batch_origin_breakpoints": 71934
+            },
+            {
+              "batch_length": 4000.0,
+              "nominal_obm_se": 0.0006031302038020951,
+              "batch_origin_breakpoints": 63933
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

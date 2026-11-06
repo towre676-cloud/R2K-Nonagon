@@ -1,0 +1,36 @@
+{
+  "acquisition_seed": 182673,
+  "actual_shunts": "Each active shunt in each acquisition independently varies inside its declared resistance and contact envelope; exact rational values retained for scoring only",
+  "budgets": [
+    1,
+    6,
+    12,
+    21
+  ],
+  "calibration_scope": "declared simulated resistance envelope, not a claim to cover every operating specification of a product",
+  "catalog": "same preregistered five single-fault categories and healthy alternative as fault_protocol.json",
+  "confirmation_fixtures": 20,
+  "confirmation_seed": 735826,
+  "current_and_gain_error": "included in external normalized scalar error envelope, not separately randomized",
+  "dimension": 6,
+  "normalized_compliance_equals_voltage_V": true,
+  "normalized_conductance_scale_S": "1/1000",
+  "query_pool_and_policy": "frozen fault_benchmark definitions; strongest fixed plans maximize newly disjoint catalog prediction boxes before observing fault data",
+  "relationship_to_first_campaign": "Prospective extension with new confirmation seed, frozen before these additional cases. First readout-only campaign remains separate.",
+  "relay_series_resistance_ohm": [
+    "0",
+    "1/20"
+  ],
+  "resistor_absolute_error_ohm": "7/100",
+  "resistor_relative_error": "1/1250",
+  "scalar_error_bounds": [
+    "1/1000000",
+    "1/100000",
+    "1/10000"
+  ],
+  "scalar_error_units": "V for the stated1mA source and1mS normalization",
+  "schema": "nonagon.engineering.calibrated_fault_protocol.v1",
+  "scope": "finite single-fault catalog with known healthy reference; no physical apparatus connected",
+  "source_current_A": "1/1000",
+  "specimens_per_fixture": 5
+}

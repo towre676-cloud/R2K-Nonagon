@@ -1,0 +1,27 @@
+{
+  "rule": {
+    "id": "residue_ratio_le_0.0001",
+    "kind": "threshold",
+    "feature": "residue_ratio",
+    "op": "le",
+    "threshold": 0.0001
+  },
+  "development_selection": {
+    "rule": {
+      "id": "residue_ratio_le_0.0001",
+      "kind": "threshold",
+      "feature": "residue_ratio",
+      "op": "le",
+      "threshold": 0.0001
+    },
+    "selected_positive_cases": 8,
+    "selected_system_clusters": 5,
+    "capped_mean_error_ratio": 0.9204674059003799,
+    "dev_ratio_ci95": [
+      0.8560591407061926,
+      0.9992572004591226
+    ],
+    "eligible": true
+  },
+  "selection": "Small fixed rule set, >=4 selected systems, >=5% capped-mean risk reduction and bootstrap upper<=1 on prior DEVELOPMENT only; otherwise always_log. Development uncertainty is a selection heuristic, not confirmation."
+}

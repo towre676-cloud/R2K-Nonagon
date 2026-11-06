@@ -1,0 +1,40 @@
+{
+  "passed": 5,
+  "controls": [
+    {
+      "name": "real_simple",
+      "status": "certified_real_simple",
+      "count": 2,
+      "reason": null,
+      "seconds": 0.012574316002428532
+    },
+    {
+      "name": "off_axis_pair",
+      "status": "certified_not_all_real_simple",
+      "count": 2,
+      "reason": null,
+      "seconds": 0.01229730699560605
+    },
+    {
+      "name": "repeated_root",
+      "status": "unresolved",
+      "count": 2,
+      "reason": "positive definiteness undecided",
+      "seconds": 0.011707224999554455
+    },
+    {
+      "name": "boundary_root",
+      "status": "unresolved",
+      "count": null,
+      "reason": "boundary point not excluded from zero",
+      "seconds": 0.0002923720021499321
+    },
+    {
+      "name": "close_real_pair",
+      "status": "certified_real_simple",
+      "count": 2,
+      "reason": null,
+      "seconds": 0.011992065999947954
+    }
+  ]
+}

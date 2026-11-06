@@ -1,0 +1,28 @@
+Nonagon independent RC transient random_03_n6
+.options reltol=1e-10 abstol=1e-16 vntol=1e-12 gmin=1e-18 method=gear maxord=2
+Iinput 0 n1 DC 0.0001
+Redge_1_2 n1 n2 285.71428571428572
+Redge_1_5 n1 n5 1000
+Redge_1_6 n1 n6 750
+Rground_1 n1 0 333.33333333333331
+Redge_2_3 n2 n3 500
+Redge_2_4 n2 n4 1250
+Redge_3_4 n3 n4 285.71428571428572
+Redge_3_5 n3 n5 571.42857142857144
+Redge_4_6 n4 n6 1000
+Rground_5 n5 0 285.71428571428572
+Cground_1 n1 0 9.9999999999999995e-07 IC=0
+Cground_2 n2 0 9.9999999999999995e-07 IC=0
+Cground_3 n3 0 9.9999999999999995e-07 IC=0
+Cground_4 n4 0 9.9999999999999995e-07 IC=0
+Cground_5 n5 0 9.9999999999999995e-07 IC=0
+Cground_6 n6 0 9.9999999999999995e-07 IC=0
+.control
+set numdgt=17
+set wr_singlescale
+set wr_vecnames
+tran 3.3109960407342664e-06 0.031388901110675799 0 3.3109960407342664e-06 uic
+wrdata /workspace/scratch/78a48cc5fade/part9_tests/netlists/random_03_n6/transient.dat v(n1) v(n2) v(n3) v(n4) v(n5) v(n6)
+quit
+.endc
+.end

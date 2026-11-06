@@ -1,0 +1,65 @@
+{
+  "method": "exact rational arithmetic; no floating tolerances",
+  "seed": 20261030,
+  "network_sizes": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "networks_per_size": 5,
+  "checks": {
+    "two_jet_exact": 30,
+    "minor_polynomial_exact": 30,
+    "frame_update_exact": 30,
+    "elimination_exact": 25,
+    "gauge_exact": 30,
+    "third_jet_exact": 30
+  },
+  "total_assertion_groups": 175,
+  "example": {
+    "K": [
+      [
+        "9",
+        "-1",
+        "-4"
+      ],
+      [
+        "-1",
+        "10",
+        "-7"
+      ],
+      [
+        "-4",
+        "-7",
+        "13"
+      ]
+    ],
+    "G": [
+      [
+        "81/500",
+        "41/500",
+        "47/500"
+      ],
+      [
+        "41/500",
+        "101/500",
+        "67/500"
+      ],
+      [
+        "47/500",
+        "67/500",
+        "89/500"
+      ]
+    ],
+    "strengths": [
+      "3/4",
+      "5/2"
+    ],
+    "response": "941/6521",
+    "numerator": "941/4000",
+    "denominator": "6521/4000"
+  }
+}

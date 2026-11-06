@@ -1,0 +1,16 @@
+{
+  "frozen_before_new_results": true,
+  "date": "2026-11-04",
+  "scope": "Known-topology nonlinear scalar one-port shunt calibration; no AC state-estimation or field-data claim",
+  "budgets": [179,180,200,250,379,6903],
+  "design_information": "Topology, uniform nominal weights scaled by one baseline reading; hidden actual weights used only for evaluation",
+  "targets": "12 effective resistances for deterministic reduced-index pairs (i, (i+37) mod 117), i=0,10,...,110; normalized by nominal target values",
+  "methods": ["random", "qr_norm", "d_opt", "a_opt", "target_a", "target_correlated"],
+  "seed": 20261104,
+  "noise": "sigma times baseline response; iid Gaussian or 0.5 independent variance + 0.25 common-reference variance + 0.25 first-intervention-node group variance, unit marginal variance",
+  "linear_trials": 1000,
+  "nonlinear": {"methods":["qr_norm","target_a","target_correlated"],"budgets":[180,250,379],"sigma":[0,1e-7,1e-5],"trials":5,"start":"baseline-scaled uniform nominal","max_nfev":100},
+  "dropout": "Every single reading removed at budget 180, target_a and original adaptive panel",
+  "mismatch": "Nominal-designed panels evaluated at independent logweight perturbations of actual weights, standard deviations 0.03 and 0.1, five draws each",
+  "claims": "New runs are exploratory simulation comparisons. Local covariance is not global nonlinear recoverability. Full-panel true-Jacobian evaluation is an oracle local diagnostic, not an acquisition algorithm."
+}

@@ -1,0 +1,440 @@
+{
+  "status": "PASS",
+  "exact_correlated_law_covariance_checks": [
+    {
+      "trial": 0,
+      "direct_covariance": "-6085921798863/47164534703",
+      "collision_orders": [
+        "265573329793/742748578",
+        "-5316615133806/4287684973",
+        "295826443933/329821921",
+        "-9082299367/50741834"
+      ],
+      "pairing": "11690587485/329821921"
+    },
+    {
+      "trial": 1,
+      "direct_covariance": "3213060013790/28138199631",
+      "collision_orders": [
+        "148932507580/112104381",
+        "-461542342691764/84414598893",
+        "8815851496514/1592728281",
+        "-2758274296052/1592728281"
+      ],
+      "pairing": "716674583036/1592728281"
+    },
+    {
+      "trial": 2,
+      "direct_covariance": "1501354886/6351075",
+      "collision_orders": [
+        "5724817/3492",
+        "-2725815263/564540",
+        "22679678644/6351075",
+        "-14974001008/19053225"
+      ],
+      "pairing": "12199262104/19053225"
+    },
+    {
+      "trial": 3,
+      "direct_covariance": "726410132813/4059890496",
+      "collision_orders": [
+        "64890407977/79605696",
+        "-704786444307/225549472",
+        "1301196999/457504",
+        "-70702044475/93330816"
+      ],
+      "pairing": "112542902693/279992448"
+    },
+    {
+      "trial": 4,
+      "direct_covariance": "17330512149098/57499311673",
+      "collision_orders": [
+        "742874810066/229080923",
+        "-531096681778888/57499311673",
+        "4047538374668/592776409",
+        "-915411663008/592776409"
+      ],
+      "pairing": "599477583200/592776409"
+    },
+    {
+      "trial": 5,
+      "direct_covariance": "131400625352/270073125",
+      "collision_orders": [
+        "59371290922/18004875",
+        "-6779122985926/630170625",
+        "43868631332/4738125",
+        "-238451204821/99500625"
+      ],
+      "pairing": "35968013659/33166875"
+    },
+    {
+      "trial": 6,
+      "direct_covariance": "36516301679/183667778",
+      "collision_orders": [
+        "18455736085/26238254",
+        "-239035970367/91833889",
+        "217012770922/91833889",
+        "-109946034851/183667778"
+      ],
+      "pairing": "61318582825/183667778"
+    },
+    {
+      "trial": 7,
+      "direct_covariance": "3481533327236/73609430279",
+      "collision_orders": [
+        "249764872572/352198231",
+        "-196120959525200/73609430279",
+        "87508232584/36386273",
+        "-57096182288/88366663"
+      ],
+      "pairing": "13700229040/56233331"
+    },
+    {
+      "trial": 8,
+      "direct_covariance": "11318805321/941262400",
+      "collision_orders": [
+        "10553441/122720",
+        "-295371246459/941262400",
+        "4526029427/14707225",
+        "-21582661357/235315600"
+      ],
+      "pairing": "2240992141/94126240"
+    },
+    {
+      "trial": 9,
+      "direct_covariance": "294880147915/38104026076",
+      "collision_orders": [
+        "1001235146741/1096518736",
+        "-515986590445079/152416104304",
+        "2879801863947/964658888",
+        "-366830274837/482329444"
+      ],
+      "pairing": "246228468257/964658888"
+    },
+    {
+      "trial": 10,
+      "direct_covariance": "1235454707/22724289",
+      "collision_orders": [
+        "24782297/85806",
+        "-55907289335/68172867",
+        "3432932207/6492654",
+        "-2905078802/22724289"
+      ],
+      "pairing": "4197855574/22724289"
+    },
+    {
+      "trial": 11,
+      "direct_covariance": "4554927997/118149192",
+      "collision_orders": [
+        "173543471/1245132",
+        "-462007208017/1063342728",
+        "21635857367/59074596",
+        "-5505519863/59074596"
+      ],
+      "pairing": "1790260019/29537298"
+    },
+    {
+      "trial": 12,
+      "direct_covariance": "-316355640693/15184875277",
+      "collision_orders": [
+        "15171029108/53760421",
+        "-148262182414773/167033628047",
+        "842478120734/1168067329",
+        "-195734494394/1168067329"
+      ],
+      "pairing": "36094715818/1168067329"
+    },
+    {
+      "trial": 13,
+      "direct_covariance": "7653971941/192727431",
+      "collision_orders": [
+        "722857805/1560546",
+        "-1250306757355/770909724",
+        "23267970631/14825187",
+        "-84036587639/177902244"
+      ],
+      "pairing": "9006341893/88951122"
+    },
+    {
+      "trial": 14,
+      "direct_covariance": "657822927249/25175691584",
+      "collision_orders": [
+        "45279794593/198233792",
+        "-10037451464541/12587845792",
+        "80874472019/108515912",
+        "-43966298041/217031824"
+      ],
+      "pairing": "5687090549/108515912"
+    },
+    {
+      "trial": 15,
+      "direct_covariance": "-297569618553/5573411116",
+      "collision_orders": [
+        "11389302879/9970324",
+        "-47622172365259/11146822232",
+        "127171506789/30623138",
+        "-18950763768/15311569"
+      ],
+      "pairing": "403570321/2499848"
+    },
+    {
+      "trial": 16,
+      "direct_covariance": "2035923784663/6483580040",
+      "collision_orders": [
+        "186761965401/115778215",
+        "-53232204407793/9262257200",
+        "2064419778497/435139600",
+        "-48311780093/43513960"
+      ],
+      "pairing": "177127427581/217569800"
+    },
+    {
+      "trial": 17,
+      "direct_covariance": "460776060962/3068083363",
+      "collision_orders": [
+        "43341292905/121508252",
+        "-16446314250489/12272333452",
+        "110198875697/91584578",
+        "-15386101423/45792289"
+      ],
+      "pairing": "24393833947/91584578"
+    },
+    {
+      "trial": 18,
+      "direct_covariance": "191991455209/3154621440",
+      "collision_orders": [
+        "50651994507/131442560",
+        "-1422909950873/1051540480",
+        "10724192047/8911360",
+        "-23892110411/80202240"
+      ],
+      "pairing": "4938124549/40101120"
+    },
+    {
+      "trial": 19,
+      "direct_covariance": "900901075/232440516",
+      "collision_orders": [
+        "4949746877/33205788",
+        "-114895339121/232440516",
+        "10380173029/25826724",
+        "-22276534589/232440516"
+      ],
+      "pairing": "1111443265/25826724"
+    }
+  ],
+  "collision_partitions": 15,
+  "uniform_error_transfer_constants": [
+    {
+      "L": "1/2",
+      "M": "1/2",
+      "factorial_cumulant_2_coefficient": "36011/143996",
+      "factorial_cumulant_3_coefficient": "36003/71998",
+      "factorial_cumulant_4_coefficient": "1/4",
+      "pairing_linear_epsilon2_delta_coefficient": "2/35999",
+      "pairing_linear_epsilon2_B2_coefficient": "1",
+      "pairing_quadratic_epsilon2_coefficient": "1/2"
+    },
+    {
+      "L": "1/2",
+      "M": "1",
+      "factorial_cumulant_2_coefficient": "648233989/1295892002",
+      "factorial_cumulant_3_coefficient": "108013/71998",
+      "factorial_cumulant_4_coefficient": "1",
+      "pairing_linear_epsilon2_delta_coefficient": "8/35999",
+      "pairing_linear_epsilon2_B2_coefficient": "4",
+      "pairing_quadratic_epsilon2_coefficient": "2"
+    },
+    {
+      "L": "1/2",
+      "M": "2",
+      "factorial_cumulant_2_coefficient": "324170983/323955001",
+      "factorial_cumulant_3_coefficient": "180027/35999",
+      "factorial_cumulant_4_coefficient": "4",
+      "pairing_linear_epsilon2_delta_coefficient": "32/35999",
+      "pairing_linear_epsilon2_B2_coefficient": "16",
+      "pairing_quadratic_epsilon2_coefficient": "8"
+    },
+    {
+      "L": "1/2",
+      "M": "4",
+      "factorial_cumulant_2_coefficient": "324278936/161959501",
+      "factorial_cumulant_3_coefficient": "648110/35999",
+      "factorial_cumulant_4_coefficient": "16",
+      "pairing_linear_epsilon2_delta_coefficient": "128/35999",
+      "pairing_linear_epsilon2_B2_coefficient": "64",
+      "pairing_quadratic_epsilon2_coefficient": "32"
+    },
+    {
+      "L": "1/2",
+      "M": "8",
+      "factorial_cumulant_2_coefficient": "324494746/80961751",
+      "factorial_cumulant_3_coefficient": "2448444/35999",
+      "factorial_cumulant_4_coefficient": "64",
+      "pairing_linear_epsilon2_delta_coefficient": "512/35999",
+      "pairing_linear_epsilon2_B2_coefficient": "256",
+      "pairing_quadratic_epsilon2_coefficient": "128"
+    },
+    {
+      "L": "1/2",
+      "M": "16",
+      "factorial_cumulant_2_coefficient": "162462991/20231438",
+      "factorial_cumulant_3_coefficient": "9505784/35999",
+      "factorial_cumulant_4_coefficient": "256",
+      "pairing_linear_epsilon2_delta_coefficient": "2048/35999",
+      "pairing_linear_epsilon2_B2_coefficient": "1024",
+      "pairing_quadratic_epsilon2_coefficient": "512"
+    },
+    {
+      "L": "1",
+      "M": "1",
+      "factorial_cumulant_2_coefficient": "18011/17999",
+      "factorial_cumulant_3_coefficient": "72012/17999",
+      "factorial_cumulant_4_coefficient": "4",
+      "pairing_linear_epsilon2_delta_coefficient": "16/17999",
+      "pairing_linear_epsilon2_B2_coefficient": "16",
+      "pairing_quadratic_epsilon2_coefficient": "8"
+    },
+    {
+      "L": "1",
+      "M": "2",
+      "factorial_cumulant_2_coefficient": "324233978/161973001",
+      "factorial_cumulant_3_coefficient": "216052/17999",
+      "factorial_cumulant_4_coefficient": "16",
+      "pairing_linear_epsilon2_delta_coefficient": "64/17999",
+      "pairing_linear_epsilon2_B2_coefficient": "64",
+      "pairing_quadratic_epsilon2_coefficient": "32"
+    },
+    {
+      "L": "1",
+      "M": "4",
+      "factorial_cumulant_2_coefficient": "324341932/80977501",
+      "factorial_cumulant_3_coefficient": "720216/17999",
+      "factorial_cumulant_4_coefficient": "64",
+      "pairing_linear_epsilon2_delta_coefficient": "256/17999",
+      "pairing_linear_epsilon2_B2_coefficient": "256",
+      "pairing_quadratic_epsilon2_coefficient": "128"
+    },
+    {
+      "L": "1",
+      "M": "8",
+      "factorial_cumulant_2_coefficient": "324557744/40479751",
+      "factorial_cumulant_3_coefficient": "2592880/17999",
+      "factorial_cumulant_4_coefficient": "256",
+      "pairing_linear_epsilon2_delta_coefficient": "1024/17999",
+      "pairing_linear_epsilon2_B2_coefficient": "1024",
+      "pairing_quadratic_epsilon2_coefficient": "512"
+    },
+    {
+      "L": "1",
+      "M": "16",
+      "factorial_cumulant_2_coefficient": "81247246/5057719",
+      "factorial_cumulant_3_coefficient": "9795552/17999",
+      "factorial_cumulant_4_coefficient": "1024",
+      "pairing_linear_epsilon2_delta_coefficient": "4096/17999",
+      "pairing_linear_epsilon2_B2_coefficient": "4096",
+      "pairing_quadratic_epsilon2_coefficient": "2048"
+    },
+    {
+      "L": "2",
+      "M": "2",
+      "factorial_cumulant_2_coefficient": "36044/8999",
+      "factorial_cumulant_3_coefficient": "288096/8999",
+      "factorial_cumulant_4_coefficient": "64",
+      "pairing_linear_epsilon2_delta_coefficient": "128/8999",
+      "pairing_linear_epsilon2_B2_coefficient": "256",
+      "pairing_quadratic_epsilon2_coefficient": "128"
+    },
+    {
+      "L": "2",
+      "M": "4",
+      "factorial_cumulant_2_coefficient": "324467912/40486501",
+      "factorial_cumulant_3_coefficient": "864416/8999",
+      "factorial_cumulant_4_coefficient": "256",
+      "pairing_linear_epsilon2_delta_coefficient": "512/8999",
+      "pairing_linear_epsilon2_B2_coefficient": "1024",
+      "pairing_quadratic_epsilon2_coefficient": "512"
+    },
+    {
+      "L": "2",
+      "M": "8",
+      "factorial_cumulant_2_coefficient": "324683728/20238751",
+      "factorial_cumulant_3_coefficient": "2881728/8999",
+      "factorial_cumulant_4_coefficient": "1024",
+      "pairing_linear_epsilon2_delta_coefficient": "2048/8999",
+      "pairing_linear_epsilon2_B2_coefficient": "4096",
+      "pairing_quadratic_epsilon2_coefficient": "2048"
+    },
+    {
+      "L": "2",
+      "M": "16",
+      "factorial_cumulant_2_coefficient": "81278744/2528719",
+      "factorial_cumulant_3_coefficient": "10375040/8999",
+      "factorial_cumulant_4_coefficient": "4096",
+      "pairing_linear_epsilon2_delta_coefficient": "8192/8999",
+      "pairing_linear_epsilon2_B2_coefficient": "16384",
+      "pairing_quadratic_epsilon2_coefficient": "8192"
+    },
+    {
+      "L": "4",
+      "M": "4",
+      "factorial_cumulant_2_coefficient": "72176/4499",
+      "factorial_cumulant_3_coefficient": "1152768/4499",
+      "factorial_cumulant_4_coefficient": "1024",
+      "pairing_linear_epsilon2_delta_coefficient": "1024/4499",
+      "pairing_linear_epsilon2_B2_coefficient": "4096",
+      "pairing_quadratic_epsilon2_coefficient": "2048"
+    },
+    {
+      "L": "4",
+      "M": "8",
+      "factorial_cumulant_2_coefficient": "324935648/10118251",
+      "factorial_cumulant_3_coefficient": "3459328/4499",
+      "factorial_cumulant_4_coefficient": "4096",
+      "pairing_linear_epsilon2_delta_coefficient": "4096/4499",
+      "pairing_linear_epsilon2_B2_coefficient": "16384",
+      "pairing_quadratic_epsilon2_coefficient": "8192"
+    },
+    {
+      "L": "4",
+      "M": "16",
+      "factorial_cumulant_2_coefficient": "81341728/1264219",
+      "factorial_cumulant_3_coefficient": "11533824/4499",
+      "factorial_cumulant_4_coefficient": "16384",
+      "pairing_linear_epsilon2_delta_coefficient": "16384/4499",
+      "pairing_linear_epsilon2_B2_coefficient": "65536",
+      "pairing_quadratic_epsilon2_coefficient": "32768"
+    },
+    {
+      "L": "8",
+      "M": "8",
+      "factorial_cumulant_2_coefficient": "144704/2249",
+      "factorial_cumulant_3_coefficient": "4614144/2249",
+      "factorial_cumulant_4_coefficient": "16384",
+      "pairing_linear_epsilon2_delta_coefficient": "8192/2249",
+      "pairing_linear_epsilon2_B2_coefficient": "65536",
+      "pairing_quadratic_epsilon2_coefficient": "32768"
+    },
+    {
+      "L": "8",
+      "M": "16",
+      "factorial_cumulant_2_coefficient": "81467648/631969",
+      "factorial_cumulant_3_coefficient": "13850624/2249",
+      "factorial_cumulant_4_coefficient": "65536",
+      "pairing_linear_epsilon2_delta_coefficient": "32768/2249",
+      "pairing_linear_epsilon2_B2_coefficient": "262144",
+      "pairing_quadratic_epsilon2_coefficient": "131072"
+    },
+    {
+      "L": "16",
+      "M": "16",
+      "factorial_cumulant_2_coefficient": "72704/281",
+      "factorial_cumulant_3_coefficient": "4620288/281",
+      "factorial_cumulant_4_coefficient": "262144",
+      "pairing_linear_epsilon2_delta_coefficient": "16384/281",
+      "pairing_linear_epsilon2_B2_coefficient": "1048576",
+      "pairing_quadratic_epsilon2_coefficient": "524288"
+    }
+  ],
+  "identity": "Cov(VL,VM)=integral gL12 gM34 [ordinary cumulant_4 + cumulant_2(13)cumulant_2(24)+cumulant_2(14)cumulant_2(23)]",
+  "scope": "exact when intensity is the declared reference measure and each g has zero reference row integral; useful for general arithmetic correlations, without assuming a DPP"
+}

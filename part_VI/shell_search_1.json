@@ -1,0 +1,9 @@
+{
+ "1": {
+  "samples": 60000,
+  "admissible_X_pos_no_real_poles": 42893,
+  "unforced_hits": 0,
+  "hit_zeta_quantiles": null,
+  "optimized": []
+ }
+}

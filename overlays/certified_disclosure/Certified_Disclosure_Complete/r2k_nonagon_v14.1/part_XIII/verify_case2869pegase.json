@@ -1,0 +1,10 @@
+{
+ "case": "case2869pegase",
+ "prime": 1000000007,
+ "rows": 6704,
+ "unknowns": 3968,
+ "rank": 3968,
+ "identifiable": true,
+ "agrees_with_record": true,
+ "seconds": 36.26342535018921
+}

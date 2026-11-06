@@ -1,0 +1,55 @@
+:root{--paper:#f5efe3;--paper2:#eee4d3;--ink:#281e19;--soft:#6c5a4c;--rule:#cabb9f;--ox:#7c2435;--teal:#35606a;--wash:rgba(124,36,53,.045);--read:18px;color-scheme:light}
+:root[data-theme=dark]{--paper:#191512;--paper2:#231d18;--ink:#e9dfcd;--soft:#baa996;--rule:#4f4237;--ox:#e0a0a8;--teal:#9dc4cc;--wash:rgba(224,160,168,.055);color-scheme:dark}
+*{box-sizing:border-box}html{background:var(--paper);scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:var(--read);line-height:1.7;-webkit-font-smoothing:antialiased}
+header.title,main{width:min(100% - 44px,900px);margin-inline:auto}
+header.title{padding:80px 0 34px;border-bottom:2px solid var(--ox)}
+.kicker{font:600 12px/1.5 system-ui,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:var(--ox)}
+h1{font-weight:400;font-size:clamp(3rem,8vw,5.5rem);line-height:1.05;letter-spacing:-.045em;margin:23px 0 24px;text-wrap:balance}
+h1 em{color:var(--ox);font-weight:400}.subtitle{font-size:24px;font-style:italic;color:var(--soft);line-height:1.4;max-width:760px;text-align:left}
+.byline{font:12px/1.6 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin:28px 0}
+.toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font:12px/1.5 system-ui,sans-serif;margin-top:25px}
+button,.toolbar a{border:1px solid var(--rule);background:transparent;color:var(--ink);padding:8px 12px;font:inherit;border-radius:0;text-decoration:none;min-height:36px}
+button:hover,.toolbar a:hover{background:var(--paper2)}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--ox);outline-offset:4px}
+main{padding-bottom:70px}p{margin:0 0 1.15em;text-align:justify;hyphens:auto}strong{font-weight:700;color:var(--ox)}em{font-style:italic}
+a{color:var(--ox);text-decoration-thickness:.5px;text-underline-offset:3px;overflow-wrap:anywhere}
+.abstract{margin:34px 0 48px;padding:22px 28px;background:var(--wash);border-left:3px solid var(--ox);font-size:.96em}
+.abstract h2{font:600 12px/1.5 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.16em;color:var(--ox);margin:0 0 14px}.abstract p:last-child{margin-bottom:0}
+section{margin-top:70px}h2{font-weight:400;font-size:2.05rem;line-height:1.25;letter-spacing:-.025em;margin:0 0 25px;text-wrap:balance}
+h2>span{font:13px/1.5 system-ui,sans-serif;color:var(--ox);display:block;letter-spacing:.15em;margin-bottom:10px}
+h3{font-size:1.23rem;line-height:1.4;font-weight:600;margin:34px 0 14px;text-wrap:balance}
+nav{border-block:1px solid var(--rule);padding:27px 0}nav h2{font-size:1.3rem;margin-bottom:15px}
+.contents{columns:2;column-gap:40px;padding-left:22px;margin:0;font-size:15px}.contents li{break-inside:avoid;padding:4px 0}.contents a{text-decoration:none;color:var(--ink)}.contents li::marker{color:var(--ox)}
+.equation{display:flex;align-items:center;gap:12px;margin:25px 0;max-width:100%;font-size:1rem}
+.equation .math{overflow-x:auto;overflow-y:hidden;min-width:0;flex:1;padding:7px 3px 10px;scrollbar-width:thin}
+.eqno{flex:none;align-self:center;font-size:12px;color:var(--soft);font-variant-numeric:lining-nums;font-family:Georgia,serif}
+.katex-display{margin:0!important}.katex{font-size:1.03em!important}
+.theorem{border-block:1px solid var(--rule);padding:20px 0 10px;margin:31px 0}.theorem h3{color:var(--ox);margin:0 0 16px;font-size:1.12rem}
+.proof{font-size:.94em}.proof:before{content:"Proof. ";font-style:italic;font-weight:600}.proof:after{content:" □";color:var(--soft)}
+.table-wrap{max-width:100%;overflow-x:auto;margin:30px 0}
+table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5;min-width:590px;font-variant-numeric:lining-nums tabular-nums}
+.slate{font-size:14px;min-width:660px}caption{text-align:left;font-size:15px;font-style:italic;line-height:1.5;padding-bottom:12px;color:var(--soft)}
+th{text-align:left;border-bottom:1.5px solid var(--ink);font:600 11px/1.5 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em;padding:12px 12px 12px 0;vertical-align:bottom}
+td{padding:11px 12px 11px 0;border-bottom:1px solid var(--rule);vertical-align:top}tbody tr:last-child td{border-bottom:1.5px solid var(--ink)}table strong{font-weight:600}
+figure{margin:36px 0 40px;padding:0}figure svg{width:100%;height:auto;display:block;overflow:visible}figcaption{font-size:14px;color:var(--soft);line-height:1.6;margin-top:12px}figcaption strong{color:var(--ink)}
+.ref{font:11px/1 system-ui,sans-serif;vertical-align:super;padding-left:4px;text-decoration:none}
+.experiment{border-block:1px solid var(--rule);margin:35px 0;padding:20px 0}.experiment h3{margin:0 0 10px;color:var(--ox)}.experiment-intro{font-size:15px}
+.controls{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:22px 0;font:14px/1.5 system-ui,sans-serif}
+.controls label{display:grid;grid-template-columns:1fr auto;gap:8px}.controls input{grid-column:1/3;width:100%;accent-color:var(--ox);min-height:32px}.controls output{font-variant-numeric:tabular-nums}
+#edge-svg{display:block;width:100%;height:auto}#edge-svg text{fill:var(--ink);font:13px Georgia,serif}#edge-values{font-size:14px;line-height:1.65;text-align:left}
+code{font:12px/1.5 ui-monospace,"SFMono-Regular",Consolas,monospace;overflow-wrap:normal}
+.command{border-left:2px solid var(--teal);background:var(--paper2);padding:16px 18px;overflow-x:auto}
+.references{padding-left:24px;font-size:14px;line-height:1.7}.references li{margin:0 0 15px;padding-left:6px}
+.source-details{border-bottom:1px solid var(--rule);padding:16px 0}.source-details summary{font:600 14px/1.6 system-ui,sans-serif;color:var(--ink);padding-right:12px}
+.source-actions{display:flex;gap:12px;font:12px system-ui,sans-serif;align-items:center;padding:13px 0}
+.source-details pre{max-width:100%;overflow:auto;font:11px/1.6 ui-monospace,Consolas,monospace;padding:18px;background:var(--paper2);tab-size:4}.source-details code{font:inherit}
+.colophon{border-top:1px solid var(--rule);padding-top:23px;margin-top:65px;font-size:13px;color:var(--soft)}
+#reading-progress{height:3px;background:var(--ox);position:fixed;top:0;left:0;width:0;z-index:30;pointer-events:none}
+@media(max-width:650px){:root{--read:17px}header.title,main{width:calc(100% - 32px)}header.title{padding-top:42px}.subtitle{font-size:21px}.byline{font-size:10px}.abstract{padding:18px}.contents{columns:1}.controls{grid-template-columns:1fr;gap:12px}h2{font-size:1.7rem}p{text-align:left}.equation{gap:5px;font-size:.94rem}.eqno{font-size:10px}section{margin-top:53px}.toolbar button,.toolbar a{min-height:42px}.source-details button{min-height:44px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@page{size:A4;margin:18mm 17mm 19mm}
+@media print{:root{--paper:white;--ink:#211a16;--soft:#65554b;--ox:#6f2434;--teal:#355e66;--rule:#baa993;--read:10.5pt;color-scheme:light}
+body{font-size:10.5pt;line-height:1.48}header.title,main{width:100%;max-width:none}header.title{padding-top:15mm}h1{font-size:40pt}.subtitle{font-size:17pt}.toolbar,#reading-progress,.controls{display:none}section{margin-top:24pt}.abstract{padding:16pt;margin:22pt 0}.contents{font-size:10pt}.equation{font-size:10pt;break-inside:avoid;margin:13pt 0}.math{overflow:visible!important}.eqno{font-size:8pt}.katex{font-size:.99em!important}h2,h3{break-after:avoid}h2{font-size:20pt}h3{font-size:13pt}p{orphans:3;widows:3}table{font-size:8.5pt;min-width:0}.slate{min-width:0;font-size:8.2pt}.table-wrap{overflow:visible}thead{display:table-header-group}tr{break-inside:avoid}th{font-size:7.5pt}figure{break-inside:avoid;margin:20pt 0}figcaption{font-size:9pt}a{text-decoration:none}.references{font-size:9pt}.source-details pre,.source-actions{display:none!important}.source-details summary{font-size:9pt}.experiment-intro,#edge-values{font-size:9pt}.colophon{font-size:8pt}}
+
+.plot-scroll{max-width:100%;overflow-x:auto;scrollbar-width:thin}.plot-scroll svg{min-width:600px}.plot-scroll[data-plot="edge-resolution"] svg{min-width:730px}@media print{.plot-scroll{overflow:visible}.plot-scroll svg,.plot-scroll[data-plot="edge-resolution"] svg{min-width:0}}
+.katex{position:relative}.katex .katex-mathml{contain:strict;clip-path:inset(50%)}

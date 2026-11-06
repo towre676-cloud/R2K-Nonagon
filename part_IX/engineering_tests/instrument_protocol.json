@@ -1,0 +1,88 @@
+{
+  "schema": "nonagon.instrument-protocol.v2",
+  "fixture_count": 24,
+  "fixture_seeds": "2026103000 + 100*n + family",
+  "orders": [
+    3,
+    4,
+    6
+  ],
+  "families_per_order": 8,
+  "conductance_scale_S": "1/1000",
+  "base_loads": [
+    "1/4",
+    "1",
+    "4"
+  ],
+  "budgets": [
+    {
+      "id": "ideal_reference",
+      "current_A": "1/1000",
+      "voltage_error_V": "0",
+      "current_relative_error": "0",
+      "shunt_relative_error": "0",
+      "relay_series_max_ohm": "0",
+      "drift_error_V": "0"
+    },
+    {
+      "id": "precision_calibration",
+      "current_A": "1/1000",
+      "voltage_error_V": "1/100000000",
+      "current_relative_error": "1/1000000",
+      "shunt_relative_error": "1/1000000",
+      "relay_series_max_ohm": "1/200",
+      "drift_error_V": "1/1000000000"
+    },
+    {
+      "id": "declared_008percent_1mA",
+      "current_A": "1/1000",
+      "voltage_error_V": "1/10000000",
+      "current_relative_error": "1/100000",
+      "shunt_relative_error": "1/1250",
+      "relay_series_max_ohm": "1/20",
+      "drift_error_V": "1/20000000"
+    },
+    {
+      "id": "declared_008percent_100uA",
+      "current_A": "1/10000",
+      "voltage_error_V": "1/1000000",
+      "current_relative_error": "1/10000",
+      "shunt_relative_error": "1/1250",
+      "relay_series_max_ohm": "1/20",
+      "drift_error_V": "1/10000000"
+    },
+    {
+      "id": "broad_calibration",
+      "current_A": "1/10000",
+      "voltage_error_V": "1/100000",
+      "current_relative_error": "1/10000",
+      "shunt_relative_error": "1/100",
+      "relay_series_max_ohm": "1/20",
+      "drift_error_V": "1/1000000"
+    }
+  ],
+  "hardware_status": "synthetic engineering test; no physical apparatus connected",
+  "accuracy_labels": "declared scenario envelopes, not claims about any manufacturer configuration",
+  "reconstruction": "existing rational interval algorithm, untouched for this campaign",
+  "acquisition": "canonical n(n+1)/2 settings; start baseline; repeated baseline after each five nonbaseline settings and at end; 3 reserved validation settings, each with at most two routed hidden-site shunts",
+  "scalar_interval": "V bounds divided by nominal I*(1\u00b1current_relative_error), times conductance scale",
+  "drift_model": "independent bounded additive voltage drift, included in every reading envelope",
+  "relay_model": "series resistor on each shunt branch, independently between 0 and declared maximum",
+  "load_envelope": "covers calibrated shunt conductance plus relay series resistance, at largest nominal load 2*base",
+  "edge_gap": "all positive network conductances >=1/512 normalized; exact absence only under this premise",
+  "primary_metrics": [
+    "full_matrix_enclosed",
+    "full_graph_disclosed",
+    "correct_disclosed_edges",
+    "unresolved",
+    "truth_containment"
+  ],
+  "operational_burden": "counts canonical acquisitions, extra baseline reads and heldout reads separately; no timing advantage assumed",
+  "frozen_before_measurement_generation": true,
+  "fixture_sha256": "e98537fb287db13553aa25eb7bdc51e082bcc9e6265d1280fdfe4b18f2b4353a",
+  "protocol_amendment": {
+    "previous_protocol_sha256": "db477da273374f16480b840bc2d1231973b17d2cf866058a0554511f90eb6c30",
+    "change": "Reserved validation load combinations now use at most two shunts, matching claimed hardware. Canonical acquisitions, fixture set, calibration budgets, inference and primary scoring unchanged.",
+    "reason": "independent bench-executability review; no estimator tuning"
+  }
+}

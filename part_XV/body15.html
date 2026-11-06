@@ -1,0 +1,86 @@
+<header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v15.0 · Part XV</div>
+  <h1>The Rank-Two Nonagon <em>XV</em></h1>
+  <div class="sub">Without switching: what generator steps and ambient load fluctuations reveal, the single ambiguity of ambient data and the one calibrated step that removes it, and how many hours of phasor data the whole grid costs</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 31 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Part XIV found that actuation, meaning grounding interventions at every bus, is what limits the intervention route, and it named the ambient route as the open question. Part XV answers it on the same grids with the same tools: exact Jacobian ranks modulo $p$, exact Cramér–Rao bounds, and an estimator checked against them. Two kinds of access that grids already have are studied. <strong>Generator steps.</strong> Known injection steps at every generator, read by phasor sensors at every bus, identify <!--INJALL118--> branches of IEEE 118 and <!--INJALL300--> of IEEE 300. Load-only regions stay dark. <strong>Ambient fluctuations.</strong> Angle covariances under random load fluctuations of unknown size identify everything except one direction. Proposition XV.2.1 proves that direction is forced: $(K,V)$ and $(cK,c^2V)$ produce identical covariances. Result XV.2.2 shows it is the only one. A single calibrated injection step, read at every bus, gives full rank on <!--AMB1GRIDS-->, and every branch there becomes identifiable. Covariances between buses at graph distance at most 2 already suffice. <strong>The data bill.</strong> With noiseless sensors, about $10^5$ snapshots bring the median branch to <!--AMB1E5-->. At 30 snapshots per second that is under an hour, if the snapshots are independent. Sensor noise sets the real price. At 1% of the ambient angle variance, the median after $10^6$ snapshots is <!--AMBRHO-->. A Fisher-scoring maximum-likelihood estimator reaches the bound, with a median error-to-bound ratio of <!--ESTRATIO-->. <strong>The trade.</strong> Part XIII needed one port and switching at every bus. Part XIV needed 7 to 57 ports for full rank, about one per 6 buses for phasor-class accuracy, and switching at every bus. Part XV needs a sensor at every bus and one calibrated step, and it pays in data time.</p>
+</div>
+
+<h2 id="y1"><span class="sn">§XV.1</span>Two kinds of access a grid already has</h2>
+
+<p>Grounding a bus on command, the intervention of Parts VIII–XIV, is not available in a transmission grid. Two other kinds of access are. Generators change their output on command, by known amounts, which is the probing used in the inverter-probing literature. And loads fluctuate on their own, which conventional ambient methods exploit. In the DC model a bus-angle vector responds to injections through $G=K^{-1}$. A known step $\Delta p$ at generator $r$, read by phasor sensors at buses $s$, therefore gives $G_{sr}\Delta p$. Random load fluctuations with unknown variances $V=\operatorname{diag}(v_i)$ give angle covariances $C=GVG$, read at sensor pairs $(s,t)$, plus sensor noise. The unknowns are the branch weights and grounds as before. In the ambient model the $n$ variances join them. The Jacobians are explicit:
+$$\frac{\partial G_{sr}}{\partial w_e}=-(b_e^{\mathsf T}g_s)(b_e^{\mathsf T}g_r),\qquad \frac{\partial C_{st}}{\partial w_e}=-(b_e^{\mathsf T}g_s)(b_e^{\mathsf T}h_t)-(b_e^{\mathsf T}h_s)(b_e^{\mathsf T}g_t),\qquad \frac{\partial C_{st}}{\partial v_i}=G_{si}G_{ti},$$
+with $h_t=GVg_t$. They are evaluated exactly modulo $2^{31}-1$ at the source's rational values, with the variances fixed at random integers in $[1,100]$.</p>
+
+<h2 id="y2"><span class="sn">§XV.2</span>What is identifiable</h2>
+
+<div class="tw"><table>
+<caption>Table XV.1. <span>Exact identifiability modulo $2^{31}-1$ without grounding interventions. Sensors "all" means a phasor sensor at every bus; a number means that many sensors by farthest-point sampling. Unknowns include the $n$ load variances in the ambient models.</span></caption>
+<thead><tr><th>grid</th><th>access</th><th>sensors</th><th>readings</th><th>rank / unknowns</th><th>branches identifiable</th></tr></thead>
+<tbody>
+<!--IDROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Proposition XV.2.1 <i>(the ambient scale ambiguity)</i> <span class="ep pr">proved</span></div>
+<p>For every $c>0$, the pairs $(K,V)$ and $(cK,c^2V)$ give the same angle covariance. Ambient data alone therefore cannot determine any branch weight, ground or load variance in absolute terms, however many sensors and snapshots are available.</p></div>
+
+<p><em>Proof.</em> $(cK)^{-1}(c^2V)(cK)^{-1}=c^{-2}c^2\,K^{-1}VK^{-1}$. $\square$</p>
+
+<div class="thm"><div class="hd">Result XV.2.2 <i>(the scale is the only ambiguity, and one step removes it)</i> <span class="ep nm">verified · exact</span></div>
+<p>With a sensor at every bus, the ambient Jacobian has rank exactly one less than the number of unknowns: <!--AMBDEF-->. The missing direction is the scale of Proposition XV.2.1. One calibrated injection step at a single generator, read at every bus, makes the rank full, and every branch becomes identifiable: <!--AMB1LIST-->. The step does not have to be large. It only has to be known in absolute terms. Covariances between buses at graph distance at most 2 suffice for full rank. A random subset of covariance entries of comparable size does not suffice on IEEE 118 (rank 284 of 296), so the local entries carry the information.</p></div>
+
+<p>Generator steps alone, without ambient data, leave whole regions unidentified even with a sensor at every bus. A branch between load buses is seen only through the columns $g_r$ of generator buses. On a load region with no generator, every such column is harmonic. The region's internal branches then enter only through the action of their Laplacian on a space of dimension at most the region's number of terminals. That is the mechanism of Proposition XIII.2.2, with generators in place of sources, and it is the likely cause of the unidentified directions. They were not traced one by one. With fewer sensors both models lose most of their rank. At 60 sensors on IEEE 118, ambient data plus one step identify 99 of 173 branches. The no-switching route is therefore a full-coverage route.</p>
+
+<h2 id="y3"><span class="sn">§XV.3</span>The data bill</h2>
+
+<p>With a sensor at every bus, $N$ snapshots $x\sim\mathcal N(0,\,GVG+s^2I)$, and one injection step read to relative accuracy $10^{-3}$, the Fisher information is $\tfrac N2\operatorname{tr}(\Sigma^{-1}\partial_a\Sigma\,\Sigma^{-1}\partial_b\Sigma)$ plus the step's term. Each $\partial_a\Sigma$ has rank at most 2, so the bound is computed exactly in binary64 from $n\times2$ factors. The sensor noise enters as the ratio $\rho=s^2/\operatorname{median}C_{ii}$ of sensor-noise variance to ambient angle variance.</p>
+
+<div class="tw"><table>
+<caption>Table XV.2. <span>Cramér–Rao bound for the ambient route with one calibrated step: median and 90th-percentile relative standard deviation of the branch weights, and the share of branches below 1%, against the number of snapshots $N$ and the sensor-noise ratio $\rho$. Hours assume 30 independent snapshots per second.</span></caption>
+<thead><tr><th>grid</th><th>$\rho$</th><th>$N$</th><th>hours at 30/s</th><th>median sd</th><th>90th pct.</th><th>within 1%</th></tr></thead>
+<tbody>
+<!--CRBROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result XV.3.1 <i>(what the ambient route costs)</i> <span class="ep nm">verified · double</span></div>
+<p>With noiseless sensors, $10^5$ snapshots, under an hour at 30 per second, bring the median branch below 0.6% on all three grids. They put <!--FRAC1E5--> of branches within 1%. The bound scales as $N^{-1/2}$ and barely depends on grid size. Sensor noise is what decides the cost. At $\rho=0.01$, $10^6$ snapshots, about 9 hours, give medians of <!--RHO01MED-->, and the 90th percentile on PEGASE 1354 is above 300%. At $\rho=0.1$ the route fails at any practical length. In ambient identification, the ratio of sensor noise to natural angle variation matters more than the number of sensors, the number of snapshots or the size of the grid.</p></div>
+
+<h2 id="y4"><span class="sn">§XV.4</span>An estimator that reaches it</h2>
+
+<p>Simulated snapshots are reduced to their sample covariance. One injection step is read with noise. Fisher scoring on the Gaussian log-likelihood plus the step's term, in relative parameters, starts from a nominal model 10% off with flat variances. As in Part XIV, the truth is used only to score the result.</p>
+
+<div class="tw"><table>
+<caption>Table XV.3. <span>Maximum-likelihood estimation from ambient snapshots. "Error / CRB" as in Table XIV.2 (0.674 for an efficient estimator).</span></caption>
+<thead><tr><th>grid</th><th>$N$</th><th>$\rho$</th><th>median error</th><th>within 1%</th><th>error / CRB</th></tr></thead>
+<tbody>
+<!--ESTROWS-->
+</tbody></table></div>
+
+<p>The estimator is efficient on both grids at every setting, with ratios <!--ESTRATIO-->. On IEEE 300 it stopped at the iteration cap of 60 with steps still above $10^{-9}$, but at errors already at the bound. On IEEE 118, one hour of noiseless 30-per-second data gives a median branch error of <!--E118-->. That is below the 0.3–0.8% of conventional phasor line-parameter estimation, and it covers every branch, not a subnetwork. Conventional ambient methods use data windows of a few hundred seconds at 10 snapshots per second on 9- to 39-bus systems, and they estimate system Jacobians rather than every line.</p>
+
+<h2 id="y5"><span class="sn">§XV.5</span>The trade</h2>
+
+<div class="tw"><table>
+<caption>Table XV.4. <span>The three routes of Parts XIII–XV, on IEEE 118 unless stated.</span></caption>
+<thead><tr><th>route</th><th>sensing</th><th>actuation</th><th>identifiability</th><th>accuracy at realistic noise</th></tr></thead>
+<tbody>
+<tr><td>Part XIII, one port</td><td>1 port</td><td>grounding at every bus, single and pair</td><td>exact, all ten grids</td><td>1% median needs noise $\le2\times10^{-5}$</td></tr>
+<tr><td>Part XIV, $k$ ports</td><td>7–57 ports for full rank (one per 17–43 buses)</td><td>grounding at every bus</td><td>full with a port in each pocket</td><td>0.37% median at $10^{-3}$ with 20 ports</td></tr>
+<tr><td>Part XV, ambient</td><td>a sensor at every bus</td><td>one calibrated generator step</td><td>full (Result XV.2.2)</td><td><!--E118--> after 1 h if sensor noise is negligible; much worse at $\rho\ge0.01$</td></tr>
+</tbody></table></div>
+
+<p>The three routes trade one resource for another. Actuation buys a small number of sensors. Full sensor coverage buys freedom from actuation. In both cases the remaining cost is noise, paid in sensor quality on one route and in data time on the other. The trade can be computed in advance for any grid and any proposed instrumentation, and these parts supply the computations: the exact rank test for identifiability, the Cramér–Rao bound for cost, and an efficient estimator to collect it.</p>
+
+<h2 id="y6"><span class="sn">§XV.6</span>What these numbers assume</h2>
+
+<p>The ambient numbers assume independent snapshots. Real load fluctuations are correlated in time, so the effective number of snapshots per hour is smaller than 108,000, by a factor set by the correlation time. That factor must come from data. They assume the grid is stationary over the window, with no switching or retuning. They assume the DC model with known load-fluctuation structure: independent across buses, unknown variances. Correlated loads would add unknowns, and the rank test would have to be rerun with them. The ratio $\rho$ of sensor noise to ambient angle variance is the key unknown, and it depends on the sensor class and the grid's operating point. It was not available here. Field data remain unreachable from this environment, so the real-data test recommended in Part XIII is still the first experiment to run.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> <code>part_XV/ambient15.py CASE SCHEMES</code> (Table XV.1; schemes <code>inj:S</code>, <code>inj1:S</code>, <code>amb:S</code>, <code>amb1:S</code>, <code>amb1l:all</code> local covariances, <code>amb1s:all</code> random subset, <code>both:S</code>); <code>crb15.py CASE</code> (Table XV.2); <code>est15.py CASE</code> (Table XV.3); <code>assemble15.py</code>. Uses <code>part_XIV/crb14.py</code> and <code>ident14.py</code> for loading and exact $G$.</p>
+<p><b>Sources.</b> Ambient phasor methods (system Jacobian from ambient rotor data, 9- and 39-bus systems): <a href="https://arxiv.org/pdf/1706.01114.pdf">arXiv:1706.01114</a>. Line-parameter estimation with phasor data: <a href="https://arxiv.org/pdf/2503.21202">arXiv:2503.21202</a>. Inverter probing: <a href="https://ar5iv.arxiv.org/html/1802.06027">arXiv:1802.06027</a>. Parts XIII and XIV of this monograph.</p>
+</div>
+</main>

@@ -1,0 +1,70 @@
+{
+  "schema": "nonagon.finite-load-pilot.v1",
+  "network_order": 3,
+  "input_and_readout_site_zero_based": 0,
+  "pilot_base_load": "1",
+  "hardware": {
+    "conductance_scale_S": "1/1000",
+    "current_A": "1/10000",
+    "minimum_shunt_resistance_ohm": "20",
+    "maximum_shunt_resistance_ohm": "20000",
+    "simultaneous_shunt_channels": 2,
+    "candidate_base_loads": [
+      "1/16",
+      "1/4",
+      "1",
+      "4",
+      "16"
+    ],
+    "voltage_error_V": "1/100000000",
+    "drift_error_V": "1/1000000000",
+    "current_relative_error": "1/1000000",
+    "shunt_relative_error": "1/1000000",
+    "relay_series_max_ohm": "1/200"
+  },
+  "readings": [
+    {
+      "nominal_loads": {},
+      "normalized_response_interval": [
+        "25600025017/2650002650",
+        "512000512/52999947"
+      ]
+    },
+    {
+      "nominal_loads": {
+        "1": "1"
+      },
+      "normalized_response_interval": [
+        "19251206757753930585539757/3112804891801964500185500",
+        "520302903853251945015691/84129693681038013508500"
+      ]
+    },
+    {
+      "nominal_loads": {
+        "1": "2"
+      },
+      "normalized_response_interval": [
+        "4454403219395229035557194/741100481849694374953625",
+        "8908806764874344001093983/1482197999300425750092750"
+      ]
+    },
+    {
+      "nominal_loads": {
+        "2": "1"
+      },
+      "normalized_response_interval": [
+        "90931330941704292647515971/10219217258008151801113000",
+        "90931333189929841183760831/10219196819594074198887000"
+      ]
+    },
+    {
+      "nominal_loads": {
+        "2": "2"
+      },
+      "normalized_response_interval": [
+        "611555762433492492422941/68905594938843908317875",
+        "33057069059065309175831/3724619304204964415250"
+      ]
+    }
+  ]
+}

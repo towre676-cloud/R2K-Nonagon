@@ -1,0 +1,49 @@
+{
+ "case": "case6515rte",
+ "pairs": 11675,
+ "negative_branches": 80,
+ "rows": [
+  {
+   "theta_times_median_Gjj": 0.001,
+   "minus_fail": 0,
+   "two_fail": 0,
+   "min_gap": 0.9282101422015893,
+   "theta_G00": 0.0002081407604084526
+  },
+  {
+   "theta_times_median_Gjj": 0.01,
+   "minus_fail": 0,
+   "two_fail": 0,
+   "min_gap": 0.5638854825714964,
+   "theta_G00": 0.002081407604084526
+  },
+  {
+   "theta_times_median_Gjj": 0.1,
+   "minus_fail": 0,
+   "two_fail": 0,
+   "min_gap": 0.11454197346915353,
+   "theta_G00": 0.020814076040845262
+  },
+  {
+   "theta_times_median_Gjj": 1.0,
+   "minus_fail": 0,
+   "two_fail": 0,
+   "min_gap": 0.013100225567843024,
+   "theta_G00": 0.20814076040845256
+  },
+  {
+   "theta_times_median_Gjj": 10.0,
+   "minus_fail": 30,
+   "two_fail": 0,
+   "min_gap": 0.0018395837234855034,
+   "theta_G00": 2.081407604084526
+  },
+  {
+   "theta_times_median_Gjj": 100.0,
+   "minus_fail": 127,
+   "two_fail": 0,
+   "min_gap": 0.0002462497151607797,
+   "theta_G00": 20.81407604084526
+  }
+ ]
+}

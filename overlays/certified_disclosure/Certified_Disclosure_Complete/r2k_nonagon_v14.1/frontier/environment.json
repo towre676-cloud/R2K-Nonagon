@@ -1,0 +1,23 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "module_profiles": {
+    "adaptive_and_policy": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "forward_solve": "explicit general; residual and independent NumPy checked"
+    },
+    "external": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "scikit-rf": "2.2.0"
+    },
+    "independent_certification": {
+      "python-flint": "0.9.0",
+      "bits": 100,
+      "cap": 8
+    },
+    "exact_modules": "Python standard library"
+  },
+  "source_scope": "Only top-level finalized module paths supply reported scientific results; archived invalidated runs are excluded."
+}

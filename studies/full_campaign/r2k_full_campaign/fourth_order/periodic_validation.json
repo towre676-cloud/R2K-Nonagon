@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "independent_exact_periodic_event_pair_matches": 30,
+  "maximum_coordinate_variance_error_bound": 6.202866666666666e-10,
+  "controls": [
+    {
+      "n0": 100000,
+      "L": 0.5,
+      "coordinate_variance_error_bound_exact": "1807/450000000000000"
+    },
+    {
+      "n0": 100000,
+      "L": 1.0,
+      "coordinate_variance_error_bound_exact": "9703/450000000000000"
+    },
+    {
+      "n0": 100000,
+      "L": 2.0,
+      "coordinate_variance_error_bound_exact": "27343/450000000000000"
+    },
+    {
+      "n0": 100000,
+      "L": 4.0,
+      "coordinate_variance_error_bound_exact": "31507/225000000000000"
+    },
+    {
+      "n0": 100000,
+      "L": 8.0,
+      "coordinate_variance_error_bound_exact": "11239/37500000000000"
+    },
+    {
+      "n0": 100000,
+      "L": 16.0,
+      "coordinate_variance_error_bound_exact": "93043/150000000000000"
+    },
+    {
+      "n0": 1000000,
+      "L": 0.5,
+      "coordinate_variance_error_bound_exact": "1871/450000000000000"
+    },
+    {
+      "n0": 1000000,
+      "L": 1.0,
+      "coordinate_variance_error_bound_exact": "1949/90000000000000"
+    },
+    {
+      "n0": 1000000,
+      "L": 2.0,
+      "coordinate_variance_error_bound_exact": "1823/30000000000000"
+    },
+    {
+      "n0": 1000000,
+      "L": 4.0,
+      "coordinate_variance_error_bound_exact": "21047/150000000000000"
+    },
+    {
+      "n0": 1000000,
+      "L": 8.0,
+      "coordinate_variance_error_bound_exact": "2699/9000000000000"
+    },
+    {
+      "n0": 1000000,
+      "L": 16.0,
+      "coordinate_variance_error_bound_exact": "279043/450000000000000"
+    },
+    {
+      "n0": 10000000,
+      "L": 0.5,
+      "coordinate_variance_error_bound_exact": "79/18750000000000"
+    },
+    {
+      "n0": 10000000,
+      "L": 1.0,
+      "coordinate_variance_error_bound_exact": "9719/450000000000000"
+    },
+    {
+      "n0": 10000000,
+      "L": 2.0,
+      "coordinate_variance_error_bound_exact": "27313/450000000000000"
+    },
+    {
+      "n0": 10000000,
+      "L": 4.0,
+      "coordinate_variance_error_bound_exact": "6313/45000000000000"
+    },
+    {
+      "n0": 10000000,
+      "L": 8.0,
+      "coordinate_variance_error_bound_exact": "1079/3600000000000"
+    },
+    {
+      "n0": 10000000,
+      "L": 16.0,
+      "coordinate_variance_error_bound_exact": "34873/56250000000000"
+    },
+    {
+      "n0": 20000000,
+      "L": 0.5,
+      "coordinate_variance_error_bound_exact": "59/14062500000000"
+    },
+    {
+      "n0": 20000000,
+      "L": 1.0,
+      "coordinate_variance_error_bound_exact": "4871/225000000000000"
+    },
+    {
+      "n0": 20000000,
+      "L": 2.0,
+      "coordinate_variance_error_bound_exact": "13637/225000000000000"
+    },
+    {
+      "n0": 20000000,
+      "L": 4.0,
+      "coordinate_variance_error_bound_exact": "63163/450000000000000"
+    },
+    {
+      "n0": 20000000,
+      "L": 8.0,
+      "coordinate_variance_error_bound_exact": "134927/450000000000000"
+    },
+    {
+      "n0": 20000000,
+      "L": 16.0,
+      "coordinate_variance_error_bound_exact": "278803/450000000000000"
+    },
+    {
+      "n0": 50000000,
+      "L": 0.5,
+      "coordinate_variance_error_bound_exact": "161/37500000000000"
+    },
+    {
+      "n0": 50000000,
+      "L": 1.0,
+      "coordinate_variance_error_bound_exact": "3257/150000000000000"
+    },
+    {
+      "n0": 50000000,
+      "L": 2.0,
+      "coordinate_variance_error_bound_exact": "6847/112500000000000"
+    },
+    {
+      "n0": 50000000,
+      "L": 4.0,
+      "coordinate_variance_error_bound_exact": "15797/112500000000000"
+    },
+    {
+      "n0": 50000000,
+      "L": 8.0,
+      "coordinate_variance_error_bound_exact": "44999/150000000000000"
+    },
+    {
+      "n0": 50000000,
+      "L": 16.0,
+      "coordinate_variance_error_bound_exact": "581/937500000000"
+    }
+  ]
+}

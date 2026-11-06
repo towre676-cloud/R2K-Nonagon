@@ -1,0 +1,421 @@
+{
+  "schema": "nonagon.intervention.certificate.v1",
+  "observations": {
+    "schema": "nonagon.intervention.observations.v1",
+    "contract": {
+      "network_order": 4,
+      "coordinate_labels": [
+        "node_1",
+        "node_2",
+        "node_3",
+        "node_4"
+      ],
+      "input_coordinate": 0,
+      "readout_coordinate": 0,
+      "stiffness_class": "connected_grounded_spring",
+      "known_site_set": true,
+      "force_amplitude": "1",
+      "sensor_gain": "1",
+      "calibration": "exact",
+      "noise_model": "none",
+      "coefficient_domain": "rational"
+    },
+    "plan": {
+      "base_load": "3/2"
+    },
+    "observations": [
+      {
+        "id": "baseline",
+        "loads": {},
+        "response": "277/170"
+      },
+      {
+        "id": "single_1_a",
+        "loads": {
+          "1": "3/2"
+        },
+        "response": "974/1291"
+      },
+      {
+        "id": "single_1_b",
+        "loads": {
+          "1": "3"
+        },
+        "response": "697/1121"
+      },
+      {
+        "id": "single_2_a",
+        "loads": {
+          "2": "3/2"
+        },
+        "response": "842/595"
+      },
+      {
+        "id": "single_2_b",
+        "loads": {
+          "2": "3"
+        },
+        "response": "113/85"
+      },
+      {
+        "id": "single_3_a",
+        "loads": {
+          "3": "3/2"
+        },
+        "response": "863/1021"
+      },
+      {
+        "id": "single_3_b",
+        "loads": {
+          "3": "3"
+        },
+        "response": "586/851"
+      },
+      {
+        "id": "pair_1_2",
+        "loads": {
+          "1": "3/2",
+          "2": "3/2"
+        },
+        "response": "739/1034"
+      },
+      {
+        "id": "pair_1_3",
+        "loads": {
+          "1": "3/2",
+          "3": "3/2"
+        },
+        "response": "74/139"
+      },
+      {
+        "id": "pair_2_3",
+        "loads": {
+          "2": "3/2",
+          "3": "3/2"
+        },
+        "response": "2590/3191"
+      }
+    ],
+    "heldout": [
+      {
+        "id": "heldout_0",
+        "loads": {
+          "0": "7/2"
+        },
+        "response": "554/2279"
+      },
+      {
+        "id": "heldout_1",
+        "loads": {
+          "0": "1/17",
+          "1": "3/2"
+        },
+        "response": "16558/22921"
+      },
+      {
+        "id": "heldout_2",
+        "loads": {
+          "0": "1/7",
+          "1": "2/7",
+          "2": "3/7",
+          "3": "4/7"
+        },
+        "response": "1057217/1337944"
+      }
+    ]
+  },
+  "recovered": {
+    "K": [
+      [
+        "15/4",
+        "-7/4",
+        "0",
+        "-2"
+      ],
+      [
+        "-7/4",
+        "2",
+        "-1/4",
+        "0"
+      ],
+      [
+        "0",
+        "-1/4",
+        "13/4",
+        "-1"
+      ],
+      [
+        "-2",
+        "0",
+        "-1",
+        "3"
+      ]
+    ],
+    "G": [
+      [
+        "277/170",
+        "253/170",
+        "1/2",
+        "213/170"
+      ],
+      [
+        "253/170",
+        "317/170",
+        "1/2",
+        "197/170"
+      ],
+      [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      [
+        "213/170",
+        "197/170",
+        "1/2",
+        "227/170"
+      ]
+    ],
+    "edges": [
+      {
+        "i": 0,
+        "j": 1,
+        "stiffness": "7/4"
+      },
+      {
+        "i": 0,
+        "j": 3,
+        "stiffness": "2"
+      },
+      {
+        "i": 1,
+        "j": 2,
+        "stiffness": "1/4"
+      },
+      {
+        "i": 2,
+        "j": 3,
+        "stiffness": "1"
+      }
+    ],
+    "grounding": [
+      "0",
+      "0",
+      "2",
+      "0"
+    ],
+    "ldl_diagonal": [
+      "15/4",
+      "71/60",
+      "227/71",
+      "170/227"
+    ]
+  },
+  "extraction": {
+    "singles": [
+      {
+        "node": 1,
+        "drop_t": "192027/219470",
+        "drop_2t": "192027/190570",
+        "intercept": "28900/64009",
+        "slope": "53890/64009",
+        "G1j_squared": "64009/28900",
+        "G1j": "253/170",
+        "Gjj": "317/170"
+      },
+      {
+        "node": 2,
+        "drop_t": "3/14",
+        "drop_2t": "3/10",
+        "intercept": "4",
+        "slope": "2",
+        "G1j_squared": "1/4",
+        "G1j": "1/2",
+        "Gjj": "1/2"
+      },
+      {
+        "node": 3,
+        "drop_t": "136107/173570",
+        "drop_2t": "136107/144670",
+        "intercept": "28900/45369",
+        "slope": "38590/45369",
+        "G1j_squared": "45369/28900",
+        "G1j": "213/170",
+        "Gjj": "227/170"
+      }
+    ],
+    "pairs": [
+      {
+        "j": 1,
+        "k": 2,
+        "drop": "40197/43945",
+        "A": "278899/57800",
+        "B": "9037/1360",
+        "discriminant": "2540865649/30898608400",
+        "positive_sqrt": "50407/175780",
+        "Gjk": "1/2",
+        "loaded_minor_determinant": "517/85",
+        "branch_margins": [
+          "379/170",
+          "133/170"
+        ]
+      },
+      {
+        "j": 1,
+        "k": 3,
+        "drop": "25923/23630",
+        "A": "15490571/1228250",
+        "B": "1318111/115600",
+        "discriminant": "49154121/139594225",
+        "positive_sqrt": "7011/11815",
+        "Gjk": "197/170",
+        "loaded_minor_determinant": "5699/680",
+        "branch_margins": [
+          "779/340",
+          "369/170"
+        ]
+      },
+      {
+        "j": 2,
+        "k": 3,
+        "drop": "443607/542470",
+        "A": "25273/7225",
+        "B": "7147/1360",
+        "discriminant": "3483242361/73568425225",
+        "positive_sqrt": "59019/271235",
+        "Gjk": "1/2",
+        "loaded_minor_determinant": "3191/680",
+        "branch_margins": [
+          "191/340",
+          "309/170"
+        ]
+      }
+    ]
+  },
+  "forward_witnesses": [
+    {
+      "id": "baseline",
+      "response_vector": [
+        "277/170",
+        "253/170",
+        "1/2",
+        "213/170"
+      ]
+    },
+    {
+      "id": "single_1_a",
+      "response_vector": [
+        "974/1291",
+        "506/1291",
+        "266/1291",
+        "738/1291"
+      ]
+    },
+    {
+      "id": "single_1_b",
+      "response_vector": [
+        "697/1121",
+        "253/1121",
+        "181/1121",
+        "525/1121"
+      ]
+    },
+    {
+      "id": "single_2_a",
+      "response_vector": [
+        "842/595",
+        "758/595",
+        "2/7",
+        "618/595"
+      ]
+    },
+    {
+      "id": "single_2_b",
+      "response_vector": [
+        "113/85",
+        "101/85",
+        "1/5",
+        "81/85"
+      ]
+    },
+    {
+      "id": "single_3_a",
+      "response_vector": [
+        "863/1021",
+        "779/1021",
+        "191/1021",
+        "426/1021"
+      ]
+    },
+    {
+      "id": "single_3_b",
+      "response_vector": [
+        "586/851",
+        "526/851",
+        "106/851",
+        "213/851"
+      ]
+    },
+    {
+      "id": "pair_1_2",
+      "response_vector": [
+        "739/1034",
+        "379/1034",
+        "133/1034",
+        "537/1034"
+      ]
+    },
+    {
+      "id": "pair_1_3",
+      "response_vector": [
+        "74/139",
+        "38/139",
+        "14/139",
+        "36/139"
+      ]
+    },
+    {
+      "id": "pair_2_3",
+      "response_vector": [
+        "2590/3191",
+        "2314/3191",
+        "382/3191",
+        "1236/3191"
+      ]
+    },
+    {
+      "id": "heldout_0",
+      "response_vector": [
+        "554/2279",
+        "506/2279",
+        "170/2279",
+        "426/2279"
+      ]
+    },
+    {
+      "id": "heldout_1",
+      "response_vector": [
+        "16558/22921",
+        "8602/22921",
+        "4522/22921",
+        "12546/22921"
+      ]
+    },
+    {
+      "id": "heldout_2",
+      "response_vector": [
+        "1057217/1337944",
+        "835205/1337944",
+        "235641/1337944",
+        "658021/1337944"
+      ]
+    }
+  ],
+  "validation": {
+    "acquisition_count": 10,
+    "heldout_count": 3,
+    "all_forward_equations_exact": true,
+    "scalar_parameter_count": 10
+  }
+}

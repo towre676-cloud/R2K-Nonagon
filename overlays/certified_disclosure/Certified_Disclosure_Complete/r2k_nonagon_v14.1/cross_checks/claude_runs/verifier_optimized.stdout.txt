@@ -1,0 +1,1 @@
+{"trials": 80, "all_recovered_exactly_with_n(n+1)/2_measurements": true, "sizes": [2, 3, 4, 5, 6]}

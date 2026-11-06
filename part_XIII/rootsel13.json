@@ -1,0 +1,102 @@
+{
+ "case118": {
+  "port_column_min": 0.005294177249230763,
+  "port_column_positive": true,
+  "rho": 10.90688402243094,
+  "norm_G_2": 5.015156584201537,
+  "theta_star": 0.016746242633976737,
+  "G00": 0.0577429772515524,
+  "theta_star_times_G00": 0.0009669779074626956,
+  "solve_residual": 1.1934897514720433e-15
+ },
+ "case300": {
+  "port_column_min": 0.012400000000000232,
+  "port_column_positive": true,
+  "rho": 53.22010118701238,
+  "norm_G_2": 23.492754394981567,
+  "theta_star": 0.000785065220424339,
+  "G00": 0.6599292547189659,
+  "theta_star_times_G00": 0.0005180875058204147,
+  "solve_residual": 1.9095836023552692e-14
+ },
+ "case1354pegase": {
+  "port_column_min": 0.0007451777472533223,
+  "port_column_positive": true,
+  "rho": 37.243259322368,
+  "norm_G_2": 10.369837729765043,
+  "theta_star": 0.0025215822640129075,
+  "G00": 0.027752848082213476,
+  "theta_star_times_G00": 6.998108949995414e-05,
+  "solve_residual": 4.973799150320701e-14
+ },
+ "case2869pegase": {
+  "port_column_min": 0.0007405602894866468,
+  "port_column_positive": true,
+  "rho": 48.27121118426939,
+  "norm_G_2": 36.21689300463147,
+  "theta_star": 0.0005603967032263934,
+  "G00": 0.035747742128493604,
+  "theta_star_times_G00": 2.003291683659507e-05,
+  "solve_residual": 1.0302869668521453e-13
+ },
+ "case6515rte": {
+  "port_column_min": 0.0008333884590260937,
+  "port_column_positive": true,
+  "rho": 24.53445872905153,
+  "norm_G_2": 49.767362204551524,
+  "theta_star": 0.0007869166258047944,
+  "G00": 0.01915648830593991,
+  "theta_star_times_G00": 1.5074559139979238e-05,
+  "solve_residual": 5.1181281435219717e-14
+ },
+ "case9241pegase": {
+  "port_column_min": 0.0006775171281990643,
+  "port_column_positive": true,
+  "rho": 44.877240649463545,
+  "norm_G_2": 204.10326807932057,
+  "theta_star": 0.0001067954506225841,
+  "G00": 0.030405099206322853,
+  "theta_star_times_G00": 3.2471262709636232e-06,
+  "solve_residual": 7.705289314582919e-14
+ },
+ "case_ACTIVSg10k": {
+  "port_column_min": 0.008135999999992115,
+  "port_column_positive": true,
+  "rho": 6.365458176060187,
+  "norm_G_2": 222.1544194910984,
+  "theta_star": 0.0006111464238551566,
+  "G00": 0.051789367720375484,
+  "theta_star_times_G00": 3.1650886876027163e-05,
+  "solve_residual": 8.526512829121202e-14
+ },
+ "case13659pegase": {
+  "port_column_min": 0.14080099999815068,
+  "port_column_positive": true,
+  "rho": 1.1993684808476586,
+  "norm_G_2": 2111.1915460097507,
+  "theta_star": 0.0002153646228992634,
+  "G00": 0.16887228146961317,
+  "theta_star_times_G00": 3.63691152168415e-05,
+  "solve_residual": 6.821210263296962e-13
+ },
+ "case_ACTIVSg25k": {
+  "port_column_min": 0.0009127597419558573,
+  "port_column_positive": true,
+  "rho": 5.245187603390026,
+  "norm_G_2": 153.590113893203,
+  "theta_star": 0.0010425364512560745,
+  "G00": 0.0047875960833803416,
+  "theta_star_times_G00": 4.991243430814823e-06,
+  "solve_residual": 2.6645352591003757e-14
+ },
+ "case_ACTIVSg70k": {
+  "port_column_min": 0.008125999999922015,
+  "port_column_positive": true,
+  "rho": 5.941690952730946,
+  "norm_G_2": 2514.274091118784,
+  "theta_star": 5.729570994701458e-05,
+  "G00": 0.048282180681428304,
+  "theta_star_times_G00": 2.766361819932467e-06,
+  "solve_residual": 4.547473508864641e-13
+ }
+}

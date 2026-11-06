@@ -1,0 +1,139 @@
+{
+ "dodgson_vs_direct": [
+  {
+   "k": 1,
+   "dodgson": "[10.0000 +/- 3e-9]",
+   "direct": "[10.0000 +/- 3e-9]",
+   "rad_ratio_dodgson_over_direct": 1.0
+  },
+  {
+   "k": 2,
+   "dodgson": "[29.7317 +/- 2.74e-5]",
+   "direct": "[29.7317 +/- 2.74e-5]",
+   "rad_ratio_dodgson_over_direct": 1.0
+  },
+  {
+   "k": 3,
+   "dodgson": "[91.5519 +/- 4.44e-5]",
+   "direct": "[91.5519 +/- 4.44e-5]",
+   "rad_ratio_dodgson_over_direct": 1.45464235857335
+  },
+  {
+   "k": 4,
+   "dodgson": "[246.200 +/- 2.30e-5]",
+   "direct": "[246.200 +/- 2.30e-5]",
+   "rad_ratio_dodgson_over_direct": 3.379973108154036
+  },
+  {
+   "k": 5,
+   "dodgson": "[430.307 +/- 3.20e-4]",
+   "direct": "[430.307 +/- 3.20e-4]",
+   "rad_ratio_dodgson_over_direct": 5.067821656676098
+  },
+  {
+   "k": 6,
+   "dodgson": "[351.611 +/- 9.82e-5]",
+   "direct": "[351.611 +/- 9.82e-5]",
+   "rad_ratio_dodgson_over_direct": 13.589337405620242
+  },
+  {
+   "k": 7,
+   "dodgson": "[193.625 +/- 1.18e-4]",
+   "direct": "[193.625 +/- 1.18e-4]",
+   "rad_ratio_dodgson_over_direct": 30.67934737086584
+  },
+  {
+   "k": 8,
+   "dodgson": "[50.4119 +/- 2.46e-5]",
+   "direct": "[50.4119 +/- 2.46e-5]",
+   "rad_ratio_dodgson_over_direct": 80.70778736762334
+  },
+  {
+   "k": 9,
+   "dodgson": "[2.09321 +/- 5.35e-6]",
+   "direct": "[2.09321 +/- 3.55e-6]",
+   "rad_ratio_dodgson_over_direct": 4024.3981239554614
+  },
+  {
+   "k": 10,
+   "dodgson": "[0.01398 +/- 5.92e-6]",
+   "direct": "[0.0139764 +/- 4.24e-8]",
+   "rad_ratio_dodgson_over_direct": 11727.46480266263
+  }
+ ],
+ "dodgson_completed": true,
+ "locality_law": [
+  {
+   "box": [
+    10,
+    25
+   ],
+   "zeros": 2,
+   "lambda_min_M0": 0.42158699606174976
+  },
+  {
+   "box": [
+    10,
+    35
+   ],
+   "zeros": 5,
+   "lambda_min_M0": 0.015499503545046166
+  },
+  {
+   "box": [
+    10,
+    45
+   ],
+   "zeros": 8,
+   "lambda_min_M0": 4.89142275937121e-05
+  },
+  {
+   "box": [
+    10,
+    51
+   ],
+   "zeros": 10,
+   "lambda_min_M0": 1.0732460730648307e-06
+  },
+  {
+   "box": [
+    10,
+    60
+   ],
+   "zeros": 13,
+   "lambda_min_M0": 2.300174170512234e-09
+  },
+  {
+   "box": [
+    10,
+    70
+   ],
+   "zeros": 17,
+   "lambda_min_M0": 5.013484284496392e-13
+  },
+  {
+   "box": [
+    10,
+    76.5
+   ],
+   "zeros": 19,
+   "lambda_min_M0": 7.456727696375913e-15
+  },
+  {
+   "box": [
+    10,
+    85
+   ],
+   "zeros": 23,
+   "lambda_min_M0": -8.588562141796105e-16
+  },
+  {
+   "box": [
+    10,
+    100
+   ],
+   "zeros": 29,
+   "lambda_min_M0": -4.470713244197622e-15
+  }
+ ]
+}

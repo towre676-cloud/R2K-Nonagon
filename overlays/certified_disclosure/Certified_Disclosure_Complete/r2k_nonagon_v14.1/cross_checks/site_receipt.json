@@ -1,0 +1,82 @@
+{
+  "schema": "nonagon.site.release-checks.v1",
+  "status": "succeeded",
+  "url": "https://nonagon-resonance-foundry-cody.towre676.chatgpt.site",
+  "project_id": "appgprj_6ae4d1298ee881919c34e7f43466fd87",
+  "version_id": "appgprj_6ae4d1298ee881919c34e7f43466fd87~appgver_3feb42b7b7308191a663b496f4400004",
+  "deployment_id": "appgdep_6ae4e6a156708191a9c9eb7cf0bcbcc9",
+  "commit_sha": "dfd4392db6aa947cde9147b41cbf5df935a5e854",
+  "scope": "Floating-point demonstration and integration reading pages; exact/bounded claims remain in the Python package",
+  "rendering_limit": "New panels were checked statically and through actual event callbacks with a mocked DOM/canvas; a fresh browser layout inspection was not performed because the shared preview serves another active session",
+  "physical_hardware_measurements": 0,
+  "math_checks": {
+    "status": "PASSED",
+    "scope": "Independent Gaussian forward acquisition and finite-strength floating inverse; browser rendering not covered",
+    "fixtures": [
+      {
+        "fixture": "path",
+        "chosen_base_load": 1,
+        "pilot_readings": 5,
+        "canonical_readings": 6
+      },
+      {
+        "fixture": "triangle",
+        "chosen_base_load": 1,
+        "pilot_readings": 5,
+        "canonical_readings": 6
+      },
+      {
+        "fixture": "array",
+        "chosen_base_load": 1,
+        "pilot_readings": 11,
+        "canonical_readings": 21
+      }
+    ],
+    "reconstruction_cases": 15,
+    "max_coefficient_error": 7.314149286230531e-12,
+    "max_heldout_error": 1.609823385706477e-15,
+    "invalid_pilot_refusal": true
+  },
+  "flow_checks": {
+    "status": "PASSED",
+    "scope": "Actual event callbacks with mocked canvas/DOM; layout and browser rendering not covered",
+    "cases": [
+      {
+        "scenario": "path",
+        "planned": false,
+        "total_scalar_readings": 6,
+        "residual": "2.8e-17"
+      },
+      {
+        "scenario": "path",
+        "planned": true,
+        "total_scalar_readings": 11,
+        "residual": "2.8e-17"
+      },
+      {
+        "scenario": "triangle",
+        "planned": false,
+        "total_scalar_readings": 6,
+        "residual": "0.0e+0"
+      },
+      {
+        "scenario": "triangle",
+        "planned": true,
+        "total_scalar_readings": 11,
+        "residual": "0.0e+0"
+      },
+      {
+        "scenario": "array",
+        "planned": false,
+        "total_scalar_readings": 21,
+        "residual": "1.1e-16"
+      },
+      {
+        "scenario": "array",
+        "planned": true,
+        "total_scalar_readings": 32,
+        "residual": "1.1e-16"
+      }
+    ]
+  }
+}

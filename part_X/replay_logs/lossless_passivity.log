@@ -1,0 +1,38 @@
+{
+  "cases": 27,
+  "polarity_checks": 27,
+  "all_passed": true,
+  "counterexample": {
+    "valid_input": true,
+    "positive_real": true,
+    "numerator": "s**2 + 1",
+    "denominator": "s**2 + s + 1",
+    "exact_cancelled_degree": 0,
+    "N_plus_D": "2*s**2 + s + 2",
+    "hurwitz": {
+      "strictly_hurwitz": true,
+      "degree": 2,
+      "determinants": [
+        "1/2",
+        "1/2"
+      ]
+    },
+    "axis_polynomial": "x**2 - 2*x + 1",
+    "axis": {
+      "nonnegative": true,
+      "identically_zero": false,
+      "zero_multiplicity": 0,
+      "right_of_zero_sign": 1,
+      "odd_multiplicity_positive_roots": 0,
+      "factors": [
+        {
+          "factor": "x - 1",
+          "multiplicity": 2,
+          "positive_roots": 1
+        }
+      ]
+    },
+    "expected_positive_real": true,
+    "negative_scale_agrees": true
+  }
+}

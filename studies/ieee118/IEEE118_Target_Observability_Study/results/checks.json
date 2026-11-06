@@ -1,0 +1,11 @@
+{
+  "vectorized_response_relative_max": 1.2919155298095644e-16,
+  "vectorized_logjac_relative_error": 4.0306126946423477e-16,
+  "finite_difference_relative_errors": [
+    2.0414946575254504e-10,
+    3.642652459432042e-07,
+    3.5787276969026638e-09,
+    3.0089776789155882e-09,
+    5.028349449498715e-07
+  ]
+}

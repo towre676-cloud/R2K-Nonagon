@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "exact_original_window_cases": 30,
+  "exact_fixed_coordinate_cases": 30,
+  "fixed_coordinate_model_certificates": 30,
+  "points_in_fixed_coordinate_spans": 90000,
+  "max_fixed_combined_deterministic_radius": 2.3651507554084188e-08,
+  "fixed_index_20000000_batch_sensitivity": [
+    {
+      "batches": 5,
+      "observed_max_absolute_z": 4.028136401685746,
+      "joint_reference_95": 1.834504340784062,
+      "reference_tail_fraction": 0.0
+    },
+    {
+      "batches": 10,
+      "observed_max_absolute_z": 2.874316652296819,
+      "joint_reference_95": 2.211651083517084,
+      "reference_tail_fraction": 0.0
+    },
+    {
+      "batches": 20,
+      "observed_max_absolute_z": 1.4550443694371764,
+      "joint_reference_95": 2.415932833566218,
+      "reference_tail_fraction": 0.522216796875
+    },
+    {
+      "batches": 40,
+      "observed_max_absolute_z": 1.2304466352837427,
+      "joint_reference_95": 2.486756540533625,
+      "reference_tail_fraction": 0.658843994140625
+    },
+    {
+      "batches": 80,
+      "observed_max_absolute_z": 0.9724642353682246,
+      "joint_reference_95": 2.506327823597762,
+      "reference_tail_fraction": 0.807037353515625
+    }
+  ],
+  "conditional_sine_centering_biases": [
+    {
+      "span": 18000,
+      "L": 0.5,
+      "expected_downward_bias_ball": "[9.34962160739232625836677978753949153548336569e-10 +/- 1.05e-53]",
+      "elementary_upper_bound": "[2.38458710979222592609515531158985626616106668e-9 +/- 4.47e-54]"
+    },
+    {
+      "span": 18000,
+      "L": 1.0,
+      "expected_downward_bias_ball": "[3.53073058870485797163833875438294917803157918e-9 +/- 1.08e-53]",
+      "elementary_upper_bound": "[9.23666943987633727340403426829010528546281601e-9 +/- 1.91e-54]"
+    },
+    {
+      "span": 18000,
+      "L": 2.0,
+      "expected_downward_bias_ball": "[1.32656398819021877840403313376347379176129549e-8 +/- 5.11e-53]",
+      "elementary_upper_bound": "[3.52478650018482343464651393052397575928520104e-8 +/- 1.24e-53]"
+    },
+    {
+      "span": 18000,
+      "L": 4.0,
+      "expected_downward_bias_ball": "[4.96122779247770925596314473177878975893317631e-8 +/- 1.29e-53]",
+      "elementary_upper_bound": "[1.34113957980695638362202761110833719972182867e-7 +/- 3.16e-54]"
+    },
+    {
+      "span": 18000,
+      "L": 8.0,
+      "expected_downward_bias_ball": "[1.84655891627854460796604721432733434531428755e-7 +/- 3.13e-53]",
+      "elementary_upper_bound": "[5.08947137688519892565257614346413193245578371e-7 +/- 2.54e-52]"
+    },
+    {
+      "span": 18000,
+      "L": 16.0,
+      "expected_downward_bias_ball": "[6.83663596153866480490754891618808312783226917e-7 +/- 5.03e-52]",
+      "elementary_upper_bound": "[1.92638147627105149369668732456192965180356441e-6 +/- 1.60e-51]"
+    }
+  ],
+  "counterexample": {
+    "circle_circumference": 3,
+    "nominal_intensity": 1,
+    "interval_length": "1/2",
+    "construction": "four sites spaced 3/4, independent jitter in [-1/16,1/16], common uniform rotation; occupancy laws differ only in fourth-order interaction",
+    "identical_factorial_moment_measures_through_order": 3,
+    "results": [
+      {
+        "law": "independent_occupancy",
+        "mean_anchor_variance": "11/48",
+        "sampling_variance_of_anchor_variance": "11/13824",
+        "factorial_order_second_moment_terms": [
+          "25/432",
+          "7/192",
+          "-3/64",
+          "3/512"
+        ]
+      },
+      {
+        "law": "fourth_order_perturbation",
+        "mean_anchor_variance": "11/48",
+        "sampling_variance_of_anchor_variance": "1/1152",
+        "factorial_order_second_moment_terms": [
+          "25/432",
+          "7/192",
+          "-3/64",
+          "41/6912"
+        ]
+      }
+    ],
+    "variance_difference": "1/13824"
+  },
+  "scope": "arithmetic and analytic checks passed; no asserted statistical acceptance/rejection of a zeta model"
+}

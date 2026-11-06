@@ -1,0 +1,24 @@
+{
+  "passed": 3,
+  "cases": [
+    {
+      "display": "[+/- 1.91]",
+      "display_contains_zero": true,
+      "original_excludes_zero": true,
+      "exact_roundtrip_excludes_zero": true
+    },
+    {
+      "display": "[+/- 3.91]",
+      "display_contains_zero": true,
+      "original_excludes_zero": true,
+      "exact_roundtrip_excludes_zero": true
+    },
+    {
+      "display": "[+/- 0.0191]",
+      "display_contains_zero": true,
+      "original_excludes_zero": true,
+      "exact_roundtrip_excludes_zero": true
+    }
+  ],
+  "interpretation": "display strings are diagnostics; exact dyadic fields preserve saved boundary balls"
+}

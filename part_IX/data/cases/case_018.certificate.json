@@ -1,0 +1,173 @@
+{
+  "schema": "nonagon.intervention.certificate.v1",
+  "observations": {
+    "schema": "nonagon.intervention.observations.v1",
+    "contract": {
+      "network_order": 2,
+      "coordinate_labels": [
+        "node_1",
+        "node_2"
+      ],
+      "input_coordinate": 0,
+      "readout_coordinate": 0,
+      "stiffness_class": "connected_grounded_spring",
+      "known_site_set": true,
+      "force_amplitude": "1",
+      "sensor_gain": "1",
+      "calibration": "exact",
+      "noise_model": "none",
+      "coefficient_domain": "rational"
+    },
+    "plan": {
+      "base_load": "1"
+    },
+    "observations": [
+      {
+        "id": "baseline",
+        "loads": {},
+        "response": "24/83"
+      },
+      {
+        "id": "single_1_a",
+        "loads": {
+          "1": "1"
+        },
+        "response": "4/15"
+      },
+      {
+        "id": "single_1_b",
+        "loads": {
+          "1": "2"
+        },
+        "response": "32/127"
+      }
+    ],
+    "heldout": [
+      {
+        "id": "heldout_0",
+        "loads": {
+          "0": "5/2"
+        },
+        "response": "24/143"
+      },
+      {
+        "id": "heldout_1",
+        "loads": {
+          "0": "1/17",
+          "1": "6"
+        },
+        "response": "816/3703"
+      },
+      {
+        "id": "heldout_2",
+        "loads": {
+          "0": "1/7",
+          "1": "2/7"
+        },
+        "response": "1232/4551"
+      }
+    ]
+  },
+  "recovered": {
+    "K": [
+      [
+        "11/2",
+        "-7/2"
+      ],
+      [
+        "-7/2",
+        "6"
+      ]
+    ],
+    "G": [
+      [
+        "24/83",
+        "14/83"
+      ],
+      [
+        "14/83",
+        "22/83"
+      ]
+    ],
+    "edges": [
+      {
+        "i": 0,
+        "j": 1,
+        "stiffness": "7/2"
+      }
+    ],
+    "grounding": [
+      "2",
+      "5/2"
+    ],
+    "ldl_diagonal": [
+      "11/2",
+      "83/22"
+    ]
+  },
+  "extraction": {
+    "singles": [
+      {
+        "node": 1,
+        "drop_t": "28/1245",
+        "drop_2t": "392/10541",
+        "intercept": "6889/196",
+        "slope": "913/98",
+        "G1j_squared": "196/6889",
+        "G1j": "14/83",
+        "Gjj": "22/83"
+      }
+    ],
+    "pairs": []
+  },
+  "forward_witnesses": [
+    {
+      "id": "baseline",
+      "response_vector": [
+        "24/83",
+        "14/83"
+      ]
+    },
+    {
+      "id": "single_1_a",
+      "response_vector": [
+        "4/15",
+        "2/15"
+      ]
+    },
+    {
+      "id": "single_1_b",
+      "response_vector": [
+        "32/127",
+        "14/127"
+      ]
+    },
+    {
+      "id": "heldout_0",
+      "response_vector": [
+        "24/143",
+        "14/143"
+      ]
+    },
+    {
+      "id": "heldout_1",
+      "response_vector": [
+        "816/3703",
+        "34/529"
+      ]
+    },
+    {
+      "id": "heldout_2",
+      "response_vector": [
+        "1232/4551",
+        "686/4551"
+      ]
+    }
+  ],
+  "validation": {
+    "acquisition_count": 3,
+    "heldout_count": 3,
+    "all_forward_equations_exact": true,
+    "scalar_parameter_count": 3
+  }
+}

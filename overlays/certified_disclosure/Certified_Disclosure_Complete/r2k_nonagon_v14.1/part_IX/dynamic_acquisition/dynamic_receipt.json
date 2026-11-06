@@ -1,0 +1,116 @@
+{
+  "schema": "nonagon.dynamic-step.receipt.v1",
+  "status": "PASSED",
+  "fixtures": 4,
+  "step_transient_records": 32,
+  "real_laplace_scalar_settings": 96,
+  "sampled_points_per_trace": 163841,
+  "operator_enclosures": 12,
+  "checked_predicates": 455,
+  "controls": [
+    {
+      "id": "short_record_tail_required_s0",
+      "status": "contained_with_tail",
+      "observed_error": "96217340106798179/23202500000000000000",
+      "tail_bound": "13326953396622033067/9960305575079594472"
+    },
+    {
+      "id": "short_record_tail_required_s1",
+      "status": "contained_with_tail",
+      "observed_error": "64803925303624596269/647100000000000000000",
+      "tail_bound": "11021110387408339115/9960305575079594472"
+    },
+    {
+      "id": "short_record_tail_required_s2",
+      "status": "contained_with_tail",
+      "observed_error": "107897326796469775531/2865100000000000000000",
+      "tail_bound": "11021110387408339115/19920611150159188944"
+    },
+    {
+      "id": "nonproportional_damping",
+      "status": "rejected",
+      "reason": "This tail proof requires C=2*beta*M"
+    },
+    {
+      "id": "nondiagonal_mass",
+      "status": "rejected",
+      "reason": "Tail proof requires diagonal mass"
+    },
+    {
+      "id": "negative_mass",
+      "status": "rejected",
+      "reason": "Mass must be strictly positive"
+    },
+    {
+      "id": "nonpositive_decay",
+      "status": "rejected",
+      "reason": "beta must be positive"
+    },
+    {
+      "id": "missing_grounding",
+      "status": "rejected",
+      "reason": "This tail proof requires strictly positive grounding at every site"
+    },
+    {
+      "id": "no_underdamped_margin",
+      "status": "rejected",
+      "reason": "This tail proof requires underdamped spectral lower margin"
+    },
+    {
+      "id": "wide_observation_error",
+      "status": "unresolved",
+      "reason": "First load difference is not separated from zero"
+    }
+  ],
+  "summaries": [
+    {
+      "id": "dynamic_n3_910301",
+      "order": 3,
+      "traces": 6,
+      "scalar_settings": 18,
+      "status": "enclosed"
+    },
+    {
+      "id": "dynamic_n3_910302",
+      "order": 3,
+      "traces": 6,
+      "scalar_settings": 18,
+      "status": "enclosed"
+    },
+    {
+      "id": "dynamic_n4_910401",
+      "order": 4,
+      "traces": 10,
+      "scalar_settings": 30,
+      "status": "enclosed"
+    },
+    {
+      "id": "dynamic_n4_910402",
+      "order": 4,
+      "traces": 10,
+      "scalar_settings": 30,
+      "status": "enclosed"
+    }
+  ],
+  "max_observation_error": 1.0001791311362065e-12,
+  "max_error_fraction_of_envelope": 0.31091301655308035,
+  "max_modal_vs_state_space_error": 4.163336342344337e-16,
+  "max_operator_entry_radius": 0.043992434439512694,
+  "scope": "C=2*beta*M, diagonal M in [1,7/4], ground>=2, norm_inf(K)<=16, beta=1/2",
+  "no_physical_hardware": true,
+  "envelope_metadata_source": "fixed external class prior in protocol; no hidden matrix enters envelopes()",
+  "conditional_assumptions": [
+    "exact calibrated unit step and local loads",
+    "declared simultaneous per-sample error",
+    "declared transformed numerical rounding envelope",
+    "linear time-invariant model and zero initial state"
+  ],
+  "dependency_versions": {
+    "numpy": "2.3.5",
+    "python": "3.12.14"
+  },
+  "source_sha256": "662f2d951cb7f8d81f55b54682e85759c5bdf471a5e8aa6fc78004ae150d0253",
+  "interval_source_sha256": "c85150fc822b668a85651a30c13af3bcdb8dfaf161ad0a68dd02845db0bdfaaa",
+  "protocol_sha256": "49dc7f5b97c95c1180647e3b3a2409e45e8b35b83c83f5fb3d73e3c056bdda64",
+  "records_sha256": "8bb3173f183cec5035bbd6a72edcfba090e30046b1ec7f1bd80d15af19baddbf"
+}

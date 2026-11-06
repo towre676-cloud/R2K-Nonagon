@@ -1,0 +1,92 @@
+{
+ "lean": [
+  {
+   "sigma": 1e-07,
+   "median_rel_err": 3.5878461801956976e-05,
+   "p90_rel_err": 0.00022577230757508889,
+   "within_1pct": 1.0,
+   "median_err_over_crb": 0.6539053666724439,
+   "crb_median_pred": 4.868174865367259e-05,
+   "iterations": 11,
+   "seconds": 0.372204065322876,
+   "chi2_per_reading": 0.5387656531691583,
+   "starts_used": 1
+  },
+  {
+   "sigma": 1e-06,
+   "median_rel_err": 0.0003758954876706184,
+   "p90_rel_err": 0.0025775143566939386,
+   "within_1pct": 0.9884393063583815,
+   "median_err_over_crb": 0.700510670855597,
+   "crb_median_pred": 0.00048681748653672585,
+   "iterations": 11,
+   "seconds": 1.1782541275024414,
+   "chi2_per_reading": 0.6113211509138923,
+   "starts_used": 2
+  },
+  {
+   "sigma": 1e-05,
+   "median_rel_err": 0.0030423274570399216,
+   "p90_rel_err": 0.027388627028954587,
+   "within_1pct": 0.7630057803468208,
+   "median_err_over_crb": 0.7163314740428309,
+   "crb_median_pred": 0.004868174865367259,
+   "iterations": 11,
+   "seconds": 1.4165022373199463,
+   "chi2_per_reading": 0.5451312187084255,
+   "starts_used": 2
+  },
+  {
+   "sigma": 0.0001,
+   "median_rel_err": 0.03113560917999649,
+   "p90_rel_err": 0.2734963259002978,
+   "within_1pct": 0.28901734104046245,
+   "median_err_over_crb": 0.7905474000342921,
+   "crb_median_pred": 0.04868174865367259,
+   "iterations": 38,
+   "seconds": 1.787745714187622,
+   "chi2_per_reading": 0.6955411028275474,
+   "starts_used": 2
+  }
+ ],
+ "ports10": [
+  {
+   "sigma": 0.0001,
+   "median_rel_err": 0.0007380123248588361,
+   "p90_rel_err": 0.009056741728689432,
+   "within_1pct": 0.9075144508670521,
+   "median_err_over_crb": 0.6296785698587276,
+   "crb_median_pred": 0.0012053502777993937,
+   "iterations": 8,
+   "seconds": 0.7090566158294678,
+   "chi2_per_reading": 0.9918232688573897,
+   "starts_used": 1
+  },
+  {
+   "sigma": 0.001,
+   "median_rel_err": 0.00820198540281229,
+   "p90_rel_err": 0.10888667514895142,
+   "within_1pct": 0.5549132947976878,
+   "median_err_over_crb": 0.6751801759491647,
+   "crb_median_pred": 0.012053502777993937,
+   "iterations": 56,
+   "seconds": 4.597339391708374,
+   "chi2_per_reading": 0.9909070199094742,
+   "starts_used": 1
+  }
+ ],
+ "ports20": [
+  {
+   "sigma": 0.001,
+   "median_rel_err": 0.003661591546825103,
+   "p90_rel_err": 0.017552340698146884,
+   "within_1pct": 0.7572254335260116,
+   "median_err_over_crb": 0.6566765225284236,
+   "crb_median_pred": 0.005743284541721663,
+   "iterations": 7,
+   "seconds": 1.8420963287353516,
+   "chi2_per_reading": 0.9977864670828925,
+   "starts_used": 1
+  }
+ ]
+}

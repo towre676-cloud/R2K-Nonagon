@@ -1,0 +1,38 @@
+exact anchors 20000000 0.5
+exact anchors 20000000 1.0
+exact anchors 20000000 2.0
+exact anchors 20000000 4.0
+exact anchors 20000000 8.0
+exact anchors 20000000 16.0
+exact anchors 50000000 0.5
+exact anchors 50000000 1.0
+exact anchors 50000000 2.0
+exact anchors 50000000 4.0
+exact anchors 50000000 8.0
+exact anchors 50000000 16.0
+curve 20000000 0 400 seconds 4.3
+curve 20000000 0 800 seconds 8.6
+curve 20000000 0 1200 seconds 12.5
+curve 20000000 0 1600 seconds 16.9
+curve 20000000 1 400 seconds 4.3
+curve 20000000 1 800 seconds 8.2
+curve 20000000 1 1200 seconds 12.5
+curve 20000000 1 1600 seconds 17.0
+curve 20000000 2 400 seconds 4.6
+curve 20000000 2 800 seconds 9.5
+curve 20000000 2 1200 seconds 13.8
+curve 20000000 2 1600 seconds 18.1
+height completed 20000000
+curve 50000000 0 400 seconds 4.1
+curve 50000000 0 800 seconds 8.4
+curve 50000000 0 1200 seconds 12.7
+curve 50000000 0 1600 seconds 16.7
+curve 50000000 1 400 seconds 4.1
+curve 50000000 1 800 seconds 8.5
+curve 50000000 1 1200 seconds 12.6
+curve 50000000 1 1600 seconds 16.8
+curve 50000000 2 400 seconds 4.3
+curve 50000000 2 800 seconds 9.4
+curve 50000000 2 1200 seconds 14.1
+curve 50000000 2 1600 seconds 18.7
+height completed 50000000

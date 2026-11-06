@@ -1,0 +1,27 @@
+case300 0 397 409 0 0.0s
+case300 1 409 409 26 0.0s
+case300 rc=0 wall=0s
+case1354pegase 0 1668 1710 0 0.1s
+case1354pegase 1 1710 1710 124 0.3s
+case1354pegase rc=0 wall=2s
+case2869pegase 0 3843 3968 0 0.6s
+case2869pegase 1 3968 3968 221 1.4s
+case2869pegase rc=0 wall=8s
+case6515rte 0 7892 8076 0 8.8s
+case6515rte 1 8076 8076 561 20.4s
+case6515rte rc=0 wall=94s
+case_ACTIVSg10k 0 12216 12217 0 1.8s
+case_ACTIVSg10k 1 12217 12217 4 1.9s
+case_ACTIVSg10k rc=0 wall=7s
+case9241pegase 0 12676 14207 0 22.6s
+case9241pegase 1 14207 14207 1257 71.8s
+case9241pegase rc=0 wall=522s
+case13659pegase 0 17094 18625 0 47.0s
+case13659pegase 1 18625 18625 1257 133.6s
+case13659pegase rc=0 wall=1700s
+case_ACTIVSg25k 0 30089 30110 0 44.8s
+case_ACTIVSg25k 1 30110 30110 92 54.7s
+case_ACTIVSg25k rc=0 wall=213s
+case_ACTIVSg70k 0 83275 83318 0 126.4s
+case_ACTIVSg70k 1 83318 83318 125 167.1s
+case_ACTIVSg70k rc=0 wall=645s

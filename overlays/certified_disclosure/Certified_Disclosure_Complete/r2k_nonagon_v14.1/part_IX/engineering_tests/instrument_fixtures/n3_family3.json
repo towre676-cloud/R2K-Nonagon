@@ -1,0 +1,45 @@
+{
+  "id": "n3_family3",
+  "order": 3,
+  "family": 3,
+  "weak_link": null,
+  "minimum_positive_gap": "1/512",
+  "K_normalized": [
+    [
+      "7/4",
+      "-1",
+      "0"
+    ],
+    [
+      "-1",
+      "5/2",
+      "-5/4"
+    ],
+    [
+      "0",
+      "-5/4",
+      "2"
+    ]
+  ],
+  "grounds": [
+    "3/4",
+    "1/4",
+    "3/4"
+  ],
+  "edges": [
+    {
+      "sites": [
+        0,
+        1
+      ],
+      "conductance_normalized": "1"
+    },
+    {
+      "sites": [
+        1,
+        2
+      ],
+      "conductance_normalized": "5/4"
+    }
+  ]
+}

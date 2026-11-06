@@ -1,0 +1,2 @@
+{"case": "case_ACTIVSg10k", "prime": 998244353, "rows": 16024, "unknowns": 12217, "rank": 12217, "identifiable": true, "agrees_with_record": true, "pivot_rule": "shortest row first, largest column", "seconds_inverse": 547.6286916732788, "seconds_rows": 0.1548600196838379, "seconds": 547.8882262706757}
+/bin/bash: line 1:  1779 Killed                  timeout 3500 python3 verify13s.py $c

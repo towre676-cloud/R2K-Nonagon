@@ -1,0 +1,573 @@
+{
+  "schema": "nonagon.integration.source-preservation.v1",
+  "scope": "Pinned original research copy and retained production code/observation records; canonical Part VIII edits and new extensions are intentionally outside this immutable set. SHA-256 checks establish byte preservation relative to the inspected local source archives, not an external signature.",
+  "archive_sha256": {
+    "claude_v8": "f57a15858685a500938c6fee398e40ca0811b4a6b5f749dfdb5a5dc76b9e6cb5"
+  },
+  "files": {
+    "research/claude_v8/part_VIII/assemble8.py": {
+      "sha256": "d871742db20dded421bbe092a58ab0bbb431fd7c3544828393e0bcf68f9e35c5",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "research/claude_v8/part_VIII/body8.html": {
+      "sha256": "0b594cb0ac8fb642749d1a0720bbc911bd5acf214cebea51131e85f007bb6680",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "research/claude_v8/part_VIII/brief_intervention_and_origin.txt": {
+      "sha256": "a449a0f4bc65ed2a5f646990c9274d4f2213cecad61cc40b501ba0beee018c25",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "research/claude_v8/part_VIII/intervene.json": {
+      "sha256": "26ce96c051c4ba3a3b038a77fa19aee8bbcb4eff4bdfa67bd7d129280e6823c5",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "research/claude_v8/part_VIII/intervene.py": {
+      "sha256": "e9605cf7bc6b75625cad0c8d0220377d36e2bab8fd789c0dbbb7398235ba9587",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "research/claude_v8/part_VIII/origin.json": {
+      "sha256": "ad544e250f9629ea4e1480bc5cad23150f0bba58199af2f406ee0092684acdf3",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "research/claude_v8/part_VIII/origin.py": {
+      "sha256": "6e00b09f65f987d7abad2bc9cfc9d819406f405e6fda84b505c92f8c633ec89c",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "research/claude_v8/part_VIII/origin_hp.json": {
+      "sha256": "cec50b2606d40d3d363e232cbf6e7de668de4bfc6f5c38a474e3b3fbe0434f6c",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "research/claude_v8/part_VIII/origin_hp.py": {
+      "sha256": "00fd27d3bf4ff38219e71d7d04e9d4ac028938962f821c3655915bc54220f63c",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "research/claude_v8/part_VIII/stability.json": {
+      "sha256": "f4502e2ef795b7c2b473fd11fb97331b371b797bcf35ee67cb859f67351da150",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "research/claude_v8/part_VIII/stability.py": {
+      "sha256": "50ae50703eeeee6635d240d54e9fdb568b3e2d25b65a8be92be5c29d92253bac",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "research/claude_v8/part_VIII/verify_intervention.out": {
+      "sha256": "6c5fe2c4a9413c2b65816da355e2977b2373e0390dee84b32743fbdd4499f3ba",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "research/claude_v8/part_VIII/verify_intervention.py": {
+      "sha256": "4efc58dd906cb35ba1f252a4d3f4e4c07bc6069ada0448f03174072efd8e7c74",
+      "origin": "Claude v8 archive; immutable original"
+    },
+    "part_IX/active_interventions.py": {
+      "sha256": "7a1743c18d5d277975d2b6916a876f14d027d7f37bb6734084242b13d8af19ee",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/bk_multi_repaired.py": {
+      "sha256": "bdfdfd6198989525e62491f30b0ec87a02f8268b61e8f01fbd68fdee4599b7f5",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/bounded_campaign.py": {
+      "sha256": "3540288fb4dad4fdde0650b65307f15eef98708d98e4e47a7e009c5ef4f79f95",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/bounded_intervention.py": {
+      "sha256": "c85150fc822b668a85651a30c13af3bcdb8dfaf161ad0a68dd02845db0bdfaaa",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/build_report.py": {
+      "sha256": "fb8042503a027c359abdde848d0d5799a9ed7ac341bdc57e6c1541703d359e71",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/campaign.py": {
+      "sha256": "df9c060b6876bd6c86bfffeb22289975c3d7721678212345f25f8476b07a0bf3",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_000.certificate.json": {
+      "sha256": "2794a811a74a599cbc2cda0614989096fb5ef57be6b02e10edf5b391271af61a",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_001.certificate.json": {
+      "sha256": "cf8fb63749c8c703bfd45a3e02239455889124ea5c904ede3914dbe2c8ec8712",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_002.certificate.json": {
+      "sha256": "58363b242886b3957a6a1d4ed83270d03c95b73f530dc50dbad2618ba71159f4",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_003.certificate.json": {
+      "sha256": "c4111fbed6e7dc7cc5bba6595595611e36ad2d8173e3c9f1dad69e3470f1275e",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_004.certificate.json": {
+      "sha256": "98cb61dbcc7db29b7dda1601099ddea739dcccc211493e48b86613258ee627bb",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_005.certificate.json": {
+      "sha256": "057eac675171a96d76853a5abac5c4f87278be5147e5a2d979e73c8afd5ec9d7",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_006.certificate.json": {
+      "sha256": "00f5ea3f574cf74e1c827f0f6ff900e03887da119a5a0677f5cfbc1620b2b33e",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_007.certificate.json": {
+      "sha256": "3fb79c77cf233795a0f2647f9f4278f03f9d42c10a251b6a43b285879b6686e4",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_008.certificate.json": {
+      "sha256": "c264503df39e84e2a2aae5cd087e4dc78492f558e32f75ec64b4adcfb5715f5b",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_009.certificate.json": {
+      "sha256": "afa574a717559e5f66333c865e531674f80b25d049c6baf0cab7ea00022522a7",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_010.certificate.json": {
+      "sha256": "7f28fb7ee30248ee04abb95adf62e918e686d647e4511a612ca4d164261b94e7",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_011.certificate.json": {
+      "sha256": "db5239eafff2dcbed6ebd5165d48b0525341cf097da08244ff77485615432621",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_012.certificate.json": {
+      "sha256": "b6bad1735cdb4dc2ddf9a6d87551b233800d3a93b6833a1eeaf9f90016a0533a",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_013.certificate.json": {
+      "sha256": "28204f174d7bb8456b49d350a0e6e8872c960e8f8647d805bab39f27de4a1dac",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_014.certificate.json": {
+      "sha256": "e5c0debff6908f4bf13c086146ed19bbe08197624899d93b1fbb3f6801381d1a",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_015.certificate.json": {
+      "sha256": "971a5329367299b4efcb46eb0d72a2413e992bee94cfbb87ba1b83f654151824",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_016.certificate.json": {
+      "sha256": "35a915a236794c7832201250d2cb3b904e708f9de555a05d553c0cc2a92a2e40",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_017.certificate.json": {
+      "sha256": "61143704a1be3de72185a6239051add4a2aa4312dbb4d1317ad21157dbe7c440",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_018.certificate.json": {
+      "sha256": "c79edb73b204961895e80c3ba3a5d45ad9894431e875556f5a9c30fe1b7268bb",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_019.certificate.json": {
+      "sha256": "34748f2a1f12c3555b6a3a7fbabc874064ad7297604c40fad00e7ca0c0b578a0",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_020.certificate.json": {
+      "sha256": "1e3cdeca61790402b185b78298d3dd3bd9db6b728dead7d52f1e920ec1c78111",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_021.certificate.json": {
+      "sha256": "eab8dbc6817330cf8300e8e70967a17d2890b048b239e6970c41e0515f447f99",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_022.certificate.json": {
+      "sha256": "771796c9261ec8b28885b0f83f6df0d7762a2fe333993a478306686ccee26f74",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_023.certificate.json": {
+      "sha256": "5153255ef35841fceed10f04b89027cebaf882aa72dc17210678123d86b96985",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_024.certificate.json": {
+      "sha256": "e3d2d65bb7af66b821be95eea4ffa410381f32917da5799761420a954f6e31e4",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_025.certificate.json": {
+      "sha256": "ec812fcef68b72760a4df29c099d337ab1b899d20aecef8da6f3234f66ae04bf",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_026.certificate.json": {
+      "sha256": "3bfaaed4fb141c90092bb60b159a50254bfd954557623f74fb113f1586f04b0b",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_027.certificate.json": {
+      "sha256": "03e625d2f8d186f19bac705ec0939881ff1fd83ba933853e002a9e1f4c2d2844",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_028.certificate.json": {
+      "sha256": "a3098f9bbaac9b4784e30cc41935b73ed6be59b60c1ddaa9092be54b81cafcb2",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_029.certificate.json": {
+      "sha256": "e564bc656bbf2c225b9e3b06686d91ae8b76c70b43afa8f085bf83d61ee3f9f3",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_030.certificate.json": {
+      "sha256": "2b7ca508cc3832662f987eeaecc09a831553d929c8e50fa4b8b99c51dabab05d",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_031.certificate.json": {
+      "sha256": "4c1cc24342a2b313842ec6b2ba63ff41ea0cd0c09e305ec9aeedec1426b4560d",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_032.certificate.json": {
+      "sha256": "1736dfb3f1bca2a69fec61373e9ce68dd53c779072bca826e76bd4a82403f8ef",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_033.certificate.json": {
+      "sha256": "0b1da06dfb37b87820af5077d15d1a4d33e018e161f485ef7e5df185ced8eded",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_034.certificate.json": {
+      "sha256": "266f16aa3bf85e09db71bb4a065d0370d09cdec42582be5cfd15dd162d6ed057",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_035.certificate.json": {
+      "sha256": "47a790edc0075be662be21494c627851c71927c0b3a348125c4c178ab5c703ef",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_036.certificate.json": {
+      "sha256": "031dd1f9ba01662f4764fdffe92cce5e6f5538d633e086b92c18944afbb5fbe7",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_037.certificate.json": {
+      "sha256": "838baf5099a143a97221bc722eed9abbf67e7bce4dc02d48412f48c3bbc40273",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_038.certificate.json": {
+      "sha256": "3ed0d72a75cf3f4ebc7366576ec9879a1f99bb6daa85b3da45b47ee71ea6dd60",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_039.certificate.json": {
+      "sha256": "d44d9da4a7ce2a247b8193a46c170ab7e7ec6dc274354da65bdd8a21d0213b45",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_040.certificate.json": {
+      "sha256": "76c4ffb2469a91f333aaeda3f81c0e65d0997059d39c660447f17cd28d942004",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_041.certificate.json": {
+      "sha256": "4483ed6b350e2b9ceab0d8a46143cd6be3945b4ba45c653338b201b7e945ad80",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_042.certificate.json": {
+      "sha256": "5dc6174a066c13dd088696236dd4edeab4dfa7bfeca640c79b3581dd994706a4",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_043.certificate.json": {
+      "sha256": "35316dcfb3b28167e165e54e5cd518af13b50518c0adca41d380e6d8d912d5e9",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_044.certificate.json": {
+      "sha256": "0ab0bcae03b7ba229380de1930e051021bee19967da8158e65fb4637fcdecd93",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_045.certificate.json": {
+      "sha256": "19392aaa0fbac25e0cc56bdbcb999e596da32289c5c4e4b3300d7edc786c233d",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_046.certificate.json": {
+      "sha256": "1385343caf19b6a8f838538efdb0d8091ea882ce105dcc8f1fbae198c66ecca2",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_047.certificate.json": {
+      "sha256": "c5becaa1469ac2564efad0909403bd29eef0a53189c38f0667610e48ab924953",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_048.certificate.json": {
+      "sha256": "676edf003342971b79d8054fd9febb4deb3cbda1e611236b7b52d6085485f6fa",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_049.certificate.json": {
+      "sha256": "ae3d316a0b098cdf72f7e73df5ae72f535bde0ed3583d425338c853fa965d4fe",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_050.certificate.json": {
+      "sha256": "ea78d0098191b6acce5d4bf9ce8a2b7dd4546b6fcbe23fee5992780eef9c4555",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_051.certificate.json": {
+      "sha256": "a5a4bea275625826c66314e68ec16d1e9010c059960339dc16b2d78f965e6632",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_052.certificate.json": {
+      "sha256": "73acf3f89a227194cea92d1769ee805a1ad29fb78228343c06eb35c749569a7f",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_053.certificate.json": {
+      "sha256": "76848a50f9c4767815727006696fe362375f82fb2b3e912b0997c63d38216f84",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_054.certificate.json": {
+      "sha256": "e15e1b45e388b51fdab8b8f4801643ff285edf79f3511cd57293995ad9c2061c",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_055.certificate.json": {
+      "sha256": "1e63cc0d0b3d58ca72ad997a0445c599199ec7fea98f913b925c48524e16b02b",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_056.certificate.json": {
+      "sha256": "3466dea3ee9d0199c7d6c0b31b9ebf5f5bdf4e612dcfcad8f884e234957288ec",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_057.certificate.json": {
+      "sha256": "9ee240762a4fa0a1133ad69997d5595926530a5635e138350d047afa03d8b4ed",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_058.certificate.json": {
+      "sha256": "1656066cbd8bbb91ba5fceed2da4f1572a4cafccf6ac035d266bc1eafd792ac4",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_059.certificate.json": {
+      "sha256": "eb2c7121ed321363bd302b851b30b5320f229b9f6190be3f732cc34f001dac7b",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_060.certificate.json": {
+      "sha256": "338725b09c1485a5af322eb86ae6bfae15cbbaad02d1b3e5a4bf8846cda3f528",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_061.certificate.json": {
+      "sha256": "dca5ec50da3c936c6da832563b70b761eac7501874f91ad2f9f999aad94e02fe",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_062.certificate.json": {
+      "sha256": "74ee055d52a78ecc3d7c6380b9ee9613969dda049858e5b966fc34c91c47ec8b",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_063.certificate.json": {
+      "sha256": "ca238f9c7c44322da066b03fa1ffa071610e9aa9f34379c5fa33d2558d9bfd77",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_064.certificate.json": {
+      "sha256": "fb1874603ffdcaf560ee47c7cd957f7a9ac87e43ac6ceffeecbb3dd5d1b287b1",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_065.certificate.json": {
+      "sha256": "eb1f91ed27215da35b58ea6a6ab5763db047e5cd268376945b3d1d369753b57d",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_066.certificate.json": {
+      "sha256": "d8a30c784f498df60e111b29f26d1c99b062d16e69af5e1fbe7e641b88bd767e",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_067.certificate.json": {
+      "sha256": "988e73a0972969d61db8e1c3027ece7c381908548435759315596e36bba2ec9b",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_068.certificate.json": {
+      "sha256": "ea1e5c8c627fd8ef4a3ec9c25f9e754bf24478506284ba416a2b9ed484539620",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_069.certificate.json": {
+      "sha256": "724a75043aac794b5fb5762b65190de048fe80b9c6c832d2c7a11a58627996a3",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_070.certificate.json": {
+      "sha256": "48815b305344699ee54c9391132cb99ea2c5745e7d4c5fab8210a11d2cd7046c",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_071.certificate.json": {
+      "sha256": "fdadc7807b973d0220f191fefe66d93c4fbb48a7d346e5a47bd229ebcb334e5e",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_072.certificate.json": {
+      "sha256": "61be4ce15e0bdc6addc2bffaf0ea67d257f7a15d7491f42ab9bccfaf0b085c03",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_073.certificate.json": {
+      "sha256": "62ec145342a27f893bc2633ae25d3da47149bd2d37f6ab16bb32d8042e94c4d9",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_074.certificate.json": {
+      "sha256": "0b89e6a9689edfa7973a7e7e088456b4d255dd969f3d8aac9cd85ec750d14e10",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_075.certificate.json": {
+      "sha256": "641618005a2765c51a96ed0e43dfdbbaee3dad1a1247d8e62eb400c740a2561f",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_076.certificate.json": {
+      "sha256": "3a56ff418b8d2af993c3a8042f8896e1e9ec81a45675523e86b78c0f96131f3d",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_077.certificate.json": {
+      "sha256": "c562a4e37d8387db9753a87d3651753384a9600611363ce8603767b293652572",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_078.certificate.json": {
+      "sha256": "fa9ba187172a2f8f54c9d9e883872da8cde56247ca825c242b816e4dc1321737",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_079.certificate.json": {
+      "sha256": "4124daaaaa263cd2edc6728a36ff77a35cf6243afb791631c69da1d5d62fc5be",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_080.certificate.json": {
+      "sha256": "891ac74cec3816bdd4307b1e74609ab6e76f5c7c49a8a92292dd975ff88696d1",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_081.certificate.json": {
+      "sha256": "00a1c35fb8ba18cdcf05625d9fe7c93bda29cffb6c2277b078f3dd56643fa8b1",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_082.certificate.json": {
+      "sha256": "12dd4ad48e624fc36b356298959f0f29c236101f49f8da430d366b68ada30876",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_083.certificate.json": {
+      "sha256": "56aec2d8a5c9713b464423ffe7905743b3e8127b4fb03e94da256dcf6fa813f8",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_084.certificate.json": {
+      "sha256": "b91e5082eb9fd14db9d1c064d92ed869f7b512805f14666a2c49b02a5cac0d72",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_085.certificate.json": {
+      "sha256": "1c06cf32abd8c5e6d892ad38faad4cf82cbd845ea4bae2b0cddcc94d876370f4",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_086.certificate.json": {
+      "sha256": "c3125fb17a643600678a1a00eda5beedeabe39a9c8a049b4a8c8ba7b45a4a099",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_087.certificate.json": {
+      "sha256": "a4a9257ab59a517627c03585978260f32af58c88ef921efc259eddee5112b655",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_088.certificate.json": {
+      "sha256": "c31a6823e2caa19dd35578e60b008951c526dfae9214ea9a6a74781280053172",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_089.certificate.json": {
+      "sha256": "0804947e8526f4708a992b47fcef708858c8baaf636571f9f4327b487f2023c1",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_090.certificate.json": {
+      "sha256": "aca04c30d1cd673acc28d047f32fe3305b53b9c4a836c52256bafe1e57a6d71a",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_091.certificate.json": {
+      "sha256": "6f6887127a68076aff1bbf81909e00be3a5be04c778aa85043771a982317b5c8",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_092.certificate.json": {
+      "sha256": "0c479a158bcfb05b09272a28f2ab129fcca9f6a229d7a8e57744b3ae01145cc6",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_093.certificate.json": {
+      "sha256": "0ee33d000af7a6fee14931543e6f5293e641b6bb4c9078f3885d02e2f24d33e5",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_094.certificate.json": {
+      "sha256": "35bd7fa6c05029d05d9963b99bd0d521038d3e5cafef7e8621942edd22a8285f",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_095.certificate.json": {
+      "sha256": "cc5b9689151d54b6406bc0a52bd4b3044d5dad26a88ef1b336f104cf0b0b1f8a",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_096.certificate.json": {
+      "sha256": "8483aaaabfb973b3b67df62f75f84eba2c08e1378b1ece91bbc0274af2bc8f13",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_097.certificate.json": {
+      "sha256": "17a929550a7ed09ef64e07da8a602b2b11c56e6f19ca6b75c759d49d012ec710",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_098.certificate.json": {
+      "sha256": "fc6a36cc6e7d36f01dc1c30fc51377a44f2fc3d419ee61e3e7fa3ad6147a0531",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/cases/case_099.certificate.json": {
+      "sha256": "a8342e004f43c4dd0ab1e82ffef58c0c7c840ecc9a91e3c40d1b8aa3ecda0ffa",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/damaged_path.certificate.json": {
+      "sha256": "d669bba73e9a1c78d9a30135d2d1cc94b0a5fb816afa71c1425bc3fdc71e7a5f",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/twin_path.certificate.json": {
+      "sha256": "01a673f27143df3ae864906965a26b6c57bdae5aec480583a8da0d09979f01ea",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/twin_path.observations.json": {
+      "sha256": "a8578e02358869986eb557778ab168cc14c91451cd3c20e5693354ea720b52b5",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/twin_triangle.certificate.json": {
+      "sha256": "b66fbe1de0ab449031b1acf878aea2e011a68f30d4391064350efde78f835e3e",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/data/twin_triangle.observations.json": {
+      "sha256": "fe6123e1d019e6a8ebfdb0c037491e254a9d6f17b5f73ee7d3514e1052a5eef3",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/engineering_tests/bench_import.py": {
+      "sha256": "30aa3a4c6a282f9c6e8819acd2a9d039353f90dfa81459b2e9a6a0bacec0224d",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/engineering_tests/bench_import_controls.py": {
+      "sha256": "a5c2292df555527c1b7fba4d2ab169128b5c1a48d875a5c17b195690d1349627",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/engineering_tests/fault_benchmark.py": {
+      "sha256": "5c5f5769dbee07ad1146412123c3af10d2064dc401674ee817748242e793fd6d",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/engineering_tests/fault_calibration.py": {
+      "sha256": "659a8eefd14fd219e61f0649058b22ebd3f7adad33ba71744941c5a2f263b3b1",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/engineering_tests/instrument_campaign.py": {
+      "sha256": "a33916283d4f6cdcef5e43c54ffecbf7495170cc192fc4c7223d1a553a483f0e",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/engineering_tests/instrument_qualification.py": {
+      "sha256": "a83a23148dcad79c1734381304210f8b1e92f09e10f65e4e7b20b5a391f37dbb",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/engineering_tests/render_engineering_report.py": {
+      "sha256": "74d9f24913a2091df42042fc968cd59378246c0579d7c7c577189a9b54a1edef",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/engineering_tests/spice_validation.py": {
+      "sha256": "7965b5cc661513c94c1e724ed69cb2538694835ac68b0cc3db74af3555b44b49",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/engineering_tests/verify_engineering.py": {
+      "sha256": "1219a000c8c1307dd4b8cbd9571b0b3bd12b0f170629e720305167de5d51ca17",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/hardware_plan.py": {
+      "sha256": "c134e86425e641630e280939b2c93f01c9e12902c43236d112e35ed22cb01ec4",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/intervention.py": {
+      "sha256": "c67451777e86bef5dff49c5d34910d08b1b9fc2612dc068cdde0e3357ce2a527",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/offset_audit.py": {
+      "sha256": "82aa0d80e321467d13c70921a2042420fd5634cc06f57497aae85c372c2aac35",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/replay.py": {
+      "sha256": "ff862e8a6ffab0e87c218cf1aa7a7d7bbf192b2dfcc53d9cd7a1b5c25778ab82",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/test_variance_quadrature.py": {
+      "sha256": "02b6db8577d70a7a5b5c284ba73654aae53c8d3e56981d1228abc96dd56c9be3",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/variance_quadrature.py": {
+      "sha256": "72be3647ef33d42b3ec18624da2ff6fb54084c7132933c50cbf39bdc2678aed0",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/verify_active_campaign.py": {
+      "sha256": "d385afe5f2fadfae7f9fe15a7a956beb0bf312b84c17531d9047a449fbbcdad3",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    },
+    "part_IX/verify_intervention.py": {
+      "sha256": "c92fa01dd6764b43d5d338841576c750117df6b693db75fc9823df9fa9945d4b",
+      "origin": "Applied v8.1 release; retained source or observation contract"
+    }
+  }
+}

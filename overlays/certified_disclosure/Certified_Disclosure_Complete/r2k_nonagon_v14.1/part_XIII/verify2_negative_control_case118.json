@@ -1,0 +1,13 @@
+{
+ "case": "negctrl118",
+ "prime": 998244353,
+ "rows": 216,
+ "unknowns": 179,
+ "rank": 174,
+ "identifiable": false,
+ "agrees_with_record": false,
+ "pivot_rule": "shortest row first, largest column",
+ "seconds_inverse": 0.025376319885253906,
+ "seconds_rows": 0.00803518295288086,
+ "seconds": 0.03457164764404297
+}

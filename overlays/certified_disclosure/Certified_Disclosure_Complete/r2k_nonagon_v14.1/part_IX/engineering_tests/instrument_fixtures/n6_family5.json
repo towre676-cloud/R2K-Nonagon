@@ -1,0 +1,151 @@
+{
+  "id": "n6_family5",
+  "order": 6,
+  "family": 5,
+  "weak_link": null,
+  "minimum_positive_gap": "1/512",
+  "K_normalized": [
+    [
+      "31/4",
+      "-3/2",
+      "-3/2",
+      "-1",
+      "-5/4",
+      "-2"
+    ],
+    [
+      "-3/2",
+      "3",
+      "-3/4",
+      "0",
+      "-1/4",
+      "0"
+    ],
+    [
+      "-3/2",
+      "-3/4",
+      "13/2",
+      "-2",
+      "0",
+      "-2"
+    ],
+    [
+      "-1",
+      "0",
+      "-2",
+      "6",
+      "-2",
+      "-3/4"
+    ],
+    [
+      "-5/4",
+      "-1/4",
+      "0",
+      "-2",
+      "19/4",
+      "-1"
+    ],
+    [
+      "-2",
+      "0",
+      "-2",
+      "-3/4",
+      "-1",
+      "6"
+    ]
+  ],
+  "grounds": [
+    "1/2",
+    "1/2",
+    "1/4",
+    "1/4",
+    "1/4",
+    "1/4"
+  ],
+  "edges": [
+    {
+      "sites": [
+        0,
+        1
+      ],
+      "conductance_normalized": "3/2"
+    },
+    {
+      "sites": [
+        0,
+        2
+      ],
+      "conductance_normalized": "3/2"
+    },
+    {
+      "sites": [
+        0,
+        3
+      ],
+      "conductance_normalized": "1"
+    },
+    {
+      "sites": [
+        0,
+        4
+      ],
+      "conductance_normalized": "5/4"
+    },
+    {
+      "sites": [
+        0,
+        5
+      ],
+      "conductance_normalized": "2"
+    },
+    {
+      "sites": [
+        1,
+        2
+      ],
+      "conductance_normalized": "3/4"
+    },
+    {
+      "sites": [
+        1,
+        4
+      ],
+      "conductance_normalized": "1/4"
+    },
+    {
+      "sites": [
+        2,
+        3
+      ],
+      "conductance_normalized": "2"
+    },
+    {
+      "sites": [
+        2,
+        5
+      ],
+      "conductance_normalized": "2"
+    },
+    {
+      "sites": [
+        3,
+        4
+      ],
+      "conductance_normalized": "2"
+    },
+    {
+      "sites": [
+        3,
+        5
+      ],
+      "conductance_normalized": "3/4"
+    },
+    {
+      "sites": [
+        4,
+        5
+      ],
+      "conductance_normalized": "1"
+    }
+  ]
+}

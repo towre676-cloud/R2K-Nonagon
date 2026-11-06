@@ -1,0 +1,20 @@
+{
+  "campaign": "Nonagon frontier: acquisition, identifiability, independent verification and measured passive models",
+  "date_user_local": "2026-10-29",
+  "created_utc": "2026-10-30T01:20:53.666333+00:00",
+  "previous_bundle_sha256": "9215495cbde44e58e393c8aa09aff16b1db7187dee24feba67f028946198ae41",
+  "scope": [
+    "Actual closed-loop real-frequency acquisition; same final fitter across acquisition strategies",
+    "Exact physical nonidentifiability and explicit added-observation remedy",
+    "Independent direct-Arb continuous finite-range coverage",
+    "48 protected measured-cell confirmation after6 development cells",
+    "Exact positive-real certificates for a restricted rational model class"
+  ],
+  "claim_policy": [
+    "No physical-topology claim from a scalar response alone",
+    "No novelty claim for established realization, DRT or NNLS mathematics",
+    "No extrapolation from modelpassivity to unmeasured battery behavior",
+    "No test-set tuning or hidden failure omission",
+    "Preserve locally frozen protocols and their distinction from external preregistration"
+  ]
+}

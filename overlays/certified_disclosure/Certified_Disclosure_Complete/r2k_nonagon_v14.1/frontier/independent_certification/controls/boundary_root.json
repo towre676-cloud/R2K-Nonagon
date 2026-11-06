@@ -1,0 +1,74 @@
+{
+  "function": {
+    "kind": "polynomial",
+    "coefficients_ascending": [
+      "-1",
+      "1"
+    ]
+  },
+  "geometry": {
+    "lo": "-1",
+    "hi": "1",
+    "b": "1/2"
+  },
+  "input_sha256": "3c3e2cfb1bf750de97d9fe9418910aaaf85d0a0f663e56819b7ca125a64e0698",
+  "source_sha256": "7c123778df29aa63bd6870d14bd41aa75343662910065ef812ce687f7cd4a228",
+  "precision_bits": 100,
+  "series_cap": 8,
+  "method": "direct-acb-integral-full-contour",
+  "status": "unresolved",
+  "moments": [],
+  "side_integrals": [],
+  "boundary": {
+    "proved_zero_free": false,
+    "reason": "boundary point not excluded from zero",
+    "side": 1,
+    "tau": "1/2",
+    "value": {
+      "real": "0",
+      "imag": "0",
+      "exact_real": {
+        "mid_mantissa": "0",
+        "mid_exponent": 0,
+        "rad_mantissa": "0",
+        "rad_exponent": 0
+      },
+      "exact_imag": {
+        "mid_mantissa": "0",
+        "mid_exponent": 0,
+        "rad_mantissa": "0",
+        "rad_exponent": 0
+      }
+    },
+    "segments": [
+      {
+        "side": 0,
+        "tau0": "0",
+        "tau1": "1",
+        "function_value": {
+          "real": "[+/- 2.01]",
+          "imag": "-0.50000000000000000000000000000000000",
+          "exact_real": {
+            "mid_mantissa": "-1",
+            "mid_exponent": 0,
+            "rad_mantissa": "268435459",
+            "rad_exponent": -28
+          },
+          "exact_imag": {
+            "mid_mantissa": "-1",
+            "mid_exponent": -1,
+            "rad_mantissa": "0",
+            "rad_exponent": 0
+          }
+        },
+        "abs_lower": "0.500000000000000000000000000000"
+      }
+    ]
+  },
+  "reason": "boundary point not excluded from zero",
+  "seconds": 0.0002923720021499321,
+  "boundary_value_calls": 6,
+  "logarithmic_derivative_calls": 0,
+  "fixture_name": "boundary_root",
+  "expected_status": "unresolved"
+}

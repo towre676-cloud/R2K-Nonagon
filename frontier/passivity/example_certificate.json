@@ -1,0 +1,15 @@
+{
+  "claim": "analytic-and-nonnegative-real-part",
+  "coefficient_sha256": "f72ee748e6ab5afc2aa62254a53c0aa511aa0874df607568d89c32e34e6bcb49",
+  "compiler_sha256": "ff38ceca566c83844aea630ac38b0989e6301ccadcde873f4ee4105b25ee26e4",
+  "domain": "Re(s)>0",
+  "format": "nonagon-positive-real-certificate-v2",
+  "model_id": "attack_base",
+  "model_sha256": "bc0423066e4240acaf81f265982a78004fafdd57f8a1998308f78a9966d04cd8",
+  "nonzero_debye_terms": 1,
+  "nonzero_rl_terms": 0,
+  "rl_term_count": 0,
+  "term_count": 2,
+  "theorem": "nonnegative-series-RLC-and-RC-RL-relaxations-positive-real-v2",
+  "verifier_sha256": "3cce2e822b6e9037cadfa6fdf6fe06c13fb4765b5ffa2223b29b65ae062d9e7e"
+}

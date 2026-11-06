@@ -1,0 +1,63 @@
+{
+ "kirchhoff_all_minors": {
+  "entries_checked": 182,
+  "mismatches": 0,
+  "statement": "G_ij = (weight of spanning 2-forests of the grounded graph with i, j in the tree not containing ground) / (weight of spanning trees)"
+ },
+ "hb_cases": {
+  "1/(1-s)": {
+   "N_plus_D_strictly_hurwitz": false,
+   "axis_nonneg": true,
+   "PR_HB": false,
+   "PR_VI41": false
+  },
+  "s/(s^2+1) (lossless Foster)": {
+   "N_plus_D_strictly_hurwitz": true,
+   "axis_nonneg": true,
+   "PR_HB": true,
+   "PR_VI41": false
+  },
+  "1/s (capacitor)": {
+   "N_plus_D_strictly_hurwitz": true,
+   "axis_nonneg": true,
+   "PR_HB": true,
+   "PR_VI41": false
+  },
+  "s (inductor)": {
+   "N_plus_D_strictly_hurwitz": true,
+   "axis_nonneg": true,
+   "PR_HB": true,
+   "PR_VI41": true
+  },
+  "(s^2+1)/(s(s^2+4)) (Foster)": {
+   "N_plus_D_strictly_hurwitz": true,
+   "axis_nonneg": true,
+   "PR_HB": true,
+   "PR_VI41": false
+  },
+  "(s+2)/(s+1)": {
+   "N_plus_D_strictly_hurwitz": true,
+   "axis_nonneg": true,
+   "PR_HB": true,
+   "PR_VI41": true
+  },
+  "(s-1)/(s+1) (non-PR)": {
+   "N_plus_D_strictly_hurwitz": false,
+   "axis_nonneg": false,
+   "PR_HB": false,
+   "PR_VI41": false
+  },
+  "s/(s^2+0.1s+1)": {
+   "N_plus_D_strictly_hurwitz": true,
+   "axis_nonneg": true,
+   "PR_HB": true,
+   "PR_VI41": true
+  },
+  "(s^2+1)/(s^2+2) (not PR: Re<0 band)": {
+   "N_plus_D_strictly_hurwitz": false,
+   "axis_nonneg": false,
+   "PR_HB": false,
+   "PR_VI41": false
+  }
+ }
+}

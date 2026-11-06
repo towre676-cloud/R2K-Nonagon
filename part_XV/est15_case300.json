@@ -1,0 +1,32 @@
+[
+ {
+  "case": "case300",
+  "N": 100000.0,
+  "rho": 0.0,
+  "median_rel_err": 0.002901827797844759,
+  "within_1pct": 0.9436274509803921,
+  "median_err_over_crb": 0.7448204218109307,
+  "iterations": 60,
+  "seconds": 19.465473651885986
+ },
+ {
+  "case": "case300",
+  "N": 1000000.0,
+  "rho": 0.0,
+  "median_rel_err": 0.0007603393101559433,
+  "within_1pct": 0.9975490196078431,
+  "median_err_over_crb": 0.5773852263205614,
+  "iterations": 60,
+  "seconds": 16.805882930755615
+ },
+ {
+  "case": "case300",
+  "N": 1000000.0,
+  "rho": 0.01,
+  "median_rel_err": 0.00903905573318356,
+  "within_1pct": 0.5343137254901961,
+  "median_err_over_crb": 0.7360618518746993,
+  "iterations": 60,
+  "seconds": 16.714160919189453
+ }
+]

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "symbolic_75_partition_joint_cumulant": {
+    "C": "1",
+    "BC": "-2",
+    "AB": "-1",
+    "AC": "-2",
+    "CC": "-2",
+    "ABB": "2",
+    "ABC": "8",
+    "AAB": "2",
+    "AABB": "-4",
+    "ABAB": "-2"
+  },
+  "exact_joint_count_covariance_checks": 20,
+  "exact_projection_block_identity_and_centering_bounds": 20,
+  "scope": "controls of the displayed all-degree operator identities, not a substitute for their analytic proof"
+}

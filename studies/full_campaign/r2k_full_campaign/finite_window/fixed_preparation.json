@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "windows": [
+    {
+      "n0": 100000,
+      "point_count": 18000
+    },
+    {
+      "n0": 1000000,
+      "point_count": 18000
+    },
+    {
+      "n0": 10000000,
+      "point_count": 18000
+    },
+    {
+      "n0": 20000000,
+      "point_count": 17999
+    },
+    {
+      "n0": 50000000,
+      "point_count": 18001
+    }
+  ],
+  "all_exact_moment_crosschecks": 30,
+  "exploratory_not_preregistered": true
+}

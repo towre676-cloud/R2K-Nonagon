@@ -1,0 +1,50 @@
+{
+  "function": {
+    "kind": "polynomial",
+    "coefficients_ascending": [
+      "-1",
+      "1"
+    ]
+  },
+  "geometry": {
+    "lo": "-1",
+    "hi": "1",
+    "b": "1/2"
+  },
+  "input_sha256": "3c3e2cfb1bf750de97d9fe9418910aaaf85d0a0f663e56819b7ca125a64e0698",
+  "source_sha256": "ada4fb0a074c99daaaa02a567a23d09548cfe247f025721fe24bef339c7070e9",
+  "precision_bits": 100,
+  "series_cap": 8,
+  "method": "direct-acb-integral-full-contour",
+  "status": "unresolved",
+  "moments": [],
+  "side_integrals": [],
+  "boundary": {
+    "proved_zero_free": false,
+    "reason": "boundary point not excluded from zero",
+    "side": 1,
+    "tau": "1/2",
+    "value": {
+      "real": "0",
+      "imag": "0"
+    },
+    "segments": [
+      {
+        "side": 0,
+        "tau0": "0",
+        "tau1": "1",
+        "function_value": {
+          "real": "[+/- 2.01]",
+          "imag": "-0.50000000000000000000000000000000000"
+        },
+        "abs_lower": "0.500000000000000000000000000000"
+      }
+    ]
+  },
+  "reason": "boundary point not excluded from zero",
+  "seconds": 0.00014664600166724995,
+  "boundary_value_calls": 6,
+  "logarithmic_derivative_calls": 0,
+  "fixture_name": "boundary_root",
+  "expected_status": "unresolved"
+}

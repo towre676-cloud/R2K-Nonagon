@@ -1,0 +1,25 @@
+{
+ "file_format": "r2k-contour-certificate/2",
+ "mode": "full",
+ "evaluator": "series",
+ "segments_checked": 147,
+ "segments_recomputed": 147,
+ "count": 5,
+ "mu0": "[5.00000000000000 +/- 2.00e-15]",
+ "imag_parts_contain_zero": true,
+ "minors": [
+  "[5.000000000 +/- 3e-14]",
+  "[7.570294171 +/- 6.62e-11]",
+  "[8.299993903 +/- 2.63e-10]",
+  "[5.287492020 +/- 3.19e-10]",
+  "[0.5908607791 +/- 5.03e-12]"
+ ],
+ "inertia": [
+  5,
+  0
+ ],
+ "all_zeros_simple_on_line": true,
+ "conjugate_pairs_off_line": 0,
+ "status": "CERTIFIED",
+ "scope": "zeros of xi with 6990.0 <= Im s <= 6994.0 and 0.04999999999999999 <= Re s <= 0.95"
+}

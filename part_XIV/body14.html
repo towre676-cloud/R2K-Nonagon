@@ -1,0 +1,104 @@
+<header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v14.0 · Part XIV</div>
+  <h1>The Rank-Two Nonagon <em>XIV</em></h1>
+  <div class="sub">From record to instrument: the noise floor of one port, an estimator that reaches it, how many ports a grid needs, why actuation and not mathematics is the bottleneck, and strong interventions without passivity</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 31 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Part XIII recovered every branch of a 70,000-bus grid exactly from one port. Measured against conventional practice, that result left four obstacles to use, and Part XIV takes each one up with a computation. <strong>The noise floor.</strong> The Cramér–Rao bound for the one-port known-support experiment is computed exactly from its Jacobian. To bring the median branch error to 1%, the reading noise must be at most <!--LEANSIG--> of the port compliance, and the full $n(n+1)/2$ protocol buys only a factor of 2 to 3 for 16 to 41 times the readings. One port is therefore information-limited at realistic noise levels, and no estimator can fix that. <strong>An efficient estimator.</strong> Levenberg–Marquardt on the raw readings, started from the Part XII linear estimate or from a nominal model 10% off, reaches the bound. The median ratio of error to the Cramér–Rao standard deviation is <!--GNRATIO-->, against 0.674 for an exactly efficient Gaussian estimator, and the Part XII estimator's error falls by a factor of about 14. <strong>Ports.</strong> With $k$ measuring ports and one weak intervention per bus, the floor falls steeply. On IEEE 118 with 20 ports, readings at $10^{-3}$ noise give a median branch error of <!--P20ERR--> with the efficient estimator. That is comparable to phasor-measurement line-parameter estimation, which reports 0.3–0.8% on 10-branch subnetworks with sensors at both ends of every line. On the larger grids the same 20 ports need about ten times less noise. The requirement scales with port density, not with grid size. <strong>Actuation.</strong> Exact rank computations modulo $p$ show where identifiability is lost. Without interventions, even 60 ports identify under half the branches. Intervening only at buses that already carry a shunt or a generator identifies <!--HW118--> of IEEE 118's branches and <!--HW300--> of IEEE 300's. It identifies <!--HW1354--> of PEGASE 1354's, where the source data place shunts at most buses. The mathematics is ready. Whether a grid can be measured this way depends on where calibrated switching exists. <strong>Strong interventions.</strong> A second pair strength selects the true root of the pair quadratic for any nonsingular $K$ (Proposition XIV.6.1). On the indefinite grids the Part VIII minus root fails for up to 158 pairs at strong intervention, and the two-strength rule never fails. The threshold of Proposition XIII.1.1 is no longer needed.</p>
+</div>
+
+<h2 id="x1"><span class="sn">§XIV.1</span>The four obstacles</h2>
+
+<p>Part XIII ended with a comparison against conventional practice. Phasor-measurement line-parameter estimation reaches errors of 0.3–0.8%, but it needs sensors at both ends of each line and is demonstrated on subnetworks of about ten branches. Topology detection from smart meters recovers connectivity, not values, on feeders of up to 123 nodes. Part XIII recovers every value of a 70,000-bus model exactly. It does so in simulation, from noiseless readings, with grounding interventions available at every bus, and on indefinite grids only below a conservative intervention threshold. Each of these conditions is an obstacle to use, and each is a question with a computable answer. How much noise can one port tolerate? Can an estimator reach that limit? How many ports turn the limit into something phasor-class sensors can meet? How much does it matter that real grids cannot be intervened on everywhere? The answers follow in that order. The last section removes the intervention threshold entirely.</p>
+
+<h2 id="x2"><span class="sn">§XIV.2</span>The noise floor of one port</h2>
+
+<p>Every reading is a driving-point or transfer compliance $y=e_p^{\mathsf T}(K+\Theta)^{-1}e_q$ under an intervention $\Theta$. With independent Gaussian noise of standard deviation $\sigma G_{00}$, the Fisher information about the unknowns $w$ is $F^{\mathsf T}F/(\sigma G_{00})^2$, with
+$$\frac{\partial y}{\partial w_e}=-(b_e^{\mathsf T}x_p)(b_e^{\mathsf T}x_q),\qquad \frac{\partial y}{\partial g_i}=-x_{p,i}x_{q,i},\qquad x_p=(K+\Theta)^{-1}e_p .$$
+Measuring the unknowns relative to their true values, the Cramér–Rao standard deviation of branch $e$ is $\sigma k_e$, where $k_e=G_{00}\sqrt{[(F^{\mathsf T}F)^{-1}]_{ee}}$. The number $k_e$ is the noise amplification of the experiment for that branch, and no unbiased estimator can do better. It is computed here from the exact Jacobian of the Part XIII reading set, at the Part XII strengths $\theta$ and $2\theta$ with $\theta=1/\operatorname{median}G_{jj}$.</p>
+
+<div class="tw"><table>
+<caption>Table XIV.1. <span>Cramér–Rao amplification for the one-port schemes. "σ for 1%" is the reading noise, relative to $G_{00}$, at which an efficient estimator has a 1% median branch error with one pass of the readings. The last two columns give the share of branches resolved to 1% at the stated noise.</span></caption>
+<thead><tr><th>grid</th><th>scheme</th><th>readings</th><th>median $k_e$</th><th>90th pct. $k_e$</th><th>σ for 1%</th><th>within 1% at $10^{-4}$</th><th>at $10^{-3}$</th></tr></thead>
+<tbody>
+<!--CRB1ROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result XIV.2.1 <i>(one port is information-limited)</i> <span class="ep nm">verified · double</span></div>
+<p>On every grid tested, the one-port known-support experiment needs reading noise between <!--SIGRANGE--> of the port compliance to resolve the median branch to 1%. At $10^{-3}$, the level of phasor-class sensors, it resolves at most <!--MAXFRAC1E3--> of the branches. Replacing the lean reading set by the full $n(n+1)/2$ protocol lowers the median amplification by a factor of 2.1 on IEEE 118 and 3.3 on IEEE 300, at 16 and 41 times the readings. The limitation is therefore physical, not a property of the reading set. Its source is the locality law of Part X: a branch far from the port moves the port reading through $G_{0v}^2$, and that factor is small.</p></div>
+
+<h2 id="x3"><span class="sn">§XIV.3</span>An estimator that reaches the floor</h2>
+
+<p>Part XII estimated in two stages. It applied the closed forms of Theorem VIII.1.2 to the noisy readings and then solved the linear system in least squares. The noise therefore passed through square roots and divisions before reaching a system that ignores its correlations. The estimator here works on the raw readings directly. It is Levenberg–Marquardt in relative parameters, with the model's compliances recomputed exactly at every step. It starts from the Part XII estimate, which uses only the data. If that start does not fit the data to the noise level, it restarts from nominal models in which every value is off by an independent 10%, which plays the part of a utility's database, and it keeps the start with the lowest cost. The true values are used only to score the result.</p>
+
+<div class="tw"><table>
+<caption>Table XIV.2. <span>The estimator against the floor. "Error / CRB" is the median over branches of the absolute error divided by the Cramér–Rao standard deviation; an efficient estimator gives 0.674 (the median of $|N(0,1)|$). $\chi^2$ per reading near $(m-U)/m$ means the fit is at the noise level.</span></caption>
+<thead><tr><th>grid</th><th>scheme</th><th>σ</th><th>median error</th><th>90th pct.</th><th>within 1%</th><th>error / CRB</th><th>$\chi^2$ per reading</th></tr></thead>
+<tbody>
+<!--GNROWS-->
+</tbody></table></div>
+
+<p>In all but one run, the median error-to-bound ratio lies between 0.61 and 0.79, and the fit is at the noise level, so the estimator is efficient. At $\sigma=10^{-6}$ on IEEE 118, the median error falls from $5.3\times10^{-3}$ with the Part XII estimator to <!--GN118E6--> here. The exception is IEEE 300 at $\sigma=10^{-6}$. None of the seven starts reached a noise-level fit ($\chi^2$ per reading $6\times10^3$), and the median ratio is 1.24. A few branches remain trapped in a local minimum that the other noise levels avoid. It is reported as found.</p>
+
+<h2 id="x4"><span class="sn">§XIV.4</span>How many ports a grid needs</h2>
+
+<p>The locality law suggests the remedy: shorten the distance from every branch to the nearest port. Let $P$ be a set of $k$ ports, placed by farthest-point sampling in graph distance from the Part XIII port. At every port pair the experiment reads the baseline transfer compliance, and again after one weak intervention at each bus. That is $(n+1)k(k+1)/2$ readings, still linear in $n$ for fixed $k$. A port is a bus where a test current can be injected and a voltage read: the capability of a phasor measurement unit next to controllable equipment.</p>
+
+<div class="tw"><table>
+<caption>Table XIV.3. <span>Cramér–Rao amplification with $k$ ports (one intervention strength per bus). "Unresolved" counts branches in directions the experiment cannot see at binary64 resolution; their cause is identified exactly in §XIV.5.</span></caption>
+<thead><tr><th>grid</th><th>ports</th><th>readings</th><th>median $k_e$</th><th>σ for 1%</th><th>within 1% at $10^{-4}$</th><th>at $10^{-3}$</th><th>unresolved</th></tr></thead>
+<tbody>
+<!--CRB2ROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result XIV.4.1 <i>(port density sets the noise requirement)</i> <span class="ep nm">verified · double</span></div>
+<p>On IEEE 118, 20 ports, one per 6 buses, give a median amplification of 5.7. The noise allowed for a 1% median rises from $2\times10^{-5}$ with one port to $1.7\times10^{-3}$. The efficient estimator then reaches a median branch error of <!--P20ERR--> at $\sigma=10^{-3}$, with <!--P20FRAC--> of branches within 1%. On IEEE 300 and PEGASE 1354, the same 20 ports, one per 15 and one per 68 buses, allow about $1.8\times10^{-4}$. The requirement tracks port density, not grid size. At one port per 6 buses, IEEE 118 reaches phasor-class tolerance. At one per 15 and one per 68 buses, the larger grids fall short by a factor of about ten.</p></div>
+
+<p>The comparison with conventional practice is now direct. Phasor-measurement line-parameter estimation places two sensors on every line it estimates and reports 0.3–0.8% on subnetworks of about ten branches. Here, 20 ports and one intervention per bus estimate all 173 branches of IEEE 118 to a median of <!--P20ERR--> from the same class of noise. The price is one intervention at every bus, which is the subject of the next section. The comparison is also not like for like. The conventional figure comes from field data with real sensor errors; the figure here comes from simulated Gaussian noise on the DC model.</p>
+
+<h2 id="x5"><span class="sn">§XIV.5</span>Actuation is the bottleneck</h2>
+
+<p>The Cramér–Rao bound measures accuracy. Whether a branch can be identified at all is a rank question, and it can be settled exactly. The reading map is rational in the unknowns. Its Jacobian at the true rational values, reduced modulo $p=2^{31}-1$, has full column rank only if the Jacobian over $\mathbb Q$ does, and that gives local identifiability. When the rank falls short, the unknowns on which every kernel vector vanishes are still identifiable, and they are counted from the FLINT nullspace. A kernel vector that exists only modulo $p$ can make this count a slight undercount, never an overcount. Three access models are compared. In the first, ports read transfer compliances with no interventions, which is the Kron boundary of Theorem VIII.1.4 in multi-port form. In the second, ports read with interventions only at buses that carry a shunt or a generator in the source file; that the shunts can be switched is an assumption, labelled as such. In the third, ports read with an intervention at every bus.</p>
+
+<div class="tw"><table>
+<caption>Table XIV.4. <span>Exact identifiability modulo $2^{31}-1$ under three access models: rank of the reading Jacobian and number of branches identifiable.</span></caption>
+<thead><tr><th>grid</th><th>access</th><th>ports</th><th>readings</th><th>rank / unknowns</th><th>branches identifiable</th></tr></thead>
+<tbody>
+<!--IDROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result XIV.5.1 <i>(where identifiability is lost)</i> <span class="ep nm">verified · exact</span></div>
+<p>Without interventions, 60 ports identify <!--KRON118--> of IEEE 118's 173 branches, <!--KRON300--> of IEEE 300's 408, and <!--KRON1354--> of PEGASE 1354's 1,705. With interventions only at shunt and generator buses, 20 ports identify <!--HW118--> on IEEE 118 and <!--HW300--> on IEEE 300. On PEGASE 1354, where the source data place shunts at 1,082 of 1,354 buses, 5 ports identify <!--HW1354-->. With an intervention at every bus, 5 ports identify 167 of 173 and 400 of 408, and 1,570 of PEGASE 1354's 1,705. The remaining 6 branches of IEEE 118 form one direction, on the $K_4$ of buses 54, 55, 56 and 59. Bus 55's only neighbours are the other three, so it is a one-interior harmonic pocket. Adding a port at bus 55 or 54 restores full rank, 179 of 179, in line with Proposition XIII.2.2. The PerfectJet loop of Part XIII, applied to ports instead of sources, adds a port wherever the kernel points. With each port reading only its own driving point after every intervention, it reaches full rank with <!--PORTLOOP-->. On PEGASE 1354 the final rank was certified through a random compression $RJ$ with $U+20$ rows; $\operatorname{rank}RJ=U$ implies $\operatorname{rank}J=U$.</p></div>
+
+<p>The conclusion is blunt. What limits this method is where the grid can be actuated, not mathematics, sensing or computation. On grids whose shunts and generators are sparse, they cannot replace interventions at every bus. Where the data place shunts nearly everywhere, they nearly can. The exact rank test turns this into a planning question that can be answered before anything is installed: given the buses a utility can switch, which branches can be identified, and which further switch or port would complete the set.</p>
+
+<h2 id="x6"><span class="sn">§XIV.6</span>Strong interventions without passivity</h2>
+
+<p>Proposition XIII.1.1 made the protocol valid on indefinite grids by keeping interventions below $\theta^*$, and $\theta^*G_{00}$ is as small as $2.8\times10^{-6}$. Small interventions mean small signals, which by §XIV.2 is the wrong direction. The root ambiguity can instead be removed with one more reading per pair.</p>
+
+<div class="thm"><div class="hd">Proposition XIV.6.1 <i>(two pair strengths select the root)</i> <span class="ep pr">proved</span></div>
+<p>Let $K$ be symmetric and nonsingular with $G_{0i}G_{0j}\ne0$. For a pair $(i,j)$ read at strengths $\theta_1\ne\theta_2$, with readings $\delta_1\ne\delta_2$, the true $G_{ij}$ is the only common root of the two pair quadratics of Theorem VIII.1.2. The condition $\delta_1\ne\delta_2$ is decided by the readings themselves.</p></div>
+
+<p><em>Proof.</em> The quadratic $Q_\theta(x)=\delta_\theta x^2-2G_{0i}G_{0j}x+\dots$ has root sum $2G_{0i}G_{0j}/\delta_\theta$. The true value $x^\star$ is a root of every $Q_\theta$, so the other root is $s_\theta=2G_{0i}G_{0j}/\delta_\theta-x^\star$. Then $s_{\theta_1}=s_{\theta_2}$ exactly when $\delta_1=\delta_2$. If $s_{\theta_1}=x^\star$, then $x^\star$ is a double root of $Q_{\theta_1}$ and is still the common root. Hence the common root is $x^\star$, and it is unique. No sign or definiteness of $K$ is used. $\square$</p>
+
+<div class="tw"><table>
+<caption>Table XIV.5. <span>Root selection on every lean pair, at strengths $\theta$ and $2\theta$ with $\theta=c/\operatorname{median}G_{jj}$. "Minus fails" counts pairs where the Part VIII minus root is wrong; "two-strength fails" counts failures of the rule of Proposition XIV.6.1; "margin" is the smallest $|\delta_1-\delta_2|/|\delta_1|$.</span></caption>
+<thead><tr><th>grid</th><th>pairs</th><th>$c$</th><th>$\theta G_{00}$</th><th>minus fails</th><th>two-strength fails</th><th>margin</th></tr></thead>
+<tbody>
+<!--RSROWS-->
+</tbody></table></div>
+
+<p>On the passive IEEE 118 the minus root never fails, as Theorem VIII.1.2 requires. On the indefinite grids it holds far above the guarantee of Proposition XIII.1.1, to $\theta G_{00}\approx0.1$–$0.5$. It fails at stronger interventions: up to 3 pairs on IEEE 300, 127 on RTE 6515, 26 on PEGASE 9241 and 158 on ACTIVSg 10k, where 10 pairs already fail at $\theta G_{00}=0.83$. The two-strength rule fails nowhere, at any strength, on any grid. The guarantee of Proposition XIII.1.1 turns out to be conservative by three to four orders of magnitude, and with one extra reading per pair it is no longer needed.</p>
+
+<h2 id="x7"><span class="sn">§XIV.7</span>Where this leaves the method</h2>
+
+<p>The four obstacles of §XIV.1 now have measured answers. On noise: one port is limited by physics. Phasor-class tolerance needed one port per 6 buses on IEEE 118. With that density the efficient estimator matches conventional line-parameter accuracy across a whole grid rather than one subnetwork. Larger grids need the same density, and that is the cost to plan for. On interventions: they are the binding constraint. The exact rank test says, for any proposed set of switchable buses, which branches can be identified, and it is cheap at the scale of real grids. On strong interventions: the two-strength rule removes the passivity condition at the cost of one reading per pair. What remains open is equally concrete. These are simulated readings on the DC model. Field data were not reachable from this environment, so the real-data test of Part XIII's comparison is still to be done. The ambient alternative, which identifies from the grid's own load fluctuations with no interventions at all, is the natural next question. It is the regime in which the conventional methods of §XIV.1 already operate.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> <code>part_XIV/crb14.py CASE SCHEMES</code> (Tables XIV.1, XIV.3); <code>gn14.py CASE SCHEME SIGMAS</code> (Table XIV.2); <code>ident14.py CASE SCHEMES</code> (Table XIV.4 and the $K_4$ direction); <code>rootsel14.py CASE</code> (Table XIV.5); <code>assemble14.py</code>. All read the Part XIII record files and the MATPOWER inputs of <code>part_XIII/data/</code>.</p>
+<p><b>Sources.</b> Line-parameter estimation with phasor data: <a href="https://arxiv.org/pdf/2503.21202">arXiv:2503.21202</a>. Graph learning from linear measurements: <a href="https://arxiv.org/pdf/1909.05487">arXiv:1909.05487</a>. Distribution topology estimation: <a href="https://arxiv.org/html/2507.16924v1">arXiv:2507.16924</a>. Inverter probing: <a href="https://ar5iv.arxiv.org/html/1802.06027">arXiv:1802.06027</a>. Parts VIII, X, XII and XIII of this monograph.</p>
+</div>
+</main>

@@ -1,0 +1,140 @@
+{
+  "adaptive": {
+    "confirmation_cases": 200,
+    "fits": 1000,
+    "same_unique_query_budget": 64,
+    "primary_geometric_error_ratio": 0.583096120262837,
+    "ratio_ci95": [
+      0.46307306918623764,
+      0.7252126320304838
+    ],
+    "geometric_error_reduction_percent": 41.690387973716305,
+    "base": {
+      "scenario": "ALL",
+      "noise": "POSITIVE",
+      "strategy": "log_uniform",
+      "n": 150,
+      "failures": 0,
+      "geometric_nrmse": 0.016909113427187265,
+      "median_nrmse": 0.02133590441395742,
+      "p90_nrmse": 0.13004356839522171,
+      "mean_capped_nrmse": 0.056860968300281665,
+      "max_nrmse": 0.9624117933040043,
+      "median_seconds": 0.0069547130005958024,
+      "warning_trials": 0
+    },
+    "adaptive": {
+      "scenario": "ALL",
+      "noise": "POSITIVE",
+      "strategy": "adaptive_disagreement",
+      "n": 150,
+      "failures": 0,
+      "geometric_nrmse": 0.009859638436477136,
+      "median_nrmse": 0.010238263443402906,
+      "p90_nrmse": 0.11599508078083558,
+      "mean_capped_nrmse": 0.035964078534741,
+      "max_nrmse": 0.4974770133263338,
+      "median_seconds": 0.07907637050084304,
+      "warning_trials": 0
+    }
+  },
+  "policy": {
+    "confirmation_cases": 160,
+    "fits": 480,
+    "primary_gated_mean_error_ratio": 0.9759448339926814,
+    "ratio_ci95": [
+      0.9192475190554863,
+      1.0634773648053117
+    ],
+    "promoted": false
+  },
+  "identifiability": {
+    "exact_pairs": 257,
+    "exact_checks": 6684,
+    "independent_checks": 56,
+    "shared_H_numerator_ascending": [
+      "5",
+      "-5",
+      "1"
+    ],
+    "shared_H_denominator_ascending": [
+      "18",
+      "-24",
+      "9",
+      "-1"
+    ],
+    "added_sensor_difference": "7/234"
+  },
+  "independent_contour": {
+    "protocol_sha256": "a30eab243048d107543fdd24749fdff58d4cc82de40765345c74f6dd530433ec",
+    "engine_sha256": "7c123778df29aa63bd6870d14bd41aa75343662910065ef812ce687f7cd4a228",
+    "campaign": {
+      "continuous_t_range": [
+        "10",
+        "100"
+      ],
+      "s_real_range": [
+        "-1/10",
+        "11/10"
+      ],
+      "total_zero_count": 29,
+      "all_real_simple": true,
+      "attempts": 45,
+      "leaf_tiles": 45,
+      "count_histogram": {
+        "0": 18,
+        "1": 25,
+        "2": 2
+      },
+      "unresolved_leaves": 0,
+      "seconds": 64.05766423099703,
+      "boundary_value_calls": 6540,
+      "logarithmic_derivative_calls": 414237
+    },
+    "fresh_replay": {
+      "all_agree": true,
+      "tiles": 45,
+      "seconds": 61.487448747997405
+    },
+    "analytic_controls_passed": 5,
+    "integrity_tamper_rejections": 7,
+    "interval_serialization_controls_passed": 3,
+    "post_campaign_reference": {
+      "policy": "post-campaign diagnostic; no values used for placement/integration",
+      "reference_method": "Arb zeta_zeros",
+      "count_inside_range": 29,
+      "agrees_with_contour_count": true,
+      "first_inside": "[14.1347251417346937904572519836 +/- 6.05e-29]",
+      "last_inside": "[98.831194218193692233324420139 +/- 5.62e-28]"
+    },
+    "retained_measured_limitations": {
+      "direct_lehmer_attempt": {
+        "completed": false,
+        "status": "timeout",
+        "budget_seconds": 60,
+        "limitation": "direct derivative/interval integration at this height did not finish within the fixed wall-time budget",
+        "seconds": 60.062458497995976,
+        "request_sha256": "7b447d99928e9390288dab6ae6df02f90a9bd72124a0a6e035ec0c9b792cca74",
+        "engine_sha256": "ada4fb0a074c99daaaa02a567a23d09548cfe247f025721fe24bef339c7070e9",
+        "source_difference_from_current": "interval serialization supplement only; distinct source hash retained"
+      }
+    },
+    "trust_boundary": "independent direct contour algorithm; Arb function balls and adaptive integration trusted; no archive Taylor/DFT kernel",
+    "scope": "reproduction of known finite-height zero facts over exactly[10,100]; no new height record or global RH claim"
+  },
+  "external": {
+    "confirmation_cells": 48,
+    "candidate_fits": 4608,
+    "selected_evaluations": 768,
+    "passive_RC_superiority_established": false
+  },
+  "passivity": {
+    "certified_fitted_models": 216,
+    "exact_fixtures": 150,
+    "exact_checks": 2400,
+    "adversarial_rejected": 29,
+    "RL_extension_empirically_tested": false
+  },
+  "invalidated_experiments_excluded": true,
+  "previous_package_unchanged": true
+}

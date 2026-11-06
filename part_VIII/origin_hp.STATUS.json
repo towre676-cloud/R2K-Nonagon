@@ -1,0 +1,10 @@
+{
+  "status": "archived numerical corroboration",
+  "samples": 9,
+  "digits": 50,
+  "prime_cutoff": 200000,
+  "uniform_x_interval_bound": false,
+  "infinite_euler_product_tail_certified": false,
+  "sample_heights_equal_archived_production_medians": false,
+  "recomputed_in_v9_default_replay": false
+}

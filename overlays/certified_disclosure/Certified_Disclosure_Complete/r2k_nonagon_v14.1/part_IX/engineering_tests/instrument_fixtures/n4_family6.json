@@ -1,0 +1,62 @@
+{
+  "id": "n4_family6",
+  "order": 4,
+  "family": 6,
+  "weak_link": "1/64",
+  "minimum_positive_gap": "1/512",
+  "K_normalized": [
+    [
+      "2",
+      "-7/4",
+      "0",
+      "0"
+    ],
+    [
+      "-7/4",
+      "15/4",
+      "-1",
+      "0"
+    ],
+    [
+      "0",
+      "-1",
+      "97/64",
+      "-1/64"
+    ],
+    [
+      "0",
+      "0",
+      "-1/64",
+      "49/64"
+    ]
+  ],
+  "grounds": [
+    "1/4",
+    "1",
+    "1/2",
+    "3/4"
+  ],
+  "edges": [
+    {
+      "sites": [
+        0,
+        1
+      ],
+      "conductance_normalized": "7/4"
+    },
+    {
+      "sites": [
+        1,
+        2
+      ],
+      "conductance_normalized": "1"
+    },
+    {
+      "sites": [
+        2,
+        3
+      ],
+      "conductance_normalized": "1/64"
+    }
+  ]
+}

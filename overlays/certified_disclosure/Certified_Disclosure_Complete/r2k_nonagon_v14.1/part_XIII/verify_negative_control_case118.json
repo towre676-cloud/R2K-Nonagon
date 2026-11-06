@@ -1,0 +1,10 @@
+{
+ "case": "negctrl118",
+ "prime": 1000000007,
+ "rows": 233,
+ "unknowns": 179,
+ "rank": 174,
+ "identifiable": false,
+ "agrees_with_record": false,
+ "seconds": 0.011566638946533203
+}

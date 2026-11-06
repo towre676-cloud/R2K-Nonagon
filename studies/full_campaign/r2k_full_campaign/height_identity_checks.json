@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "F_equal_one_height_average": {
+    "computed": "[4.357795274682114614610220484228858964053 +/- 4.30e-30]",
+    "independent_Ei_identity": "[4.357795274682114614610220484228858964053 +/- 1.33e-37]"
+  },
+  "exponential_moments": [
+    {
+      "degree": 0,
+      "adaptive_integral_overlaps_elementary_primitive": true
+    },
+    {
+      "degree": 1,
+      "adaptive_integral_overlaps_elementary_primitive": true
+    },
+    {
+      "degree": 2,
+      "adaptive_integral_overlaps_elementary_primitive": true
+    },
+    {
+      "degree": 5,
+      "adaptive_integral_overlaps_elementary_primitive": true
+    },
+    {
+      "degree": 20,
+      "adaptive_integral_overlaps_elementary_primitive": true
+    },
+    {
+      "degree": 40,
+      "adaptive_integral_overlaps_elementary_primitive": true
+    }
+  ],
+  "narrow_height_limit": "PASS"
+}

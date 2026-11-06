@@ -1,0 +1,17 @@
+{
+  "scope": "Prior challenge confirmation near-collision branch only:10 four-mass systems,64 train and257 test frequencies each; no prior artifact modified. Other prior cases use explicitgeneral solve in chain_response.",
+  "source_sha256": "a566ece03a51c8cf5290135ad14be3f30daa35bc3ef4c6acb2fd17799434514c",
+  "seed": 73199531,
+  "scipy": "1.17.0",
+  "numpy": "2.3.5",
+  "checked_linear_systems": 3210,
+  "dimension": 4,
+  "max_absolute_residual": 4.713207304057789e-14,
+  "max_scaled_backward_residual": 2.0049433395964083e-16,
+  "max_relative_solution_difference_auto_vs_general": 4.1911673158410594e-14,
+  "worst_absolute_residual_case": {
+    "system_index": 0,
+    "omega": 0.7301113531641388
+  },
+  "found_3x3_defect_in_this_4x4_branch": false
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "nonagon.claude.v10.source.v1",
+  "archive_sha256": "56ec9e5c41613480e07fcbc1fa8290c2d67f84e06eb2c1ecf58ff68326934b8a",
+  "files_preserved": [
+    {
+      "path": "research/claude_v10/README_original.md",
+      "sha256": "fb8f21d6c8ad850026b4b8cc628646ffc3cd122bfc7626e823e2fddf5d0e593a"
+    },
+    {
+      "path": "research/claude_v10/nonagon_X_original.html",
+      "sha256": "42947f069ba6719665fb7b0eca6470dc6f32e3da547a884f5fa0e59ff44d03db"
+    },
+    {
+      "path": "research/claude_v10/part_X/assemble10.py",
+      "sha256": "81fa63d23d493544c1efc13017efdb36c95faf1f8ed14702687a6ede6bc03023"
+    },
+    {
+      "path": "research/claude_v10/part_X/body10.html",
+      "sha256": "f1d0e9d4c2dc0530d6eed78dc00c6deb6f59b07e70ff32aa2faf22f423cba94c"
+    },
+    {
+      "path": "research/claude_v10/part_X/dodgson.json",
+      "sha256": "bd996de74cd213eb54ff34bdab4419473ca51cfb240b0f32bd46a980d045a2b6"
+    },
+    {
+      "path": "research/claude_v10/part_X/dodgson.py",
+      "sha256": "8dfce056e7a0e4e74aefd07ded32103a8bacab69a0c84f5df2d3aac2ed37ef2f"
+    },
+    {
+      "path": "research/claude_v10/part_X/edge_resolution.json",
+      "sha256": "73229f56f8d99d07640b51c8b9b34bfa6d098a0395f6baeb2cb89503d39ed0f5"
+    },
+    {
+      "path": "research/claude_v10/part_X/edge_resolution.py",
+      "sha256": "548ec21099427b2c4f881a38435fd818d597a6ce1bfa269002ad71530c1fd334"
+    },
+    {
+      "path": "research/claude_v10/part_X/forest_and_hb.json",
+      "sha256": "7725d178a0f6821cb227ba289e47d93346f09973f052d5239be8153d4fc179ed"
+    },
+    {
+      "path": "research/claude_v10/part_X/forest_and_hb.py",
+      "sha256": "12ab50c5ce7e09afa57f25627a1d4310239e698734bbdd9c4862ebf466c81547"
+    },
+    {
+      "path": "research/claude_v10/part_X/freq_for_pairs.json",
+      "sha256": "48605833d438f081fc577034ccf3366282c74d59c08fa62d48fd7d81af77614d"
+    },
+    {
+      "path": "research/claude_v10/part_X/freq_for_pairs.py",
+      "sha256": "491c5b8a21633dc946a827b2ff69facc2268c5a38363e8e4da36d5912ffafd8f"
+    },
+    {
+      "path": "research/claude_v10/part_X/haynsworth.json",
+      "sha256": "27501bb44ee5bef2f32e59a28109b7cab05b96e84b8ba191b4c2c746d96c48a5"
+    },
+    {
+      "path": "research/claude_v10/part_X/haynsworth.py",
+      "sha256": "316a81fd6dcbbc9ae56e8a946962f6d875474f898f877339739ca8e9e4bc9d22"
+    },
+    {
+      "path": "research/claude_v10/part_X/origin_rigorous.json",
+      "sha256": "2d165e346b0a9afe17194f73f6e189bcb2ef99973adaa5d4e69ff4876647eb89"
+    },
+    {
+      "path": "research/claude_v10/part_X/origin_rigorous.out",
+      "sha256": "a24ee783615a10e16feecbebe3b3d77fd3a55e222e9132869033d6cc65eb0d7f"
+    },
+    {
+      "path": "research/claude_v10/part_X/origin_rigorous.py",
+      "sha256": "f1c96f47ec62670381994559a53bd61a8fda89763623d271200b2090c6815348"
+    }
+  ],
+  "unchanged_v9_files": 2200
+}

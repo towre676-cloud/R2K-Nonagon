@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "exact_original_window_cases": 30,
+  "exact_fixed_coordinate_cases": 30,
+  "fixed_coordinate_model_certificates": 30,
+  "points_in_fixed_coordinate_spans": 90000,
+  "max_fixed_combined_deterministic_radius": 2.3651507554084188e-08,
+  "fixed_index_20000000_batch_sensitivity": [
+    {
+      "batches": 5,
+      "observed_max_absolute_z": 4.028136401685746,
+      "joint_reference_95": 1.834504340784062,
+      "reference_tail_fraction": 0.0
+    },
+    {
+      "batches": 10,
+      "observed_max_absolute_z": 2.874316652296819,
+      "joint_reference_95": 2.211651083517084,
+      "reference_tail_fraction": 0.0
+    },
+    {
+      "batches": 20,
+      "observed_max_absolute_z": 1.4550443694371764,
+      "joint_reference_95": 2.415932833566218,
+      "reference_tail_fraction": 0.522216796875
+    },
+    {
+      "batches": 40,
+      "observed_max_absolute_z": 1.2304466352837427,
+      "joint_reference_95": 2.486756540533625,
+      "reference_tail_fraction": 0.658843994140625
+    },
+    {
+      "batches": 80,
+      "observed_max_absolute_z": 0.9724642353682246,
+      "joint_reference_95": 2.506327823597762,
+      "reference_tail_fraction": 0.807037353515625
+    }
+  ],
+  "scope": "arithmetic and analytic checks passed; no asserted statistical acceptance/rejection of a zeta model"
+}

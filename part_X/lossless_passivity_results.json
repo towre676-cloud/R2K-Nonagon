@@ -1,0 +1,839 @@
+{
+  "method": "exact rational Cayley/Brune, exact Hurwitz determinants, square-free multiplicities + Sturm counts",
+  "total_decision_cases": 27,
+  "polarity_checks": 27,
+  "all_expected_decisions_agree": true,
+  "cases": {
+    "unstable_1_over_1_minus_s": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "1",
+      "denominator": "1 - s",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "2 - s",
+      "hurwitz": {
+        "strictly_hurwitz": false,
+        "degree": 1,
+        "determinants": [
+          "-2"
+        ]
+      },
+      "axis_polynomial": "1",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": []
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    },
+    "lossless_foster_s_over_s2_plus_1": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "s",
+      "denominator": "s**2 + 1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "s**2 + s + 1",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 2,
+        "determinants": [
+          "1",
+          "1"
+        ]
+      },
+      "axis_polynomial": "0",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": true,
+        "zero_multiplicity": null,
+        "factors": []
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "capacitor_1_over_s": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "1",
+      "denominator": "s",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "s + 1",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 1,
+        "determinants": [
+          "1"
+        ]
+      },
+      "axis_polynomial": "0",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": true,
+        "zero_multiplicity": null,
+        "factors": []
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "inductor_s": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "s",
+      "denominator": "1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "s + 1",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 1,
+        "determinants": [
+          "1"
+        ]
+      },
+      "axis_polynomial": "0",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": true,
+        "zero_multiplicity": null,
+        "factors": []
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "foster_interlacing": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "s**2 + 1",
+      "denominator": "s**3 + 4*s",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "s**3 + s**2 + 4*s + 1",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 3,
+        "determinants": [
+          "1",
+          "3",
+          "3"
+        ]
+      },
+      "axis_polynomial": "0",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": true,
+        "zero_multiplicity": null,
+        "factors": []
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "lossy_first_order": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "s + 2",
+      "denominator": "s + 1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "2*s + 3",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 1,
+        "determinants": [
+          "3/2"
+        ]
+      },
+      "axis_polynomial": "x + 2",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": [
+          {
+            "factor": "x + 2",
+            "multiplicity": 1,
+            "positive_roots": 0
+          }
+        ]
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "nonPR_s_minus_1_over_s_plus_1": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "s - 1",
+      "denominator": "s + 1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "2*s",
+      "hurwitz": {
+        "strictly_hurwitz": false,
+        "degree": 1,
+        "determinants": [
+          "0"
+        ]
+      },
+      "axis_polynomial": "x - 1",
+      "axis": {
+        "nonnegative": false,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": -1,
+        "odd_multiplicity_positive_roots": 1,
+        "factors": [
+          {
+            "factor": "x - 1",
+            "multiplicity": 1,
+            "positive_roots": 1
+          }
+        ]
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    },
+    "rational_damping_one_tenth": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "s",
+      "denominator": "s**2 + s/10 + 1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "s**2 + 11*s/10 + 1",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 2,
+        "determinants": [
+          "11/10",
+          "11/10"
+        ]
+      },
+      "axis_polynomial": "x/10",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": false,
+        "zero_multiplicity": 1,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": []
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "nonPR_negative_axis_band": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "s**2 + 1",
+      "denominator": "s**2 + 2",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "2*s**2 + 3",
+      "hurwitz": {
+        "strictly_hurwitz": false,
+        "degree": 2,
+        "determinants": [
+          "0",
+          "0"
+        ]
+      },
+      "axis_polynomial": "x**2 - 3*x + 2",
+      "axis": {
+        "nonnegative": false,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 2,
+        "factors": [
+          {
+            "factor": "x**2 - 3*x + 2",
+            "multiplicity": 1,
+            "positive_roots": 2
+          }
+        ]
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    },
+    "even_positive_root_counterexample": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "s**2 + 1",
+      "denominator": "s**2 + s + 1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "2*s**2 + s + 2",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 2,
+        "determinants": [
+          "1/2",
+          "1/2"
+        ]
+      },
+      "axis_polynomial": "x**2 - 2*x + 1",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": [
+          {
+            "factor": "x - 1",
+            "multiplicity": 2,
+            "positive_roots": 1
+          }
+        ]
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "two_even_positive_roots": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "s**4 + 5*s**2 + 4",
+      "denominator": "s**4 + s**3 + 5*s**2 + 2*s + 4",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "2*s**4 + s**3 + 10*s**2 + 2*s + 8",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 4,
+        "determinants": [
+          "1/2",
+          "3/2",
+          "1/2",
+          "2"
+        ]
+      },
+      "axis_polynomial": "x**4 - 10*x**3 + 33*x**2 - 40*x + 16",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": [
+          {
+            "factor": "x**2 - 5*x + 4",
+            "multiplicity": 2,
+            "positive_roots": 2
+          }
+        ]
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "zero_at_origin": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "s",
+      "denominator": "s + 1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "2*s + 1",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 1,
+        "determinants": [
+          "1/2"
+        ]
+      },
+      "axis_polynomial": "x",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": false,
+        "zero_multiplicity": 1,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": []
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "zero_function": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "0",
+      "denominator": "1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "1",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 0,
+        "determinants": []
+      },
+      "axis_polynomial": "0",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": true,
+        "zero_multiplicity": null,
+        "factors": []
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "zero_function_negative_scale": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "0",
+      "denominator": "-1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "-1",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 0,
+        "determinants": []
+      },
+      "axis_polynomial": "0",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": true,
+        "zero_multiplicity": null,
+        "factors": []
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "constant_one": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "1",
+      "denominator": "1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "2",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 0,
+        "determinants": []
+      },
+      "axis_polynomial": "1",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": []
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "constant_one_negative_scale": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "-1",
+      "denominator": "-1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "-2",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 0,
+        "determinants": []
+      },
+      "axis_polynomial": "1",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": []
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "negative_constant": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "-1",
+      "denominator": "1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "0",
+      "hurwitz": {
+        "strictly_hurwitz": false,
+        "degree": null,
+        "reason": "zero polynomial",
+        "determinants": []
+      },
+      "axis_polynomial": "-1",
+      "axis": {
+        "nonnegative": false,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": -1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": []
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    },
+    "negative_constant_negative_scale": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "1",
+      "denominator": "-1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "0",
+      "hurwitz": {
+        "strictly_hurwitz": false,
+        "degree": null,
+        "reason": "zero polynomial",
+        "determinants": []
+      },
+      "axis_polynomial": "-1",
+      "axis": {
+        "nonnegative": false,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": -1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": []
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    },
+    "negative_inductor": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "-s",
+      "denominator": "1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "1 - s",
+      "hurwitz": {
+        "strictly_hurwitz": false,
+        "degree": 1,
+        "determinants": [
+          "-1"
+        ]
+      },
+      "axis_polynomial": "0",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": true,
+        "zero_multiplicity": null,
+        "factors": []
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    },
+    "second_order_pole_at_zero": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "1",
+      "denominator": "s**2",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "s**2 + 1",
+      "hurwitz": {
+        "strictly_hurwitz": false,
+        "degree": 2,
+        "determinants": [
+          "0",
+          "0"
+        ]
+      },
+      "axis_polynomial": "-x",
+      "axis": {
+        "nonnegative": false,
+        "identically_zero": false,
+        "zero_multiplicity": 1,
+        "right_of_zero_sign": -1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": []
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    },
+    "wrong_lossless_residue": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "-s",
+      "denominator": "s**2 + 1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "s**2 - s + 1",
+      "hurwitz": {
+        "strictly_hurwitz": false,
+        "degree": 2,
+        "determinants": [
+          "-1",
+          "-1"
+        ]
+      },
+      "axis_polynomial": "0",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": true,
+        "zero_multiplicity": null,
+        "factors": []
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    },
+    "quadratic_at_infinity": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "s**2",
+      "denominator": "1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "s**2 + 1",
+      "hurwitz": {
+        "strictly_hurwitz": false,
+        "degree": 2,
+        "determinants": [
+          "0",
+          "0"
+        ]
+      },
+      "axis_polynomial": "-x",
+      "axis": {
+        "nonnegative": false,
+        "identically_zero": false,
+        "zero_multiplicity": 1,
+        "right_of_zero_sign": -1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": []
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    },
+    "cubic_at_infinity": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "s**3",
+      "denominator": "1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "s**3 + 1",
+      "hurwitz": {
+        "strictly_hurwitz": false,
+        "degree": 3,
+        "determinants": [
+          "0",
+          "-1",
+          "-1"
+        ]
+      },
+      "axis_polynomial": "0",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": true,
+        "zero_multiplicity": null,
+        "factors": []
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    },
+    "near_boundary_positive_damping": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "s**2 + 1",
+      "denominator": "s**2 + s/100000000000000000000000000000000000000000000000000 + 1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "2*s**2 + s/100000000000000000000000000000000000000000000000000 + 2",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 2,
+        "determinants": [
+          "1/200000000000000000000000000000000000000000000000000",
+          "1/200000000000000000000000000000000000000000000000000"
+        ]
+      },
+      "axis_polynomial": "x**2 - 2*x + 1",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": [
+          {
+            "factor": "x - 1",
+            "multiplicity": 2,
+            "positive_roots": 1
+          }
+        ]
+      },
+      "expected_positive_real": true,
+      "negative_scale_agrees": true
+    },
+    "near_boundary_negative_damping": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "s**2 + 1",
+      "denominator": "s**2 - s/100000000000000000000000000000000000000000000000000 + 1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "2*s**2 - s/100000000000000000000000000000000000000000000000000 + 2",
+      "hurwitz": {
+        "strictly_hurwitz": false,
+        "degree": 2,
+        "determinants": [
+          "-1/200000000000000000000000000000000000000000000000000",
+          "-1/200000000000000000000000000000000000000000000000000"
+        ]
+      },
+      "axis_polynomial": "x**2 - 2*x + 1",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": [
+          {
+            "factor": "x - 1",
+            "multiplicity": 2,
+            "positive_roots": 1
+          }
+        ]
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    },
+    "near_tangency_bad_band_above": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "s**2 + 100000000000000000000000000000000000000000000000001/100000000000000000000000000000000000000000000000000",
+      "denominator": "s**2 + s + 1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "2*s**2 + s + 200000000000000000000000000000000000000000000000001/100000000000000000000000000000000000000000000000000",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 2,
+        "determinants": [
+          "1/2",
+          "200000000000000000000000000000000000000000000000001/400000000000000000000000000000000000000000000000000"
+        ]
+      },
+      "axis_polynomial": "x**2 - 200000000000000000000000000000000000000000000000001*x/100000000000000000000000000000000000000000000000000 + 100000000000000000000000000000000000000000000000001/100000000000000000000000000000000000000000000000000",
+      "axis": {
+        "nonnegative": false,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 2,
+        "factors": [
+          {
+            "factor": "x**2 - 200000000000000000000000000000000000000000000000001*x/100000000000000000000000000000000000000000000000000 + 100000000000000000000000000000000000000000000000001/100000000000000000000000000000000000000000000000000",
+            "multiplicity": 1,
+            "positive_roots": 2
+          }
+        ]
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    },
+    "near_tangency_bad_band_below": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "s**2 + 99999999999999999999999999999999999999999999999999/100000000000000000000000000000000000000000000000000",
+      "denominator": "s**2 + s + 1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "2*s**2 + s + 199999999999999999999999999999999999999999999999999/100000000000000000000000000000000000000000000000000",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 2,
+        "determinants": [
+          "1/2",
+          "199999999999999999999999999999999999999999999999999/400000000000000000000000000000000000000000000000000"
+        ]
+      },
+      "axis_polynomial": "x**2 - 199999999999999999999999999999999999999999999999999*x/100000000000000000000000000000000000000000000000000 + 99999999999999999999999999999999999999999999999999/100000000000000000000000000000000000000000000000000",
+      "axis": {
+        "nonnegative": false,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 2,
+        "factors": [
+          {
+            "factor": "x**2 - 199999999999999999999999999999999999999999999999999*x/100000000000000000000000000000000000000000000000000 + 99999999999999999999999999999999999999999999999999/100000000000000000000000000000000000000000000000000",
+            "multiplicity": 1,
+            "positive_roots": 2
+          }
+        ]
+      },
+      "expected_positive_real": false,
+      "negative_scale_agrees": true
+    }
+  },
+  "guards": {
+    "common_factor_strict": {
+      "valid_input": false,
+      "positive_real": null,
+      "reason": "coprime input required; use exact reduction",
+      "gcd": "s - 1"
+    },
+    "common_factor_exactly_reduced": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "1",
+      "denominator": "1",
+      "exact_cancelled_degree": 1,
+      "N_plus_D": "2",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 0,
+        "determinants": []
+      },
+      "axis_polynomial": "1",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": 1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": []
+      }
+    },
+    "zero_over_nonconstant_strict": {
+      "valid_input": false,
+      "positive_real": null,
+      "reason": "coprime input required; use exact reduction",
+      "gcd": "s + 1"
+    },
+    "zero_over_nonconstant_reduced": {
+      "valid_input": true,
+      "positive_real": true,
+      "numerator": "0",
+      "denominator": "1",
+      "exact_cancelled_degree": 1,
+      "N_plus_D": "1",
+      "hurwitz": {
+        "strictly_hurwitz": true,
+        "degree": 0,
+        "determinants": []
+      },
+      "axis_polynomial": "0",
+      "axis": {
+        "nonnegative": true,
+        "identically_zero": true,
+        "zero_multiplicity": null,
+        "factors": []
+      }
+    },
+    "zero_denominator": {
+      "valid_input": false,
+      "positive_real": false,
+      "reason": "zero denominator"
+    },
+    "N_plus_D_zero": {
+      "valid_input": true,
+      "positive_real": false,
+      "numerator": "-1",
+      "denominator": "1",
+      "exact_cancelled_degree": 0,
+      "N_plus_D": "0",
+      "hurwitz": {
+        "strictly_hurwitz": false,
+        "degree": null,
+        "reason": "zero polynomial",
+        "determinants": []
+      },
+      "axis_polynomial": "-1",
+      "axis": {
+        "nonnegative": false,
+        "identically_zero": false,
+        "zero_multiplicity": 0,
+        "right_of_zero_sign": -1,
+        "odd_multiplicity_positive_roots": 0,
+        "factors": []
+      }
+    },
+    "ambiguous_float_rejected": true
+  }
+}

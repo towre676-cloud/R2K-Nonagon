@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "previous_manifested_members": 162,
+  "previous_members_retained": 162,
+  "new_members": [
+    "r2k_full_campaign/fixed_line/R2K_Fixed_Line_Covariance_Report.html",
+    "r2k_full_campaign/fixed_line/README.md",
+    "r2k_full_campaign/fixed_line/build_report.py",
+    "r2k_full_campaign/fixed_line/exact_controls.json",
+    "r2k_full_campaign/fixed_line/exact_controls.py",
+    "r2k_full_campaign/fixed_line/fixed_line_comparisons.json",
+    "r2k_full_campaign/fixed_line/package_update.py",
+    "r2k_full_campaign/fixed_line/sine_covariance.py",
+    "r2k_full_campaign/fixed_line/sine_fixed_line_results.json",
+    "r2k_full_campaign/fixed_line/validate_fixed_line.py",
+    "r2k_full_campaign/fixed_line/validation.log",
+    "r2k_full_campaign/fixed_line/validation_receipt.json"
+  ],
+  "updated_previous_members": [
+    "r2k_full_campaign/build_report.py",
+    "r2k_full_campaign/R2K_Nonagon_Full_Campaign_Report.html",
+    "r2k_full_campaign/README.md"
+  ]
+}

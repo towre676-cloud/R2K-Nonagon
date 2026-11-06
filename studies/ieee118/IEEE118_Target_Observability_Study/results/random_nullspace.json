@@ -1,0 +1,27 @@
+[
+  {
+    "budget": 179,
+    "rank": 171,
+    "target_kernel_gap": 0.07744276330155327
+  },
+  {
+    "budget": 180,
+    "rank": 172,
+    "target_kernel_gap": 0.0774427633012361
+  },
+  {
+    "budget": 200,
+    "rank": 174,
+    "target_kernel_gap": 2.0544418569646965e-12
+  },
+  {
+    "budget": 250,
+    "rank": 174,
+    "target_kernel_gap": 2.020315679926465e-13
+  },
+  {
+    "budget": 379,
+    "rank": 175,
+    "target_kernel_gap": 4.3217873960574053e-13
+  }
+]

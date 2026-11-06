@@ -1,0 +1,16 @@
+{
+  "frozen_at_utc": "2026-10-30T01:28:30.718695+00:00",
+  "sha256": {
+    "gate.py": "dab6807a689bda3ed4aed902a21c82828ec70385fa48bf3c44c5647ce6bfd9d8",
+    "experiment.py": "06d0e131e29aefe2821e89cb2309ccda51c2dee179010c3c7c219f3bd0384b76",
+    "protocol.json": "963270a126bf9529affe8c2118a63fe56185d054a32483ffcaf566ed61939897",
+    "selected_rule.json": "0959d1aa98ce7f7ec9f7c52cb5435d042424af30f8c3a0cd6203f0614b3fdac4",
+    "all_rules_development_scores.json": "6528baffa39c18482d2ef6a79e4333e2666c0bfc655fae76d5452deafec3792d"
+  },
+  "adaptive_sha256": {
+    "acquisition.py": "cdea01d60dd3c4162db1d189b14c01a1c5a498a92bbdbab1d1581e27dd9c7980",
+    "reference_core.py": "b28a613e5da8dec4a2d7ea19b0d94d75fc873e74810b64cf49dc1a51cbd9f117",
+    "protocol.json": "22113749986422bef0df607ca70c265268bfd48ed6b5595e186892a10c06bec4",
+    "development_raw.json": "0efccc552f474a708968bb28ca6d86d8a78aeae9cbc9d233f2469c056315b3bf"
+  }
+}

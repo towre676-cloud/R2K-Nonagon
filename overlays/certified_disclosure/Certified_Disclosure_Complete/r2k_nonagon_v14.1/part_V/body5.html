@@ -1,0 +1,105 @@
+<header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v5.0 · Part V</div>
+  <h1>The Rank-Two Nonagon <em>V</em></h1>
+  <div class="sub">The plateau and the height: the off-diagonal completion of Berry's number variance, and batched rigorous certificates up to $t=10^{12}$</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 29 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Part IV left two extensions. Both are completed here. <strong>The plateau.</strong> Berry's diagonal prime sum reproduced the shape of the zeta number variance at height $6\times10^{5}$ but sat about 0.10 below it in level. The off-diagonal completion is the Bogomolny–Keating pair correlation, which coincides with the Conrey–Snaith ratios-conjecture formula. Evaluated with Euler products over the primes below $2\times10^{6}$ and integrated twice, it reproduces the measured $\Sigma^2(L)$ to within $3\times10^{-3}$ for every $L\in[0.5,16]$. It accounts for 98.8–99.6% of the departure from GUE for $L\ge1$, and agrees within one standard error at $L=1,2,4$. <strong>The height.</strong> The Taylor-model segments of Part IV were twice as conservative as necessary. Raising the order to $K=60$ and the segment half-length to $R_1/4$ lets each batch of 64 point values of $\zeta$ cover four times the contour. A full-strip certificate at the millionth zero then costs 6.3 s, against 23.4 s in Part IV, 121 s in Part III and 866 s in Part II. Tiles are independent, so they batch across cores. With this, root-free rigorous tiles certify zeros simple and on the critical line at $t=10^{10}$ and at $t=10^{12}$, the height of the Platt–Trudgian verification. At $10^{12}$ the certificate needs no Gram points, no Turing method and no zero list, and each tile's count is confirmed by independent sign changes of Hardy's $Z$.</p>
+</div>
+
+<h2 id="w1"><span class="sn">§V.1</span>The plateau: off-diagonal completion</h2>
+
+<p>The diagonal approximation keeps only pairs of identical prime powers in the double sum over periodic orbits. Bogomolny and Keating evaluated the off-diagonal pairs through the Hardy–Littlewood correlations of the primes, and the result coincides with the pair correlation that the ratios conjecture of Conrey, Farmer and Zirnbauer predicts. Write $\mathcal L=\log(t/2\pi)$, measure distances in mean spacings $\varepsilon$, and set $r=2\pi\varepsilon/\mathcal L$. Then $$R_2(\varepsilon)=1+\frac{2}{\mathcal L^{2}}\operatorname{Re}\Big[\Big(\frac{\zeta'}{\zeta}\Big)'(1+ir)+e^{-ir\mathcal L}\,\zeta(1+ir)\zeta(1-ir)\,A(ir)-B(ir)\Big],$$ $$A(\eta)=\prod_p\frac{\big(1-p^{-1-\eta}\big)\big(1-2p^{-1}+p^{-1-\eta}\big)}{(1-p^{-1})^{2}},\qquad B(\eta)=\sum_p\Big(\frac{\log p}{p^{1+\eta}-1}\Big)^{2}.$$</p>
+
+<div class="thm"><div class="hd">Lemma V.1.1 <i>(GUE limit)</i> <span class="ep pr">proved</span></div>
+<p>At fixed $\varepsilon$, as $t\to\infty$, $R_2(\varepsilon)\to1-\big(\sin\pi\varepsilon/\pi\varepsilon\big)^2$.</p>
+</div>
+<p class="proof">As $r\to0$: $(\zeta'/\zeta)'(1+ir)=-r^{-2}+O(1)$, $\zeta(1+ir)\zeta(1-ir)=r^{-2}+O(1)$, $A(0)=1$, and $B(0)$ is finite. Hence $R_2=1+\frac{2}{\mathcal L^2r^2}\big(\cos(r\mathcal L)-1\big)+O(\mathcal L^{-2})=1-\frac{2(1-\cos2\pi\varepsilon)}{4\pi^2\varepsilon^2}+O(\mathcal L^{-2})$. <span class="qed">∎</span></p>
+
+<p>The number variance follows from the cluster function $Y_2=1-R_2$ by $$\Sigma^2(L)=L-2\int_0^L(L-x)\,Y_2(x)\,dx.$$ We evaluated $R_2$ at the representative height $t=605{,}744$, the centre of the 20,000-zero window of Part IV. We used 1,601 points on $\varepsilon\in(0,16]$, mpmath for $\zeta$ and the derivative of $\zeta'/\zeta$, and the Euler product and prime sum over all primes below $2\times10^{6}$; both converge like $p^{-2}$. For the empirical side we recomputed $\Sigma^2(L)$ from the unfolded zeros with window starts every $0.01$ mean spacings. Standard errors come from five blocks of 4,000 zeros.</p>
+
+<div class="tw"><table>
+<caption>Table V.1. <span>Number variance of the 20,000 zeros beginning at the millionth, against GUE and the off-diagonal (Bogomolny–Keating) formula.</span></caption>
+<thead><tr><th>$L$</th><th>ζ zeros</th><th>std. error</th><th>Bogomolny–Keating</th><th>GUE</th><th>departure from GUE explained</th></tr></thead>
+<tbody>
+<!--BKROWS-->
+</tbody></table></div>
+
+<div class="plate"><figure>
+<!--FIG14-->
+<figcaption><b>Figure 14.</b> Number variance of the zeros near the millionth (points), GUE (slate), Berry's diagonal sum (dashed), and the off-diagonal completion (oxblood). The completed formula follows the zeros through the rise, the plateau and the turn-down.</figcaption>
+</figure></div>
+
+<div class="thm"><div class="hd">Result V.1.2 <i>(the plateau)</i> <span class="ep nm">verified · double</span></div>
+<p>The Bogomolny–Keating number variance matches the zeta zeros at height $6\times10^{5}$ to within $3.0\times10^{-3}$ for all $L\in[0.5,16]$, and within one standard error at $L=1,2,4$. The completion removes the 0.10 offset of the diagonal approximation and accounts for 98.8–99.6% of the departure from GUE for $L\ge1$. The residuals at $L=8$ and $16$ ($1.2\times10^{-3}$ and $3.0\times10^{-3}$) are of the size expected from evaluating at a single representative height and from the $O(T^{-1/2+\epsilon})$ error of the ratios formula.</p>
+</div>
+
+<p>The plateau therefore has a complete explanation at this height. The zeros are GUE-rigid at short range. At long range, correlations between nearby prime powers lower the variance, through both the diagonal sum and its off-diagonal correction, and turn it down after $L\approx8$. The discriminant meter of Part IV inherits the same structure: its local distribution is CUE, and its tile-to-tile count fluctuations are arithmetic.</p>
+
+<h2 id="w2"><span class="sn">§V.2</span>The height: batching the point values</h2>
+
+<p>Part IV's certificates spend their time in point evaluations of $\zeta$: 64 per Taylor segment. Arb computes each one with work growing like $\sqrt t$, about 7 ms at $t=10^{9}$, 13 ms at $10^{10}$, 36 ms at $10^{11}$ and 120–210 ms at $10^{12}$. There are two ways to spend fewer of them.</p>
+
+<div class="thm"><div class="hd">Proposition V.2.1 <i>(segment-length trade-off)</i> <span class="ep pr">proved</span></div>
+<p>With Taylor order $K$, $N\ge K+2$ point values per segment, and half-length $h=\theta R_1/2$, the truncation error of Theorem II.1.7 is at most $C\,\theta^{K+1}/(1-\theta)$ and the cost per unit of contour is $N/(\theta R_1)$. For a fixed target error $\epsilon$, the cost $\big(\log(1/\epsilon)/\log(1/\theta)+2\big)/\theta$ is minimized near $\theta\in[0.35,0.5]$. Part IV used $\theta=1/4$ with $K=40$ and $N=64$, about twice the optimal cost and four times the number of segments needed. With $\theta=1/2$ and $K=60$, the same $N=64$ gives error $2^{-61}C$.</p>
+</div>
+<p class="proof">The tail bound is the geometric series of Theorem II.1.7 with ratio $\theta$. The cost of a segment is $N$ point values for a contour length $2h=\theta R_1$. Differentiating the cost expression in $\theta$ gives the stated minimum. <span class="qed">∎</span></p>
+
+<div class="tw"><table>
+<caption>Table V.2. <span>The millionth zero, full strip ($b=0.6$), DFT mode with symmetric half-path. Every enclosure overlaps Arb's <code>zeta_zero</code>.</span></caption>
+<thead><tr><th>$K$</th><th>$h\le$</th><th>segments</th><th>point values</th><th>time</th><th>$\boldsymbol\mu_0$</th></tr></thead>
+<tbody>
+<tr><td class="n">40</td><td class="n">$R_1/8$ (Part IV)</td><td class="n">312</td><td class="n">19,968</td><td class="n">23.2 s</td><td class="n">$1\pm6.0\times10^{-14}$</td></tr>
+<tr><td class="n">60</td><td class="n">$R_1/4$</td><td class="n">79</td><td class="n">5,056</td><td class="n"><strong>6.3 s</strong></td><td class="n">$1\pm6.7\times10^{-14}$</td></tr>
+<tr><td class="n">60</td><td class="n">$R_1/3$</td><td class="n">59</td><td class="n">3,776</td><td class="n">4.5 s</td><td class="n">$1\pm6.8\times10^{-8}$</td></tr>
+</tbody></table></div>
+
+<p>The third row goes past the optimum. It is faster, but the convergence ratio $2/3$ costs six digits of radius, so $h=R_1/4$ is the setting used below. Across the four Parts, the cost of one full-strip certificate at the millionth zero has fallen from 866 s to 6.3 s, a factor of 137, while the guarantee was strengthened along the way from part of the strip to the whole strip.</p>
+
+<p>The second lever is parallelism across tiles. Root-free scanning places tiles on a fixed grid, so they share nothing and can be distributed one per core with no communication. The certificates below at $t=10^{12}$ ran as two concurrent processes on a two-core machine. The remaining lever is batching inside $\zeta$ itself: evaluating the Riemann–Siegel main sum $\sum_{n\le\sqrt{t/2\pi}}n^{-s}$ at all points of many segments at once, by Odlyzko–Schönhage or Platt-style band-limited multi-evaluation. That would replace the 64-fold repetition of an $O(\sqrt t)$ sum with one multipoint pass. It is a change of evaluator, not of certificate.</p>
+
+<h2 id="w3"><span class="sn">§V.3</span>Certificates at $10^{10}$ and $10^{12}$</h2>
+
+<p>At these heights zero lists are expensive, so the tiles are placed root-free at round heights. The rectangle is $[t_{\mathrm{lo}},t_{\mathrm{hi}}]\times[-0.45,0.45]$, covering $0.05\le\operatorname{Re}s\le0.95$, with Taylor disks capped at $R_2=0.1$, where the crude bounds stay finite at $t=10^{12}$ (at most about $10^{9}$, Table V.4). Every tile also gets an independent count: sign changes of Hardy's $Z(t)=e^{i\vartheta(t)}\zeta(\tfrac12+it)$ on a grid of 120 points per unit, with $\vartheta$ from Arb's $\log\Gamma$. That count is non-rigorous on its own, since a close pair could hide between grid points, but it is independent of the contour.</p>
+
+<div class="tw"><table>
+<caption>Table V.3. <span>Root-free rigorous tiles at large height.</span></caption>
+<thead><tr><th>tile</th><th>$n$</th><th>$\boldsymbol\mu_0$</th><th>Sylvester minors</th><th>all real, simple</th><th>Hardy $Z$ sign changes</th><th>segments</th><th>time</th></tr></thead>
+<tbody>
+<!--HROWS-->
+</tbody></table></div>
+
+<!--E12TEXT-->
+
+<p>Two operational facts set the cost at this height. First, one Taylor segment costs about 21 s: 64 point values at roughly 0.2 s each, with two certificate processes sharing the cores. The adaptive disk grows by a factor of 1.5 after each accepted segment, and an instrumented run shows that 5 of 12 attempts are then rejected by the Rouché test, so about 40% of point-value batches are spent finding the local scale of $\zeta$. A gentler growth factor, or predicting the next radius from the decay of the previous segment's DFT coefficients, recovers most of that. Second, the enclosure radii widen from $10^{-14}$ at the millionth zero to $10^{-5}$ at $10^{12}$. The factor $\rho^{-j}$ of Theorem III.1.1 magnifies the 80-bit rounding of point values that are now computed from Riemann–Siegel sums of $4\times10^{5}$ terms. The certificates hold with wide margins (the smallest minor is $0.13\pm0.005$), and raising the working precision restores tight radii at a cost independent of $t$.</p>
+
+<div class="tw"><table>
+<caption>Table V.4. <span>Crude ball bounds $\sup|\zeta|$ on disks at $t=10^{12}$, by radius and real part. They enter certificates only through factors $2^{-41}$ to $2^{-64}$.</span></caption>
+<thead><tr><th>$\operatorname{Re}s$</th><th>$r=0.1$</th><th>$0.05$</th><th>$0.02$</th><th>$0.01$</th><th>$0.002$</th></tr></thead>
+<tbody>
+<tr><td>$-0.10$</td><td class="n">non-finite</td><td class="n">non-finite</td><td class="n">$1\times10^{9}$</td><td class="n">$4\times10^{8}$</td><td class="n">$8\times10^{7}$</td></tr>
+<tr><td>$0.05$</td><td class="n">$1\times10^{9}$</td><td class="n">$2\times10^{8}$</td><td class="n">$5\times10^{7}$</td><td class="n">$2\times10^{7}$</td><td class="n">$4\times10^{6}$</td></tr>
+<tr><td>$0.50$</td><td class="n">$2\times10^{6}$</td><td class="n">$6\times10^{5}$</td><td class="n">$2\times10^{5}$</td><td class="n">$7\times10^{4}$</td><td class="n">$1\times10^{4}$</td></tr>
+<tr><td>$0.95$</td><td class="n">$1\times10^{4}$</td><td class="n">$2\times10^{3}$</td><td class="n">$5\times10^{2}$</td><td class="n">$2\times10^{2}$</td><td class="n">$4\times10^{1}$</td></tr>
+<tr><td>$1.10$</td><td class="n">$3\times10^{3}$</td><td class="n">$8\times10^{2}$</td><td class="n">$2\times10^{2}$</td><td class="n">$8\times10^{1}$</td><td class="n">$1\times10^{1}$</td></tr>
+</tbody></table></div>
+
+<p>The left edge $\operatorname{Re}s=-0.1$ of a full-strip box needs disks of radius 0.02 or less at this height. A full-strip tile at $10^{12}$ therefore costs roughly five times a $b=0.45$ tile, almost all of it on that one side. That cost falls directly when a batched evaluator is in place.</p>
+
+<h2 id="w4"><span class="sn">§V.4</span>Completion</h2>
+
+<!--COMPLETION-->
+
+<div class="colophon">
+<p><b>Reproducibility.</b> Part V adds the following scripts:</p>
+<p><code>bk.py</code> and <code>bk2.py</code>: the Bogomolny–Keating pair correlation, its number variance, and the dense empirical estimates.</p>
+<p><code>tmint.py</code> with parameters <code>K</code>, <code>HFRAC</code> and <code>STEPDIV</code>, and <code>batchbench.py</code>: Table V.2.</p>
+<p><code>hscan.py</code>: root-free tiles at large height with the Hardy-$Z$ cross-check; outputs <code>hscan_e10.json</code>, <code>hscan_e12a.json</code> and <code>hscan_e12b.json</code>.</p>
+<p><code>figs5.py</code> and <code>assemble5.py</code>: Part V figures and assembly.</p>
+<p>Software: python-flint 0.9.0 (Arb), mpmath 1.4.1, NumPy 2.5.3, SciPy 1.18.1.</p>
+<p><b>Additional sources.</b> E. B. Bogomolny, J. P. Keating, Gutzwiller's trace formula and spectral statistics: beyond the diagonal approximation, Phys. Rev. Lett. 77 (1996); J. B. Conrey, N. C. Snaith, Applications of the L-functions ratios conjectures, Proc. London Math. Soc. 94 (2007); M. V. Berry, Semiclassical formula for the number variance of the Riemann zeros, Nonlinearity 1 (1988); A. M. Odlyzko, A. Schönhage, Trans. Amer. Math. Soc. 309 (1988); D. J. Platt, Isolating some non-trivial zeros of zeta, Math. Comp. 86 (2017).</p>
+</div>
+</main>

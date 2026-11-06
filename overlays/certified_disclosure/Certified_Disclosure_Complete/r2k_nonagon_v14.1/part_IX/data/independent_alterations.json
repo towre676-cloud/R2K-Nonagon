@@ -1,0 +1,149 @@
+{
+  "format": "nonagon-independent-adversarial-controls/1",
+  "status": "PASSED",
+  "optimized_python": true,
+  "rejected": 20,
+  "total": 20,
+  "controls": [
+    {
+      "alteration": "K-diagonal",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 76,
+      "reason": "serialized LDL diagonal disagrees with factorization"
+    },
+    {
+      "alteration": "G-cross",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 29,
+      "reason": "compliance symmetry"
+    },
+    {
+      "alteration": "ground",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 87,
+      "reason": "grounding values disagree with stiffness"
+    },
+    {
+      "alteration": "edge",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 95,
+      "reason": "edge list disagrees with stiffness"
+    },
+    {
+      "alteration": "LDL",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 76,
+      "reason": "serialized LDL diagonal disagrees with factorization"
+    },
+    {
+      "alteration": "sensor-gain",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 13,
+      "reason": "sensor gain must be calibrated to one"
+    },
+    {
+      "alteration": "force-gain",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 12,
+      "reason": "force amplitude must be calibrated to one"
+    },
+    {
+      "alteration": "noise-contract",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 15,
+      "reason": "exact checker cannot certify noisy point data"
+    },
+    {
+      "alteration": "coefficient-domain",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 16,
+      "reason": "rational coefficient-domain premise"
+    },
+    {
+      "alteration": "input-port",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 8,
+      "reason": "force must be at declared reference coordinate zero"
+    },
+    {
+      "alteration": "plan-load",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 110,
+      "reason": "observation differs from canonical plan"
+    },
+    {
+      "alteration": "scalar",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 191,
+      "reason": "strict single-load monotonicity"
+    },
+    {
+      "alteration": "heldout-scalar",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 293,
+      "reason": "heldout_0: observed scalar differs from witness"
+    },
+    {
+      "alteration": "response-vector",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 261,
+      "reason": "baseline: forward equation"
+    },
+    {
+      "alteration": "extraction-intercept",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 194,
+      "reason": "single extraction field: intercept"
+    },
+    {
+      "alteration": "extraction-discriminant",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 218,
+      "reason": "pair extraction field: discriminant"
+    },
+    {
+      "alteration": "extraction-root",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 221,
+      "reason": "pair discriminant square witness"
+    },
+    {
+      "alteration": "extraction-branch",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 225,
+      "reason": "pair inverse-positivity branch margins"
+    },
+    {
+      "alteration": "validation-count",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 228,
+      "reason": "validation metadata: acquisition_count"
+    },
+    {
+      "alteration": "boolean-as-order",
+      "status": "REJECTED",
+      "valid": false,
+      "checks": 6,
+      "reason": "network order must be 2 through 100"
+    }
+  ]
+}

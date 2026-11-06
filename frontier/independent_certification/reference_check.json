@@ -1,0 +1,8 @@
+{
+  "policy": "post-campaign diagnostic; no values used for placement/integration",
+  "reference_method": "Arb zeta_zeros",
+  "count_inside_range": 29,
+  "agrees_with_contour_count": true,
+  "first_inside": "[14.1347251417346937904572519836 +/- 6.05e-29]",
+  "last_inside": "[98.831194218193692233324420139 +/- 5.62e-28]"
+}

@@ -1,0 +1,17 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: nonagon external dc circuit random_09_n6 heldout_0
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+v(n1) = 3.94139919933867225e-02
+v(n2) = 2.36368952783981498e-02
+v(n3) = 1.44700302472359644e-02
+v(n4) = 3.34755880411575224e-02
+v(n5) = 8.12140352225399625e-03
+v(n6) = 1.63933778460081947e-02
+ngspice-39 done

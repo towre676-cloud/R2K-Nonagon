@@ -1,0 +1,36 @@
+{
+ "lp_status": 0,
+ "max_min_slack": 0.11887913954146613,
+ "path_dampers": {
+  "d12": "17/55",
+  "d23": "161/948",
+  "grounds": [
+   "101/472",
+   "0",
+   "281/915"
+  ]
+ },
+ "proportional_to_K": false,
+ "transformed_damper_network_valid": true,
+ "transformed_dampers": {
+  "edges": [
+   "204/715",
+   "17/143",
+   "12779849/107502252"
+  ],
+  "grounds": [
+   "40119/337480",
+   "52413769/268755630",
+   "31949087/268755630"
+  ]
+ },
+ "transformed_springs_valid": true,
+ "H_equal_at_rational_points": [
+  true,
+  true,
+  true,
+  true
+ ],
+ "interconnection_graph_original": "path",
+ "interconnection_graph_twin": "triangle"
+}

@@ -1,0 +1,11 @@
+{
+ "case": "case_ACTIVSg10k",
+ "negative_merged_branches_upper_bound": 193,
+ "binary64_negative_pivots": 193,
+ "witness_columns": 193,
+ "gram_negative_definite_by_exact_dominance": true,
+ "negative_index_exact": 193,
+ "max_offdiag_ratio": 1.109088377463826e-11,
+ "seconds": 91.28509306907654,
+ "seconds_gram": 72.75227069854736
+}

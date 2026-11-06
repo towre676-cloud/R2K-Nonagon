@@ -1,0 +1,155 @@
+<header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v3.0 · Part III</div>
+  <h1>The Rank-Two Nonagon <em>III</em></h1>
+  <div class="sub">The line at height: point-value Taylor models to the hundred-millionth zero, root-free rigorous Lehmer scanning, and the laws behind the last two open problems of Part II</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 29 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Part II left four problems open. Part III closes two completely, closes one to a decidable remainder, and reduces the last to a measured constant. <strong>N1</strong>: the residual $O(t)$ cost of rigorous contour moments came from computing exact-point Taylor series of $\zeta$ by Euler–Maclaurin. Arb evaluates $\zeta$ at a point in about 1 ms at every height tested, while the order-42 series costs 7 ms at $t=7005$ and 7.9 s at $t=10^{7}$. A <strong>rigorous Cauchy–DFT Taylor model</strong> recovers the series from 64 point values on a circle, with aliasing bounded by $M\,R^{-j}2^{-64}$. With it, single-zero tiles are certified at the millionth zero in 121 s instead of 866 s, at the ten-millionth ($t=4{,}992{,}381.014$) in 115 s, and at the <strong>hundred-millionth zero, $t=42{,}653{,}549.761$, in 298 s</strong>. The segment count stays between 1,874 and 3,064 from $t=1419$ up, and every enclosure overlaps Arb's independent <code>zeta_zero</code>. <strong>N6</strong>: a fixed grid of two-unit tiles, placed with no knowledge of zero positions, certifies all 34 zeros in $t\in[6990,7020]$ simple and on the critical line in 466 s. The normalized discriminant $Q=\det M_0/\det M_0^{\mathrm{equi}}$ flags the tile containing the classic Lehmer pair at $Q=0.0047$, 24 times below the next tile. Root-free bisection then encloses the gap as $\gamma_{6710}-\gamma_{6709}\in0.03769849772614019\pm1.6\times10^{-18}$, reproduced by four nested tiles. <strong>N3</strong>: the spurious branches of the Cauer peeling are exactly the critical points of $\varphi(s)=(s-s_0)^2H_{i+1}(s)$, and an asymptotic expansion proves they are forced whenever $X=2k_{i+1}/c_{i+1}-(c_{i+1}+c_{i+2})/m_{i+1}\lt0$. Over 870 levels, "multiple iff $X\lt0$ or overdamped" holds at 868. The two exceptions are unforced max–min pairs between $s_0$ and the origin, decided exactly per instance. <strong>N5</strong>: identification fails when the weakest residue drops below the noise. The threshold is $x^\ast=(w_{\min}/w_{\max})/\eta\approx0.29$, which classifies 96.7% of 360 trials correctly, or equivalently a Cramér–Rao signal-to-noise ratio of about 14 for the weakest residue. There is no success below SNR 5 and no failure among 416 trials with $x\ge100$ pooled over three runs.</p>
+</div>
+
+<div class="tw"><table>
+<caption>Table III.1. <span>Ledger after Part III. P1–P5 from Part I, N1–N6 from Part II, M1–M5 new.</span></caption>
+<thead><tr><th>Problem</th><th>Status after Part III</th><th>Decisive number</th></tr></thead>
+<tbody>
+<tr><td>P1–P5</td><td>closed (Part II)</td><td>—</td></tr>
+<tr><td>N1 rigorous cost at height</td><td>closed</td><td>zero $10^{8}$ certified in 298 s</td></tr>
+<tr><td>N2 branch selection</td><td>closed (Part II)</td><td>615/615</td></tr>
+<tr><td>N3 multiplicity law</td><td>closed to a decidable remainder</td><td>868/870 explained; rest decided exactly</td></tr>
+<tr><td>N4 noise robustness</td><td>closed (Part II)</td><td>error $\approx0.028\eta$</td></tr>
+<tr><td>N5 identifiability constant</td><td>closed empirically</td><td>$x^\ast\approx0.29$, CRB-SNR$^\ast\approx14$</td></tr>
+<tr><td>N6 root-free Lehmer scanning</td><td>closed</td><td>34 zeros in 466 s; gap $\pm1.6\times10^{-18}$</td></tr>
+<tr><td>M1 overdamped forcing</td><td>open</td><td>360/360 observed</td></tr>
+<tr><td>M2 unforced right-side pairs</td><td>open</td><td>2/870</td></tr>
+<tr><td>M3 shared evaluations for production scans</td><td>open</td><td>—</td></tr>
+<tr><td>M4 the constant $x^\ast$ from first principles</td><td>open</td><td>median SNR/$x\approx34$</td></tr>
+<tr><td>M5 meter statistics against GUE</td><td>open</td><td>—</td></tr>
+</tbody></table></div>
+
+<h2 id="r1"><span class="sn">§III.1</span>N1: point-value Taylor models</h2>
+
+<p>Theorem II.1.7 obtained the Taylor coefficients of $Z(w)=\zeta(\tfrac12+i(t_c+w))$ from an exact-point series, which Arb computes by Euler–Maclaurin. Measured on one core at 80 bits, the order-42 series costs 7.0 ms at $t=7005$, 51 ms at $t=74{,}920$, 362 ms at $t=600{,}269$ and 7.9 s at $t=10^{7}$. A single point value costs 1.3, 1.0, 1.0 and 0.9 ms at the same heights, because Arb switches point evaluation to algorithms of Riemann–Siegel type. At $t=10^7$ the ratio is 8,600. The remedy is to compute the coefficients from point values.</p>
+
+<div class="thm"><div class="hd">Theorem III.1.1 <i>(rigorous Cauchy–DFT coefficients)</i> <span class="ep pr">proved</span></div>
+<p>Let $Z$ be analytic on $|w|\le R$ with $|Z|\le M$ there, let $0\lt\rho\lt R$, $q=\rho/R$, and let $\omega=e^{2\pi i/N}$. For $0\le j\lt N$ define $$\tilde a_j=\frac{1}{N\rho^{j}}\sum_{k=0}^{N-1}Z(\rho\,\omega^{k})\,\omega^{-jk}.$$ Then $$\tilde a_j-a_j=\sum_{m\ge1}a_{j+mN}\,\rho^{mN},\qquad |\tilde a_j-a_j|\le\frac{M}{R^{j}}\,\frac{q^{N}}{1-q^{N}}.$$</p>
+</div>
+<p class="proof">Substituting the Taylor series and using the orthogonality $\frac1N\sum_k\omega^{(l-j)k}=[\,l\equiv j\bmod N\,]$, only the indices $l=j+mN$ with $m\ge0$ survive, because the series has no negative powers. Cauchy's estimate $|a_l|\le MR^{-l}$ then sums to the stated bound. <span class="qed">∎</span></p>
+
+<p>In the integrator we take $\rho=R_1=R_2/2$, $R=R_2$ and $N=64$. The aliasing bound $M_2R_2^{-j}2^{-64}$ is added to every coefficient ball, and the rest of Theorem II.1.7 runs unchanged: Rouché exclusion, Cauchy tails and exact polynomial integration. The bound $M_2$ is the same crude ball value of $\zeta$ already used for the Rouché test. It stays finite and modest at height: at most $2.7\times10^{4}$ for radius 0.01 and $\operatorname{Re}s=0.05$ at $t=10^{7}$. On the first tile the DFT mode reproduces the series mode, $\boldsymbol\mu_0=1\pm1.7\times10^{-17}$.</p>
+
+<div class="tw"><table>
+<caption>Table III.2. <span>Rigorous single-zero tiles in the two coefficient modes. Every count encloses 1 and every zero enclosure overlaps Arb's <code>zeta_zero</code>.</span></caption>
+<thead><tr><th>zero $n$</th><th>$\gamma_n$</th><th>segments</th><th>series mode</th><th>DFT mode</th><th>DFT enclosure of $\gamma_n$</th></tr></thead>
+<tbody>
+<tr><td class="n">6709</td><td class="n">7005.0629</td><td class="n">2290</td><td class="n">15.0 s</td><td class="n">84.4 s</td><td class="n">$7005.06286617492058\pm2.4\times10^{-15}$</td></tr>
+<tr><td class="n">$10^{6}$</td><td class="n">600269.677</td><td class="n">2480</td><td class="n">866.5 s</td><td class="n">120.7 s</td><td class="n">$600269.677012444956\pm5.9\times10^{-13}$</td></tr>
+<tr><td class="n">$10^{7}$</td><td class="n">4992381.014</td><td class="n">1874</td><td class="n">—</td><td class="n">115.3 s</td><td class="n">$4992381.01400317867\pm8.8\times10^{-12}$</td></tr>
+<tr><td class="n">$10^{8}$</td><td class="n">42653549.761</td><td class="n">2006</td><td class="n">(≈ 17 h, extrapolated)</td><td class="n">298.3 s</td><td class="n">$42653549.7609515539\pm2.5\times10^{-11}$</td></tr>
+</tbody></table></div>
+
+<div class="plate"><figure>
+<!--FIG10-->
+<figcaption><b>Figure 10.</b> Seconds per rigorous single-zero tile against height. The exact-point series mode of Part II (slate) grows linearly in $t$. The point-value Cauchy–DFT mode (oxblood) is flat to within a factor of 3.5 from $t=7005$ to $t=4.3\times10^{7}$. The crossover sits near $t\approx5\times10^{4}$, which sets the hybrid rule: series below, DFT above.</figcaption>
+</figure></div>
+
+<p>The enclosure radius grows with height, from $10^{-15}$ to $10^{-11}$. That is the factor $\rho^{-j}$ in Theorem III.1.1 magnifying the 80-bit rounding of the point values, and it is removed by raising the working precision, at a cost that does not depend on $t$. With N1 closed, a rigorous box-criterion certificate costs a fixed few minutes of one core per zero at any height up to at least $4\times10^{7}$, and two zeros per tile halve that.</p>
+
+<h2 id="r2"><span class="sn">§III.2</span>N6: root-free rigorous Lehmer scanning</h2>
+
+<p>The scan uses no zero positions. The window is cut into tiles of width 2 on a fixed grid. Each tile is integrated by the Taylor-model method with Chebyshev weights up to $T_{10}$, enough for six zeros per tile, all from a single pass. If an edge lands within the Rouché radius floor of a zero ($R_2\lt2\times10^{-6}$), the integrator stops and the scanner moves the edge by 0.05. For each tile the scan records the rigorous count $n$, the signs of all $n$ Sylvester minors, and the <strong>normalized discriminant meter</strong> $$Q=\frac{\det M_0}{2^{(n-1)(n-2)}\prod_{i\lt j}(\bar u_i-\bar u_j)^2},\qquad \bar u_j=-1+\frac{2j-1}{n},$$ which by Theorem 9.1(e) is the squared Vandermonde of the actual zeros divided by that of $n$ equispaced ones. A near-collision makes $Q$ small, and no zero needs to be located to compute it.</p>
+
+<div class="thm"><div class="hd">Result III.2.1 <i>(rigorous scan of $t\in[6990,7020]$)</i> <span class="ep pr">proved · arb</span></div>
+<p>Fifteen tiles, with no edge shifts needed, certify counts $3,2,3,2,2,2,2,3,1,3,2,3,2,2,2$: <strong>34 zeros, every one simple and on the critical line</strong>. Each count is enclosed to $\pm3\times10^{-16}$ and every Sylvester minor is a strictly positive ball. Runtime was 466 s on one core. The meter ranges from $0.115$ to $4.83$ on fourteen tiles, and is $Q=0.0046948863\pm3.9\times10^{-11}$ on the tile $[7004,7006]$.</p>
+</div>
+
+<div class="plate"><figure>
+<!--FIG11-->
+<figcaption><b>Figure 11.</b> The discriminant meter along the critical line near $t=7005$, on a logarithmic scale, with the certified zero count of each tile printed above its bar. The tile containing the classic Lehmer pair stands 24 times below every other tile.</figcaption>
+</figure></div>
+
+<p>A flagged tile is refined by rigorous bisection: split at the midpoint, certify both halves, and recurse into any half with count 2 or more until a two-zero tile is reached. Every split is a count, and nothing is located.</p>
+
+<div class="thm"><div class="hd">Result III.2.2 <i>(root-free gap of the classic pair)</i> <span class="ep pr">proved · arb</span></div>
+<p>Bisection of $[7004,7006]$ certifies one zero in $[7004,7005]$ and two in $[7005,7006]$. The two-zero tiles $[7005,7006]$, $[7005,7005.5]$, $[7005,7005.25]$ and $[7005,7005.125]$ each give positive minors and the same gap enclosure, $$\gamma_{6710}-\gamma_{6709}\in0.03769849772614019\pm1.6\times10^{-18},$$ ten times tighter than the Part II certificate. Their determinants are $0.00568470692323$, $0.0227388276929$, $0.0909553107717$ and $0.363821243087$, which scale as $a^{-2}$ exactly as $(\gamma_2-\gamma_1)^2/a^2$ requires. Total time 150 s.</p>
+</div>
+
+<!--HIGHSCAN-->
+
+<h2 id="r3"><span class="sn">§III.3</span>N3: the law of Wronskian multiplicity</h2>
+
+<p>In the peeling of Theorem II.4.2, the candidates for $s_0=-k_{i+1}/c_{i+1}$ are the negative real critical points of $R/N=\kappa-e_{i+1}^2H_{i+1}$, where $H_{i+1}=N_{\mathrm{next}}/N$ is the driving-point function of the sub-chain beginning at mass $i+1$.</p>
+
+<div class="thm"><div class="hd">Theorem III.3.1 <i>(critical-point characterization)</i> <span class="ep pr">proved</span></div>
+<p>Let $\varphi(s)=(s-s_0)^2H_{i+1}(s)$. The Wronskian candidates are $s_0$ together with the critical points of $\varphi$ on $(-\infty,0)\setminus\{s_0\}$. Moreover $\varphi(s_0)=0$, $\varphi(s)\to1/m_{i+1}$ as $s\to-\infty$, $\varphi(0)=s_0^2/k_{i+1}$, and $\varphi'(0)=1/c_{i+1}\gt0$. The branch is unique if and only if $\varphi$ is monotone on $(-\infty,s_0)$ and on $(s_0,0)$.</p>
+</div>
+<p class="proof">$\frac{d}{ds}(R/N) = -c_{i+1}^2\varphi'$, so critical points coincide. The limit follows from $H_{i+1}\sim1/(m_{i+1}s^2)$. Static compliance gives $H_{i+1}(0)=1/k_{i+1}$, and $H_{i+1}'(0)=-c_{i+1}/k_{i+1}^2$ by the argument of Theorem II.4.2(i), so $\varphi'(0)=-2s_0/k_{i+1}+s_0^2(-c_{i+1}/k_{i+1}^2)=2/c_{i+1}-1/c_{i+1}$. <span class="qed">∎</span></p>
+
+<div class="thm"><div class="hd">Proposition III.3.2 <i>(asymptotic forcing)</i> <span class="ep pr">proved</span></div>
+<p>As $s\to-\infty$, $$\varphi(s)=\frac{1}{m_{i+1}}\Big(1+\frac{X}{s}+O(s^{-2})\Big),\qquad X=\frac{2k_{i+1}}{c_{i+1}}-\frac{c_{i+1}+c_{i+2}}{m_{i+1}}.$$ If $X\lt0$, then $\varphi\gt1/m_{i+1}$ far to the left while $\varphi(s_0)=0$, so $\varphi$ has an interior maximum on $(-\infty,s_0)$, and the peeling level has at least two candidates.</p>
+</div>
+<p class="proof">The next level's diagonal entry is $q=m_{i+1}s^2+(c_{i+1}+c_{i+2})s+O(1)$, and $H_{i+1}=1/(q-e^2H_{i+2})$ with $e^2H_{i+2}\to c_{i+2}^2/m_{i+2}$, so $H_{i+1}=\frac{1}{m_{i+1}s^2}\big(1-\frac{c_{i+1}+c_{i+2}}{m_{i+1}s}+O(s^{-2})\big)$. Multiply by $(s-s_0)^2=s^2(1-2s_0/s+s_0^2/s^2)$. With $s\lt0$ and $X\lt0$, the correction $X/s$ is positive. <span class="qed">∎</span></p>
+
+<p>In mechanical terms, $X\lt0$ reads $2k_{i+1}m_{i+1}\lt c_{i+1}(c_{i+1}+c_{i+2})$: the damping at that joint exceeds the geometric mean of stiffness and mass by a factor of order $\sqrt2$, a local overdamping index. We tested the law at 870 peeling levels drawn from 300 chains ($n=3$ to $5$) in five damping regimes, $c\in[0.02,0.4]$, $[0.3,1.5]$, $[0.5,3]$, $[1.5,6]$ and $[3,15]$, at 40 digits.</p>
+
+<div class="tw"><table>
+<caption>Table III.3. <span>Wronskian multiplicity against the two forcing conditions, 870 levels.</span></caption>
+<thead><tr><th>$X$</th><th>sub-chain poles</th><th>unique</th><th>multiple</th></tr></thead>
+<tbody>
+<tr><td>$X\lt0$</td><td>some real</td><td class="n">0</td><td class="n">342</td></tr>
+<tr><td>$X\lt0$</td><td>none real</td><td class="n">0</td><td class="n">64</td></tr>
+<tr><td>$X\gt0$</td><td>some real</td><td class="n">0</td><td class="n">18</td></tr>
+<tr><td>$X\gt0$</td><td>none real</td><td class="n">462</td><td class="n">2</td></tr>
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result III.3.3 <i>(the multiplicity law)</i> <span class="ep pr">proved</span> <span class="ep mp">verified · 40 digits</span></div>
+<p>$X\lt0$ forces multiplicity (Proposition III.3.2), confirmed at 406 of 406 levels. Real sub-chain poles were accompanied by multiplicity at 360 of 360 levels. Together the two conditions account for every multiple level but 2 of 870. In both exceptions $X\approx5$, there are no real poles, and the two extra candidates lie in $(s_0,0)$: an unforced max–min pair on the side where $\varphi$ rises from 0 to $s_0^2/k_{i+1}$ with positive slope at both ends. For any given chain the question is decidable exactly, by counting the real roots of the numerator of $\varphi'$ on $(-\infty,s_0)$ and $(s_0,0)$ with the weighted Hermite count of Theorem II.3.1. The selector of Part II resolves all cases regardless.</p>
+</div>
+
+<h2 id="r4"><span class="sn">§III.4</span>N5: the identifiability constant</h2>
+
+<p>We reran the oversampled balanced pipeline of Result II.5.2 on 360 fresh chains at $\eta\in\{10^{-9},10^{-7},10^{-6},10^{-5}\}$, 103 of which failed (pole error above $10^{-3}$). For each chain we also computed the Cramér–Rao standard deviation of every residue under the 200-sample pass-1 sweep at the true parameters, and from it the weakest residue's signal-to-noise ratio $\mathrm{SNR}=\min_kw_k/\sigma(w_k)$.</p>
+
+<div class="tw"><table>
+<caption>Table III.4. <span>Failure counts binned by the visibility $x=(w_{\min}/w_{\max})/\eta$ and by the Cramér–Rao SNR of the weakest residue; 360 chains.</span></caption>
+<thead><tr><th>$x$ bin</th><th>trials</th><th>failures</th><th>SNR bin</th><th>trials</th><th>failures</th></tr></thead>
+<tbody>
+<tr><td>$[0,0.1)$</td><td class="n">68</td><td class="n">68</td><td>$[0,0.3)$</td><td class="n">46</td><td class="n">46</td></tr>
+<tr><td>$[0.1,1)$</td><td class="n">48</td><td class="n">29</td><td>$[0.3,1)$</td><td class="n">11</td><td class="n">11</td></tr>
+<tr><td>$[1,3)$</td><td class="n">22</td><td class="n">3</td><td>$[1,5)$</td><td class="n">20</td><td class="n">20</td></tr>
+<tr><td>$[3,10)$</td><td class="n">20</td><td class="n">2</td><td>$[5,10)$</td><td class="n">13</td><td class="n">10</td></tr>
+<tr><td>$[10,30)$</td><td class="n">28</td><td class="n">1</td><td>$[10,30)$</td><td class="n">27</td><td class="n">12</td></tr>
+<tr><td>$[30,\infty)$</td><td class="n">174</td><td class="n">0</td><td>$[30,\infty)$</td><td class="n">243</td><td class="n">4</td></tr>
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result III.4.1 <i>(identifiability threshold)</i> <span class="ep nm">verified · double</span></div>
+<p>The best single-threshold rule on visibility, "fail iff $x\lt x^\ast$", has $x^\ast=0.285$ and classifies 96.7% of trials correctly. On the weakest residue's Cramér–Rao SNR the best threshold is $14.3$, with 95.8% accuracy. No trial succeeded with SNR below 5 (77 of 77 failed), and no trial failed with $x\ge30$ in this run (0 of 174). Pooled over all three runs, 0 of 416 trials with $x\ge100$ failed. The median ratio $\mathrm{SNR}/x$ is 34.1: the sweep's many samples near each resonance lift the weakest residue's per-sample visibility by that factor.</p>
+</div>
+
+<p>The two descriptions agree with each other and with the mechanism found in Part II. The pipeline fails when the weakest mode's residue cannot be told from zero in the pass-1 data, and the cleanest predictor is how far that residue stands above the per-sample noise. At $x^\ast\approx0.3$ the residue is about a third of the per-sample noise, and the sweep's gain of about 34 lifts it to a Cramér–Rao SNR near 10. Deriving the constant without simulation is M4.</p>
+
+<h2 id="r5"><span class="sn">§III.5</span>What remains</h2>
+
+<p><strong>M1, overdamped forcing</strong> <span class="ep op">open</span>. Real sub-chain poles were always accompanied by multiple Wronskian candidates (360 of 360), but the proof is missing. At a simple real pole $\varphi$ changes sign through infinity, and overdamped modes contribute real poles in pairs. The task is to show that the sign pattern of residues of a damped tridiagonal pencil forces $\varphi$ to turn between consecutive real poles, or between the last pole and $s_0$.</p>
+
+<p><strong>M2, unforced right-side pairs</strong> <span class="ep op">open</span>. Two of 870 levels had a max–min pair of $\varphi$ in $(s_0,0)$ with $X\gt0$ and no real poles. A closed-form criterion in the chain parameters, playing the role that $X$ plays on the left side, is open. Per instance the question is decidable exactly.</p>
+
+<p><strong>M3, shared evaluations for production scans</strong> <span class="ep op">open</span>. In DFT mode each segment uses 64 point values on its own circle. Neighbouring segments and neighbouring tiles overlap heavily, and placing the circles on a common lattice would let Platt-style band-limited multi-evaluation of $\zeta$ supply all of them in one batch. That is the step from minutes per zero to the throughput of verification campaigns at $t\sim10^{12}$, with the box criterion as the certificate.</p>
+
+<p><strong>M4, the constant $x^\ast$ from first principles</strong> <span class="ep op">open</span>. The measured thresholds, $x^\ast\approx0.29$ and SNR$^\ast\approx14$, invite a derivation from the Fisher information of the weakest mode under the specific pass-1 design. The Part II law ($0.028\eta$ pole error above threshold) should follow from the same computation.</p>
+
+<p><strong>M5, meter statistics against GUE</strong> <span class="ep op">open</span>. On two-zero tiles $Q$ equals the squared normalized gap, and the scan supplies it rigorously for every tile without locating zeros. Root-free scans of long windows would give certified empirical distributions of $Q$ to set against the Gaudin–Mehta prediction for the corresponding Vandermonde functional. Small-$Q$ tails are exactly the Lehmer phenomena of Part II.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> Part III adds the following scripts:</p>
+<p><code>tmint.py</code> with <code>MODE='dft'</code>: the Cauchy–DFT coefficients of Theorem III.1.1 and the zero-near-contour guard.</p>
+<p><code>dftcost.py</code>: Table III.2.</p>
+<p><code>scan.py</code>: root-free scans; <code>scan_6990_7020.json</code> holds Result III.2.1.</p>
+<p><code>refine.py</code>: root-free bisection.</p>
+<p><code>n3.py</code>: Table III.3.</p>
+<p><code>n5.py</code>: Table III.4.</p>
+<p><code>figs3.py</code>: Part III figures.</p>
+<p>Software: python-flint 0.9.0 (Arb), mpmath 1.4.1, NumPy 2.5.3, SciPy 1.18.1, all on one core.</p>
+</div>
+</main>

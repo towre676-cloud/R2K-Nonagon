@@ -1,0 +1,369 @@
+{
+  "status": "PASS",
+  "original_verifier_sha256": "7c962371bedab99b3398366fd615f165db769b1029f31f386f59c3c732f55a7f",
+  "hardened_verifier_sha256": "803f39523636102ed4f3972c0c31800b4663068852b89e08c86c7045c8ead6d2",
+  "retained_light_acceptances": [
+    {
+      "file": "III_refine_7005_7005.12.json",
+      "count": 2,
+      "segments_checked": 57,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_refine_7005_7005.25.json",
+      "count": 2,
+      "segments_checked": 51,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_refine_7005_7005.5.json",
+      "count": 2,
+      "segments_checked": 53,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_refine_7005_7006.json",
+      "count": 2,
+      "segments_checked": 61,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan6e5_00.json",
+      "count": 4,
+      "segments_checked": 137,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan6e5_01.json",
+      "count": 2,
+      "segments_checked": 124,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan6e5_02.json",
+      "count": 5,
+      "segments_checked": 138,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan6e5_03.json",
+      "count": 3,
+      "segments_checked": 133,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan6e5_04.json",
+      "count": 4,
+      "segments_checked": 151,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_00.json",
+      "count": 3,
+      "segments_checked": 91,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_01.json",
+      "count": 2,
+      "segments_checked": 93,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_02.json",
+      "count": 3,
+      "segments_checked": 90,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_03.json",
+      "count": 2,
+      "segments_checked": 81,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_04.json",
+      "count": 2,
+      "segments_checked": 73,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_05.json",
+      "count": 2,
+      "segments_checked": 75,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_06.json",
+      "count": 2,
+      "segments_checked": 89,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_07.json",
+      "count": 3,
+      "segments_checked": 89,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_08.json",
+      "count": 1,
+      "segments_checked": 67,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_09.json",
+      "count": 3,
+      "segments_checked": 88,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_10.json",
+      "count": 2,
+      "segments_checked": 75,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_11.json",
+      "count": 3,
+      "segments_checked": 83,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_12.json",
+      "count": 2,
+      "segments_checked": 80,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_13.json",
+      "count": 2,
+      "segments_checked": 70,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "III_scan7005_14.json",
+      "count": 2,
+      "segments_checked": 82,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "II_B2_box.json",
+      "count": 9,
+      "segments_checked": 531,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "II_lehmer_b0p45.json",
+      "count": 2,
+      "segments_checked": 48,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "II_lehmer_b0p6.json",
+      "count": 2,
+      "segments_checked": 59,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "IV_fsscan_00.json",
+      "count": 3,
+      "segments_checked": 149,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "IV_fsscan_01.json",
+      "count": 2,
+      "segments_checked": 157,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "IV_fsscan_02.json",
+      "count": 4,
+      "segments_checked": 155,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "IV_fsscan_03.json",
+      "count": 3,
+      "segments_checked": 147,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "IV_fsscan_04.json",
+      "count": 2,
+      "segments_checked": 145,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "IV_fsscan_05.json",
+      "count": 2,
+      "segments_checked": 146,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "NEG_dh_84p7_86p7.json",
+      "count": 2,
+      "segments_checked": 468,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "V_e10.json",
+      "count": 2,
+      "segments_checked": 128,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "V_e12a.json",
+      "count": 3,
+      "segments_checked": 145,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "V_e12b.json",
+      "count": 1,
+      "segments_checked": 150,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "zero_100000000_b0p45.json",
+      "count": 1,
+      "segments_checked": 79,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "zero_100000000_b0p6.json",
+      "count": 1,
+      "segments_checked": 99,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "zero_10000000_b0p45.json",
+      "count": 1,
+      "segments_checked": 72,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "zero_1000000_b0p45.json",
+      "count": 1,
+      "segments_checked": 66,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "zero_1000000_b0p6.json",
+      "count": 1,
+      "segments_checked": 79,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "zero_100000_b0p45.json",
+      "count": 1,
+      "segments_checked": 55,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "zero_100000_b0p6.json",
+      "count": 1,
+      "segments_checked": 64,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "zero_1000_b0p45.json",
+      "count": 1,
+      "segments_checked": 38,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "zero_100_b0p45.json",
+      "count": 1,
+      "segments_checked": 61,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "zero_1_b0p45.json",
+      "count": 1,
+      "segments_checked": 172,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "zero_3000_b0p45.json",
+      "count": 1,
+      "segments_checked": 41,
+      "mode": "light stored evidence only"
+    },
+    {
+      "file": "zero_6709_b0p45.json",
+      "count": 1,
+      "segments_checked": 61,
+      "mode": "light stored evidence only"
+    }
+  ],
+  "adversarial_rejections": [
+    {
+      "case": "half flag integer",
+      "reason": "half-path flag must be boolean"
+    },
+    {
+      "case": "empty moments",
+      "reason": "moments must be nonempty integer k = 0..K"
+    },
+    {
+      "case": "boolean moment index",
+      "reason": "moments must be nonempty integer k = 0..K"
+    },
+    {
+      "case": "negative disk radius",
+      "reason": "nonpositive analytic disk radius"
+    },
+    {
+      "case": "infinite coordinate",
+      "reason": "nonfinite hex coordinate"
+    },
+    {
+      "case": "negative recorded radius",
+      "reason": "negative recorded radius"
+    },
+    {
+      "case": "nonfinite recorded ball",
+      "reason": "nonfinite recorded ball"
+    },
+    {
+      "case": "bad precision",
+      "reason": "precision must be an integer at least 64"
+    },
+    {
+      "case": "boolean precision",
+      "reason": "precision must be an integer at least 64"
+    },
+    {
+      "case": "invalid Taylor order",
+      "reason": "invalid Taylor or DFT order"
+    },
+    {
+      "case": "DFT below requested coefficients",
+      "reason": "DFT order does not cover the requested Taylor coefficients"
+    },
+    {
+      "case": "unsupported evaluator",
+      "reason": "unsupported evaluator"
+    },
+    {
+      "case": "unsupported function",
+      "reason": "unsupported function"
+    },
+    {
+      "case": "nonreal full-contour moments",
+      "reason": "moment enclosure excludes the required real-symmetry value"
+    },
+    {
+      "case": "negative count",
+      "reason": "negative zero count"
+    },
+    {
+      "case": "nonobject certificate",
+      "reason": "certificate must be an object"
+    }
+  ],
+  "positive_and_empty_count_controls": 2,
+  "scope": "acceptance hardening and retained-evidence replay; light mode is not a fresh analytic proof"
+}

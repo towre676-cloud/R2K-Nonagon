@@ -1,0 +1,131 @@
+{
+  "independent_full_child_verifiers": [
+    {
+      "file_format": "r2k-contour-certificate/2",
+      "mode": "full",
+      "evaluator": "series",
+      "segments_checked": 91,
+      "segments_recomputed": 91,
+      "count": 3,
+      "mu0": "[3.00000000000000 +/- 5.78e-16]",
+      "imag_parts_contain_zero": true,
+      "minors": [
+        "[3.000000000 +/- 3e-14]",
+        "[5.245022955 +/- 8.79e-11]",
+        "[6.783470744 +/- 3.97e-10]"
+      ],
+      "inertia": [
+        3,
+        0
+      ],
+      "all_zeros_simple_on_line": true,
+      "conjugate_pairs_off_line": 0,
+      "status": "CERTIFIED",
+      "scope": "zeros of xi with 6990.0 <= Im s <= 6992.0 and 0.04999999999999999 <= Re s <= 0.95"
+    },
+    {
+      "file_format": "r2k-contour-certificate/2",
+      "mode": "full",
+      "evaluator": "series",
+      "segments_checked": 93,
+      "segments_recomputed": 93,
+      "count": 2,
+      "mu0": "[2.00000000000000 +/- 1.19e-15]",
+      "imag_parts_contain_zero": true,
+      "minors": [
+        "[2.000000000 +/- 3e-14]",
+        "[0.7807234625 +/- 4.09e-11]"
+      ],
+      "inertia": [
+        2,
+        0
+      ],
+      "all_zeros_simple_on_line": true,
+      "conjugate_pairs_off_line": 0,
+      "status": "CERTIFIED",
+      "scope": "zeros of xi with 6992.0 <= Im s <= 6994.0 and 0.04999999999999999 <= Re s <= 0.95"
+    }
+  ],
+  "independent_full_union_verifier": {
+    "file_format": "r2k-contour-certificate/2",
+    "mode": "full",
+    "evaluator": "series",
+    "segments_checked": 147,
+    "segments_recomputed": 147,
+    "count": 5,
+    "mu0": "[5.00000000000000 +/- 2.00e-15]",
+    "imag_parts_contain_zero": true,
+    "minors": [
+      "[5.000000000 +/- 3e-14]",
+      "[7.570294171 +/- 6.62e-11]",
+      "[8.299993903 +/- 2.63e-10]",
+      "[5.287492020 +/- 3.19e-10]",
+      "[0.5908607791 +/- 5.03e-12]"
+    ],
+    "inertia": [
+      5,
+      0
+    ],
+    "all_zeros_simple_on_line": true,
+    "conjugate_pairs_off_line": 0,
+    "status": "CERTIFIED",
+    "scope": "zeros of xi with 6990.0 <= Im s <= 6994.0 and 0.04999999999999999 <= Re s <= 0.95"
+  },
+  "child_boxes": [
+    [
+      6990,
+      6992
+    ],
+    [
+      6992,
+      6994
+    ]
+  ],
+  "child_counts": [
+    3,
+    2
+  ],
+  "parent_count": 5,
+  "moment_order": 8,
+  "direct_parent_moments_overlap_child_sum": true,
+  "basis_determinant_ball": "[0.00260950430734 +/- 6.17e-15]",
+  "transformed_cross_blocks_contain_zero": true,
+  "maximum_cross_block_abs_upper": 9.262481791973326e-15,
+  "child_weighted_inertias": [
+    [
+      3,
+      0
+    ],
+    [
+      2,
+      0
+    ]
+  ],
+  "nested_parent_inertia": [
+    5,
+    0
+  ],
+  "all_parent_moment_balls": [
+    "5.000000000000000000000000",
+    "[2.04149631055845 +/- 2.05e-15]",
+    "[1.21205614575145 +/- 5.32e-15]",
+    "[0.79561575308081 +/- 2.28e-15]",
+    "[0.54988369953545 +/- 2.45e-15]",
+    "[0.39378030916207 +/- 3.82e-15]",
+    "[0.28957679248472 +/- 2.98e-15]",
+    "[0.21723556149373 +/- 5.65e-15]",
+    "[0.16538360635512 +/- 2.30e-15]"
+  ],
+  "all_direct_union_moment_balls": [
+    "[5.00000000000000 +/- 2.00e-15]",
+    "[2.04149631055845 +/- 2.87e-15]",
+    "[1.21205614575145 +/- 5.94e-15]",
+    "[0.79561575308081 +/- 2.84e-15]",
+    "[0.54988369953545 +/- 3.00e-15]",
+    "[0.39378030916207 +/- 4.38e-15]",
+    "[0.28957679248472 +/- 3.55e-15]",
+    "[0.21723556149373 +/- 6.25e-15]",
+    "[0.16538360635512 +/- 2.92e-15]"
+  ],
+  "proof": "Exact child polynomials from Newton identities vanish on their child roots. The basis [p_B y^k; p_A y^l] has exact zero cross blocks and nonzero determinant; the interval computation encloses its exact coefficients."
+}

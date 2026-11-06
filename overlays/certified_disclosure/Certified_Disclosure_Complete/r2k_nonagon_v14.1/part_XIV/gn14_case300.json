@@ -1,0 +1,54 @@
+{
+ "lean": [
+  {
+   "sigma": 1e-07,
+   "median_rel_err": 7.961898690205835e-05,
+   "p90_rel_err": 0.00036649144137516806,
+   "within_1pct": 1.0,
+   "median_err_over_crb": 0.6418402651223198,
+   "crb_median_pred": 0.00013694862430569548,
+   "iterations": 61,
+   "seconds": 18.53123450279236,
+   "chi2_per_reading": 0.6053047247739047,
+   "starts_used": 4
+  },
+  {
+   "sigma": 1e-06,
+   "median_rel_err": 0.0016376703592234753,
+   "p90_rel_err": 0.008202508181477993,
+   "within_1pct": 0.9264705882352942,
+   "median_err_over_crb": 1.2350004213608587,
+   "crb_median_pred": 0.0013694862430569548,
+   "iterations": 24,
+   "seconds": 22.702006816864014,
+   "chi2_per_reading": 6435.919052527877,
+   "starts_used": 2
+  },
+  {
+   "sigma": 1e-05,
+   "median_rel_err": 0.007342709564498324,
+   "p90_rel_err": 0.040689349461937474,
+   "within_1pct": 0.571078431372549,
+   "median_err_over_crb": 0.6069360568292752,
+   "crb_median_pred": 0.01369486243056955,
+   "iterations": 24,
+   "seconds": 20.607261896133423,
+   "chi2_per_reading": 0.6509426162833861,
+   "starts_used": 7
+  }
+ ],
+ "ports20": [
+  {
+   "sigma": 0.0001,
+   "median_rel_err": 0.0029897555684502367,
+   "p90_rel_err": 0.020554803479507847,
+   "within_1pct": 0.7867647058823529,
+   "median_err_over_crb": 0.6127853681307621,
+   "crb_median_pred": 0.005734680328348638,
+   "iterations": 8,
+   "seconds": 15.253931760787964,
+   "chi2_per_reading": 0.987883905023209,
+   "starts_used": 1
+  }
+ ]
+}

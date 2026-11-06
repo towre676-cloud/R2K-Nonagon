@@ -1,0 +1,38 @@
+{
+  "schema": "nonagon.target-relative-replay.v1",
+  "status": "PASS",
+  "case": "case118",
+  "parameter_count": 179,
+  "full_protocol_count": 6903,
+  "local_panel_count": 179,
+  "adaptive_panel_count": 180,
+  "local_rank": 179,
+  "minimal_false_branch_residual": 5.013797507942177e-14,
+  "minimal_true_branch_residual": 3.1011826155155256e-14,
+  "branch_breaker_false_offset": -1.1733768165766989e-05,
+  "branch_breaker_true_offset": -4.996003610813204e-16,
+  "final_saved_solutions": {
+    "adaptive_from_false": {
+      "residual_norm": 4.2843121365574997e-14,
+      "relative_weight_error": 7.122477655234159e-13
+    },
+    "adaptive_from_true": {
+      "residual_norm": 3.109889177547554e-14,
+      "relative_weight_error": 6.18725612011337e-13
+    },
+    "adaptive_independent": {
+      "residual_norm": 9.448450084085484e-14,
+      "relative_weight_error": 3.086019938445492e-11
+    }
+  },
+  "exact_rank_modular_certificates": [
+    {
+      "prime": 1000000007,
+      "determinant_mod_prime": 102865312
+    },
+    {
+      "prime": 1000000009,
+      "determinant_mod_prime": 237997625
+    }
+  ]
+}

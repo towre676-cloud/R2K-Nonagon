@@ -1,0 +1,10 @@
+{
+  "status": "PASSED",
+  "fixtures": 4,
+  "step_transient_records": 32,
+  "real_laplace_scalar_settings": 96,
+  "operator_enclosures": 12,
+  "checked_predicates": 455,
+  "max_observation_error": 1.0001791311362065e-12,
+  "max_operator_entry_radius": 0.043992434439512694
+}

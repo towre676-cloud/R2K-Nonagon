@@ -1,0 +1,72 @@
+{
+ "case118": {
+  "K4_pockets": 0,
+  "K4_pockets_with_interior_source": 0,
+  "K4_pockets_without_interior_source": [],
+  "identifiable": true,
+  "other_two_interior_two_terminal_pockets": 19
+ },
+ "case300": {
+  "K4_pockets": 0,
+  "K4_pockets_with_interior_source": 0,
+  "K4_pockets_without_interior_source": [],
+  "identifiable": true,
+  "other_two_interior_two_terminal_pockets": 29
+ },
+ "case1354pegase": {
+  "K4_pockets": 0,
+  "K4_pockets_with_interior_source": 0,
+  "K4_pockets_without_interior_source": [],
+  "identifiable": true,
+  "other_two_interior_two_terminal_pockets": 203
+ },
+ "case2869pegase": {
+  "K4_pockets": 0,
+  "K4_pockets_with_interior_source": 0,
+  "K4_pockets_without_interior_source": [],
+  "identifiable": true,
+  "other_two_interior_two_terminal_pockets": 418
+ },
+ "case6515rte": {
+  "K4_pockets": 0,
+  "K4_pockets_with_interior_source": 0,
+  "K4_pockets_without_interior_source": [],
+  "identifiable": true,
+  "other_two_interior_two_terminal_pockets": 1301
+ },
+ "case9241pegase": {
+  "K4_pockets": 3,
+  "K4_pockets_with_interior_source": 3,
+  "K4_pockets_without_interior_source": [],
+  "identifiable": true,
+  "other_two_interior_two_terminal_pockets": 1800
+ },
+ "case_ACTIVSg10k": {
+  "K4_pockets": 0,
+  "K4_pockets_with_interior_source": 0,
+  "K4_pockets_without_interior_source": [],
+  "identifiable": true,
+  "other_two_interior_two_terminal_pockets": 1818
+ },
+ "case13659pegase": {
+  "K4_pockets": 1,
+  "K4_pockets_with_interior_source": 1,
+  "K4_pockets_without_interior_source": [],
+  "identifiable": true,
+  "other_two_interior_two_terminal_pockets": 1909
+ },
+ "case_ACTIVSg25k": {
+  "K4_pockets": 0,
+  "K4_pockets_with_interior_source": 0,
+  "K4_pockets_without_interior_source": [],
+  "identifiable": true,
+  "other_two_interior_two_terminal_pockets": 4648
+ },
+ "case_ACTIVSg70k": {
+  "K4_pockets": 1,
+  "K4_pockets_with_interior_source": 1,
+  "K4_pockets_without_interior_source": [],
+  "identifiable": true,
+  "other_two_interior_two_terminal_pockets": 16619
+ }
+}

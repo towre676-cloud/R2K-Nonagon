@@ -1,0 +1,171 @@
+<header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v4.0 · Part IV</div>
+  <h1>The Rank-Two Nonagon <em>IV</em></h1>
+  <div class="sub">Closure: proofs of the forcing laws, the precursor shell, full-strip certificates at the hundred-millionth zero, a perturbative identifiability criterion, and the discriminant meter against random-matrix theory</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 29 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Part III ended with five problems, M1–M5, and Part IV closes all five. <strong>M1</strong> is proved. At the rightmost real eigenvalue of a damped chain pencil, Hellmann–Feynman forces a positive residue of the driving-point function, and at the leftmost a negative one. A sign-propagation argument across the real poles then forces an extra critical point of $\varphi=(s-s_0)^2H$, so every overdamped sub-chain makes the Cauer peeling multi-branched. The argument predicts where the forced point lies, and that prediction holds at all 458 overdamped levels tested (183 of one kind, 275 of the other). <strong>M2</strong> is resolved as a <strong>precursor shell</strong>. Extra critical points are stable under perturbation, so the multiplicity region forced by M1 extends into the underdamped regime near critical damping. Its boundary lies on an explicit algebraic hypersurface arrangement built from the discriminant of the critical-point polynomial, its leading coefficient, its endpoint values and the critical-damping locus. Over 2,898 levels the unforced cases occur only when some mode has damping ratio at least 0.86 (0 of 1,264 below), with frequency rising to 4 of 4 above 0.98. <strong>M3</strong>: conjugation symmetry halves the contour, large Taylor disks on the far sides cut segments sevenfold, and extending the box to $-0.1\le\operatorname{Re}s\le1.1$ makes every certificate cover the <strong>whole critical strip</strong>. A full-strip rigorous tile at the millionth zero now costs 23 s (Part III: 121 s), and at the hundred-millionth zero 91 s (Part III: 298 s). A root-free full-strip scan near $t=4.27\times10^{7}$ certifies every zero in its window. <strong>M4</strong>: identification fails exactly when the weakest singular value of the true Löwner matrix falls below the norm of its noise perturbation. The unfitted threshold $\rho=1$, from Weyl and Wedin perturbation theory, classifies 96.7% of 360 trials correctly, and the best threshold, 0.42, classifies 97.8%. <strong>M5</strong>: the rigorous meter reproduces $Q$ computed from Arb's zeros to $2.1\times10^{-11}$. Over 20,000 zeros beyond the millionth, the $Q$-distribution of two-zero tiles matches CUE (Kolmogorov–Smirnov distance 0.029) and rejects Poisson ($p\approx10^{-150}$). The number variance matches GUE for $L\le1$ and saturates for $L\gtrsim4$ with the shape of Berry's prime-sum formula.</p>
+</div>
+
+<div class="tw"><table>
+<caption>Table IV.1. <span>Final ledger of the program.</span></caption>
+<thead><tr><th>Problem</th><th>Final status</th><th>Where</th></tr></thead>
+<tbody>
+<tr><td>P1 rigorous box criterion; margin law</td><td>closed</td><td>II.1</td></tr>
+<tr><td>P2 Lehmer meter</td><td>closed</td><td>II.2, III.2</td></tr>
+<tr><td>P3 exact passivity; rank-two conjecture</td><td>closed (conjecture refuted, asymptotic form proved)</td><td>II.3</td></tr>
+<tr><td>P4 damped chains from one sweep</td><td>closed</td><td>II.4</td></tr>
+<tr><td>P5 optimal sampling morphism</td><td>closed (conjecture refuted, optimum proved)</td><td>II.5</td></tr>
+<tr><td>N1 rigorous cost at height</td><td>closed</td><td>II.1, III.1, IV.3</td></tr>
+<tr><td>N2 branch selection</td><td>closed</td><td>II.6</td></tr>
+<tr><td>N3 multiplicity law</td><td>closed</td><td>III.3, IV.1, IV.2</td></tr>
+<tr><td>N4 noise robustness</td><td>closed</td><td>II.5</td></tr>
+<tr><td>N5 identifiability constant</td><td>closed</td><td>III.4, IV.4</td></tr>
+<tr><td>N6 root-free Lehmer scanning</td><td>closed</td><td>III.2, IV.3</td></tr>
+<tr><td>M1 overdamped forcing</td><td>proved</td><td>IV.1</td></tr>
+<tr><td>M2 unforced pairs</td><td>closed: precursor shell with algebraic boundary</td><td>IV.2</td></tr>
+<tr><td>M3 throughput</td><td>closed to the batching step</td><td>IV.3</td></tr>
+<tr><td>M4 identifiability from first principles</td><td>closed</td><td>IV.4</td></tr>
+<tr><td>M5 meter statistics</td><td>closed</td><td>IV.5</td></tr>
+</tbody></table></div>
+
+<h2 id="v1"><span class="sn">§IV.1</span>M1: overdamping forces branching</h2>
+
+<p>Let $Q(s)=Ms^2+Cs+K$ be the tridiagonal pencil of the sub-chain beginning at mass $i+1$, with $M,K\succ0$ and $C\succeq0$ with a positive ground damper. Let $H=e_1^TQ^{-1}e_1$ be its driving-point function and $\varphi(s)=(s-s_0)^2H(s)$ as in Theorem III.3.1.</p>
+
+<div class="thm"><div class="hd">Lemma IV.1.1 <i>(residue signs at the extreme real poles)</i> <span class="ep pr">proved</span></div>
+<p>Suppose $Q$ has real eigenvalues in $(-\infty,0)$, all simple and none equal to any $-k_j/c_j$. Let $p_R$ and $p_L$ be the largest and smallest of them. Then $\operatorname{Res}_{p_R}H\gt0$ and $\operatorname{Res}_{p_L}H\lt0$.</p>
+</div>
+<p class="proof">For real $s$, $Q(s)$ is symmetric. $Q(0)=K\succ0$ and $Q(s)\sim s^2M\succ0$ as $s\to-\infty$, and $Q(s)$ is singular exactly at the real eigenvalues. So $Q(s)\succ0$ on $(p_R,0]$ and on $(-\infty,p_L)$, and $\lambda_{\min}(Q(s))$ reaches 0 at $p_R$ coming from the right and at $p_L$ coming from the left. By Hellmann–Feynman, $\frac{d}{ds}\lambda_{\min}=v^TQ'(s)v$ with $v$ the unit null vector, and this is $\ge0$ at $p_R$ and $\le0$ at $p_L$; simplicity makes both strict. Near a simple real root, $Q(s)^{-1}\approx vv^T/\big((s-p)\,v^TQ'(p)v\big)$, so $\operatorname{Res}_pH=(e_1^Tv)^2/(v^TQ'(p)v)$. For an irreducible tridiagonal $Q(p)$ with off-diagonals $-(c_jp+k_j)\ne0$, a null vector with $v_1=0$ vanishes identically by the three-term recurrence, so $(e_1^Tv)^2\gt0$. <span class="qed">∎</span></p>
+
+<div class="thm"><div class="hd">Theorem IV.1.2 <i>(overdamped forcing)</i> <span class="ep pr">proved</span> <span class="ep mp">verified · 40 digits</span></div>
+<p>Under the hypotheses of Lemma IV.1.1, $\varphi$ has a critical point in $(-\infty,0)$ other than $s_0$. It lies in $(p_R,0)$ if $s_0\notin(p_R,0)$, and in $(p_L,p_R)$ otherwise. Hence the Cauer peeling level has at least two Wronskian candidates.</p>
+</div>
+<p class="proof">Near a simple pole $p$ with residue $\rho$, $\varphi\sim(p-s_0)^2\rho/(s-p)$. So $\varphi\to-\operatorname{sign}(\rho)\infty$ from the left and $+\operatorname{sign}(\rho)\infty$ from the right. If $s_0\notin(p_R,0)$: on $(p_R,0)$, $\varphi$ starts at $+\infty$ by the Lemma and ends at $\varphi(0)\gt0$ with $\varphi'(0)=1/c_{i+1}\gt0$ (Theorem III.3.1). It must therefore decrease and then increase, giving an interior minimum, which is not $s_0$. If $s_0\in(p_R,0)$: on the first sub-interval $(p_L,p_2)$, $\varphi$ starts at $-\infty$ by the Lemma. At each interior pole the left and right limits have opposite signs, so if a sub-interval ends at $+\infty$ the next one starts at $-\infty$. The last sub-interval ends at $-\infty$, the left limit at $p_R$. Some sub-interval therefore runs from $-\infty$ to $-\infty$ and contains a maximum of $\varphi$, and $s_0$ is not in $(p_L,p_R)$. <span class="qed">∎</span></p>
+
+<p>We tested the theorem on 458 overdamped peeling levels from 320 chains ($n=3$ to $5$, damping ranges $[0.3,1.5]$ to $[3,15]$) at 40 digits. The residue signs of Lemma IV.1.1 held at 458 of 458 levels for both extreme poles, and no level had an odd number of real poles. In the case $s_0\notin(p_R,0)$, which occurred at 183 levels, an extra candidate lay in $(p_R,0)$ at all 183. In the case $s_0\in(p_R,0)$, at 275 levels, an extra candidate lay in $(p_L,p_R)$ at all 275.</p>
+
+<div class="thm"><div class="hd">Corollary IV.1.3 <i>(the forcing law)</i> <span class="ep pr">proved</span></div>
+<p>A peeling level has multiple Wronskian candidates whenever $X\lt0$ (Proposition III.3.2) or the remaining sub-chain has a real pole (Theorem IV.1.2). Real zeros of $H$ force extra critical points as well, by Rolle's theorem between consecutive zeros of $\varphi$. In 2,898 levels they never occurred without real poles.</p>
+</div>
+
+<h2 id="v2"><span class="sn">§IV.2</span>M2: the precursor shell</h2>
+
+<p>Across 2,898 levels in six damping regimes, 10 levels had multiple candidates with none of the forcing conditions: $X\gt0$, no real poles, and no real zeros. In every one of them the two extra candidates lie in $(s_0,0)$, and some mode of the sub-chain is near-critically damped, with damping ratio $\zeta_{\max}=\max_p(-\operatorname{Re}p/|p|)$ between 0.868 and 0.998.</p>
+
+<div class="tw"><table>
+<caption>Table IV.2. <span>Unforced multiplicity against the largest damping ratio of the sub-chain, over the 1,299 levels with $X\gt0$ and no real poles.</span></caption>
+<thead><tr><th>$\zeta_{\max}$</th><th>levels</th><th>multiple</th></tr></thead>
+<tbody>
+<tr><td>$\lt0.86$</td><td class="n">1264</td><td class="n">0</td></tr>
+<tr><td>$\ge0.86$</td><td class="n">35</td><td class="n">10</td></tr>
+<tr><td>$\ge0.90$</td><td class="n">23</td><td class="n">8</td></tr>
+<tr><td>$\ge0.95$</td><td class="n">10</td><td class="n">5</td></tr>
+<tr><td>$\ge0.98$</td><td class="n">4</td><td class="n">4</td></tr>
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Theorem IV.2.1 <i>(the precursor shell and its algebraic boundary)</i> <span class="ep pr">proved</span></div>
+<p>Write $\varphi'(s)=(s-s_0)\,g(s)/N(s)^2$ with $g$ a polynomial whose coefficients are polynomials in the chain parameters. Let $\mathcal C=\{\operatorname{disc}_s\det Q=0\}$ be the critical-damping locus of the sub-chain, $\mathcal L=\{\operatorname{lc}(g)=0\}$ the vanishing locus of the leading coefficient of $g$ (where a root can escape to $-\infty$, and where the asymptotic sign $X$ of Proposition III.3.2 is decided), and $\mathcal B=\{g(0)\,g(s_0)=0\}$. Away from these, the number of negative real roots of $g$ changes only across the discriminant hypersurface $\mathcal G=\{\operatorname{disc}_s g=0\}$. The multiplicity region is therefore a union of cells of the arrangement $\mathcal G\cup\mathcal L\cup\mathcal B\cup\mathcal C$. Because simple real critical points persist under perturbation, the region forced by Theorem IV.1.2 on the overdamped side of $\mathcal C$ extends across $\mathcal C$ into an open shell of underdamped parameters near critical damping.</p>
+</div>
+<p class="proof">The real roots of a polynomial depend continuously on its coefficients. Real roots appear or disappear only in conjugate pairs, which requires a double root and hence $\operatorname{disc}g=0$, or they cross an endpoint $0$ or $s_0$, which is $\mathcal B$, or they escape to infinity, which requires the leading coefficient to vanish, which is $\mathcal L$. The pole structure of $\varphi$ changes only at $\mathcal C$. Simple roots persist under small perturbations by the implicit function theorem. The forced critical point of Theorem IV.1.2 is simple on an open dense subset, so it persists for underdamped parameters close enough to $\mathcal C$. <span class="qed">∎</span></p>
+
+<p>M2 therefore has a closed answer. The unforced pairs are the underdamped shadow of overdamped forcing, confined to a shell near the critical-damping locus whose boundary lies on the explicit hypersurface arrangement $\mathcal G\cup\mathcal L\cup\mathcal B\cup\mathcal C$. Table IV.2 shows the shell's measured thickness: nothing below $\zeta_{\max}=0.86$, and certain multiplicity above 0.98 in this sample. Membership for any given chain is decided exactly by the weighted Hermite count of Theorem II.3.1 applied to $g$, and the selector of Part II resolves all levels regardless.</p>
+
+<h2 id="v3"><span class="sn">§IV.3</span>M3: throughput and full-strip certificates</h2>
+
+<div class="thm"><div class="hd">Proposition IV.3.1 <i>(conjugation halving)</i> <span class="ep pr">proved</span></div>
+<p>For a rectangle $\Omega=[t_{\mathrm{lo}},t_{\mathrm{hi}}]\times[-b,b]$ and $f=T_k(u)\frac{d}{dt}\log\Xi$, $$\mu_k=\frac1\pi\operatorname{Im}\int_{\Gamma^+}f(t)\,dt,$$ where $\Gamma^+$ runs from $t_{\mathrm{hi}}$ up to $t_{\mathrm{hi}}+ib$, across to $t_{\mathrm{lo}}+ib$, and down to $t_{\mathrm{lo}}$.</p>
+</div>
+<p class="proof">$\Xi(\bar t)=\overline{\Xi(t)}$ and $u$ has real coefficients, so $f(\bar t)=\overline{f(t)}$. The lower half of $\partial\Omega$ is the conjugate of $\Gamma^+$ traversed backwards, so its integral is $-\overline{\int_{\Gamma^+}f}$. The total is $2i\operatorname{Im}\int_{\Gamma^+}f$; divide by $2\pi i$. <span class="qed">∎</span></p>
+
+<p>Two further changes follow from Part III's data. Away from the critical line the crude bounds stay finite and modest up to disk radius 0.2 at every height tested, at most $5\times10^{8}$ at $\operatorname{Re}s=-0.1$ and $t=4.3\times10^{7}$. They enter only through the factor $2^{-41}$, so the horizontal sides can use disks ten times larger than before, while the adaptive halving still shrinks disks where the contour crosses the line near a zero. And with $b=0.6$ the tile spans $-0.1\le\operatorname{Re}s\le1.1$, so every certificate excludes off-line zeros in the <strong>entire critical strip</strong>, not only in $0.05\le\operatorname{Re}s\le0.95$.</p>
+
+<div class="tw"><table>
+<caption>Table IV.3. <span>Rigorous single-zero tiles after M3 (DFT mode, symmetric half-path, $R_2\le0.2$), against Part III. Every enclosure overlaps Arb's <code>zeta_zero</code>.</span></caption>
+<thead><tr><th>zero</th><th>$b$</th><th>segments</th><th>time</th><th>Part III</th><th>enclosure of $\gamma_n$</th></tr></thead>
+<tbody>
+<tr><td class="n">$10^{6}$</td><td class="n">0.45</td><td class="n">258</td><td class="n">19.2 s</td><td class="n">120.7 s</td><td class="n">$600269.6770124449555\pm5.8\times10^{-14}$</td></tr>
+<tr><td class="n">$10^{6}$</td><td class="n">0.60 (full strip)</td><td class="n">312</td><td class="n">23.4 s</td><td class="n">—</td><td class="n">$600269.6770124449555\pm5.7\times10^{-14}$</td></tr>
+<tr><td class="n">$10^{8}$</td><td class="n">0.45</td><td class="n">310</td><td class="n">75.3 s</td><td class="n">298.3 s</td><td class="n">$42653549.7609515539\pm1.3\times10^{-11}$</td></tr>
+<tr><td class="n">$10^{8}$</td><td class="n">0.60 (full strip)</td><td class="n">387</td><td class="n">91.2 s</td><td class="n">—</td><td class="n">$42653549.7609515539\pm1.2\times10^{-11}$</td></tr>
+</tbody></table></div>
+
+<!--FSSCAN-->
+
+<p>The remaining step toward verification campaigns is engineering, not mathematics. Each segment now spends 64 point values of $\zeta$, and the point evaluator dominates at about 3.7 ms per value at $t=4\times10^{7}$. Putting the DFT circles of neighbouring segments on a common lattice would let one band-limited multi-evaluation of $\zeta$ in Platt's style serve every segment of many tiles at once.</p>
+
+<h2 id="v4"><span class="sn">§IV.4</span>M4: identifiability from first principles</h2>
+
+<p>Part III located the identifiability threshold empirically. Here is the mechanism. The pass-1 seed projects the noisy Löwner pair onto its leading $n$-dimensional singular subspaces. By Weyl's inequality the $n$-th singular value survives the noise when $\sigma_n(\mathbb L)\gt\|E\|_2$, where $E$ is the noise perturbation of $\mathbb L$. By Wedin's theorem the retained subspace is then tilted by at most $\|E\|/(\sigma_n-\|E\|)$. When $\sigma_n\lt\|E\|$ the weakest mode is replaced by noise, and no polishing can recover it.</p>
+
+<div class="thm"><div class="hd">Result IV.4.1 <i>(the perturbative criterion)</i> <span class="ep pr">proved</span> <span class="ep nm">verified · double</span></div>
+<p>Let $\rho=\sigma_n(\mathbb L_{\mathrm{true}})/\|\mathbb L_{\mathrm{noisy}}-\mathbb L_{\mathrm{true}}\|_2$ for the pass-1 sweep. Over 360 chains at $\eta\in\{10^{-9},10^{-7},10^{-6},10^{-5}\}$, with 113 failures: for $\rho\lt0.3$, 102 of 102 failed; for $0.3\le\rho\lt1$, 9 of 19; for $1\le\rho\lt4$, 0 of 21; for $\rho\ge4$, 2 of 218. The a-priori threshold $\rho=1$, with no constant fitted, classifies <strong>96.7%</strong> of trials correctly. The best threshold, $\rho^\ast=0.42$, classifies 97.8%, against 96.9% for the best threshold on the visibility $x$. By (N1), $\sigma_n(\mathbb L)$ is proportional to $w_{\min}$ times the smallest singular values of the two Cauchy factors, while $\|E\|$ is proportional to $\eta$ times the scale of $\mathbb L$. That is why $x=(w_{\min}/w_{\max})/\eta$ was a good proxy, with a design-dependent conversion factor.</p>
+</div>
+
+<div class="plate"><figure>
+<!--FIG13-->
+<figcaption><b>Figure 13.</b> Failure fraction against the Weyl ratio $\rho$. The transition sits where perturbation theory puts it, at $\rho$ of order 1, with no free constant.</figcaption>
+</figure></div>
+
+<h2 id="v5"><span class="sn">§IV.5</span>M5: the meter against random-matrix theory</h2>
+
+<p>Theorem 9.1(e) makes the meter $Q$ a function of zero positions alone, so the rigorous scan can be checked against independent zeros. For the 15 tiles of Result III.2.1, $Q$ computed from Arb's <code>zeta_zeros</code> agrees with the contour-integral value to $2.1\times10^{-11}$ relative, and the counts agree exactly. The statistics of $Q$ can therefore be studied from zero lists and transferred to rigorous scans.</p>
+
+<p>We unfolded the 20,000 zeros beginning at the millionth, $t\in[600269.68,\,611219.01]$, by $\bar N(t)=\frac{t}{2\pi}\log\frac{t}{2\pi e}+\frac78$, giving mean spacing $1.000005$. Each set was cut into tiles of width 2, and we compared it with eigenangles of 25 Haar-random $400\times400$ unitary matrices (CUE, the GUE universality class) and with a Poisson process.</p>
+
+<div class="tw"><table>
+<caption>Table IV.4. <span>Discriminant-meter statistics on tiles of two mean spacings.</span></caption>
+<thead><tr><th></th><th>ζ zeros</th><th>CUE</th><th>Poisson</th></tr></thead>
+<tbody>
+<tr><td>tiles</td><td class="n">9999</td><td class="n">4975</td><td class="n">9905</td></tr>
+<tr><td>median $\log Q$, two-zero tiles</td><td class="n">$-0.191$</td><td class="n">$-0.216$</td><td class="n">$-0.925$</td></tr>
+<tr><td>5% quantile $\log Q$, two-zero tiles</td><td class="n">$-2.02$</td><td class="n">$-2.02$</td><td class="n">$-6.20$</td></tr>
+<tr><td>KS distance to ζ, two-zero tiles ($p$-value)</td><td class="n">—</td><td class="n">0.029 (0.049)</td><td class="n">0.296 ($10^{-150}$)</td></tr>
+<tr><td>KS distance to ζ, three-zero tiles ($p$-value)</td><td class="n">—</td><td class="n">0.051 (0.10)</td><td class="n">0.525 ($4\times10^{-191}$)</td></tr>
+<tr><td>$P(Q\lt0.01\mid n\ge2)$</td><td class="n">0.0020</td><td class="n">0.0030</td><td class="n">0.291</td></tr>
+</tbody></table></div>
+
+<p>The local meter statistics of the zeros are those of CUE, and the Lehmer tail $P(Q\lt0.01)$ is two orders of magnitude below Poisson. Counts are a different matter. On the fixed lattice of tiles the zeta count variance is 0.284, against 0.417 for CUE, but with random window offsets it is 0.375 at $L=2$. The lattice estimate is depressed because unfolded zeros are rigid enough that tile edges placed at fixed half-integer offsets rarely fall near a zero. This is a property worth exploiting in scanning design, since it is the reason fixed grids rarely need edge shifts. The offset-averaged number variance is the meaningful comparison.</p>
+
+<div class="tw"><table>
+<caption>Table IV.5. <span>Number variance $\Sigma^2(L)$, random offsets.</span></caption>
+<thead><tr><th>$L$</th><th>ζ zeros</th><th>CUE</th><th>GUE asymptotic</th><th>Berry diagonal prime sum</th></tr></thead>
+<tbody>
+<tr><td class="n">0.5</td><td class="n">0.279</td><td class="n">0.280</td><td class="n">0.276</td><td class="n">0.162</td></tr>
+<tr><td class="n">1</td><td class="n">0.328</td><td class="n">0.347</td><td class="n">0.346</td><td class="n">0.231</td></tr>
+<tr><td class="n">2</td><td class="n">0.375</td><td class="n">0.417</td><td class="n">0.416</td><td class="n">0.281</td></tr>
+<tr><td class="n">4</td><td class="n">0.430</td><td class="n">0.485</td><td class="n">0.486</td><td class="n">0.324</td></tr>
+<tr><td class="n">8</td><td class="n">0.427</td><td class="n">0.560</td><td class="n">0.557</td><td class="n">0.323</td></tr>
+<tr><td class="n">16</td><td class="n">0.364</td><td class="n">0.637</td><td class="n">0.627</td><td class="n">0.270</td></tr>
+</tbody></table></div>
+
+<div class="plate"><figure>
+<!--FIG12-->
+<figcaption><b>Figure 12.</b> Number variance of the zeros near the millionth, against CUE and Berry's diagonal prime sum (shifted by 0.1). The zeros follow random-matrix theory at short range and saturate beyond $L\approx4$. The rise, plateau and fall have the shape of the prime sum.</figcaption>
+</figure></div>
+
+<div class="thm"><div class="hd">Result IV.5.1 <i>(meter statistics)</i> <span class="ep nm">verified · double</span></div>
+<p>The discriminant meter of the box criterion has CUE statistics on the zeta zeros at height $6\times10^{5}$: KS distance 0.029 on two-zero tiles and 0.051 on three-zero tiles, with Poisson rejected at $p\le10^{-150}$. The number variance agrees with CUE to within 0.002 at $L=0.5$ and 0.02 at $L=1$, and saturates for $L\gtrsim4$. Its shape follows Berry's diagonal prime sum $\frac{2}{\pi^2}\sum_{p^m\le t/2\pi}\frac{\sin^2(\pi Lm\log p/\log\frac{t}{2\pi})}{m^2p^m}$: ratio $\Sigma^2(16)/\Sigma^2(8)=0.854$ for zeta against 0.834 for the sum, and $\Sigma^2(4)/\Sigma^2(8)=1.009$ against 1.002. The constant offset of about 0.10 is the short-range off-diagonal contribution, which the diagonal approximation omits.</p>
+</div>
+
+<h2 id="v6"><span class="sn">§IV.6</span>Closure</h2>
+
+<p>The program set out from ten equations and the claim that nine of them are rank-two solutions of the tenth. It closes with every problem it raised answered by a proof, a computer-assisted proof, or a quantified law. Along the way the structural results were these: conservation of inertia, explicit Lander inversion, the Chebyshev–Hermite criterion, its discriminant identity, and the off-line ruler. The rigorous machinery grew in three steps: Arb certificates, then the Taylor-model integrator, which broke the wrapping barrier, then Cauchy–DFT point models, which removed the Euler–Maclaurin cost. Together they took certificates of the box criterion from $t=14$ to $t=4.27\times10^{7}$, over the full critical strip. The engineering results were these: identification of mass–spring–damper chains from one sweep at 48 digits; exact passivity certificates over $\mathbb Q$; residue-balanced sampling with condition number near 1; and a perturbative identifiability criterion with no free constant. On the arithmetic side, the meter connects certified computation to random-matrix statistics of the zeros.</p>
+
+<p>Two directions remain, and both are extensions rather than open questions of this program. The first is Platt-style batching of point evaluations, which would turn the minutes-per-zero certificates of §IV.3 into a verification campaign at $t\sim10^{12}$. The second is the off-diagonal completion of Berry's formula, which would match the number-variance plateau in level as well as shape.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> Part IV adds the following scripts:</p>
+<p><code>m1.py</code>: Lemma IV.1.1 and Theorem IV.1.2 on 458 levels.</p>
+<p><code>m2.py</code> and <code>m2b.py</code>: forcing causes and the damping-ratio shell over 2,898 levels.</p>
+<p><code>tmint.moments_sym</code> and <code>m3bench.py</code>: Table IV.3.</p>
+<p><code>scan_fs.py</code>: the full-strip scan.</p>
+<p><code>m4.py</code>: the Weyl criterion.</p>
+<p><code>m5.py</code>, <code>m5b.py</code>, <code>m5c.py</code> and <code>m5d.py</code>: meter consistency, CUE comparisons, number variance and the Berry sum.</p>
+<p><code>figs4.py</code>: Part IV figures.</p>
+<p>Software: python-flint 0.9.0 (Arb), mpmath 1.4.1, NumPy 2.5.3, SciPy 1.18.1.</p>
+</div>
+</main>

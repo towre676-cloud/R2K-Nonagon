@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "ordinate_count": 100000,
+  "exact_empirical_cases": 30,
+  "certified_quantile_targets": 90,
+  "quantile_gauss_panels": 166,
+  "quantile_euler_point_evaluations": 2571,
+  "continuous_height_cases": 30,
+  "continuous_height_euler_point_evaluations": 1830,
+  "continuous_height_gauss_panels": 105,
+  "continuous_height_max_combined_radius": 2.3860988599374444e-08,
+  "continuous_height_max_absolute_primary_shift": 2.493417970161893e-05,
+  "continuous_height_max_absolute_nominal_z": 2.441942165756638,
+  "primary_summary": {
+    "replication": {
+      "cases": 18,
+      "max_absolute_primary_nominal_z": 1.4714948986319054,
+      "max_model_radius": 1.760000006845175e-08,
+      "max_empirical_ordinate_error": 6.098851753274678e-11,
+      "max_combined_deterministic_radius": 1.7627655333159876e-08,
+      "all_deterministic_targets_pass": true,
+      "max_absolute_anchor_grid_shift": 7.439126182495759e-05,
+      "max_Simpson_vs_finite_error": 3.662529390819218e-09,
+      "max_GUE_Simpson_error": 2.8606454194174315e-09
+    },
+    "held_out": {
+      "cases": 12,
+      "max_absolute_primary_nominal_z": 2.4419421499595426,
+      "max_model_radius": 5.480000016266917e-09,
+      "max_empirical_ordinate_error": 1.0915167328658684e-10,
+      "max_combined_deterministic_radius": 5.579151702603888e-09,
+      "all_deterministic_targets_pass": true,
+      "max_absolute_anchor_grid_shift": 3.628535795585641e-05,
+      "max_Simpson_vs_finite_error": 2.8258947077929574e-09,
+      "max_GUE_Simpson_error": 2.8606454194174315e-09
+    },
+    "all": {
+      "cases": 30,
+      "max_absolute_primary_nominal_z": 2.4419421499595426,
+      "max_model_radius": 1.760000006845175e-08,
+      "max_empirical_ordinate_error": 1.0915167328658684e-10,
+      "max_combined_deterministic_radius": 1.7627655333159876e-08,
+      "all_deterministic_targets_pass": true,
+      "max_absolute_anchor_grid_shift": 7.439126182495759e-05,
+      "max_Simpson_vs_finite_error": 3.662529390819218e-09,
+      "max_GUE_Simpson_error": 2.8606454194174315e-09
+    }
+  },
+  "extended_origin_height_interval": [
+    74920,
+    22316669
+  ],
+  "extended_origin_ratio_upper": "[2.98765399021018166875819789553177778292513585712820209781 +/- 2.36e-57]"
+}

@@ -1,0 +1,30 @@
+{
+  "Cinv": "0.001",
+  "L": "0.001",
+  "R0": "0.1",
+  "frequency_convention": "s=+i*2*pi*f_hz",
+  "model_id": "rl_upturn_example",
+  "representation": "positive_real_debye_v1",
+  "rl_terms": [
+    {
+      "b": "0.6",
+      "tau": "0.01"
+    }
+  ],
+  "terms": [
+    {
+      "a": "1",
+      "tau": "1"
+    }
+  ],
+  "units": {
+    "Cinv": "1/farad",
+    "L": "henry",
+    "R0": "ohm",
+    "Z": "ohm",
+    "a": "ohm",
+    "b": "ohm",
+    "s": "1/second",
+    "tau": "second"
+  }
+}

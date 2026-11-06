@@ -1,0 +1,140 @@
+<header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v8.0 · Part VIII</div>
+  <h1>The Rank-Two Nonagon <em>VIII</em></h1>
+  <div class="sub">Access and resolution: a hidden network recovered exactly from one port and $n(n+1)/2$ calibrated interventions, the minimum proved, the noise floor matched, and the number-variance offset closed</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 30 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Part VII established that one driving-point response cannot reveal a network's topology: paths and triangles, damped or not, can be exact twins. Part VIII answers the question that follows, namely how much experimental access is needed to reveal the whole network, and how accurately. The measurement port stays fixed. The added access is the ability to stiffen the grounding of hidden nodes by known amounts. <strong>Exact recovery.</strong> For a connected grounded spring network on $n$ nodes, one baseline measurement, two grounding strengths at each hidden node and one simultaneous grounding of each hidden pair determine the stiffness matrix exactly, through an explicit inverse. That is $1+2(n-1)+\binom{n-1}{2}=n(n+1)/2$ scalar measurements, equal to the number of free entries of a symmetric matrix. The pair equation is quadratic. Its discriminant factorizes, and the physical root is selected by the path-product inequality of inverse M-matrices, so the inverse is unique. No modal simplicity, cyclicity or known masses are needed. <strong>Minimality and its boundary.</strong> No protocol of fewer scalar measurements, adaptive or not, can be injective on any open set of networks. If a node cannot be intervened on, exactly its Kron reduction is recoverable and nothing more: a hidden star centre and the corresponding triangle are indistinguishable. <strong>Resolution.</strong> The single-node design has a closed-form optimum: strength $\theta=1/(\sqrt2\,G_{jj})$ with error factor $2+2\sqrt2$ in units of $G_{jj}/G_{0j}^2$. A two-point argument shows that no protocol of $m$ measurements can estimate a node's grounding to better than order $\sigma/(\sqrt m\,G_{0j}^2)$. On weak-link and graph-distance families the protocol attains that rate with a constant factor that does not drift, so the dependence on the port-to-node compliance $G_{0j}$ cannot be improved. <strong>Dynamics.</strong> At real Laplace arguments the pencil $K+sC+s^2M$ keeps the grounded M-matrix structure. The protocol at $s=0$ and two positive $s$ recovers $K$, $C$ and $M$, and it separates both twins of Part VII exactly. <strong>Closure.</strong> The height-independent number-variance offset of Part VII is a quadrature convention: the integral was started at $a=10^{-4}$ instead of 0, which omits $2La-a^2$ (0.0032 at $L=16$). With the origin restored and the remainder bounded by $3.2\times10^{-11}$, every residual at $L\ge8$ falls to within $\pm0.0007$, and Observation VII.3.2 is withdrawn.</p>
+</div>
+
+<h2 id="d0"><span class="sn">§VIII.0</span>Closure: the omitted origin</h2>
+
+<p>The number variance is $\Sigma^2(L)=L-2\int_0^L(L-x)\,(1-R_2(x))\,dx$. The code of Parts V–VII evaluated the pair correlation on a grid starting at $x=a=10^{-4}$, to avoid the removable singularity of the Bogomolny–Keating formula at the origin, and integrated from $a$. The omitted piece is
+$$\Delta(L)=2\int_0^a(L-x)\,(1-R_2(x))\,dx=2La-a^2-2\int_0^a(L-x)\,R_2(x)\,dx .$$
+Every computed prediction, Bogomolny–Keating and GUE alike, was therefore too large by $\Delta(L)$, which is $1.6\times10^{-3}$ at $L=8$ and $3.2\times10^{-3}$ at $L=16$. The Part VI test that halved the quadrature grid kept the same left endpoint, so it could not see this. The GUE column makes the error visible directly. Subtracting $2La-a^2$ from the stored GUE values reproduces the exact sine-kernel number variance, integrated from 0, to within the trapezoid error of $2\times10^{-5}$ at every $L$.</p>
+
+<div class="thm"><div class="hd">Proposition VIII.0.1 <i>(the origin correction)</i> <span class="ep pr">proved</span></div>
+<p>The remainder satisfies $0\le2\int_0^a(L-x)R_2(x)\,dx\le\tfrac23 c\,L\,a^3$, where $c=\sup_{0&lt;x\le a}R_2(x)/x^2$. Evaluated with every factor in 50-digit arithmetic, including the Euler products, the ratio $R_2(\varepsilon)/\varepsilon^2$ at $\varepsilon=10^{-6},10^{-5},10^{-4}$ is constant to nine digits at each height. It equals 2.5108, 2.7623 and 2.9140 at $t\approx7.5\times10^4$, $6.0\times10^5$ and $5.0\times10^6$, rising toward the GUE value $\pi^2/3=3.2899$ as $t\to\infty$. With $c\le3$ the remainder is below $3.2\times10^{-11}$ for $L\le16$. The corrected prediction is the stored one minus $2La-a^2$, to eleven digits.</p></div>
+
+<p>The double-precision evaluation used in Parts V–VII cannot be pushed toward the origin, because the two $r^{-2}$ singularities in the formula cancel. At $\varepsilon=10^{-7}$ the cancellation error exceeds 0.1. The analytic correction is therefore the right regeneration, not a finer grid. A side result is that the curvature of $R_2$ at the origin is measurably below its GUE value at finite height, by 24% at $t\approx7.5\times10^4$ and by 11% at $t\approx5\times10^6$. This is the familiar arithmetic suppression of small gaps, seen here in the second derivative.</p>
+
+<div class="tw"><table>
+<caption>Table VIII.1. <span>Residuals $\Sigma^2_\zeta-\Sigma^2_{\rm BK}$ before and after the origin correction, at the three windows of Part VI. The block standard error is shown for scale only (see §VII.3 on its interpretation).</span></caption>
+<thead><tr><th>window</th><th>$L$</th><th>$2La-a^2$</th><th>residual, Parts VI–VII</th><th>residual, corrected</th><th>block se</th></tr></thead>
+<tbody>
+<!--ORIGINROWS-->
+</tbody></table></div>
+
+<p>After the correction the residuals carry no common sign, no height pattern and no growth with $L$. At $L\ge4$ every one is within $\pm0.0007$. Observation VII.3.2 is withdrawn: the "height-independent offset" was this quadrature convention. The same offset sits in the Bogomolny–Keating and GUE columns of Part V (Table V.1). There it inflated the apparent residuals at $L=8$ and $L=16$ by $1.6\times10^{-3}$ and $3.2\times10^{-3}$, and Part V's large-$L$ discrepancy is withdrawn on the same grounds. With the correction, the height-averaged Bogomolny–Keating/ratios pair correlation describes the zeta number variance to within the stability of the sequence at all three heights and all $L\le16$. That remains a numerical confirmation of a conjectural formula, not a proof of it.</p>
+
+<h2 id="d1"><span class="sn">§VIII.1</span>One port, calibrated interventions, the whole network</h2>
+
+<p>Let $K\in\mathbb R^{n\times n}$ be the stiffness matrix of a connected spring network with non-negative grounding springs, not all zero. Then $K$ is an irreducible non-singular M-matrix, and its compliance $G=K^{-1}$ is entrywise positive. Node 0 is the measurement port. An intervention adds known grounding stiffness $\theta_j\ge0$ at hidden nodes, and each experiment returns one scalar, the static port compliance
+$$h(\Theta)=e_0^{\mathsf T}(K+\Theta)^{-1}e_0,\qquad \Theta=\operatorname{diag}(0,\theta_1,\dots,\theta_{n-1}).$$
+Differentiating at $\Theta=0$ gives $\partial_jh=-G_{0j}^2$ and $\partial_i\partial_jh=2G_{0i}G_{ij}G_{0j}$. Since $G_{0j}&gt;0$, the derivatives determine $G$ and hence $K$. One scalar response function therefore contains the whole labelled weighted graph once local stiffening is available. Derivatives are not measurements, however. The finite protocol replaces them with exact identities.</p>
+
+<div class="thm"><div class="hd">Lemma VIII.1.1 <i>(single node and pair responses)</i> <span class="ep pr">proved</span></div>
+<p>By Sherman–Morrison, for a single node $j$,
+$$d_j(\theta)=h(0)-h(\theta e_je_j^{\mathsf T})=\frac{\theta\,G_{0j}^2}{1+\theta G_{jj}},\qquad\text{so}\qquad \frac1{d_j(\theta)}=\frac1{G_{0j}^2}\cdot\frac1\theta+\frac{G_{jj}}{G_{0j}^2}.$$
+By the $2\times2$ Woodbury identity, for a pair $i\ne j$ stiffened by $\theta_i,\theta_j$, with $a=\theta_i^{-1}+G_{ii}$, $b=\theta_j^{-1}+G_{jj}$ and $x=G_{ij}$,
+$$\delta_{ij}=h(0)-h(\theta_ie_ie_i^{\mathsf T}+\theta_je_je_j^{\mathsf T})=\frac{G_{0i}^2\,b+G_{0j}^2\,a-2G_{0i}G_{0j}\,x}{ab-x^2}.$$</p></div>
+
+<div class="thm"><div class="hd">Theorem VIII.1.2 <i>(exact recovery with $n(n+1)/2$ measurements)</i> <span class="ep pr">proved</span></div>
+<p>Fix distinct strengths $\theta',\theta''&gt;0$ and a pair strength $\theta_p&gt;0$. Measure $h(0)$; $h(\theta'e_je_j^{\mathsf T})$ and $h(\theta''e_je_j^{\mathsf T})$ for each hidden $j$; and $h(\theta_p e_ie_i^{\mathsf T}+\theta_pe_je_j^{\mathsf T})$ for each hidden pair. That is $1+2(n-1)+\binom{n-1}2=n(n+1)/2$ measurements, and they determine $K$ uniquely through
+$$G_{00}=h(0),\qquad \frac1{G_{0j}^2}=\frac{d_j(\theta')^{-1}-d_j(\theta'')^{-1}}{\theta'^{-1}-\theta''^{-1}},\qquad G_{jj}=G_{0j}^2\Bigl(\frac1{d_j(\theta')}-\frac1{\theta'G_{0j}^2}\Bigr),\qquad G_{0j}=+\sqrt{G_{0j}^2},$$
+$$G_{ij}=\frac{G_{0i}G_{0j}-\sqrt{(\delta_{ij}a-G_{0i}^2)(\delta_{ij}b-G_{0j}^2)}}{\delta_{ij}},\qquad K=G^{-1}.$$</p></div>
+
+<p><em>Proof.</em> The single-node formulas follow from the linear relation in $1/\theta$ of Lemma VIII.1.1, and the positive square root is forced by $G_{0j}&gt;0$. For the pair, clearing the denominator gives $\delta x^2-2G_{0i}G_{0j}x+(G_{0i}^2b+G_{0j}^2a-\delta ab)=0$. Its discriminant is $G_{0i}^2G_{0j}^2-\delta(G_{0i}^2b+G_{0j}^2a)+\delta^2ab=(\delta a-G_{0i}^2)(\delta b-G_{0j}^2)$, and both factors are non-negative because $u^{\mathsf T}A^{-1}u\ge u_1^2/A_{11}$ for $A=\Theta_S^{-1}+G_S$ positive definite and $u=(G_{0i},G_{0j})$. To select the root, normalize $\alpha=G_{0i}/\sqrt a$, $\beta=G_{0j}/\sqrt b$ and $\xi=x/\sqrt{ab}\in(-1,1)$. Then $\delta=(\alpha^2+\beta^2-2\alpha\beta\xi)/(1-\xi^2)$, and a direct expansion gives
+$$\delta\xi-\alpha\beta=-\frac{(\alpha-\beta\xi)(\beta-\alpha\xi)}{1-\xi^2}$$
+at either root. Inverse M-matrices have the path-product property $G_{0j}G_{ji}\le G_{0i}G_{jj}$ (Johnson–Smith). Hence $\alpha-\beta\xi\propto G_{0i}\theta_j^{-1}+(G_{0i}G_{jj}-G_{0j}G_{ij})&gt;0$, and symmetrically $\beta-\alpha\xi&gt;0$. At the true root, therefore, $\delta\xi&lt;\alpha\beta$, which is the minus root. At the other root, $\delta\xi&gt;\alpha\beta$ whenever the discriminant is positive, so one of the two physical inequalities fails. The inverse is unique. $\square$</p>
+
+<p>The strict inequality comes from the $\theta_j^{-1}$ term, not from the path-product property itself. That property holds with equality whenever $j$ separates $0$ from $i$ (a cut vertex), and 31 of the 294 pairs checked below are such cases. The root selection is the step where the physics enters. Without it the pair data would admit two compliance matrices.</p>
+
+<div class="thm"><div class="hd">Theorem VIII.1.3 <i>(the count is minimal)</i> <span class="ep pr">proved</span></div>
+<p>Let a protocol consist of $m$ scalar measurements $h(\Theta_1),\dots,h(\Theta_m)$, where each $\Theta_k$ is fixed in advance or chosen as a real-analytic function of earlier results. If $m&lt;n(n+1)/2$, the protocol is not injective on any open subset of grounded connected networks.</p></div>
+
+<p><em>Proof.</em> Admissible stiffness matrices form an open subset of the $n(n+1)/2$-dimensional space of symmetric matrices: strictly negative off-diagonals on the edges and strictly positive row sums are open conditions, and any small symmetric perturbation of a complete-graph network with positive grounds stays admissible. The protocol map $K\mapsto(h(\Theta_k))_{k\le m}$ is real-analytic. Its rank is at most $m$ everywhere, and on the open dense set where the rank equals its generic value $r\le m$, the constant-rank theorem gives fibres that are submanifolds of dimension $n(n+1)/2-r&gt;0$. $\square$</p>
+
+<p>The protocol of Theorem VIII.1.2 therefore meets the information bound exactly. It also needs no modal assumptions. The complete graph $K_4$ with equal springs and grounds has a triply repeated eigenvalue, where modal methods lose cyclicity, and it is recovered exactly.</p>
+
+<div class="thm"><div class="hd">Theorem VIII.1.4 <i>(inaccessible nodes: the Kron boundary)</i> <span class="ep pr">proved</span></div>
+<p>Let $A\ni0$ be the set of nodes that can be intervened on, and $H$ the rest. For every $\Theta$ supported on $A$, $h(\Theta)=e_0^{\mathsf T}(K/K_{HH}+\Theta_A)^{-1}e_0$, where $K/K_{HH}=K_{AA}-K_{AH}K_{HH}^{-1}K_{HA}$ is the Kron reduction. Consequently the intervention data determine the Kron-reduced network exactly, using $|A|(|A|+1)/2$ measurements, and two networks are indistinguishable if and only if their Kron reductions onto $A$ coincide.</p></div>
+
+<p>The proof is block Gaussian elimination: inverting $K+\Theta$ with $\Theta_{HH}=0$ leaves the $AA$ block of the inverse equal to $(K/K_{HH}+\Theta_A)^{-1}$. Kron reduction is far from injective. A star with an inaccessible centre and leg weights $1,2,3$ to nodes $0,1,2$ reduces to the triangle with weights $1/3$, $1/2$ and $1$ (the Y–Δ rule $w_iw_j/\sum w$). The two give identical $h$ for every intervention on $\{1,2\}$, and this is verified exactly. The information boundary is therefore sharp: access to a node is exactly what it takes to resolve that node.</p>
+
+<div class="tw"><table>
+<caption>Table VIII.2. <span>Exact rational verification. The primary implementation and an independent verifier share no code. The verifier simulates measurements by Cramer's rule with Bareiss determinants, re-derives the inverse, and inverts by cofactors.</span></caption>
+<thead><tr><th>check</th><th>result</th></tr></thead>
+<tbody>
+<!--EXACTROWS-->
+</tbody></table></div>
+
+<h2 id="d2"><span class="sn">§VIII.2</span>Resolution: the achievable rate and the floor beneath it</h2>
+
+<p>Exact identifiability says nothing about noise. The question that matters is how measurement error is amplified by weak connections, distance from the port and the choice of intervention strength. One quantity governs all three: the port-to-node compliance $G_{0j}$, or its normalized form, the port correlation $\rho_j=G_{0j}/\sqrt{G_{00}G_{jj}}\in(0,1]$.</p>
+
+<div class="thm"><div class="hd">Proposition VIII.2.1 <i>(optimal single-node strength)</i> <span class="ep pr">proved</span></div>
+<p>Suppose each $d_j$ is known to within $\varepsilon$, and node $j$ is measured at a finite strength $\theta$ and once rigidly pinned ($\theta\to\infty$). Then the first-order relative error of $G_{0j}^2$ is at most
+$$\varepsilon\,\frac{G_{jj}}{G_{0j}^2}\Bigl(\frac1u+2+2u\Bigr),\qquad u=\theta G_{jj},$$
+which is minimized at $u^\star=1/\sqrt2$ with value $(2+2\sqrt2)\,\varepsilon\,G_{jj}/G_{0j}^2=(2+2\sqrt2)\,\varepsilon/(G_{00}\rho_j^2)$.</p></div>
+
+<p>The bound follows by differentiating $G_{0j}^{-2}=\theta\,(d(\theta)^{-1}-d(\infty)^{-1})$ and inserting $d(\theta)=\theta G_{0j}^2/(1+\theta G_{jj})$. Weak strengths ($u\to0$) are swamped by noise, because the response barely moves. Strong strengths ($u\to\infty$) make the two measurements collinear. Monte Carlo on a two-node network with shared baseline noise puts the optimum between $u=0.7$ and $u=2$, as the worst-case analysis predicts (Table VIII.4). The optimal strength depends on the unknown $G_{jj}$, so a practical design is two-stage: a pilot at moderate strength, then refinement at $u\approx1/\sqrt2$. This is the coverage-then-refine rule that §VII.4 reached for frequency selection.</p>
+
+<div class="thm"><div class="hd">Theorem VIII.2.2 <i>(a floor for every protocol)</i> <span class="ep pr">proved</span></div>
+<p>Let any protocol make $m$ measurements of $h(\Theta_k)$ with independent $N(0,\sigma^2)$ errors. For any node $j$ and any estimator $\hat K_{jj}$ there is a network, $K$ or $K'=K+\Delta e_je_j^{\mathsf T}$ with $\Delta=\sigma/(\sqrt m\,G_{0j}^2)$, on which $\Pr\{|\hat K_{jj}-K_{jj}|\ge\Delta/2\}\ge1/4$.</p></div>
+
+<p><em>Proof.</em> For an M-matrix and a non-negative diagonal $D$, $(K+D)^{-1}\le K^{-1}$ entrywise, because $(K+D)^{-1}=K^{-1}-K^{-1}D(K+D)^{-1}$ with non-negative factors. Writing $G_\Theta=(K+\Theta)^{-1}$ and $G'_\Theta=(K'+\Theta)^{-1}$, every measurement changes by $|h_K(\Theta)-h_{K'}(\Theta)|=\Delta\,(G_\Theta)_{0j}(G'_\Theta)_{0j}\le\Delta G_{0j}^2$. The Kullback–Leibler divergence between the two data laws is therefore at most $m\Delta^2G_{0j}^4/(2\sigma^2)=1/2$. Le Cam's two-point bound with Pinsker's inequality gives error probability at least $\tfrac12(1-\sqrt{1/4})=1/4$. $\square$</p>
+
+<p>The floor holds for every protocol: adaptive or not, any strengths, any number of simultaneous interventions. It scales as $G_{0j}^{-2}$. The question of sharpness is whether the explicit protocol attains the same dependence. Two hard families answer it. In the first, a two-node network has a weak link $w\to0$, so that $G_{01}\approx w$. In the second, a grounded path has the target node at increasing graph distance from the port, so that $G_{0j}$ decays geometrically.</p>
+
+<div class="tw"><table>
+<caption>Table VIII.3. <span>Standard deviation of the protocol's estimate of the far node's grounding entry, against the floor of Theorem VIII.2.2 computed for the same $m$ ($\Delta/2$). 400 (weak link) and 300 (distance) noise replicates; strengths at $u=1/\sqrt2$ and $u=4$.</span></caption>
+<thead><tr><th>family</th><th>parameter</th><th>$G_{0j}$</th><th>protocol sd</th><th>floor</th><th>ratio</th></tr></thead>
+<tbody>
+<!--STABROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result VIII.2.3 <i>(the $G_{0j}^{-2}$ dependence is sharp)</i> <span class="ep nm">verified · double</span></div>
+<p>As the weak link goes from $w=0.32$ to $w=10^{-3}$, $G_{01}$ falls by a factor of 194 and the protocol error rises by $3.6\times10^4\approx189^2$. Over those 2.5 decades the ratio to the floor stays between 26 and 28.5; only at $w=1$, outside the weak-link regime, does it reach 40. Along the path, $G_{0j}$ falls 65-fold from 3 to 9 nodes and the error rises 4,150-fold. The ratio's growth from 72 to 194 is accounted for by the floor's $\sqrt m$ (from $\sqrt6$ to $\sqrt{45}$, a factor of 2.7), since the explicit protocol spends only a fixed number of its measurements on any one node. Achievable error and floor share the exponent $-2$ in $G_{0j}$, so the dependence on weak connections and on distance from the port cannot be improved by any protocol.</p></div>
+
+<p>The practical reading is a resolution law. A node's grounding can be resolved to $\sigma/G_{0j}^2$, up to a constant near 27 for this protocol, and no better than $\sigma/(2\sqrt m\,G_{0j}^2)$ by any protocol. Doubling the graph distance squares the loss factor. Intervention access does not make the deep interior of a network visible at the noise level of the port. It makes the interior visible at the noise level of the port divided by the port-to-node compliance squared.</p>
+
+<div class="tw"><table>
+<caption>Table VIII.4. <span>Intervention strength. Relative error of $G_{01}^2$ per unit noise, two-node network ($w=0.3$, $G_{11}/G_{01}^2=23.1$), Monte Carlo with shared baseline noise, against the independent-error first-order model.</span></caption>
+<thead><tr><th>$u=\theta G_{11}$</th><th>Monte Carlo</th><th>first-order model</th></tr></thead>
+<tbody>
+<!--STRROWS-->
+</tbody></table></div>
+
+<h2 id="d3"><span class="sn">§VIII.3</span>Damping and dynamics</h2>
+
+<p>For real $s&gt;0$, the pencil $P(s)=K+sC+s^2M$, with $C$ a damper network (Laplacian plus non-negative grounds) and $M$ a positive diagonal, is again an irreducible non-singular M-matrix with positive row sums. A grounding intervention adds $\theta e_je_j^{\mathsf T}$ to $P(s)$ exactly as it does to $K$, so Theorem VIII.1.2 applies verbatim to the Laplace-domain port compliance $e_0^{\mathsf T}P(s)^{-1}e_0$ at any fixed $s&gt;0$. In practice this is the response to an exponentially growing excitation $e^{st}$, or the analytic continuation of a frequency response.</p>
+
+<div class="thm"><div class="hd">Corollary VIII.3.1 <i>(stiffness, damping and mass from one port)</i> <span class="ep pr">proved</span></div>
+<p>Running the protocol at $s=0$ and at two distinct $s_1,s_2&gt;0$ recovers $K=P(0)$, $P(s_1)$ and $P(s_2)$, and then $M=\dfrac{(P(s_2)-K)/s_2-(P(s_1)-K)/s_1}{s_2-s_1}$ and $C=(P(s_1)-K)/s_1-s_1M$. This takes $3n(n+1)/2$ measurements.</p></div>
+
+<p>Applied to the two damped twins of Part VII, with $s\in\{0,1,2\}$ in exact arithmetic, the protocol recovers each one's $K$, $C$ and $M$ exactly. The twins have the same baseline response but differ in four of their six static intervention measurements. Intervention access thus removes exactly the ambiguity that Part VII proved was unavoidable without it. The count is not known to be minimal. The parameter dimension is $n(n+1)$ for $K$ and $C$ plus $n$ for diagonal $M$, so $n(n+2)$, while the protocol uses $3n(n+1)/2$. The gap of $n(n-1)/2$ measurements is open. Closing it requires extracting the diagonal $M$ from the third Laplace point with $O(n)$ rather than $O(n^2)$ experiments.</p>
+
+<h2 id="d4"><span class="sn">§VIII.4</span>Intrinsic resolution</h2>
+
+<p>The Nonagon moves kernels between coordinate systems by congruence: $K\mapsto S^{\mathsf T}KS$, Löwner and Hankel forms, Chebyshev versus monomial moments. A congruence can make a matrix look far better conditioned while leaving what the data can actually resolve unchanged. The twins of Part VII are the extreme case: two networks with different graphs and identical data.</p>
+
+<div class="thm"><div class="hd">Definition and Proposition VIII.4.1 <i>(intrinsic resolution)</i> <span class="ep pr">proved</span></div>
+<p>Let measurements $y=F(p)+\text{noise}$ depend smoothly on physical parameters $p$, with Fisher information $\mathcal I(p)$. The intrinsic resolution of a scalar physical quantity $q(p)$ is $\operatorname{res}(q)=\nabla q^{\mathsf T}\mathcal I^{-1}\nabla q$, the Cramér–Rao variance. Under any reparametrization $p=\phi(\tilde p)$, including the parameter change induced by a kernel congruence, $\tilde{\mathcal I}=J^{\mathsf T}\mathcal IJ$ and $\nabla_{\tilde p}q=J^{\mathsf T}\nabla_pq$, so $\operatorname{res}(q)$ is unchanged. It decreases only if $\mathcal I$ increases in the Loewner order, which takes more or better measurements.</p></div>
+
+<p>The proposition separates two kinds of improvement that the earlier Parts sometimes ran together. Changing from monomial to Chebyshev moments, or from a Hankel to a Löwner pencil, changes the condition number of the matrix that is factorized. That reduces rounding error, which is real but bounded by machine precision. It cannot change $\operatorname{res}(q)$ for any physical $q$. The intervention protocol changes $\mathcal I$ itself: unidentifiable directions, of which the twin direction is one, acquire non-zero information. For Theorem VIII.2.2 the relevant scale is $\mathcal I_{K_{jj}K_{jj}}\le mG_{0j}^4/\sigma^2$, which is the coordinate-free statement behind Table VIII.3.</p>
+
+<h2 id="d5"><span class="sn">§VIII.5</span>Position and ledger</h2>
+
+<p>Recovering networks from boundary measurements is classical, and the ingredients here are standard. Curtis, Ingerman and Morrow characterized which resistor networks are recoverable from the full Dirichlet-to-Neumann map; Kron reduction and its algebra are surveyed by Dörfler and Bullo; inverse vibration problems for chains go back to Gladwell's monograph; the path-product property of inverse M-matrices is due to Johnson and Smith; Sherman–Morrison–Woodbury is textbook. What Part VIII adds, as far as this program can tell, is the specific combination of a single fixed port, calibrated grounding interventions as the only added access, an explicit inverse with a proved root selection, a matching measurement minimum, the exact Kron boundary for inaccessible nodes, and a resolution law whose $G_{0j}^{-2}$ dependence is shown sharp by a protocol-independent floor. Any of these individually may exist in the literature on network tomography or structural identification, and no priority is claimed for the parts.</p>
+
+<p><strong>Ledger.</strong> Proved: Theorems VIII.1.2–1.4, Proposition VIII.2.1, Theorem VIII.2.2, Corollary VIII.3.1, Proposition VIII.4.1, Proposition VIII.0.1. Verified numerically: Result VIII.2.3. Withdrawn: Observation VII.3.2 and the large-$L$ residual pattern of Parts V–VI, both explained by the omitted origin. Open: the minimal measurement count for damped networks (between $n(n+2)$ and $3n(n+1)/2$); constant-optimal designs under a fixed total budget across nodes; and the resolution law for edge weights between two deep nodes, where the same two-point argument suggests a floor of order $\sigma/(\sqrt m\,(G_{0i}-G_{0j})^2)$ but neither a careful floor nor a matching protocol bound is yet proved.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> <code>part_VIII/origin.py</code>, <code>origin_hp.py</code>: §VIII.0 and Table VIII.1. <code>intervene.py</code>: exact protocol, root selection, Kron ambiguity, damped recovery (<code>intervene.json</code>). <code>verify_intervention.py</code>: independent verifier, exit 0 on success. <code>stability.py</code>: Tables VIII.3–VIII.4 (<code>stability.json</code>). <code>assemble8.py</code>: assembly.</p>
+<p><b>Sources.</b> E. B. Curtis, D. Ingerman, J. A. Morrow, Circular planar graphs and resistor networks, Linear Algebra Appl. 283 (1998); F. Dörfler, F. Bullo, Kron reduction of graphs with applications to electrical networks, IEEE Trans. Circuits Syst. I 60 (2013); C. R. Johnson, R. L. Smith, Path product matrices, Linear Multilinear Algebra 46 (1999); G. M. L. Gladwell, Inverse Problems in Vibration, 2nd ed. (2004); L. Le Cam, Asymptotic Methods in Statistical Decision Theory (1986); A. B. Tsybakov, Introduction to Nonparametric Estimation (2009), Ch. 2; M. V. Berry, Nonlinearity 1 (1988); E. B. Bogomolny, J. P. Keating, Phys. Rev. Lett. 77 (1996).</p>
+</div>
+</main>

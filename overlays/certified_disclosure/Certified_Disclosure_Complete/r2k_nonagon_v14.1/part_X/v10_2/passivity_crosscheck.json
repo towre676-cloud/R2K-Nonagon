@@ -1,0 +1,85 @@
+{
+ "cases": [
+  {
+   "Z": "(s^2+1)/(s^2+s+1)  [tangency at w=1]",
+   "claude_X51": false,
+   "claude_VI41": false,
+   "v10_1_cayley_brune": true
+  },
+  {
+   "Z": "(s^2+1)^2/((s^2+s+1)(s^2+2s+1))  [tangency]",
+   "claude_X51": false,
+   "claude_VI41": false,
+   "v10_1_cayley_brune": false
+  },
+  {
+   "Z": "((s^2+1)(s^2+4))/((s^2+s+1)(s^2+s+4))  [two tangencies]",
+   "claude_X51": false,
+   "claude_VI41": false,
+   "v10_1_cayley_brune": false
+  },
+  {
+   "Z": "1/(1-s)",
+   "claude_X51": false,
+   "claude_VI41": false,
+   "v10_1_cayley_brune": false
+  },
+  {
+   "Z": "s/(s^2+1)",
+   "claude_X51": true,
+   "claude_VI41": false,
+   "v10_1_cayley_brune": true
+  },
+  {
+   "Z": "1/s",
+   "claude_X51": true,
+   "claude_VI41": false,
+   "v10_1_cayley_brune": true
+  },
+  {
+   "Z": "(s^2+1)/(s(s^2+4))",
+   "claude_X51": true,
+   "claude_VI41": false,
+   "v10_1_cayley_brune": true
+  },
+  {
+   "Z": "(s+2)/(s+1)",
+   "claude_X51": true,
+   "claude_VI41": true,
+   "v10_1_cayley_brune": true
+  },
+  {
+   "Z": "(s-1)/(s+1)",
+   "claude_X51": false,
+   "claude_VI41": false,
+   "v10_1_cayley_brune": false
+  },
+  {
+   "Z": "(s^2+1)/(s^2+2)",
+   "claude_X51": false,
+   "claude_VI41": false,
+   "v10_1_cayley_brune": false
+  }
+ ],
+ "random": {
+  "trials": 200,
+  "agree": 199,
+  "v10_1_PR": 1,
+  "claude_false_negatives": 1,
+  "claude_false_positives": 0
+ },
+ "part_VI_ladder": {
+  "true": {
+   "v10_1": true,
+   "claude_X51": true
+  },
+  "perturbed": {
+   "v10_1": false,
+   "claude_X51": false
+  },
+  "enforced": {
+   "v10_1": true,
+   "claude_X51": true
+  }
+ }
+}

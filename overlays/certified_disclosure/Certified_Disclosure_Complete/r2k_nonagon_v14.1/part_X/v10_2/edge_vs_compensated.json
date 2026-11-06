@@ -1,0 +1,98 @@
+[
+ {
+  "edge": [
+   0,
+   1
+  ],
+  "sd_protocol": 2.8380867599583754e-11,
+  "compensated_threshold": 4.471982421081871e-13,
+  "compensated_efficient_sd": 8.943964842163742e-13,
+  "ratio_to_efficient": 31.731864000393138,
+  "old_floor_max": 7.453389328829021e-14,
+  "ratio_to_old_floor": 380.77801047919473
+ },
+ {
+  "edge": [
+   1,
+   2
+  ],
+  "sd_protocol": 2.2811486836730394e-10,
+  "compensated_threshold": 1.639576784572959e-12,
+  "compensated_efficient_sd": 3.279153569145918e-12,
+  "ratio_to_efficient": 69.56516782674449,
+  "old_floor_max": 2.9812192616234476e-13,
+  "ratio_to_old_floor": 765.1730662812171
+ },
+ {
+  "edge": [
+   2,
+   3
+  ],
+  "sd_protocol": 7.902904001275852e-10,
+  "compensated_threshold": 6.406908709661797e-12,
+  "compensated_efficient_sd": 1.2813817419323594e-11,
+  "ratio_to_efficient": 61.674860368761394,
+  "old_floor_max": 1.1922693902730412e-12,
+  "ratio_to_old_floor": 662.8454999977824
+ },
+ {
+  "edge": [
+   3,
+   4
+  ],
+  "sd_protocol": 3.1543222914677195e-09,
+  "compensated_threshold": 2.544138749243609e-11,
+  "compensated_efficient_sd": 5.088277498487218e-11,
+  "ratio_to_efficient": 61.99194702736874,
+  "old_floor_max": 4.765586928044516e-12,
+  "ratio_to_old_floor": 661.8958669928294
+ },
+ {
+  "edge": [
+   4,
+   5
+  ],
+  "sd_protocol": 1.2611511786385058e-08,
+  "compensated_threshold": 1.0102597475194094e-10,
+  "compensated_efficient_sd": 2.0205194950388188e-10,
+  "ratio_to_efficient": 62.417174480876575,
+  "old_floor_max": 1.9006650597419358e-11,
+  "ratio_to_old_floor": 663.5315213348214
+ },
+ {
+  "edge": [
+   5,
+   6
+  ],
+  "sd_protocol": 4.9864551922717944e-08,
+  "compensated_threshold": 3.9477516614683487e-10,
+  "compensated_efficient_sd": 7.895503322936697e-10,
+  "ratio_to_efficient": 63.155634141600295,
+  "old_floor_max": 7.514514198474031e-11,
+  "ratio_to_old_floor": 663.5765214582191
+ },
+ {
+  "edge": [
+   6,
+   7
+  ],
+  "sd_protocol": 1.9202239088653775e-07,
+  "compensated_threshold": 1.447376435311871e-09,
+  "compensated_efficient_sd": 2.894752870623742e-09,
+  "ratio_to_efficient": 66.33464045763674,
+  "old_floor_max": 2.8707307340864633e-10,
+  "ratio_to_old_floor": 668.8972553451412
+ },
+ {
+  "edge": [
+   7,
+   8
+  ],
+  "sd_protocol": 4.5586094878876677e-07,
+  "compensated_threshold": 4.34202992551572e-09,
+  "compensated_efficient_sd": 8.68405985103144e-09,
+  "ratio_to_efficient": 52.493989747735604,
+  "old_floor_max": 9.648844967346165e-10,
+  "ratio_to_old_floor": 472.45131446458254
+ }
+]

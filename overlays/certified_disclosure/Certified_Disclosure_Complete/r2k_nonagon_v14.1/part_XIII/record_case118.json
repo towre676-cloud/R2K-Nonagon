@@ -1,0 +1,97 @@
+{
+ "case": "case118",
+ "buses": 118,
+ "hidden_nodes": 117,
+ "nodes_total": 117,
+ "branches": 173,
+ "grounds": 6,
+ "unknowns": 179,
+ "port_bus": 49,
+ "negative_reactance_branches": 0,
+ "readings": 440,
+ "full_protocol_readings": 6903,
+ "readings_per_unknown": 2.458100558659218,
+ "saving_factor": 15.688636363636364,
+ "rank_mod_p": 179,
+ "identifiable": true,
+ "primes": [
+  2147483647,
+  2147483629,
+  2147483587
+ ],
+ "exact_rational_recovery": true,
+ "rational_mismatches": 0,
+ "crt_log": [
+  {
+   "primes": 2,
+   "all_defined": true,
+   "stable": false
+  },
+  {
+   "primes": 3,
+   "all_defined": true,
+   "stable": true
+  }
+ ],
+ "log2_modulus": 93,
+ "max_height_bits_of_truth": 22,
+ "iterations": [
+  {
+   "iteration": 0,
+   "extra_sources": 0,
+   "rank": 174,
+   "seconds": 0.005290985107421875,
+   "kernel_log": [
+    "nnz(L) = 720 t=0.0s",
+    "factorized t=0.0s",
+    "selected inverse done t=0.0s",
+    "pass 0 rank 100 / 179 t=0.0s",
+    "pass 1 rank 174 / 179 t=0.0s",
+    "pass 2 rank 174 / 179 t=0.0s",
+    "echelon nnz 667"
+   ]
+  },
+  {
+   "iteration": 1,
+   "extra_sources": 9,
+   "rank": 179,
+   "seconds": 0.0034554004669189453,
+   "kernel_log": [
+    "nnz(L) = 720 t=0.0s",
+    "factorized t=0.0s",
+    "selected inverse done t=0.0s",
+    "pass 0 rank 100 / 179 t=0.0s",
+    "pass 1 rank 174 / 179 t=0.0s",
+    "pass 2 rank 179 / 179 t=0.0s",
+    "echelon nnz 693"
+   ]
+  }
+ ],
+ "islands": {
+  "components": 1,
+  "invisible_nodes": 0,
+  "invisible_unknowns": 0
+ },
+ "physical": {
+  "K_positive_definite_binary64": true,
+  "negative_pivots": 0,
+  "port_column_min_over_max": 0.09168521439701892,
+  "port_column_all_positive": true
+ },
+ "extra_source_buses": [
+  100,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109,
+  110
+ ],
+ "widened_sources": {},
+ "port_index": 48,
+ "seconds_total": 0.05792498588562012,
+ "ordering": "MMD_AT_PLUS_A",
+ "solution_sha256": "a567ca4418858a864c97f85883c63ec368f8bf95cc7fa755abcd17aa2fe2593e"
+}

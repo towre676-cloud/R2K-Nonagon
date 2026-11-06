@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "safe_circle_majorant": "2742.431538",
+  "retained_machine_upper": "2742.431537628173828125",
+  "scope": "editorial correction and historical redirect; no replacement of original analytic certificates",
+  "files": [
+    {
+      "file": "nonagon_X.html",
+      "old_sha256": "ba48e3af3f5cc613bf0938b07b1de3f10c2136107224359ecff16378826e61e5",
+      "new_sha256": "fb72fda36a9c14cc5a53a477d6e0bff804ee70054992a5bcb7ddd9807a1c9d32",
+      "replacements": 3
+    },
+    {
+      "file": "part_X/paper_source.html",
+      "old_sha256": "6194c37ba54c56bf5508bb88664d5e25f73cfb6fb58cfe3cf99f6e46a284f8d1",
+      "new_sha256": "1915ca592c447f2610897bb60db96624c9e9de63f5855bfc75734ce943795e72",
+      "replacements": 1
+    },
+    {
+      "file": "part_VIII/README.md",
+      "old_sha256": "5d5bb2dfb50b68f11c35ce8c92e94c2203675e97c624241745b0b9a855a72256",
+      "new_sha256": "30d21981d9fd95195d1257c69c536951ef80682db28deb64b0840fdbe9df3804",
+      "change": "add explicit historical-status redirect"
+    }
+  ]
+}

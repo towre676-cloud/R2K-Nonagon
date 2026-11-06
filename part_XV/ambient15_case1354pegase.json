@@ -1,0 +1,27 @@
+{
+ "case": "case1354pegase",
+ "n": 1353,
+ "generators": 259,
+ "branches": 1705,
+ "schemes": {
+  "amb1s:all": {
+   "access": "ambient covariance plus one injection step, sensors all",
+   "readings": 10542,
+   "rank": 2319,
+   "unknowns": 3063,
+   "identifiable_branches": 912,
+   "branches": 1705,
+   "seconds": 478.01175260543823
+  },
+  "amb1l:all": {
+   "access": "ambient covariance plus one injection step, sensors all",
+   "readings": 9041,
+   "rank": 3063,
+   "unknowns": 3063,
+   "identifiable_branches": 1705,
+   "branches": 1705,
+   "seconds": 457.75289034843445
+  }
+ },
+ "note": "amb1l:all parsed from amb1354.log; inj:all for this grid did not complete (killed) and is not reported"
+}

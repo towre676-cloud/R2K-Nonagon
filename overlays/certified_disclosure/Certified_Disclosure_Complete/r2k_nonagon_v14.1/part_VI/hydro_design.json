@@ -1,0 +1,46 @@
+{
+ "0.01": {
+  "sweep/vector_fit": {
+   "median_of_median": 0.0022055604334093974,
+   "median_of_max": 0.011293623508245091,
+   "certified_stable": 1.0
+  },
+  "sweep/r2k": {
+   "median_of_median": 0.0023438693852309853,
+   "median_of_max": 0.00761185316952555,
+   "certified_stable": 1.0
+  },
+  "adaptive/vector_fit": {
+   "median_of_median": 0.006919304391611801,
+   "median_of_max": 0.0333151673731764,
+   "certified_stable": 1.0
+  },
+  "adaptive/r2k": {
+   "median_of_median": 0.1460087602271239,
+   "median_of_max": 1.2277091598190966,
+   "certified_stable": 1.0
+  }
+ },
+ "0.05": {
+  "sweep/vector_fit": {
+   "median_of_median": 0.012807348333438849,
+   "median_of_max": 0.07144811307112141,
+   "certified_stable": 1.0
+  },
+  "sweep/r2k": {
+   "median_of_median": 0.02201916959406543,
+   "median_of_max": 0.3560146909066966,
+   "certified_stable": 1.0
+  },
+  "adaptive/vector_fit": {
+   "median_of_median": 0.20964846443013763,
+   "median_of_max": 1.4203190687812748,
+   "certified_stable": 1.0
+  },
+  "adaptive/r2k": {
+   "median_of_median": 0.717619377555065,
+   "median_of_max": 1.4530612987309661,
+   "certified_stable": 0.9125
+  }
+ }
+}

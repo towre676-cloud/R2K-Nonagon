@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux",
+  "machine": "x86_64",
+  "python_flint": "0.9.0",
+  "numpy": "2.3.5",
+  "parent_manifest_sha256": "63a2f788007e5a2367d6fde1a8975643d005faf45689ad60ba37405c55bd9bf5",
+  "source_archive_name": "r2k_nonagon_v15.0.zip",
+  "source_archive_sha256": "a6f8f659e5625e7105e60fdcf68f130bd20167185a4197728034252e0e8587a6",
+  "scope": "Linux native execution tested; portable Python ball fallback included; no formal proof-assistant claim"
+}

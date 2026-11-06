@@ -1,0 +1,20 @@
+[
+  {
+    "path": "_evidence/0b0389a61404ffb874968dd120a982f249ef2f4bfac028c2b33248161e3aa70b.gz",
+    "sha256": "204b7dd84d572caaaaff64ff7b31d1f0f5c89586906fdb5a3fe6645069a1f4e2",
+    "bytes": 5080588,
+    "parts": [
+      "_chunks/204b7dd84d572caaaaff64ff7b31d1f0f5c89586906fdb5a3fe6645069a1f4e2/000.part",
+      "_chunks/204b7dd84d572caaaaff64ff7b31d1f0f5c89586906fdb5a3fe6645069a1f4e2/001.part"
+    ]
+  },
+  {
+    "path": "studies/full_campaign/r2k_full_campaign/finite_window/multiplier_reference.npz",
+    "sha256": "79465e223d1b0230f8bf9d2f1c457ca72471f22a9a0f40de438a7b21a470b315",
+    "bytes": 7801010,
+    "parts": [
+      "_chunks/79465e223d1b0230f8bf9d2f1c457ca72471f22a9a0f40de438a7b21a470b315/000.part",
+      "_chunks/79465e223d1b0230f8bf9d2f1c457ca72471f22a9a0f40de438a7b21a470b315/001.part"
+    ]
+  }
+]

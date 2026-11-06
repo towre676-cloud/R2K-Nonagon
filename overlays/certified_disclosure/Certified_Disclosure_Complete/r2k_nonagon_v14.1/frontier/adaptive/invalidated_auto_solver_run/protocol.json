@@ -1,0 +1,68 @@
+{
+  "title": "Closed-loop real-frequency acquisition with common final Loewner/VF fitter",
+  "version": 1,
+  "development": {
+    "seed": 481733,
+    "systems_per_scenario": 2
+  },
+  "confirmation": {
+    "seed": 91377167,
+    "systems_per_scenario": 10
+  },
+  "development_candidates": [
+    "adaptive_iopt",
+    "adaptive_disagreement"
+  ],
+  "selection_rule": "Choose candidate with smaller geometric mean heldout NRMSE over positive-noise development cases; retain both development outcomes; no selection/tuning using confirmation",
+  "scenarios": [
+    "ordinary",
+    "colored_noise",
+    "weak_link",
+    "near_collision",
+    "model_mismatch"
+  ],
+  "noise_fractions": [
+    0,
+    0.001,
+    0.01,
+    0.05
+  ],
+  "budget": {
+    "total_unique_positive_frequency_queries": 64,
+    "common_pilot": 33,
+    "candidate_frequencies": 1025,
+    "public_fixed_band": [
+      0.03,
+      8
+    ],
+    "heldout_grid": "1024 clean points disjoint from acquisition lattice"
+  },
+  "noise_table": "One frozen noise realization per system/candidate, shared by every strategy; colored scenario AR1 .95 along log-frequency lattice; same standardized noise scales across levels",
+  "baselines": [
+    "64-point log-uniform exact lattice subset",
+    "common pilot plus31 linear-coverage queries snapped uniquely to pool",
+    "common pilot plus31 random pool queries",
+    "closed-loop predicted-magnitude exploitation plus one exploration point per4-query batch"
+  ],
+  "adaptive": "Each4-query batch refits from observed data only; three I-optimal pole/residue sensitivity or model-disagreement queries plus one maximum log-gap exploration query; design fit failure falls back to coverage and is recorded",
+  "fitter": "Identical ordinary projected Loewner plus eight stable-pole vector-fitting iterations for every final strategy, known true chain McMillan order; model mismatch excludes extra oscillator order",
+  "input_isolation": "Acquisition gets public pool frequencies, noisy query callback, order, band; never scenario, noise level, true poles/residues/masses, clean responses or heldout grid. No oracle frequencies or repeats. Conjugates are inferred symmetry, not extra observations",
+  "primary": "Dev-selected adaptive strategy / log_uniform geometric mean clean heldout NRMSE across all positive-noise confirmation cases",
+  "uncertainty": "5000 paired bootstrap resamples of50 independent system clusters with shared noise levels retained, fixed seed771931",
+  "failure_scoring": {
+    "error_penalty": 1000000,
+    "error_floor": 1e-14
+  },
+  "limits": "Synthetic input isolation and local hash freeze, not external preregistration, measured hardware or unknown-order discovery; approximate Fisher covariance is design heuristic not confidence interval; mismatch oscillator numerator coefficient.025 not norm percentage",
+  "development_changes": [
+    "Pilot17 run retained; pilot33 tested on development to stabilize initial rational model before querying31 additional frequencies. Confirmation unopened."
+  ],
+  "selected_adaptive": "adaptive_disagreement",
+  "selected_pilot": 33,
+  "selection_result": {
+    "pilot17_disagreement_geometric_ratio": 0.9688935642424146,
+    "pilot33_disagreement_geometric_ratio": 0.9677017114453375,
+    "pilot33_iopt_geometric_ratio": 1.4846368040310718,
+    "choice": "pilot33 disagreement; smallest development positive-noise geometric error among tested adaptive designs; no confirmation opened"
+  }
+}

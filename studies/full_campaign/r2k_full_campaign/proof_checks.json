@@ -1,0 +1,15 @@
+{
+  "gauss_remainder_control": {
+    "status": "PASS",
+    "function": "1/(5+x), [0,1], exact integral log(6/5)",
+    "gauss_ball": "[0.18232155679395462621162264104284426395 +/- 6.80e-39]",
+    "exact_integral_ball": "[0.18232155679395462621171802515451463319 +/- 9.47e-39]",
+    "cauchy_remainder_bound": "[1.7739477611723400297619047619047619048e-10 +/- 6.13e-48]"
+  },
+  "empirical_perturbation_control": {
+    "status": "PASS",
+    "independent_exact_perturbed_point_sets": 100,
+    "largest_error_to_bound_ratio": 0.02049528405452856
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "all_75_spans_symbolically_proved_on_j_ge_k_cone": {
+    "(1, 1)": "2",
+    "(1, 2)": "-1",
+    "(1, 0)": "-1"
+  },
+  "exact_rational_convolution_controls": 25,
+  "scope": "mathematical identity plus finite arithmetic controls; no zeta distribution claim"
+}

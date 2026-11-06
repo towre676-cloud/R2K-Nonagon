@@ -1,0 +1,93 @@
+{
+  "schema": "nonagon.intervention.observations.v1",
+  "contract": {
+    "network_order": 3,
+    "coordinate_labels": [
+      "node_1",
+      "node_2",
+      "node_3"
+    ],
+    "input_coordinate": 0,
+    "readout_coordinate": 0,
+    "stiffness_class": "connected_grounded_spring",
+    "known_site_set": true,
+    "force_amplitude": "1",
+    "sensor_gain": "1",
+    "calibration": "exact",
+    "noise_model": "none",
+    "coefficient_domain": "rational"
+  },
+  "plan": {
+    "base_load": "1"
+  },
+  "observations": [
+    {
+      "id": "baseline",
+      "loads": {},
+      "response": "5/18"
+    },
+    {
+      "id": "single_1_a",
+      "loads": {
+        "1": "1"
+      },
+      "response": "1088/3989"
+    },
+    {
+      "id": "single_1_b",
+      "loads": {
+        "1": "2"
+      },
+      "response": "1331/4936"
+    },
+    {
+      "id": "single_2_a",
+      "loads": {
+        "2": "1"
+      },
+      "response": "1447/5306"
+    },
+    {
+      "id": "single_2_b",
+      "loads": {
+        "2": "2"
+      },
+      "response": "2049/7570"
+    },
+    {
+      "id": "pair_1_2",
+      "loads": {
+        "1": "1",
+        "2": "1"
+      },
+      "response": "11/41"
+    }
+  ],
+  "heldout": [
+    {
+      "id": "heldout_0",
+      "loads": {
+        "0": "1/3",
+        "2": "2/5"
+      },
+      "response": "16287/64643"
+    },
+    {
+      "id": "heldout_1",
+      "loads": {
+        "1": "3/7",
+        "2": "5/11"
+      },
+      "response": "96689/354865"
+    },
+    {
+      "id": "heldout_2",
+      "loads": {
+        "0": "1/9",
+        "1": "2/9",
+        "2": "4/9"
+      },
+      "response": "862587/3249083"
+    }
+  ]
+}

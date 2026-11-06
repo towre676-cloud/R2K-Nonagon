@@ -1,0 +1,17 @@
+{
+  "title": "Observed-pilot adaptive acquisition gate",
+  "version": 1,
+  "confirmation": {
+    "seed": 69377123,
+    "systems_per_scenario": 8
+  },
+  "primary": "Mean clean heldout NRMSE ratio gated / always_log over positive-noise trials; paired whole-system bootstrap",
+  "secondary": "Geometric mean error, scenario cells, tail and runtime; all three strategies identical64uniquequery budget with33commonpilot",
+  "selection": "Small fixed rule set, >=4 selected systems, >=5% capped-mean risk reduction and bootstrap upper<=1 on prior DEVELOPMENT only; otherwise always_log. Development uncertainty is a selection heuristic, not confirmation.",
+  "no_confirmation_for_selection": true,
+  "freeze": "Local hash freeze before new policy confirmation, not independent preregistration",
+  "features": "Observed noisy pilot only; estimated pole gap/residue ratio/damping/training residual/model disagreement; no hidden scenario label, true poles or clean response",
+  "source": "Repaired adaptive development seed61739311, no original invalid auto-solver data",
+  "query_budget": 64,
+  "common_pilot": 33
+}

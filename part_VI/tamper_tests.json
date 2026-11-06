@@ -1,0 +1,91 @@
+[
+ {
+  "test": "untouched",
+  "mode": "light",
+  "status": "CERTIFIED",
+  "reason": ""
+ },
+ {
+  "test": "untouched",
+  "mode": "full",
+  "status": "CERTIFIED",
+  "reason": ""
+ },
+ {
+  "test": "ball altered, hash not updated",
+  "mode": "light",
+  "status": "REJECTED",
+  "reason": "sha256 mismatch: record altered"
+ },
+ {
+  "test": "mu0 contribution shifted by pi*i (+1 zero), rehashed",
+  "mode": "light",
+  "status": "REJECTED",
+  "reason": "UNSOUND: count enclosure [1.999999155336135 +/- 1.75e-16] excludes the integer 2 (error bound failure)"
+ },
+ {
+  "test": "mu0 contribution shifted by pi*i (+1 zero), rehashed",
+  "mode": "full",
+  "status": "REJECTED",
+  "reason": "recorded segment enclosure disagrees with recomputation"
+ },
+ {
+  "test": "mu1 contribution perturbed 1e-6, rehashed",
+  "mode": "full",
+  "status": "REJECTED",
+  "reason": "recorded segment enclosure disagrees with recomputation"
+ },
+ {
+  "test": "segment deleted, rehashed",
+  "mode": "light",
+  "status": "REJECTED",
+  "reason": "side 0: gap or overlap between segments (0.555 vs 0.666)"
+ },
+ {
+  "test": "side orientation reversed, rehashed",
+  "mode": "light",
+  "status": "REJECTED",
+  "reason": "segment not attached to exactly one side with correct orientation: A=(17.578382390253125, 0.0) D=(-0.0, -0.45)"
+ },
+ {
+  "test": "segments overlap, rehashed",
+  "mode": "light",
+  "status": "REJECTED",
+  "reason": "side 0: gap or overlap between segments (0.3330009536743164 vs 0.333)"
+ },
+ {
+  "test": "rectangle claim widened to b=0.5, rehashed",
+  "mode": "light",
+  "status": "REJECTED",
+  "reason": "segment not attached to exactly one side with correct orientation: A=(17.578382390253125, 0.0) D=(0.0, 0.45)"
+ },
+ {
+  "test": "disk radius shrunk (segment too long for disk), rehashed",
+  "mode": "full",
+  "status": "REJECTED",
+  "reason": "segment too long for its disk (rho >= 1)"
+ },
+ {
+  "test": "Taylor order lowered to K=8, rehashed",
+  "mode": "full",
+  "status": "REJECTED",
+  "reason": "zero count not an unambiguous integer: [1e+0 +/- 0.567]"
+ },
+ {
+  "test": "legacy v5 record (ctx.cap bug), light",
+  "mode": "light",
+  "status": "CERTIFIED",
+  "reason": ""
+ },
+ {
+  "test": "legacy v5 record (ctx.cap bug), full replay",
+  "mode": "full",
+  "status": "REJECTED",
+  "reason": "recorded segment enclosure disagrees with recomputation"
+ },
+ {
+  "test": "generator on contour through first zero",
+  "status": "REFUSED",
+  "reason": "zero near contour at 0.0"
+ }
+]

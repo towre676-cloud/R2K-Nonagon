@@ -1,0 +1,12 @@
+{
+  "format": "nonagon-independent-active-receipts/1",
+  "status": "CERTIFIED",
+  "valid": true,
+  "checks": 4555,
+  "candidate_predictions": 315,
+  "trials": 189,
+  "intervention_observations": 230,
+  "wrong_identifications": 0,
+  "scope": "Independent rational Gaussian solves, exact candidate similarities, bounded oracle errors and worst-case choices, full survivor histories, active/fixed query choices, and all retained summary counts. Finite declared library only.",
+  "optimized_python": true
+}

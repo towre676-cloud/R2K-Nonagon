@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "scope": "exploratory finite-prime local-ratios point evidence; no uniform coincidence theorem",
+  "prime_cutoff": 97,
+  "base_value": "[0.192666746389490275787083760836160112584365564 +/- 1.89e-46]",
+  "symmetry_controls": [
+    {
+      "control": "translation",
+      "value": "[0.192666746389490275787083760836160112584365564 +/- 1.89e-46]",
+      "matches_base": true
+    },
+    {
+      "control": "permutation",
+      "value": "[0.192666746389490275787083760836160112584365564 +/- 1.89e-46]",
+      "matches_base": true
+    }
+  ],
+  "collision_checks": [
+    {
+      "separation": ".1",
+      "finite_prime_rho4": "[0.0216808513553947105977009753266336229490499869 +/- 3.76e-48]",
+      "rho4_over_separation_squared": "[2.16808513553947105977009753266336229490499869 +/- 3.76e-46]"
+    },
+    {
+      "separation": ".01",
+      "finite_prime_rho4": "[0.000233800416913025448783255365435771544945104764 +/- 2.02e-49]",
+      "rho4_over_separation_squared": "[2.33800416913025448783255365435771544945104764 +/- 2.02e-45]"
+    },
+    {
+      "separation": ".001",
+      "finite_prime_rho4": "[2.35175926122889606690697431721985636294009157e-6 +/- 2.08e-49]",
+      "rho4_over_separation_squared": "[2.35175926122889606690697431721985636294009157 +/- 2.08e-43]"
+    }
+  ],
+  "seconds": 27.48245120048523
+}

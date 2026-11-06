@@ -1,0 +1,9 @@
+{
+  "frozen_at_utc": "2026-10-30T01:22:01.285856+00:00",
+  "sha256": {
+    "acquisition.py": "e8ebba1705a114958006f4c36c88d4e0200719b103136d6af8bd2c55392d241b",
+    "protocol.json": "a89a5f59169bacb46ced02110f7d33e0b5408903feab079eadd7d373ee6e8110",
+    "reference_core.py": "a566ece03a51c8cf5290135ad14be3f30daa35bc3ef4c6acb2fd17799434514c"
+  },
+  "description": "Local protocol/design/code freeze after retained development selection and before NEW confirmation; not external preregistration."
+}

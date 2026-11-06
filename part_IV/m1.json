@@ -1,0 +1,13 @@
+{
+ "summary": {
+  "levels_with_real_poles": 458,
+  "caseA": 183,
+  "caseA_confirmed": 183,
+  "caseB": 275,
+  "caseB_confirmed": 275,
+  "resR_positive": 458,
+  "resL_negative": 458,
+  "odd_real_pole_count": 0
+ },
+ "fails": []
+}

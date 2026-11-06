@@ -1,0 +1,18 @@
+{
+  "schema": "nonagon.hardware.dc-resistor-plan.v1",
+  "nodes": 3,
+  "scalar_configurations": 6,
+  "programmable_shunts_required": 2,
+  "physical_mapping": "Y_physical = conductance_scale_S * K_normalized",
+  "response_mapping": "h_normalized = voltage_V * conductance_scale_S / current_A",
+  "loads": "t_normalized = shunt_conductance_S / conductance_scale_S",
+  "readout": "one fixed calibrated current source and one fixed voltage channel at node_1",
+  "hardware_execution": "not performed; CSV is an acquisition plan",
+  "validation_required": [
+    "Known labeled pads; connected passive resistive network; fixed ground",
+    "Repeat baseline between intervention groups to bound drift",
+    "Measure current, relay path resistance/leakage, shunt conductance and voltmeter calibration",
+    "Record settling and repeatability; reserve unused configurations for validation",
+    "Propagate all uncertainty; decimal centers are not exact-rational physical certificates"
+  ]
+}

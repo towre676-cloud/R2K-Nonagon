@@ -1,0 +1,140 @@
+[
+ {
+  "tiles": 2,
+  "zeros": 5,
+  "blocks_decided": true,
+  "block_inertia": [
+   5,
+   0
+  ],
+  "flat_parent_inertia": [
+   5,
+   0
+  ],
+  "max_cross_abs_upper": 9.262458630900531e-15,
+  "detV_sign_decided": true
+ },
+ {
+  "tiles": 3,
+  "zeros": 8,
+  "blocks_decided": true,
+  "block_inertia": [
+   8,
+   0
+  ],
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 2.7196824826258477e-13,
+  "detV_sign_decided": true
+ },
+ {
+  "tiles": 4,
+  "zeros": 10,
+  "blocks_decided": true,
+  "block_inertia": [
+   10,
+   0
+  ],
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 1.3252288162516907e-12,
+  "detV_sign_decided": true
+ },
+ {
+  "tiles": 5,
+  "zeros": 12,
+  "blocks_decided": false,
+  "block_inertia": null,
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 7.711589328804162e-12,
+  "detV_sign_decided": false
+ },
+ {
+  "tiles": 6,
+  "zeros": 14,
+  "blocks_decided": false,
+  "block_inertia": null,
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 3.054656744563844e-11,
+  "detV_sign_decided": false
+ },
+ {
+  "tiles": 7,
+  "zeros": 16,
+  "blocks_decided": false,
+  "block_inertia": null,
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 6.42704619992912e-11,
+  "detV_sign_decided": false
+ },
+ {
+  "tiles": 8,
+  "zeros": 19,
+  "blocks_decided": false,
+  "block_inertia": null,
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 9.471639219466033e-10,
+  "detV_sign_decided": false
+ },
+ {
+  "tiles": 9,
+  "zeros": 20,
+  "blocks_decided": false,
+  "block_inertia": null,
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 8.160526993733486e-10,
+  "detV_sign_decided": false
+ },
+ {
+  "tiles": 10,
+  "zeros": 23,
+  "blocks_decided": false,
+  "block_inertia": null,
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 5.971952643513134e-08,
+  "detV_sign_decided": false
+ },
+ {
+  "tiles": 11,
+  "zeros": 25,
+  "blocks_decided": false,
+  "block_inertia": null,
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 1.0987718412902581e-07,
+  "detV_sign_decided": false
+ },
+ {
+  "tiles": 12,
+  "zeros": 28,
+  "blocks_decided": false,
+  "block_inertia": null,
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 3.053572864786247e-06,
+  "detV_sign_decided": false
+ },
+ {
+  "tiles": 13,
+  "zeros": 30,
+  "blocks_decided": false,
+  "block_inertia": null,
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 5.38228047020084e-06,
+  "detV_sign_decided": false
+ },
+ {
+  "tiles": 14,
+  "zeros": 32,
+  "blocks_decided": false,
+  "block_inertia": null,
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 3.6146606362308376e-05,
+  "detV_sign_decided": false
+ },
+ {
+  "tiles": 15,
+  "zeros": 34,
+  "blocks_decided": false,
+  "block_inertia": null,
+  "flat_parent_inertia": null,
+  "max_cross_abs_upper": 0.00014774020996810577,
+  "detV_sign_decided": false
+ }
+]

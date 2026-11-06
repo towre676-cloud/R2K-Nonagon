@@ -1,0 +1,52 @@
+{
+  "suite": "physical_network_obstruction_and_sensing_remedy_v1",
+  "status": "PASS",
+  "seed": 2026103119,
+  "arithmetic": "Python fractions.Fraction only",
+  "fixture_count": 257,
+  "seeded_fixture_count": 256,
+  "seeded_orders": {
+    "3": 64,
+    "4": 64,
+    "5": 64,
+    "6": 64
+  },
+  "exact_checks": 6684,
+  "checks_by_name": {
+    "additional_terminal_sensor_separates_pair_at_zero": 257,
+    "both_networks_minimal_from_port_one": 257,
+    "control_arbitrary_rotation_can_be_nonphysical": 1,
+    "control_corrupted_extra_response_changes_reconstruction": 1,
+    "control_moving_observed_port_breaks_certificate": 1,
+    "control_repeated_sample_shifts_rejected_by_rank": 1,
+    "explicit_separation_difference": 1,
+    "full_response_reconstructs_unknown_topology_exactly": 514,
+    "full_response_sample_matrix_nonsingular": 514,
+    "identical_one_port_transfer_polynomials": 257,
+    "multiport_observed_block_identical_at_exact_shifts": 771,
+    "no_transfer_pole_cancellation": 257,
+    "nonisomorphic_path_vs_terminal_triangle_edge_counts": 257,
+    "original_spd_leading_minors": 1155,
+    "rational_rotation_orthogonal": 257,
+    "rotation_fixes_all_first_n_minus_two_ports": 257,
+    "strictly_positive_ground_springs": 257,
+    "strictly_positive_inter_mass_springs": 257,
+    "symmetric_physical_stiffness": 257,
+    "transformed_spd_leading_minors": 1155
+  },
+  "main_obstruction": "Nonisomorphic positive-spring unit-mass networks can have identical complete transfer blocks on the first n-2 ports, even with no hidden or canceled mode.",
+  "pair_separation": "A single added static response at mass n-1 under a force at mass 1 separates every constructed pair.",
+  "constructive_remedy": "With known M and all displacement response coordinates at n distinct nonresonant shifts, K=(e1*1^T+M*X*Z)*X^(-1), provided X is nonsingular.",
+  "scope": [
+    "The obstruction is an exact construction with a complete algebraic derivation in README.md, not a novelty claim.",
+    "Every checked network has diagonal positive mass M=I, strictly negative existing inter-mass couplings, strictly positive grounding, and SPD stiffness.",
+    "Minimality is checked by nonzero exact Krylov determinant and numerator/denominator polynomial gcd one.",
+    "The added sensor separates the constructed pairs; no universal two-port identification claim is made.",
+    "The global constructive remedy assumes known mass matrix, fixed coordinate labels, cyclic excitation, and full displacement sensing.",
+    "No noise robustness, unknown-order estimator, or physical hardware result is claimed."
+  ],
+  "fixture_sha256": "df82b88b30055c3302f2274619383df74a7ef8a019d644752b509f1d56cb04a0",
+  "source_sha256": "ff6ec22b87ccd01f14b2e8c6a1ebcd9a58a3beb5a70284da698f1e31d3a6319a",
+  "explicit_certificate_sha256": "d60e69c53fd9a374cc32fc5c68712d82cdf664106895d538b343110bd916e193",
+  "elapsed_seconds": 2.076523
+}

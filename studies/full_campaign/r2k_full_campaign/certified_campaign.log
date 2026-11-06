@@ -1,0 +1,117 @@
+panels 99 tail constants [3e-8 +/- 3.92e-9]
+panel 1 / 99 nodes 25 targets 0 seconds 27.0
+panel 2 / 99 nodes 25 targets 0 seconds 34.5
+panel 3 / 99 nodes 25 targets 0 seconds 41.9
+panel 4 / 99 nodes 24 targets 1 seconds 49.2
+panel 5 / 99 nodes 8 targets 2 seconds 52.4
+panel 6 / 99 nodes 8 targets 3 seconds 54.8
+Traceback (most recent call last):
+  File "/workspace/scratch/552eafefcc70/r2k_full_campaign/certified_campaign.py", line 162, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/552eafefcc70/r2k_full_campaign/certified_campaign.py", line 124, in main
+    Ms,meta=disk_majorant(c,R);Mmax=max(Ms);q=(h/R).upper();n=8
+            ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/552eafefcc70/r2k_full_campaign/certified_campaign.py", line 79, in disk_majorant
+    raise RuntimeError('Could not prove zero-free analytic Cauchy neighborhood')
+RuntimeError: Could not prove zero-free analytic Cauchy neighborhood
+panels 99 tail constants [3e-8 +/- 3.92e-9]
+panel 1 / 99 nodes 25 targets 0 seconds 25.8
+panel 2 / 99 nodes 25 targets 0 seconds 33.5
+panel 3 / 99 nodes 25 targets 0 seconds 41.3
+panel 4 / 99 nodes 24 targets 1 seconds 48.6
+panel 5 / 99 nodes 8 targets 2 seconds 51.2
+panel 6 / 99 nodes 8 targets 3 seconds 53.7
+panel 7 / 99 nodes 8 targets 3 seconds 56.3
+panel 8 / 99 nodes 8 targets 4 seconds 58.9
+panel 9 / 99 nodes 8 targets 5 seconds 61.5
+panel 10 / 99 nodes 8 targets 6 seconds 64.0
+panel 11 / 99 nodes 9 targets 7 seconds 66.9
+panel 12 / 99 nodes 8 targets 8 seconds 69.4
+panel 13 / 99 nodes 8 targets 9 seconds 72.3
+panel 14 / 99 nodes 17 targets 10 seconds 77.8
+panel 15 / 99 nodes 8 targets 11 seconds 80.3
+panel 16 / 99 nodes 8 targets 12 seconds 82.9
+panel 17 / 99 nodes 8 targets 12 seconds 85.4
+panel 18 / 99 nodes 8 targets 13 seconds 87.9
+panel 19 / 99 nodes 8 targets 14 seconds 90.3
+panel 20 / 99 nodes 8 targets 15 seconds 93.0
+panel 21 / 99 nodes 12 targets 16 seconds 96.6
+panel 22 / 99 nodes 8 targets 17 seconds 99.0
+panel 23 / 99 nodes 8 targets 18 seconds 101.7
+panel 24 / 99 nodes 10 targets 18 seconds 104.6
+panel 25 / 99 nodes 17 targets 19 seconds 109.5
+panel 26 / 99 nodes 8 targets 20 seconds 112.0
+panel 27 / 99 nodes 8 targets 21 seconds 114.7
+panel 28 / 99 nodes 9 targets 21 seconds 117.4
+panel 29 / 99 nodes 10 targets 22 seconds 120.5
+panel 30 / 99 nodes 8 targets 23 seconds 123.1
+panel 31 / 99 nodes 8 targets 24 seconds 125.6
+panel 32 / 99 nodes 15 targets 24 seconds 130.0
+panel 33 / 99 nodes 9 targets 25 seconds 132.9
+panel 34 / 99 nodes 8 targets 26 seconds 135.3
+panel 35 / 99 nodes 8 targets 27 seconds 137.7
+panel 36 / 99 nodes 16 targets 27 seconds 142.8
+panel 37 / 99 nodes 25 targets 27 seconds 150.7
+panel 38 / 99 nodes 11 targets 28 seconds 154.1
+panel 39 / 99 nodes 8 targets 29 seconds 156.6
+panel 40 / 99 nodes 8 targets 30 seconds 159.5
+panel 41 / 99 nodes 14 targets 30 seconds 164.3
+panel 42 / 99 nodes 26 targets 31 seconds 172.2
+panel 43 / 99 nodes 8 targets 32 seconds 174.7
+panel 44 / 99 nodes 8 targets 33 seconds 177.2
+panel 45 / 99 nodes 10 targets 33 seconds 180.4
+panel 46 / 99 nodes 30 targets 33 seconds 189.5
+panel 47 / 99 nodes 15 targets 34 seconds 194.0
+panel 48 / 99 nodes 8 targets 35 seconds 196.3
+panel 49 / 99 nodes 8 targets 36 seconds 198.7
+panel 50 / 99 nodes 10 targets 36 seconds 201.7
+panel 51 / 99 nodes 28 targets 36 seconds 210.4
+panel 52 / 99 nodes 27 targets 36 seconds 219.5
+panel 53 / 99 nodes 27 targets 36 seconds 228.7
+panel 54 / 99 nodes 20 targets 37 seconds 234.8
+panel 55 / 99 nodes 8 targets 38 seconds 237.4
+panel 56 / 99 nodes 8 targets 39 seconds 239.6
+panel 57 / 99 nodes 8 targets 39 seconds 242.0
+panel 58 / 99 nodes 27 targets 39 seconds 250.1
+panel 59 / 99 nodes 25 targets 39 seconds 257.3
+panel 60 / 99 nodes 13 targets 40 seconds 261.0
+panel 61 / 99 nodes 8 targets 41 seconds 263.3
+panel 62 / 99 nodes 8 targets 42 seconds 265.5
+panel 63 / 99 nodes 12 targets 42 seconds 269.1
+panel 64 / 99 nodes 25 targets 42 seconds 276.3
+panel 65 / 99 nodes 25 targets 42 seconds 283.5
+panel 66 / 99 nodes 26 targets 42 seconds 290.9
+panel 67 / 99 nodes 8 targets 43 seconds 293.1
+panel 68 / 99 nodes 8 targets 44 seconds 295.4
+panel 69 / 99 nodes 8 targets 45 seconds 297.6
+panel 70 / 99 nodes 15 targets 45 seconds 302.2
+panel 71 / 99 nodes 26 targets 45 seconds 310.8
+panel 72 / 99 nodes 25 targets 45 seconds 318.3
+panel 73 / 99 nodes 25 targets 45 seconds 326.2
+panel 74 / 99 nodes 25 targets 45 seconds 334.2
+panel 75 / 99 nodes 33 targets 45 seconds 344.4
+panel 76 / 99 nodes 29 targets 45 seconds 354.3
+panel 77 / 99 nodes 28 targets 45 seconds 363.0
+panel 78 / 99 nodes 16 targets 46 seconds 367.9
+panel 79 / 99 nodes 8 targets 47 seconds 370.1
+panel 80 / 99 nodes 8 targets 48 seconds 372.4
+panel 81 / 99 nodes 12 targets 48 seconds 376.2
+panel 82 / 99 nodes 29 targets 48 seconds 385.5
+panel 83 / 99 nodes 29 targets 48 seconds 394.3
+panel 84 / 99 nodes 27 targets 48 seconds 402.5
+panel 85 / 99 nodes 27 targets 48 seconds 410.3
+panel 86 / 99 nodes 26 targets 48 seconds 418.2
+panel 87 / 99 nodes 8 targets 49 seconds 420.6
+panel 88 / 99 nodes 8 targets 50 seconds 423.1
+panel 89 / 99 nodes 8 targets 51 seconds 425.6
+panel 90 / 99 nodes 23 targets 51 seconds 432.4
+panel 91 / 99 nodes 26 targets 51 seconds 440.2
+panel 92 / 99 nodes 26 targets 51 seconds 448.0
+panel 93 / 99 nodes 26 targets 51 seconds 456.3
+panel 94 / 99 nodes 26 targets 51 seconds 463.7
+panel 95 / 99 nodes 26 targets 51 seconds 471.5
+panel 96 / 99 nodes 26 targets 51 seconds 479.7
+panel 97 / 99 nodes 8 targets 52 seconds 482.1
+panel 98 / 99 nodes 9 targets 53 seconds 484.9
+panel 99 / 99 nodes 10 targets 54 seconds 487.9

@@ -1,0 +1,382 @@
+{
+ "random": [
+  {
+   "n": 6,
+   "unknowns": 48,
+   "s_points_needed": 8,
+   "configurations": 11,
+   "pair_protocol_configurations": 21,
+   "scalar_measurements": 88,
+   "exact": true
+  },
+  {
+   "n": 6,
+   "unknowns": 48,
+   "s_points_needed": 8,
+   "configurations": 11,
+   "pair_protocol_configurations": 21,
+   "scalar_measurements": 88,
+   "exact": true
+  },
+  {
+   "n": 3,
+   "unknowns": 15,
+   "s_points_needed": 5,
+   "configurations": 5,
+   "pair_protocol_configurations": 6,
+   "scalar_measurements": 25,
+   "exact": true
+  },
+  {
+   "n": 5,
+   "unknowns": 35,
+   "s_points_needed": 7,
+   "configurations": 9,
+   "pair_protocol_configurations": 15,
+   "scalar_measurements": 63,
+   "exact": true
+  },
+  {
+   "n": 4,
+   "unknowns": 24,
+   "s_points_needed": 6,
+   "configurations": 7,
+   "pair_protocol_configurations": 10,
+   "scalar_measurements": 42,
+   "exact": true
+  },
+  {
+   "n": 6,
+   "unknowns": 48,
+   "s_points_needed": 8,
+   "configurations": 11,
+   "pair_protocol_configurations": 21,
+   "scalar_measurements": 88,
+   "exact": true
+  },
+  {
+   "n": 5,
+   "unknowns": 35,
+   "s_points_needed": 7,
+   "configurations": 9,
+   "pair_protocol_configurations": 15,
+   "scalar_measurements": 63,
+   "exact": true
+  },
+  {
+   "n": 6,
+   "unknowns": 48,
+   "s_points_needed": 8,
+   "configurations": 11,
+   "pair_protocol_configurations": 21,
+   "scalar_measurements": 88,
+   "exact": true
+  },
+  {
+   "n": 2,
+   "unknowns": 8,
+   "s_points_needed": 4,
+   "configurations": 3,
+   "pair_protocol_configurations": 3,
+   "scalar_measurements": 12,
+   "exact": true
+  },
+  {
+   "n": 2,
+   "unknowns": 8,
+   "s_points_needed": 4,
+   "configurations": 3,
+   "pair_protocol_configurations": 3,
+   "scalar_measurements": 12,
+   "exact": true
+  },
+  {
+   "n": 2,
+   "unknowns": 8,
+   "s_points_needed": 4,
+   "configurations": 3,
+   "pair_protocol_configurations": 3,
+   "scalar_measurements": 12,
+   "exact": true
+  },
+  {
+   "n": 6,
+   "unknowns": 48,
+   "s_points_needed": 8,
+   "configurations": 11,
+   "pair_protocol_configurations": 21,
+   "scalar_measurements": 88,
+   "exact": true
+  },
+  {
+   "n": 5,
+   "unknowns": 35,
+   "s_points_needed": 7,
+   "configurations": 9,
+   "pair_protocol_configurations": 15,
+   "scalar_measurements": 63,
+   "exact": true
+  },
+  {
+   "n": 4,
+   "unknowns": 24,
+   "s_points_needed": 6,
+   "configurations": 7,
+   "pair_protocol_configurations": 10,
+   "scalar_measurements": 42,
+   "exact": true
+  },
+  {
+   "n": 3,
+   "unknowns": 15,
+   "s_points_needed": 5,
+   "configurations": 5,
+   "pair_protocol_configurations": 6,
+   "scalar_measurements": 25,
+   "exact": true
+  },
+  {
+   "n": 3,
+   "unknowns": 15,
+   "s_points_needed": 5,
+   "configurations": 5,
+   "pair_protocol_configurations": 6,
+   "scalar_measurements": 25,
+   "exact": true
+  },
+  {
+   "n": 3,
+   "unknowns": 15,
+   "s_points_needed": 5,
+   "configurations": 5,
+   "pair_protocol_configurations": 6,
+   "scalar_measurements": 25,
+   "exact": true
+  },
+  {
+   "n": 2,
+   "unknowns": 8,
+   "s_points_needed": 4,
+   "configurations": 3,
+   "pair_protocol_configurations": 3,
+   "scalar_measurements": 12,
+   "exact": true
+  },
+  {
+   "n": 5,
+   "unknowns": 35,
+   "s_points_needed": 7,
+   "configurations": 9,
+   "pair_protocol_configurations": 15,
+   "scalar_measurements": 63,
+   "exact": true
+  },
+  {
+   "n": 5,
+   "unknowns": 35,
+   "s_points_needed": 7,
+   "configurations": 9,
+   "pair_protocol_configurations": 15,
+   "scalar_measurements": 63,
+   "exact": true
+  },
+  {
+   "n": 6,
+   "unknowns": 48,
+   "s_points_needed": 8,
+   "configurations": 11,
+   "pair_protocol_configurations": 21,
+   "scalar_measurements": 88,
+   "exact": true
+  },
+  {
+   "n": 5,
+   "unknowns": 35,
+   "s_points_needed": 7,
+   "configurations": 9,
+   "pair_protocol_configurations": 15,
+   "scalar_measurements": 63,
+   "exact": true
+  },
+  {
+   "n": 2,
+   "unknowns": 8,
+   "s_points_needed": 4,
+   "configurations": 3,
+   "pair_protocol_configurations": 3,
+   "scalar_measurements": 12,
+   "exact": true
+  },
+  {
+   "n": 5,
+   "unknowns": 35,
+   "s_points_needed": 7,
+   "configurations": 9,
+   "pair_protocol_configurations": 15,
+   "scalar_measurements": 63,
+   "exact": true
+  },
+  {
+   "n": 2,
+   "unknowns": 8,
+   "s_points_needed": 4,
+   "configurations": 3,
+   "pair_protocol_configurations": 3,
+   "scalar_measurements": 12,
+   "exact": true
+  },
+  {
+   "n": 5,
+   "unknowns": 35,
+   "s_points_needed": 7,
+   "configurations": 9,
+   "pair_protocol_configurations": 15,
+   "scalar_measurements": 63,
+   "exact": true
+  },
+  {
+   "n": 4,
+   "unknowns": 24,
+   "s_points_needed": 6,
+   "configurations": 7,
+   "pair_protocol_configurations": 10,
+   "scalar_measurements": 42,
+   "exact": true
+  },
+  {
+   "n": 3,
+   "unknowns": 15,
+   "s_points_needed": 5,
+   "configurations": 5,
+   "pair_protocol_configurations": 6,
+   "scalar_measurements": 25,
+   "exact": true
+  },
+  {
+   "n": 2,
+   "unknowns": 8,
+   "s_points_needed": 4,
+   "configurations": 3,
+   "pair_protocol_configurations": 3,
+   "scalar_measurements": 12,
+   "exact": true
+  },
+  {
+   "n": 6,
+   "unknowns": 48,
+   "s_points_needed": 8,
+   "configurations": 11,
+   "pair_protocol_configurations": 21,
+   "scalar_measurements": 88,
+   "exact": true
+  },
+  {
+   "n": 3,
+   "unknowns": 15,
+   "s_points_needed": 5,
+   "configurations": 5,
+   "pair_protocol_configurations": 6,
+   "scalar_measurements": 25,
+   "exact": true
+  },
+  {
+   "n": 3,
+   "unknowns": 15,
+   "s_points_needed": 5,
+   "configurations": 5,
+   "pair_protocol_configurations": 6,
+   "scalar_measurements": 25,
+   "exact": true
+  },
+  {
+   "n": 3,
+   "unknowns": 15,
+   "s_points_needed": 5,
+   "configurations": 5,
+   "pair_protocol_configurations": 6,
+   "scalar_measurements": 25,
+   "exact": true
+  },
+  {
+   "n": 3,
+   "unknowns": 15,
+   "s_points_needed": 5,
+   "configurations": 5,
+   "pair_protocol_configurations": 6,
+   "scalar_measurements": 25,
+   "exact": true
+  },
+  {
+   "n": 5,
+   "unknowns": 35,
+   "s_points_needed": 7,
+   "configurations": 9,
+   "pair_protocol_configurations": 15,
+   "scalar_measurements": 63,
+   "exact": true
+  },
+  {
+   "n": 3,
+   "unknowns": 15,
+   "s_points_needed": 5,
+   "configurations": 5,
+   "pair_protocol_configurations": 6,
+   "scalar_measurements": 25,
+   "exact": true
+  },
+  {
+   "n": 6,
+   "unknowns": 48,
+   "s_points_needed": 8,
+   "configurations": 11,
+   "pair_protocol_configurations": 21,
+   "scalar_measurements": 88,
+   "exact": true
+  },
+  {
+   "n": 4,
+   "unknowns": 24,
+   "s_points_needed": 6,
+   "configurations": 7,
+   "pair_protocol_configurations": 10,
+   "scalar_measurements": 42,
+   "exact": true
+  },
+  {
+   "n": 5,
+   "unknowns": 35,
+   "s_points_needed": 7,
+   "configurations": 9,
+   "pair_protocol_configurations": 15,
+   "scalar_measurements": 63,
+   "exact": true
+  },
+  {
+   "n": 2,
+   "unknowns": 8,
+   "s_points_needed": 4,
+   "configurations": 3,
+   "pair_protocol_configurations": 3,
+   "scalar_measurements": 12,
+   "exact": true
+  }
+ ],
+ "all_exact": true,
+ "twins": {
+  "path": {
+   "s_points_needed": 5,
+   "exact": true
+  },
+  "triangle": {
+   "s_points_needed": 5,
+   "exact": true
+  }
+ },
+ "max_s_points_by_n": {
+  "2": 4,
+  "3": 5,
+  "4": 6,
+  "5": 7,
+  "6": 8
+ }
+}

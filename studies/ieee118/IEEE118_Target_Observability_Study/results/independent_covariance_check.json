@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "target_covariance_relative_difference": 8.454121558644966e-14,
+  "decoder_identity_inf_residual": 1.5159362524695535e-10,
+  "method": "Augmented bias-prior QR versus independent direct measurement-covariance Cholesky whitening and QR"
+}

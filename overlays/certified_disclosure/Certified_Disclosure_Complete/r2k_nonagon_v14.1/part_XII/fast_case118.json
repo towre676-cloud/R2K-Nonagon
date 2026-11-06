@@ -1,0 +1,14 @@
+{
+ "case": "case118",
+ "n": 117,
+ "unknowns": 179,
+ "rank_mod_p": 179,
+ "full_rank_proves_identifiability": true,
+ "rank_after_single_rows": 174,
+ "sources": 76,
+ "readings_upper_bound": 437,
+ "full_protocol_readings": 6903,
+ "saving_factor": 15.79633867276888,
+ "readings_per_unknown": 2.441340782122905,
+ "seconds": 1.792959213256836
+}

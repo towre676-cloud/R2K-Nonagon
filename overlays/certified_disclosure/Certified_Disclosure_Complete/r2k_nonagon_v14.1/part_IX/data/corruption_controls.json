@@ -1,0 +1,124 @@
+{
+  "controls": [
+    {
+      "name": "schema",
+      "verdict": "REJECTED",
+      "reason": "Unsupported observation schema"
+    },
+    {
+      "name": "unknown_site_set",
+      "verdict": "REJECTED",
+      "reason": "Unsupported or missing contract field known_site_set"
+    },
+    {
+      "name": "unknown_sensor_gain",
+      "verdict": "REJECTED",
+      "reason": "Unsupported or missing contract field sensor_gain"
+    },
+    {
+      "name": "wrong_force",
+      "verdict": "REJECTED",
+      "reason": "Unsupported or missing contract field force_amplitude"
+    },
+    {
+      "name": "uncertain_calibration",
+      "verdict": "REJECTED",
+      "reason": "Unsupported or missing contract field calibration"
+    },
+    {
+      "name": "nonzero_noise_contract",
+      "verdict": "REJECTED",
+      "reason": "Unsupported or missing contract field noise_model"
+    },
+    {
+      "name": "unsupported_coefficient_domain",
+      "verdict": "REJECTED",
+      "reason": "Unsupported or missing contract field coefficient_domain"
+    },
+    {
+      "name": "duplicate_coordinate",
+      "verdict": "REJECTED",
+      "reason": "Known unique nonempty coordinate labels required"
+    },
+    {
+      "name": "missing_observation",
+      "verdict": "REJECTED",
+      "reason": "Complete canonical acquisition plan required"
+    },
+    {
+      "name": "wrong_load_strength",
+      "verdict": "REJECTED",
+      "reason": "Acquisition configuration is missing, reordered, or miscalibrated"
+    },
+    {
+      "name": "noncanonical_load_key",
+      "verdict": "REJECTED",
+      "reason": "Load indices must be canonical decimal strings"
+    },
+    {
+      "name": "negative_compliance",
+      "verdict": "REJECTED",
+      "reason": "Positive unit-port compliance required"
+    },
+    {
+      "name": "floating_response",
+      "verdict": "REJECTED",
+      "reason": "Exact arithmetic accepts integers or rational strings, not floats/bools"
+    },
+    {
+      "name": "zero_drop",
+      "verdict": "REJECTED",
+      "reason": "Single-load responses violate strict spring monotonicity"
+    },
+    {
+      "name": "heldout_drift",
+      "verdict": "REJECTED",
+      "reason": "Reconstructed model fails observation heldout_0"
+    },
+    {
+      "name": "duplicate_heldout_id",
+      "verdict": "REJECTED",
+      "reason": "Unique held-out configuration ids required"
+    },
+    {
+      "name": "altered_response_0",
+      "verdict": "REJECTED",
+      "reason": "Observation has no rational reconstruction in the declared serialization class"
+    },
+    {
+      "name": "altered_response_1",
+      "verdict": "REJECTED",
+      "reason": "Single-load responses violate strict spring monotonicity"
+    },
+    {
+      "name": "altered_response_2",
+      "verdict": "REJECTED",
+      "reason": "Single-load responses violate strict spring monotonicity"
+    },
+    {
+      "name": "altered_response_3",
+      "verdict": "REJECTED",
+      "reason": "Single-load responses violate strict spring monotonicity"
+    },
+    {
+      "name": "altered_response_4",
+      "verdict": "REJECTED",
+      "reason": "Single-load responses violate strict spring monotonicity"
+    },
+    {
+      "name": "altered_response_5",
+      "verdict": "REJECTED",
+      "reason": "Pair load must strictly decrease compliance"
+    },
+    {
+      "name": "disconnected",
+      "verdict": "REJECTED",
+      "reason": "The known spring network must be connected"
+    },
+    {
+      "name": "ungrounded",
+      "verdict": "REJECTED",
+      "reason": "Grounding must be nonnegative and nonzero"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "linear_monte_carlo_to_analytic_ratio_range": [
+    0.9747386289773515,
+    1.0350123153701987
+  ],
+  "nonlinear_fit_count": 135,
+  "followup_fit_count": 33,
+  "target_improvement_vs_qr_percent": 58.61679351175978,
+  "target_improvement_vs_parameter_a_percent": 37.74366533072596
+}

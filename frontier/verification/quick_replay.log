@@ -1,0 +1,35 @@
+Verified 967 file identities.
+Replaying identifiability/network_obstruction.py
+{
+  "status": "PASS",
+  "fixtures": 257,
+  "checks": 6684,
+  "seconds": 2.341418
+}
+Replaying identifiability/verify_explicit_certificate.py
+{
+  "status": "PASS",
+  "checks": 56,
+  "generator_imported": false,
+  "determinant_method": "Leibniz permutations; adjugate inverse",
+  "certificate_sha256": "d60e69c53fd9a374cc32fc5c68712d82cdf664106895d538b343110bd916e193",
+  "verifier_source_sha256": "20be10272b90df9f4249d57c187177e2ddb3d2b90cd5dfc38fdd729897eb6423"
+}
+Replaying passivity/test_passivity.py
+{
+  "status": "PASS",
+  "fixtures": 150,
+  "exact_checks": 2400,
+  "adversarial_cases": 29,
+  "adversarial_rejected": 29,
+  "optimized_python_forgery_rejected": true,
+  "elapsed_seconds": 0.6115865989995655
+}
+Replaying passivity/certify_external.py
+{
+  "status": "PASS",
+  "models": 216,
+  "accepted": 216,
+  "scope": "global positive-real property of the exact serialized fitted models; not global certification of physical batteries"
+}
+Fresh replay outputs: /tmp/nonagon-frontier-z0rfq_6l/campaign

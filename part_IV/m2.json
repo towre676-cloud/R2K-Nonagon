@@ -1,0 +1,77 @@
+{
+ "table": {
+  "unforced|unique": 1289,
+  "by_cause": {
+   "X<0:False|pole:False|zero:False": 10,
+   "X<0:True|pole:False|zero:False": 174,
+   "X<0:False|pole:True|zero:True": 94,
+   "X<0:True|pole:True|zero:False": 462,
+   "X<0:True|pole:True|zero:True": 852,
+   "X<0:False|pole:True|zero:False": 17
+  },
+  "unforced|multi": 10,
+  "forced|multi": 1599
+ },
+ "anomalies": [
+  {
+   "X": 7.71696655948895,
+   "realpole": false,
+   "realzero": false,
+   "n_cand": 3
+  },
+  {
+   "X": 0.38602623620943644,
+   "realpole": false,
+   "realzero": false,
+   "n_cand": 3
+  },
+  {
+   "X": 8.186619551650303,
+   "realpole": false,
+   "realzero": false,
+   "n_cand": 3
+  },
+  {
+   "X": 5.4704578874050735,
+   "realpole": false,
+   "realzero": false,
+   "n_cand": 3
+  },
+  {
+   "X": 3.5306679462525437,
+   "realpole": false,
+   "realzero": false,
+   "n_cand": 3
+  },
+  {
+   "X": 0.8688141722004891,
+   "realpole": false,
+   "realzero": false,
+   "n_cand": 3
+  },
+  {
+   "X": 4.789805758435319,
+   "realpole": false,
+   "realzero": false,
+   "n_cand": 3
+  },
+  {
+   "X": 18.053460857687778,
+   "realpole": false,
+   "realzero": false,
+   "n_cand": 3
+  },
+  {
+   "X": 18.264926687874492,
+   "realpole": false,
+   "realzero": false,
+   "n_cand": 3
+  },
+  {
+   "X": 3.9370519238021546,
+   "realpole": false,
+   "realzero": false,
+   "n_cand": 3
+  }
+ ]
+}

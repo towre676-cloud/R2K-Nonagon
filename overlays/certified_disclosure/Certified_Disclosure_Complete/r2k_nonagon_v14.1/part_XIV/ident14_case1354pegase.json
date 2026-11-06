@@ -1,0 +1,79 @@
+{
+ "case": "case1354pegase",
+ "n": 1353,
+ "hw_buses": 1341,
+ "branches": 1705,
+ "schemes": {
+  "kron20": {
+   "readings": 210,
+   "rank": 187,
+   "unknowns": 1710,
+   "identifiable_unknowns": 0,
+   "identifiable_branches": 0,
+   "branches": 1705,
+   "seconds": 1.1354899406433105,
+   "rational_coordinate_classification_certified": false
+  },
+  "kron40": {
+   "readings": 820,
+   "rank": 314,
+   "unknowns": 1710,
+   "identifiable_unknowns": 17,
+   "identifiable_branches": 17,
+   "branches": 1705,
+   "seconds": 3.088366746902466,
+   "rational_coordinate_classification_certified": false
+  },
+  "kron60": {
+   "readings": 1830,
+   "rank": 394,
+   "unknowns": 1710,
+   "identifiable_unknowns": 91,
+   "identifiable_branches": 88,
+   "branches": 1705,
+   "seconds": 3.7828266620635986,
+   "rational_coordinate_classification_certified": false
+  },
+  "hw2": {
+   "readings": 4026,
+   "rank": 1655,
+   "unknowns": 1710,
+   "identifiable_unknowns": 1553,
+   "identifiable_branches": 1548,
+   "branches": 1705,
+   "seconds": 17.00289821624756,
+   "rational_coordinate_classification_certified": false
+  },
+  "hw5": {
+   "readings": 20130,
+   "rank": 1657,
+   "unknowns": 1710,
+   "identifiable_unknowns": 1561,
+   "identifiable_branches": 1556,
+   "branches": 1705,
+   "seconds": 162.39908361434937,
+   "rational_coordinate_classification_certified": false
+  },
+  "ports2": {
+   "readings": 4062,
+   "rank": 1668,
+   "unknowns": 1710,
+   "identifiable_unknowns": 1567,
+   "identifiable_branches": 1562,
+   "branches": 1705,
+   "seconds": 23.25852918624878,
+   "rational_coordinate_classification_certified": false
+  },
+  "ports5": {
+   "readings": 20310,
+   "rank": 1670,
+   "unknowns": 1710,
+   "identifiable_unknowns": 1575,
+   "identifiable_branches": 1570,
+   "branches": 1705,
+   "seconds": 106.03526020050049,
+   "rational_coordinate_classification_certified": false
+  }
+ },
+ "v14_1_scope_correction": "Legacy identifiable_* counts describe modular-kernel zero coordinates, not certified rational coordinate identifiability. Full column rank remains a rational certificate. See rational_access/ for exact replacement certificates."
+}

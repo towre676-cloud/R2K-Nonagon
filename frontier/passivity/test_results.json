@@ -1,0 +1,172 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact decimal-rational Fraction arithmetic",
+  "scope": "restricted sufficient positive-real class; finite tests are not a novelty claim or physical-device certificate",
+  "fixtures": 150,
+  "fixtures_with_RL_extension": 50,
+  "checks": {
+    "certificate_acceptance": 150,
+    "exact_rational_identity": 750,
+    "exact_positive_real_part": 750,
+    "exact_elementary_realization": 750
+  },
+  "exact_checks": 2400,
+  "monotonicity_checks": 5,
+  "adversarial_cases": 29,
+  "adversarial_rejected": 29,
+  "optimized_python_forgery_rejected": true,
+  "attacks": [
+    {
+      "name": "negative_R0",
+      "accepted": false,
+      "reason": "negative elementary coefficient"
+    },
+    {
+      "name": "negative_L",
+      "accepted": false,
+      "reason": "negative elementary coefficient"
+    },
+    {
+      "name": "negative_Cinv",
+      "accepted": false,
+      "reason": "negative elementary coefficient"
+    },
+    {
+      "name": "negative_residue",
+      "accepted": false,
+      "reason": "negative Debye residue"
+    },
+    {
+      "name": "right_half_plane_pole",
+      "accepted": false,
+      "reason": "nonpositive time constant or right-half-plane pole"
+    },
+    {
+      "name": "zero_time_constant",
+      "accepted": false,
+      "reason": "nonpositive time constant or right-half-plane pole"
+    },
+    {
+      "name": "NaN_coefficient",
+      "accepted": false,
+      "reason": "invalid coefficient decimal"
+    },
+    {
+      "name": "Infinity_coefficient",
+      "accepted": false,
+      "reason": "invalid coefficient decimal"
+    },
+    {
+      "name": "boolean_coefficient",
+      "accepted": false,
+      "reason": "boolean coefficient"
+    },
+    {
+      "name": "invalid_units",
+      "accepted": false,
+      "reason": "units must match SI impedance convention"
+    },
+    {
+      "name": "wrong_frequency_sign",
+      "accepted": false,
+      "reason": "unsupported frequency sign or convention"
+    },
+    {
+      "name": "unsupported_hidden_term",
+      "accepted": false,
+      "reason": "unsupported or missing model field"
+    },
+    {
+      "name": "unsupported_term_field",
+      "accepted": false,
+      "reason": "unsupported Debye term"
+    },
+    {
+      "name": "negative_RL_resistance",
+      "accepted": false,
+      "reason": "negative RL resistance"
+    },
+    {
+      "name": "negative_RL_time_constant",
+      "accepted": false,
+      "reason": "nonpositive RL time constant or right-half-plane pole"
+    },
+    {
+      "name": "zero_RL_time_constant",
+      "accepted": false,
+      "reason": "nonpositive RL time constant or right-half-plane pole"
+    },
+    {
+      "name": "missing_RL_units",
+      "accepted": false,
+      "reason": "units must match SI impedance convention"
+    },
+    {
+      "name": "unsupported_RL_term",
+      "accepted": false,
+      "reason": "unsupported RL term"
+    },
+    {
+      "name": "forged_term_count",
+      "accepted": false,
+      "reason": "term count"
+    },
+    {
+      "name": "forged_rl_count",
+      "accepted": false,
+      "reason": "RL term count"
+    },
+    {
+      "name": "forged_nonzero_rl_count",
+      "accepted": false,
+      "reason": "nonzero RL branch count"
+    },
+    {
+      "name": "forged_model_hash",
+      "accepted": false,
+      "reason": "model byte hash"
+    },
+    {
+      "name": "forged_coefficients",
+      "accepted": false,
+      "reason": "exact coefficient hash"
+    },
+    {
+      "name": "forged_verifier_source",
+      "accepted": false,
+      "reason": "verifier source identity"
+    },
+    {
+      "name": "forged_compiler_source",
+      "accepted": false,
+      "reason": "compiler source identity"
+    },
+    {
+      "name": "wrong_claim",
+      "accepted": false,
+      "reason": "unsupported claim"
+    },
+    {
+      "name": "wrong_domain",
+      "accepted": false,
+      "reason": "analytic domain"
+    },
+    {
+      "name": "boolean_count",
+      "accepted": false,
+      "reason": "term count"
+    },
+    {
+      "name": "duplicate_json_key",
+      "accepted": false,
+      "reason": "duplicate JSON key: R0"
+    }
+  ],
+  "source_sha256": {
+    "passive_compiler.py": "ff38ceca566c83844aea630ac38b0989e6301ccadcde873f4ee4105b25ee26e4",
+    "passive_verifier.py": "3cce2e822b6e9037cadfa6fdf6fe06c13fb4765b5ffa2223b29b65ae062d9e7e",
+    "test_passivity.py": "3cae1a72349e07f4c63018d4a0df87f64885227c4f9d472fa973ea6c1ae2b877"
+  },
+  "fixture_sha256": "d1836b5729d028368e300e56cbd1615cf032ef8f3fa8c8f660c2ff652077a0b7",
+  "elapsed_seconds": 0.6607722170010675
+}

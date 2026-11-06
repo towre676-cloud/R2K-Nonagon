@@ -1,0 +1,17 @@
+{
+  "schema": "nonagon.load-objective-independent-checks.v1",
+  "status": "passed",
+  "fixtures": 90,
+  "exact_predicates": 1173,
+  "bounded_optimum_u": "1",
+  "bounded_minimum_factor": "16",
+  "independent_relative_load_factor": "3",
+  "gaussian_optimum_u_interval": [
+    "826937537415897181356733247635844124857/850705917302346158658436518579420528640",
+    "330775014966358872542693299054337649943/340282366920938463463374607431768211456"
+  ],
+  "gaussian_optimum_u_decimal": 0.9720604037152811,
+  "derivative_source": "independent dual differentiation of rational inverse on raw h0,h(t),h(2t)",
+  "scope": "exact finite-protocol first derivatives; nonlinear enclosures remain the separate production gate",
+  "checker_sha256": "fd129001c35eb6ef86d605d4fefe53755cfd465e948e512978bd6590b7a997d6"
+}

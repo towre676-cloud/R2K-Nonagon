@@ -1,0 +1,17 @@
+{
+ "case": "case1354pegase",
+ "n": 1353,
+ "generators": 259,
+ "branches": 1705,
+ "schemes": {
+  "amb1s:all": {
+   "access": "ambient covariance plus one injection step, sensors all",
+   "readings": 10542,
+   "rank": 2319,
+   "unknowns": 3063,
+   "identifiable_branches": 912,
+   "branches": 1705,
+   "seconds": 478.01175260543823
+  }
+ }
+}

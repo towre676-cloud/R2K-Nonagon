@@ -1,0 +1,119 @@
+{
+  "order": 3,
+  "original_stiffness": [
+    [
+      "4",
+      "-1",
+      "0"
+    ],
+    [
+      "-1",
+      "3",
+      "-1"
+    ],
+    [
+      "0",
+      "-1",
+      "2"
+    ]
+  ],
+  "hidden_rotation": [
+    [
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "12/13",
+      "5/13"
+    ],
+    [
+      "0",
+      "-5/13",
+      "12/13"
+    ]
+  ],
+  "transformed_stiffness": [
+    [
+      "4",
+      "-12/13",
+      "-5/13"
+    ],
+    [
+      "-12/13",
+      "602/169",
+      "-59/169"
+    ],
+    [
+      "-5/13",
+      "-59/169",
+      "243/169"
+    ]
+  ],
+  "original_inter_mass_springs": [
+    [
+      1,
+      2,
+      "1"
+    ],
+    [
+      2,
+      3,
+      "1"
+    ]
+  ],
+  "transformed_inter_mass_springs": [
+    [
+      1,
+      2,
+      "12/13"
+    ],
+    [
+      1,
+      3,
+      "5/13"
+    ],
+    [
+      2,
+      3,
+      "59/169"
+    ]
+  ],
+  "original_grounding_springs": [
+    "3",
+    "1",
+    "1"
+  ],
+  "transformed_grounding_springs": [
+    "35/13",
+    "387/169",
+    "119/169"
+  ],
+  "unit_masses": [
+    "1",
+    "1",
+    "1"
+  ],
+  "shared_transfer_numerator_ascending": [
+    "5",
+    "-5",
+    "1"
+  ],
+  "shared_transfer_denominator_ascending": [
+    "18",
+    "-24",
+    "9",
+    "-1"
+  ],
+  "original_cyclic_determinant": "-1",
+  "transformed_cyclic_determinant": "-1",
+  "original_extra_sensor_static_response": "1/9",
+  "transformed_extra_sensor_static_response": "19/234",
+  "exact_extra_sensor_response_difference": "7/234",
+  "remedy_sample_frequencies": [
+    "1/40",
+    "1/20",
+    "3/40"
+  ]
+}

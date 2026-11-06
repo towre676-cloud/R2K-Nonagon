@@ -1,0 +1,88 @@
+{
+ "counterexample_1_over_1_minus_s": {
+  "denominator_strictly_hurwitz": false,
+  "relative_degree_ok": true,
+  "zero_root_multiplicity": 0,
+  "distinct_positive_roots": 0,
+  "sigH0": 0,
+  "sigH1": 0,
+  "P_low_order_sign": 1,
+  "P_lead_sign": 1,
+  "real_part_nonneg_on_axis": true,
+  "positive_real": false
+ },
+ "counterexample_v5_axis_test_only": "v5 certificate tested only P(x) >= 0; for Z = 1/(1-s), P(x) = 1 > 0, so v5 would have accepted an unstable, non-PR Z",
+ "zero_root_case_Z_eq_s_over_s2_plus_s_plus_1": {
+  "denominator_strictly_hurwitz": true,
+  "relative_degree_ok": true,
+  "zero_root_multiplicity": 1,
+  "distinct_positive_roots": 0,
+  "sigH0": 0,
+  "sigH1": 0,
+  "P_low_order_sign": 1,
+  "P_lead_sign": 1,
+  "real_part_nonneg_on_axis": true,
+  "positive_real": true
+ },
+ "zero_root_note": "a simple zero root adds 1 to sig(H0) and 0 to sig(H1), so sig0+sig1 = 2*d_pos + [0 is a root]; the v5 floor division (s0+s1)//2 therefore returned d_pos, correct by integer truncation rather than by design. v6 divides out x^z exactly and the parity is now checked.",
+ "root_count_x": {
+  "v5_formula": 0,
+  "v6": 0,
+  "zero_mult": 1
+ },
+ "root_count_x^2-x": {
+  "v5_formula": 1,
+  "v6": 1,
+  "zero_mult": 1
+ },
+ "root_count_x^3-x^2": {
+  "v5_formula": 1,
+  "v6": 1,
+  "zero_mult": 2
+ },
+ "root_count_x^2(x-1)(x-2)": {
+  "v5_formula": 2,
+  "v6": 2,
+  "zero_mult": 2
+ },
+ "ladder_true": {
+  "denominator_strictly_hurwitz": true,
+  "relative_degree_ok": true,
+  "zero_root_multiplicity": 0,
+  "distinct_positive_roots": 0,
+  "sigH0": 1,
+  "sigH1": -1,
+  "P_low_order_sign": 1,
+  "P_lead_sign": 1,
+  "real_part_nonneg_on_axis": true,
+  "positive_real": true
+ },
+ "ladder_perturbed": {
+  "denominator_strictly_hurwitz": true,
+  "relative_degree_ok": true,
+  "zero_root_multiplicity": 0,
+  "distinct_positive_roots": 2,
+  "sigH0": 3,
+  "sigH1": 1,
+  "P_low_order_sign": 1,
+  "P_lead_sign": 1,
+  "real_part_nonneg_on_axis": false,
+  "positive_real": false
+ },
+ "ladder_enforced": {
+  "denominator_strictly_hurwitz": true,
+  "relative_degree_ok": true,
+  "zero_root_multiplicity": 0,
+  "distinct_positive_roots": 0,
+  "sigH0": 1,
+  "sigH1": -1,
+  "P_low_order_sign": 1,
+  "P_lead_sign": 1,
+  "real_part_nonneg_on_axis": true,
+  "positive_real": true
+ },
+ "random_integer_root_crosscheck": {
+  "trials": 300,
+  "mismatches": 0
+ }
+}

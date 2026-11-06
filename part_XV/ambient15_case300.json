@@ -1,0 +1,71 @@
+{
+ "case": "case300",
+ "n": 299,
+ "generators": 68,
+ "branches": 408,
+ "schemes": {
+  "amb:all": {
+   "access": "ambient load fluctuations, unknown variances, sensors all",
+   "readings": 44850,
+   "rank": 707,
+   "unknowns": 708,
+   "identifiable_branches": 0,
+   "branches": 408,
+   "seconds": 39.622817277908325
+  },
+  "amb1:all": {
+   "access": "ambient covariance plus one injection step, sensors all",
+   "readings": 45149,
+   "rank": 708,
+   "unknowns": 708,
+   "identifiable_branches": 408,
+   "branches": 408,
+   "seconds": 37.96489453315735
+  },
+  "amb1l:all": {
+   "access": "ambient covariance plus one injection step, sensors all",
+   "readings": 1893,
+   "rank": 708,
+   "unknowns": 708,
+   "identifiable_branches": 408,
+   "branches": 408,
+   "seconds": 5.16229772567749
+  },
+  "inj:all": {
+   "access": "injection steps at 68 generators, sensors all",
+   "readings": 20332,
+   "rank": 357,
+   "unknowns": 409,
+   "identifiable_branches": 344,
+   "branches": 408,
+   "seconds": 8.62295651435852
+  },
+  "inj:60": {
+   "access": "injection steps at 68 generators, sensors 60",
+   "readings": 4080,
+   "rank": 233,
+   "unknowns": 409,
+   "identifiable_branches": 100,
+   "branches": 408,
+   "seconds": 1.0910801887512207
+  },
+  "amb:60": {
+   "access": "ambient load fluctuations, unknown variances, sensors 60",
+   "readings": 1830,
+   "rank": 393,
+   "unknowns": 708,
+   "identifiable_branches": 0,
+   "branches": 408,
+   "seconds": 1.6905431747436523
+  },
+  "amb1:60": {
+   "access": "ambient covariance plus one injection step, sensors 60",
+   "readings": 1890,
+   "rank": 394,
+   "unknowns": 708,
+   "identifiable_branches": 85,
+   "branches": 408,
+   "seconds": 1.8359942436218262
+  }
+ }
+}

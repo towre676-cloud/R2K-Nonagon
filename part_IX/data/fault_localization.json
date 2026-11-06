@@ -1,0 +1,26 @@
+{
+  "schema": "nonagon.intervention.fault.v1",
+  "before_certificate": "twin_path.certificate.json",
+  "after_certificate": "damaged_path.certificate.json",
+  "planted_change": {
+    "edge": [
+      0,
+      1
+    ],
+    "reduction": "1/2"
+  },
+  "diagnosis": {
+    "changed_edges": [
+      {
+        "i": 0,
+        "j": 1,
+        "before": "1",
+        "after": "1/2",
+        "difference": "-1/2",
+        "change": "weakened"
+      }
+    ],
+    "changed_grounding": [],
+    "interpretation": "Labeled coefficient changes within the accepted linear spring model"
+  }
+}

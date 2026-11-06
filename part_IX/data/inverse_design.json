@@ -1,0 +1,16 @@
+{
+  "schema": "nonagon.intervention.design.v1",
+  "source_certificate": "twin_path.certificate.json",
+  "node": 1,
+  "baseline_response": "5/18",
+  "target_response": "19/72",
+  "infinite_load_limit": "1/4",
+  "added_grounding_stiffness": "9/4",
+  "achieved_response": "19/72",
+  "response_vector": [
+    "19/72",
+    "1/18",
+    "1/36"
+  ],
+  "objective": "Exact static compliance target at the original force/readout port"
+}

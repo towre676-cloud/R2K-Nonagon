@@ -1,0 +1,26 @@
+{
+  "imaginary_finite_all_full_rank": true,
+  "imaginary_finite_max_K_error": 5.776404566919994e-14,
+  "imaginary_finite_max_C_error": 1.6041189868344056e-13,
+  "imaginary_finite_max_M_error": 3.3930652564244945e-11,
+  "exact_clamp_networks": 21,
+  "exact_clamp_all_pass": true,
+  "finite_J_all_exact_nonsingular": true,
+  "finite_leading_coefficient_all_exact": true,
+  "max_binary64_K_relative_error": 5.251400120498989e-14,
+  "max_binary64_C_relative_error": 8.735197152438099e-13,
+  "max_binary64_M_relative_error": 3.339253845014346e-11,
+  "imaginary_principal_branch_success_by_omega": {
+    "0.001": 21,
+    "0.01": 21,
+    "0.03": 21,
+    "0.1": 21,
+    "0.3": 15,
+    "1.0": 0,
+    "3.0": 0
+  },
+  "imaginary_total_each_omega": 21,
+  "finite_multistart_count": 126,
+  "finite_multistart_worst_parameter_error": 2.0245138097836713e-12,
+  "finite_multistart_worst_residual": 1.5590109462305874e-13
+}

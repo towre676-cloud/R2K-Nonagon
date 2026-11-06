@@ -1,0 +1,9 @@
+{
+  "arithmetic": "Arb ball arithmetic; archived comparisons>=128bits, identical10zeroinput80bits",
+  "policy": "use shifted Hankel only if every leading-minor sign decides, matches the direct reference, and balls overlap; otherwise choose direct Chebyshev",
+  "scope": "comparison of retained moment enclosures;10zerofixture independently full verified on creation",
+  "structured_selected": 49,
+  "fallback_selected": 1,
+  "all50_inertias_decide": true,
+  "elapsed_seconds": 0.40775876800034894
+}

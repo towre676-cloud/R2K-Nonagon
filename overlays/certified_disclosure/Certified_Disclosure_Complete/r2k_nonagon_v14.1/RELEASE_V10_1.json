@@ -1,0 +1,9 @@
+{
+  "release": "10.1",
+  "prose_words": 11286,
+  "display_equations": 117,
+  "campaigns": 15,
+  "verdict": "PASS",
+  "incoming_claude_archive_sha256": "56ec9e5c41613480e07fcbc1fa8290c2d67f84e06eb2c1ecf58ff68326934b8a",
+  "all_dimension_theorem": "Generic global frequency-for-pairs for any fixed ordered nonnegative grid"
+}

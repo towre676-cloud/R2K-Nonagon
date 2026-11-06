@@ -1,0 +1,244 @@
+{
+  "schema": "nonagon.instrument-results.v1",
+  "status": "PASSED",
+  "hardware_status": "synthetic engineering test; no physical apparatus connected",
+  "protocol_sha256": "562aae45cc50c4f702bd6dbcb3bfc6fc10f9957fd5d1803b746c554734e63aa7",
+  "source_sha256": "a33916283d4f6cdcef5e43c54ffecbf7495170cc192fc4c7223d1a553a483f0e",
+  "fixture_count": 24,
+  "case_count": 360,
+  "truth_containment_checks": 5893,
+  "false_edge_verdicts": 0,
+  "escaped_truth": 0,
+  "scope": "conditional interval enclosures in a frozen synthetic circuit campaign",
+  "summary": [
+    {
+      "budget": "broad_calibration",
+      "base_load": "1",
+      "cases": 24,
+      "unresolved": 24,
+      "full_graph": 0,
+      "disclosed_edges": 0,
+      "possible_edges": 192,
+      "unresolved_edges": 192
+    },
+    {
+      "budget": "broad_calibration",
+      "base_load": "1/4",
+      "cases": 24,
+      "unresolved": 24,
+      "full_graph": 0,
+      "disclosed_edges": 0,
+      "possible_edges": 192,
+      "unresolved_edges": 192
+    },
+    {
+      "budget": "broad_calibration",
+      "base_load": "4",
+      "cases": 24,
+      "unresolved": 24,
+      "full_graph": 0,
+      "disclosed_edges": 0,
+      "possible_edges": 192,
+      "unresolved_edges": 192
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "base_load": "1",
+      "cases": 24,
+      "unresolved": 24,
+      "full_graph": 0,
+      "disclosed_edges": 0,
+      "possible_edges": 192,
+      "unresolved_edges": 192
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "base_load": "1/4",
+      "cases": 24,
+      "unresolved": 24,
+      "full_graph": 0,
+      "disclosed_edges": 0,
+      "possible_edges": 192,
+      "unresolved_edges": 192
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "base_load": "4",
+      "cases": 24,
+      "unresolved": 24,
+      "full_graph": 0,
+      "disclosed_edges": 0,
+      "possible_edges": 192,
+      "unresolved_edges": 192
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "base_load": "1",
+      "cases": 24,
+      "enclosed": 4,
+      "full_graph": 0,
+      "disclosed_edges": 0,
+      "possible_edges": 192,
+      "unresolved_edges": 192,
+      "unresolved": 20
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "base_load": "1/4",
+      "cases": 24,
+      "unresolved": 21,
+      "full_graph": 0,
+      "disclosed_edges": 0,
+      "possible_edges": 192,
+      "unresolved_edges": 192,
+      "enclosed": 3
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "base_load": "4",
+      "cases": 24,
+      "unresolved": 24,
+      "full_graph": 0,
+      "disclosed_edges": 0,
+      "possible_edges": 192,
+      "unresolved_edges": 192
+    },
+    {
+      "budget": "ideal_reference",
+      "base_load": "1",
+      "cases": 24,
+      "enclosed": 24,
+      "full_graph": 24,
+      "disclosed_edges": 192,
+      "possible_edges": 192,
+      "unresolved_edges": 0
+    },
+    {
+      "budget": "ideal_reference",
+      "base_load": "1/4",
+      "cases": 24,
+      "enclosed": 24,
+      "full_graph": 24,
+      "disclosed_edges": 192,
+      "possible_edges": 192,
+      "unresolved_edges": 0
+    },
+    {
+      "budget": "ideal_reference",
+      "base_load": "4",
+      "cases": 24,
+      "enclosed": 24,
+      "full_graph": 24,
+      "disclosed_edges": 192,
+      "possible_edges": 192,
+      "unresolved_edges": 0
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "1",
+      "cases": 24,
+      "enclosed": 17,
+      "full_graph": 1,
+      "disclosed_edges": 39,
+      "possible_edges": 192,
+      "unresolved_edges": 153,
+      "unresolved": 7
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "1/4",
+      "cases": 24,
+      "enclosed": 17,
+      "full_graph": 1,
+      "disclosed_edges": 23,
+      "possible_edges": 192,
+      "unresolved_edges": 169,
+      "unresolved": 7
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "4",
+      "cases": 24,
+      "enclosed": 15,
+      "full_graph": 0,
+      "disclosed_edges": 10,
+      "possible_edges": 192,
+      "unresolved_edges": 182,
+      "unresolved": 9
+    }
+  ],
+  "frozen_twin_discrimination": [
+    {
+      "budget": "ideal_reference",
+      "effective_relative_load_error": "0",
+      "path_voltage_interval_V": [
+        "7/26",
+        "7/26"
+      ],
+      "triangle_voltage_interval_V": [
+        "1088/3989",
+        "1088/3989"
+      ],
+      "guaranteed_disjoint": true,
+      "remaining_gap_V": "365/103714"
+    },
+    {
+      "budget": "precision_calibration",
+      "effective_relative_load_error": "1199999/200000999999",
+      "path_voltage_interval_V": [
+        "700003971390604204687/2600017799983000000000",
+        "700003028599890197401/2600008199991000000000"
+      ],
+      "triangle_voltage_interval_V": [
+        "13600072076339563874081/49862820337191500000000",
+        "8369270106760876066213/30684725099883000000000"
+      ],
+      "guaranteed_disjoint": true,
+      "remaining_gap_V": "912347336770486514873810144787959/259287483502751799174530553000000000"
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "effective_relative_load_error": "21249/25001249",
+      "path_voltage_interval_V": [
+        "1750493929572201/6502024660000000",
+        "1749680921418223/6498624820000000"
+      ],
+      "triangle_voltage_interval_V": [
+        "34007794239075063/124687631330000000",
+        "24724074839484517/90645326780000000"
+      ],
+      "guaranteed_disjoint": true,
+      "remaining_gap_V": "284032604057612808713707/81029813570814761060000000"
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "effective_relative_load_error": "21249/25001249",
+      "path_voltage_interval_V": [
+        "87513291824387/3251012330000000",
+        "87495445055901/3249312410000000"
+      ],
+      "triangle_voltage_interval_V": [
+        "6800676128900599/249375262660000000",
+        "13600005916497269/498549297290000000"
+      ],
+      "guaranteed_disjoint": true,
+      "remaining_gap_V": "27832174965856572917693/81029813570814761060000000"
+    },
+    {
+      "budget": "broad_calibration",
+      "effective_relative_load_error": "20099/2000099",
+      "path_voltage_interval_V": [
+        "87710930879/3260210375000",
+        "174594920569/6480222750000"
+      ],
+      "triangle_voltage_interval_V": [
+        "108994697633503/3998714332000000",
+        "27153953838661/994920144750000"
+      ],
+      "guaranteed_disjoint": true,
+      "remaining_gap_V": "32618832241341631541/103650238339909812000000"
+    }
+  ],
+  "records_sha256": "3c7aef02811f8e6795e0412ec443f5c4023bce6e2f7ead37158dd050970677d1",
+  "elapsed_seconds": 2.261
+}

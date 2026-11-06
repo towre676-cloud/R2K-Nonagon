@@ -1,0 +1,632 @@
+[
+  {
+    "logweight_sd": 0.03,
+    "trial": 0,
+    "method": "qr_norm",
+    "budget": 180,
+    "target_rms_per_sigma": 776.7993488935302
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 0,
+    "method": "qr_norm",
+    "budget": 250,
+    "target_rms_per_sigma": 475.6150007130238
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 0,
+    "method": "qr_norm",
+    "budget": 379,
+    "target_rms_per_sigma": 420.61807743083
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 0,
+    "method": "target_a",
+    "budget": 180,
+    "target_rms_per_sigma": 696.3906005107509
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 0,
+    "method": "target_a",
+    "budget": 250,
+    "target_rms_per_sigma": 281.9703415741338
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 0,
+    "method": "target_a",
+    "budget": 379,
+    "target_rms_per_sigma": 205.00700711541123
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 0,
+    "method": "target_correlated",
+    "budget": 180,
+    "target_rms_per_sigma": 701.6059141201724
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 0,
+    "method": "target_correlated",
+    "budget": 250,
+    "target_rms_per_sigma": 280.1849619596433
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 0,
+    "method": "target_correlated",
+    "budget": 379,
+    "target_rms_per_sigma": 208.90777690174113
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 1,
+    "method": "qr_norm",
+    "budget": 180,
+    "target_rms_per_sigma": 855.0293329192692
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 1,
+    "method": "qr_norm",
+    "budget": 250,
+    "target_rms_per_sigma": 540.4601409755514
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 1,
+    "method": "qr_norm",
+    "budget": 379,
+    "target_rms_per_sigma": 479.8398504677841
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 1,
+    "method": "target_a",
+    "budget": 180,
+    "target_rms_per_sigma": 777.8508148363806
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 1,
+    "method": "target_a",
+    "budget": 250,
+    "target_rms_per_sigma": 293.6794258425848
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 1,
+    "method": "target_a",
+    "budget": 379,
+    "target_rms_per_sigma": 213.4100139362796
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 1,
+    "method": "target_correlated",
+    "budget": 180,
+    "target_rms_per_sigma": 782.3432301387315
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 1,
+    "method": "target_correlated",
+    "budget": 250,
+    "target_rms_per_sigma": 291.4236062196719
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 1,
+    "method": "target_correlated",
+    "budget": 379,
+    "target_rms_per_sigma": 217.76941615564837
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 2,
+    "method": "qr_norm",
+    "budget": 180,
+    "target_rms_per_sigma": 844.6807158227306
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 2,
+    "method": "qr_norm",
+    "budget": 250,
+    "target_rms_per_sigma": 533.690443534199
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 2,
+    "method": "qr_norm",
+    "budget": 379,
+    "target_rms_per_sigma": 473.6301510766382
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 2,
+    "method": "target_a",
+    "budget": 180,
+    "target_rms_per_sigma": 767.2241142917904
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 2,
+    "method": "target_a",
+    "budget": 250,
+    "target_rms_per_sigma": 286.2302632331205
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 2,
+    "method": "target_a",
+    "budget": 379,
+    "target_rms_per_sigma": 207.97109915069495
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 2,
+    "method": "target_correlated",
+    "budget": 180,
+    "target_rms_per_sigma": 771.7861684148411
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 2,
+    "method": "target_correlated",
+    "budget": 250,
+    "target_rms_per_sigma": 284.3629552823634
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 2,
+    "method": "target_correlated",
+    "budget": 379,
+    "target_rms_per_sigma": 211.85823798371155
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 3,
+    "method": "qr_norm",
+    "budget": 180,
+    "target_rms_per_sigma": 910.7039744065472
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 3,
+    "method": "qr_norm",
+    "budget": 250,
+    "target_rms_per_sigma": 575.2570993737265
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 3,
+    "method": "qr_norm",
+    "budget": 379,
+    "target_rms_per_sigma": 515.1146561385764
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 3,
+    "method": "target_a",
+    "budget": 180,
+    "target_rms_per_sigma": 842.5127003755936
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 3,
+    "method": "target_a",
+    "budget": 250,
+    "target_rms_per_sigma": 284.5283903507222
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 3,
+    "method": "target_a",
+    "budget": 379,
+    "target_rms_per_sigma": 205.50933313858354
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 3,
+    "method": "target_correlated",
+    "budget": 180,
+    "target_rms_per_sigma": 847.016340561872
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 3,
+    "method": "target_correlated",
+    "budget": 250,
+    "target_rms_per_sigma": 282.5100436057727
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 3,
+    "method": "target_correlated",
+    "budget": 379,
+    "target_rms_per_sigma": 209.66379117378384
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 4,
+    "method": "qr_norm",
+    "budget": 180,
+    "target_rms_per_sigma": 814.2239968585599
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 4,
+    "method": "qr_norm",
+    "budget": 250,
+    "target_rms_per_sigma": 512.0121971156706
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 4,
+    "method": "qr_norm",
+    "budget": 379,
+    "target_rms_per_sigma": 451.8721015272643
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 4,
+    "method": "target_a",
+    "budget": 180,
+    "target_rms_per_sigma": 740.0905006644317
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 4,
+    "method": "target_a",
+    "budget": 250,
+    "target_rms_per_sigma": 278.22481524841425
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 4,
+    "method": "target_a",
+    "budget": 379,
+    "target_rms_per_sigma": 202.35961022065436
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 4,
+    "method": "target_correlated",
+    "budget": 180,
+    "target_rms_per_sigma": 743.4330029998326
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 4,
+    "method": "target_correlated",
+    "budget": 250,
+    "target_rms_per_sigma": 275.2168826186902
+  },
+  {
+    "logweight_sd": 0.03,
+    "trial": 4,
+    "method": "target_correlated",
+    "budget": 379,
+    "target_rms_per_sigma": 206.26113178018483
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 0,
+    "method": "qr_norm",
+    "budget": 180,
+    "target_rms_per_sigma": 927.7624174463143
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 0,
+    "method": "qr_norm",
+    "budget": 250,
+    "target_rms_per_sigma": 561.4849747669806
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 0,
+    "method": "qr_norm",
+    "budget": 379,
+    "target_rms_per_sigma": 494.1611497668303
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 0,
+    "method": "target_a",
+    "budget": 180,
+    "target_rms_per_sigma": 814.3909841735282
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 0,
+    "method": "target_a",
+    "budget": 250,
+    "target_rms_per_sigma": 320.6223835324698
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 0,
+    "method": "target_a",
+    "budget": 379,
+    "target_rms_per_sigma": 233.7946883009997
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 0,
+    "method": "target_correlated",
+    "budget": 180,
+    "target_rms_per_sigma": 825.7863877913784
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 0,
+    "method": "target_correlated",
+    "budget": 250,
+    "target_rms_per_sigma": 320.0685773562566
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 0,
+    "method": "target_correlated",
+    "budget": 379,
+    "target_rms_per_sigma": 237.88574341504253
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 1,
+    "method": "qr_norm",
+    "budget": 180,
+    "target_rms_per_sigma": 796.6141636326361
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 1,
+    "method": "qr_norm",
+    "budget": 250,
+    "target_rms_per_sigma": 450.9448516943375
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 1,
+    "method": "qr_norm",
+    "budget": 379,
+    "target_rms_per_sigma": 403.4729580353785
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 1,
+    "method": "target_a",
+    "budget": 180,
+    "target_rms_per_sigma": 669.4271289206513
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 1,
+    "method": "target_a",
+    "budget": 250,
+    "target_rms_per_sigma": 300.3581594328523
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 1,
+    "method": "target_a",
+    "budget": 379,
+    "target_rms_per_sigma": 224.01797728890747
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 1,
+    "method": "target_correlated",
+    "budget": 180,
+    "target_rms_per_sigma": 673.6710778324045
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 1,
+    "method": "target_correlated",
+    "budget": 250,
+    "target_rms_per_sigma": 297.33316364821945
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 1,
+    "method": "target_correlated",
+    "budget": 379,
+    "target_rms_per_sigma": 227.2022728802341
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 2,
+    "method": "qr_norm",
+    "budget": 180,
+    "target_rms_per_sigma": 1262.8421721665109
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 2,
+    "method": "qr_norm",
+    "budget": 250,
+    "target_rms_per_sigma": 758.5619552770332
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 2,
+    "method": "qr_norm",
+    "budget": 379,
+    "target_rms_per_sigma": 692.5106722879254
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 2,
+    "method": "target_a",
+    "budget": 180,
+    "target_rms_per_sigma": 1214.234108081757
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 2,
+    "method": "target_a",
+    "budget": 250,
+    "target_rms_per_sigma": 336.7886391828044
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 2,
+    "method": "target_a",
+    "budget": 379,
+    "target_rms_per_sigma": 242.58413346953017
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 2,
+    "method": "target_correlated",
+    "budget": 180,
+    "target_rms_per_sigma": 1213.9835623199262
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 2,
+    "method": "target_correlated",
+    "budget": 250,
+    "target_rms_per_sigma": 335.17137209163934
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 2,
+    "method": "target_correlated",
+    "budget": 379,
+    "target_rms_per_sigma": 248.3646255053456
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 3,
+    "method": "qr_norm",
+    "budget": 180,
+    "target_rms_per_sigma": 613.1008489144548
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 3,
+    "method": "qr_norm",
+    "budget": 250,
+    "target_rms_per_sigma": 385.0744770951937
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 3,
+    "method": "qr_norm",
+    "budget": 379,
+    "target_rms_per_sigma": 342.6507881349719
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 3,
+    "method": "target_a",
+    "budget": 180,
+    "target_rms_per_sigma": 565.2616095051023
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 3,
+    "method": "target_a",
+    "budget": 250,
+    "target_rms_per_sigma": 219.28748675141173
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 3,
+    "method": "target_a",
+    "budget": 379,
+    "target_rms_per_sigma": 154.83706017518062
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 3,
+    "method": "target_correlated",
+    "budget": 180,
+    "target_rms_per_sigma": 568.5842845626348
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 3,
+    "method": "target_correlated",
+    "budget": 250,
+    "target_rms_per_sigma": 216.30548512353286
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 3,
+    "method": "target_correlated",
+    "budget": 379,
+    "target_rms_per_sigma": 157.28247183812022
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 4,
+    "method": "qr_norm",
+    "budget": 180,
+    "target_rms_per_sigma": 673.0813926927399
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 4,
+    "method": "qr_norm",
+    "budget": 250,
+    "target_rms_per_sigma": 431.60966537410724
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 4,
+    "method": "qr_norm",
+    "budget": 379,
+    "target_rms_per_sigma": 382.1312807314887
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 4,
+    "method": "target_a",
+    "budget": 180,
+    "target_rms_per_sigma": 619.580008083827
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 4,
+    "method": "target_a",
+    "budget": 250,
+    "target_rms_per_sigma": 225.73166657396013
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 4,
+    "method": "target_a",
+    "budget": 379,
+    "target_rms_per_sigma": 157.89763759973596
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 4,
+    "method": "target_correlated",
+    "budget": 180,
+    "target_rms_per_sigma": 622.0192265045517
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 4,
+    "method": "target_correlated",
+    "budget": 250,
+    "target_rms_per_sigma": 220.17130169211453
+  },
+  {
+    "logweight_sd": 0.1,
+    "trial": 4,
+    "method": "target_correlated",
+    "budget": 379,
+    "target_rms_per_sigma": 160.37842523538777
+  }
+]

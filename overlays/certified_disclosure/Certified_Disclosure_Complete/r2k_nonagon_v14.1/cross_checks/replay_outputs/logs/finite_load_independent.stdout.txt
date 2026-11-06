@@ -1,0 +1,17 @@
+{
+  "schema": "nonagon.finite-load-benchmark-independent-verification.v1",
+  "status": "passed",
+  "exact_predicates": 49808,
+  "prospective_cases": 90,
+  "arm_cases": 180,
+  "pilot_only_strength_decisions": 90,
+  "unique_raw_readings_replayed": 2910,
+  "independent_actual_shunt_checks": 3480,
+  "charged_scalar_readings": 3600,
+  "false_edge_calls": 0,
+  "escaped_truth": 0,
+  "records_sha256": "e8928dfe3cead5ce127dc527231967e8a4b086a8d1f60f8ad90617ba300bbe40",
+  "producer_receipt_sha256": "7b8a7ae2dd94d901dd88f27c284a692076ceb4eec787f0903c959c3ad354c2d2",
+  "checker_sha256": "283c20be452130ec565a2bd0c5218bf099c18256d7a56229e9bb98b29aba0777",
+  "scope": "Independent exact raw physics, calibration, pilot objective, retained acquisition intervals, matrix/edge truth containment and aggregate counts; no reimplementation of the complete interval propagation proof."
+}

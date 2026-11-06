@@ -1,0 +1,24 @@
+{
+  "schema": "nonagon.two_strength_replay.v1",
+  "status": "PASS",
+  "fixture_certificates": 7,
+  "fixture_results": {
+    "design_fixture_0_two": true,
+    "design_fixture_0_four": true,
+    "design_fixture_1_two": true,
+    "design_fixture_1_four": true,
+    "raw_fixture_0": true,
+    "raw_fixture_1": true,
+    "raw_fixture_2": true
+  },
+  "sha256": {
+    "two_strength_cert.py": "636bab9cd6dcd04b3a64e1abd21344b89845475b5888f60e8344587b4adf5bf5",
+    "test_two_strength_cert.py": "03a09661ae7854cf86fb40fc78607907b5eeb6242e8d466b27975d0136156c3f",
+    "two_strength_design.py": "77a066abc7441c443a3996b4d0e496d90ebeaa19e66cf16751e117f24cacad8a",
+    "two_strength_raw_design.py": "74b5c15b5493e7740608abbbec2c17cbb9c6bb10f382ed5d6c67d66afe25d2be",
+    "two_strength_cert_results.json": "8747f7859ff70a6a17342116c3957f60a027a33b20f7e4056748038a698df31e",
+    "two_strength_design_results.json": "02b194e131107a195eb31913b9c9bffa18a3eee8fa8321ccd7de889d51bb3648",
+    "two_strength_raw_design_results.json": "3316f01c81f0d850be91d573aaaca6faeec20c8b20852803fb68c9cf11983a68"
+  },
+  "scope": "serialized certificates replayed without consulting true_Gij fields; full campaigns separately reproducible"
+}

@@ -1,0 +1,11 @@
+{
+ "case": "case6515rte",
+ "negative_merged_branches_upper_bound": 80,
+ "binary64_negative_pivots": 80,
+ "witness_columns": 80,
+ "gram_negative_definite_by_exact_dominance": true,
+ "negative_index_exact": 80,
+ "max_offdiag_ratio": 1.35968614932254e-12,
+ "seconds": 30.235251665115356,
+ "seconds_gram": 18.116199254989624
+}

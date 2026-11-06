@@ -1,0 +1,71 @@
+{
+  "schema": "nonagon.instrument-qualification-results.v1",
+  "status": "COMPLETED",
+  "hardware_status": "synthetic qualification scenario; no physical apparatus connected",
+  "protocol_sha256": "8b4f559338585cae4a3d4e81f14f704662adca19001b4cb1e4f58049717a044c",
+  "source_sha256": "a83a23148dcad79c1734381304210f8b1e92f09e10f65e4e7b20b5a391f37dbb",
+  "fixture_count": 24,
+  "case_count": 72,
+  "normalization_and_load_checks": 2424,
+  "accepted_matrix_containment_checks": 0,
+  "false_edge_verdicts": 0,
+  "escaped_truth": 0,
+  "summary": [
+    {
+      "base_load": "1",
+      "cases": 24,
+      "unresolved": 24,
+      "full_graph": 0,
+      "disclosed_edges": 0,
+      "possible_edges": 192
+    },
+    {
+      "base_load": "1/4",
+      "cases": 24,
+      "unresolved": 24,
+      "full_graph": 0,
+      "disclosed_edges": 0,
+      "possible_edges": 192
+    },
+    {
+      "base_load": "4",
+      "cases": 24,
+      "unresolved": 24,
+      "full_graph": 0,
+      "disclosed_edges": 0,
+      "possible_edges": 192
+    }
+  ],
+  "frozen_twin_discrimination": [
+    {
+      "current_A": "1/1000",
+      "path_voltage_interval_V": [
+        "14001838023197/52025638927592",
+        "4666519576297/17326519968072"
+      ],
+      "triangle_voltage_interval_V": [
+        "136008983823193/498834047053298",
+        "725357805744193/2658484242204168"
+      ],
+      "guaranteed_disjoint": true,
+      "remaining_gap_V": "14371764076030599258308195/4321529038511567704321150728",
+      "effective_relative_load_error": "20999/20000999"
+    },
+    {
+      "current_A": "1/10000",
+      "path_voltage_interval_V": [
+        "1399949715035/52025638927592",
+        "466729936327/17326519968072"
+      ],
+      "triangle_voltage_interval_V": [
+        "108789231187565/3990672376426384",
+        "72547745189263/2658484242204168"
+      ],
+      "guaranteed_disjoint": true,
+      "remaining_gap_V": "2796565291392771290071639/8643058077023135408642301456",
+      "effective_relative_load_error": "20999/20000999"
+    }
+  ],
+  "records_sha256": "46df7c3fd6291018481a521b94c1084ff7b91031c30b0ba027ce10e31d7938aa",
+  "elapsed_seconds": 0.433
+}

@@ -1,0 +1,116 @@
+{
+  "id": "n6_family3",
+  "order": 6,
+  "family": 3,
+  "weak_link": null,
+  "minimum_positive_gap": "1/512",
+  "K_normalized": [
+    [
+      "7/2",
+      "-5/4",
+      "0",
+      "-2",
+      "0",
+      "0"
+    ],
+    [
+      "-5/4",
+      "11/4",
+      "-5/4",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-5/4",
+      "17/4",
+      "-2",
+      "-3/4",
+      "0"
+    ],
+    [
+      "-2",
+      "0",
+      "-2",
+      "21/4",
+      "-1/2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-3/4",
+      "-1/2",
+      "11/4",
+      "-3/4"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-3/4",
+      "5/4"
+    ]
+  ],
+  "grounds": [
+    "1/4",
+    "1/4",
+    "1/4",
+    "3/4",
+    "3/4",
+    "1/2"
+  ],
+  "edges": [
+    {
+      "sites": [
+        0,
+        1
+      ],
+      "conductance_normalized": "5/4"
+    },
+    {
+      "sites": [
+        0,
+        3
+      ],
+      "conductance_normalized": "2"
+    },
+    {
+      "sites": [
+        1,
+        2
+      ],
+      "conductance_normalized": "5/4"
+    },
+    {
+      "sites": [
+        2,
+        3
+      ],
+      "conductance_normalized": "2"
+    },
+    {
+      "sites": [
+        2,
+        4
+      ],
+      "conductance_normalized": "3/4"
+    },
+    {
+      "sites": [
+        3,
+        4
+      ],
+      "conductance_normalized": "1/2"
+    },
+    {
+      "sites": [
+        4,
+        5
+      ],
+      "conductance_normalized": "3/4"
+    }
+  ]
+}

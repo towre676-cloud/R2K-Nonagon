@@ -1,0 +1,9 @@
+{
+  "schema": "nonagon.dynamic-step.independent.v1",
+  "status": "PASSED",
+  "checks": 956,
+  "fixtures": 4,
+  "scalar_settings": 96,
+  "matrix_enclosures": 12,
+  "imports_acquisition_or_inverse_code": false
+}

@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "RMT_determinant_controls": [
+    {
+      "N": 2,
+      "order": 2,
+      "ratios_compiler": "[0.3014260546826096931228113199902614681943894391705444015 +/- 4.98e-56]",
+      "independent_CUE_determinant": "[0.30142605468260969312281131999026146819438943917054440149 +/- 3.84e-57]",
+      "assignment_counts_by_differentiated_order": {
+        "2": 2,
+        "0": 1
+      },
+      "distinct_J_calls": 2
+    },
+    {
+      "N": 2,
+      "order": 3,
+      "ratios_compiler": "[+/- 1.06e-55]",
+      "independent_CUE_determinant": "[+/- 4.18e-57]",
+      "assignment_counts_by_differentiated_order": {
+        "3": 6,
+        "2": 6,
+        "0": 1
+      },
+      "distinct_J_calls": 7
+    },
+    {
+      "N": 2,
+      "order": 4,
+      "ratios_compiler": "[+/- 4.39e-52]",
+      "independent_CUE_determinant": "[+/- 6.48e-111]",
+      "assignment_counts_by_differentiated_order": {
+        "4": 14,
+        "3": 24,
+        "2": 12,
+        "0": 1
+      },
+      "distinct_J_calls": 26
+    },
+    {
+      "N": 5,
+      "order": 2,
+      "ratios_compiler": "[0.3652713998993449835664927395092833277361879841134873815 +/- 6.17e-56]",
+      "independent_CUE_determinant": "[0.36527139989934498356649273950928332773618798411348738154 +/- 4.22e-57]",
+      "assignment_counts_by_differentiated_order": {
+        "2": 2,
+        "0": 1
+      },
+      "distinct_J_calls": 2
+    },
+    {
+      "N": 5,
+      "order": 3,
+      "ratios_compiler": "[0.2038356535526379883248145041074280582116354814760362817 +/- 6.83e-56]",
+      "independent_CUE_determinant": "[0.20383565355263798832481450410742805821163548147603628171 +/- 8.06e-57]",
+      "assignment_counts_by_differentiated_order": {
+        "3": 6,
+        "2": 6,
+        "0": 1
+      },
+      "distinct_J_calls": 7
+    },
+    {
+      "N": 5,
+      "order": 4,
+      "ratios_compiler": "[0.186248943982758009963481065650837554276442950946256804 +/- 6.25e-55]",
+      "independent_CUE_determinant": "[0.18624894398275800996348106565083755427644295094625680405 +/- 9.11e-57]",
+      "assignment_counts_by_differentiated_order": {
+        "4": 14,
+        "3": 24,
+        "2": 12,
+        "0": 1
+      },
+      "distinct_J_calls": 26
+    },
+    {
+      "N": 9,
+      "order": 2,
+      "ratios_compiler": "[0.3731464132058148524235751217759064308550866657601380789 +/- 2.56e-56]",
+      "independent_CUE_determinant": "[0.37314641320581485242357512177590643085508666576013807889 +/- 2.73e-57]",
+      "assignment_counts_by_differentiated_order": {
+        "2": 2,
+        "0": 1
+      },
+      "distinct_J_calls": 2
+    },
+    {
+      "N": 9,
+      "order": 3,
+      "ratios_compiler": "[0.2230560394836626919465087352046473078095787233311047189 +/- 7.40e-56]",
+      "independent_CUE_determinant": "[0.22305603948366269194650873520464730780957872333110471893 +/- 7.94e-57]",
+      "assignment_counts_by_differentiated_order": {
+        "3": 6,
+        "2": 6,
+        "0": 1
+      },
+      "distinct_J_calls": 7
+    },
+    {
+      "N": 9,
+      "order": 4,
+      "ratios_compiler": "[0.210552480612531880472116868139127149339582605454645671 +/- 6.78e-55]",
+      "independent_CUE_determinant": "[0.2105524806125318804721168681391271493395826054546456710 +/- 2.09e-56]",
+      "assignment_counts_by_differentiated_order": {
+        "4": 14,
+        "3": 24,
+        "2": 12,
+        "0": 1
+      },
+      "distinct_J_calls": 26
+    }
+  ],
+  "local_Euler_residue_vs_series_controls": [
+    {
+      "prime": 2,
+      "series_degree": 256,
+      "all_16_mixed_coefficients_match": true,
+      "Cauchy_series_tail_upper": "[2.021709478383633926460847563799028527592547112158069253e-51 +/- 7.23e-106]"
+    },
+    {
+      "prime": 3,
+      "series_degree": 256,
+      "all_16_mixed_coefficients_match": true,
+      "Cauchy_series_tail_upper": "[2.55999632919903261871426838245548605781604437247776887e-97 +/- 1.34e-151]"
+    },
+    {
+      "prime": 5,
+      "series_degree": 256,
+      "all_16_mixed_coefficients_match": true,
+      "Cauchy_series_tail_upper": "[2.75535855756667596388024098409116444225127838154928388e-154 +/- 2.03e-208]"
+    }
+  ],
+  "finite_prime_BK_pair_controls": [
+    {
+      "prime_cutoff": 31,
+      "compiler": "[0.3533398608024994669355037368371366034051009953830186472 +/- 9.58e-56]",
+      "independent_BK_pair_evaluator": "[0.3533398608024994669355037368371366034051009953830186472 +/- 1.77e-56]"
+    },
+    {
+      "prime_cutoff": 97,
+      "compiler": "[0.352474073003504610485106091866974478045191499179196280 +/- 3.22e-55]",
+      "independent_BK_pair_evaluator": "[0.3524740730035046104851060918669744780451914991791962801 +/- 4.30e-56]"
+    },
+    {
+      "prime_cutoff": 379,
+      "compiler": "[0.352151366799436056356498517385251466313103575662432725 +/- 6.89e-55]",
+      "independent_BK_pair_evaluator": "[0.3521513667994360563564985173852514663131035756624327251 +/- 2.55e-56]"
+    },
+    {
+      "prime_cutoff": 997,
+      "compiler": "[0.35210750771193208045052529383069530997216255356313126 +/- 2.64e-54]",
+      "independent_BK_pair_evaluator": "[0.3521075077119320804505252938306953099721625535631312613 +/- 6.82e-56]"
+    },
+    {
+      "prime_cutoff": 10007,
+      "compiler": "[0.3521060051434895080603428666310406684926204500795608 +/- 5.87e-53]",
+      "independent_BK_pair_evaluator": "[0.352106005143489508060342866631040668492620450079560751 +/- 3.96e-55]"
+    }
+  ],
+  "scope": "validates assembly and finite Euler differentiation; does not certify an infinite-prime four-point tail or ratios-conjecture remainder"
+}

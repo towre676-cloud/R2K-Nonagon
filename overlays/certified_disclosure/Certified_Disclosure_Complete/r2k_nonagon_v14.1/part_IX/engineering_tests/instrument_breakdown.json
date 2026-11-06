@@ -1,0 +1,552 @@
+{
+  "order_load_budget_breakdown": [
+    {
+      "budget": "broad_calibration",
+      "base_load": "1/4",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 6,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "broad_calibration",
+      "base_load": "1/4",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 6,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "broad_calibration",
+      "base_load": "1/4",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "Single-load intercept is not separated from zero": 1,
+        "The discriminant interval is not nonnegative": 5,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "broad_calibration",
+      "base_load": "1",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 6,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "broad_calibration",
+      "base_load": "1",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 6,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "broad_calibration",
+      "base_load": "1",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "Single-load intercept is not separated from zero": 2,
+        "The discriminant interval is not nonnegative": 5,
+        "First load difference is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "broad_calibration",
+      "base_load": "4",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 6,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "broad_calibration",
+      "base_load": "4",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 6,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "broad_calibration",
+      "base_load": "4",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "Single-load intercept is not separated from zero": 3,
+        "The discriminant interval is not nonnegative": 5
+      }
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "base_load": "1/4",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 2,
+        "Inverse perturbation margin is not below one": 4,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "base_load": "1/4",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 2,
+        "Inverse perturbation margin is not below one": 4,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "base_load": "1/4",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 3,
+        "Inverse perturbation margin is not below one": 3,
+        "First load difference is not separated from zero": 1,
+        "Single-load intercept is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "base_load": "1",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 3,
+        "Inverse perturbation margin is not below one": 3,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "base_load": "1",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 4,
+        "Inverse perturbation margin is not below one": 2,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "base_load": "1",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 3,
+        "Inverse perturbation margin is not below one": 3,
+        "First load difference is not separated from zero": 1,
+        "Single-load intercept is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "base_load": "4",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 6,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "base_load": "4",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 6,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "declared_008percent_100uA",
+      "base_load": "4",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "Single-load intercept is not separated from zero": 2,
+        "The discriminant interval is not nonnegative": 5,
+        "First load difference is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "base_load": "1/4",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 3,
+      "full_graph": 0,
+      "failure_reasons": {
+        "Inverse perturbation margin is not below one": 3,
+        "Single-load intercept is not separated from zero": 1,
+        "First load difference is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "base_load": "1/4",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "Inverse perturbation margin is not below one": 5,
+        "The discriminant interval is not nonnegative": 1,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "base_load": "1/4",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 1,
+        "Inverse perturbation margin is not below one": 5,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "base_load": "1",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 4,
+      "full_graph": 0,
+      "failure_reasons": {
+        "Inverse perturbation margin is not below one": 2,
+        "The discriminant interval is not nonnegative": 1,
+        "First load difference is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "base_load": "1",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 2,
+        "Inverse perturbation margin is not below one": 4,
+        "Single-load intercept is not separated from zero": 1,
+        "First load difference is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "base_load": "1",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 2,
+        "Inverse perturbation margin is not below one": 4,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "base_load": "4",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 6,
+        "Single-load intercept is not separated from zero": 1,
+        "First load difference is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "base_load": "4",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 6,
+        "Single-load intercept is not separated from zero": 1,
+        "First load difference is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "declared_008percent_1mA",
+      "base_load": "4",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 0,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 6,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "ideal_reference",
+      "base_load": "1/4",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 8,
+      "full_graph": 8,
+      "failure_reasons": {}
+    },
+    {
+      "budget": "ideal_reference",
+      "base_load": "1/4",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 8,
+      "full_graph": 8,
+      "failure_reasons": {}
+    },
+    {
+      "budget": "ideal_reference",
+      "base_load": "1/4",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 8,
+      "full_graph": 8,
+      "failure_reasons": {}
+    },
+    {
+      "budget": "ideal_reference",
+      "base_load": "1",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 8,
+      "full_graph": 8,
+      "failure_reasons": {}
+    },
+    {
+      "budget": "ideal_reference",
+      "base_load": "1",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 8,
+      "full_graph": 8,
+      "failure_reasons": {}
+    },
+    {
+      "budget": "ideal_reference",
+      "base_load": "1",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 8,
+      "full_graph": 8,
+      "failure_reasons": {}
+    },
+    {
+      "budget": "ideal_reference",
+      "base_load": "4",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 8,
+      "full_graph": 8,
+      "failure_reasons": {}
+    },
+    {
+      "budget": "ideal_reference",
+      "base_load": "4",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 8,
+      "full_graph": 8,
+      "failure_reasons": {}
+    },
+    {
+      "budget": "ideal_reference",
+      "base_load": "4",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 8,
+      "full_graph": 8,
+      "failure_reasons": {}
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "1/4",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 6,
+      "full_graph": 1,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 1,
+        "Single-load intercept is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "1/4",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 6,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 1,
+        "First load difference is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "1/4",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 5,
+      "full_graph": 0,
+      "failure_reasons": {
+        "Inverse perturbation margin is not below one": 1,
+        "First load difference is not separated from zero": 2
+      }
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "1",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 6,
+      "full_graph": 1,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 1,
+        "Single-load intercept is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "1",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 6,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 1,
+        "First load difference is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "1",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 5,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 1,
+        "Single-load intercept is not separated from zero": 1,
+        "First load difference is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "4",
+      "order": 3,
+      "cases": 8,
+      "matrix_enclosed": 6,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 1,
+        "Single-load intercept is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "4",
+      "order": 4,
+      "cases": 8,
+      "matrix_enclosed": 5,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 2,
+        "First load difference is not separated from zero": 1
+      }
+    },
+    {
+      "budget": "precision_calibration",
+      "base_load": "4",
+      "order": 6,
+      "cases": 8,
+      "matrix_enclosed": 4,
+      "full_graph": 0,
+      "failure_reasons": {
+        "The discriminant interval is not nonnegative": 1,
+        "Inverse perturbation margin is not below one": 1,
+        "Single-load intercept is not separated from zero": 1,
+        "First load difference is not separated from zero": 1
+      }
+    }
+  ],
+  "all_failure_reasons": {
+    "Inverse perturbation margin is not below one": 44,
+    "The discriminant interval is not nonnegative": 119,
+    "Single-load intercept is not separated from zero": 19,
+    "First load difference is not separated from zero": 50
+  },
+  "qualification_failure_reasons": {
+    "The discriminant interval is not nonnegative": 41,
+    "Inverse perturbation margin is not below one": 9,
+    "First load difference is not separated from zero": 16,
+    "Single-load intercept is not separated from zero": 6
+  }
+}

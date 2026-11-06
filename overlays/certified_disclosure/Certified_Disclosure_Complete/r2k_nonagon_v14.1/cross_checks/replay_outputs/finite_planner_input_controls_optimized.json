@@ -1,0 +1,115 @@
+{
+  "schema": "nonagon.load-planner-input-controls.v1",
+  "status": "passed",
+  "valid_exact_pilot": "passed",
+  "expected_candidate": "2",
+  "controls": [
+    {
+      "case": "boolean-order",
+      "rejected": true
+    },
+    {
+      "case": "float-order",
+      "rejected": true
+    },
+    {
+      "case": "boolean-port",
+      "rejected": true
+    },
+    {
+      "case": "float-port",
+      "rejected": true
+    },
+    {
+      "case": "wrong-port",
+      "rejected": true
+    },
+    {
+      "case": "float-channel-count",
+      "rejected": true
+    },
+    {
+      "case": "missing-fallback",
+      "rejected": true
+    },
+    {
+      "case": "empty-candidates",
+      "rejected": true
+    },
+    {
+      "case": "boolean-candidate",
+      "rejected": true
+    },
+    {
+      "case": "negative-voltage-radius",
+      "rejected": true
+    },
+    {
+      "case": "negative-drift-radius",
+      "rejected": true
+    },
+    {
+      "case": "negative-current",
+      "rejected": true
+    },
+    {
+      "case": "unbounded-current",
+      "rejected": true
+    },
+    {
+      "case": "negative-shunt-radius",
+      "rejected": true
+    },
+    {
+      "case": "negative-relay",
+      "rejected": true
+    },
+    {
+      "case": "invalid-resistance-range",
+      "rejected": true
+    },
+    {
+      "case": "double-load-resistance-violation",
+      "rejected": true
+    },
+    {
+      "case": "reversed-response-interval",
+      "rejected": true
+    },
+    {
+      "case": "boolean-response",
+      "rejected": true
+    },
+    {
+      "case": "float-response",
+      "rejected": true
+    },
+    {
+      "case": "extra-zero-load",
+      "rejected": true
+    },
+    {
+      "case": "extra-pair-load",
+      "rejected": true
+    },
+    {
+      "case": "duplicate-reading",
+      "rejected": true
+    },
+    {
+      "case": "missing-reading",
+      "rejected": true
+    },
+    {
+      "case": "hidden-operator",
+      "rejected": true
+    }
+  ],
+  "rejected": 25,
+  "control_count": 25,
+  "failed_controls": [],
+  "source_sha256": {
+    "planner.py": "f9ef5723db777d509cef548dc05e0aa2a3c0cdef5cd3cf476650a3203aae7fa9",
+    "planner_input_controls.py": "d41a214fab4862e12ad1f2766df66bc717eaf92abcbc8dbe8647b22ce1d79acb"
+  }
+}

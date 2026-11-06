@@ -1,0 +1,26 @@
+{
+  "schema": "nonagon.finite-load-optimized-parity.v1",
+  "status": "PASSED",
+  "files": [
+    {
+      "file": "benchmark_cases.jsonl",
+      "byte_identical": true,
+      "sha256": "e8928dfe3cead5ce127dc527231967e8a4b086a8d1f60f8ad90617ba300bbe40"
+    },
+    {
+      "file": "benchmark_receipt.json",
+      "byte_identical": true,
+      "sha256": "7b8a7ae2dd94d901dd88f27c284a692076ceb4eec787f0903c959c3ad354c2d2"
+    },
+    {
+      "file": "example_pilot.json",
+      "byte_identical": true,
+      "sha256": "7ac53f013a7a882a09b90ff34a869ce5ffa01d28953ef1bcdc0caf76e00ea1b0"
+    },
+    {
+      "file": "example_recommendation.json",
+      "byte_identical": true,
+      "sha256": "691860721b9a53da1aee9374cdc566446c75e2c82755e0dd3c3f2ba48e2679b1"
+    }
+  ]
+}

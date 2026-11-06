@@ -1,0 +1,20 @@
+Nonagon independent RC transient v7_path
+.options reltol=1e-10 abstol=1e-16 vntol=1e-12 gmin=1e-18 method=gear maxord=2
+Iinput 0 n1 DC 0.0001
+Redge_1_2 n1 n2 1000
+Rground_1 n1 0 333.33333333333331
+Redge_2_3 n2 n3 1000
+Rground_2 n2 0 1000
+Rground_3 n3 0 1000
+Cground_1 n1 0 9.9999999999999995e-07 IC=0
+Cground_2 n2 0 9.9999999999999995e-07 IC=0
+Cground_3 n3 0 9.9999999999999995e-07 IC=0
+.control
+set numdgt=17
+set wr_singlescale
+set wr_vecnames
+tran 3.9433756729740642e-06 0.015773502691896257 0 3.9433756729740642e-06 uic
+wrdata /workspace/scratch/78a48cc5fade/part9_tests/netlists/v7_path/transient.dat v(n1) v(n2) v(n3)
+quit
+.endc
+.end

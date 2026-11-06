@@ -1,0 +1,11 @@
+{
+  "audited_at_utc": "2026-10-30T01:32:35.473463+00:00",
+  "rows_verified": 1000,
+  "successful": 1000,
+  "frozen_hashes_unchanged": true,
+  "shared_noise_tables_and_queries_verified": true,
+  "protected_grid_disjoint": true,
+  "budgets_and_uniqueness_verified": true,
+  "max_physical_backward_residual": 1.9337184695436896e-16,
+  "max_independent_numpy_relative_difference": 0.0
+}

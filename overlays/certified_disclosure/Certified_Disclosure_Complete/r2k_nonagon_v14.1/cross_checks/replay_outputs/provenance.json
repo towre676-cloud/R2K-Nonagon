@@ -1,0 +1,14 @@
+{
+  "schema": "nonagon.integration.provenance-replay.v1",
+  "status": "passed",
+  "preserved_files": 141,
+  "separate_verifier_namespaces": true,
+  "scope": "Pinned original research copy and retained production code/observation records; canonical Part VIII edits and new extensions are intentionally outside this immutable set. SHA-256 checks establish byte preservation relative to the inspected local source archives, not an external signature.",
+  "archive_sha256": {
+    "claude_v8": "f57a15858685a500938c6fee398e40ca0811b4a6b5f749dfdb5a5dc76b9e6cb5"
+  },
+  "source_sha256": {
+    "part_IX/verify_intervention.py": "c92fa01dd6764b43d5d338841576c750117df6b693db75fc9823df9fa9945d4b",
+    "part_VIII/verify_intervention.py": "3911d310d74a0b9383bd10e008b015d888dc3a1ea2a3fabba788f53391b4f9c5"
+  }
+}

@@ -1,0 +1,63 @@
+<header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v10.2 · Part X, Addendum</div>
+  <h1>The Rank-Two Nonagon <em>X·2</em></h1>
+  <div class="sub">Reconciliation errata: the passivity certificate made complete, the edge law measured against the compensated floor, and the composition of contour certificates set against the locality law</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 30 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> The v10.1 release reconciled two independent Part X branches. This addendum makes the four adjustments that the reconciliation required of the Claude branch, and runs each one before stating it. <strong>Passivity erratum.</strong> Theorems VI.4.1 and X.5.1 accepted $\operatorname{Re}Z\ge0$ on the axis only when the axis polynomial $P$ has no positive root. Positive-real functions may touch zero, giving positive roots of even multiplicity. Both certificates are therefore sound but incomplete, and their "if and only if" is withdrawn. The minimal example is $Z=(s^2+1)/(s^2+s+1)$, which both reject and which is positive real. Against the v10.1 Cayley/Brune checker, the Claude certificate never accepts a non-passive function, and every disagreement is of this one kind. The Part VI ladder decisions are unchanged. The v10.1 checker becomes the pipeline default. <strong>Edge law.</strong> Against the v10.1 nuisance-compensated far-endpoint floor, the protocol's edge errors on the 9-node path sit at a constant 62–66 times the efficient value for every interior edge. The far endpoint is confirmed as the governing quantity, and the exponent gap of Result X.4.2 is closed. <strong>Composition and locality.</strong> <!--COMPABSTRACT--></p>
+</div>
+
+<h2 id="f1"><span class="sn">§X·2.1</span>Passivity: from sound to complete</h2>
+
+<p>Let $Z=N/D$ with $N,D$ coprime over $\mathbb Q$, and let $P(x)=\operatorname{Re}[N(i\omega)D(-i\omega)]$ at $x=\omega^2$. Positive-realness needs $P\ge0$ on $[0,\infty)$. That holds exactly when, after the zero root is removed, $P$ is positive just to the right of 0 and has no positive root of <em>odd</em> multiplicity. Theorem VI.4.1 (and through it Theorem X.5.1) instead required no positive root at all, because the Hermite count of §VI.4 counts distinct roots and ignores multiplicity. The consequence is one-sided. Any function they accept is positive real. A positive-real function whose real part touches zero on the axis, a lossless tangency, is rejected.</p>
+
+<div class="thm"><div class="hd">Erratum X·2.1.1 <i>(to Theorems VI.4.1 and X.5.1)</i> <span class="ep pr">proved</span></div>
+<p>In both theorems, replace "$P$ has no positive root" by "$P$, divided by its zero-root power, has positive lowest coefficient and no positive root of odd multiplicity", decided by square-free factorization and Sturm counts over $\mathbb Q$. With this change, Theorem X.5.1 is the exact characterization: $N+D$ strictly Hurwitz and the corrected axis condition. As originally stated, both theorems are sufficient conditions only.</p></div>
+
+<div class="tw"><table>
+<caption>Table X·2.1. <span>Claude certificates against the v10.1 exact Cayley/Brune checker. Exact rational inputs; the Part VI ladder models use their exact binary64 coefficients.</span></caption>
+<thead><tr><th>$Z(s)$</th><th>Theorem VI.4.1</th><th>Theorem X.5.1</th><th>v10.1 checker</th></tr></thead>
+<tbody>
+<!--PASSROWS-->
+</tbody></table></div>
+
+<p>A further 200 random rational functions with forced axis structure were classified by both certificates. They agree on 199. The single disagreement is a positive-real function that the Claude certificate rejects, and there is no case of the reverse. The Part VI ladder, true, perturbed and enforced, receives the same decision from both checkers. The Part II/VI enforcement result therefore stands. Any future model with a lossless resonance must, however, be certified with the v10.1 checker, which is now the pipeline default.</p>
+
+<h2 id="f2"><span class="sn">§X·2.2</span>The edge law against the compensated floor</h2>
+
+<p>Result X.4.2 found that the protocol resolves a path edge at a rate set by the farther endpoint, while its provable floor used the nearer one. The v10.1 diagonal-congruence construction supplies the missing floor. Scaling node $v$ by $t=1+\delta$ leaves the baseline port data invariant. Calibrated grounds break the invariance by at most $S\delta/(2+\delta)$, where $S=G_{0v}^2/G_{vv}$. This gives an efficient standard deviation $2\sigma wG_{vv}/(\sqrt m\,G_{0v}^2)$ along the gauge for any protocol with $m$ measurements.</p>
+
+<div class="tw"><table>
+<caption>Table X·2.2. <span>Protocol edge errors on the 9-node grounded path (Table X.5) divided by the v10.1 compensated efficient value, and by the earlier near-endpoint floor.</span></caption>
+<thead><tr><th>edge</th><th>protocol sd</th><th>compensated efficient sd</th><th>ratio</th><th>ratio to near-endpoint floor</th></tr></thead>
+<tbody>
+<!--EDGEROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result X·2.2.1 <i>(edge law, closed up to a constant)</i> <span class="ep nm">verified · double</span></div>
+<p>For every interior edge, the protocol's error is $62$–$66$ times the compensated efficient value. The far-endpoint compliance $G_{0v}$ is therefore the governing quantity in both the achievable rate and the floor, with identical exponent $-2$. The remaining factor is a property of the explicit protocol, which spends a fixed share of its measurements on any one edge, and not of the information available. A protocol that concentrates measurements on the far endpoint at $\theta G_{vv}=1$, as in the v10.1 estimation example, attains the efficient value to within Monte Carlo error.</p></div>
+
+<h2 id="f3"><span class="sn">§X·2.3</span>Composition and the locality law</h2>
+
+<p>The v10.1 nested-box construction composes two adjacent certified tiles. It forms the parent moment form from the children's moments, mapped into parent coordinates, and transforms it by a basis whose columns are child root polynomials times powers. The cross blocks vanish exactly, so the parent inertia is the sum of the children's. Observation X.2.1 says that no single moment form can be decided once a box holds more than about 19 zeros. The question is whether composition escapes that limit or meets it. The test composes $k$ consecutive tiles of the Part III scan over $[6990,6990+2k]$, up to $k=15$ (34 zeros). It regenerates each tile at 192 bits with moments up to order $2N-2=66$ and applies the v10.1 construction unchanged at every $k$.</p>
+
+<div class="tw"><table>
+<caption>Table X·2.3. <span>Composition across $k$ tiles at 192 bits. "Blocks decided" means every diagonal block's inertia was decided by Haynsworth pivots excluding zero; "flat parent" is the same test applied directly to the untransformed parent form.</span></caption>
+<thead><tr><th>tiles</th><th>zeros</th><th>blocks decided</th><th>block inertia</th><th>flat parent inertia</th><th>max cross-block entry</th></tr></thead>
+<tbody>
+<!--COMPROWS-->
+</tbody></table></div>
+
+<!--COMPTEXT-->
+
+<h2 id="f4"><span class="sn">§X·2.4</span>Ledger after reconciliation</h2>
+
+<p>The Claude branch's Part X now stands as follows. Theorem X.3.1 is superseded by the v10.1 all-dimension statement, which uses the uniform arrowhead witness. Theorem X.5.1 is corrected by Erratum X·2.1.1 and superseded in practice by the v10.1 checker. Result X.4.2 is completed by the compensated floor, up to a measured protocol constant. Theorem X.0.1 remains an independent spot confirmation of the uniform v10.1 origin certificate, with which it agrees. Observation X.2.1 and its relation to composition are as stated in §X·2.3. The rejections of Haynsworth pivots and Dodgson condensation as precision devices stand. The v10.1 basis policy uses condensation as an operation-count device with a guarded fallback, which is a different and compatible role.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> <code>part_X/v10_2/passivity_crosscheck.py</code> (Table X·2.1), <code>edge_vs_compensated.json</code> (Table X·2.2), <code>composition_scaling.py</code> (Table X·2.3), <code>assemble10b.py</code>. The v10.1 modules <code>lossless_passivity.py</code>, <code>compensated_edge.py</code> and <code>certification.py</code> are imported unchanged.</p>
+</div>
+</main>

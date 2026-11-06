@@ -1,0 +1,32 @@
+[
+ {
+  "case": "case118",
+  "N": 100000.0,
+  "rho": 0.0,
+  "median_rel_err": 0.0032182218320590656,
+  "within_1pct": 0.9017341040462428,
+  "median_err_over_crb": 0.6409923008216908,
+  "iterations": 9,
+  "seconds": 0.4430699348449707
+ },
+ {
+  "case": "case118",
+  "N": 1000000.0,
+  "rho": 0.0,
+  "median_rel_err": 0.0011863950142749857,
+  "within_1pct": 1.0,
+  "median_err_over_crb": 0.6854600749411156,
+  "iterations": 9,
+  "seconds": 0.4177706241607666
+ },
+ {
+  "case": "case118",
+  "N": 1000000.0,
+  "rho": 0.01,
+  "median_rel_err": 0.0036188047246928793,
+  "within_1pct": 0.7630057803468208,
+  "median_err_over_crb": 0.6335081252804666,
+  "iterations": 10,
+  "seconds": 0.510200023651123
+ }
+]

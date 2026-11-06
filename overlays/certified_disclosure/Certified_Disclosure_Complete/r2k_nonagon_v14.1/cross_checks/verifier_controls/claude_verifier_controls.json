@@ -1,0 +1,657 @@
+{
+  "schema": "nonagon.integration.claude-verifier-controls.v1",
+  "source": "/workspace/scratch/78a48cc5fade/integrated_release/r2k_nonagon_v9.0/research/claude_v8/part_VIII/verify_intervention.py",
+  "source_sha256": "4efc58dd906cb35ba1f252a4d3f4e4c07bc6069ada0448f03174072efd8e7c74",
+  "cases": 9,
+  "runs": 18,
+  "records": [
+    {
+      "case": "valid_reference",
+      "optimized": false,
+      "input": [
+        {
+          "loads": {},
+          "response": "2/3"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "5/8"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "7/13"
+        }
+      ],
+      "outcome": "returned",
+      "recovered_K": [
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "-1",
+          "2"
+        ]
+      ],
+      "canonical_forward_max_error": "0",
+      "physical_grounded_network": true,
+      "unexpected_keys": []
+    },
+    {
+      "case": "nonsquare_single_root",
+      "optimized": false,
+      "input": [
+        {
+          "loads": {},
+          "response": "2/3"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "119/192"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "163/312"
+        }
+      ],
+      "outcome": "rejected",
+      "exception": "AssertionError",
+      "message": ""
+    },
+    {
+      "case": "indefinite_recovered_matrix",
+      "optimized": false,
+      "input": [
+        {
+          "loads": {},
+          "response": "1"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "-1/3"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "-7/3"
+        }
+      ],
+      "outcome": "returned",
+      "recovered_K": [
+        [
+          "-1/3",
+          "2/3"
+        ],
+        [
+          "2/3",
+          "-1/3"
+        ]
+      ],
+      "canonical_forward_max_error": "0",
+      "physical_grounded_network": false,
+      "unexpected_keys": []
+    },
+    {
+      "case": "negative_grounding_recovered_matrix",
+      "optimized": false,
+      "input": [
+        {
+          "loads": {},
+          "response": "1/4"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "3/16"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "3/22"
+        }
+      ],
+      "outcome": "returned",
+      "recovered_K": [
+        [
+          "8",
+          "-2"
+        ],
+        [
+          "-2",
+          "1"
+        ]
+      ],
+      "canonical_forward_max_error": "0",
+      "physical_grounded_network": false,
+      "unexpected_keys": []
+    },
+    {
+      "case": "missing_baseline",
+      "optimized": false,
+      "input": [
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "5/8"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "7/13"
+        }
+      ],
+      "outcome": "rejected",
+      "exception": "KeyError",
+      "message": "()"
+    },
+    {
+      "case": "missing_single",
+      "optimized": false,
+      "input": [
+        {
+          "loads": {},
+          "response": "2/3"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "5/8"
+        }
+      ],
+      "outcome": "rejected",
+      "exception": "KeyError",
+      "message": "((1, Fraction(5, 1)),)"
+    },
+    {
+      "case": "unexpected_measurement",
+      "optimized": false,
+      "input": [
+        {
+          "loads": {},
+          "response": "2/3"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "5/8"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "7/13"
+        },
+        {
+          "loads": {
+            "77": "1"
+          },
+          "response": "123"
+        }
+      ],
+      "outcome": "returned",
+      "recovered_K": [
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "-1",
+          "2"
+        ]
+      ],
+      "canonical_forward_max_error": "0",
+      "physical_grounded_network": true,
+      "unexpected_keys": [
+        {
+          "77": "1"
+        }
+      ]
+    },
+    {
+      "case": "inconsistent_extra_load",
+      "optimized": false,
+      "input": [
+        {
+          "loads": {},
+          "response": "2/3"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "5/8"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "7/13"
+        },
+        {
+          "loads": {
+            "1": "7"
+          },
+          "response": "999"
+        }
+      ],
+      "outcome": "returned",
+      "recovered_K": [
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "-1",
+          "2"
+        ]
+      ],
+      "canonical_forward_max_error": "0",
+      "physical_grounded_network": true,
+      "unexpected_keys": [
+        {
+          "1": "7"
+        }
+      ]
+    },
+    {
+      "case": "nonsquare_pair_root",
+      "optimized": false,
+      "input": [
+        {
+          "loads": {},
+          "response": "5/18"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "3/11"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "15/58"
+        },
+        {
+          "loads": {
+            "2": "1/2"
+          },
+          "response": "13/47"
+        },
+        {
+          "loads": {
+            "2": "5"
+          },
+          "response": "20/73"
+        },
+        {
+          "loads": {
+            "1": "3/2",
+            "2": "3/2"
+          },
+          "response": "29500111/111000000"
+        }
+      ],
+      "outcome": "rejected",
+      "exception": "AssertionError",
+      "message": ""
+    },
+    {
+      "case": "valid_reference",
+      "optimized": true,
+      "input": [
+        {
+          "loads": {},
+          "response": "2/3"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "5/8"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "7/13"
+        }
+      ],
+      "outcome": "returned",
+      "recovered_K": [
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "-1",
+          "2"
+        ]
+      ],
+      "canonical_forward_max_error": "0",
+      "physical_grounded_network": true,
+      "unexpected_keys": []
+    },
+    {
+      "case": "nonsquare_single_root",
+      "optimized": true,
+      "input": [
+        {
+          "loads": {},
+          "response": "2/3"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "119/192"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "163/312"
+        }
+      ],
+      "outcome": "returned",
+      "recovered_K": [
+        [
+          "24/7",
+          "-18/7"
+        ],
+        [
+          "-18/7",
+          "24/7"
+        ]
+      ],
+      "canonical_forward_max_error": "15/104",
+      "physical_grounded_network": true,
+      "unexpected_keys": []
+    },
+    {
+      "case": "indefinite_recovered_matrix",
+      "optimized": true,
+      "input": [
+        {
+          "loads": {},
+          "response": "1"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "-1/3"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "-7/3"
+        }
+      ],
+      "outcome": "returned",
+      "recovered_K": [
+        [
+          "-1/3",
+          "2/3"
+        ],
+        [
+          "2/3",
+          "-1/3"
+        ]
+      ],
+      "canonical_forward_max_error": "0",
+      "physical_grounded_network": false,
+      "unexpected_keys": []
+    },
+    {
+      "case": "negative_grounding_recovered_matrix",
+      "optimized": true,
+      "input": [
+        {
+          "loads": {},
+          "response": "1/4"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "3/16"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "3/22"
+        }
+      ],
+      "outcome": "returned",
+      "recovered_K": [
+        [
+          "8",
+          "-2"
+        ],
+        [
+          "-2",
+          "1"
+        ]
+      ],
+      "canonical_forward_max_error": "0",
+      "physical_grounded_network": false,
+      "unexpected_keys": []
+    },
+    {
+      "case": "missing_baseline",
+      "optimized": true,
+      "input": [
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "5/8"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "7/13"
+        }
+      ],
+      "outcome": "rejected",
+      "exception": "KeyError",
+      "message": "()"
+    },
+    {
+      "case": "missing_single",
+      "optimized": true,
+      "input": [
+        {
+          "loads": {},
+          "response": "2/3"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "5/8"
+        }
+      ],
+      "outcome": "rejected",
+      "exception": "KeyError",
+      "message": "((1, Fraction(5, 1)),)"
+    },
+    {
+      "case": "unexpected_measurement",
+      "optimized": true,
+      "input": [
+        {
+          "loads": {},
+          "response": "2/3"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "5/8"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "7/13"
+        },
+        {
+          "loads": {
+            "77": "1"
+          },
+          "response": "123"
+        }
+      ],
+      "outcome": "returned",
+      "recovered_K": [
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "-1",
+          "2"
+        ]
+      ],
+      "canonical_forward_max_error": "0",
+      "physical_grounded_network": true,
+      "unexpected_keys": [
+        {
+          "77": "1"
+        }
+      ]
+    },
+    {
+      "case": "inconsistent_extra_load",
+      "optimized": true,
+      "input": [
+        {
+          "loads": {},
+          "response": "2/3"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "5/8"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "7/13"
+        },
+        {
+          "loads": {
+            "1": "7"
+          },
+          "response": "999"
+        }
+      ],
+      "outcome": "returned",
+      "recovered_K": [
+        [
+          "2",
+          "-1"
+        ],
+        [
+          "-1",
+          "2"
+        ]
+      ],
+      "canonical_forward_max_error": "0",
+      "physical_grounded_network": true,
+      "unexpected_keys": [
+        {
+          "1": "7"
+        }
+      ]
+    },
+    {
+      "case": "nonsquare_pair_root",
+      "optimized": true,
+      "input": [
+        {
+          "loads": {},
+          "response": "5/18"
+        },
+        {
+          "loads": {
+            "1": "1/2"
+          },
+          "response": "3/11"
+        },
+        {
+          "loads": {
+            "1": "5"
+          },
+          "response": "15/58"
+        },
+        {
+          "loads": {
+            "2": "1/2"
+          },
+          "response": "13/47"
+        },
+        {
+          "loads": {
+            "2": "5"
+          },
+          "response": "20/73"
+        },
+        {
+          "loads": {
+            "1": "3/2",
+            "2": "3/2"
+          },
+          "response": "29500111/111000000"
+        }
+      ],
+      "outcome": "returned",
+      "recovered_K": [
+        [
+          "157620814667773071493711914444/39405202912479655627826878033",
+          "-39412922970978963177639478611/39405202912479655627826878033",
+          "15425027726370187603189596/39405202912479655627826878033"
+        ],
+        [
+          "-39412922970978963177639478611/39405202912479655627826878033",
+          "118261906454526444814323220227/39405202912479655627826878033",
+          "-39459198054158073740449047399/39405202912479655627826878033"
+        ],
+        [
+          "15425027726370187603189596/39405202912479655627826878033",
+          "-39459198054158073740449047399/39405202912479655627826878033",
+          "78841270969684296542882146818/39405202912479655627826878033"
+        ]
+      ],
+      "canonical_forward_max_error": "134795565031392211239812183/1199187202559452211894309387817000000",
+      "physical_grounded_network": false,
+      "unexpected_keys": []
+    }
+  ],
+  "conclusion": "recover is an algebraic test helper, not a standalone certificate validator; preserve production checker and add explicit preflight/forward replay around cross-check calls"
+}

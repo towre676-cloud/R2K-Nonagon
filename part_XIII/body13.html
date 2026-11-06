@@ -1,0 +1,135 @@
+<header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v13.1 · Part XIII</div>
+  <h1>The Rank-Two Nonagon <em>XIII</em></h1>
+  <div class="sub"><!--SUBTITLE--></div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 30–31 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Part XII showed that when a grid's one-line diagram is known, its branch susceptances and grounds are identifiable from one port at about two readings per unknown, and it proved this modulo one prime up to 2,868 buses. Part XIII makes the claim exact and pushes it as far as public data allow. Three pieces carry it, each taken from the repositories. The first is a C kernel that factors the grounded susceptance matrix modulo word primes and runs the Takahashi selected inversion. This produces every reading the scheme needs without forming $G=K^{-1}$, because those readings lie inside the factor's filled pattern (Proposition XIII.2.1). The second is the observability criterion of PerfectJet chapter 7, which supplies the stopping rule. The third is PerfectJet's Wang rational reconstruction, which turns residues into rationals. Primes are added until the reconstruction is defined everywhere and unchanged by one more prime. Only then is it compared with the MATPOWER source. <strong>Result.</strong> <!--ABSRESULT--> <strong>Making sure.</strong> <!--SUREABS--></p>
+</div>
+
+<h2 id="r1"><span class="sn">§XIII.1</span>What is being claimed</h2>
+
+<p>The object is the DC susceptance network of a published grid model. Write $K=\sum_{e=(a,c)}w_e\,b_eb_e^{\mathsf T}+\sum_{i\in\Gamma}g_ie_ie_i^{\mathsf T}$, with the reference bus taken as ground, parallel circuits merged, and zero-reactance and out-of-service branches removed, as in Parts XI and XII. Every $w_e=1/x_e$ and every $g_i$ is a rational number fixed by the decimal reactances in the MATPOWER file. The experimenter knows the support $E\cup\Gamma$ and none of the values. The experimenter has one port at the highest-degree bus and the intervention readings of Part VIII: single-node and pair Woodbury readings, from which the port column of $G$ and individual entries $G_{js}$ follow by the closed forms of Theorem VIII.1. The claim has three parts. The values are <em>identifiable</em> from the stated reading set: the linear system of §XII.1 has full column rank over $\mathbb Q$. They are <em>recovered exactly</em>: the pipeline outputs a rational number for each unknown, and that number equals the source value with no rounding anywhere. The reading count is a stated function of the grid, which can be compared with the $n(n+1)/2$ of the unknown-network protocol.</p>
+
+<p>Two scope conditions are forced by the data and are applied before anything is computed. The first is visibility. RTE 6515 contains 4 islands of 6 buses each, joined to the rest of the grid only through the reference bus. Since the reference is the ground, $G_{0i}=0$ for every island node, every single-node and pair reading through the port is identically zero there, and those 28 unknowns are not identifiable by any one-port experiment. This is the blind-bridge lemma of §XII in its extreme form. The pipeline restricts to the port's connected component and reports the excluded nodes. The second is passivity. Of the ten grids, only IEEE 118, PEGASE 1354 and PEGASE 2869 have a positive definite $K$. The others contain negative series reactances in their source files, and their $K$ is indefinite. The negative index equals the number of negative merged branches exactly: 1 for IEEE 300, and up to 1,365 for ACTIVSg 70k (§XIII.5, Table XIII.6). The identifiability and exact-recovery statements are algebraic. They concern the linear system in the unknowns given the inverse entries, and they hold over $\mathbb Q$ for any nonsingular $K$. The conversion of physical pair readings into $G_{js}$ in Theorem VIII.1.2 selects the root of a quadratic by the path-product property, which holds for inverse M-matrices only. The first version of this part therefore used the root selection on the indefinite grids as an oracle. That caveat is now removed.</p>
+
+<div class="thm"><div class="hd">Proposition XIII.1.1 <i>(root selection without passivity)</i> <span class="ep pr">proved</span></div>
+<p>Let $K$ be symmetric and nonsingular, with $G=K^{-1}$ and a positive port column, $G_{0i}>0$ for all $i$. Put $\rho=\max_iG_{0i}/\min_iG_{0i}$ and $\theta^*=1/\bigl(\|G\|_2(1+\rho)\bigr)$. For single-node and pair strengths below $\theta^*$, every formula of Theorem VIII.1.2 holds for every pair, with the minus root, and returns the true $G_{ij}$.</p></div>
+
+<p><em>Proof.</em> For $\theta^{-1}>\|G\|_2$, the matrix $\Theta_S^{-1}+G_S$ is positive definite for every pair $S$. The Sherman–Morrison and Woodbury identities therefore hold, both discriminant factors are non-negative by the argument of Theorem VIII.1.2, and $\xi\in(-1,1)$. The root sign is decided by $\alpha-\beta\xi\propto G_{0i}\theta_j^{-1}+G_{0i}G_{jj}-G_{0j}G_{ij}$, with a positive factor, and by its mirror image. Since $|G_{0j}G_{ij}-G_{0i}G_{jj}|\le G_{0i}\|G\|_2(1+\rho)$, both are positive for $\theta_j^{-1}>\|G\|_2(1+\rho)$. That is the only place where Theorem VIII.1.2 used the path-product property. $\square$</p>
+
+<p>The binary64 values are in <code>rootsel13.json</code>. The port column is entrywise positive on all ten grids, with $\min_iG_{0i}/\max_iG_{0i}$ between 0.018 and 0.83 and solve residuals below $10^{-12}$. In units of the port compliance, $\theta^*G_{00}$ ranges from $2.8\times10^{-6}$ (ACTIVSg 70k) to $9.7\times10^{-4}$ (IEEE 118). The physical protocol of Part VIII is therefore valid on every grid in the table, passive or not, at weak enough interventions. The price is the signal size, which scales with $\theta$. Part VIII's resolution law, already stated in $\theta$, says what that costs in noise. On the passive grids no threshold is needed.</p>
+
+<p>Two things are not claimed. The readings are simulated from the model, not measured. The model leaves out resistance, line charging and taps, as before. What is tested is the information content of the experiment and the exactness of the arithmetic that extracts it, at the scale of real grids.</p>
+
+<h2 id="r2"><span class="sn">§XIII.2</span>The kernel: readings from the filled pattern</h2>
+
+<p>Each unknown enters the equations $(Kg_s)_i=\delta_{is}$ through differences $G_{is}-G_{os}$ along branches $(i,o)$. Part XII used two kinds of row. The first is the port column, $s=0$, for every $i$. The second is the diagonal row $i=s$ of column $s$, for every non-port $s$. That row needs $G_{ss}$ and $G_{os}$ for each neighbour $o$ of $s$, that is, inverse entries on the edges of the grid itself. Part XII obtained them from dense or blocked inverses, and that is where memory ran out.</p>
+
+<div class="thm"><div class="hd">Proposition XIII.2.1 <i>(the readings lie in the filled pattern)</i> <span class="ep pr">proved</span></div>
+<p>Let $PKP^{\mathsf T}=LDL^{\mathsf T}$ be the symbolic Cholesky factorization under any ordering $P$, and let $\mathcal F$ be the pattern of $L+L^{\mathsf T}$. Then every entry $G_{ss}$ and every $G_{os}$ with $(o,s)\in E$ lies in $\mathcal F$. The Takahashi recurrence
+$$Z_{jj}=D_j^{-1}-\sum_{k\in S_j}L_{kj}Z_{kj},\qquad Z_{ij}=-\sum_{k\in S_j}Z_{ik}L_{kj}\quad(i\in S_j),$$
+with $S_j$ the below-diagonal pattern of column $j$ of $L$, evaluated from $j=n$ down to $1$, uses only entries of $Z=G$ inside $\mathcal F$. It therefore produces all diagonal-row readings in $O\bigl(\sum_j|S_j|^2\bigr)$ operations and $O(|\mathcal F|)$ memory.</p></div>
+
+<p><em>Proof.</em> Each edge $(o,s)$ is a nonzero of $K$, and the pattern of $L+L^{\mathsf T}$ contains the pattern of $PKP^{\mathsf T}$. Fill only adds entries, so the edges are included. The closure of the recurrence over $\mathcal F$ is the classical property of the elimination tree: for $i,k\in S_j$, both are ancestors of $j$ on one path, so $(i,k)\in\mathcal F$ (Takahashi, Fagan and Chin 1973; Erisman and Tinney 1975, who introduced it for exactly these power-system matrices). The recurrence is an identity in any field. It holds modulo $p$ whenever every pivot $D_j$ is a unit, which the kernel checks. $\square$</p>
+
+<p>The port column comes from one forward and one back substitution. The few extra sources that the rank loop adds use neighbour rows at distance two, which fall outside $\mathcal F$, so each of those gets its own pair of substitutions. The kernel <code>tomo.c</code> does all of this modulo a word prime. The ordering is the minimum-degree permutation of SuperLU on the numeric pattern. The resulting rows go into a sparse incremental echelon form, with a heap that merges row supports. The kernel reports the rank, and when the rank is full it also reports the solution residues. When the rank falls short it reports the free columns, and the driver adds the endpoints of those unknowns as R=1 sources. That is the PerfectJet chapter 7 loop: add observations until the kernel of the observation map lies in the kernel of the target, and stop there.</p>
+
+<p>On PEGASE 9241 the first version of this loop stalled at rank $14{,}205$ of $14{,}207$. It stayed there through eleven further iterations, even after the row balls around the stalled sources were widened to radius 11. The kernel itself showed why. The kernel now writes out the support of every kernel basis vector, by back substitution with one free column set to 1. Each of the two vectors is supported on the six branches of a complete graph $K_4$, on buses $\{2736,3189,3759,6900\}$ and $\{141,1835,3720,3938\}$. In each, two of the four buses have no branch leaving the $K_4$ and no ground.</p>
+
+<div class="thm"><div class="hd">Proposition XIII.2.2 <i>(harmonic pockets)</i> <span class="ep pr">proved</span></div>
+<p>Let $B=I\cup T$ be a node set with nonempty interior $I$ and terminals $T=N(I)\setminus I$. Assume every interior node is ungrounded and every neighbour of $I$ lies in $B$. Let $E(B)$ be the branches with both ends in $B$, terminal-to-terminal branches included. Let $H_B\subset\mathbb Q^B$ be the space of discrete harmonic extensions of terminal values, of dimension $|T|$, containing the constants. For each $s\in I$, let $\varphi_s$ be the interior Green column $K_{II}^{-1}e_s$, extended by zero to $B$. Define
+$$N(B)=\bigl\{v\in\mathbb Q^{E(B)}:\ L_vh=0\ \ \forall h\in H_B,\quad e_s^{\mathsf T}L_v\varphi_s=0\ \ \forall s\in I\bigr\},$$
+with $L_v=\sum_{e\in E(B)}v_e\,b_eb_e^{\mathsf T}$. Suppose no source with more than its diagonal row lies in $I$, so neither the port nor any extra source is interior. Then every $v\in N(B)$, extended by zero, is in the kernel of the whole reading system. Hence the deficiency is at least $\dim N(B)$, and
+$$\dim N(B)\ \ge\ |E(B)|-(|T|-1)(|B|-1)-|I|.$$
+The bound is 1 for a two-terminal $K_4$ (equivalently, a diamond whose two tips are joined by a branch). For a block hanging from one cut vertex, it is $|E(B)|-|I|$, the block's cycle rank. It is 0 for series chains and pendant trees.</p></div>
+
+<p><em>Proof.</em> Take any source $s\notin I$. For $i\in I$, $(Kg_s)_i=0$ involves only nodes of $B$, so $g_s|_B\in H_B$. Every reading row at $i\in B$ is $(L_wg_s)_i$ plus terms on branches leaving $B$. Applied to $v$ supported in $E(B)$, it gives $(L_vg_s|_B)_i=0$. Rows at $i\notin B$ touch no branch of $E(B)$. For $s\in I$, the only row used is the diagonal one. Writing $g_s|_B=h+\varphi_s$ with $h\in H_B$ gives $(L_vg_s)_s=e_s^{\mathsf T}L_v\varphi_s=0$. The bound counts conditions. $L_v\mathbf 1=0$ holds automatically. Each of the $|T|-1$ non-constant harmonic directions imposes at most $|B|-1$ independent equations, because $\mathbf 1^{\mathsf T}L_vh=0$ identically. Each interior diagonal row imposes one. $\square$</p>
+
+<p>The remedy follows from the proposition: put a source inside the pocket. The driver now adds the endpoints of the kernel support as new sources, not only the endpoints of the free columns. On PEGASE 9241 this reaches full rank at the next iteration, with no widening. Three checks test the proposition beyond the two pockets that revealed it. <strong>Exactness of the local count.</strong> Nine pocket shapes were planted in random grounded host networks, three trials each. In every trial, all columns outside the interior were read in full and only the interior diagonal rows inside it, and the global rank deficiency, computed modulo $2^{31}-1$, equals $\dim N(B)$ exactly (Table XIII.4). The counting bound is attained in 7 of the 9 shapes and is strict for the two-terminal diamond without its terminal branch and for $K_5$ on three terminals. <strong>Necessity on the real grids.</strong> In every final full-rank run, every two-terminal $K_4$ pocket and every cyclic block hanging from a cut vertex without a ground contains a source. The ten grids contain 594 cyclic ungrounded blocks hanging from a cut vertex, some nested inside others, and 5 two-terminal $K_4$ pockets. The block census was computed in linear time from the block–cut tree. On the eight grids up to 13,659 buses it was also computed by brute force over articulation points, and the two counts agree. In every final full-rank run, every one of these pockets contains a source. Any exception would contradict the proposition, and none occurs. <strong>Relation to Part XII.</strong> The blind-bridge lemma is the case $|T|=1$: every branch of an ungrounded hanging block is invisible to outside sources. The proposition adds what the interior diagonal rows recover. They recover a pendant tree completely, since its cycle rank is 0. They leave exactly one direction per independent cycle of a hanging block, and one per two-terminal $K_4$. The binary64 check on the first $K_4$ pocket agrees with all of this. The columns of the port, both terminals and two outside neighbours, together with $\mathbf 1$, have rank 2 when restricted to the pocket, with third relative singular value $7\times10^{-18}$. One interior source raises the rank to 3.</p>
+
+<div class="tw"><table>
+<caption>Table XIII.4. <span>Planted pockets in random grounded hosts (30 host nodes, three trials each, modulo $2^{31}-1$): observed global rank deficiency, the local dimension $\dim N(B)$, and the counting bound.</span></caption>
+<thead><tr><th>pocket</th><th>observed deficiency</th><th>$\dim N(B)$</th><th>bound</th></tr></thead>
+<tbody>
+<!--SYNTHROWS-->
+</tbody></table></div>
+
+<h2 id="r3"><span class="sn">§XIII.3</span>From residues to rationals</h2>
+
+<p>Full rank modulo one prime implies full rank over $\mathbb Q$. A minor that is nonzero modulo $p$ is nonzero. Identifiability is therefore settled by one prime. Exact values need more. The kernel solves the same system modulo primes $p_1,p_2,\dots$ just below $2^{31}$. The Chinese remainder theorem combines the solutions into a residue $x$ modulo $M=\prod p_k$. PerfectJet's <code>rational_reconstruction</code> (Wang's half-extended Euclid) returns the unique $a/b$ with $|a|,b\le\sqrt{M/2}$ and $a\equiv bx$, when such a fraction exists. The pipeline adds primes until two conditions hold: every unknown has a reconstruction, and one more prime changes none of them. The source values are read only after that, for the comparison.</p>
+
+<div class="thm"><div class="hd">Correction XIII.3.1 <i>(to the first run of this part)</i> <span class="ep nm">verified · exact</span></div>
+<p>A fixed budget of three primes ($M\approx2^{93}$) reconstructed IEEE 118 and 300 exactly, but missed 12 of 1,710 unknowns on PEGASE 1354 and 19 of 3,968 on PEGASE 2869. There was no error in rank or residues. Merged parallel circuits and reference-bus grounds have heights up to 63 bits, and Wang's bound needs $M>2H^2$. The early-terminating rule fixes this with no knowledge of the answer. It stops at 155 bits for 1354 and 186 for 2869, which are the first moduli past $2\cdot2^{2H}$ after the one-prime stability check.</p></div>
+
+<div class="tw"><table>
+<caption>Table XIII.1. <span>Rational reconstruction: largest height in the source (bits of $\max(|a|,b)$), primes used before the stability rule stopped, modulus size, and the outcome.</span></caption>
+<thead><tr><th>grid</th><th>unknowns</th><th>max height (bits)</th><th>primes</th><th>$\log_2M$</th><th>mismatches</th></tr></thead>
+<tbody>
+<!--CRTROWS-->
+</tbody></table></div>
+
+<h2 id="r4"><span class="sn">§XIII.4</span>The record table</h2>
+
+<p>Each row is one run of <code>record.py CASE</code> on the unmodified MATPOWER file. "Nodes seen" is the port's component after the reference bus is removed. "Extra sources" counts the sources added by the kernel loop of §XIII.2. "$K$ negative pivots" is the negative index of $K$, certified exactly in §XIII.5; 0 means the network is passive. "Readings" uses the accounting of Part XII: one baseline, two single-node readings per hidden node, and one pair reading for each distinct pair $(s,j)$ that some row requires. "Full protocol" is $n(n+1)/2$, the dimension-minimal count for a network whose support is unknown (Theorem VIII.2). "Exact" means every recovered rational equals the source rational, numerator and denominator.</p>
+
+<div class="tw"><table>
+<caption>Table XIII.2. <span>Exact one-port known-support tomography of public grid models. Time is wall clock on two cores for the whole pipeline, including parsing, ordering, every prime and the comparison.</span></caption>
+<thead><tr><th>grid</th><th>buses</th><th>nodes seen</th><th>unknowns</th><th>readings</th><th>full protocol</th><th>saving</th><th>per unknown</th><th>extra sources</th><th>$K$ negative pivots</th><th>identifiable</th><th>exact over $\mathbb Q$</th><th>time</th></tr></thead>
+<tbody>
+<!--RECROWS-->
+</tbody></table></div>
+
+<!--RECTEXT-->
+
+<h2 id="r5"><span class="sn">§XIII.5</span>Making sure</h2>
+
+<p>A record claim has to survive checks that do not share its failure modes. Four were run. Each targets one way the claim could be wrong.</p>
+
+<p><strong>Two verifiers that share no code with the kernel.</strong> <code>verify13.py</code> forms $K$ modulo $10^9+7$, a prime the kernel never uses, and inverts it densely with FLINT's <code>nmod_mat</code>. It rebuilds the three families of rows from the grid adjacency and the source list saved by the record run, and takes the rank with FLINT. <code>verify13s.py</code> repeats this modulo $998{,}244{,}353$, but replaces the dense row matrix with a sparse elimination in pure Python. That elimination takes rows shortest first and pivots on the largest column index, the opposite rule to <code>tomo.c</code>, so the elimination paths are unrelated. Neither verifier uses the kernel's ordering, factorization, selected inverse or echelon form. As a negative control, both return rank 174 of 179 on IEEE 118 once the extra sources are removed. That is the deficiency the kernel reported at its first iteration. Dense inversion costs $O(n^3)$ time and $O(n^2)$ memory, so on this machine the verifiers reach <!--VERMAX--> buses, and the two largest grids rest on the next three checks.</p>
+
+<div class="tw"><table>
+<caption>Table XIII.3. <span>Independent re-derivation of identifiability. Dense FLINT rank modulo $10^9+7$; sparse Python rank modulo $998{,}244{,}353$ (shortest row first, largest-column pivot).</span></caption>
+<thead><tr><th>grid</th><th>unknowns</th><th>dense FLINT rank</th><th>sparse Python rank</th><th>agree with kernel</th><th>time (dense / sparse)</th></tr></thead>
+<tbody>
+<!--VERROWS-->
+</tbody></table></div>
+
+<p><strong>A second ordering and a disjoint set of primes.</strong> Every grid was rerun with SuperLU's COLAMD ordering in place of minimum degree, and with primes below $2^{30}$ in place of primes below $2^{31}$. This changes the elimination tree, the filled pattern and every selected-inverse value the kernel computes, along with the column order of the echelon form and every residue. Both runs record a SHA-256 hash of the recovered rationals, written in bus-labelled canonical order. The hash does not depend on ordering or prime, so equal hashes mean the two runs recovered the same rational numbers.</p>
+
+<div class="tw"><table>
+<caption>Table XIII.5. <span>Independence of ordering and primes. Fill, extra sources, primes used and the solution hash for the minimum-degree run (primes below $2^{31}$) and the COLAMD run (primes below $2^{30}$).</span></caption>
+<thead><tr><th>grid</th><th>nnz$(L)$ MMD</th><th>nnz$(L)$ COLAMD</th><th>extra sources</th><th>primes</th><th>rank</th><th>exact</th><th>same rationals</th></tr></thead>
+<tbody>
+<!--ALTROWS-->
+</tbody></table></div>
+
+<p><strong>An overdetermined consistency check.</strong> The kernel checks every row, including the rows beyond the $U$ pivots, against its right-hand side, and stops with an error on any inconsistency. A wrong selected-inverse entry would make some row false at the true weights. That no run stopped, together with the exact equality of the recovered rationals to the source, means every row the kernel generated is satisfied by the source weights, in every run and modulo every prime.</p>
+
+<p><strong>Exact passivity status.</strong> Section XIII.1 used binary64 inertia. That count is now certified exactly. Write $K=K_++K_-$, where $K_-$ collects the merged branches with negative weight. $K_+$ is positive semidefinite, so the negative index of $K$ is at most the number of negative branches. For the lower bound, each negative binary64 pivot $j$ of a symmetric $LDL^{\mathsf T}$ gives a column $x_j=L^{-\mathsf T}e_j$. These columns are rounded to dyadic rationals, and the Gram matrix $X^{\mathsf T}KX$ is computed exactly over $\mathbb Q$. That matrix is strictly diagonally dominant with a negative diagonal, so it is negative definite. The two bounds meet. IEEE 118 and PEGASE 1354 and 2869 are positive definite by structure, since they are connected, every merged weight is positive, and at least one ground is positive.</p>
+
+<div class="tw"><table>
+<caption>Table XIII.6. <span>Exact negative index of $K$. Upper bound: number of negative merged branches. Lower bound: exact rational Gram certificate, with the largest ratio of off-diagonal row sum to diagonal magnitude. For ACTIVSg 70k the 1,365-column Gram matrix is evaluated in binary64 with an a priori rounding bound (<code>inertia13r.py</code>). The same method reproduces the exact results on ACTIVSg 10k and 25k.</span></caption>
+<thead><tr><th>grid</th><th>negative branches</th><th>certified negative index</th><th>worst dominance ratio</th><th>certificate time</th></tr></thead>
+<tbody>
+<!--INERTIAROWS-->
+</tbody></table></div>
+
+<!--SURETEXT-->
+
+<h2 id="r6"><span class="sn">§XIII.6</span>Why this belongs in the record</h2>
+
+<p>The probing literature on grid topology and line identification asks the same question: what does a set of injections reveal about the Laplacian? It answers it in floating point, by optimization, on test feeders of tens of buses. Cavraro and Kekatos, for example, test inverter probing on the IEEE 13- and 37-bus feeders. Part XIII answers it in exact arithmetic, with a rank certificate, at <!--MAXBUSES--> buses. Every published branch value comes back as the same rational number that the source file implies. We know of no exact identifiability proof or exact recovery for intervention tomography at this scale. The claim is stated to be checked: the scripts, the inputs and their SHA-256 hashes are in the bundle, and a larger exact result elsewhere would supersede it.</p>
+
+<p>The repositories moved while this part was being checked. The newest commit to <code>singularity</code> (volume seven of the height series, 30 October) proves a statement of the same shape for a different object. There, the counts of the house graph $\Theta(1,2,3)$ and of $K_{2,3}$ enter the height-series coefficients only through their sum until volume seven. Here, the branches of a two-terminal $K_4$ enter the outside readings only through a harmonic space too small to separate them, until a source is placed inside. In both, a small motif is invisible to the available observables for a structural reason, and the obstruction is found by an exact rank computation rather than by sampling. The other repository updates (PerfectJet collision counts and Asterion sectors, perfectpower T3 descent, Quillen-Runtime spectral certificates, DynaComp portability) do not bear on this part.</p>
+
+<p>The size limit is now memory for the filled factor, not arithmetic. The kernel stores $L$ and the selected inverse on the same pattern. On the largest grid run here that pattern holds <!--MAXNNZ--> entries per prime, and two primes run concurrently, one per core. The Takahashi step was rewritten during this part. A forward merge over $S_k$ replaces the binary search per entry, and products are accumulated in 128 bits with one reduction per entry. On RTE 6515 this cut the selected inverse from 85 s to 2.6 s, and the exact outputs did not change. An $n(n+1)/2$ protocol on the same grid would need <!--MAXFULL--> readings. The known-support scheme needs <!--MAXREAD-->.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> <code>part_XIII/tomo.c</code> (compile <code>gcc -O2 -march=native -o tomo tomo.c</code>); <code>record.py CASE</code> (Tables XIII.1–2, writes <code>record_CASE.json</code>; <code>ORDER=COLAMD PRIME_TOP=1073741823 TAG=_alt</code> for Table XIII.5); <code>verify13.py</code> and <code>verify13s.py CASE</code> (Table XIII.3); <code>pocket_synth.py</code>, <code>pockets.py</code>, <code>pockets3.py</code> (Table XIII.4 and the census); <code>inertia13.py CASE</code> (Table XIII.6); <code>rootsel13.py</code> (Proposition XIII.1.1); <code>kernel_support_diag.py</code> (the kernel vectors of §XIII.2); <code>assemble13.py</code>. PerfectJet is imported unchanged for <code>perfectjet.modular.rational_reconstruction</code>. The MATPOWER inputs and their SHA-256 hashes are in <code>part_XIII/data/</code>.</p>
+<p><b>Sources.</b> K. Takahashi, J. Fagan, M.-S. Chin, Formation of a sparse bus impedance matrix and its application to short circuit study, PICA 1973; A. M. Erisman, W. F. Tinney, On computing certain elements of the inverse of a sparse matrix, Comm. ACM 18 (1975); P. S. Wang, A p-adic algorithm for univariate partial fractions, SYMSAC 1981; G. Cavraro, V. Kekatos, Inverter probing for power distribution network topology processing, arXiv:1802.06027; PerfectJet chapter 7 (towre676-cloud/PerfectJet); R. D. Zimmerman et al., MATPOWER, IEEE Trans. Power Syst. 26 (2011); PEGASE: C. Josz et al., arXiv:1603.01533; ACTIVSg synthetic grids: A. B. Birchfield et al., IEEE Trans. Power Syst. 32 (2017); RTE: Josz et al. as above.</p>
+</div>
+</main>

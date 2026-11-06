@@ -1,0 +1,49 @@
+{
+ "case": "case_ACTIVSg10k",
+ "pairs": 12217,
+ "negative_branches": 193,
+ "rows": [
+  {
+   "theta_times_median_Gjj": 0.001,
+   "minus_fail": 0,
+   "two_fail": 0,
+   "min_gap": 0.9597839766004798,
+   "theta_G00": 0.0008348252904973128
+  },
+  {
+   "theta_times_median_Gjj": 0.01,
+   "minus_fail": 0,
+   "two_fail": 0,
+   "min_gap": 0.7700611349286408,
+   "theta_G00": 0.008348252904973128
+  },
+  {
+   "theta_times_median_Gjj": 0.1,
+   "minus_fail": 0,
+   "two_fail": 0,
+   "min_gap": 0.27230369023676076,
+   "theta_G00": 0.08348252904973129
+  },
+  {
+   "theta_times_median_Gjj": 1.0,
+   "minus_fail": 10,
+   "two_fail": 0,
+   "min_gap": 0.029568423861305006,
+   "theta_G00": 0.8348252904973128
+  },
+  {
+   "theta_times_median_Gjj": 10.0,
+   "minus_fail": 120,
+   "two_fail": 0,
+   "min_gap": 0.0004970059156727731,
+   "theta_G00": 8.348252904973128
+  },
+  {
+   "theta_times_median_Gjj": 100.0,
+   "minus_fail": 158,
+   "two_fail": 0,
+   "min_gap": 0.00039422491080088506,
+   "theta_G00": 83.48252904973128
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "entry_tail_enclosure_checks": 108,
+  "invertible_congruence_certificates": 3,
+  "positive_Gershgorin_margins": [
+    {
+      "rank": 17999,
+      "replayed_Gershgorin_margins": [
+        "[1e+0 +/- 0.0339]",
+        "[1e+0 +/- 0.0446]",
+        "[1.0 +/- 0.0246]",
+        "[1e+0 +/- 0.0157]",
+        "[1e+0 +/- 0.0108]",
+        "[1.0 +/- 7.51e-3]"
+      ]
+    },
+    {
+      "rank": 18000,
+      "replayed_Gershgorin_margins": [
+        "[1e+0 +/- 0.0339]",
+        "[1e+0 +/- 0.0446]",
+        "[1e+0 +/- 0.0246]",
+        "[1e+0 +/- 0.0157]",
+        "[1e+0 +/- 0.0108]",
+        "[1.0 +/- 7.51e-3]"
+      ]
+    },
+    {
+      "rank": 18001,
+      "replayed_Gershgorin_margins": [
+        "[1e+0 +/- 0.0339]",
+        "[1e+0 +/- 0.0446]",
+        "[1e+0 +/- 0.0246]",
+        "[1e+0 +/- 0.0157]",
+        "[1e+0 +/- 0.0108]",
+        "[1.0 +/- 7.51e-3]"
+      ]
+    }
+  ]
+}

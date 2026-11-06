@@ -1,0 +1,29 @@
+{
+  "schema": "nonagon_possq.independent_controls.v1",
+  "spectral": {
+    "random_atomic_measures": 40,
+    "upper_and_lower_certificates": 80,
+    "all_exact_mass_inequalities": true
+  },
+  "uniformization": {
+    "graphs": 2,
+    "stages": 3,
+    "start_states_per_stage": 3,
+    "dense_vs_sparse_entry_checks": 720,
+    "max_poisson_tail": "[5.0864215424708508639e-46 +/- 4.36e-66]"
+  },
+  "convolution": {
+    "rational_convolution_tail_checks": 125,
+    "all_exact_probabilities_enclosed": true
+  },
+  "joint_kernel": {
+    "correlated_hidden_state_entry_checks": 1500,
+    "all_exact_joint_kernels_enclosed": true
+  },
+  "root_boxes": {
+    "independent_consistent_points_enclosed": 720,
+    "boxes_rejected": 0
+  },
+  "verdict": "PASS",
+  "seconds": 0.7263822269997036
+}

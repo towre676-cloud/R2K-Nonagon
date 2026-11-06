@@ -1,0 +1,827 @@
+{
+  "schema": "nonagon.part-x.design.v1",
+  "arithmetic": "IEEE binary64, deterministic inputs; exact Fraction symmetry checks",
+  "cases": [
+    {
+      "name": "four-node grounded path",
+      "n": 4,
+      "parameters": [
+        "edge 0-1",
+        "edge 1-2",
+        "edge 2-3",
+        "ground 0",
+        "ground 1",
+        "ground 2",
+        "ground 3"
+      ],
+      "parameter_count": 7,
+      "K": [
+        [
+          1.4,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          1.9,
+          -0.7,
+          0.0
+        ],
+        [
+          0.0,
+          -0.7,
+          2.4499999999999997,
+          -1.4
+        ],
+        [
+          0.0,
+          0.0,
+          -1.4,
+          2.0
+        ]
+      ],
+      "response_baseline": 1.3128491620111735,
+      "common_strength_t": 0.9359477124183005,
+      "coordinate_contract": "log physical weights w_a(eta)=w_a exp(eta_a), normalized response F/F0",
+      "sigma_normalized_response": 0.0002,
+      "prior_precision": 25.0,
+      "catalog_size": 10,
+      "budget": 4,
+      "catalog": [
+        {
+          "label": "baseline",
+          "loads": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "node 1: 1t",
+          "loads": [
+            0.0,
+            0.9359477124183005,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "node 1: 2t",
+          "loads": [
+            0.0,
+            1.871895424836601,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "node 2: 1t",
+          "loads": [
+            0.0,
+            0.0,
+            0.9359477124183005,
+            0.0
+          ]
+        },
+        {
+          "label": "node 2: 2t",
+          "loads": [
+            0.0,
+            0.0,
+            1.871895424836601,
+            0.0
+          ]
+        },
+        {
+          "label": "node 3: 1t",
+          "loads": [
+            0.0,
+            0.0,
+            0.0,
+            0.9359477124183005
+          ]
+        },
+        {
+          "label": "node 3: 2t",
+          "loads": [
+            0.0,
+            0.0,
+            0.0,
+            1.871895424836601
+          ]
+        },
+        {
+          "label": "pair 1,2: t,t",
+          "loads": [
+            0.0,
+            0.9359477124183005,
+            0.9359477124183005,
+            0.0
+          ]
+        },
+        {
+          "label": "pair 1,3: t,t",
+          "loads": [
+            0.0,
+            0.9359477124183005,
+            0.0,
+            0.9359477124183005
+          ]
+        },
+        {
+          "label": "pair 2,3: t,t",
+          "loads": [
+            0.0,
+            0.0,
+            0.9359477124183005,
+            0.9359477124183005
+          ]
+        }
+      ],
+      "selected_greedy": [
+        "baseline",
+        "node 1: 2t",
+        "node 2: 2t",
+        "node 3: 2t"
+      ],
+      "selected_optimal": [
+        "baseline",
+        "node 1: 2t",
+        "node 2: 2t",
+        "node 3: 2t"
+      ],
+      "greedy_step_logdet_gains": [
+        12.708600199767979,
+        10.8942982014038,
+        8.940959908245695,
+        6.7543604725979165
+      ],
+      "greedy_logdet_gain": 39.29821878201539,
+      "optimal_logdet_gain": 39.29821878201539,
+      "greedy_D_efficiency_vs_optimal": 1.0,
+      "uniform_subset_mean_logdet_gain": 34.465421417757895,
+      "uniform_subset_p05_logdet_gain": 30.079809198653702,
+      "uniform_subset_p95_logdet_gain": 38.19137543243033,
+      "greedy_D_factor_vs_geometric_mean_uniform": 1.9945124279717228,
+      "exhaustive_budget_subsets": 210,
+      "submodularity_elementary_checks": 11520,
+      "minimum_diminishing_return_gap": 9.592326932761353e-12,
+      "minimum_gap_case": [
+        729,
+        1,
+        5
+      ],
+      "max_gradient_abs_finite_difference_error": 1.9683255025881863e-11,
+      "max_matrix_determinant_lemma_abs_error": 1.6569856597925536e-11,
+      "max_logdet_derivative_abs_finite_difference_error": 9.295689373800542e-08,
+      "selected_information_eigenvalues": [
+        24.999999999746493,
+        24.99999999999421,
+        25.00000000012998,
+        14282.828366532747,
+        117073.3874276885,
+        1086558.5119504938,
+        25086153.77296679
+      ],
+      "selected_information_condition_number": 1003446.1509288469,
+      "selected_local_linear_covariance_trace": 0.12007951599493852,
+      "prior_covariance_trace": 0.28,
+      "gradient_matrix_rank": 7,
+      "gradient_matrix_singular_values": [
+        1.5185129137659594,
+        0.31713652382785307,
+        0.0829046659623478,
+        0.028378319838938553,
+        0.00857118800437482,
+        0.0027000008997304288,
+        0.001140428545070845
+      ]
+    },
+    {
+      "name": "2x2 grounded grid",
+      "n": 4,
+      "parameters": [
+        "edge 0-1",
+        "edge 0-2",
+        "edge 1-3",
+        "edge 2-3",
+        "ground 0",
+        "ground 1",
+        "ground 2",
+        "ground 3"
+      ],
+      "parameter_count": 8,
+      "K": [
+        [
+          2.1,
+          -1.0,
+          -0.8,
+          0.0
+        ],
+        [
+          -1.0,
+          2.7,
+          0.0,
+          -1.2
+        ],
+        [
+          -0.8,
+          0.0,
+          1.9,
+          -0.9
+        ],
+        [
+          0.0,
+          -1.2,
+          -0.9,
+          2.5
+        ]
+      ],
+      "response_baseline": 1.0497090783495842,
+      "common_strength_t": 1.0005715425001662,
+      "coordinate_contract": "log physical weights w_a(eta)=w_a exp(eta_a), normalized response F/F0",
+      "sigma_normalized_response": 0.0002,
+      "prior_precision": 25.0,
+      "catalog_size": 10,
+      "budget": 4,
+      "catalog": [
+        {
+          "label": "baseline",
+          "loads": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "node 1: 1t",
+          "loads": [
+            0.0,
+            1.0005715425001662,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "node 1: 2t",
+          "loads": [
+            0.0,
+            2.0011430850003324,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "node 2: 1t",
+          "loads": [
+            0.0,
+            0.0,
+            1.0005715425001662,
+            0.0
+          ]
+        },
+        {
+          "label": "node 2: 2t",
+          "loads": [
+            0.0,
+            0.0,
+            2.0011430850003324,
+            0.0
+          ]
+        },
+        {
+          "label": "node 3: 1t",
+          "loads": [
+            0.0,
+            0.0,
+            0.0,
+            1.0005715425001662
+          ]
+        },
+        {
+          "label": "node 3: 2t",
+          "loads": [
+            0.0,
+            0.0,
+            0.0,
+            2.0011430850003324
+          ]
+        },
+        {
+          "label": "pair 1,2: t,t",
+          "loads": [
+            0.0,
+            1.0005715425001662,
+            1.0005715425001662,
+            0.0
+          ]
+        },
+        {
+          "label": "pair 1,3: t,t",
+          "loads": [
+            0.0,
+            1.0005715425001662,
+            0.0,
+            1.0005715425001662
+          ]
+        },
+        {
+          "label": "pair 2,3: t,t",
+          "loads": [
+            0.0,
+            0.0,
+            1.0005715425001662,
+            1.0005715425001662
+          ]
+        }
+      ],
+      "selected_greedy": [
+        "baseline",
+        "node 1: 2t",
+        "node 2: 2t",
+        "node 3: 2t"
+      ],
+      "selected_optimal": [
+        "baseline",
+        "node 1: 2t",
+        "node 2: 2t",
+        "node 3: 2t"
+      ],
+      "greedy_step_logdet_gains": [
+        12.179032898912787,
+        10.586205312252822,
+        10.263265312209178,
+        8.263882116746203
+      ],
+      "greedy_logdet_gain": 41.29238564012099,
+      "optimal_logdet_gain": 41.29238564012099,
+      "greedy_D_efficiency_vs_optimal": 1.0,
+      "uniform_subset_mean_logdet_gain": 37.11504340663326,
+      "uniform_subset_p05_logdet_gain": 34.5863134749034,
+      "uniform_subset_p95_logdet_gain": 40.158469739617885,
+      "greedy_D_factor_vs_geometric_mean_uniform": 1.6856778692336427,
+      "exhaustive_budget_subsets": 210,
+      "submodularity_elementary_checks": 11520,
+      "minimum_diminishing_return_gap": 9.057927741196181e-09,
+      "minimum_gap_case": [
+        175,
+        4,
+        9
+      ],
+      "max_gradient_abs_finite_difference_error": 1.338286426122437e-11,
+      "max_matrix_determinant_lemma_abs_error": 5.636380251416995e-12,
+      "max_logdet_derivative_abs_finite_difference_error": 7.352763065071599e-08,
+      "selected_information_eigenvalues": [
+        24.999999999689997,
+        24.999999999862908,
+        25.00000000005482,
+        25.000000000096936,
+        70894.91482597994,
+        554677.828295709,
+        785896.8336914517,
+        10834124.754874196
+      ],
+      "selected_information_condition_number": 433364.9902003416,
+      "selected_local_linear_covariance_trace": 0.16001727296493276,
+      "prior_covariance_trace": 0.32000000000000006,
+      "gradient_matrix_rank": 8,
+      "gradient_matrix_singular_values": [
+        0.9824059889770042,
+        0.21637955769840875,
+        0.20586669726664075,
+        0.07176498666909326,
+        0.01621947783272847,
+        0.009761745475578145,
+        0.007203588509198393,
+        0.00428816058872912
+      ]
+    },
+    {
+      "name": "asymmetric grounded diamond",
+      "n": 4,
+      "parameters": [
+        "edge 0-1",
+        "edge 0-2",
+        "edge 1-3",
+        "edge 2-3",
+        "edge 1-2",
+        "ground 0",
+        "ground 1",
+        "ground 2",
+        "ground 3"
+      ],
+      "parameter_count": 9,
+      "K": [
+        [
+          2.05,
+          -1.0,
+          -0.8,
+          0.0
+        ],
+        [
+          -1.0,
+          2.5,
+          -0.45,
+          -0.65
+        ],
+        [
+          -0.8,
+          -0.45,
+          2.8500000000000005,
+          -1.3
+        ],
+        [
+          0.0,
+          -0.65,
+          -1.3,
+          2.5
+        ]
+      ],
+      "response_baseline": 1.061508226620124,
+      "common_strength_t": 1.103055857279221,
+      "coordinate_contract": "log physical weights w_a(eta)=w_a exp(eta_a), normalized response F/F0",
+      "sigma_normalized_response": 0.0002,
+      "prior_precision": 25.0,
+      "catalog_size": 10,
+      "budget": 4,
+      "catalog": [
+        {
+          "label": "baseline",
+          "loads": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "node 1: 1t",
+          "loads": [
+            0.0,
+            1.103055857279221,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "node 1: 2t",
+          "loads": [
+            0.0,
+            2.206111714558442,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "node 2: 1t",
+          "loads": [
+            0.0,
+            0.0,
+            1.103055857279221,
+            0.0
+          ]
+        },
+        {
+          "label": "node 2: 2t",
+          "loads": [
+            0.0,
+            0.0,
+            2.206111714558442,
+            0.0
+          ]
+        },
+        {
+          "label": "node 3: 1t",
+          "loads": [
+            0.0,
+            0.0,
+            0.0,
+            1.103055857279221
+          ]
+        },
+        {
+          "label": "node 3: 2t",
+          "loads": [
+            0.0,
+            0.0,
+            0.0,
+            2.206111714558442
+          ]
+        },
+        {
+          "label": "pair 1,2: t,t",
+          "loads": [
+            0.0,
+            1.103055857279221,
+            1.103055857279221,
+            0.0
+          ]
+        },
+        {
+          "label": "pair 1,3: t,t",
+          "loads": [
+            0.0,
+            1.103055857279221,
+            0.0,
+            1.103055857279221
+          ]
+        },
+        {
+          "label": "pair 2,3: t,t",
+          "loads": [
+            0.0,
+            0.0,
+            1.103055857279221,
+            1.103055857279221
+          ]
+        }
+      ],
+      "selected_greedy": [
+        "baseline",
+        "node 1: 2t",
+        "node 2: 2t",
+        "node 3: 2t"
+      ],
+      "selected_optimal": [
+        "baseline",
+        "node 1: 2t",
+        "node 2: 2t",
+        "node 3: 2t"
+      ],
+      "greedy_step_logdet_gains": [
+        12.04242072847444,
+        10.526404625684762,
+        10.029487123114272,
+        8.643475066588373
+      ],
+      "greedy_logdet_gain": 41.24178754386185,
+      "optimal_logdet_gain": 41.24178754386185,
+      "greedy_D_efficiency_vs_optimal": 1.0,
+      "uniform_subset_mean_logdet_gain": 36.793693390235674,
+      "uniform_subset_p05_logdet_gain": 34.06018927672396,
+      "uniform_subset_p95_logdet_gain": 40.05197661577562,
+      "greedy_D_factor_vs_geometric_mean_uniform": 1.639239940895608,
+      "exhaustive_budget_subsets": 210,
+      "submodularity_elementary_checks": 11520,
+      "minimum_diminishing_return_gap": 1.044199393618328e-09,
+      "minimum_gap_case": [
+        459,
+        2,
+        4
+      ],
+      "max_gradient_abs_finite_difference_error": 1.510322422682009e-11,
+      "max_matrix_determinant_lemma_abs_error": 4.9045212335840915e-12,
+      "max_logdet_derivative_abs_finite_difference_error": 9.186024385599012e-08,
+      "selected_information_eigenvalues": [
+        24.99999999972991,
+        24.999999999885397,
+        24.999999999966093,
+        25.000000000014094,
+        25.00000000011067,
+        102380.94907856337,
+        404804.9382205122,
+        763281.5693016804,
+        10062156.321771316
+      ],
+      "selected_information_condition_number": 402486.252875201,
+      "selected_local_linear_covariance_trace": 0.20001364728339013,
+      "prior_covariance_trace": 0.3600000000000001,
+      "gradient_matrix_rank": 9,
+      "gradient_matrix_singular_values": [
+        0.9579720498640344,
+        0.21472266759069256,
+        0.1751298495679305,
+        0.08312921849065524,
+        0.012385135123961541,
+        0.009093676011401425,
+        0.0071077323477005926,
+        0.006083997264223196,
+        0.004043755834057802
+      ]
+    }
+  ],
+  "symmetry_opening": {
+    "K": [
+      [
+        2.2,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      [
+        -1.0,
+        3.0,
+        -0.7,
+        -1.0
+      ],
+      [
+        -1.0,
+        -0.7,
+        3.0,
+        -1.0
+      ],
+      [
+        0.0,
+        -1.0,
+        -1.0,
+        2.4
+      ]
+    ],
+    "edge": "1-2",
+    "baseline_response": 1.1956521739130432,
+    "records": [
+      {
+        "load_node_1": 0.0,
+        "port_response": 1.1956521739130432,
+        "potential_difference_1_minus_2": 1.1102230246251565e-16,
+        "edge_derivative_physical": -1.232595164407831e-32,
+        "edge_derivative_finite_difference": -2.220446049250313e-12,
+        "squared_derivative_Fisher_per_unit_variance": 1.5192908393215678e-64
+      },
+      {
+        "load_node_1": 0.1,
+        "port_response": 1.1354104254044337,
+        "potential_difference_1_minus_2": -0.01997203914519685,
+        "edge_derivative_physical": -0.0003988823476172754,
+        "edge_derivative_finite_difference": -0.00039888235381368986,
+        "squared_derivative_Fisher_per_unit_variance": 1.591071272406689e-07
+      },
+      {
+        "load_node_1": 0.3,
+        "port_response": 1.0434075486512253,
+        "potential_difference_1_minus_2": -0.050473893780494605,
+        "edge_derivative_physical": -0.002547613953364652,
+        "edge_derivative_finite_difference": -0.002547613962011752,
+        "squared_derivative_Fisher_per_unit_variance": 6.490336855378272e-06
+      },
+      {
+        "load_node_1": 1.0,
+        "port_response": 0.8685751463890695,
+        "potential_difference_1_minus_2": -0.1084363478638039,
+        "edge_derivative_physical": -0.01175844153803989,
+        "edge_derivative_finite_difference": -0.011758441568199274,
+        "squared_derivative_Fisher_per_unit_variance": 0.0001382609474035019
+      },
+      {
+        "load_node_1": 3.0,
+        "port_response": 0.7088548577986585,
+        "potential_difference_1_minus_2": -0.16138865975684105,
+        "edge_derivative_physical": -0.026046299498109406,
+        "edge_derivative_finite_difference": -0.026046299560489317,
+        "squared_derivative_Fisher_per_unit_variance": 0.0006784097175452143
+      },
+      {
+        "load_node_1": 10.0,
+        "port_response": 0.6085026862882503,
+        "potential_difference_1_minus_2": -0.1946585688702017,
+        "edge_derivative_physical": -0.03789195843459506,
+        "edge_derivative_finite_difference": -0.03789195852033078,
+        "squared_derivative_Fisher_per_unit_variance": 0.0014358005140090795
+      }
+    ],
+    "exact_rational_records": [
+      {
+        "load": "0",
+        "response": "55/46",
+        "potential_difference": "0",
+        "physical_edge_derivative": "0"
+      },
+      {
+        "load": "1/10",
+        "response": "1895/1669",
+        "potential_difference": "-100/5007",
+        "physical_edge_derivative": "-10000/25070049"
+      },
+      {
+        "load": "3/10",
+        "response": "18605/17831",
+        "potential_difference": "-900/17831",
+        "physical_edge_derivative": "-810000/317944561"
+      },
+      {
+        "load": "1",
+        "response": "1335/1537",
+        "potential_difference": "-500/4611",
+        "physical_edge_derivative": "-250000/21261321"
+      },
+      {
+        "load": "3",
+        "response": "19765/27883",
+        "potential_difference": "-4500/27883",
+        "physical_edge_derivative": "-20250000/777461689"
+      },
+      {
+        "load": "10",
+        "response": "2605/4281",
+        "potential_difference": "-2500/12843",
+        "physical_edge_derivative": "-6250000/164942649"
+      }
+    ],
+    "principle": "a one-node ground breaks path-exchange symmetry and opens the exactly blind transverse edge"
+  },
+  "bayesian_scalar_edge": {
+    "unknown": "eta=log(w/0.7)",
+    "prior": "Gaussian(0,0.2^2)",
+    "sigma_normalized_response": 0.0002,
+    "model": "F_theta(w)=[4+4w+theta(2+w)]/[8+8w+theta(5+3w)]",
+    "analytic_derivative": "partial_eta(F_theta/F0)=-2w theta^2/[8+8w+theta(5+3w)]^2",
+    "quadrature": "SciPy adaptive Gauss-Kronrod, standard normal z on [-10,10], analytic uniform-gradient Gaussian-tail bound",
+    "forward_identity_checks": 126,
+    "max_forward_identity_abs_error": 1.4988010832439613e-15,
+    "gradient_identity_checks": 126,
+    "max_gradient_identity_abs_error": 1.734723475976807e-17,
+    "records": [
+      {
+        "load": 0.0,
+        "expected_squared_normalized_log_weight_gradient": 0.0,
+        "quadrature_reported_abs_error": 0.0,
+        "omitted_tail_analytic_upper_bound": 0.0,
+        "uniform_gradient_absolute_bound": 0.0,
+        "expected_data_Fisher_information_one_reading": 0.0,
+        "van_Trees_MSE_lower_bound_one_reading": 0.04000000000000001,
+        "van_Trees_RMSE_lower_bound_one_reading": 0.2,
+        "van_Trees_MSE_lower_bound_four_repeats": 0.04000000000000001,
+        "baseline_response_exact": "1/2"
+      },
+      {
+        "load": 0.1,
+        "expected_squared_normalized_log_weight_gradient": 4.599086548198132e-09,
+        "quadrature_reported_abs_error": 4.81200375055221e-18,
+        "omitted_tail_analytic_upper_bound": 7.654601085789526e-32,
+        "uniform_gradient_absolute_bound": 7.087172218284905e-05,
+        "expected_data_Fisher_information_one_reading": 0.11497716370495328,
+        "van_Trees_MSE_lower_bound_one_reading": 0.03981687872864784,
+        "van_Trees_RMSE_lower_bound_one_reading": 0.19954167165945022,
+        "van_Trees_MSE_lower_bound_four_repeats": 0.0392774386411905,
+        "baseline_response_exact": "1/2"
+      },
+      {
+        "load": 0.3,
+        "expected_squared_normalized_log_weight_gradient": 2.5534330172319897e-07,
+        "quadrature_reported_abs_error": 3.3294859871779147e-18,
+        "omitted_tail_analytic_upper_bound": 4.316923910017287e-30,
+        "uniform_gradient_absolute_bound": 0.0005322294500295682,
+        "expected_data_Fisher_information_one_reading": 6.383582543079974,
+        "van_Trees_MSE_lower_bound_one_reading": 0.03186379370893392,
+        "van_Trees_RMSE_lower_bound_one_reading": 0.17850432406228686,
+        "van_Trees_MSE_lower_bound_four_repeats": 0.019788527850078213,
+        "baseline_response_exact": "1/2"
+      },
+      {
+        "load": 1.0,
+        "expected_squared_normalized_log_weight_gradient": 1.0534009335122103e-05,
+        "quadrature_reported_abs_error": 3.2620027431219632e-18,
+        "omitted_tail_analytic_upper_bound": 1.863135856071344e-28,
+        "uniform_gradient_absolute_bound": 0.0034965034965034965,
+        "expected_data_Fisher_information_one_reading": 263.35023337805256,
+        "van_Trees_MSE_lower_bound_one_reading": 0.0034680048227632675,
+        "van_Trees_RMSE_lower_bound_one_reading": 0.05888976840473451,
+        "van_Trees_MSE_lower_bound_four_repeats": 0.0009272989005518859,
+        "baseline_response_exact": "1/2"
+      },
+      {
+        "load": 3.0,
+        "expected_squared_normalized_log_weight_gradient": 0.00010595706461426159,
+        "quadrature_reported_abs_error": 3.3049511754884295e-17,
+        "omitted_tail_analytic_upper_bound": 2.0185899325521393e-27,
+        "uniform_gradient_absolute_bound": 0.011508951406649617,
+        "expected_data_Fisher_information_one_reading": 2648.9266153565395,
+        "van_Trees_MSE_lower_bound_one_reading": 0.0003739818416320527,
+        "van_Trees_RMSE_lower_bound_one_reading": 0.019338610126688336,
+        "van_Trees_MSE_lower_bound_four_repeats": 9.415569516321225e-05,
+        "baseline_response_exact": "1/2"
+      },
+      {
+        "load": 10.0,
+        "expected_squared_normalized_log_weight_gradient": 0.00038017500109285455,
+        "quadrature_reported_abs_error": 1.1917408104005392e-16,
+        "omitted_tail_analytic_upper_bound": 7.843202328220863e-27,
+        "uniform_gradient_absolute_bound": 0.022686025408348458,
+        "expected_data_Fisher_information_one_reading": 9504.375027321363,
+        "van_Trees_MSE_lower_bound_one_reading": 0.00010493867616007685,
+        "van_Trees_RMSE_lower_bound_one_reading": 0.010243958031936526,
+        "van_Trees_MSE_lower_bound_four_repeats": 2.62863901459494e-05,
+        "baseline_response_exact": "1/2"
+      },
+      {
+        "load": "clamp",
+        "expected_squared_normalized_log_weight_gradient": 0.0007684961977768754,
+        "quadrature_reported_abs_error": 2.4119683530350066e-16,
+        "omitted_tail_analytic_upper_bound": 1.693300672035685e-26,
+        "uniform_gradient_absolute_bound": 0.03333333333333333,
+        "expected_data_Fisher_information_one_reading": 19212.404944421884,
+        "van_Trees_MSE_lower_bound_one_reading": 5.198206321949687e-05,
+        "van_Trees_RMSE_lower_bound_one_reading": 0.007209858751702204,
+        "van_Trees_MSE_lower_bound_four_repeats": 1.3008194419587165e-05,
+        "baseline_response_exact": "1/2"
+      }
+    ]
+  },
+  "required_checks": {
+    "count": 12,
+    "passed": 12
+  }
+}

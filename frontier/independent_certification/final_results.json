@@ -1,0 +1,57 @@
+{
+  "protocol_sha256": "a30eab243048d107543fdd24749fdff58d4cc82de40765345c74f6dd530433ec",
+  "engine_sha256": "7c123778df29aa63bd6870d14bd41aa75343662910065ef812ce687f7cd4a228",
+  "campaign": {
+    "continuous_t_range": [
+      "10",
+      "100"
+    ],
+    "s_real_range": [
+      "-1/10",
+      "11/10"
+    ],
+    "total_zero_count": 29,
+    "all_real_simple": true,
+    "attempts": 45,
+    "leaf_tiles": 45,
+    "count_histogram": {
+      "0": 18,
+      "1": 25,
+      "2": 2
+    },
+    "unresolved_leaves": 0,
+    "seconds": 64.05766423099703,
+    "boundary_value_calls": 6540,
+    "logarithmic_derivative_calls": 414237
+  },
+  "fresh_replay": {
+    "all_agree": true,
+    "tiles": 45,
+    "seconds": 61.487448747997405
+  },
+  "analytic_controls_passed": 5,
+  "integrity_tamper_rejections": 7,
+  "interval_serialization_controls_passed": 3,
+  "post_campaign_reference": {
+    "policy": "post-campaign diagnostic; no values used for placement/integration",
+    "reference_method": "Arb zeta_zeros",
+    "count_inside_range": 29,
+    "agrees_with_contour_count": true,
+    "first_inside": "[14.1347251417346937904572519836 +/- 6.05e-29]",
+    "last_inside": "[98.831194218193692233324420139 +/- 5.62e-28]"
+  },
+  "retained_measured_limitations": {
+    "direct_lehmer_attempt": {
+      "completed": false,
+      "status": "timeout",
+      "budget_seconds": 60,
+      "limitation": "direct derivative/interval integration at this height did not finish within the fixed wall-time budget",
+      "seconds": 60.062458497995976,
+      "request_sha256": "7b447d99928e9390288dab6ae6df02f90a9bd72124a0a6e035ec0c9b792cca74",
+      "engine_sha256": "ada4fb0a074c99daaaa02a567a23d09548cfe247f025721fe24bef339c7070e9",
+      "source_difference_from_current": "interval serialization supplement only; distinct source hash retained"
+    }
+  },
+  "trust_boundary": "independent direct contour algorithm; Arb function balls and adaptive integration trusted; no archive Taylor/DFT kernel",
+  "scope": "reproduction of known finite-height zero facts over exactly[10,100]; no new height record or global RH claim"
+}

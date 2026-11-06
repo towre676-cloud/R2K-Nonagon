@@ -1,0 +1,23 @@
+{
+  "sources": [
+    {
+      "title": "EIS data of 54 21700 cells",
+      "url": "https://zenodo.org/records/15422339",
+      "doi": "10.5281/zenodo.15422339",
+      "role": "Primary measured data and acquisition metadata; NMC811 cells at30% state of charge, galvanostatic Keysight SL1007A; dataset license retained by the external module."
+    },
+    {
+      "title": "Explicit Solution of the Inverse Eigenvalue Problem of Real Symmetric Matrices and Its Application to Electrical Network Synthesis",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2008/513582",
+      "doi": "10.1155/2008/513582",
+      "role": "Prior literature on constructing passive equivalent network realizations through matrix transformations. The campaign claims an explicit checked example for its own toolkit, not discovery of realization nonuniqueness."
+    },
+    {
+      "title": "Generalized Distribution of Relaxation Times Analysis for the Characterization of Impedance Spectra",
+      "url": "https://www.mdpi.com/2313-0105/5/3/53",
+      "doi": "10.3390/batteries5030053",
+      "role": "Existing scientific context for relaxation-time kernels and combining resistive, capacitive and inductive terms. Nonnegative Debye fitting is an established restricted physical prior."
+    }
+  ],
+  "scope": "Primary-source context only; fresh empirical results are in the local module receipts. No general novelty review has been completed."
+}

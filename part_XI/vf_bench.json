@@ -1,0 +1,170 @@
+[
+ {
+  "data": "ring slot measured.s1p S11",
+  "points": 101,
+  "band_GHz": [
+   75.0,
+   109.999999992
+  ],
+  "r2k": {
+   "order": 18,
+   "conf_nrmse": 0.03385021937420646,
+   "conf_max_err_rel": 0.06430684050722409,
+   "stable_certified_exact": true,
+   "max_abs_S_dense": 0.9170750266946067,
+   "seconds": 9.058968305587769,
+   "passive_exact_full_axis": false,
+   "passivity_check_seconds": 0.4754462242126465
+  },
+  "vector_fitting": {
+   "order": 13,
+   "conf_nrmse": 0.03351816812824396,
+   "conf_max_err_rel": 0.057889007321404236,
+   "stable_certified_exact": true,
+   "max_abs_S_dense": 0.9058260123147156,
+   "skrf_is_passive": false,
+   "seconds": 2.2139363288879395,
+   "passive_exact_full_axis": false
+  }
+ },
+ {
+  "data": "ro,1.s1p S11",
+  "points": 201,
+  "band_GHz": [
+   500.0,
+   750.0
+  ],
+  "r2k": {
+   "order": 19,
+   "conf_nrmse": 0.03171492170635077,
+   "conf_max_err_rel": 0.19962705184865448,
+   "stable_certified_exact": true,
+   "max_abs_S_dense": 0.22322771339427894,
+   "seconds": 5.692359209060669,
+   "passive_exact_full_axis": false,
+   "passivity_check_seconds": 0.5619502067565918
+  },
+  "vector_fitting": {
+   "order": 16,
+   "conf_nrmse": 0.03659219860272236,
+   "conf_max_err_rel": 0.23104532765278873,
+   "stable_certified_exact": true,
+   "max_abs_S_dense": 0.23670720559368333,
+   "skrf_is_passive": false,
+   "seconds": 1.6248245239257812,
+   "passive_exact_full_axis": false
+  }
+ },
+ {
+  "data": "ro,2.s1p S11",
+  "points": 201,
+  "band_GHz": [
+   500.0,
+   750.0
+  ],
+  "r2k": {
+   "order": 16,
+   "conf_nrmse": 0.01201059028240135,
+   "conf_max_err_rel": 0.06337197185970574,
+   "stable_certified_exact": true,
+   "max_abs_S_dense": 0.22082489190408955,
+   "seconds": 5.754213333129883,
+   "passive_exact_full_axis": true,
+   "passivity_check_seconds": 0.32395172119140625
+  },
+  "vector_fitting": {
+   "order": 10,
+   "conf_nrmse": 0.010928663681680035,
+   "conf_max_err_rel": 0.05609608993565937,
+   "stable_certified_exact": true,
+   "max_abs_S_dense": 0.22320360418394208,
+   "skrf_is_passive": true,
+   "seconds": 1.6474688053131104,
+   "passive_exact_full_axis": true
+  }
+ },
+ {
+  "data": "ro,3.s1p S11",
+  "points": 201,
+  "band_GHz": [
+   500.0,
+   750.0
+  ],
+  "r2k": {
+   "order": 19,
+   "conf_nrmse": 0.00939464067430256,
+   "conf_max_err_rel": 0.048569118648761504,
+   "stable_certified_exact": true,
+   "max_abs_S_dense": 0.21741481188341547,
+   "seconds": 11.571547985076904,
+   "passive_exact_full_axis": false,
+   "passivity_check_seconds": 0.6245718002319336
+  },
+  "vector_fitting": {
+   "order": 12,
+   "conf_nrmse": 0.005010096862142369,
+   "conf_max_err_rel": 0.018486459939932143,
+   "stable_certified_exact": true,
+   "max_abs_S_dense": 0.22689241076019703,
+   "skrf_is_passive": true,
+   "seconds": 2.344299554824829,
+   "passive_exact_full_axis": true
+  }
+ },
+ {
+  "data": "ntwk1.s2p S11",
+  "points": 91,
+  "band_GHz": [
+   1.0,
+   10.0
+  ],
+  "r2k": {
+   "order": 15,
+   "conf_nrmse": 9.121055482134124e-10,
+   "conf_max_err_rel": 2.760411352416124e-09,
+   "stable_certified_exact": true,
+   "max_abs_S_dense": 0.8371499318724581,
+   "seconds": 0.6110968589782715,
+   "passive_exact_full_axis": true,
+   "passivity_check_seconds": 0.2494497299194336
+  },
+  "vector_fitting": {
+   "order": 8,
+   "conf_nrmse": 7.547466956084759e-10,
+   "conf_max_err_rel": 1.5768895537228212e-09,
+   "stable_certified_exact": true,
+   "max_abs_S_dense": 0.837149931890189,
+   "skrf_is_passive": false,
+   "seconds": 0.3062565326690674,
+   "passive_exact_full_axis": false
+  }
+ },
+ {
+  "data": "ntwk1.s2p S21",
+  "points": 91,
+  "band_GHz": [
+   1.0,
+   10.0
+  ],
+  "r2k": {
+   "order": 7,
+   "conf_nrmse": 5.847028084423622e-10,
+   "conf_max_err_rel": 8.750792591252326e-10,
+   "stable_certified_exact": true,
+   "max_abs_S_dense": 0.9422258771880265,
+   "seconds": 0.7783150672912598,
+   "passive_exact_full_axis": "n/a (transmission)",
+   "passivity_check_seconds": 3.0994415283203125e-06
+  },
+  "vector_fitting": {
+   "order": 10,
+   "conf_nrmse": 5.71016490894077e-10,
+   "conf_max_err_rel": 8.911309199136053e-10,
+   "stable_certified_exact": true,
+   "max_abs_S_dense": 0.9422258771130135,
+   "skrf_is_passive": true,
+   "seconds": 0.31739330291748047,
+   "passive_exact_full_axis": "n/a (transmission)"
+  }
+ }
+]

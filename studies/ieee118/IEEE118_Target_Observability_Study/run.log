@@ -1,0 +1,66 @@
+designed random 0.0
+designed qr_norm 0.02
+designed d_opt 5.4
+designed a_opt 12.55
+designed target_a 5.65
+designed target_correlated 12.15
+evaluated random 179
+evaluated random 180
+evaluated random 200
+evaluated random 250
+evaluated random 379
+evaluated qr_norm 179
+evaluated qr_norm 180
+evaluated qr_norm 200
+evaluated qr_norm 250
+evaluated qr_norm 379
+evaluated d_opt 179
+evaluated d_opt 180
+evaluated d_opt 200
+evaluated d_opt 250
+evaluated d_opt 379
+evaluated a_opt 179
+evaluated a_opt 180
+evaluated a_opt 200
+evaluated a_opt 250
+evaluated a_opt 379
+evaluated target_a 179
+evaluated target_a 180
+evaluated target_a 200
+evaluated target_a 250
+evaluated target_a 379
+evaluated target_correlated 179
+evaluated target_correlated 180
+evaluated target_correlated 200
+evaluated target_correlated 250
+evaluated target_correlated 379
+evaluated historical 179
+evaluated historical 180
+evaluated full 6903
+nonlinear qr_norm 180 0
+nonlinear qr_norm 180 1e-07
+nonlinear qr_norm 180 1e-05
+nonlinear qr_norm 250 0
+nonlinear qr_norm 250 1e-07
+nonlinear qr_norm 250 1e-05
+nonlinear qr_norm 379 0
+nonlinear qr_norm 379 1e-07
+nonlinear qr_norm 379 1e-05
+nonlinear target_a 180 0
+nonlinear target_a 180 1e-07
+nonlinear target_a 180 1e-05
+nonlinear target_a 250 0
+nonlinear target_a 250 1e-07
+nonlinear target_a 250 1e-05
+nonlinear target_a 379 0
+nonlinear target_a 379 1e-07
+nonlinear target_a 379 1e-05
+nonlinear target_correlated 180 0
+nonlinear target_correlated 180 1e-07
+nonlinear target_correlated 180 1e-05
+nonlinear target_correlated 250 0
+nonlinear target_correlated 250 1e-07
+nonlinear target_correlated 250 1e-05
+nonlinear target_correlated 379 0
+nonlinear target_correlated 379 1e-07
+nonlinear target_correlated 379 1e-05

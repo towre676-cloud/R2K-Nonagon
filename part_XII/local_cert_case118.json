@@ -1,0 +1,39 @@
+{
+ "readings": 379,
+ "rows_available": 199,
+ "unknowns": 179,
+ "rows": [
+  {
+   "eps_rel": 1e-15,
+   "branches_certified_present": 173,
+   "branches": 173,
+   "max_rel_radius": 3.6375224590301516e-07,
+   "truth_contained": true,
+   "seconds": 0.1309661865234375
+  },
+  {
+   "eps_rel": 1e-13,
+   "branches_certified_present": 173,
+   "branches": 173,
+   "max_rel_radius": 3.6090344190597534e-05,
+   "truth_contained": true,
+   "seconds": 0.10624980926513672
+  },
+  {
+   "eps_rel": 1e-11,
+   "branches_certified_present": 173,
+   "branches": 173,
+   "max_rel_radius": 0.003610291659832001,
+   "truth_contained": true,
+   "seconds": 0.1036825180053711
+  },
+  {
+   "eps_rel": 1e-09,
+   "branches_certified_present": 173,
+   "branches": 173,
+   "max_rel_radius": 0.3661795293241739,
+   "truth_contained": true,
+   "seconds": 0.08710217475891113
+  }
+ ]
+}

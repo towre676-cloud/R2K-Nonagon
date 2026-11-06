@@ -1,0 +1,357 @@
+{
+  "random_checks": {
+    "networks": 20,
+    "finite_controls": 600,
+    "all_physical": true,
+    "max_congruence_identity_error": 1.1102230246251565e-16,
+    "max_attained_envelope_error": 1.3444106938820255e-16,
+    "max_random_envelope_excess": -3.2259888091761783e-06,
+    "rows": [
+      {
+        "n": 3,
+        "vertex": 2,
+        "t": 1.2,
+        "epsilon_max": 0.6333794739145585,
+        "new_ground_min": 0.49700614150961253,
+        "S": 0.07743711264797909,
+        "envelope": 0.007039737513452642,
+        "attained": 0.007039737513452771
+      },
+      {
+        "n": 4,
+        "vertex": 2,
+        "t": 1.2,
+        "epsilon_max": 1.3314878285331617,
+        "new_ground_min": 0.8674682996632258,
+        "S": 0.004525662617604339,
+        "envelope": 0.0004114238743276671,
+        "attained": 0.0004114238743276877
+      },
+      {
+        "n": 5,
+        "vertex": 3,
+        "t": 1.2,
+        "epsilon_max": 0.42529807249672713,
+        "new_ground_min": 0.26482515905227655,
+        "S": 0.06251698273250883,
+        "envelope": 0.00568336206659171,
+        "attained": 0.005683362066591702
+      },
+      {
+        "n": 6,
+        "vertex": 5,
+        "t": 1.2,
+        "epsilon_max": 0.7424097326655703,
+        "new_ground_min": 0.4683510507015405,
+        "S": 0.027908139636370597,
+        "envelope": 0.002537103603306417,
+        "attained": 0.002537103603306501
+      },
+      {
+        "n": 7,
+        "vertex": 2,
+        "t": 1.2,
+        "epsilon_max": 1.1768369746070781,
+        "new_ground_min": 1.0946163354349001,
+        "S": 0.04836068358710484,
+        "envelope": 0.004396425780645893,
+        "attained": 0.004396425780645918
+      },
+      {
+        "n": 8,
+        "vertex": 6,
+        "t": 1.2,
+        "epsilon_max": 0.5374346912391518,
+        "new_ground_min": 0.5392385805550584,
+        "S": 8.176994811482658e-05,
+        "envelope": 7.433631646802414e-06,
+        "attained": 7.433631646847072e-06
+      },
+      {
+        "n": 3,
+        "vertex": 2,
+        "t": 1.2,
+        "epsilon_max": 1.7125161527722579,
+        "new_ground_min": 1.090072841472706,
+        "S": 0.03845174193261989,
+        "envelope": 0.0034956129029654432,
+        "attained": 0.0034956129029654615
+      },
+      {
+        "n": 4,
+        "vertex": 2,
+        "t": 1.2,
+        "epsilon_max": 1.1789899551847725,
+        "new_ground_min": 0.6822383501747905,
+        "S": 0.06823419575431855,
+        "envelope": 0.006203108704938048,
+        "attained": 0.00620310870493801
+      },
+      {
+        "n": 5,
+        "vertex": 2,
+        "t": 1.199393774886503,
+        "epsilon_max": 0.3987875497730059,
+        "new_ground_min": 0.26219861627609553,
+        "S": 0.06458505885487262,
+        "envelope": 0.0058551855667612574,
+        "attained": 0.005855185566761123
+      },
+      {
+        "n": 6,
+        "vertex": 2,
+        "t": 1.187362771582229,
+        "epsilon_max": 0.3747255431644583,
+        "new_ground_min": 0.25863155088214174,
+        "S": 0.06651542988222982,
+        "envelope": 0.005697507271143339,
+        "attained": 0.005697507271143265
+      },
+      {
+        "n": 7,
+        "vertex": 2,
+        "t": 1.1562106628648032,
+        "epsilon_max": 0.3124213257296063,
+        "new_ground_min": 0.2666577240056931,
+        "S": 0.06321582967460657,
+        "envelope": 0.004579787507357282,
+        "attained": 0.004579787507357325
+      },
+      {
+        "n": 8,
+        "vertex": 3,
+        "t": 1.2,
+        "epsilon_max": 0.5868551000776243,
+        "new_ground_min": 0.26953633369969987,
+        "S": 0.0059748280872182966,
+        "envelope": 0.0005431661897471177,
+        "attained": 0.0005431661897470352
+      },
+      {
+        "n": 3,
+        "vertex": 1,
+        "t": 1.188796457304292,
+        "epsilon_max": 0.37759291460858374,
+        "new_ground_min": 0.212708796224226,
+        "S": 0.14893839908323864,
+        "envelope": 0.0128468053800304,
+        "attained": 0.012846805380030302
+      },
+      {
+        "n": 4,
+        "vertex": 2,
+        "t": 1.2,
+        "epsilon_max": 0.542359507610333,
+        "new_ground_min": 0.6284130886309764,
+        "S": 0.019844120752082035,
+        "envelope": 0.0018040109774620026,
+        "attained": 0.0018040109774620228
+      },
+      {
+        "n": 5,
+        "vertex": 1,
+        "t": 1.1685363001529363,
+        "epsilon_max": 0.3370726003058727,
+        "new_ground_min": 0.3193645947797694,
+        "S": 0.025462433206703602,
+        "envelope": 0.0019789128202495126,
+        "attained": 0.0019789128202495343
+      },
+      {
+        "n": 6,
+        "vertex": 2,
+        "t": 1.2,
+        "epsilon_max": 1.9956357035677208,
+        "new_ground_min": 0.6226719763787799,
+        "S": 0.008985507853876437,
+        "envelope": 0.0008168643503524032,
+        "attained": 0.000816864350352442
+      },
+      {
+        "n": 7,
+        "vertex": 3,
+        "t": 1.1986136872301527,
+        "epsilon_max": 0.3972273744603054,
+        "new_ground_min": 0.3519006317835618,
+        "S": 0.02041133045456381,
+        "envelope": 0.0018438753594594785,
+        "attained": 0.0018438753594595125
+      },
+      {
+        "n": 8,
+        "vertex": 6,
+        "t": 1.2,
+        "epsilon_max": 0.49861695666693495,
+        "new_ground_min": 0.5017506539279664,
+        "S": 0.005959613303275668,
+        "envelope": 0.0005417830275705152,
+        "attained": 0.0005417830275705193
+      },
+      {
+        "n": 3,
+        "vertex": 2,
+        "t": 1.2,
+        "epsilon_max": 0.8729667578829411,
+        "new_ground_min": 0.5538249789843563,
+        "S": 0.002932161637299415,
+        "envelope": 0.0002665601488454013,
+        "attained": 0.00026656014884540724
+      },
+      {
+        "n": 4,
+        "vertex": 2,
+        "t": 1.2,
+        "epsilon_max": 0.5229722631869085,
+        "new_ground_min": 0.47015636913021175,
+        "S": 0.1220968119872081,
+        "envelope": 0.011099710180655278,
+        "attained": 0.011099710180655253
+      }
+    ]
+  },
+  "exact_fixture": {
+    "K": "[[4, -1, -2], [-1, 4, -1], [-2, -1, 5]]",
+    "t": "6/5",
+    "vertex": 2,
+    "old_grounds": [
+      "1",
+      "2",
+      "2"
+    ],
+    "new_grounds": [
+      "3/5",
+      "9/5",
+      "18/5"
+    ],
+    "theta_optimal": "102/25",
+    "S": "9/85",
+    "envelope": "9/935",
+    "attained": "9/935",
+    "identity_exact": true
+  },
+  "path_floor": [
+    {
+      "n": 3,
+      "edge": [
+        1,
+        2
+      ],
+      "m": 6,
+      "sigma": 1e-12,
+      "G0far": 0.38095238095238093,
+      "Gfarfar": 1.0476190476190477,
+      "wGfarfar": 1.0476190476190477,
+      "congruence_delta": 5.894084693572024e-12,
+      "admissible_delta_max": 0.5,
+      "new_ground_min": 0.4999999999941058,
+      "maximum_mean_separation": 4.082482904626599e-13,
+      "sigma_over_sqrt_m": 4.0824829046386303e-13,
+      "tail_error_threshold": 2.9470423467860116e-12,
+      "local_efficient_sd_along_gauge": 5.894084693572023e-12,
+      "gaussian_KL_upper_bound": 0.4999999999970531
+    },
+    {
+      "n": 5,
+      "edge": [
+        3,
+        4
+      ],
+      "m": 15,
+      "sigma": 1e-12,
+      "G0far": 0.09384164222873899,
+      "Gfarfar": 1.002932551319648,
+      "wGfarfar": 1.002932551319648,
+      "congruence_delta": 5.881185726580748e-11,
+      "admissible_delta_max": 0.5,
+      "new_ground_min": 0.49999999994118816,
+      "maximum_mean_separation": 2.581988897395685e-13,
+      "sigma_over_sqrt_m": 2.581988897471611e-13,
+      "tail_error_threshold": 2.940592863290374e-11,
+      "local_efficient_sd_along_gauge": 5.881185726580748e-11,
+      "gaussian_KL_upper_bound": 0.4999999999705939
+    },
+    {
+      "n": 7,
+      "edge": [
+        5,
+        6
+      ],
+      "m": 28,
+      "sigma": 1e-12,
+      "G0far": 0.02343893059879143,
+      "Gfarfar": 1.000183116645303,
+      "wGfarfar": 1.000183116645303,
+      "congruence_delta": 6.881053160131051e-10,
+      "admissible_delta_max": 0.5,
+      "new_ground_min": 0.49999999931189465,
+      "maximum_mean_separation": 1.8898223643959376e-13,
+      "sigma_over_sqrt_m": 1.889822365046136e-13,
+      "tail_error_threshold": 3.4405265800655255e-10,
+      "local_efficient_sd_along_gauge": 6.881053160131051e-10,
+      "gaussian_KL_upper_bound": 0.4999999996559473
+    },
+    {
+      "n": 9,
+      "edge": [
+        7,
+        8
+      ],
+      "m": 45,
+      "sigma": 1e-12,
+      "G0far": 0.005859397351827058,
+      "Gfarfar": 1.0000114441354528,
+      "wGfarfar": 1.0000114441354528,
+      "congruence_delta": 8.68405985103144e-09,
+      "admissible_delta_max": 0.5,
+      "new_ground_min": 0.4999999913159401,
+      "maximum_mean_separation": 1.4907119785271438e-13,
+      "sigma_over_sqrt_m": 1.4907119849998596e-13,
+      "tail_error_threshold": 4.34202992551572e-09,
+      "local_efficient_sd_along_gauge": 8.68405985103144e-09,
+      "gaussian_KL_upper_bound": 0.49999999565797015
+    },
+    {
+      "n": 11,
+      "edge": [
+        9,
+        10
+      ],
+      "m": 66,
+      "sigma": 1e-12,
+      "G0far": 0.0014648440992460487,
+      "Gfarfar": 1.0000007152559078,
+      "wGfarfar": 1.0000007152559078,
+      "congruence_delta": 1.1472961246044698e-07,
+      "admissible_delta_max": 0.5,
+      "new_ground_min": 0.4999998852703875,
+      "maximum_mean_separation": 1.230914839182136e-13,
+      "sigma_over_sqrt_m": 1.2309149097933273e-13,
+      "tail_error_threshold": 5.73648062302235e-08,
+      "local_efficient_sd_along_gauge": 1.14729612460447e-07,
+      "gaussian_KL_upper_bound": 0.49999994263519865
+    }
+  ],
+  "estimation": {
+    "n": 7,
+    "vertex": 6,
+    "m": 100,
+    "sigma": 5.492828847757787e-08,
+    "replicates": 80000,
+    "first_order_sd": 2e-05,
+    "empirical_sd": 2.0000884389617747e-05,
+    "ratio": 1.0000442194808872,
+    "estimator": "y=(F0-hbar)/S; t=sqrt(1/clip(y,1/4,3/4)-1); w=t*w0",
+    "clipped_count": 0,
+    "clip_interval": [
+      0.25,
+      0.75
+    ],
+    "globally_defined": true,
+    "finite_risk_bounded_extension": true,
+    "estimator_range": [
+      0.5773502691896258,
+      1.7320508075688772
+    ],
+    "model_scope": "one-parameter diagonal-congruence nuisance family"
+  }
+}

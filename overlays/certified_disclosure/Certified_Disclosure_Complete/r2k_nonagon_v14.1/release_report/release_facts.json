@@ -1,0 +1,75 @@
+{
+  "status": "reviewed",
+  "planner_summary": "The fresh prospective benchmark uses 30 new path and complete-graph fixtures of orders 3, 4 and 6, spanning five conductance scales. A calibrated baseline and two-load pilot select one common strength from {1/16, 1/4, 1, 4, 16}. The planner sees only scalar pilot intervals and the declared hardware envelope. The final acquisition is generated after selection and evaluated by the unchanged nonlinear interval inverse.",
+  "planner_table_headers": [
+    "Budget; matrices / full graphs",
+    "Fixed t = 1",
+    "Pilot selected"
+  ],
+  "planner_table_rows": [
+    [
+      "Ideal reference",
+      "30/30; 30/30",
+      "30/30; 30/30"
+    ],
+    [
+      "10 nV readout + 1 nV drift",
+      "20/30; 5/30",
+      "25/30; 10/30"
+    ],
+    [
+      "10 µV readout + 1 µV drift",
+      "4/30; 0/30",
+      "8/30; 1/30"
+    ]
+  ],
+  "planner_interpretation": "Both arms pay the same pilot cost and acquire a complete final plan: 11, 17 or 32 scalar readings at n = 3, 4 or 6, compared with 6, 10 or 21 for a bare canonical plan. Each budget uses 600 readings per arm. The two nonideal scenarios use 100 µA, 1 mS scaling, 1 ppm current and shunt errors, and up to 5 mΩ relay resistance. Eleven readout-limited pilots cannot resolve the required margins and fall back to t = 1. No false edge call or escaped true matrix occurs. The tested gain concerns this frozen finite-strength comparison, not arbitrary networks or equal elapsed bench time.",
+  "dynamic_summary": "The new acquisition demonstrator uses four fresh three- and four-node fixtures, with C = 2βM and β = 1/2. Each finite-load setting samples a calibrated unit-step response over T = 80 with spacing 1/2048. The same 32 synthetic traces supply 96 scalars at s = 0, 1 and 2. Tail and composite-Simpson bounds use a fixed external class prior, plus simultaneous 10⁻¹² sample error and a declared 10⁻¹² transformed-rounding envelope.",
+  "dynamic_table_headers": [
+    "Fresh transient acquisition check",
+    "Result"
+  ],
+  "dynamic_table_rows": [
+    [
+      "Simulated fixtures / step traces",
+      "4 / 32"
+    ],
+    [
+      "DC and Laplace scalar outputs",
+      "96"
+    ],
+    [
+      "Recovered P(0), P(1), P(2) matrices",
+      "12/12 enclosed"
+    ],
+    [
+      "Recovered K, C and M",
+      "All entries enclosed, all four fixtures"
+    ],
+    [
+      "Worst K/C/M entry radius",
+      "0.0440 normalized"
+    ],
+    [
+      "Independent modal / state-space agreement",
+      "Maximum 4.17 × 10⁻¹⁶"
+    ]
+  ],
+  "dynamic_interpretation": "The public prior supplies diagonal mass in [1, 7/4], grounds at least 2, an absolute row-sum norm bound of 16, and C = M. It is independent of hidden matrices and ensures the spectral margin for the tail proof. Force and shunt calibrations are exact here. Six unsupported-model controls are rejected; three short records require their tail term; wide error remains unresolved. The 455 acquisition checks and 956 independent record predicates establish this conditional exercise, not a general tail bound for every damper network.",
+  "replay_summary": "The strict campaign accepts 103 reconstructions with 119,902 checks and three derived certificates. The reference inverse adds 6,994 predicates on unchanged readings. Independent engineering replay checks 682,370 predicates with its own rational forward solver. Normal and optimized Python exercise the production gate and bridge. The integrated receipt retains stage outcomes, hashes and scope; fresh SPICE requires an installed ngspice executable.",
+  "evidence": {
+    "finite_load": "part_IX/load_planning/results/benchmark_receipt.json",
+    "dynamic": "part_IX/dynamic_acquisition/dynamic_receipt.json",
+    "integrated_replay": "cross_checks/integration_receipt.json",
+    "engineering": "part_IX/engineering_tests/engineering_verification.json"
+  },
+  "planner_truth_checks": 12070,
+  "planner_unique_generated_scalar_reads": 2910,
+  "planner_logical_reading_charges": 3600,
+  "dynamic_independent_record_checks": 956,
+  "integrated_replay_status": "PASSED",
+  "integrated_replay_stages": 16,
+  "integrated_replay_elapsed_seconds": 100.731,
+  "integration_relocation": "ZIP extraction to folder with spaces; invoked from /tmp",
+  "planner_independent_record_predicates": 49808
+}

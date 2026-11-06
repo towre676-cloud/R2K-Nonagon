@@ -1,0 +1,59 @@
+{
+ "reference_gap_arb": "[0.0376984977261401883766483906755 +/- 1.24e-32]",
+ "tiles": [
+  {
+   "file": "certs/III_refine_7005_7005.12.json",
+   "lo": 7005.0,
+   "hi": 7005.125,
+   "det": "[0.3638212430868 +/- 2.70e-14]",
+   "gap": "[0.03769849772614 +/- 1.38e-15]",
+   "contains_reference": true,
+   "abs_diff_upper": 1.1909680120750975e-15
+  },
+  {
+   "file": "certs/III_refine_7005_7005.25.json",
+   "lo": 7005.0,
+   "hi": 7005.25,
+   "det": "[0.09095531077170 +/- 8.09e-15]",
+   "gap": "[0.03769849772614 +/- 1.66e-15]",
+   "contains_reference": true,
+   "abs_diff_upper": 1.4702120008482155e-15
+  },
+  {
+   "file": "certs/III_refine_7005_7005.5.json",
+   "lo": 7005.0,
+   "hi": 7005.5,
+   "det": "[0.0227388276929 +/- 3.04e-14]",
+   "gap": "[0.03769849772614 +/- 4.82e-15]",
+   "contains_reference": true,
+   "abs_diff_upper": 4.629507179895773e-15
+  },
+  {
+   "file": "certs/III_refine_7005_7006.json",
+   "lo": 7005.0,
+   "hi": 7006.0,
+   "det": "[0.00568470692323 +/- 3.88e-15]",
+   "gap": "[0.03769849772614 +/- 9.10e-15]",
+   "contains_reference": true,
+   "abs_diff_upper": 8.905978010763966e-15
+  },
+  {
+   "file": "certs/II_lehmer_b0p45.json",
+   "lo": 7004.95,
+   "hi": 7005.22,
+   "det": "[0.07797951883694 +/- 8.65e-15]",
+   "gap": "[0.03769849772614 +/- 1.88e-15]",
+   "contains_reference": true,
+   "abs_diff_upper": 1.6876293766595469e-15
+  },
+  {
+   "file": "certs/II_lehmer_b0p6.json",
+   "lo": 7004.95,
+   "hi": 7005.22,
+   "det": "[0.07797951883694 +/- 7.62e-15]",
+   "gap": "[0.03769849772614 +/- 1.63e-15]",
+   "contains_reference": true,
+   "abs_diff_upper": 1.4392430343976861e-15
+  }
+ ]
+}

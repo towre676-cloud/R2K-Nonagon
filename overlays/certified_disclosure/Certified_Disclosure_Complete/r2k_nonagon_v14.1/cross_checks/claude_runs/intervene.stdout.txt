@@ -1,0 +1,209 @@
+{
+ "random_networks": [
+  {
+   "n": 2,
+   "experiments": 3,
+   "n(n+1)/2": 3,
+   "exact_recovery": true
+  },
+  {
+   "n": 7,
+   "experiments": 28,
+   "n(n+1)/2": 28,
+   "exact_recovery": true
+  },
+  {
+   "n": 5,
+   "experiments": 15,
+   "n(n+1)/2": 15,
+   "exact_recovery": true
+  },
+  {
+   "n": 6,
+   "experiments": 21,
+   "n(n+1)/2": 21,
+   "exact_recovery": true
+  },
+  {
+   "n": 7,
+   "experiments": 28,
+   "n(n+1)/2": 28,
+   "exact_recovery": true
+  },
+  {
+   "n": 7,
+   "experiments": 28,
+   "n(n+1)/2": 28,
+   "exact_recovery": true
+  },
+  {
+   "n": 5,
+   "experiments": 15,
+   "n(n+1)/2": 15,
+   "exact_recovery": true
+  },
+  {
+   "n": 4,
+   "experiments": 10,
+   "n(n+1)/2": 10,
+   "exact_recovery": true
+  },
+  {
+   "n": 5,
+   "experiments": 15,
+   "n(n+1)/2": 15,
+   "exact_recovery": true
+  },
+  {
+   "n": 3,
+   "experiments": 6,
+   "n(n+1)/2": 6,
+   "exact_recovery": true
+  },
+  {
+   "n": 3,
+   "experiments": 6,
+   "n(n+1)/2": 6,
+   "exact_recovery": true
+  },
+  {
+   "n": 2,
+   "experiments": 3,
+   "n(n+1)/2": 3,
+   "exact_recovery": true
+  },
+  {
+   "n": 2,
+   "experiments": 3,
+   "n(n+1)/2": 3,
+   "exact_recovery": true
+  },
+  {
+   "n": 3,
+   "experiments": 6,
+   "n(n+1)/2": 6,
+   "exact_recovery": true
+  },
+  {
+   "n": 5,
+   "experiments": 15,
+   "n(n+1)/2": 15,
+   "exact_recovery": true
+  },
+  {
+   "n": 4,
+   "experiments": 10,
+   "n(n+1)/2": 10,
+   "exact_recovery": true
+  },
+  {
+   "n": 5,
+   "experiments": 15,
+   "n(n+1)/2": 15,
+   "exact_recovery": true
+  },
+  {
+   "n": 5,
+   "experiments": 15,
+   "n(n+1)/2": 15,
+   "exact_recovery": true
+  },
+  {
+   "n": 7,
+   "experiments": 28,
+   "n(n+1)/2": 28,
+   "exact_recovery": true
+  },
+  {
+   "n": 4,
+   "experiments": 10,
+   "n(n+1)/2": 10,
+   "exact_recovery": true
+  },
+  {
+   "n": 7,
+   "experiments": 28,
+   "n(n+1)/2": 28,
+   "exact_recovery": true
+  },
+  {
+   "n": 2,
+   "experiments": 3,
+   "n(n+1)/2": 3,
+   "exact_recovery": true
+  },
+  {
+   "n": 7,
+   "experiments": 28,
+   "n(n+1)/2": 28,
+   "exact_recovery": true
+  },
+  {
+   "n": 4,
+   "experiments": 10,
+   "n(n+1)/2": 10,
+   "exact_recovery": true
+  },
+  {
+   "n": 5,
+   "experiments": 15,
+   "n(n+1)/2": 15,
+   "exact_recovery": true
+  },
+  {
+   "n": 5,
+   "experiments": 15,
+   "n(n+1)/2": 15,
+   "exact_recovery": true
+  },
+  {
+   "n": 7,
+   "experiments": 28,
+   "n(n+1)/2": 28,
+   "exact_recovery": true
+  },
+  {
+   "n": 3,
+   "experiments": 6,
+   "n(n+1)/2": 6,
+   "exact_recovery": true
+  },
+  {
+   "n": 4,
+   "experiments": 10,
+   "n(n+1)/2": 10,
+   "exact_recovery": true
+  },
+  {
+   "n": 7,
+   "experiments": 28,
+   "n(n+1)/2": 28,
+   "exact_recovery": true
+  },
+  {
+   "n": 5,
+   "experiments": 15,
+   "n(n+1)/2": 15,
+   "exact_recovery": true
+  },
+  {
+   "n": 3,
+   "experiments": 6,
+   "n(n+1)/2": 6,
+   "exact_recovery": true
+  },
+  {
+   "n": 7,
+   "experiments": 28,
+   "n(n+1)/2": 28,
+   "exact_recovery": true
+  },
+  {
+   "n": 4,
+   "experiments": 10,
+   "n(n+1)/2": 10,
+   "exact_recovery": true
+  },
+  {
+   "n": 7,
+   "experiments": 28,

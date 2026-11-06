@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETED",
+  "seconds": 256.40014207999775,
+  "protocol_sha256": "fe0a9e5ce8533aa19e5b9d9d60a4afce0eb886014b9d3e220e7ddebb4b1a5bb0",
+  "matpower_sha256": "bc2e6f22b4b9e776572885ee4b50e4f4ab2ee0c5577e9126e86d906f14c4b5f7",
+  "numpy": "2.3.5",
+  "linear_rows": 66,
+  "nonlinear_fits": 135,
+  "dropout_checks": 360,
+  "shift_rows": 90,
+  "limitations": [
+    "Exploratory simulations, no independent confirmation campaign",
+    "Local Jacobian uncertainty requires correct linearization",
+    "Only previously found nonlinear branches tested",
+    "Abstract correlated-noise model, not calibrated instrument data",
+    "Targets are 12 declared effective resistances; no AC voltage-estimation claim"
+  ]
+}

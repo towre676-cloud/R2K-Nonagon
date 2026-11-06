@@ -1,0 +1,143 @@
+{
+ "case": "case118",
+ "n": 117,
+ "generators": 53,
+ "branches": 173,
+ "schemes": {
+  "inj1:all": {
+   "access": "injection steps at 1 generator, sensors all",
+   "readings": 117,
+   "rank": 100,
+   "unknowns": 179,
+   "identifiable_branches": 0,
+   "branches": 173,
+   "seconds": 0.011846542358398438
+  },
+  "inj:all": {
+   "access": "injection steps at 53 generators, sensors all",
+   "readings": 6201,
+   "rank": 166,
+   "unknowns": 179,
+   "identifiable_branches": 125,
+   "branches": 173,
+   "seconds": 0.7797274589538574
+  },
+  "inj:20": {
+   "access": "injection steps at 53 generators, sensors 20",
+   "readings": 1060,
+   "rank": 106,
+   "unknowns": 179,
+   "identifiable_branches": 49,
+   "branches": 173,
+   "seconds": 0.08772516250610352
+  },
+  "inj:40": {
+   "access": "injection steps at 53 generators, sensors 40",
+   "readings": 2120,
+   "rank": 133,
+   "unknowns": 179,
+   "identifiable_branches": 78,
+   "branches": 173,
+   "seconds": 0.1940937042236328
+  },
+  "amb:all": {
+   "access": "ambient load fluctuations, unknown variances, sensors all",
+   "readings": 6903,
+   "rank": 295,
+   "unknowns": 296,
+   "identifiable_branches": 0,
+   "branches": 173,
+   "seconds": 1.9945433139801025
+  },
+  "amb:20": {
+   "access": "ambient load fluctuations, unknown variances, sensors 20",
+   "readings": 210,
+   "rank": 133,
+   "unknowns": 296,
+   "identifiable_branches": 0,
+   "branches": 173,
+   "seconds": 0.12986087799072266
+  },
+  "amb:40": {
+   "access": "ambient load fluctuations, unknown variances, sensors 40",
+   "readings": 820,
+   "rank": 213,
+   "unknowns": 296,
+   "identifiable_branches": 0,
+   "branches": 173,
+   "seconds": 0.3462376594543457
+  },
+  "amb:60": {
+   "access": "ambient load fluctuations, unknown variances, sensors 60",
+   "readings": 1830,
+   "rank": 263,
+   "unknowns": 296,
+   "identifiable_branches": 0,
+   "branches": 173,
+   "seconds": 0.6104381084442139
+  },
+  "amb1:all": {
+   "access": "ambient covariance plus one injection step, sensors all",
+   "readings": 7020,
+   "rank": 296,
+   "unknowns": 296,
+   "identifiable_branches": 173,
+   "branches": 173,
+   "seconds": 1.6578428745269775
+  },
+  "amb1l:all": {
+   "access": "ambient covariance plus one injection step, sensors all",
+   "readings": 774,
+   "rank": 296,
+   "unknowns": 296,
+   "identifiable_branches": 173,
+   "branches": 173,
+   "seconds": 0.3064444065093994
+  },
+  "amb1s:all": {
+   "access": "ambient covariance plus one injection step, sensors all",
+   "readings": 1005,
+   "rank": 284,
+   "unknowns": 296,
+   "identifiable_branches": 152,
+   "branches": 173,
+   "seconds": 0.5143835544586182
+  },
+  "both:20": {
+   "access": "ambient covariance plus injection steps at 53 generators, sensors 20",
+   "readings": 1270,
+   "rank": 183,
+   "unknowns": 296,
+   "identifiable_branches": 55,
+   "branches": 173,
+   "seconds": 0.2516970634460449
+  },
+  "both:40": {
+   "access": "ambient covariance plus injection steps at 53 generators, sensors 40",
+   "readings": 2940,
+   "rank": 244,
+   "unknowns": 296,
+   "identifiable_branches": 101,
+   "branches": 173,
+   "seconds": 0.7407405376434326
+  },
+  "both:60": {
+   "access": "ambient covariance plus injection steps at 53 generators, sensors 60",
+   "readings": 5010,
+   "rank": 276,
+   "unknowns": 296,
+   "identifiable_branches": 139,
+   "branches": 173,
+   "seconds": 1.3044207096099854
+  },
+  "amb1:60": {
+   "access": "ambient covariance plus one injection step, sensors 60",
+   "readings": 1890,
+   "rank": 264,
+   "unknowns": 296,
+   "identifiable_branches": 99,
+   "branches": 173,
+   "seconds": 0.6351618766784668
+  }
+ }
+}

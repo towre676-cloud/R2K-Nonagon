@@ -1,0 +1,13 @@
+{
+ "case": "case118",
+ "prime": 998244353,
+ "rows": 244,
+ "unknowns": 179,
+ "rank": 179,
+ "identifiable": true,
+ "agrees_with_record": true,
+ "pivot_rule": "shortest row first, largest column",
+ "seconds_inverse": 0.016932010650634766,
+ "seconds_rows": 0.006644725799560547,
+ "seconds": 0.02490067481994629
+}

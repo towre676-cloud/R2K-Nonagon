@@ -1,0 +1,510 @@
+{
+  "function": {
+    "kind": "polynomial",
+    "coefficients_ascending": [
+      "-1/4",
+      "0",
+      "1"
+    ]
+  },
+  "geometry": {
+    "lo": "-1",
+    "hi": "1",
+    "b": "1/2"
+  },
+  "input_sha256": "ede42786176b15afdd33bbb2037af15e83ad597c47b88dd8a63b6008c8dba001",
+  "source_sha256": "7c123778df29aa63bd6870d14bd41aa75343662910065ef812ce687f7cd4a228",
+  "precision_bits": 100,
+  "series_cap": 8,
+  "method": "direct-acb-integral-full-contour",
+  "status": "certified_real_simple",
+  "moments": [
+    {
+      "real": "[2.0000000000000000000000 +/- 4.29e-23]",
+      "imag": "[+/- 4.29e-23]",
+      "exact_real": {
+        "mid_mantissa": "79228162514264337593543950335",
+        "mid_exponent": -95,
+        "rad_mantissa": "435017365",
+        "rad_exponent": -103
+      },
+      "exact_imag": {
+        "mid_mantissa": "61",
+        "mid_exponent": -105,
+        "rad_mantissa": "435010345",
+        "rad_exponent": -103
+      }
+    },
+    {
+      "real": "[+/- 6.62e-23]",
+      "imag": "[+/- 6.62e-23]",
+      "exact_real": {
+        "mid_mantissa": "-5",
+        "mid_exponent": -103,
+        "rad_mantissa": "335431473",
+        "rad_exponent": -102
+      },
+      "exact_imag": {
+        "mid_mantissa": "1",
+        "mid_exponent": -101,
+        "rad_mantissa": "83857869",
+        "rad_exponent": -100
+      }
+    },
+    {
+      "real": "[-1.00000000000000000000 +/- 1.75e-22]",
+      "imag": "[+/- 1.75e-22]",
+      "exact_real": {
+        "mid_mantissa": "-79228162514264337593543950335",
+        "mid_exponent": -96,
+        "rad_mantissa": "221397009",
+        "rad_exponent": -100
+      },
+      "exact_imag": {
+        "mid_mantissa": "13",
+        "mid_exponent": -102,
+        "rad_mantissa": "442787169",
+        "rad_exponent": -101
+      }
+    }
+  ],
+  "side_integrals": [
+    [
+      {
+        "real": "[+/- 9.02e-23]",
+        "imag": "[4.068887871591405470891 +/- 2.46e-22]",
+        "exact_real": {
+          "mid_mantissa": "-17",
+          "mid_exponent": -102,
+          "rad_mantissa": "228449475",
+          "rad_exponent": -101
+        },
+        "exact_imag": {
+          "mid_mantissa": "322370509542762996481809829911",
+          "mid_exponent": -96,
+          "rad_mantissa": "456899271",
+          "rad_exponent": -102
+        }
+      },
+      {
+        "real": "[+/- 4.47e-23]",
+        "imag": "[2.2142974355881810060341 +/- 7.56e-23]",
+        "exact_real": {
+          "mid_mantissa": "-7",
+          "mid_exponent": -102,
+          "rad_mantissa": "452827395",
+          "rad_exponent": -103
+        },
+        "exact_imag": {
+          "mid_mantissa": "701738868326796695916936237311",
+          "mid_exponent": -98,
+          "rad_mantissa": "226413855",
+          "rad_exponent": -102
+        }
+      },
+      {
+        "real": "[+/- 9.02e-23]",
+        "imag": "[4.068887871591405470891 +/- 2.46e-22]",
+        "exact_real": {
+          "mid_mantissa": "-17",
+          "mid_exponent": -102,
+          "rad_mantissa": "228449475",
+          "rad_exponent": -101
+        },
+        "exact_imag": {
+          "mid_mantissa": "322370509542762996481809829911",
+          "mid_exponent": -96,
+          "rad_mantissa": "456899271",
+          "rad_exponent": -102
+        }
+      },
+      {
+        "real": "[+/- 4.47e-23]",
+        "imag": "[2.2142974355881810060341 +/- 7.56e-23]",
+        "exact_real": {
+          "mid_mantissa": "-7",
+          "mid_exponent": -102,
+          "rad_mantissa": "452827395",
+          "rad_exponent": -103
+        },
+        "exact_imag": {
+          "mid_mantissa": "701738868326796695916936237311",
+          "mid_exponent": -98,
+          "rad_mantissa": "226413855",
+          "rad_exponent": -102
+        }
+      }
+    ],
+    [
+      {
+        "real": "[3.195281043782949812700 +/- 5.17e-22]",
+        "imag": "[+/- 1.38e-22]",
+        "exact_real": {
+          "mid_mantissa": "126578122907791865002340783801",
+          "mid_exponent": -95,
+          "rad_mantissa": "695364877",
+          "rad_exponent": -102
+        },
+        "exact_imag": {
+          "mid_mantissa": "-5",
+          "mid_exponent": -101,
+          "rad_mantissa": "695364635",
+          "rad_exponent": -102
+        }
+      },
+      {
+        "real": "[+/- 7.07e-23]",
+        "imag": "[2.463647609000806116214 +/- 3.27e-22]",
+        "exact_real": {
+          "mid_mantissa": "-13",
+          "mid_exponent": -104,
+          "rad_mantissa": "358424169",
+          "rad_exponent": -102
+        },
+        "exact_imag": {
+          "mid_mantissa": "390380546287589261625463686633",
+          "mid_exponent": -97,
+          "rad_mantissa": "358424393",
+          "rad_exponent": -102
+        }
+      },
+      {
+        "real": "[-3.195281043782949812700 +/- 5.17e-22]",
+        "imag": "[+/- 1.38e-22]",
+        "exact_real": {
+          "mid_mantissa": "-126578122907791865002340783801",
+          "mid_exponent": -95,
+          "rad_mantissa": "695364877",
+          "rad_exponent": -102
+        },
+        "exact_imag": {
+          "mid_mantissa": "5",
+          "mid_exponent": -101,
+          "rad_mantissa": "695364635",
+          "rad_exponent": -102
+        }
+      },
+      {
+        "real": "[+/- 7.07e-23]",
+        "imag": "[-2.463647609000806116214 +/- 3.27e-22]",
+        "exact_real": {
+          "mid_mantissa": "13",
+          "mid_exponent": -104,
+          "rad_mantissa": "358424169",
+          "rad_exponent": -102
+        },
+        "exact_imag": {
+          "mid_mantissa": "-390380546287589261625463686633",
+          "mid_exponent": -97,
+          "rad_mantissa": "358424393",
+          "rad_exponent": -102
+        }
+      }
+    ],
+    [
+      {
+        "real": "[+/- 3.72e-22]",
+        "imag": "[-6.034443935795702735446 +/- 7.94e-22]",
+        "exact_real": {
+          "mid_mantissa": "-7",
+          "mid_exponent": -99,
+          "rad_mantissa": "117712633",
+          "rad_exponent": -98
+        },
+        "exact_imag": {
+          "mid_mantissa": "-59762238103554856076885089537",
+          "mid_exponent": -93,
+          "rad_mantissa": "941701261",
+          "rad_exponent": -101
+        }
+      },
+      {
+        "real": "[+/- 1.78e-22]",
+        "imag": "[2.892851282205909496983 +/- 2.43e-22]",
+        "exact_real": {
+          "mid_mantissa": "1",
+          "mid_exponent": -98,
+          "rad_mantissa": "898711687",
+          "rad_exponent": -102
+        },
+        "exact_imag": {
+          "mid_mantissa": "229195291516207763384558771677",
+          "mid_exponent": -96,
+          "rad_mantissa": "449355929",
+          "rad_exponent": -101
+        }
+      },
+      {
+        "real": "[+/- 3.72e-22]",
+        "imag": "[-6.034443935795702735446 +/- 7.94e-22]",
+        "exact_real": {
+          "mid_mantissa": "-7",
+          "mid_exponent": -99,
+          "rad_mantissa": "117712633",
+          "rad_exponent": -98
+        },
+        "exact_imag": {
+          "mid_mantissa": "-59762238103554856076885089537",
+          "mid_exponent": -93,
+          "rad_mantissa": "941701261",
+          "rad_exponent": -101
+        }
+      },
+      {
+        "real": "[+/- 1.78e-22]",
+        "imag": "[2.892851282205909496983 +/- 2.43e-22]",
+        "exact_real": {
+          "mid_mantissa": "1",
+          "mid_exponent": -98,
+          "rad_mantissa": "898711687",
+          "rad_exponent": -102
+        },
+        "exact_imag": {
+          "mid_mantissa": "229195291516207763384558771677",
+          "mid_exponent": -96,
+          "rad_mantissa": "449355929",
+          "rad_exponent": -101
+        }
+      }
+    ]
+  ],
+  "boundary": {
+    "proved_zero_free": true,
+    "segments": [
+      {
+        "side": 0,
+        "tau0": "0",
+        "tau1": "1/4",
+        "function_value": {
+          "real": "[+/- 0.501]",
+          "imag": "[+/- 1.01]",
+          "exact_real": {
+            "mid_mantissa": "1",
+            "mid_exponent": -4,
+            "rad_mantissa": "469762055",
+            "rad_exponent": -30
+          },
+          "exact_imag": {
+            "mid_mantissa": "3",
+            "mid_exponent": -2,
+            "rad_mantissa": "67108865",
+            "rad_exponent": -28
+          }
+        },
+        "abs_lower": "0.499999996274709701538085937500"
+      },
+      {
+        "side": 0,
+        "tau0": "1/4",
+        "tau1": "1/2",
+        "function_value": {
+          "real": "[+/- 0.626]",
+          "imag": "[+/- 0.501]",
+          "exact_real": {
+            "mid_mantissa": "-7",
+            "mid_exponent": -4,
+            "rad_mantissa": "402653191",
+            "rad_exponent": -31
+          },
+          "exact_imag": {
+            "mid_mantissa": "1",
+            "mid_exponent": -2,
+            "rad_mantissa": "67108865",
+            "rad_exponent": -28
+          }
+        },
+        "abs_lower": "[0.249999996740370988845825195313 +/- 5.00e-31]"
+      },
+      {
+        "side": 0,
+        "tau0": "1/2",
+        "tau1": "3/4",
+        "function_value": {
+          "real": "[+/- 0.626]",
+          "imag": "[+/- 0.501]",
+          "exact_real": {
+            "mid_mantissa": "-7",
+            "mid_exponent": -4,
+            "rad_mantissa": "402653191",
+            "rad_exponent": -31
+          },
+          "exact_imag": {
+            "mid_mantissa": "-1",
+            "mid_exponent": -2,
+            "rad_mantissa": "67108865",
+            "rad_exponent": -28
+          }
+        },
+        "abs_lower": "[0.249999996740370988845825195313 +/- 5.00e-31]"
+      },
+      {
+        "side": 0,
+        "tau0": "3/4",
+        "tau1": "1",
+        "function_value": {
+          "real": "[+/- 0.501]",
+          "imag": "[+/- 1.01]",
+          "exact_real": {
+            "mid_mantissa": "1",
+            "mid_exponent": -4,
+            "rad_mantissa": "469762055",
+            "rad_exponent": -30
+          },
+          "exact_imag": {
+            "mid_mantissa": "-3",
+            "mid_exponent": -2,
+            "rad_mantissa": "67108865",
+            "rad_exponent": -28
+          }
+        },
+        "abs_lower": "0.499999996274709701538085937500"
+      },
+      {
+        "side": 1,
+        "tau0": "0",
+        "tau1": "1",
+        "function_value": {
+          "real": "[+/- 1.01]",
+          "imag": "[+/- 1.01]",
+          "exact_real": {
+            "mid_mantissa": "3",
+            "mid_exponent": -2,
+            "rad_mantissa": "134217731",
+            "rad_exponent": -29
+          },
+          "exact_imag": {
+            "mid_mantissa": "0",
+            "mid_exponent": 0,
+            "rad_mantissa": "67108865",
+            "rad_exponent": -26
+          }
+        },
+        "abs_lower": "0.499999994412064552307128906250"
+      },
+      {
+        "side": 2,
+        "tau0": "0",
+        "tau1": "1/4",
+        "function_value": {
+          "real": "[+/- 0.501]",
+          "imag": "[+/- 1.01]",
+          "exact_real": {
+            "mid_mantissa": "1",
+            "mid_exponent": -4,
+            "rad_mantissa": "469762055",
+            "rad_exponent": -30
+          },
+          "exact_imag": {
+            "mid_mantissa": "3",
+            "mid_exponent": -2,
+            "rad_mantissa": "67108865",
+            "rad_exponent": -28
+          }
+        },
+        "abs_lower": "0.499999996274709701538085937500"
+      },
+      {
+        "side": 2,
+        "tau0": "1/4",
+        "tau1": "1/2",
+        "function_value": {
+          "real": "[+/- 0.626]",
+          "imag": "[+/- 0.501]",
+          "exact_real": {
+            "mid_mantissa": "-7",
+            "mid_exponent": -4,
+            "rad_mantissa": "402653191",
+            "rad_exponent": -31
+          },
+          "exact_imag": {
+            "mid_mantissa": "1",
+            "mid_exponent": -2,
+            "rad_mantissa": "67108865",
+            "rad_exponent": -28
+          }
+        },
+        "abs_lower": "[0.249999996740370988845825195313 +/- 5.00e-31]"
+      },
+      {
+        "side": 2,
+        "tau0": "1/2",
+        "tau1": "3/4",
+        "function_value": {
+          "real": "[+/- 0.626]",
+          "imag": "[+/- 0.501]",
+          "exact_real": {
+            "mid_mantissa": "-7",
+            "mid_exponent": -4,
+            "rad_mantissa": "402653191",
+            "rad_exponent": -31
+          },
+          "exact_imag": {
+            "mid_mantissa": "-1",
+            "mid_exponent": -2,
+            "rad_mantissa": "67108865",
+            "rad_exponent": -28
+          }
+        },
+        "abs_lower": "[0.249999996740370988845825195313 +/- 5.00e-31]"
+      },
+      {
+        "side": 2,
+        "tau0": "3/4",
+        "tau1": "1",
+        "function_value": {
+          "real": "[+/- 0.501]",
+          "imag": "[+/- 1.01]",
+          "exact_real": {
+            "mid_mantissa": "1",
+            "mid_exponent": -4,
+            "rad_mantissa": "469762055",
+            "rad_exponent": -30
+          },
+          "exact_imag": {
+            "mid_mantissa": "-3",
+            "mid_exponent": -2,
+            "rad_mantissa": "67108865",
+            "rad_exponent": -28
+          }
+        },
+        "abs_lower": "0.499999996274709701538085937500"
+      },
+      {
+        "side": 3,
+        "tau0": "0",
+        "tau1": "1",
+        "function_value": {
+          "real": "[+/- 1.01]",
+          "imag": "[+/- 1.01]",
+          "exact_real": {
+            "mid_mantissa": "3",
+            "mid_exponent": -2,
+            "rad_mantissa": "134217731",
+            "rad_exponent": -29
+          },
+          "exact_imag": {
+            "mid_mantissa": "0",
+            "mid_exponent": 0,
+            "rad_mantissa": "67108865",
+            "rad_exponent": -26
+          }
+        },
+        "abs_lower": "0.499999994412064552307128906250"
+      }
+    ],
+    "value_evaluations": 28
+  },
+  "count": 2,
+  "leading_minors": [
+    "[2.0000000000000000000000 +/- 4.29e-23]",
+    "[1.00000000000000000000 +/- 2.39e-22]"
+  ],
+  "all_real_simple": true,
+  "gram_determinant": "[1.00000000000000000000 +/- 2.39e-22]",
+  "gap_from_determinant": "[1.00000000000000000000 +/- 1.20e-22]",
+  "seconds": 0.012574316002428532,
+  "boundary_value_calls": 28,
+  "logarithmic_derivative_calls": 2814,
+  "fixture_name": "real_simple",
+  "expected_status": "certified_real_simple"
+}

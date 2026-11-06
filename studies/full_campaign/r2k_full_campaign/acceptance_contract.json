@@ -1,0 +1,7 @@
+{
+  "deterministic_target": 1e-06,
+  "model": "infinite-product BK",
+  "primary": "predeclared ten-block nominal SE",
+  "height_contract": "equal three-quantile prediction; not exact continuous-height averaging",
+  "no_fitted_terms": true
+}

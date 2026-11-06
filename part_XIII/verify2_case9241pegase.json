@@ -1,0 +1,13 @@
+{
+ "case": "case9241pegase",
+ "prime": 998244353,
+ "rows": 23035,
+ "unknowns": 14207,
+ "rank": 14207,
+ "identifiable": true,
+ "agrees_with_record": true,
+ "pivot_rule": "shortest row first, largest column",
+ "seconds_inverse": 886.5502939224243,
+ "seconds_rows": 0.5608258247375488,
+ "seconds": 904.3300633430481
+}

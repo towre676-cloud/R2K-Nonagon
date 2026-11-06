@@ -1,0 +1,1182 @@
+{
+ "certs/III_refine_7005_7005.12.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 57,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 4.13e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[0.3638212431 +/- 1.33e-11]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7005.0 <= Im s <= 7005.125 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0015194416046142578
+ },
+ "certs/III_refine_7005_7005.25.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 51,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 3.18e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[0.09095531077 +/- 1.71e-12]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7005.0 <= Im s <= 7005.25 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0009891986846923828
+ },
+ "certs/III_refine_7005_7005.5.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 53,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 4.45e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[0.02273882769 +/- 2.94e-12]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7005.0 <= Im s <= 7005.5 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0010471343994140625
+ },
+ "certs/III_refine_7005_7006.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 61,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 2.86e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[0.005684706923 +/- 2.34e-13]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7005.0 <= Im s <= 7006.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0011506080627441406
+ },
+ "certs/III_scan6e5_00.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 137,
+  "segments_recomputed": 0,
+  "count": 4,
+  "mu0": "[4.000000000000 +/- 1.88e-13]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[4.000000000 +/- 2.1e-13]",
+   "[3.517460959 +/- 6.56e-11]",
+   "[2.014077764 +/- 2.15e-10]",
+   "[0.2213116898 +/- 3.08e-11]"
+  ],
+  "inertia": [
+   4,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 600262.0 <= Im s <= 600264.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.006003618240356445
+ },
+ "certs/III_scan6e5_01.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 124,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.0000000000000 +/- 5.59e-14]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 8e-14]",
+   "[0.1295029925 +/- 4.76e-11]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 600264.0 <= Im s <= 600266.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.005728721618652344
+ },
+ "certs/III_scan6e5_02.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 138,
+  "segments_recomputed": 0,
+  "count": 5,
+  "mu0": "[5.000000000000 +/- 1.82e-13]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[5.000000000 +/- 2.1e-13]",
+   "[10.14993473 +/- 3.35e-9]",
+   "[19.47630330 +/- 4.79e-10]",
+   "[35.06757038 +/- 1.74e-10]",
+   "[24.22205912 +/- 4.95e-9]"
+  ],
+  "inertia": [
+   5,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 600266.0 <= Im s <= 600268.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.006244659423828125
+ },
+ "certs/III_scan6e5_03.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 133,
+  "segments_recomputed": 0,
+  "count": 3,
+  "mu0": "[3.000000000000 +/- 1.89e-13]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[3.000000000 +/- 2.1e-13]",
+   "[2.168870826 +/- 4.70e-10]",
+   "[0.7239410441 +/- 4.96e-11]"
+  ],
+  "inertia": [
+   3,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 600268.0 <= Im s <= 600270.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.005900382995605469
+ },
+ "certs/III_scan6e5_04.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 151,
+  "segments_recomputed": 0,
+  "count": 4,
+  "mu0": "[4.00000000000 +/- 8.52e-12]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[4.000000000 +/- 8.53e-12]",
+   "[5.385721495 +/- 2.29e-10]",
+   "[3.438040220 +/- 2.18e-10]",
+   "[1.623295397 +/- 5.94e-10]"
+  ],
+  "inertia": [
+   4,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 600270.0 <= Im s <= 600272.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.007513284683227539
+ },
+ "certs/III_scan7005_00.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 91,
+  "segments_recomputed": 0,
+  "count": 3,
+  "mu0": "[3.00000000000000 +/- 5.78e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[3.000000000 +/- 3e-14]",
+   "[5.245022955 +/- 8.79e-11]",
+   "[6.783470744 +/- 3.97e-10]"
+  ],
+  "inertia": [
+   3,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 6990.0 <= Im s <= 6992.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0041773319244384766
+ },
+ "certs/III_scan7005_01.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 93,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 1.19e-15]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[0.7807234625 +/- 4.09e-11]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 6992.0 <= Im s <= 6994.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.004420757293701172
+ },
+ "certs/III_scan7005_02.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 90,
+  "segments_recomputed": 0,
+  "count": 3,
+  "mu0": "[3.00000000000000 +/- 9.62e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[3.000000000 +/- 3e-14]",
+   "[4.394089017 +/- 2.84e-10]",
+   "[6.141943444 +/- 2.89e-11]"
+  ],
+  "inertia": [
+   3,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 6994.0 <= Im s <= 6996.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.00422215461730957
+ },
+ "certs/III_scan7005_03.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 81,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 1.06e-15]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[0.8495704839 +/- 1.69e-11]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 6996.0 <= Im s <= 6998.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.003827333450317383
+ },
+ "certs/III_scan7005_04.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 73,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 1.59e-15]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[1.401579982 +/- 3.72e-10]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 6998.0 <= Im s <= 7000.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0033538341522216797
+ },
+ "certs/III_scan7005_05.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 75,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 1.02e-15]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[1.295529521 +/- 2.62e-10]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7000.0 <= Im s <= 7002.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.007479429244995117
+ },
+ "certs/III_scan7005_06.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 89,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 6.31e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[0.1146992851 +/- 4.66e-11]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7002.0 <= Im s <= 7004.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0046083927154541016
+ },
+ "certs/III_scan7005_07.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 89,
+  "segments_recomputed": 0,
+  "count": 3,
+  "mu0": "[3.00000000000000 +/- 3.29e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[3.000000000 +/- 3e-14]",
+   "[2.156986236 +/- 4.37e-10]",
+   "[0.006594737354 +/- 2.01e-13]"
+  ],
+  "inertia": [
+   3,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7004.0 <= Im s <= 7006.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.004189491271972656
+ },
+ "certs/III_scan7005_08.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 67,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.00000000000000 +/- 5.13e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 3e-15]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7006.0 <= Im s <= 7008.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.003158092498779297
+ },
+ "certs/III_scan7005_09.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 88,
+  "segments_recomputed": 0,
+  "count": 3,
+  "mu0": "[3.00000000000000 +/- 2.00e-15]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[3.000000000 +/- 3e-14]",
+   "[2.366667202 +/- 1.23e-10]",
+   "[0.9390958128 +/- 2.46e-11]"
+  ],
+  "inertia": [
+   3,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7008.0 <= Im s <= 7010.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0042226314544677734
+ },
+ "certs/III_scan7005_10.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 75,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 7.62e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[0.4178606360 +/- 3.76e-11]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7010.0 <= Im s <= 7012.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.00426483154296875
+ },
+ "certs/III_scan7005_11.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 83,
+  "segments_recomputed": 0,
+  "count": 3,
+  "mu0": "[3.00000000000000 +/- 1.09e-15]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[3.000000000 +/- 3e-14]",
+   "[3.312635867 +/- 1.64e-10]",
+   "[2.208729715 +/- 3.94e-10]"
+  ],
+  "inertia": [
+   3,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7012.0 <= Im s <= 7014.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0057446956634521484
+ },
+ "certs/III_scan7005_12.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 80,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 3.66e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[0.4232631442 +/- 3.65e-11]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7014.0 <= Im s <= 7016.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.005731105804443359
+ },
+ "certs/III_scan7005_13.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 70,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 6.42e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[1.240607307 +/- 2.36e-10]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7016.0 <= Im s <= 7018.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.004119396209716797
+ },
+ "certs/III_scan7005_14.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 82,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 9.03e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[0.9131200226 +/- 1.42e-11]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7018.0 <= Im s <= 7020.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.004172086715698242
+ },
+ "certs/II_B2_box.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 531,
+  "segments_recomputed": 0,
+  "count": 9,
+  "mu0": "[9.00000000000000 +/- 4.93e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[9.000000000 +/- 3e-13]",
+   "[25.07366493 +/- 3.04e-10]",
+   "[74.42585013 +/- 4.04e-9]",
+   "[231.8347913 +/- 1.22e-8]",
+   "[468.4327041 +/- 2.69e-9]",
+   "[610.8472463 +/- 3.93e-8]",
+   "[299.6999428 +/- 9.44e-9]",
+   "[30.80059421 +/- 1.49e-9]",
+   "[0.7971043522 +/- 2.74e-11]"
+  ],
+  "inertia": [
+   9,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 51.0 <= Im s <= 76.5 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.03962230682373047
+ },
+ "certs/II_lehmer_b0p45.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 48,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 4.98e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[0.07797951884 +/- 3.07e-12]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7004.95 <= Im s <= 7005.22 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0014367103576660156
+ },
+ "certs/II_lehmer_b0p6.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 59,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 3.16e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[0.07797951884 +/- 3.07e-12]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7004.95 <= Im s <= 7005.22 and -0.09999999999999998 <= Re s <= 1.1",
+  "time": 0.001699686050415039
+ },
+ "certs/IV_fsscan_00.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 149,
+  "segments_recomputed": 0,
+  "count": 3,
+  "mu0": "[3.000000000 +/- 9.77e-11]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[3.000000000 +/- 9.78e-11]",
+   "[3.83566945 +/- 3.14e-9]",
+   "[3.39520245 +/- 7.11e-9]"
+  ],
+  "inertia": [
+   3,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 42653544.0 <= Im s <= 42653545.0 and -0.09999999999999998 <= Re s <= 1.1",
+  "time": 0.01274728775024414
+ },
+ "certs/IV_fsscan_01.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 157,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.000000000 +/- 3.38e-10]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3.38e-10]",
+   "[0.17580313 +/- 3.49e-9]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 42653545.0 <= Im s <= 42653546.0 and -0.09999999999999998 <= Re s <= 1.1",
+  "time": 0.007401943206787109
+ },
+ "certs/IV_fsscan_02.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 155,
+  "segments_recomputed": 0,
+  "count": 4,
+  "mu0": "[4.000000000 +/- 3.01e-10]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[4.000000000 +/- 3.01e-10]",
+   "[8.67919358 +/- 7.50e-9]",
+   "[13.5153104 +/- 2.22e-8]",
+   "[16.0931645 +/- 7.81e-8]"
+  ],
+  "inertia": [
+   4,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 42653546.0 <= Im s <= 42653547.0 and -0.09999999999999998 <= Re s <= 1.1",
+  "time": 0.007654666900634766
+ },
+ "certs/IV_fsscan_03.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 147,
+  "segments_recomputed": 0,
+  "count": 3,
+  "mu0": "[3.000000000 +/- 9.35e-11]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[3.000000000 +/- 9.35e-11]",
+   "[2.33886489 +/- 3.03e-9]",
+   "[0.35859102 +/- 7.29e-9]"
+  ],
+  "inertia": [
+   3,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 42653547.0 <= Im s <= 42653548.0 and -0.09999999999999998 <= Re s <= 1.1",
+  "time": 0.015600919723510742
+ },
+ "certs/IV_fsscan_04.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 145,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.0000000000 +/- 7.91e-11]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 7.91e-11]",
+   "[0.988624046 +/- 6.77e-10]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 42653548.0 <= Im s <= 42653549.0 and -0.09999999999999998 <= Re s <= 1.1",
+  "time": 0.014494180679321289
+ },
+ "certs/zero_100000000_b0p45.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 79,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.000000000 +/- 2.90e-11]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 2.90e-11]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 42653549.552863434 <= Im s <= 42653549.90385502 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0012357234954833984
+ },
+ "certs/zero_100000000_b0p6.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 99,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.000000000 +/- 2.85e-11]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 2.85e-11]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 42653549.552863434 <= Im s <= 42653549.90385502 and -0.09999999999999998 <= Re s <= 1.1",
+  "time": 0.0014824867248535156
+ },
+ "certs/zero_10000000_b0p45.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 72,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.00000000000 +/- 6.76e-12]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 6.77e-12]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 4992380.86920693 <= Im s <= 4992381.138357192 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.001203775405883789
+ },
+ "certs/zero_1000000_b0p45.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 66,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.000000000000 +/- 7.29e-14]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 7.5e-14]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 600269.341286347 <= Im s <= 600269.9890515783 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0010271072387695312
+ },
+ "certs/zero_1000000_b0p6.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 79,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.000000000000 +/- 6.67e-14]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 6.9e-14]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 600269.341286347 <= Im s <= 600269.9890515783 and -0.09999999999999998 <= Re s <= 1.1",
+  "time": 0.0012826919555664062
+ },
+ "certs/zero_100000_b0p45.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 55,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.0000000000000 +/- 3.37e-15]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 6e-15]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 74920.54364612655 <= Im s <= 74921.37864647631 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0008120536804199219
+ },
+ "certs/zero_100000_b0p6.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 64,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.0000000000000 +/- 3.36e-15]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 6e-15]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 74920.54364612655 <= Im s <= 74921.37864647631 and -0.09999999999999998 <= Re s <= 1.1",
+  "time": 0.0009379386901855469
+ },
+ "certs/zero_1000_b0p45.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 38,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.00000000000000 +/- 1.54e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 1e-14]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 1419.059722399224 <= Im s <= 1419.9195036348733 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0006244182586669922
+ },
+ "certs/zero_100_b0p45.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 61,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.00000000000000 +/- 7.22e-17]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 3e-15]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 235.10881692236225 <= Im s <= 237.14702507337068 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0009620189666748047
+ },
+ "certs/zero_1_b0p45.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 172,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.00000000000000 +/- 1.11e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 3e-15]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 10.0 <= Im s <= 17.578382390253125 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.002363443374633789
+ },
+ "certs/zero_3000_b0p45.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 41,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.00000000000000 +/- 3.12e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 3e-15]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 3532.6833761216594 <= Im s <= 3533.695415837995 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0006883144378662109
+ },
+ "certs/zero_6709_b0p45.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 61,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.00000000000000 +/- 3.08e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 3e-15]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 7004.553294837125 <= Im s <= 7005.081715423784 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.0009062290191650391
+ },
+ "certs/legacy_v5/cert_lehmer.json": {
+  "file_format": "r2k-contour-certificate/1",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 59,
+  "segments_recomputed": 0,
+  "status": "REJECTED",
+  "reason": "UNSOUND: count enclosure [2.00000000000037 +/- 2.28e-15] excludes the integer 2 (error bound failure)",
+  "time": 0.0010793209075927734
+ },
+ "certs/legacy_v5/cert_lehmer_series.json": {
+  "file_format": "r2k-contour-certificate/1",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 59,
+  "segments_recomputed": 0,
+  "status": "REJECTED",
+  "reason": "UNSOUND: count enclosure [2.000000000000368 +/- 5.57e-16] excludes the integer 2 (error bound failure)",
+  "time": 0.0010368824005126953
+ },
+ "certs/legacy_v5/cert_tile1.json": {
+  "file_format": "r2k-contour-certificate/1",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 178,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.00000000000000 +/- 1.69e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.000000000 +/- 3e-15]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 10.0 <= Im s <= 17.578382390253125 and -0.09999999999999998 <= Re s <= 1.1",
+  "time": 0.0069811344146728516
+ },
+ "certs/IV_fsscan_05.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 146,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.0000000000 +/- 5.49e-11]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 5.49e-11]",
+   "[0.692810660 +/- 4.72e-10]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 42653549.0 <= Im s <= 42653550.0 and -0.09999999999999998 <= Re s <= 1.1",
+  "time": 0.014863252639770508
+ },
+ "certs/NEG_dh_84p7_86p7.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 468,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.00000000000000 +/- 1.46e-16]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.000000000 +/- 3e-14]",
+   "[-0.3807314075 +/- 1.61e-11]"
+  ],
+  "inertia": [
+   1,
+   1
+  ],
+  "all_zeros_simple_on_line": false,
+  "conjugate_pairs_off_line": 1,
+  "status": "CERTIFIED",
+  "scope": "zeros of dh with 84.7 <= Im s <= 86.7 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.03236079216003418
+ },
+ "certs/V_e10.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 128,
+  "segments_recomputed": 0,
+  "count": 2,
+  "mu0": "[2.0000000 +/- 7.34e-8]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[2.0000000 +/- 7.34e-8]",
+   "[0.536089 +/- 7.12e-7]"
+  ],
+  "inertia": [
+   2,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 10000000000.0 <= Im s <= 10000000000.6 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.011275768280029297
+ },
+ "certs/V_e12a.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 145,
+  "segments_recomputed": 0,
+  "count": 3,
+  "mu0": "[3.0000 +/- 3.43e-5]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[3.0000 +/- 3.43e-5]",
+   "[1.475 +/- 3.61e-4]",
+   "[0.13 +/- 4.57e-3]"
+  ],
+  "inertia": [
+   3,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 1000000000000.0 <= Im s <= 1000000000000.5 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.006236553192138672
+ },
+ "certs/V_e12b.json": {
+  "file_format": "r2k-contour-certificate/2",
+  "mode": "light",
+  "evaluator": null,
+  "segments_checked": 150,
+  "segments_recomputed": 0,
+  "count": 1,
+  "mu0": "[1.0000 +/- 4.20e-5]",
+  "imag_parts_contain_zero": true,
+  "minors": [
+   "[1.0000 +/- 4.20e-5]"
+  ],
+  "inertia": [
+   1,
+   0
+  ],
+  "all_zeros_simple_on_line": true,
+  "conjugate_pairs_off_line": 0,
+  "status": "CERTIFIED",
+  "scope": "zeros of xi with 1000000000000.5 <= Im s <= 1000000000001.0 and 0.04999999999999999 <= Re s <= 0.95",
+  "time": 0.003953695297241211
+ }
+}

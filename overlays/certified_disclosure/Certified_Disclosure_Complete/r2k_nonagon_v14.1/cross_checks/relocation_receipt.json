@@ -1,0 +1,15 @@
+{
+  "schema": "nonagon.integration.archive-relocation.v1",
+  "status": "passed",
+  "archive_sha256": "922ebfebc2880728445547da22f75329fa55ccc8856e32146c0bc78c519ded3a",
+  "archive_bytes": 31415692,
+  "archive_entries": 2145,
+  "extraction_directory_contains_spaces": true,
+  "invoked_from_unrelated_working_directory": true,
+  "calling_working_directory": "/tmp",
+  "full_replay_stages": 16,
+  "current_release_stage_sources_match_extracted_sources": true,
+  "replay_runner_sha256": "5af496d3ceed1ff2053414cc7a88040e654664a548d7e56cef13c7aeaeaf2cbf",
+  "integration_receipt_sha256": "43971fc6e2fdc801d13282e20abc31b9daeb9c7f84e772129b8c26236461efc0",
+  "scope": "Actual ZIP extraction and complete replay; final documentation-only additions and final packaging manifest may follow this code/data verification."
+}

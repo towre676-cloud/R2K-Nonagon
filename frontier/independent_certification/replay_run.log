@@ -1,0 +1,685 @@
+{"id": "tile_0000", "geometry": {"lo": "10", "hi": "12", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 1.0216579699990689}
+{"id": "tile_0001", "geometry": {"lo": "12", "hi": "14", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 1.6593588320029085}
+{"id": "tile_0002", "geometry": {"lo": "14", "hi": "16", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.3345067879999988}
+{"id": "tile_0003", "geometry": {"lo": "16", "hi": "18", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 0.6575773880031193}
+{"id": "tile_0004", "geometry": {"lo": "18", "hi": "20", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 0.7959987279973575}
+{"id": "tile_0005", "geometry": {"lo": "20", "hi": "22", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 0.974521950003691}
+{"id": "tile_0006", "geometry": {"lo": "22", "hi": "24", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 0.8779232200031402}
+{"id": "tile_0007", "geometry": {"lo": "24", "hi": "26", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 0.9492896619995008}
+{"id": "tile_0008", "geometry": {"lo": "26", "hi": "28", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 0.7366392479962087}
+{"id": "tile_0009", "geometry": {"lo": "28", "hi": "30", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 0.9104003370011924}
+{"id": "tile_0010", "geometry": {"lo": "30", "hi": "32", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.0148804700002074}
+{"id": "tile_0011", "geometry": {"lo": "32", "hi": "34", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 0.9304935730033321}
+{"id": "tile_0012", "geometry": {"lo": "34", "hi": "36", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 0.7445284290006384}
+{"id": "tile_0013", "geometry": {"lo": "36", "hi": "38", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.0204727329983143}
+{"id": "tile_0014", "geometry": {"lo": "38", "hi": "40", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 0.9046157889970345}
+{"id": "tile_0015", "geometry": {"lo": "40", "hi": "42", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 0.9340984840018791}
+{"id": "tile_0016", "geometry": {"lo": "42", "hi": "44", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.0447477260022424}
+{"id": "tile_0017", "geometry": {"lo": "44", "hi": "46", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 0.8738756780003314}
+{"id": "tile_0018", "geometry": {"lo": "46", "hi": "48", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 2.129252377002558}
+{"id": "tile_0019", "geometry": {"lo": "48", "hi": "50", "b": "3/5"}, "status": "certified_real_simple", "count": 2, "agrees": true, "reason": null, "seconds": 7.503163817003951}
+{"id": "tile_0020", "geometry": {"lo": "50", "hi": "52", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 1.1169241860043257}
+{"id": "tile_0021", "geometry": {"lo": "52", "hi": "54", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 0.9465737380014616}
+{"id": "tile_0022", "geometry": {"lo": "54", "hi": "56", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 0.9576241859977017}
+{"id": "tile_0023", "geometry": {"lo": "56", "hi": "58", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.0658294790046057}
+{"id": "tile_0024", "geometry": {"lo": "58", "hi": "60", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.2655674210036523}
+{"id": "tile_0025", "geometry": {"lo": "60", "hi": "62", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.1855921680034953}
+{"id": "tile_0026", "geometry": {"lo": "62", "hi": "64", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 0.8568558719998691}
+{"id": "tile_0027", "geometry": {"lo": "64", "hi": "66", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 0.9971070329993381}
+{"id": "tile_0028", "geometry": {"lo": "66", "hi": "68", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.1773786929989}
+{"id": "tile_0029", "geometry": {"lo": "68", "hi": "70", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.1274943339958554}
+{"id": "tile_0030", "geometry": {"lo": "70", "hi": "72", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 1.440923564005061}
+{"id": "tile_0031", "geometry": {"lo": "72", "hi": "74", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.2749245329978294}
+{"id": "tile_0032", "geometry": {"lo": "74", "hi": "76", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.4050461019942304}
+{"id": "tile_0033", "geometry": {"lo": "76", "hi": "78", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.6540738269977737}
+{"id": "tile_0034", "geometry": {"lo": "78", "hi": "80", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.2113721060013631}
+{"id": "tile_0035", "geometry": {"lo": "80", "hi": "82", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 0.9478822990058688}
+{"id": "tile_0036", "geometry": {"lo": "82", "hi": "84", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.142442172000301}
+{"id": "tile_0037", "geometry": {"lo": "84", "hi": "86", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.0616090230032569}
+{"id": "tile_0038", "geometry": {"lo": "86", "hi": "88", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.1962788489981904}
+{"id": "tile_0039", "geometry": {"lo": "88", "hi": "90", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.2467240180048975}
+{"id": "tile_0040", "geometry": {"lo": "90", "hi": "92", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 1.0093995120041654}
+{"id": "tile_0041", "geometry": {"lo": "92", "hi": "94", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 1.2739282089969493}
+{"id": "tile_0042", "geometry": {"lo": "94", "hi": "96", "b": "3/5"}, "status": "certified_real_simple", "count": 2, "agrees": true, "reason": null, "seconds": 6.224985359003767}
+{"id": "tile_0043", "geometry": {"lo": "96", "hi": "98", "b": "3/5"}, "status": "certified_empty", "count": 0, "agrees": true, "reason": null, "seconds": 1.721855151001364}
+{"id": "tile_0044", "geometry": {"lo": "98", "hi": "100", "b": "3/5"}, "status": "certified_real_simple", "count": 1, "agrees": true, "reason": null, "seconds": 0.9528983339987462}
+{
+  "ledger_consistent": true,
+  "continuous_exact_range": [
+    "10",
+    "100"
+  ],
+  "b": "3/5",
+  "leaf_tiles": 45,
+  "total_zero_count": 29,
+  "scope": "static integrity, coverage and stored-enclosure consistency; not an independent proof of the saved interval evaluations",
+  "tamper_checks": [
+    {
+      "attack": "missing_tile",
+      "rejected": true,
+      "reason": "coverage gap, overlap, or invalid interval"
+    },
+    {
+      "attack": "duplicate_tile",
+      "rejected": true,
+      "reason": "coverage gap, overlap, or invalid interval"
+    },
+    {
+      "attack": "wrong_total_count",
+      "rejected": true,
+      "reason": "total count mismatch"
+    },
+    {
+      "attack": "wrong_source_hash",
+      "rejected": true,
+      "reason": "engine identity mismatch"
+    },
+    {
+      "attack": "forged_count_ball",
+      "rejected": true,
+      "reason": "integer count not contained and isolated"
+    },
+    {
+      "attack": "missing_boundary_segment",
+      "rejected": true,
+      "reason": "boundary coverage gap"
+    },
+    {
+      "attack": "zero_containing_boundary_ball",
+      "rejected": true,
+      "reason": "stored boundary ball does not exclude zero"
+    }
+  ],
+  "fresh_replay": {
+    "tiles": [
+      {
+        "id": "tile_0000",
+        "geometry": {
+          "lo": "10",
+          "hi": "12",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.0216579699990689
+      },
+      {
+        "id": "tile_0001",
+        "geometry": {
+          "lo": "12",
+          "hi": "14",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.6593588320029085
+      },
+      {
+        "id": "tile_0002",
+        "geometry": {
+          "lo": "14",
+          "hi": "16",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.3345067879999988
+      },
+      {
+        "id": "tile_0003",
+        "geometry": {
+          "lo": "16",
+          "hi": "18",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.6575773880031193
+      },
+      {
+        "id": "tile_0004",
+        "geometry": {
+          "lo": "18",
+          "hi": "20",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.7959987279973575
+      },
+      {
+        "id": "tile_0005",
+        "geometry": {
+          "lo": "20",
+          "hi": "22",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.974521950003691
+      },
+      {
+        "id": "tile_0006",
+        "geometry": {
+          "lo": "22",
+          "hi": "24",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.8779232200031402
+      },
+      {
+        "id": "tile_0007",
+        "geometry": {
+          "lo": "24",
+          "hi": "26",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.9492896619995008
+      },
+      {
+        "id": "tile_0008",
+        "geometry": {
+          "lo": "26",
+          "hi": "28",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.7366392479962087
+      },
+      {
+        "id": "tile_0009",
+        "geometry": {
+          "lo": "28",
+          "hi": "30",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.9104003370011924
+      },
+      {
+        "id": "tile_0010",
+        "geometry": {
+          "lo": "30",
+          "hi": "32",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.0148804700002074
+      },
+      {
+        "id": "tile_0011",
+        "geometry": {
+          "lo": "32",
+          "hi": "34",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.9304935730033321
+      },
+      {
+        "id": "tile_0012",
+        "geometry": {
+          "lo": "34",
+          "hi": "36",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.7445284290006384
+      },
+      {
+        "id": "tile_0013",
+        "geometry": {
+          "lo": "36",
+          "hi": "38",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.0204727329983143
+      },
+      {
+        "id": "tile_0014",
+        "geometry": {
+          "lo": "38",
+          "hi": "40",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.9046157889970345
+      },
+      {
+        "id": "tile_0015",
+        "geometry": {
+          "lo": "40",
+          "hi": "42",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.9340984840018791
+      },
+      {
+        "id": "tile_0016",
+        "geometry": {
+          "lo": "42",
+          "hi": "44",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.0447477260022424
+      },
+      {
+        "id": "tile_0017",
+        "geometry": {
+          "lo": "44",
+          "hi": "46",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.8738756780003314
+      },
+      {
+        "id": "tile_0018",
+        "geometry": {
+          "lo": "46",
+          "hi": "48",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 2.129252377002558
+      },
+      {
+        "id": "tile_0019",
+        "geometry": {
+          "lo": "48",
+          "hi": "50",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 2,
+        "agrees": true,
+        "reason": null,
+        "seconds": 7.503163817003951
+      },
+      {
+        "id": "tile_0020",
+        "geometry": {
+          "lo": "50",
+          "hi": "52",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.1169241860043257
+      },
+      {
+        "id": "tile_0021",
+        "geometry": {
+          "lo": "52",
+          "hi": "54",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.9465737380014616
+      },
+      {
+        "id": "tile_0022",
+        "geometry": {
+          "lo": "54",
+          "hi": "56",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.9576241859977017
+      },
+      {
+        "id": "tile_0023",
+        "geometry": {
+          "lo": "56",
+          "hi": "58",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.0658294790046057
+      },
+      {
+        "id": "tile_0024",
+        "geometry": {
+          "lo": "58",
+          "hi": "60",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.2655674210036523
+      },
+      {
+        "id": "tile_0025",
+        "geometry": {
+          "lo": "60",
+          "hi": "62",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.1855921680034953
+      },
+      {
+        "id": "tile_0026",
+        "geometry": {
+          "lo": "62",
+          "hi": "64",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.8568558719998691
+      },
+      {
+        "id": "tile_0027",
+        "geometry": {
+          "lo": "64",
+          "hi": "66",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.9971070329993381
+      },
+      {
+        "id": "tile_0028",
+        "geometry": {
+          "lo": "66",
+          "hi": "68",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.1773786929989
+      },
+      {
+        "id": "tile_0029",
+        "geometry": {
+          "lo": "68",
+          "hi": "70",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.1274943339958554
+      },
+      {
+        "id": "tile_0030",
+        "geometry": {
+          "lo": "70",
+          "hi": "72",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.440923564005061
+      },
+      {
+        "id": "tile_0031",
+        "geometry": {
+          "lo": "72",
+          "hi": "74",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.2749245329978294
+      },
+      {
+        "id": "tile_0032",
+        "geometry": {
+          "lo": "74",
+          "hi": "76",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.4050461019942304
+      },
+      {
+        "id": "tile_0033",
+        "geometry": {
+          "lo": "76",
+          "hi": "78",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.6540738269977737
+      },
+      {
+        "id": "tile_0034",
+        "geometry": {
+          "lo": "78",
+          "hi": "80",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.2113721060013631
+      },
+      {
+        "id": "tile_0035",
+        "geometry": {
+          "lo": "80",
+          "hi": "82",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.9478822990058688
+      },
+      {
+        "id": "tile_0036",
+        "geometry": {
+          "lo": "82",
+          "hi": "84",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.142442172000301
+      },
+      {
+        "id": "tile_0037",
+        "geometry": {
+          "lo": "84",
+          "hi": "86",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.0616090230032569
+      },
+      {
+        "id": "tile_0038",
+        "geometry": {
+          "lo": "86",
+          "hi": "88",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.1962788489981904
+      },
+      {
+        "id": "tile_0039",
+        "geometry": {
+          "lo": "88",
+          "hi": "90",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.2467240180048975
+      },
+      {
+        "id": "tile_0040",
+        "geometry": {
+          "lo": "90",
+          "hi": "92",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.0093995120041654
+      },
+      {
+        "id": "tile_0041",
+        "geometry": {
+          "lo": "92",
+          "hi": "94",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.2739282089969493
+      },
+      {
+        "id": "tile_0042",
+        "geometry": {
+          "lo": "94",
+          "hi": "96",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 2,
+        "agrees": true,
+        "reason": null,
+        "seconds": 6.224985359003767
+      },
+      {
+        "id": "tile_0043",
+        "geometry": {
+          "lo": "96",
+          "hi": "98",
+          "b": "3/5"
+        },
+        "status": "certified_empty",
+        "count": 0,
+        "agrees": true,
+        "reason": null,
+        "seconds": 1.721855151001364
+      },
+      {
+        "id": "tile_0044",
+        "geometry": {
+          "lo": "98",
+          "hi": "100",
+          "b": "3/5"
+        },
+        "status": "certified_real_simple",
+        "count": 1,
+        "agrees": true,
+        "reason": null,
+        "seconds": 0.9528983339987462
+      }
+    ],
+    "all_agree": true,
+    "seconds": 61.487448747997405,
+    "trust_boundary": "same independent direct engine and Arb rerun; no archive Taylor/DFT kernel involved"
+  }
+}

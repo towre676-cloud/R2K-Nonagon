@@ -1,0 +1,50 @@
+[
+  {
+    "width": 1280,
+    "documentWidth": 1280,
+    "math": 706,
+    "equations": 117,
+    "figures": 4,
+    "mathErrors": 0,
+    "missingAnchors": [],
+    "brokenFonts": false
+  },
+  {
+    "width": 736,
+    "documentWidth": 736,
+    "math": 706,
+    "equations": 117,
+    "figures": 4,
+    "mathErrors": 0,
+    "missingAnchors": [],
+    "brokenFonts": false
+  },
+  {
+    "width": 390,
+    "documentWidth": 390,
+    "math": 706,
+    "equations": 117,
+    "figures": 4,
+    "mathErrors": 0,
+    "missingAnchors": [],
+    "brokenFonts": false
+  },
+  {
+    "width": 320,
+    "documentWidth": 320,
+    "math": 706,
+    "equations": 117,
+    "figures": 4,
+    "mathErrors": 0,
+    "missingAnchors": [],
+    "brokenFonts": false
+  },
+  {
+    "interaction": "PASS",
+    "before": "Loaded response 0.4250000000 · edge sensitivity ∂h/∂w = -5.62500e-3 · optimal contrast Γ = 0.12500000 · clamp response 0.37500000",
+    "after": "Loaded response 0.3880597015 · edge sensitivity ∂h/∂w = -5.56917e-3 · optimal contrast Γ = 0.090909091 · clamp response 0.36363636",
+    "download": "replay.py",
+    "externalRequests": [],
+    "errors": []
+  }
+]

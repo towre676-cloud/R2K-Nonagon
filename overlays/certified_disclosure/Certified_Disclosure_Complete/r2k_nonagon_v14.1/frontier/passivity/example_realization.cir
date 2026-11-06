@@ -1,0 +1,8 @@
+* Exact decimal-rational passive realization; s=+i*2*pi*f_hz
+.subckt NONAGON_POSITIVE_REAL portp portn
+R0_0 portp n1 {1/5}
+L1_0 n1 n2 {1/10}
+C2_0 n2 n3 {10/3}
+R3_0 n3 portn {2/5}
+C3_1 n3 portn {5/4}
+.ends NONAGON_POSITIVE_REAL

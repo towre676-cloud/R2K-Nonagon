@@ -1,0 +1,13 @@
+{
+ "case": "case_ACTIVSg25k",
+ "negative_merged_branches_upper_bound": 503,
+ "binary64_negative_pivots": 503,
+ "witness_columns": 503,
+ "gram_negative_definite_by_rigorous_dominance": true,
+ "negative_index_exact": 503,
+ "max_offdiag_ratio": 8.080558342011417e-10,
+ "max_relative_error_bound": 2.383910351333583e-09,
+ "witness_nnz": 839321,
+ "method": "binary64 with a priori rounding bound",
+ "seconds": 234.36694765090942
+}

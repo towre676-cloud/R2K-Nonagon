@@ -1,0 +1,290 @@
+{
+  "status": "passed",
+  "checks_passed": 48,
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "module_sha256": "72be3647ef33d42b3ec18624da2ff6fb54084c7132933c50cbf39bdc2678aed0",
+  "full_BK_or_zeta_zero_campaign_run": false,
+  "checks": [
+    {
+      "name": "analytic_vs_adaptive_L0",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 4e-12
+    },
+    {
+      "name": "zero_inclusive_simpson_L0",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "analytic_vs_adaptive_L3e-05",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 4e-12
+    },
+    {
+      "name": "zero_inclusive_simpson_L3e-05",
+      "passed": true,
+      "absolute_error": 4.438452643612534e-19,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "analytic_vs_adaptive_L0.5",
+      "passed": true,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 4e-12
+    },
+    {
+      "name": "zero_inclusive_simpson_L0.5",
+      "passed": true,
+      "absolute_error": 2.7677860003905153e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "analytic_vs_adaptive_L0.73127",
+      "passed": true,
+      "absolute_error": 5.551115123125783e-17,
+      "tolerance": 4e-12
+    },
+    {
+      "name": "zero_inclusive_simpson_L0.73127",
+      "passed": true,
+      "absolute_error": 1.4410694859634532e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "analytic_vs_adaptive_L1",
+      "passed": true,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 4e-12
+    },
+    {
+      "name": "zero_inclusive_simpson_L1",
+      "passed": true,
+      "absolute_error": 2.8621549574836536e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "analytic_vs_adaptive_L2",
+      "passed": true,
+      "absolute_error": 2.7755575615628914e-16,
+      "tolerance": 4e-12
+    },
+    {
+      "name": "zero_inclusive_simpson_L2",
+      "passed": true,
+      "absolute_error": 2.3608892618653954e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "analytic_vs_adaptive_L4",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 4e-12
+    },
+    {
+      "name": "zero_inclusive_simpson_L4",
+      "passed": true,
+      "absolute_error": 2.2382096176443156e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "analytic_vs_adaptive_L8",
+      "passed": true,
+      "absolute_error": 1.3322676295501878e-15,
+      "tolerance": 4e-12
+    },
+    {
+      "name": "zero_inclusive_simpson_L8",
+      "passed": true,
+      "absolute_error": 2.2160051571518125e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "analytic_vs_adaptive_L16",
+      "passed": true,
+      "absolute_error": 5.551115123125783e-16,
+      "tolerance": 4e-12
+    },
+    {
+      "name": "zero_inclusive_simpson_L16",
+      "passed": true,
+      "absolute_error": 2.2326585025211898e-13,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "poisson_L0.12",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "linear_integrand_L0.12",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "poisson_L1.73127",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "linear_integrand_L1.73127",
+      "passed": true,
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "poisson_L16",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 1e-13
+    },
+    {
+      "name": "linear_integrand_L16",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "cubic_integrand_exactness",
+      "passed": true,
+      "absolute_error": 8.326672684688674e-17,
+      "tolerance": 2e-14
+    },
+    {
+      "name": "omitted_endpoint_error_identity",
+      "passed": true,
+      "absolute_error": 1.5390900359735227e-14,
+      "tolerance": 5e-13
+    },
+    {
+      "name": "positive_lower_grid_repaired",
+      "passed": true,
+      "absolute_error": 2.842170943040401e-14,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "upper_endpoint_is_exact",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "lower_endpoint_is_exact",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "regular_zero_limit_is_used",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "upper_endpoint_is_interpolated",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "sine_simpson_refinement",
+      "passed": true,
+      "absolute_error": 2.1963160179439e-09,
+      "tolerance": 3e-09
+    },
+    {
+      "name": "sine_trapezoid_refinement",
+      "passed": true,
+      "absolute_error": 1.6666672009169048e-07,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "negative_length",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "nan_length",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "duplicate_coordinate",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "descending_grid",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "negative_grid",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "insufficient_upper_coverage",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "mismatched_shapes",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "nan_curve",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "wrong_regular_limit",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "unknown_method",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "runner_sieve",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "runner_BK_regular_zero_without_singular_evaluation",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "runner_count_variance",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "runner_retains_mean_count",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 0
+    },
+    {
+      "name": "runner_anchor_count",
+      "passed": true,
+      "absolute_error": 0.0,
+      "tolerance": 0
+    }
+  ]
+}

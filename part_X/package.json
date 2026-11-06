@@ -1,0 +1,1 @@
+{"private":true,"dependencies":{"katex":"0.16.22"},"scripts":{"build":"node build_html.js"}}

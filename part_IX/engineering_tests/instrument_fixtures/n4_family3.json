@@ -1,0 +1,76 @@
+{
+  "id": "n4_family3",
+  "order": 4,
+  "family": 3,
+  "weak_link": null,
+  "minimum_positive_gap": "1/512",
+  "K_normalized": [
+    [
+      "5/4",
+      "-1/2",
+      "-1/4",
+      "0"
+    ],
+    [
+      "-1/2",
+      "17/4",
+      "-5/4",
+      "-2"
+    ],
+    [
+      "-1/4",
+      "-5/4",
+      "13/4",
+      "-3/2"
+    ],
+    [
+      "0",
+      "-2",
+      "-3/2",
+      "9/2"
+    ]
+  ],
+  "grounds": [
+    "1/2",
+    "1/2",
+    "1/4",
+    "1"
+  ],
+  "edges": [
+    {
+      "sites": [
+        0,
+        1
+      ],
+      "conductance_normalized": "1/2"
+    },
+    {
+      "sites": [
+        0,
+        2
+      ],
+      "conductance_normalized": "1/4"
+    },
+    {
+      "sites": [
+        1,
+        2
+      ],
+      "conductance_normalized": "5/4"
+    },
+    {
+      "sites": [
+        1,
+        3
+      ],
+      "conductance_normalized": "2"
+    },
+    {
+      "sites": [
+        2,
+        3
+      ],
+      "conductance_normalized": "3/2"
+    }
+  ]
+}

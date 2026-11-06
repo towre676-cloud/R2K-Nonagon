@@ -1,0 +1,279 @@
+{
+  "schema": "nonagon.intervention.certificate.v1",
+  "observations": {
+    "schema": "nonagon.intervention.observations.v1",
+    "contract": {
+      "network_order": 3,
+      "coordinate_labels": [
+        "node_1",
+        "node_2",
+        "node_3"
+      ],
+      "input_coordinate": 0,
+      "readout_coordinate": 0,
+      "stiffness_class": "connected_grounded_spring",
+      "known_site_set": true,
+      "force_amplitude": "1",
+      "sensor_gain": "1",
+      "calibration": "exact",
+      "noise_model": "none",
+      "coefficient_domain": "rational"
+    },
+    "plan": {
+      "base_load": "1/4"
+    },
+    "observations": [
+      {
+        "id": "baseline",
+        "loads": {},
+        "response": "1505/5331"
+      },
+      {
+        "id": "single_1_a",
+        "loads": {
+          "1": "1/4"
+        },
+        "response": "3065/11163"
+      },
+      {
+        "id": "single_1_b",
+        "loads": {
+          "1": "1/2"
+        },
+        "response": "65/243"
+      },
+      {
+        "id": "single_2_a",
+        "loads": {
+          "2": "1/4"
+        },
+        "response": "6215/22478"
+      },
+      {
+        "id": "single_2_b",
+        "loads": {
+          "2": "1/2"
+        },
+        "response": "3205/11816"
+      },
+      {
+        "id": "pair_1_2",
+        "loads": {
+          "1": "1/4",
+          "2": "1/4"
+        },
+        "response": "12655/47006"
+      }
+    ],
+    "heldout": [
+      {
+        "id": "heldout_0",
+        "loads": {
+          "0": "7/3"
+        },
+        "response": "4515/26528"
+      },
+      {
+        "id": "heldout_1",
+        "loads": {
+          "0": "1/17",
+          "2": "1/3"
+        },
+        "response": "80070/296209"
+      },
+      {
+        "id": "heldout_2",
+        "loads": {
+          "0": "1/7",
+          "1": "2/7",
+          "2": "3/7"
+        },
+        "response": "185360/726557"
+      }
+    ]
+  },
+  "recovered": {
+    "K": [
+      [
+        "46/5",
+        "-8",
+        "-1"
+      ],
+      [
+        "-8",
+        "39/2",
+        "-8"
+      ],
+      [
+        "-1",
+        "-8",
+        "11"
+      ]
+    ],
+    "G": [
+      [
+        "1505/5331",
+        "320/1777",
+        "835/5331"
+      ],
+      [
+        "320/1777",
+        "334/1777",
+        "272/1777"
+      ],
+      [
+        "835/5331",
+        "272/1777",
+        "1154/5331"
+      ]
+    ],
+    "edges": [
+      {
+        "i": 0,
+        "j": 1,
+        "stiffness": "8"
+      },
+      {
+        "i": 0,
+        "j": 2,
+        "stiffness": "1"
+      },
+      {
+        "i": 1,
+        "j": 2,
+        "stiffness": "8"
+      }
+    ],
+    "grounding": [
+      "1/5",
+      "7/2",
+      "2"
+    ],
+    "ldl_diagonal": [
+      "46/5",
+      "577/46",
+      "5331/1154"
+    ]
+  },
+  "extraction": {
+    "singles": [
+      {
+        "node": 1,
+        "drop_t": "51200/6612217",
+        "drop_2t": "6400/431811",
+        "intercept": "3157729/102400",
+        "slope": "296759/51200",
+        "G1j_squared": "102400/3157729",
+        "G1j": "320/1777",
+        "Gjj": "334/1777"
+      },
+      {
+        "node": 2,
+        "drop_t": "697225/119830218",
+        "drop_2t": "697225/62991096",
+        "intercept": "28419561/697225",
+        "slope": "6151974/697225",
+        "G1j_squared": "697225/28419561",
+        "G1j": "835/5331",
+        "Gjj": "1154/5331"
+      }
+    ],
+    "pairs": [
+      {
+        "j": 1,
+        "k": 2,
+        "drop": "3280225/250588986",
+        "A": "6046995025/101003119794",
+        "B": "41820319/37892748",
+        "discriminant": "10778089000000/15698709976127049",
+        "positive_sqrt": "3283000/125294493",
+        "Gjk": "272/1777",
+        "loaded_minor_determinant": "23503/21324",
+        "branch_margins": [
+          "980/5331",
+          "1675/10662"
+        ]
+      }
+    ]
+  },
+  "forward_witnesses": [
+    {
+      "id": "baseline",
+      "response_vector": [
+        "1505/5331",
+        "320/1777",
+        "835/5331"
+      ]
+    },
+    {
+      "id": "single_1_a",
+      "response_vector": [
+        "3065/11163",
+        "640/3721",
+        "1675/11163"
+      ]
+    },
+    {
+      "id": "single_1_b",
+      "response_vector": [
+        "65/243",
+        "40/243",
+        "35/243"
+      ]
+    },
+    {
+      "id": "single_2_a",
+      "response_vector": [
+        "6215/22478",
+        "1960/11239",
+        "1670/11239"
+      ]
+    },
+    {
+      "id": "single_2_b",
+      "response_vector": [
+        "3205/11816",
+        "250/1477",
+        "835/5908"
+      ]
+    },
+    {
+      "id": "pair_1_2",
+      "response_vector": [
+        "12655/47006",
+        "3920/23503",
+        "3350/23503"
+      ]
+    },
+    {
+      "id": "heldout_0",
+      "response_vector": [
+        "4515/26528",
+        "90/829",
+        "2505/26528"
+      ]
+    },
+    {
+      "id": "heldout_1",
+      "response_vector": [
+        "80070/296209",
+        "50320/296209",
+        "42585/296209"
+      ]
+    },
+    {
+      "id": "heldout_2",
+      "response_vector": [
+        "185360/726557",
+        "113680/726557",
+        "95795/726557"
+      ]
+    }
+  ],
+  "validation": {
+    "acquisition_count": 6,
+    "heldout_count": 3,
+    "all_forward_equations_exact": true,
+    "scalar_parameter_count": 6
+  }
+}

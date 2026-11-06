@@ -1,0 +1,133 @@
+<header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v10.0 · Part X</div>
+  <h1>The Rank-Two Nonagon <em>X</em></h1>
+  <div class="sub">The elimination calculus: ten new equations tested before they were admitted, a frequency-for-pairs theorem, a locality law for contour certificates, an edge-resolution law, and the origin remainder certified</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 30 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Part I chose ten equations for their structural affinity and announced the unification before testing it. Several of them turned out to be decorative. Part X proposes a second slate, organized by one claim: every observable of a grounded network or a moment problem is a ratio of minors, and every intervention moves those minors by a rank-one or rank-two rule. Each candidate had to pass a concrete compatibility test before entering the text. <strong>Admitted:</strong> five. The Aronszajn–Krein rank-one formula yields a <strong>frequency-for-pairs theorem</strong>: a damped network ($K$, $C$, diagonal $M$) is recovered exactly from one port using $2n-1$ intervention configurations, with no pair experiments, by reading the first column of $P(s)^{-1}$ at $n+2$ real Laplace points and solving one linear system. This is verified exactly on 40 random networks with $n\le6$ and on both Part VII twins. The Hermite–Biehler/Brune criterion extends the exact passivity certificate of Theorem VI.4.1 to lossless Foster elements, which that theorem had to reject. Kirchhoff's all-minors theorem, checked exactly on 182 entries, reads every compliance as a ratio of spanning-forest weights. Rayleigh monotonicity and the Cramér–Rao bound give an <strong>edge-resolution law</strong>: along a graded path, a deep edge weight is resolved to $\approx13\,\sigma/G_{0,\rm far}^2$, set by the farther endpoint, with fitted exponent $-2.04$. <strong>Rejected:</strong> two. Haynsworth pivots and Dodgson condensation give no gain on contour certificates; condensation inflates radii by up to $1.2\times10^4$. Their failure exposes the real limit, a <strong>locality law</strong>: the smallest eigenvalue of the Chebyshev–Hermite matrix of a box containing $m$ zeros decays like $10^{-0.82m}$, so no factorization of the inertia can certify boxes holding more than about $\log_{10}(1/\text{radius})/0.82$ zeros, and tiling is forced by the mathematics, not by convenience. <strong>Deferred:</strong> three, untested and therefore not claimed. <strong>Closure:</strong> the integral of $R_2$ omitted near the origin is now enclosed rigorously by a Cauchy–DFT Taylor model of $R_2$ in Arb, answering the v9 objection that sampled values cannot bound a remainder.</p>
+</div>
+
+<h2 id="e0"><span class="sn">§X.0</span>The origin remainder, certified</h2>
+
+<p>Proposition VIII.0.1 bounded the omitted integral $2\int_0^a(L-x)R_2(x)\,dx$ by a constant $c$ estimated from three high-precision samples of $R_2(\varepsilon)/\varepsilon^2$. The v9 integration correctly objected that samples do not bound a function. The repair uses the program's own machinery. With $r=2\pi\varepsilon/\mathcal L$, the two $r^{-2}$ singularities in the Bogomolny–Keating expression cancel, so $R_2$ is analytic in $\varepsilon$ on a disk about 0. Its analytic continuation is
+$$R_2(\varepsilon)=1+\mathcal L^{-2}\bigl[f(r)+f(-r)\bigr],\qquad f(r)=\Bigl(\tfrac{\zeta'}{\zeta}\Bigr)'(1+ir)+\Bigl(\tfrac{t}{2\pi}\Bigr)^{-ir}\zeta(1+ir)\zeta(1-ir)A(ir)-B(ir),$$
+which reduces to the real formula on the real axis. $R_2$ is evaluated in Arb, with the same truncated Euler products, at 64 points on the circle $|\varepsilon|=1/40$. Its maximum on $|\varepsilon|=1/20$ is bounded by a cover of 64 boxes. A DFT then gives its Taylor coefficients, each with a rigorous aliasing bound, exactly as in Theorem III.1.1. Integrating the resulting Taylor model over $[0,a]$ encloses the omitted piece.</p>
+
+<!--ORIGINRIG-->
+
+<h2 id="e1"><span class="sn">§X.1</span>The slate and its tests</h2>
+
+<p>The organizing invariant is elimination. A Schur complement is the effect of hiding nodes, as in the Kron boundary of Theorem VIII.1.4. A rank-one update is the effect of an intervention. A minor ratio is an observable. Positivity is the selection rule. The ten candidates and their tests:</p>
+
+<div class="tw"><table>
+<caption>Table X.1. <span>The elimination slate. Each equation was assigned a test before any text was written; the verdict records the outcome.</span></caption>
+<thead><tr><th>#</th><th>equation</th><th>test</th><th>verdict</th></tr></thead>
+<tbody>
+<tr><td class="n">1</td><td>Haynsworth inertia additivity</td><td>Schur-pivot inertia vs leading-minor determinants on boxes with 10, 19, 29 zeros</td><td>rejected as a tool; exposes the locality law (§X.2)</td></tr>
+<tr><td class="n">2</td><td>Aronszajn–Krein rank-one formula</td><td>recover damped networks without pair experiments</td><td><strong>admitted</strong>: frequency-for-pairs theorem (§X.3)</td></tr>
+<tr><td class="n">3</td><td>Desnanot–Jacobi / Dodgson condensation</td><td>leading minors by condensation in ball arithmetic</td><td>rejected: radii up to $1.2\times10^4$ times worse (§X.2)</td></tr>
+<tr><td class="n">4</td><td>Kirchhoff all-minors matrix-tree theorem</td><td>exact forest enumeration against $G=K^{-1}$</td><td><strong>admitted</strong>: 182/182 entries exact; combinatorial reading of resolution (§X.4)</td></tr>
+<tr><td class="n">5</td><td>Lindström–Gessel–Viennot</td><td>(not run)</td><td>deferred</td></tr>
+<tr><td class="n">6</td><td>Rayleigh monotonicity</td><td>two-point floors for grounds and edges</td><td><strong>admitted</strong>: underlies Theorem VIII.2.2 and the edge floor (§X.4)</td></tr>
+<tr><td class="n">7</td><td>Koteljanskii / Hadamard–Fischer</td><td>(already used: path-product root selection, Part VIII)</td><td>retained, no new result</td></tr>
+<tr><td class="n">8</td><td>Hermite–Biehler / Brune PR criterion</td><td>lossless Foster functions and non-PR controls</td><td><strong>admitted</strong>: extends Theorem VI.4.1 (§X.5)</td></tr>
+<tr><td class="n">9</td><td>Stieltjes continued fraction / Schur algorithm</td><td>(not run)</td><td>deferred</td></tr>
+<tr><td class="n">10</td><td>Cramér–Rao / van Trees</td><td>edge-resolution law against simulation</td><td><strong>admitted</strong> with item 6 (§X.4)</td></tr>
+</tbody></table></div>
+
+<h2 id="e2"><span class="sn">§X.2</span>Two rejections and the locality law they expose</h2>
+
+<p>Haynsworth's theorem $\operatorname{In}(M)=\operatorname{In}(A)+\operatorname{In}(M/A)$ suggests deciding the inertia of the Chebyshev–Hermite matrix by its Schur-complement pivots $d_k$, the $LDL^{\mathsf T}$ diagonal, rather than by leading minors. In exact arithmetic the two are equivalent, since $d_k=\Delta_k/\Delta_{k-1}$. In ball arithmetic they might not be. Dodgson condensation computes every leading minor by the Desnanot–Jacobi three-term rule and might avoid the large determinant entirely. Both were run on Taylor-model moments for boxes $[10,T]$.</p>
+
+<div class="tw"><table>
+<caption>Table X.2. <span>Inertia decisions for large boxes ($b=0.45$, series mode). The worst relative radius is over all leading minors or all pivots.</span></caption>
+<thead><tr><th>box</th><th>zeros</th><th>moments</th><th>bits</th><th>minors decide</th><th>pivots decide</th><th>worst minor rel. radius</th><th>worst pivot rel. radius</th></tr></thead>
+<tbody>
+<!--HAYROWS-->
+</tbody></table></div>
+
+<p>Where either method decides, both do, with relative radii within 15% of each other. Where one fails, both fail, and raising the precision from 80 to 128 bits does not help. Condensation is strictly worse: the ratio of its radius to that of the direct determinant grows from 1 to $1.17\times10^4$ by order 10. Neither equation earns a place. The failure points to the reason. Since $T_iT_j=\tfrac12(T_{i+j}+T_{|i-j|})$, the exact Chebyshev–Hermite matrix of a box with zeros $u_1,\dots,u_m$ in Chebyshev coordinates is a Gram matrix,
+$$M_0=\sum_{k=1}^m v(u_k)v(u_k)^{\mathsf T},\qquad v(u)=\bigl(T_0(u),\dots,T_{m-1}(u)\bigr)^{\mathsf T},$$
+and its smallest eigenvalue is a Chebyshev–Vandermonde conditioning quantity.</p>
+
+<div class="tw"><table>
+<caption>Table X.3. <span>Smallest eigenvalue of the exact $M_0$ for boxes $[10,T]$, from the known zero ordinates (double precision; the last rows are at the rounding floor).</span></caption>
+<thead><tr><th>box</th><th>zeros $m$</th><th>$\lambda_{\min}(M_0)$</th></tr></thead>
+<tbody>
+<!--LAWROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Observation X.2.1 <i>(locality law)</i> <span class="ep nm">verified · double</span></div>
+<p>For boxes over the first hundred units of height, $\log_{10}\lambda_{\min}(M_0)$ falls roughly linearly in the number of zeros $m$, about $-0.82$ per zero from $m=2$ to $m=19$. A certificate must enclose $M_0$ to within $\lambda_{\min}$, whatever factorization decides the inertia. With moment radii near $10^{-16}$, a single box can therefore certify at most about 19 zeros, which is where Table X.2 fails. The fixed-width tiles of Parts III–VII are not a computational convenience. The moment problem forces them.</p></div>
+
+<p>The law also says how to spend effort. Tightening moment radii by a factor of 10 buys about 1.2 more zeros per box. Halving the zeros per box gains many orders of magnitude of margin. Small tiles with independent replay are the efficient design, and Parts VI–VII's architecture is the right one.</p>
+
+<h2 id="e3"><span class="sn">§X.3</span>Frequency for pairs: damped networks from $O(n)$ configurations</h2>
+
+<p>Corollary VIII.3.1 recovered $K$, $C$ and $M$ by running the full pair protocol at three Laplace points, $3n(n+1)/2$ scalar measurements and $n(n+1)/2$ distinct intervention configurations. In hardware, a configuration (which grounding springs are attached, at what strength) is the expensive object, while a sweep over $s$ is cheap. The Aronszajn–Krein formula $F_\theta=F/(1+\theta F)$, applied to the port-to-node functions, removes the pairs entirely.</p>
+
+<div class="thm"><div class="hd">Theorem X.3.1 <i>(frequency for pairs)</i> <span class="ep pr">proved for $n\le6$ · conjectured for all $n$</span></div>
+<p>Let $P(s)=K+sC+s^2M$ with $K$ a grounded connected spring network, $C$ a damper network and $M$ a positive diagonal, and let $s_0=0&lt;s_1&lt;\dots&lt;s_{n+1}$ be real. At each $s_k$, the baseline and two grounding strengths at each hidden node, $2n-1$ configurations, give the entire first column $g(s_k)=P(s_k)^{-1}e_0$ exactly. Here $g_0=h(0)$, and by Aronszajn–Krein $g_j=+\sqrt{(d_j(\theta')^{-1}-d_j(\theta'')^{-1})^{-1}(\theta'^{-1}-\theta''^{-1})}$, with the positive root because $P(s_k)$ is an M-matrix. The $n(n+2)$ unknown entries of $(K,C,M)$ then satisfy the linear system
+$$(K+s_kC+s_k^2M)\,g(s_k)=e_0,\qquad k=0,\dots,n+1,$$
+which has $n(n+2)$ equations and, for generic networks, full rank.</p></div>
+
+<p><em>Status of the proof.</em> The single-node step is Lemma VIII.1.1 at each $s$. The rank statement is the subtle part. The map from network parameters to the system matrix is polynomial, so its rank is lower-semicontinuous and equals its maximum on a Zariski-open set. One exact witness of full rank for a given $n$ therefore proves generic full rank for that $n$. Exact rational computation supplies witnesses for every $n$ from 2 to 6. Across 40 random non-proportionally damped networks, the minimal number of Laplace points was $n+2$ in every case, matching the equation count, and every network was recovered exactly. A proof for all $n$ needs a uniform witness family. Paths are the natural candidate and are left open.</p>
+
+<div class="tw"><table>
+<caption>Table X.4. <span>Frequency-for-pairs recovery, exact rational arithmetic. "Points" is the minimal number of real Laplace points (including $s=0$) at which the linear system reached full rank.</span></caption>
+<thead><tr><th>$n$</th><th>networks</th><th>unknowns $n(n+2)$</th><th>points needed</th><th>configurations $2n-1$</th><th>pair-protocol configurations $n(n+1)/2$</th><th>exact</th></tr></thead>
+<tbody>
+<!--FFPROWS-->
+</tbody></table></div>
+
+<p>The Part VII twins, a damped path and a damped triangle with identical driving-point functions, are each recovered exactly from five Laplace points. The trade-off is explicit. The theorem uses more scalar measurements than Corollary VIII.3.1, $(2n-1)(n+2)$ against $3n(n+1)/2$, but only $O(n)$ configurations instead of $O(n^2)$, and never two simultaneous interventions. On the frequency axis the positive-root rule is unavailable, because $G_{0j}(i\omega)$ is complex. A sweep there determines $g$ only up to a sign per node and per frequency, which continuity in $\omega$ from $\omega=0$ resolves. The pure static problem has no frequency axis to trade, so Theorem VIII.1.3 still forces the pairs there. The dichotomy is exact: pairs are the price of having no dynamics.</p>
+
+<h2 id="e4"><span class="sn">§X.4</span>Forests, monotonicity and the edge-resolution law</h2>
+
+<div class="thm"><div class="hd">Proposition X.4.1 <i>(Kirchhoff, all minors, grounded form)</i> <span class="ep pr">proved (classical) · verified exactly</span></div>
+<p>Adjoin a ground vertex $g$ joined to each node by its grounding spring. Then $\det K$ is the total weight of spanning trees of the augmented graph, and
+$$G_{ij}=\frac{\sum\{\,w(F): F\text{ a spanning 2-forest, } i,j\text{ in the tree not containing } g\,\}}{\sum\{\,w(T): T\text{ a spanning tree}\,\}}.$$
+Exact enumeration on 25 random grounded networks confirms all 182 entries.</p></div>
+
+<p>The proposition gives the resolution laws of Part VIII a structural meaning. $G_{0j}$ is small exactly when every 2-forest joining the port to $j$ away from ground is light, that is, when every port-to-$j$ route crosses a weak edge or passes strong grounding. The floor $\sigma/(\sqrt m\,G_{0j}^2)$ is therefore a statement about forests. It also explains why grounding strength, not graph distance alone, controls visibility.</p>
+
+<p>For edges, the exact sensitivity is $\partial h/\partial w_{ij}=-(G_{0i}-G_{0j})^2$, confirmed against finite differences to eight digits. Rayleigh monotonicity bounds every intervened measurement's sensitivity by the larger port compliance of the two endpoints. The two-point argument of Theorem VIII.2.2 then gives a floor of order $\sigma/(\sqrt m\,\max(G_{0i},G_{0j})^2)$ for any protocol. The simulation shows what the protocol actually achieves.</p>
+
+<div class="tw"><table>
+<caption>Table X.5. <span>Resolution of the edge weights of a 9-node grounded path (unit edges, grounds 0.5), noise $\sigma=10^{-12}$, 300 replicates. The last three columns are the standard deviation in units of $\sigma$ divided by the square of the stated compliance; constancy of a column identifies the governing quantity.</span></caption>
+<thead><tr><th>edge</th><th>$G_{0k}$</th><th>$G_{0k}-G_{0,k+1}$</th><th>sd of $w$</th><th>× $G_{0k}^2/\sigma$</th><th>× $G_{0,k+1}^2/\sigma$</th><th>× $(G_{0k}-G_{0,k+1})^2/\sigma$</th></tr></thead>
+<tbody>
+<!--EDGEROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result X.4.2 <i>(edge-resolution law)</i> <span class="ep nm">verified · double</span></div>
+<p>Along the path, the protocol resolves edge $(k,k+1)$ to $\mathrm{sd}(w)\approx(12\text{–}16)\,\sigma/G_{0,k+1}^2$, governed by the <em>farther</em> endpoint. The fitted exponent against $G_{0,k+1}$ is $-2.04$ over the interior edges. The provable floor uses the nearer endpoint, so in this geometrically graded family the floor and the protocol share the exponent $-2$ and differ by a bounded factor $(G_{0k}/G_{0,k+1})^2\approx4$. A floor in terms of the farther endpoint, which would make the law sharp up to a universal constant, needs a two-point construction that perturbs an edge while compensating at the near endpoint. That construction is the remaining open step.</p></div>
+
+<h2 id="e5"><span class="sn">§X.5</span>Lossless passivity: the Hermite–Biehler/Brune certificate</h2>
+
+<p>Theorem VI.4.1 requires $D$ to be strictly Hurwitz. That excludes every lossless element: a capacitor $1/s$, a Foster reactance $s/(s^2+1)$, any network with poles on the imaginary axis. These are exactly the positive-real functions that matter for undamped structures. The classical remedy maps $Z$ to the bounded-real function $W=(Z-1)/(Z+1)$. With $N,D$ coprime, $W=(N-D)/(N+D)$ is analytic in the closed right half-plane if and only if $N+D$ is strictly Hurwitz, and $|W|\le1$ on the axis if and only if $\operatorname{Re}Z\ge0$ there. The maximum principle then gives $|W|\le1$ in the half-plane, which is positive-realness.</p>
+
+<div class="thm"><div class="hd">Theorem X.5.1 <i>(exact PR certificate including lossless parts)</i> <span class="ep pr">proved</span></div>
+<p>For coprime $N,D\in\mathbb Q[s]$, $Z=N/D$ is positive real if and only if $N+D$ is strictly Hurwitz (Routh array over $\mathbb Q$) and $P(x)=\operatorname{Re}[N(i\omega)D(-i\omega)]\ge0$ on $x=\omega^2\ge0$ (Hermite count, §VI.4).</p></div>
+
+<div class="tw"><table>
+<caption>Table X.6. <span>The two certificates on lossless, lossy and non-PR controls.</span></caption>
+<thead><tr><th>$Z(s)$</th><th>$N+D$ strictly Hurwitz</th><th>$\operatorname{Re}Z\ge0$ on axis</th><th>Theorem X.5.1</th><th>Theorem VI.4.1</th></tr></thead>
+<tbody>
+<!--HBROWS-->
+</tbody></table></div>
+
+<p>Theorem X.5.1 agrees with Theorem VI.4.1 wherever the latter applies. It also accepts the capacitor and both Foster functions, which VI.4.1 rejects only because its stability test is too strict for poles on the axis. It still rejects $1/(1-s)$ at the Hurwitz step. It is the certificate the passive-model pipeline should use from now on.</p>
+
+<h2 id="e6"><span class="sn">§X.6</span>Ledger of the second slate</h2>
+
+<p>Of ten candidates, five were admitted on the strength of a new or extended result: Aronszajn–Krein (Theorem X.3.1), Kirchhoff (Proposition X.4.1), Rayleigh and Cramér–Rao (Result X.4.2) and Hermite–Biehler/Brune (Theorem X.5.1). Two were rejected after a test, Haynsworth and Dodgson, and their rejection produced Observation X.2.1, arguably the most useful single fact about the certificate side since the soundness repair. One, Koteljanskii, was already at work in Part VIII. Two, Lindström–Gessel–Viennot and the Stieltjes/Schur algorithm, were not tested and are not claimed. The open problems are now sharper. They are a uniform witness family for Theorem X.3.1 at all $n$; a far-endpoint edge floor; a single-strength version of Theorem X.3.1 using the rational structure of $d_j(s)$ in $s$, which would cut configurations to $n$; and a proof of the locality slope $0.82$ from Chebyshev–Vandermonde theory, where it should follow from the potential theory of the zeros' mean density.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> <code>part_X/origin_rigorous.py</code> (§X.0), <code>haynsworth.py</code> and <code>dodgson.py</code> (§X.2), <code>freq_for_pairs.py</code> (§X.3), <code>edge_resolution.py</code> (§X.4), <code>forest_and_hb.py</code> (§X.4, §X.5), <code>assemble10.py</code>. Each writes a JSON of the same name.</p>
+<p><b>Sources.</b> N. Aronszajn, On a problem of Weyl in the theory of singular Sturm–Liouville equations, Amer. J. Math. 79 (1957); M. G. Kreĭn, On the trace formula in perturbation theory, Mat. Sb. 33 (1953); W. F. Donoghue, On the perturbation of spectra, Comm. Pure Appl. Math. 18 (1965); E. V. Haynsworth, Determination of the inertia of a partitioned Hermitian matrix, Linear Algebra Appl. 1 (1968); C. L. Dodgson, Condensation of determinants, Proc. R. Soc. 15 (1866); S. Chaiken, A combinatorial proof of the all minors matrix tree theorem, SIAM J. Alg. Disc. Meth. 3 (1982); O. Brune, Synthesis of a finite two-terminal network whose driving-point impedance is a prescribed function of frequency, J. Math. Phys. 10 (1931); E. A. Guillemin, Synthesis of Passive Networks (1957); W. Gautschi, Norm estimates for inverses of Vandermonde matrices, Numer. Math. 23 (1975); Lord Rayleigh, The Theory of Sound (1877); H. L. Van Trees, Detection, Estimation, and Modulation Theory I (1968).</p>
+</div>
+</main>

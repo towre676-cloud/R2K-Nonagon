@@ -1,0 +1,250 @@
+{
+  "status": "complete",
+  "heights": [
+    {
+      "n0": 100000,
+      "unfolded_coordinate_error_upper": "[1.818437738909487162549032001700460503808e-12 +/- 2.40e-52]",
+      "rows": [
+        {
+          "L": 0.5,
+          "maximum_count_bound": 3,
+          "threshold_movement_sum_upper": "[8.464055317419098953004424020517476478870e-13 +/- 2.31e-53]",
+          "continuous_variance_error_bound": "[1.015686638090291874360530882462097177464e-11 +/- 4.28e-51]",
+          "mean_count_error_bound": "[8.464055317419098953004424020517476478870e-13 +/- 2.31e-53]"
+        },
+        {
+          "L": 1.0,
+          "maximum_count_bound": 3,
+          "threshold_movement_sum_upper": "[8.464267114717463274036764035474521124607e-13 +/- 1.83e-53]",
+          "continuous_variance_error_bound": "[1.015712053766095592884411684256942534953e-11 +/- 1.82e-51]",
+          "mean_count_error_bound": "[8.464267114717463274036764035474521124607e-13 +/- 1.83e-53]"
+        },
+        {
+          "L": 2.0,
+          "maximum_count_bound": 4,
+          "threshold_movement_sum_upper": "[8.464690757313913105639062670043472491530e-13 +/- 1.19e-54]",
+          "continuous_variance_error_bound": "[1.354350521170226096902250027206955598645e-11 +/- 1.99e-51]",
+          "mean_count_error_bound": "[8.464690757313913105639062670043472491530e-13 +/- 1.19e-54]"
+        },
+        {
+          "L": 4.0,
+          "maximum_count_bound": 6,
+          "threshold_movement_sum_upper": "[8.465538190276898130184107930322706096160e-13 +/- 1.80e-53]",
+          "continuous_variance_error_bound": "[2.031729165666455551244185903277449463078e-11 +/- 3.57e-51]",
+          "mean_count_error_bound": "[8.465538190276898130184107930322706096160e-13 +/- 1.80e-53]"
+        },
+        {
+          "L": 8.0,
+          "maximum_count_bound": 10,
+          "threshold_movement_sum_upper": "[8.467233776857073844508882571197691560246e-13 +/- 3.09e-53]",
+          "continuous_variance_error_bound": "[3.386893510742829537803553028479076624099e-11 +/- 4.77e-51]",
+          "mean_count_error_bound": "[8.467233776857073844508882571197691560246e-13 +/- 3.09e-53]"
+        },
+        {
+          "L": 16.0,
+          "maximum_count_bound": 18,
+          "threshold_movement_sum_upper": "[8.470627435103718623873650466234973765093e-13 +/- 9.61e-54]",
+          "continuous_variance_error_bound": "[6.098851753274677409189028335689181110867e-11 +/- 1.10e-51]",
+          "mean_count_error_bound": "[8.470627435103718623873650466234973765093e-13 +/- 9.61e-54]"
+        }
+      ],
+      "scope": "exact smooth unfolding of the certified ordinate balls versus the stored binary64 unfolding; no claim of an exactly stationary finite-height process"
+    },
+    {
+      "n0": 1000000,
+      "unfolded_coordinate_error_upper": "[1.818917573102752445831091834382893223159e-12 +/- 2.28e-52]",
+      "rows": [
+        {
+          "L": 0.5,
+          "maximum_count_bound": 2,
+          "threshold_movement_sum_upper": "[8.291484903524114605451247415757357296855e-13 +/- 3.69e-53]",
+          "continuous_variance_error_bound": "[6.633187922819291684360997932605885837484e-12 +/- 2.95e-52]",
+          "mean_count_error_bound": "[8.291484903524114605451247415757357296855e-13 +/- 3.69e-53]"
+        },
+        {
+          "L": 1.0,
+          "maximum_count_bound": 3,
+          "threshold_movement_sum_upper": "[8.291692323598712060303382726536263264544e-13 +/- 9.26e-54]",
+          "continuous_variance_error_bound": "[9.950030788318454472364059271843515917453e-12 +/- 3.12e-52]",
+          "mean_count_error_bound": "[8.291692323598712060303382726536263264544e-13 +/- 9.26e-54]"
+        },
+        {
+          "L": 2.0,
+          "maximum_count_bound": 4,
+          "threshold_movement_sum_upper": "[8.292107194882422180974707939024303577453e-13 +/- 4.13e-53]",
+          "continuous_variance_error_bound": "[1.326737151181187548955953270243888572393e-11 +/- 4.54e-51]",
+          "mean_count_error_bound": "[8.292107194882422180974707939024303577453e-13 +/- 4.13e-53]"
+        },
+        {
+          "L": 4.0,
+          "maximum_count_bound": 6,
+          "threshold_movement_sum_upper": "[8.292937062009714666193767902529113132217e-13 +/- 3.46e-53]",
+          "continuous_variance_error_bound": "[1.990304894882331519886504296606987151732e-11 +/- 1.63e-51]",
+          "mean_count_error_bound": "[8.292937062009714666193767902529113132217e-13 +/- 3.46e-53]"
+        },
+        {
+          "L": 8.0,
+          "maximum_count_bound": 10,
+          "threshold_movement_sum_upper": "[8.294597319538748265283913772711436177047e-13 +/- 2.20e-53]",
+          "continuous_variance_error_bound": "[3.317838927815499306113565509084574470819e-11 +/- 1.13e-51]",
+          "mean_count_error_bound": "[8.294597319538748265283913772711436177047e-13 +/- 2.20e-53]"
+        },
+        {
+          "L": 16.0,
+          "maximum_count_bound": 18,
+          "threshold_movement_sum_upper": "[8.297919907927203900011476431023483945895e-13 +/- 4.00e-53]",
+          "continuous_variance_error_bound": "[5.974502333707586808008263030336908441045e-11 +/- 3.13e-51]",
+          "mean_count_error_bound": "[8.297919907927203900011476431023483945895e-13 +/- 4.00e-53]"
+        }
+      ],
+      "scope": "exact smooth unfolding of the certified ordinate balls versus the stored binary64 unfolding; no claim of an exactly stationary finite-height process"
+    },
+    {
+      "n0": 10000000,
+      "unfolded_coordinate_error_upper": "[1.818505323172232168279178833287828453536e-12 +/- 3.11e-53]",
+      "rows": [
+        {
+          "L": 0.5,
+          "maximum_count_bound": 3,
+          "threshold_movement_sum_upper": "[8.232424206305996158495864524963294885478e-13 +/- 1.31e-53]",
+          "continuous_variance_error_bound": "[9.878909047567195390195037429955953862573e-12 +/- 4.44e-52]",
+          "mean_count_error_bound": "[8.232424206305996158495864524963294885478e-13 +/- 1.31e-53]"
+        },
+        {
+          "L": 1.0,
+          "maximum_count_bound": 3,
+          "threshold_movement_sum_upper": "[8.232630060716375093558789745384534501567e-13 +/- 2.67e-55]",
+          "continuous_variance_error_bound": "[9.879156072859650112270547694461441401880e-12 +/- 3.97e-52]",
+          "mean_count_error_bound": "[8.232630060716375093558789745384534501567e-13 +/- 2.67e-55]"
+        },
+        {
+          "L": 2.0,
+          "maximum_count_bound": 4,
+          "threshold_movement_sum_upper": "[8.233041800423411066472579836918980194939e-13 +/- 4.02e-53]",
+          "continuous_variance_error_bound": "[1.317286688067745770635612773907036831190e-11 +/- 1.76e-51]",
+          "mean_count_error_bound": "[8.233041800423411066472579836918980194939e-13 +/- 4.02e-53]"
+        },
+        {
+          "L": 4.0,
+          "maximum_count_bound": 6,
+          "threshold_movement_sum_upper": "[8.233865403404223664397122825741261024940e-13 +/- 2.33e-53]",
+          "continuous_variance_error_bound": "[1.976127696817013679455309478177902645986e-11 +/- 4.56e-51]",
+          "mean_count_error_bound": "[8.233865403404223664397122825741261024940e-13 +/- 2.33e-53]"
+        },
+        {
+          "L": 8.0,
+          "maximum_count_bound": 10,
+          "threshold_movement_sum_upper": "[8.235513109135048812535422597463578019390e-13 +/- 7.71e-54]",
+          "continuous_variance_error_bound": "[3.294205243654019525014169038985431207756e-11 +/- 3.09e-52]",
+          "mean_count_error_bound": "[8.235513109135048812535422597463578019390e-13 +/- 7.71e-54]"
+        },
+        {
+          "L": 16.0,
+          "maximum_count_bound": 18,
+          "threshold_movement_sum_upper": "[8.238810507816330347457879303377397129683e-13 +/- 2.48e-53]",
+          "continuous_variance_error_bound": "[5.931943565627757850169673098431725933372e-11 +/- 4.19e-51]",
+          "mean_count_error_bound": "[8.238810507816330347457879303377397129683e-13 +/- 2.48e-53]"
+        }
+      ],
+      "scope": "exact smooth unfolding of the certified ordinate balls versus the stored binary64 unfolding; no claim of an exactly stationary finite-height process"
+    },
+    {
+      "n0": 20000000,
+      "unfolded_coordinate_error_upper": "[1.818584892603801145963783343644801166867e-12 +/- 3.81e-52]",
+      "rows": [
+        {
+          "L": 0.5,
+          "maximum_count_bound": 2,
+          "threshold_movement_sum_upper": "[1.514831452316182858101326684365955132491e-12 +/- 3.93e-52]",
+          "continuous_variance_error_bound": "[1.211865161852946286481061347492764105992e-11 +/- 4.86e-51]",
+          "mean_count_error_bound": "[1.514831452316182858101326684365955132491e-12 +/- 3.93e-52]"
+        },
+        {
+          "L": 1.0,
+          "maximum_count_bound": 3,
+          "threshold_movement_sum_upper": "[1.514868899533875503188781931765239894833e-12 +/- 1.11e-52]",
+          "continuous_variance_error_bound": "[1.817842679440650603826538318118287873800e-11 +/- 2.68e-51]",
+          "mean_count_error_bound": "[1.514868899533875503188781931765239894833e-12 +/- 1.11e-52]"
+        },
+        {
+          "L": 2.0,
+          "maximum_count_bound": 4,
+          "threshold_movement_sum_upper": "[1.514943820542469617603390982600638621008e-12 +/- 2.79e-53]",
+          "continuous_variance_error_bound": "[2.423910112867951388165425572161021793613e-11 +/- 1.56e-51]",
+          "mean_count_error_bound": "[1.514943820542469617603390982600638621008e-12 +/- 2.79e-53]"
+        },
+        {
+          "L": 4.0,
+          "maximum_count_bound": 6,
+          "threshold_movement_sum_upper": "[1.515093752911231827681285109067176765186e-12 +/- 4.16e-52]",
+          "continuous_variance_error_bound": "[3.636225006986956386435084261761224236447e-11 +/- 3.98e-51]",
+          "mean_count_error_bound": "[1.515093752911231827681285109067176765186e-12 +/- 4.16e-52]"
+        },
+        {
+          "L": 8.0,
+          "maximum_count_bound": 10,
+          "threshold_movement_sum_upper": "[1.515393895522539260205804273554207064130e-12 +/- 2.68e-52]",
+          "continuous_variance_error_bound": "[6.061575582090157040823217094216828256519e-11 +/- 7.05e-52]",
+          "mean_count_error_bound": "[1.515393895522539260205804273554207064130e-12 +/- 2.68e-52]"
+        },
+        {
+          "L": 16.0,
+          "maximum_count_bound": 18,
+          "threshold_movement_sum_upper": "[1.515995462313706057473039426497701860801e-12 +/- 1.89e-52]",
+          "continuous_variance_error_bound": "[1.091516732865868361380588387078345339777e-10 +/- 4.16e-50]",
+          "mean_count_error_bound": "[1.515995462313706057473039426497701860801e-12 +/- 1.89e-52]"
+        }
+      ],
+      "scope": "exact smooth unfolding of the certified ordinate balls versus the stored binary64 unfolding; no claim of an exactly stationary finite-height process"
+    },
+    {
+      "n0": 50000000,
+      "unfolded_coordinate_error_upper": "[1.818893932289676072360022286074414014909e-12 +/- 2.24e-52]",
+      "rows": [
+        {
+          "L": 0.5,
+          "maximum_count_bound": 2,
+          "threshold_movement_sum_upper": "[1.046252053135997629270899284846486271810e-12 +/- 4.82e-53]",
+          "continuous_variance_error_bound": "[8.370016425087981034167194278771890174480e-12 +/- 3.86e-52]",
+          "mean_count_error_bound": "[1.046252053135997629270899284846486271810e-12 +/- 4.82e-53]"
+        },
+        {
+          "L": 1.0,
+          "maximum_count_bound": 3,
+          "threshold_movement_sum_upper": "[1.046278178200700357778258020881617462325e-12 +/- 3.53e-52]",
+          "continuous_variance_error_bound": "[1.255533813840840429333909625057940954790e-11 +/- 4.24e-51]",
+          "mean_count_error_bound": "[1.046278178200700357778258020881617462325e-12 +/- 3.53e-52]"
+        },
+        {
+          "L": 2.0,
+          "maximum_count_bound": 4,
+          "threshold_movement_sum_upper": "[1.046330438617900647002342720415130502772e-12 +/- 1.06e-52]",
+          "continuous_variance_error_bound": "[1.674128701788641035203748352664208804435e-11 +/- 3.70e-51]",
+          "mean_count_error_bound": "[1.046330438617900647002342720415130502772e-12 +/- 1.06e-52]"
+        },
+        {
+          "L": 4.0,
+          "maximum_count_bound": 6,
+          "threshold_movement_sum_upper": "[1.046435011833264924704154880611503494972e-12 +/- 3.89e-52]",
+          "continuous_variance_error_bound": "[2.511444028399835819289971713467608387932e-11 +/- 1.34e-51]",
+          "mean_count_error_bound": "[1.046435011833264924704154880611503494972e-12 +/- 3.89e-52]"
+        },
+        {
+          "L": 8.0,
+          "maximum_count_bound": 10,
+          "threshold_movement_sum_upper": "[1.046644322005601318293576184542008830355e-12 +/- 4.04e-53]",
+          "continuous_variance_error_bound": "[4.186577288022405273174304738168035321420e-11 +/- 1.62e-51]",
+          "mean_count_error_bound": "[1.046644322005601318293576184542008830355e-12 +/- 4.04e-53]"
+        },
+        {
+          "L": 16.0,
+          "maximum_count_bound": 18,
+          "threshold_movement_sum_upper": "[1.047063621459244082938471532408497330363e-12 +/- 3.96e-52]",
+          "continuous_variance_error_bound": "[7.538858074506557397156995033341180778611e-11 +/- 2.48e-51]",
+          "mean_count_error_bound": "[1.047063621459244082938471532408497330363e-12 +/- 3.96e-52]"
+        }
+      ],
+      "scope": "exact smooth unfolding of the certified ordinate balls versus the stored binary64 unfolding; no claim of an exactly stationary finite-height process"
+    }
+  ]
+}

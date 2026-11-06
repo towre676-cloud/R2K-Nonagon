@@ -1,0 +1,14 @@
+NEG_dh_84p7_86p7.json CERTIFIED 2 [1, 1] seconds 3.5
+zero_100000000_b0p45.json CERTIFIED 1 [1, 0] seconds 12.6
+zero_10000000_b0p45.json CERTIFIED 1 [1, 0] seconds 4.5
+zero_100000000_b0p6.json CERTIFIED 1 [1, 0] seconds 15.2
+zero_1000000_b0p45.json CERTIFIED 1 [1, 0] seconds 3.5
+zero_1000000_b0p6.json CERTIFIED 1 [1, 0] seconds 4.0
+zero_100000_b0p45.json CERTIFIED 1 [1, 0] seconds 12.5
+zero_1000_b0p45.json CERTIFIED 1 [1, 0] seconds 0.3
+zero_100_b0p45.json CERTIFIED 1 [1, 0] seconds 0.2
+zero_1_b0p45.json CERTIFIED 1 [1, 0] seconds 0.4
+zero_3000_b0p45.json CERTIFIED 1 [1, 0] seconds 0.8
+zero_6709_b0p45.json CERTIFIED 1 [1, 0] seconds 2.3
+zero_100000_b0p6.json CERTIFIED 1 [1, 0] seconds 15.3
+ALL 46 RETAINED CONTOURS FRESHLY REPLAYED 5023 segments

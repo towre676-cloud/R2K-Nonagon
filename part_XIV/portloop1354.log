@@ -1,0 +1,4 @@
+case1354pegase {'ports': 5, 'readings': 6780, 'rank': 1670, 'unknowns': 1710, 'compressed': False}
+case1354pegase {'ports': 32, 'readings': 43824, 'rank': 1681, 'unknowns': 1710, 'compressed': True}
+case1354pegase {'ports': 57, 'readings': 78774, 'rank': 1710, 'unknowns': 1710, 'compressed': True}
+{"case": "case1354pegase", "n": 1353, "ports_needed": 57, "seconds": 417.6266407966614}

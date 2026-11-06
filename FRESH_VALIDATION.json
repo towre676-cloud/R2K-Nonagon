@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-05",
+  "scope": "Selected fresh checks only; not full historical replay.",
+  "checks": {
+    "passivity": {
+      "status": "PASS",
+      "exact_checks": 2400,
+      "adversarial_rejected": 29
+    },
+    "variance_quadrature": {
+      "status": "PASS",
+      "checks": 48
+    }
+  }
+}

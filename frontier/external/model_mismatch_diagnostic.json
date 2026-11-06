@@ -1,0 +1,549 @@
+{
+  "label": "Post-confirmation descriptive model-mismatch diagnosis; no model or scoring changes.",
+  "model_constraint": "For positive RC Debye terms with series ideal RLC, d Re Z(iomega)/domega = -sum_j 2 a_j tau_j^2 omega/(1+tau_j^2 omega^2)^2 <=0 for omega>0.",
+  "observed_nonmonotonic_confirmation_cells": 48,
+  "confirmation_cells": 48,
+  "scope": "Applies to exact stored values. Unknown measurement uncertainty prevents inference of physical incompatibility or nonpassivity. More general positive-real RL relaxation terms can permit rising real part; not tested or selected here.",
+  "records": [
+    {
+      "device": "ID01",
+      "phase": "development",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0137167598586529,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.01439659378957,
+      "high_frequency_increase_ohm": 0.0006798339309170998,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID02",
+      "phase": "development",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0138619632925838,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0145269109634683,
+      "high_frequency_increase_ohm": 0.0006649476708844998,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID03",
+      "phase": "development",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0135109012480825,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0141171411378309,
+      "high_frequency_increase_ohm": 0.0006062398897483997,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID04",
+      "phase": "development",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0133955159690231,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0139687060145661,
+      "high_frequency_increase_ohm": 0.0005731900455429994,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID05",
+      "phase": "development",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0133707269560546,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0139914889587089,
+      "high_frequency_increase_ohm": 0.0006207620026543008,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID06",
+      "phase": "development",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.013453597901389,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0140571425436065,
+      "high_frequency_increase_ohm": 0.0006035446422175007,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID07",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0140565920155495,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0147200663341209,
+      "high_frequency_increase_ohm": 0.0006634743185713991,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID08",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.013384799240157,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0140207101358101,
+      "high_frequency_increase_ohm": 0.0006359108956531002,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID09",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0134496341925114,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0140263297362253,
+      "high_frequency_increase_ohm": 0.0005766955437139006,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID10",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.013319906545803,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.013903432409279,
+      "high_frequency_increase_ohm": 0.0005835258634760004,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID11",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0136537074577063,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0142944128019735,
+      "high_frequency_increase_ohm": 0.0006407053442671999,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID12",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0137347297277302,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0143788241548464,
+      "high_frequency_increase_ohm": 0.0006440944271161996,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID13",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0135278112720698,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0141349480254576,
+      "high_frequency_increase_ohm": 0.0006071367533877995,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID14",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0134656603913754,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0141020835144445,
+      "high_frequency_increase_ohm": 0.0006364231230691006,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID15",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0135377531405538,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0141683266265318,
+      "high_frequency_increase_ohm": 0.0006305734859779998,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID16",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0135058721061796,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0141558040631935,
+      "high_frequency_increase_ohm": 0.0006499319570138998,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID17",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0134520425926894,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0141025193734095,
+      "high_frequency_increase_ohm": 0.0006504767807201002,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID18",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0134384154807776,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.014032335835509,
+      "high_frequency_increase_ohm": 0.0005939203547314,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID19",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0135386267211288,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0141536601586267,
+      "high_frequency_increase_ohm": 0.0006150334374979,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID20",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0133465162944049,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0139914097962901,
+      "high_frequency_increase_ohm": 0.0006448935018851989,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID21",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0133471887093037,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0140458027599379,
+      "high_frequency_increase_ohm": 0.0006986140506342001,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID22",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0132062674965709,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0138382109580562,
+      "high_frequency_increase_ohm": 0.0006319434614853008,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID23",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0137729670386761,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.014471277478151,
+      "high_frequency_increase_ohm": 0.0006983104394749015,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID24",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0134725149255246,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0141279752133414,
+      "high_frequency_increase_ohm": 0.0006554602878168,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID25",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0137354608159512,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0144213464809582,
+      "high_frequency_increase_ohm": 0.0006858856650069998,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID26",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0136695893015712,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0143482646672055,
+      "high_frequency_increase_ohm": 0.0006786753656343007,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID27",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0137372256722301,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0144225683761761,
+      "high_frequency_increase_ohm": 0.000685342703945999,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID28",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0134548775386065,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0140763752860948,
+      "high_frequency_increase_ohm": 0.0006214977474882991,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID29",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0134495010133833,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0141026246128604,
+      "high_frequency_increase_ohm": 0.0006531235994771002,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID30",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0134551643859595,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0140735487220809,
+      "high_frequency_increase_ohm": 0.0006183843361213994,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID31",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0136828634422272,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.014354623737745,
+      "high_frequency_increase_ohm": 0.0006717602955177999,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID32",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0136204853188246,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0142955965129659,
+      "high_frequency_increase_ohm": 0.0006751111941412993,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID33",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0134497925173491,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0140474688960239,
+      "high_frequency_increase_ohm": 0.0005976763786748,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID34",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0133540180977434,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.014042520779185,
+      "high_frequency_increase_ohm": 0.0006885026814415999,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID35",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0135078362654895,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0141866308404133,
+      "high_frequency_increase_ohm": 0.0006787945749237995,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID36",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0130301991011947,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0136292938841507,
+      "high_frequency_increase_ohm": 0.000599094782956,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID37",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0134036091621965,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0140975619433448,
+      "high_frequency_increase_ohm": 0.0006939527811483,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID38",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.013459695270285,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0141365024028346,
+      "high_frequency_increase_ohm": 0.0006768071325495995,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID39",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.013399608200416,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0140937109244987,
+      "high_frequency_increase_ohm": 0.0006941027240827003,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID40",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.013509696116671,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0141315822256729,
+      "high_frequency_increase_ohm": 0.0006218861090018998,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID41",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0137285410892218,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0144406025065109,
+      "high_frequency_increase_ohm": 0.000712061417289099,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID42",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0136332220863551,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0143330831779167,
+      "high_frequency_increase_ohm": 0.0006998610915615999,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID43",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0133423039223999,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0140405426500365,
+      "high_frequency_increase_ohm": 0.0006982387276366006,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID44",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0136398856993765,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0143248903332278,
+      "high_frequency_increase_ohm": 0.000685004633851299,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID45",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0134851110633463,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0142090924782678,
+      "high_frequency_increase_ohm": 0.0007239814149215002,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID46",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.013616002863273,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0143127253977582,
+      "high_frequency_increase_ohm": 0.0006967225344851995,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID47",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0136199833359569,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0143415526254103,
+      "high_frequency_increase_ohm": 0.0007215692894534005,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID48",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0136241603177041,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0143374361796305,
+      "high_frequency_increase_ohm": 0.0007132758619263994,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID49",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0136905747931451,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0144265972776338,
+      "high_frequency_increase_ohm": 0.0007360224844887003,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID50",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0137172124814242,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0144545565126464,
+      "high_frequency_increase_ohm": 0.0007373440312221993,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID51",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0135322760324925,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0142228965414688,
+      "high_frequency_increase_ohm": 0.0006906205089763015,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID52",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.01371472585015,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.014430181006901,
+      "high_frequency_increase_ohm": 0.0007154551567510013,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID53",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.013786283088848,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.0145072889281437,
+      "high_frequency_increase_ohm": 0.0007210058392956992,
+      "violates_nonincreasing_real_data": true
+    },
+    {
+      "device": "ID54",
+      "phase": "confirmation",
+      "minimum_real_frequency_hz": 3763.11059570312,
+      "minimum_real_ohm": 0.0134173480328172,
+      "highest_frequency_hz": 10000.0,
+      "highest_frequency_real_ohm": 0.014095917227678,
+      "high_frequency_increase_ohm": 0.0006785691948607998,
+      "violates_nonincreasing_real_data": true
+    }
+  ]
+}

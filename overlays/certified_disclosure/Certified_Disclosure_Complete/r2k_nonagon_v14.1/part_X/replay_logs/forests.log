@@ -1,0 +1,19 @@
+{
+  "envelope_scan": {
+    "networks": 56,
+    "edge_directions": 672,
+    "random_finite_controls": 6720,
+    "max_all_corner_envelope_error": 2.220446049250313e-16,
+    "max_finite_envelope_excess": -5.321692559934199e-05,
+    "max_rank_one_drop_absolute_error": 3.3168047394365353e-16,
+    "all_checks_passed": true
+  },
+  "high_precision": {
+    "decimal_digits": 80,
+    "w": "0.0000001",
+    "gamma": "0.0000000178571403698983056213074313178934950076917667857896262650163416584381261",
+    "clamp_identity_absolute_error": "1.0677e-89",
+    "binary64_gamma": 1.7857140369898303e-08,
+    "binary64_relative_error": "1.62967e-16"
+  }
+}

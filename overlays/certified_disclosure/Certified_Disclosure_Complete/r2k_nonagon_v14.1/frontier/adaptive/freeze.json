@@ -1,0 +1,9 @@
+{
+  "frozen_at_utc": "2026-10-30T01:26:12.826900+00:00",
+  "sha256": {
+    "acquisition.py": "cdea01d60dd3c4162db1d189b14c01a1c5a498a92bbdbab1d1581e27dd9c7980",
+    "protocol.json": "22113749986422bef0df607ca70c265268bfd48ed6b5595e186892a10c06bec4",
+    "reference_core.py": "b28a613e5da8dec4a2d7ea19b0d94d75fc873e74810b64cf49dc1a51cbd9f117"
+  },
+  "description": "Valid physical responses verified by explicitgeneral and independent NumPy solvers. Local code/protocol freeze after valid development, before NEW confirmation. Earlier auto-solver receipts invalidated and quarantined."
+}

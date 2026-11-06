@@ -1,0 +1,196 @@
+<title>Rank-Two Nonagon XII</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<script>
+window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']], tags: 'none' }, chtml: { scale: 0.98 }, options: { skipHtmlTags: ['script','noscript','style','textarea','pre','svg'] } };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" async></script>
+<style>
+/* layout: single reading column, wide figure/table plates break out to the full frame */
+:root{
+  --paper:#f4ede0; --paper-2:#ece2d0; --ink:#271c17; --ink-soft:#5d4c41; --rule:#cdbba0;
+  --ox:#6d1424; --ox-soft:#9b3a4b; --slate:#3b5560; --wash:rgba(109,20,36,.06);
+  --display:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
+  --body:"EB Garamond",Garamond,"Georgia","Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#18120f; --paper-2:#211915; --ink:#ebe0cd; --ink-soft:#b7a691; --rule:#4a3b31;
+  --ox:#d77a8a; --ox-soft:#e59cab; --slate:#8fb3c0; --wash:rgba(215,122,138,.08); color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#18120f; --paper-2:#211915; --ink:#ebe0cd; --ink-soft:#b7a691; --rule:#4a3b31;
+  --ox:#d77a8a; --ox-soft:#e59cab; --slate:#8fb3c0; --wash:rgba(215,122,138,.08); color-scheme:dark }
+html{background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:19px;line-height:1.62;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 80px;
+  font-variant-numeric:oldstyle-nums proportional-nums;-webkit-font-smoothing:antialiased}
+main{max-width:46rem;margin:0 auto}
+.plate{max-width:min(62rem,100%);margin:2.2rem auto;position:relative;left:50%;transform:translateX(-50%);width:min(62rem,calc(100vw - 32px))}
+header.title{max-width:46rem;margin:0 auto;padding-top:4.5rem;padding-bottom:2.2rem;border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--display);font-variant:small-caps;letter-spacing:.14em;color:var(--ox);font-size:1rem;font-weight:600}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(2.6rem,6vw,4.1rem);line-height:1.02;margin:.6rem 0 .8rem;text-wrap:balance;letter-spacing:-.005em}
+h1 em{color:var(--ox);font-style:italic;font-weight:500}
+.sub{font-family:var(--display);font-style:italic;font-size:1.35rem;color:var(--ink-soft);line-height:1.35;text-wrap:balance}
+.byline{margin-top:1.4rem;font-size:.95rem;color:var(--ink-soft);font-variant:small-caps;letter-spacing:.06em}
+h2{font-family:var(--display);font-weight:600;font-size:2rem;line-height:1.1;margin:3.6rem 0 1rem;text-wrap:balance;display:flex;gap:.7rem;align-items:baseline}
+h2 .sn{color:var(--ox);font-size:1.15rem;font-variant:small-caps;letter-spacing:.08em;flex:none}
+h3{font-family:var(--display);font-weight:600;font-size:1.38rem;margin:2.2rem 0 .5rem;color:var(--ink)}
+p{margin:0 0 1.05rem;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+strong{font-weight:600;color:var(--ox)}
+.abstract{background:var(--wash);border-left:2px solid var(--ox);padding:1.1rem 1.4rem;margin:2rem 0}
+.abstract p:last-child{margin-bottom:0}
+.abstract .h{font-variant:small-caps;letter-spacing:.12em;color:var(--ox);font-family:var(--display);font-weight:700;font-size:1.05rem}
+.thm{margin:1.6rem 0;padding:1rem 1.2rem 0.3rem;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.thm .hd{font-family:var(--display);font-weight:700;font-size:1.12rem;margin-bottom:.35rem}
+.thm .hd i{font-weight:500}
+.proof{font-size:.96em;color:var(--ink)}
+.proof::before{content:"Proof. ";font-style:italic;color:var(--ink-soft)}
+.qed{float:right;color:var(--ink-soft)}
+.ep{font-family:var(--display);font-variant:small-caps;letter-spacing:.07em;font-size:.86rem;font-weight:700;padding:.05rem .45rem;border:1px solid currentColor;border-radius:2px;margin-left:.35rem;white-space:nowrap;vertical-align:.1em}
+.ep.pr{color:var(--ox)} .ep.nm{color:var(--slate)} .ep.mp{color:var(--ink-soft)} .ep.ct{color:var(--ox-soft)} .ep.op{color:var(--ink-soft);border-style:dashed}
+.tw{overflow-x:auto;margin:1.6rem 0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;font-variant-numeric:lining-nums tabular-nums}
+caption{caption-side:top;text-align:left;font-family:var(--display);font-size:1.02rem;font-weight:600;padding-bottom:.5rem;color:var(--ink)}
+caption span{font-weight:400;font-style:italic;color:var(--ink-soft)}
+th{font-family:var(--display);font-variant:small-caps;letter-spacing:.06em;font-weight:700;text-align:left;border-bottom:1.5px solid var(--ink);padding:.35rem .6rem;color:var(--ink);white-space:nowrap}
+td{border-bottom:1px solid var(--rule);padding:.35rem .6rem;vertical-align:top}
+td.n{text-align:right;white-space:nowrap;font-family:var(--body)}
+tr:last-child td{border-bottom:1.5px solid var(--ink)}
+figure{margin:0}
+figure svg{width:100%;height:auto;display:block;background:var(--paper-2);border:1px solid var(--rule)}
+figcaption{font-size:.92rem;color:var(--ink-soft);margin-top:.55rem;line-height:1.45;max-width:46rem}
+figcaption b{color:var(--ink);font-weight:600;font-variant:small-caps;letter-spacing:.05em}
+svg .lab{fill:var(--ink-soft);font-family:var(--body);font-size:13px}
+svg .small{font-size:11.5px;font-style:italic}
+svg .grid{stroke:var(--rule);stroke-width:.6;stroke-dasharray:2 3}
+svg .ax{stroke:var(--ink-soft);stroke-width:1}
+svg .eps{stroke:var(--ox);stroke-width:1;stroke-dasharray:5 4}
+svg .dot1{fill:var(--ox)} svg .dot2{fill:var(--slate);opacity:.75}
+svg .neg{fill:var(--paper-2);stroke:var(--ox);stroke-width:2}
+svg .negtxt{fill:var(--ox)}
+svg .bar1{fill:var(--slate);opacity:.85} svg .bar2{fill:var(--ox)}
+svg .line1{fill:none;stroke:var(--ox);stroke-width:1.6}
+svg .line2{fill:none;stroke:var(--slate);stroke-width:1.6}
+svg .line3{fill:none;stroke:var(--ink-soft);stroke-width:1.6;stroke-dasharray:6 3}
+svg .line4{fill:none;stroke:var(--ox-soft);stroke-width:1.4;stroke-dasharray:2 3}
+svg .lineq{fill:none;stroke:var(--ink);stroke-width:1.2;stroke-dasharray:8 4;opacity:.7}
+svg .linec{fill:none;stroke:var(--slate);stroke-width:1.2;stroke-dasharray:1 3}
+svg .lineb{fill:none;stroke:var(--ox);stroke-width:1;stroke-dasharray:3 3;opacity:.7}
+svg .band{fill:var(--wash)}
+svg .tile{fill:var(--wash);stroke:var(--slate);stroke-width:.9}
+.mjx-chtml{font-size:105%!important}
+mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;max-width:100%;padding:.2rem 0}
+.toc{columns:2;column-gap:2rem;font-size:.95rem;margin:1.6rem 0 0;padding:0;list-style:none;counter-reset:none}
+.toc li{break-inside:avoid;margin:.15rem 0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+.toc a:hover,.toc a:focus-visible{color:var(--ox);border-color:var(--ox)}
+.toc .sn{color:var(--ox);font-variant:small-caps;margin-right:.4rem}
+a:focus-visible{outline:2px solid var(--ox);outline-offset:2px}
+.colophon{margin-top:4rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.88rem;color:var(--ink-soft)}
+@media (max-width:640px){body{font-size:17.5px}p{text-align:left}.toc{columns:1}h2{flex-direction:column;gap:.1rem}}
+</style><header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v12.0 · Part XII</div>
+  <h1>The Rank-Two Nonagon <em>XII</em></h1>
+  <div class="sub">Target-relative disclosure: when the one-line diagram is known, a grid's weights and outages are recovered from about two readings per unknown, with an exact identifiability proof at 2,868 buses</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 30 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Part XI disclosed standard grids from one port with $n(n+1)/2$ readings, which is dimension-minimal for an unknown dense network and wasteful for a sparse grid with $O(n)$ unknowns. Part XII changes the target. A utility knows its one-line diagram: which branches exist and where the grounds are. What it does not know is the present value of every susceptance, or which lines are out. With the support fixed, the observability criterion of PerfectJet chapter 7 applies directly: a target is recoverable exactly when the observation kernel lies in its kernel, and repeated readings reduce noise without repairing a missing direction. Single-node interventions give the whole first column of $G=K^{-1}$. Every further column entry $G_{js}$ comes from one pair reading. Each equation $(Kg_s)_i=\delta_{is}$ is linear in the unknown weights. <strong>Result.</strong> IEEE 118 is recovered exactly over $\mathbb Q$ from 379 readings instead of 6,903. Three-line outages are detected exactly as zero weights against the nominal support, in all five scenarios. The same scheme proves exact identifiability, by full rank modulo the prime $2^{31}-1$, of IEEE 300 from 972 readings (46 times fewer than Part XI), PEGASE 1354 from 4,365 (210 times fewer) and PEGASE 2869 from 9,517 (432 times fewer). That is 2.1–2.6 readings per unknown in every case, and the recovered weights equal the truth modulo $p$. <strong>A structural lower bound.</strong> If a bridge's far side contains no ground, no reading sourced on the near side can see that bridge. Every such block therefore needs a source of its own. IEEE 118 has 9 such bridges. <strong>Robustness.</strong> Under a deterministic reading-error bound, the 379-reading scheme certifies every IEEE 118 branch at $10^{-9}G_{00}$ with tighter enclosures than the 6,903-reading protocol. Under Gaussian noise at $10^{-6}$ it is less accurate per branch, because it averages over 18 times fewer readings. Both behaviours are reported.</p>
+</div>
+
+<h2 id="h1"><span class="sn">§XII.1</span>The linear system a known diagram makes</h2>
+
+<p>Write $K=\sum_{e=(a,c)}w_e\,b_eb_e^{\mathsf T}+\sum_{i\in\Gamma}g_ie_ie_i^{\mathsf T}$, where $b_e=e_a-e_c$, the support $E$ of branches and $\Gamma$ of grounds is known, and the values $w_e,g_i$ are not. For any source $s$, the column $g_s=Ge_s$ satisfies $Kg_s=e_s$. Row $i$ of this identity reads
+$$\sum_{e\ni i}w_e\,\bigl(G_{is}-G_{e(i)\,s}\bigr)+g_i\,G_{is}=\delta_{is},$$
+where $e(i)$ is the other endpoint of $e$. The equation is linear in the unknowns, and it needs only the entries $G_{js}$ for $j$ in the closed neighbourhood of $i$.</p>
+
+<p>The baseline and two strengths at each hidden node, $2n-1$ readings, give every $G_{0j}$ and every $G_{jj}$ (Lemma VIII.1.1). A pair reading at $(s,j)$ gives $G_{sj}$ through the Woodbury identity and its physical root. A <em>patch</em> at source $s$ of radius $R$ uses the rows $i$ within distance $R$ of $s$ and costs one pair reading for each node within distance $R+1$, other than the port and $s$. The selection is greedy. It starts from the full port column, adds single-row patches in order of increasing degree whenever they raise the rank, and then radius-1 patches. Ranks are computed modulo $p=2^{31}-1$ from $K^{-1}\bmod p$. Full rank modulo $p$ implies full rank over $\mathbb Q$, so it <em>proves</em> that the selected readings determine the weights uniquely.</p>
+
+<div class="thm"><div class="hd">Proposition XII.1.1 <i>(target-relative identifiability)</i> <span class="ep pr">proved</span></div>
+<p>Let $A$ be the matrix of the selected rows. A linear functional $T$ of the unknown weights, such as one branch's susceptance or a sum over a corridor, is determined by the readings if and only if $T$ lies in the row space of $A$, that is, $\ker A\subseteq\ker T$. All weights are determined if and only if $\operatorname{rank}A=|E|+|\Gamma|$. In that case at least $|E|+|\Gamma|$ readings are needed and the explicit scheme uses at most a constant multiple of that number. Adding a reading that duplicates an existing row reduces noise but never changes the identifiable set.</p></div>
+
+<p>The proposition is PerfectJet chapter 7's criterion, specialized to the intervention protocol. The port column alone shows how far a single sweep reaches. With grounds unknown at every bus, it determines 17 of the 290 unknowns of IEEE 118, all of them grounds, and no branch. With the ground support known, it determines nothing individually, although its rank is 100. Every branch value needs readings sourced away from the port.</p>
+
+<h2 id="h2"><span class="sn">§XII.2</span>The bridge-visibility bound</h2>
+
+<div class="thm"><div class="hd">Lemma XII.2.1 <i>(blind bridges)</i> <span class="ep pr">proved</span></div>
+<p>Let $e=(a,c)$ be a bridge, and let $F$ be the side of $e$ not containing the port. If no node of $F$ is grounded, then $G_{as}=G_{cs}$ for every source $s\notin F$. Hence $w_e$ has coefficient zero in every equation from such a source, and every scheme that determines $w_e$ must include a source inside $F$.</p></div>
+
+<p><em>Proof.</em> $G_{\cdot s}$ is the potential produced by unit current injected at $s$ with all grounds as sinks. Kirchhoff's current law on $F$ forces zero net current across the cut $\{e\}$, because $F$ has no sink and no source. So no current flows in $e$, and its two endpoints are at equal potential. $\square$</p>
+
+<p>IEEE 118 has 9 bridges, and all 9 have ungrounded far sides: radial spurs and generator stubs such as buses 10, 73, 87, 111, 112, 116 and 117. Each costs at least one dedicated source. The greedy selection places one inside each, at a cost of 1–2 pair readings apiece. Blind bridges are why a scheme sourced only near the port cannot work on real grids, whatever its size. They are also why the full columns tried first were wasteful. A full column of IEEE 118 costs 115 pair readings, yet past the second column each one raised the rank by about one.</p>
+
+<h2 id="h3"><span class="sn">§XII.3</span>Exact recovery and outage detection</h2>
+
+<div class="tw"><table>
+<caption>Table XII.1. <span>Known-support disclosure. Unknowns are all branch susceptances and the grounds on the known ground support. "Identifiable" is full rank modulo $2^{31}-1$, which implies full rank over $\mathbb Q$. "Equals truth" compares the solution of the selected system with the true weights, over $\mathbb Q$ for IEEE 118 and modulo $p$ elsewhere.</span></caption>
+<thead><tr><th>case</th><th>unknowns</th><th>readings</th><th>Part XI readings</th><th>fewer by</th><th>readings per unknown</th><th>identifiable</th><th>equals truth</th><th>time</th></tr></thead>
+<tbody>
+<tr><td>IEEE 118 (greedy patches)</td><td class="n">179</td><td class="n">379</td><td class="n">6,903</td><td class="n">18.2×</td><td class="n">2.12</td><td>yes</td><td>yes (over $\mathbb Q$)</td><td class="n">—</td></tr>
+<tr><td>IEEE 118</td><td class="n">179</td><td class="n">393</td><td class="n">6,903</td><td class="n">17.6×</td><td class="n">2.20</td><td>yes</td><td>yes (mod $p$)</td><td class="n">0.1 s</td></tr>
+<tr><td>IEEE 300</td><td class="n">409</td><td class="n">972</td><td class="n">44,850</td><td class="n">46.1×</td><td class="n">2.38</td><td>yes</td><td>yes (mod $p$)</td><td class="n">0.3 s</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">1,710</td><td class="n">4,365</td><td class="n">915,981</td><td class="n">209.8×</td><td class="n">2.55</td><td>yes</td><td>yes (mod $p$)</td><td class="n">6.0 s</td></tr>
+<tr><td>PEGASE 2869</td><td class="n">3,968</td><td class="n">9,517</td><td class="n">4,114,146</td><td class="n">432.3×</td><td class="n">2.40</td><td>yes</td><td>yes (mod $p$)</td><td class="n">38.8 s</td></tr>
+
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result XII.3.1 <i>(exact disclosure and outage detection at a fraction of the cost)</i> <span class="ep pr">proved · exact</span></div>
+<p>With the one-line diagram known, IEEE 118's 173 susceptances and 6 grounds are recovered exactly over $\mathbb Q$ from 379 readings. Every equation of the selected system is satisfied exactly by the recovered values. In five outage scenarios, each removing three random non-bridge lines, the solution against the <em>nominal</em> support returns exactly zero for precisely the three removed lines and the exact value for every other branch: two scenarios with the patch scheme, three with the column scheme. Identifiability is proved, and the recovered weights agree with the truth modulo $p$, for IEEE 300, PEGASE 1354 and PEGASE 2869. The ratio to the information-theoretic minimum of one reading per unknown stays between 2.1 and 2.6 from 117 to 2,868 buses.</p></div>
+
+<p>The scheme is fast because it never inverts the reconstructed $G$. The heaviest step for PEGASE 2869 is one modular inverse of $K$, taking 25 s, which is needed only for the identifiability proof, never for recovery from data. The recovery itself is a sparse linear solve.</p>
+
+<h2 id="h4"><span class="sn">§XII.4</span>Robustness</h2>
+
+<p>The same deterministic reading-error model as Part XI §3 is used. Every one of the 379 readings is a ball of radius $\varepsilon$. $G_{0j}$, $G_{jj}$ and the needed $G_{sj}$ are evaluated in ball arithmetic, and the selected square system is solved by an interval linear solve.</p>
+
+<div class="tw"><table>
+<caption>Table XII.2. <span>Interval certificates on IEEE 118: the 379-reading known-support scheme against the 6,903-reading full protocol of Table XI.3.</span></caption>
+<thead><tr><th>$\varepsilon/G_{00}$</th><th>known-support: branches certified present</th><th>known-support: max rel. radius</th><th>full protocol: branches certified present</th><th>full protocol: max rel. radius</th></tr></thead>
+<tbody>
+<tr><td class="n">1e-15</td><td class="n">173/173</td><td class="n">3.64e-07</td><td class="n">173/173</td><td class="n">1.17e-06</td></tr>
+<tr><td class="n">1e-13</td><td class="n">173/173</td><td class="n">3.61e-05</td><td class="n">173/173</td><td class="n">1.17e-04</td></tr>
+<tr><td class="n">1e-11</td><td class="n">173/173</td><td class="n">3.61e-03</td><td class="n">173/173</td><td class="n">1.17e-02</td></tr>
+<tr><td class="n">1e-09</td><td class="n">173/173</td><td class="n">3.66e-01</td><td class="n">172/173</td><td class="n">1.22e+00</td></tr>
+
+</tbody></table></div>
+
+<p>Under a deterministic error bound, the known-support scheme is <em>more</em> robust than the full protocol while using 18 times fewer readings. Its enclosures are about three times tighter at every level, and at $10^{-9}G_{00}$ it certifies all 173 branches, where the full protocol certifies 172. The reason is the step it avoids: inverting a dense, noisy $G$ back to $K$ amplifies error by the local stiffness, the factor $K_{vv}$ found in Part XI §4. Under independent Gaussian noise the comparison reverses at the highest level, because the full protocol averages over many more readings.</p>
+
+<div class="tw"><table>
+<caption>Table XII.3. <span>Known-support scheme under Gaussian reading noise (binary64), same noise model as Table XI.4. Branches "above gap" are those whose recovered susceptance exceeds half the smallest true one.</span></caption>
+<thead><tr><th>case</th><th>readings</th><th>$\sigma$</th><th>median rel. error</th><th>within 1%</th><th>above gap</th></tr></thead>
+<tbody>
+<tr><td>IEEE 118</td><td class="n">393</td><td class="n">0</td><td class="n">2.9e-13</td><td class="n">100.0%</td><td class="n">173/173</td></tr>
+<tr><td>IEEE 118</td><td class="n">393</td><td class="n">1e-12</td><td class="n">6.3e-09</td><td class="n">100.0%</td><td class="n">173/173</td></tr>
+<tr><td>IEEE 118</td><td class="n">393</td><td class="n">1e-09</td><td class="n">5.2e-06</td><td class="n">100.0%</td><td class="n">173/173</td></tr>
+<tr><td>IEEE 118</td><td class="n">393</td><td class="n">1e-06</td><td class="n">5.3e-03</td><td class="n">58.4%</td><td class="n">167/173</td></tr>
+<tr><td>IEEE 300</td><td class="n">972</td><td class="n">0</td><td class="n">8.8e-13</td><td class="n">100.0%</td><td class="n">407/408</td></tr>
+<tr><td>IEEE 300</td><td class="n">972</td><td class="n">1e-12</td><td class="n">8.2e-09</td><td class="n">100.0%</td><td class="n">407/408</td></tr>
+<tr><td>IEEE 300</td><td class="n">972</td><td class="n">1e-09</td><td class="n">1.1e-05</td><td class="n">88.0%</td><td class="n">407/408</td></tr>
+<tr><td>IEEE 300</td><td class="n">972</td><td class="n">1e-06</td><td class="n">1.1e-02</td><td class="n">47.8%</td><td class="n">370/408</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">4,365</td><td class="n">0</td><td class="n">2.3e-12</td><td class="n">100.0%</td><td class="n">1,705/1,705</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">4,365</td><td class="n">1e-12</td><td class="n">1.6e-08</td><td class="n">100.0%</td><td class="n">1,705/1,705</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">4,365</td><td class="n">1e-09</td><td class="n">1.7e-05</td><td class="n">92.4%</td><td class="n">1,703/1,705</td></tr>
+<tr><td>PEGASE 1354</td><td class="n">4,365</td><td class="n">1e-06</td><td class="n">1.7e-02</td><td class="n">43.2%</td><td class="n">1,584/1,705</td></tr>
+<tr><td>PEGASE 2869</td><td class="n">9,517</td><td class="n">0</td><td class="n">3.5e-11</td><td class="n">98.0%</td><td class="n">3,953/3,963</td></tr>
+<tr><td>PEGASE 2869</td><td class="n">9,517</td><td class="n">1e-12</td><td class="n">4.5e-07</td><td class="n">94.4%</td><td class="n">3,930/3,963</td></tr>
+<tr><td>PEGASE 2869</td><td class="n">9,517</td><td class="n">1e-09</td><td class="n">4.4e-04</td><td class="n">70.5%</td><td class="n">3,814/3,963</td></tr>
+<tr><td>PEGASE 2869</td><td class="n">9,517</td><td class="n">1e-06</td><td class="n">3.9e-01</td><td class="n">22.8%</td><td class="n">3,125/3,963</td></tr>
+
+</tbody></table></div>
+
+<p>At $\sigma=10^{-6}$ on IEEE 118, the known-support scheme places 58% of branches within 1%, against 88% for the full protocol. With the reading count equalized by repetition, the per-branch error would fall by about $\sqrt{18}\approx4.3$. Proposition XII.1.1 says repetition is the right way to spend a larger budget. The noiseless PEGASE 2869 row shows a separate effect: 98% within 1% at $\sigma=0$. A few selected rows are nearly dependent in binary64, so at that scale the exact identifiability proof should be paired with ball arithmetic or the certified native execution of DynaComp, not plain floating point.</p>
+
+<h2 id="h5"><span class="sn">§XII.5</span>What changes for an operator</h2>
+
+<p>Part XI answered "can one port reveal an unknown grid" with an $n^2/2$ cost. Part XII answers the question an operator actually has: given the diagram, are the parameters what they should be, and is anything out? The cost is about $2.4$ readings per unknown, at every scale tested. At that cost exact identifiability is provable for a 2,868-bus grid in under a minute, and an outage shows up as an exact zero rather than a statistical anomaly. Blind bridges set a hard floor on where interventions must be possible. Every spur without its own ground needs a source inside it. That is a statement about where to install calibrated shunts, and it holds regardless of the algorithm used.</p>
+
+<p>Two limits remain. The model is the DC susceptance network, so line resistance, charging and transformer taps are outside it, as in Part XI. The readings are simulated. The first measured test of this scheme belongs on hardware with switchable calibrated shunts, and the blind-bridge lemma says where they must go.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> <code>part_XII/sparse_exact.py CASE [all|known]</code> (column scheme, exact over $\mathbb Q$), <code>local_patches.py CASE known</code> (patch scheme and outages, exact over $\mathbb Q$), <code>fast_big.py CASE</code> (scaled selection, identifiability modulo $p$, truth comparison, Table XII.1), <code>local_cert.py</code> (Table XII.2), <code>local_noise.py CASE</code> (Table XII.3), <code>assemble12.py</code>. All read the MATPOWER files of <code>part_XI/data/</code>.</p>
+<p><b>Sources.</b> PerfectJet chapter 7, target-relative observability (towre676-cloud/PerfectJet, <code>docs/chapters/07_semantics_and_observability.md</code>); G. Kirchhoff, Ann. Phys. Chem. 72 (1847); F. Dörfler, F. Bullo, IEEE Trans. Circuits Syst. I 60 (2013); MATPOWER and PEGASE sources as in Part XI.</p>
+</div>
+</main>

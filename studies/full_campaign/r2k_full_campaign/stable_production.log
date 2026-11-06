@@ -1,0 +1,21 @@
+exact anchors 100000 0.5
+exact anchors 100000 1.0
+exact anchors 100000 2.0
+exact anchors 100000 4.0
+exact anchors 100000 8.0
+exact anchors 100000 16.0
+exact anchors 1000000 0.5
+exact anchors 1000000 1.0
+exact anchors 1000000 2.0
+exact anchors 1000000 4.0
+exact anchors 1000000 8.0
+exact anchors 1000000 16.0
+exact anchors 10000000 0.5
+exact anchors 10000000 1.0
+exact anchors 10000000 2.0
+exact anchors 10000000 4.0
+exact anchors 10000000 8.0
+exact anchors 10000000 16.0
+height completed 100000
+height completed 1000000
+height completed 10000000

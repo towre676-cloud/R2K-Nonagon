@@ -1,0 +1,10 @@
+{
+  "audited_at_utc": "2026-10-30T01:32:35.473463+00:00",
+  "rows_verified": 480,
+  "cases_verified": 160,
+  "pilot_in_every64_query_budget": true,
+  "same_noisy_pilot_values_verified": true,
+  "features_recomputed": true,
+  "decisions_verified": true,
+  "scientific_hashes_unchanged": true
+}

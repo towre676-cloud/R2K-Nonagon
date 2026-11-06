@@ -1,0 +1,52 @@
+{
+  "budgets": [
+    1,
+    6,
+    12,
+    21
+  ],
+  "canonical_intervention_order": "baseline, loads1/2 at each hidden site, pair load1;21 scalar configurations",
+  "catalog_includes_healthy": true,
+  "comparison_contract": "Identical scalar error bounds and budgets. Reciprocal scans may move source and readout; fixed-port interventions keep both at site1 and move at most2 shunts. No timing/cost superiority claimed.",
+  "confirmation_fixtures": 20,
+  "confirmation_policy_changes": "none; code and protocol hashes retained",
+  "confirmation_seed": 903671,
+  "confirmation_specimens_per_fixture": 5,
+  "conventional_pool": "21 reciprocal compliance entries G_ij, 0<=i<=j<6; unit current at i and voltage at j",
+  "development_fixtures": 8,
+  "development_seed": 438771,
+  "dimension": 6,
+  "fault_types": [
+    "edge_weak_5",
+    "edge_weak_20",
+    "edge_open",
+    "unexpected_bridge",
+    "ground_up_20"
+  ],
+  "greedy_design": "Before any fault observation, repeatedly select query separating the largest number of still-unseparated catalog pairs by >2eta; ties follow fixed pool order. No test truth supplied.",
+  "intervention_pool": "baseline; single hidden-site loads 1/4,1,2,4; equal pair loads 1/4,1,2,4; 61 distinct configurations",
+  "load_calibration": "exact in this catalog comparison; a separate instrument campaign propagates shunt uncertainty",
+  "network_generator": "weighted six-cycle plus 0-3 extra chords, rational weights 1/4..2; all ground weights 1/4..1",
+  "noise_bounds": [
+    "0",
+    "1/1000000",
+    "1/100000",
+    "1/10000"
+  ],
+  "noise_oracle": "Choose an allowed reading maximizing current compatible-candidate count; tie choose largest absolute error, then smallest reading. Truth is used only by this acquisition oracle and scorer.",
+  "noise_units": "absolute normalized voltage/current compliance",
+  "physical_scale": {
+    "conductance_unit_S": "1/1000",
+    "current_A": "1/10000",
+    "voltage_error_V_per_normalized_eta": "1/10"
+  },
+  "policies": [
+    "unloaded_port",
+    "canonical_intervention",
+    "greedy_fixed_intervention",
+    "natural_reciprocal_scan",
+    "greedy_fixed_reciprocal_scan"
+  ],
+  "question": "Identify a single specified fault in a known six-node passive fixture using calibrated scalar measurements.",
+  "schema": "nonagon.engineering.fault_protocol.v1"
+}

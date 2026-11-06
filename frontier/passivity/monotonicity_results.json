@@ -1,0 +1,28 @@
+{
+  "scope": "exact analytic class diagnostic and capacity extension; no new measured-data fit",
+  "checks": [
+    {
+      "omega": "1/100",
+      "RC_derivative": "-20000800560008002000000/1000200030004000300020001",
+      "RL_derivative": "20000800560008002000000/1000200030004000300020001"
+    },
+    {
+      "omega": "1",
+      "RC_derivative": "-100036001/200040002",
+      "RL_derivative": "100036001/200040002"
+    },
+    {
+      "omega": "100",
+      "RC_derivative": "-100120001/50010000500",
+      "RL_derivative": "100120001/50010000500"
+    },
+    {
+      "omega": "10000",
+      "RC_derivative": "-40010002800100004/5001000150020001500100005",
+      "RL_derivative": "40010002800100004/5001000150020001500100005"
+    }
+  ],
+  "mixed_model_low_frequency_derivative": "-99996001/200040002",
+  "mixed_model_high_frequency_derivative": "299860003/100020001000",
+  "mixed_real_part_turn_allowed": true
+}

@@ -1,0 +1,31 @@
+{
+ "case": "case300",
+ "meta": {
+  "buses": 300,
+  "reference_bus": 7049,
+  "branches_in_service": 411,
+  "parallel_merged_edges": 409,
+  "negative_reactance_branches": 1,
+  "zero_reactance_branches": 0,
+  "out_of_service": 0
+ },
+ "hidden_nodes_n": 299,
+ "port_bus": 1,
+ "edges_true": 408,
+ "grounded_nodes": 1,
+ "unknown_structural_scalars": 409,
+ "readings": 44850,
+ "readings_formula_n(n+1)/2": 44850,
+ "configurations": 44850,
+ "exact_recovery_K": true,
+ "topology_precision": 1.0,
+ "topology_recall": 1.0,
+ "spot_checks_direct_solve": "24/24",
+ "max_digits_in_G": 292,
+ "seconds": {
+  "inverse": 5.734332323074341,
+  "forward": 6.746168851852417,
+  "reconstruct": 11.80190634727478,
+  "total": 26.0587477684021
+ }
+}

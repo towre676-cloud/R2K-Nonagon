@@ -1,0 +1,150 @@
+{
+  "schema": "nonagon.intervention.damped_twins.v1",
+  "source": "v7 part_VII/damped_twin.py/json",
+  "Q": [
+    [
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "12/13",
+      "5/13"
+    ],
+    [
+      "0",
+      "-5/13",
+      "12/13"
+    ]
+  ],
+  "M": [
+    [
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "path_K": [
+    [
+      "4",
+      "-1",
+      "0"
+    ],
+    [
+      "-1",
+      "3",
+      "-1"
+    ],
+    [
+      "0",
+      "-1",
+      "2"
+    ]
+  ],
+  "triangle_K": [
+    [
+      "4",
+      "-12/13",
+      "-5/13"
+    ],
+    [
+      "-12/13",
+      "602/169",
+      "-59/169"
+    ],
+    [
+      "-5/13",
+      "-59/169",
+      "243/169"
+    ]
+  ],
+  "path_C": [
+    [
+      "13579/25960",
+      "-17/55",
+      "0"
+    ],
+    [
+      "-17/55",
+      "24971/52140",
+      "-161/948"
+    ],
+    [
+      "0",
+      "-161/948",
+      "45967/96380"
+    ]
+  ],
+  "triangle_C": [
+    [
+      "13579/25960",
+      "-204/715",
+      "-17/143"
+    ],
+    [
+      "-204/715",
+      "107362213/179170420",
+      "-12779849/107502252"
+    ],
+    [
+      "-17/143",
+      "-12779849/107502252",
+      "191697359/537511260"
+    ]
+  ],
+  "exact_similarity": {
+    "QtQ_equals_I": true,
+    "Q_fixes_e1": true,
+    "triangle_K_equals_Qt_path_K_Q": true,
+    "triangle_C_equals_Qt_path_C_Q": true
+  },
+  "samples": [
+    {
+      "laplace_s": "0",
+      "common_baseline": "5/18",
+      "unit_node_2_grounding_path": "7/26",
+      "unit_node_2_grounding_triangle": "1088/3989",
+      "difference_path_minus_triangle": "-365/103714"
+    },
+    {
+      "laplace_s": "1/3",
+      "common_baseline": "11506505098968/44273017539559",
+      "unit_node_2_grounding_path": "1955886746616/7752172900679",
+      "unit_node_2_grounding_triangle": "614680158401208/2407477774046827",
+      "difference_path_minus_triangle": "-56352995512141790949832800/18663183958952813008966095533"
+    },
+    {
+      "laplace_s": "1",
+      "common_baseline": "319858215592/1632425980779",
+      "unit_node_2_grounding_path": "99538153768/516212934939",
+      "unit_node_2_grounding_triangle": "8086345461896/41706452153583",
+      "difference_path_minus_triangle": "-282628101665658585600/265795186075235279194277"
+    },
+    {
+      "laplace_s": "2",
+      "common_baseline": "301423980652/2624218487761",
+      "unit_node_2_grounding_path": "170285590196/1489174923629",
+      "unit_node_2_grounding_triangle": "14198205790312/124015999315513",
+      "difference_path_minus_triangle": "-25474386267834964571700/184681516309453188049956677"
+    },
+    {
+      "laplace_s": "11/2",
+      "common_baseline": "159629857613/5894036138079",
+      "unit_node_2_grounding_path": "10501867691792/387820153700253",
+      "unit_node_2_grounding_triangle": "1773122143560848/65477239350085557",
+      "difference_path_minus_triangle": "-237009465368072288294400/313498679365659685993156574641"
+    }
+  ],
+  "interpretation": "Similarity fixes the boundary port before interventions; the same physical node-2 load is not rotated with the hidden coordinates."
+}

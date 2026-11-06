@@ -1,0 +1,10 @@
+dependence point_selected 100000
+dependence point_selected 1000000
+dependence point_selected 10000000
+dependence point_selected 20000000
+dependence point_selected 50000000
+dependence fixed_span 100000
+dependence fixed_span 1000000
+dependence fixed_span 10000000
+dependence fixed_span 20000000
+dependence fixed_span 50000000

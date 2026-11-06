@@ -1,0 +1,7 @@
+configuration,source_pad,sense_pad,current_A,current_relative_error,conductance_scale_S,polarity_mode,readout_V,voltage_positive_V,voltage_negative_V,voltage_absolute_error_V,polarity_offset_change_bound_V,drift_absolute_error_V,shunt_A_pad,shunt_A_resistance_ohm,shunt_A_absolute_error_S,shunt_A_relay_series_ohm,shunt_A_relay_error_ohm,shunt_B_pad,shunt_B_resistance_ohm,shunt_B_absolute_error_S,shunt_B_relay_series_ohm,shunt_B_relay_error_ohm,settled,calibration_id,repeat_id,temperature_C
+baseline,node_1,node_1,1/1000,0,1/1000,reversed,,25009/90000,-24991/90000,1/1000000000000,0,0,,,,,,,,,,,true,synthetic-reference-calibration,1,23
+load_1,node_1,node_1,1/1000,0,1/1000,reversed,,35013/130000,-34987/130000,1/1000000000000,0,0,node_2,1000,0,0,0,,,,,,true,synthetic-reference-calibration,1,23
+load_2,node_1,node_1,1/1000,0,1/1000,reversed,,45017/170000,-44983/170000,1/1000000000000,0,0,node_2,500,0,0,0,,,,,,true,synthetic-reference-calibration,1,23
+load_3,node_1,node_1,1/1000,0,1/1000,reversed,,80029/290000,-79971/290000,1/1000000000000,0,0,node_3,1000,0,0,0,,,,,,true,synthetic-reference-calibration,1,23
+load_4,node_1,node_1,1/1000,0,1/1000,reversed,,2751/10000,-2749/10000,1/1000000000000,0,0,node_3,500,0,0,0,,,,,,true,synthetic-reference-calibration,1,23
+load_5,node_1,node_1,1/1000,0,1/1000,reversed,,110041/410000,-109959/410000,1/1000000000000,0,0,node_2,1000,0,0,0,node_3,1000,0,0,0,true,synthetic-reference-calibration,1,23

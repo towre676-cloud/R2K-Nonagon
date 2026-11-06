@@ -1,0 +1,6 @@
+{
+  "url": "https://deb.debian.org/debian/pool/main/n/ngspice/ngspice_39.3+ds-1_amd64.deb",
+  "sha256": "710bc58f7a708c0813e33e19c115dc076a3749c18bbe1379cd9dba24c42d32f9",
+  "bytes": 2351620,
+  "local_package": "/workspace/scratch/78a48cc5fade/part9_tests/tools/ngspice_39.3+ds-1_amd64.deb"
+}

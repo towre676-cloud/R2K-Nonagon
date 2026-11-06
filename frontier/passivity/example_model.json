@@ -1,0 +1,27 @@
+{
+  "Cinv": "0.3",
+  "L": "0.1",
+  "R0": "0.2",
+  "frequency_convention": "s=+i*2*pi*f_hz",
+  "model_id": "attack_base",
+  "representation": "positive_real_debye_v1",
+  "terms": [
+    {
+      "a": "0.4",
+      "tau": "0.5"
+    },
+    {
+      "a": "0",
+      "tau": "2"
+    }
+  ],
+  "units": {
+    "Cinv": "1/farad",
+    "L": "henry",
+    "R0": "ohm",
+    "Z": "ohm",
+    "a": "ohm",
+    "s": "1/second",
+    "tau": "second"
+  }
+}

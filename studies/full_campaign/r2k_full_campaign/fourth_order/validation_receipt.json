@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "symbolic_trace_identity": "PASS",
+  "periodic_exact_matches": 30,
+  "covariance_models": 3,
+  "covariance_entries": 108,
+  "max_entry_radius": 4.516265986187484e-09,
+  "all_covariance_congruence_Gershgorin_margins_positive": true,
+  "zeta_statistical_law_certified": false
+}

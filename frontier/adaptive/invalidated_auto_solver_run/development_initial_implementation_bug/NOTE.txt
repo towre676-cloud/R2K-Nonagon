@@ -1,0 +1,1 @@
+Initial development run exposed integer coverage-score array rejecting -inf. Converted coverage-score array to float before confirmation; no confirmation data opened. Initial failed receipts retained.

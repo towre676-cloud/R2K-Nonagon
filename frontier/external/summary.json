@@ -1,0 +1,503 @@
+{
+  "scope": "Protected ID07\u201354confirmation; onebatch/oneSoC/oneinstrument; separatecells, not independentlaboratories. Intervals unadjusted for multiplecontrasts and conditional on shared measurement calibration.",
+  "protocol_sha256": "db39d7009bc0cf56d4beca4d901d2728ee00436044b81bad708a260c18daf529",
+  "confirmation_receipt_sha256": "1fc667607a8c4b5d807bfbefb291ffa892c9d52bbc74db90ea83abbae49e526d",
+  "device_count": 48,
+  "case_count": 192,
+  "selected_result_count": 768,
+  "candidate_count": 4608,
+  "candidate_failures": 0,
+  "selected_failures": 0,
+  "per_task_method": [
+    {
+      "scenario": "interleaved",
+      "budget": 12,
+      "method": "loewner",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.0016345215704070305,
+      "mean_capped_error": 0.0016583055362704442,
+      "p90_capped_error": 0.002326671647242427,
+      "max_capped_error": 0.0028825262194774903
+    },
+    {
+      "scenario": "interleaved",
+      "budget": 12,
+      "method": "vector_fitting",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.0010541785723252,
+      "mean_capped_error": 0.001178099914960246,
+      "p90_capped_error": 0.0015933944395334556,
+      "max_capped_error": 0.003613360009381341
+    },
+    {
+      "scenario": "interleaved",
+      "budget": 12,
+      "method": "cubic_log_frequency",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.0008800568787123079,
+      "mean_capped_error": 0.0009037703939921045,
+      "p90_capped_error": 0.0010705199997542375,
+      "max_capped_error": 0.0017175368960498263
+    },
+    {
+      "scenario": "interleaved",
+      "budget": 12,
+      "method": "positive_real_relaxation",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.007135378673682983,
+      "mean_capped_error": 0.007057579485611538,
+      "p90_capped_error": 0.007529166697953266,
+      "max_capped_error": 0.007833560989841027
+    },
+    {
+      "scenario": "interleaved",
+      "budget": 20,
+      "method": "loewner",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.003874548137310266,
+      "mean_capped_error": 0.004092067546162533,
+      "p90_capped_error": 0.006286071115475387,
+      "max_capped_error": 0.007049201539704911
+    },
+    {
+      "scenario": "interleaved",
+      "budget": 20,
+      "method": "vector_fitting",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.0009552253107170156,
+      "mean_capped_error": 0.0010347933568388664,
+      "p90_capped_error": 0.00153180738769516,
+      "max_capped_error": 0.003552350846958246
+    },
+    {
+      "scenario": "interleaved",
+      "budget": 20,
+      "method": "cubic_log_frequency",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.0005647319336278039,
+      "mean_capped_error": 0.0005737773528474655,
+      "p90_capped_error": 0.0006979797996450507,
+      "max_capped_error": 0.001168497046905463
+    },
+    {
+      "scenario": "interleaved",
+      "budget": 20,
+      "method": "positive_real_relaxation",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.007433303439191996,
+      "mean_capped_error": 0.007357676813948236,
+      "p90_capped_error": 0.007879164482205898,
+      "max_capped_error": 0.008130051954235573
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 12,
+      "method": "loewner",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.0036465867906326443,
+      "mean_capped_error": 0.003910701899030369,
+      "p90_capped_error": 0.006264326237943004,
+      "max_capped_error": 0.01017352530499154
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 12,
+      "method": "vector_fitting",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.002871047048355655,
+      "mean_capped_error": 0.003338296041123055,
+      "p90_capped_error": 0.005438811337462141,
+      "max_capped_error": 0.00643098245195401
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 12,
+      "method": "cubic_log_frequency",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.008542970784677011,
+      "mean_capped_error": 0.008530857173074488,
+      "p90_capped_error": 0.009603987243527302,
+      "max_capped_error": 0.010639849606565069
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 12,
+      "method": "positive_real_relaxation",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.0056000729692475375,
+      "mean_capped_error": 0.005534479545812929,
+      "p90_capped_error": 0.00627481563578068,
+      "max_capped_error": 0.006759125764614677
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 20,
+      "method": "loewner",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.004208375269554419,
+      "mean_capped_error": 0.004919832985834094,
+      "p90_capped_error": 0.008003790098113748,
+      "max_capped_error": 0.011739953548421623
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 20,
+      "method": "vector_fitting",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.002252029408529202,
+      "mean_capped_error": 0.002941051653532536,
+      "p90_capped_error": 0.004799499292852576,
+      "max_capped_error": 0.014212714464816754
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 20,
+      "method": "cubic_log_frequency",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.0042377672620298006,
+      "mean_capped_error": 0.0043738806546560005,
+      "p90_capped_error": 0.0048737559752765214,
+      "max_capped_error": 0.008033077865619812
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 20,
+      "method": "positive_real_relaxation",
+      "device_count": 48,
+      "failures": 0,
+      "median_capped_error": 0.0042170519645825435,
+      "mean_capped_error": 0.004233126738446428,
+      "p90_capped_error": 0.004807405048461704,
+      "max_capped_error": 0.0066452092998738515
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "scenario": "interleaved",
+      "budget": 12,
+      "numerator": "positive_real_relaxation",
+      "denominator": "loewner",
+      "n_devices": 48,
+      "analysis": "mandatory all-device capped-failure sensitivity",
+      "geometric_error_ratio": 4.434614363142562,
+      "ratio_bootstrap_95_unadjusted": [
+        4.070637980905414,
+        4.839243379971173
+      ],
+      "mean_error_difference": 0.005399273949341095,
+      "difference_bootstrap_95_unadjusted": [
+        0.005208756049445696,
+        0.0055783009584663016
+      ],
+      "nnls_win_count": 0,
+      "baseline_win_count": 48,
+      "common_success_devices": 48,
+      "common_success_geometric_ratio": 4.434614363142562
+    },
+    {
+      "scenario": "interleaved",
+      "budget": 12,
+      "numerator": "positive_real_relaxation",
+      "denominator": "vector_fitting",
+      "n_devices": 48,
+      "analysis": "mandatory all-device capped-failure sensitivity",
+      "geometric_error_ratio": 6.308197760168038,
+      "ratio_bootstrap_95_unadjusted": [
+        5.781441003975286,
+        6.860444750393219
+      ],
+      "mean_error_difference": 0.005879479570651293,
+      "difference_bootstrap_95_unadjusted": [
+        0.005709109146024551,
+        0.00603814187905846
+      ],
+      "nnls_win_count": 0,
+      "baseline_win_count": 48,
+      "common_success_devices": 48,
+      "common_success_geometric_ratio": 6.308197760168038
+    },
+    {
+      "scenario": "interleaved",
+      "budget": 12,
+      "numerator": "positive_real_relaxation",
+      "denominator": "cubic_log_frequency",
+      "n_devices": 48,
+      "analysis": "mandatory all-device capped-failure sensitivity",
+      "geometric_error_ratio": 7.905990010735504,
+      "ratio_bootstrap_95_unadjusted": [
+        7.529857172629715,
+        8.261634391419856
+      ],
+      "mean_error_difference": 0.006153809091619435,
+      "difference_bootstrap_95_unadjusted": [
+        0.006025981408166842,
+        0.006273581953503891
+      ],
+      "nnls_win_count": 0,
+      "baseline_win_count": 48,
+      "common_success_devices": 48,
+      "common_success_geometric_ratio": 7.905990010735504
+    },
+    {
+      "scenario": "interleaved",
+      "budget": 20,
+      "numerator": "positive_real_relaxation",
+      "denominator": "loewner",
+      "n_devices": 48,
+      "analysis": "mandatory all-device capped-failure sensitivity",
+      "geometric_error_ratio": 1.9316152851945583,
+      "ratio_bootstrap_95_unadjusted": [
+        1.724015837359809,
+        2.171837198562623
+      ],
+      "mean_error_difference": 0.003265609267785703,
+      "difference_bootstrap_95_unadjusted": [
+        0.0028105733808951303,
+        0.0037167530997523094
+      ],
+      "nnls_win_count": 0,
+      "baseline_win_count": 48,
+      "common_success_devices": 48,
+      "common_success_geometric_ratio": 1.9316152851945583
+    },
+    {
+      "scenario": "interleaved",
+      "budget": 20,
+      "numerator": "positive_real_relaxation",
+      "denominator": "vector_fitting",
+      "n_devices": 48,
+      "analysis": "mandatory all-device capped-failure sensitivity",
+      "geometric_error_ratio": 7.637918058784834,
+      "ratio_bootstrap_95_unadjusted": [
+        6.886963347306707,
+        8.44596775094397
+      ],
+      "mean_error_difference": 0.00632288345710937,
+      "difference_bootstrap_95_unadjusted": [
+        0.006147728128376076,
+        0.006487561522408931
+      ],
+      "nnls_win_count": 0,
+      "baseline_win_count": 48,
+      "common_success_devices": 48,
+      "common_success_geometric_ratio": 7.637918058784834
+    },
+    {
+      "scenario": "interleaved",
+      "budget": 20,
+      "numerator": "positive_real_relaxation",
+      "denominator": "cubic_log_frequency",
+      "n_devices": 48,
+      "analysis": "mandatory all-device capped-failure sensitivity",
+      "geometric_error_ratio": 13.221079829970272,
+      "ratio_bootstrap_95_unadjusted": [
+        12.31768391131506,
+        14.139550284858835
+      ],
+      "mean_error_difference": 0.006783899461100771,
+      "difference_bootstrap_95_unadjusted": [
+        0.006658730050524706,
+        0.006902205426198285
+      ],
+      "nnls_win_count": 0,
+      "baseline_win_count": 48,
+      "common_success_devices": 48,
+      "common_success_geometric_ratio": 13.221079829970272
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 12,
+      "numerator": "positive_real_relaxation",
+      "denominator": "loewner",
+      "n_devices": 48,
+      "analysis": "mandatory all-device capped-failure sensitivity",
+      "geometric_error_ratio": 1.6196472192193772,
+      "ratio_bootstrap_95_unadjusted": [
+        1.3855127383641428,
+        1.9088531608194752
+      ],
+      "mean_error_difference": 0.0016237776467825616,
+      "difference_bootstrap_95_unadjusted": [
+        0.0010280332002869487,
+        0.002190651369541096
+      ],
+      "nnls_win_count": 9,
+      "baseline_win_count": 39,
+      "common_success_devices": 48,
+      "common_success_geometric_ratio": 1.6196472192193772
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 12,
+      "numerator": "positive_real_relaxation",
+      "denominator": "vector_fitting",
+      "n_devices": 48,
+      "analysis": "mandatory all-device capped-failure sensitivity",
+      "geometric_error_ratio": 1.7761687358596374,
+      "ratio_bootstrap_95_unadjusted": [
+        1.5883040260751655,
+        1.9869572711052166
+      ],
+      "mean_error_difference": 0.0021961835046898754,
+      "difference_bootstrap_95_unadjusted": [
+        0.0017989219138970754,
+        0.0025877664858227458
+      ],
+      "nnls_win_count": 4,
+      "baseline_win_count": 44,
+      "common_success_devices": 48,
+      "common_success_geometric_ratio": 1.7761687358596374
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 12,
+      "numerator": "positive_real_relaxation",
+      "denominator": "cubic_log_frequency",
+      "n_devices": 48,
+      "analysis": "mandatory all-device capped-failure sensitivity",
+      "geometric_error_ratio": 0.6474155490467465,
+      "ratio_bootstrap_95_unadjusted": [
+        0.6211041752230788,
+        0.674746351401475
+      ],
+      "mean_error_difference": -0.002996377627261558,
+      "difference_bootstrap_95_unadjusted": [
+        -0.0032796391223277343,
+        -0.002709235916174914
+      ],
+      "nnls_win_count": 48,
+      "baseline_win_count": 0,
+      "common_success_devices": 48,
+      "common_success_geometric_ratio": 0.6474155490467465
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 20,
+      "numerator": "positive_real_relaxation",
+      "denominator": "loewner",
+      "n_devices": 48,
+      "analysis": "mandatory all-device capped-failure sensitivity",
+      "geometric_error_ratio": 0.9590189128643501,
+      "ratio_bootstrap_95_unadjusted": [
+        0.8305820303920075,
+        1.0993569719579013
+      ],
+      "mean_error_difference": -0.000686706247387666,
+      "difference_bootstrap_95_unadjusted": [
+        -0.0014022455659483065,
+        -4.523094195208196e-05
+      ],
+      "nnls_win_count": 28,
+      "baseline_win_count": 20,
+      "common_success_devices": 48,
+      "common_success_geometric_ratio": 0.9590189128643501
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 20,
+      "numerator": "positive_real_relaxation",
+      "denominator": "vector_fitting",
+      "n_devices": 48,
+      "analysis": "mandatory all-device capped-failure sensitivity",
+      "geometric_error_ratio": 1.7108304982925173,
+      "ratio_bootstrap_95_unadjusted": [
+        1.4427241239465074,
+        2.017162071029906
+      ],
+      "mean_error_difference": 0.0012920750849138916,
+      "difference_bootstrap_95_unadjusted": [
+        0.0006027988988008988,
+        0.0018347206508906831
+      ],
+      "nnls_win_count": 9,
+      "baseline_win_count": 39,
+      "common_success_devices": 48,
+      "common_success_geometric_ratio": 1.7108304982925173
+    },
+    {
+      "scenario": "missing_band",
+      "budget": 20,
+      "numerator": "positive_real_relaxation",
+      "denominator": "cubic_log_frequency",
+      "n_devices": 48,
+      "analysis": "mandatory all-device capped-failure sensitivity",
+      "geometric_error_ratio": 0.9686029895567919,
+      "ratio_bootstrap_95_unadjusted": [
+        0.9270772285901269,
+        1.009627565554581
+      ],
+      "mean_error_difference": -0.00014075391620957286,
+      "difference_bootstrap_95_unadjusted": [
+        -0.00033111187419287134,
+        3.7234796973490054e-05
+      ],
+      "nnls_win_count": 25,
+      "baseline_win_count": 23,
+      "common_success_devices": 48,
+      "common_success_geometric_ratio": 0.9686029895567919
+    }
+  ],
+  "overall_device_clustered_descriptive": [
+    {
+      "numerator": "positive_real_relaxation",
+      "denominator": "loewner",
+      "n_devices": 48,
+      "tasks_per_device": 4,
+      "geometric_error_ratio": 1.9098797481135206,
+      "bootstrap_95_unadjusted": [
+        1.745560945393294,
+        2.091213827678842
+      ],
+      "label": "Descriptive aggregate across all4 fixed tasks, clustered by device; no task cherry-picking."
+    },
+    {
+      "numerator": "positive_real_relaxation",
+      "denominator": "vector_fitting",
+      "n_devices": 48,
+      "tasks_per_device": 4,
+      "geometric_error_ratio": 3.478506946171702,
+      "bootstrap_95_unadjusted": [
+        3.135660163658326,
+        3.848653693424773
+      ],
+      "label": "Descriptive aggregate across all4 fixed tasks, clustered by device; no task cherry-picking."
+    },
+    {
+      "numerator": "positive_real_relaxation",
+      "denominator": "cubic_log_frequency",
+      "n_devices": 48,
+      "tasks_per_device": 4,
+      "geometric_error_ratio": 2.8453652937406053,
+      "bootstrap_95_unadjusted": [
+        2.7424871372488187,
+        2.9478647170415404
+      ],
+      "label": "Descriptive aggregate across all4 fixed tasks, clustered by device; no task cherry-picking."
+    }
+  ],
+  "candidate_warning_counts": {
+    "Vector Fitting: The pole relocation process stopped after reaching the maximum number of iterations (N_max = 100). The results did not converge properly.": 37,
+    "Vector Fitting: The pole relocation process barely converged to tolerance. It took the max. number of iterations (N_max = 100). The results might not have converged properly.": 1
+  },
+  "limitations": [
+    "Prediction targets stored measuredpoints, not noiseless physicaltruth.",
+    "NNLS is existing positive-real relaxationprior, not proof of uniqueNonagon advantage.",
+    "The model can be certified passive by construction; the physicalbattery outside measuredfrequencies cannot.",
+    "No tuning or hyperparametergrid edits fromconfirmationoutcomes."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+ "case": "case300",
+ "n": 299,
+ "ports_needed": 7,
+ "port_buses": [
+  9003,
+  7166,
+  250,
+  1190,
+  191,
+  137,
+  188
+ ],
+ "history": [
+  {
+   "ports": 5,
+   "readings": 1510,
+   "rank": 406,
+   "unknowns": 409
+  },
+  {
+   "ports": 6,
+   "readings": 1815,
+   "rank": 406,
+   "unknowns": 409
+  },
+  {
+   "ports": 7,
+   "readings": 2121,
+   "rank": 409,
+   "unknowns": 409
+  }
+ ],
+ "seconds": 1.7103118896484375
+}

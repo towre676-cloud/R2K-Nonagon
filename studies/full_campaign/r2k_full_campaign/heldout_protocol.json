@@ -1,0 +1,35 @@
+{
+  "frozen_before_acquisition_complete": true,
+  "zero_start_indices": [
+    20000000,
+    50000000
+  ],
+  "zeros_per_window": 20000,
+  "lengths": [
+    0.5,
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "model": "same infinite-product BK formula; no fitted offset or new term",
+  "height_aggregation": "equal mean of production-window ordinate quantiles 0.1, 0.5, 0.9",
+  "empirical": "exact continuous anchors for stored dyadic smooth unfolding, plus propagated ordinate/unfolding bound",
+  "primary_diagnostic": "residual divided by nominal ten-block standard error; descriptive, not a calibrated simultaneous hypothesis test",
+  "numerical_target": "full model plus empirical deterministic bound below 1e-6",
+  "report_all_lengths_and_both_windows": true,
+  "no_parameter_fitting": true,
+  "secondary_uncertainty_diagnostic": {
+    "method": "overlapping batch means of the variance influence, integrate all batch origins",
+    "batch_lengths": [
+      250,
+      500,
+      1000,
+      2000,
+      4000
+    ],
+    "status": "descriptive sensitivity, not a calibrated simultaneous test"
+  },
+  "unfolding_evaluation": "same smooth unfolding, evaluated in Arb and centered before binary64 rounding; ordinate propagation bounds retained"
+}

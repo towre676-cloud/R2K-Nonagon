@@ -1,0 +1,81 @@
+<header class="title">
+  <div class="kicker">Monograph · Rank-Two Kernel Calculus · v12.0 · Part XII</div>
+  <h1>The Rank-Two Nonagon <em>XII</em></h1>
+  <div class="sub">Target-relative disclosure: when the one-line diagram is known, a grid's weights and outages are recovered from about two readings per unknown, with an exact identifiability proof at 2,868 buses</div>
+  <div class="byline">C · Independent research · New Britain, Connecticut · 30 October 2026</div>
+</header>
+
+<main>
+<div class="abstract">
+<p><span class="h">Abstract.</span> Part XI disclosed standard grids from one port with $n(n+1)/2$ readings, which is dimension-minimal for an unknown dense network and wasteful for a sparse grid with $O(n)$ unknowns. Part XII changes the target. A utility knows its one-line diagram: which branches exist and where the grounds are. What it does not know is the present value of every susceptance, or which lines are out. With the support fixed, the observability criterion of PerfectJet chapter 7 applies directly: a target is recoverable exactly when the observation kernel lies in its kernel, and repeated readings reduce noise without repairing a missing direction. Single-node interventions give the whole first column of $G=K^{-1}$. Every further column entry $G_{js}$ comes from one pair reading. Each equation $(Kg_s)_i=\delta_{is}$ is linear in the unknown weights. <strong>Result.</strong> IEEE 118 is recovered exactly over $\mathbb Q$ from 379 readings instead of 6,903. Three-line outages are detected exactly as zero weights against the nominal support, in all five scenarios. The same scheme proves exact identifiability, by full rank modulo the prime $2^{31}-1$, of IEEE 300 from 972 readings (46 times fewer than Part XI), PEGASE 1354 from 4,365 (210 times fewer) and PEGASE 2869 from 9,517 (432 times fewer). That is 2.1–2.6 readings per unknown in every case, and the recovered weights equal the truth modulo $p$. <strong>A structural lower bound.</strong> If a bridge's far side contains no ground, no reading sourced on the near side can see that bridge. Every such block therefore needs a source of its own. IEEE 118 has 9 such bridges. <strong>Robustness.</strong> Under a deterministic reading-error bound, the 379-reading scheme certifies every IEEE 118 branch at $10^{-9}G_{00}$ with tighter enclosures than the 6,903-reading protocol. Under Gaussian noise at $10^{-6}$ it is less accurate per branch, because it averages over 18 times fewer readings. Both behaviours are reported.</p>
+</div>
+
+<h2 id="h1"><span class="sn">§XII.1</span>The linear system a known diagram makes</h2>
+
+<p>Write $K=\sum_{e=(a,c)}w_e\,b_eb_e^{\mathsf T}+\sum_{i\in\Gamma}g_ie_ie_i^{\mathsf T}$, where $b_e=e_a-e_c$, the support $E$ of branches and $\Gamma$ of grounds is known, and the values $w_e,g_i$ are not. For any source $s$, the column $g_s=Ge_s$ satisfies $Kg_s=e_s$. Row $i$ of this identity reads
+$$\sum_{e\ni i}w_e\,\bigl(G_{is}-G_{e(i)\,s}\bigr)+g_i\,G_{is}=\delta_{is},$$
+where $e(i)$ is the other endpoint of $e$. The equation is linear in the unknowns, and it needs only the entries $G_{js}$ for $j$ in the closed neighbourhood of $i$.</p>
+
+<p>The baseline and two strengths at each hidden node, $2n-1$ readings, give every $G_{0j}$ and every $G_{jj}$ (Lemma VIII.1.1). A pair reading at $(s,j)$ gives $G_{sj}$ through the Woodbury identity and its physical root. A <em>patch</em> at source $s$ of radius $R$ uses the rows $i$ within distance $R$ of $s$ and costs one pair reading for each node within distance $R+1$, other than the port and $s$. The selection is greedy. It starts from the full port column, adds single-row patches in order of increasing degree whenever they raise the rank, and then radius-1 patches. Ranks are computed modulo $p=2^{31}-1$ from $K^{-1}\bmod p$. Full rank modulo $p$ implies full rank over $\mathbb Q$, so it <em>proves</em> that the selected readings determine the weights uniquely.</p>
+
+<div class="thm"><div class="hd">Proposition XII.1.1 <i>(target-relative identifiability)</i> <span class="ep pr">proved</span></div>
+<p>Let $A$ be the matrix of the selected rows. A linear functional $T$ of the unknown weights, such as one branch's susceptance or a sum over a corridor, is determined by the readings if and only if $T$ lies in the row space of $A$, that is, $\ker A\subseteq\ker T$. All weights are determined if and only if $\operatorname{rank}A=|E|+|\Gamma|$. In that case at least $|E|+|\Gamma|$ readings are needed and the explicit scheme uses at most a constant multiple of that number. Adding a reading that duplicates an existing row reduces noise but never changes the identifiable set.</p></div>
+
+<p>The proposition is PerfectJet chapter 7's criterion, specialized to the intervention protocol. The port column alone shows how far a single sweep reaches. With grounds unknown at every bus, it determines 17 of the 290 unknowns of IEEE 118, all of them grounds, and no branch. With the ground support known, it determines nothing individually, although its rank is 100. Every branch value needs readings sourced away from the port.</p>
+
+<h2 id="h2"><span class="sn">§XII.2</span>The bridge-visibility bound</h2>
+
+<div class="thm"><div class="hd">Lemma XII.2.1 <i>(blind bridges)</i> <span class="ep pr">proved</span></div>
+<p>Let $e=(a,c)$ be a bridge, and let $F$ be the side of $e$ not containing the port. If no node of $F$ is grounded, then $G_{as}=G_{cs}$ for every source $s\notin F$. Hence $w_e$ has coefficient zero in every equation from such a source, and every scheme that determines $w_e$ must include a source inside $F$.</p></div>
+
+<p><em>Proof.</em> $G_{\cdot s}$ is the potential produced by unit current injected at $s$ with all grounds as sinks. Kirchhoff's current law on $F$ forces zero net current across the cut $\{e\}$, because $F$ has no sink and no source. So no current flows in $e$, and its two endpoints are at equal potential. $\square$</p>
+
+<p>IEEE 118 has 9 bridges, and all 9 have ungrounded far sides: radial spurs and generator stubs such as buses 10, 73, 87, 111, 112, 116 and 117. Each costs at least one dedicated source. The greedy selection places one inside each, at a cost of 1–2 pair readings apiece. Blind bridges are why a scheme sourced only near the port cannot work on real grids, whatever its size. They are also why the full columns tried first were wasteful. A full column of IEEE 118 costs 115 pair readings, yet past the second column each one raised the rank by about one.</p>
+
+<h2 id="h3"><span class="sn">§XII.3</span>Exact recovery and outage detection</h2>
+
+<div class="tw"><table>
+<caption>Table XII.1. <span>Known-support disclosure. Unknowns are all branch susceptances and the grounds on the known ground support. "Identifiable" is full rank modulo $2^{31}-1$, which implies full rank over $\mathbb Q$. "Equals truth" compares the solution of the selected system with the true weights, over $\mathbb Q$ for IEEE 118 and modulo $p$ elsewhere.</span></caption>
+<thead><tr><th>case</th><th>unknowns</th><th>readings</th><th>Part XI readings</th><th>fewer by</th><th>readings per unknown</th><th>identifiable</th><th>equals truth</th><th>time</th></tr></thead>
+<tbody>
+<!--SCALEROWS-->
+</tbody></table></div>
+
+<div class="thm"><div class="hd">Result XII.3.1 <i>(exact disclosure and outage detection at a fraction of the cost)</i> <span class="ep pr">proved · exact</span></div>
+<p>With the one-line diagram known, IEEE 118's 173 susceptances and 6 grounds are recovered exactly over $\mathbb Q$ from 379 readings. Every equation of the selected system is satisfied exactly by the recovered values. In five outage scenarios, each removing three random non-bridge lines, the solution against the <em>nominal</em> support returns exactly zero for precisely the three removed lines and the exact value for every other branch: two scenarios with the patch scheme, three with the column scheme. Identifiability is proved, and the recovered weights agree with the truth modulo $p$, for IEEE 300, PEGASE 1354 and PEGASE 2869. The ratio to the information-theoretic minimum of one reading per unknown stays between 2.1 and 2.6 from 117 to 2,868 buses.</p></div>
+
+<p>The scheme is fast because it never inverts the reconstructed $G$. The heaviest step for PEGASE 2869 is one modular inverse of $K$, taking 25 s, which is needed only for the identifiability proof, never for recovery from data. The recovery itself is a sparse linear solve.</p>
+
+<h2 id="h4"><span class="sn">§XII.4</span>Robustness</h2>
+
+<p>The same deterministic reading-error model as Part XI §3 is used. Every one of the 379 readings is a ball of radius $\varepsilon$. $G_{0j}$, $G_{jj}$ and the needed $G_{sj}$ are evaluated in ball arithmetic, and the selected square system is solved by an interval linear solve.</p>
+
+<div class="tw"><table>
+<caption>Table XII.2. <span>Interval certificates on IEEE 118: the 379-reading known-support scheme against the 6,903-reading full protocol of Table XI.3.</span></caption>
+<thead><tr><th>$\varepsilon/G_{00}$</th><th>known-support: branches certified present</th><th>known-support: max rel. radius</th><th>full protocol: branches certified present</th><th>full protocol: max rel. radius</th></tr></thead>
+<tbody>
+<!--CERTROWS-->
+</tbody></table></div>
+
+<p>Under a deterministic error bound, the known-support scheme is <em>more</em> robust than the full protocol while using 18 times fewer readings. Its enclosures are about three times tighter at every level, and at $10^{-9}G_{00}$ it certifies all 173 branches, where the full protocol certifies 172. The reason is the step it avoids: inverting a dense, noisy $G$ back to $K$ amplifies error by the local stiffness, the factor $K_{vv}$ found in Part XI §4. Under independent Gaussian noise the comparison reverses at the highest level, because the full protocol averages over many more readings.</p>
+
+<div class="tw"><table>
+<caption>Table XII.3. <span>Known-support scheme under Gaussian reading noise (binary64), same noise model as Table XI.4. Branches "above gap" are those whose recovered susceptance exceeds half the smallest true one.</span></caption>
+<thead><tr><th>case</th><th>readings</th><th>$\sigma$</th><th>median rel. error</th><th>within 1%</th><th>above gap</th></tr></thead>
+<tbody>
+<!--NOISEROWS-->
+</tbody></table></div>
+
+<p>At $\sigma=10^{-6}$ on IEEE 118, the known-support scheme places 58% of branches within 1%, against 88% for the full protocol. With the reading count equalized by repetition, the per-branch error would fall by about $\sqrt{18}\approx4.3$. Proposition XII.1.1 says repetition is the right way to spend a larger budget. The noiseless PEGASE 2869 row shows a separate effect: 98% within 1% at $\sigma=0$. A few selected rows are nearly dependent in binary64, so at that scale the exact identifiability proof should be paired with ball arithmetic or the certified native execution of DynaComp, not plain floating point.</p>
+
+<h2 id="h5"><span class="sn">§XII.5</span>What changes for an operator</h2>
+
+<p>Part XI answered "can one port reveal an unknown grid" with an $n^2/2$ cost. Part XII answers the question an operator actually has: given the diagram, are the parameters what they should be, and is anything out? The cost is about $2.4$ readings per unknown, at every scale tested. At that cost exact identifiability is provable for a 2,868-bus grid in under a minute, and an outage shows up as an exact zero rather than a statistical anomaly. Blind bridges set a hard floor on where interventions must be possible. Every spur without its own ground needs a source inside it. That is a statement about where to install calibrated shunts, and it holds regardless of the algorithm used.</p>
+
+<p>Two limits remain. The model is the DC susceptance network, so line resistance, charging and transformer taps are outside it, as in Part XI. The readings are simulated. The first measured test of this scheme belongs on hardware with switchable calibrated shunts, and the blind-bridge lemma says where they must go.</p>
+
+<div class="colophon">
+<p><b>Reproducibility.</b> <code>part_XII/sparse_exact.py CASE [all|known]</code> (column scheme, exact over $\mathbb Q$), <code>local_patches.py CASE known</code> (patch scheme and outages, exact over $\mathbb Q$), <code>fast_big.py CASE</code> (scaled selection, identifiability modulo $p$, truth comparison, Table XII.1), <code>local_cert.py</code> (Table XII.2), <code>local_noise.py CASE</code> (Table XII.3), <code>assemble12.py</code>. All read the MATPOWER files of <code>part_XI/data/</code>.</p>
+<p><b>Sources.</b> PerfectJet chapter 7, target-relative observability (towre676-cloud/PerfectJet, <code>docs/chapters/07_semantics_and_observability.md</code>); G. Kirchhoff, Ann. Phys. Chem. 72 (1847); F. Dörfler, F. Bullo, IEEE Trans. Circuits Syst. I 60 (2013); MATPOWER and PEGASE sources as in Part XI.</p>
+</div>
+</main>

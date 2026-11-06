@@ -1,0 +1,54 @@
+{
+  "arithmetic": "exact rational",
+  "grounding_networks": 12,
+  "grounding_submodularity_inequalities": 333,
+  "minimum_exact_gap": "4096878240/87069523822867",
+  "edge_counterexample": {
+    "K": [
+      [
+        "13",
+        "-6",
+        "-6"
+      ],
+      [
+        "-6",
+        "13",
+        "-5"
+      ],
+      [
+        "-6",
+        "-5",
+        "12"
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "A": [],
+    "e": [
+      0,
+      2
+    ],
+    "f": [
+      1,
+      2
+    ],
+    "submodularity_gap_for_reduction": "-6442/86787687",
+    "gap_float": -7.422711933779269e-05,
+    "h_A": "131/443",
+    "h_Ae": "144/491",
+    "h_Af": "73/247",
+    "h_Aef": "80/273"
+  }
+}

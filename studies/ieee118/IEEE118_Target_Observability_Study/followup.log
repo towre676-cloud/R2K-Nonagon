@@ -1,0 +1,9 @@
+qr_norm 0
+qr_norm 1e-07
+qr_norm 1e-05
+target_a 0
+target_a 1e-07
+target_a 1e-05
+target_correlated 0
+target_correlated 1e-07
+target_correlated 1e-05

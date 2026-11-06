@@ -1,0 +1,23 @@
+{
+ "table": {
+  "X>0|noreal|unique": 462,
+  "X<0|noreal|multi": 64,
+  "X>0|realpoles|multi": 18,
+  "X<0|realpoles|multi": 342,
+  "X>0|noreal|multi": 2
+ },
+ "unexplained": [
+  {
+   "X": 5.04321222114841,
+   "left": 0,
+   "right": 2,
+   "n_cand": 3
+  },
+  {
+   "X": 4.856006251744094,
+   "left": 0,
+   "right": 2,
+   "n_cand": 3
+  }
+ ]
+}

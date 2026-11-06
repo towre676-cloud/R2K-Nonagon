@@ -1,0 +1,35 @@
+{
+  "replication": {
+    "cases": 18,
+    "max_absolute_primary_nominal_z": 1.4714948986319054,
+    "max_model_radius": 1.760000006845175e-08,
+    "max_empirical_ordinate_error": 6.098851753274678e-11,
+    "max_combined_deterministic_radius": 1.7627655333159876e-08,
+    "all_deterministic_targets_pass": true,
+    "max_absolute_anchor_grid_shift": 7.439126182495759e-05,
+    "max_Simpson_vs_finite_error": 3.662529390819218e-09,
+    "max_GUE_Simpson_error": 2.8606454194174315e-09
+  },
+  "held_out": {
+    "cases": 12,
+    "max_absolute_primary_nominal_z": 2.4419421499595426,
+    "max_model_radius": 5.480000016266917e-09,
+    "max_empirical_ordinate_error": 1.0915167328658684e-10,
+    "max_combined_deterministic_radius": 5.579151702603888e-09,
+    "all_deterministic_targets_pass": true,
+    "max_absolute_anchor_grid_shift": 3.628535795585641e-05,
+    "max_Simpson_vs_finite_error": 2.8258947077929574e-09,
+    "max_GUE_Simpson_error": 2.8606454194174315e-09
+  },
+  "all": {
+    "cases": 30,
+    "max_absolute_primary_nominal_z": 2.4419421499595426,
+    "max_model_radius": 1.760000006845175e-08,
+    "max_empirical_ordinate_error": 1.0915167328658684e-10,
+    "max_combined_deterministic_radius": 1.7627655333159876e-08,
+    "all_deterministic_targets_pass": true,
+    "max_absolute_anchor_grid_shift": 7.439126182495759e-05,
+    "max_Simpson_vs_finite_error": 3.662529390819218e-09,
+    "max_GUE_Simpson_error": 2.8606454194174315e-09
+  }
+}

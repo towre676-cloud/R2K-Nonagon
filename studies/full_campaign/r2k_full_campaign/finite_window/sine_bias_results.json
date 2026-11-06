@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "independent_controls": [
+    {
+      "S": 3,
+      "L": "1/2",
+      "closed_form": "[0.0124610834546775443737711061759718331355682060 +/- 7.62e-48]",
+      "independent_Fourier_enclosure": "[0.0124610877353978022326103461031394894493157985 +/- 8.56e-9]",
+      "status": "PASS"
+    },
+    {
+      "S": 5,
+      "L": "1",
+      "closed_form": "[0.0181878218114582203215353531194927846610882627 +/- 3.67e-47]",
+      "independent_Fourier_enclosure": "[0.0181878234826669072580813495594264788878202105 +/- 3.35e-9]",
+      "status": "PASS"
+    },
+    {
+      "S": 10,
+      "L": "2",
+      "closed_form": "[0.0182305378056394854199428577617419428022443950 +/- 2.98e-48]",
+      "independent_Fourier_enclosure": "[0.0182305382233829508781585522709957239406787888 +/- 8.36e-10]",
+      "status": "PASS"
+    }
+  ],
+  "production_fixed_span_benchmarks": [
+    {
+      "span": 18000,
+      "L": 0.5,
+      "expected_downward_bias_ball": "[9.34962160739232625836677978753949153548336569e-10 +/- 1.05e-53]",
+      "elementary_upper_bound": "[2.38458710979222592609515531158985626616106668e-9 +/- 4.47e-54]"
+    },
+    {
+      "span": 18000,
+      "L": 1.0,
+      "expected_downward_bias_ball": "[3.53073058870485797163833875438294917803157918e-9 +/- 1.08e-53]",
+      "elementary_upper_bound": "[9.23666943987633727340403426829010528546281601e-9 +/- 1.91e-54]"
+    },
+    {
+      "span": 18000,
+      "L": 2.0,
+      "expected_downward_bias_ball": "[1.32656398819021877840403313376347379176129549e-8 +/- 5.11e-53]",
+      "elementary_upper_bound": "[3.52478650018482343464651393052397575928520104e-8 +/- 1.24e-53]"
+    },
+    {
+      "span": 18000,
+      "L": 4.0,
+      "expected_downward_bias_ball": "[4.96122779247770925596314473177878975893317631e-8 +/- 1.29e-53]",
+      "elementary_upper_bound": "[1.34113957980695638362202761110833719972182867e-7 +/- 3.16e-54]"
+    },
+    {
+      "span": 18000,
+      "L": 8.0,
+      "expected_downward_bias_ball": "[1.84655891627854460796604721432733434531428755e-7 +/- 3.13e-53]",
+      "elementary_upper_bound": "[5.08947137688519892565257614346413193245578371e-7 +/- 2.54e-52]"
+    },
+    {
+      "span": 18000,
+      "L": 16.0,
+      "expected_downward_bias_ball": "[6.83663596153866480490754891618808312783226917e-7 +/- 5.03e-52]",
+      "elementary_upper_bound": "[1.92638147627105149369668732456192965180356441e-6 +/- 1.60e-51]"
+    }
+  ],
+  "scope": "stationary unit-intensity sine DPP in a fixed external interval; E(anchor variance)=population number variance minus this nonnegative quantity"
+}

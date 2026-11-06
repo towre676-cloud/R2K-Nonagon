@@ -1,6 +1,10 @@
 # Nonagon v15.0 — without switching (Part XV) on v14.0
 
-Open **nonagon_X.html**: the unified monograph now has 11,286 words of prose,
+Open **nonagon_XV.html** for the canonical v15 monograph.
+See [REPRODUCIBILITY_ASSESSMENT_2026-11-06.md](REPRODUCIBILITY_ASSESSMENT_2026-11-06.md)
+for a fresh, commit-pinned audit and remaining replay limits.
+
+The historical Part X guide below describes **nonagon_X.html**:  the unified monograph now has 11,286 words of prose,
 117 numbered display equations, four scientific figures, an interactive edge
 experiment, and embedded executable source/results. It works offline.
 
@@ -57,7 +61,13 @@ v13.1 checks ("making sure"): `verify13.py` (dense FLINT, p = 10^9+7) and `verif
 | case_ACTIVSg25k | 25,000 | 24,999 | 30,110 | 80,776 | 3,869× | 503 | yes | yes | 308 s |
 | case_ACTIVSg70k | 70,000 | 69,999 | 83,318 | 224,332 | 10,921× | 1365 | yes | yes | 2,824 s |
 
-Build: `gcc -O2 -march=native -o tomo tomo.c`; run from a working copy where `p11/` points at `part_XI/` (data now also in `part_XIII/data/` with SHA256SUMS) and PerfectJet's `src/` is on the path (towre676-cloud/PerfectJet).
+Build from the repository root: `gcc -O2 -o part_XIII/tomo part_XIII/tomo.c`.
+After `python restore_evidence.py`, run `python part_XIII/record.py case118`
+and `python part_XIII/verify13.py case118`. These three Part XIII entry points
+(`record.py`, `verify13.py`, `verify13s.py`) now resolve bundled paths from their
+source location and use local rational reconstruction. Other historical grid
+scripts still use the aliases described below. Test replays in a separate copy: they write result JSON.
+The C kernel was tested on Linux; Windows compilation is not established by this audit.
 
 ## Part XII — target-relative disclosure (`nonagon_XII.html`, `part_XII/`)
 
@@ -87,7 +97,9 @@ Python 3.11 or newer; tested with Python 3.12.14.
     python -m pip install -r part_X/requirements.txt
     python part_X/replay.py
 
-All **15 campaigns pass**. They include 1,840 exact raw-response replays,
+The archived replay reports all **15 campaigns pass**; all fifteen were also
+rerun successfully in the November 6 audit linked above. This is Part X coverage,
+not a replay of all later chapters or studies. They include 1,840 exact raw-response replays,
 all-dimension witness controls through n=12, 27 passivity decisions plus 27
 sign-equivalent representations, 600 compensated controls, and the original
 exact/ball/contour programs. Run without Python -O.

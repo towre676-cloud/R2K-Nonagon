@@ -1,26 +1,79 @@
-import pathlib,json,hashlib,tarfile,io
-r=pathlib.Path(__file__).resolve().parent
-idx=json.loads((r/"PAYLOAD_INDEX.json").read_text())
-b=b"".join((r/x).read_bytes() for x in idx["parts"])
-assert hashlib.sha256(b).hexdigest()==idx["sha256"]
-with tarfile.open(fileobj=io.BytesIO(b),mode="r:gz") as t:
- for row in idx["files"]:
-  data=t.extractfile(row["sha256"]).read()
-  assert hashlib.sha256(data).hexdigest()==row["sha256"]
-  p=r/row["path"];p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(data)
+"""Restore Git-hosted evidence; hash checks remain active under Python -O.
 
-import pathlib,json,hashlib
-r=pathlib.Path(__file__).resolve().parent
-for row in json.loads((r/"CHUNKED_FILES.json").read_text()):
- b=b"".join((r/x).read_bytes() for x in row["parts"])
- assert hashlib.sha256(b).hexdigest()==row["sha256"]
- p=r/row["path"];p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b)
+Run from any working directory. No external archive is downloaded.
+"""
+import gzip
+import hashlib
+import io
+import json
+from pathlib import Path, PurePosixPath
+import tarfile
 
-import pathlib,json,gzip,hashlib
-r=pathlib.Path(__file__).resolve().parent
-for row in json.loads((r/"IMPORT_MANIFEST.json").read_text())["files"]:
- if row.get("storage")=="gzip":
-  b=gzip.decompress((r/row["stored_path"]).read_bytes())
-  assert hashlib.sha256(b).hexdigest()==row["sha256"], row["path"]
-  p=r/row["path"];p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b)
-print("Restored and hash-verified all Git-hosted compressed evidence. See manifest for externally retained proof streams.")
+
+def checked(data, expected, label):
+    if hashlib.sha256(data).hexdigest() != expected:
+        raise ValueError('SHA-256 mismatch: ' + label)
+    return data
+
+
+def target(root, relative):
+    p = PurePosixPath(relative)
+    if p.is_absolute() or '..' in p.parts or '\\' in relative:
+        raise ValueError('Unsafe evidence path: ' + relative)
+    result = root / relative
+    if not result.resolve().is_relative_to(root.resolve()):
+        raise ValueError('Evidence path escapes root: ' + relative)
+    return result
+
+
+def write(root, relative, data):
+    p = target(root, relative)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_bytes(data)
+
+
+def restore(root):
+    root = Path(root)
+    idx = json.loads((root / 'PAYLOAD_INDEX.json').read_text())
+    archive = checked(b''.join(target(root, p).read_bytes() for p in idx['parts']),
+                      idx['sha256'], 'payload archive')
+    wanted = {}
+    for row in idx['files']:
+        target(root, row['path'])
+        wanted.setdefault(row['sha256'], []).append(row)
+    # Visit each member once; random extraction repeatedly seeks through gzip.
+    with tarfile.open(fileobj=io.BytesIO(archive), mode='r|gz') as stream:
+        for member in stream:
+            if member.name not in wanted:
+                continue
+            if not member.isfile():
+                raise ValueError('Evidence member is not a file: ' + member.name)
+            data = checked(stream.extractfile(member).read(), member.name, member.name)
+            for row in wanted.pop(member.name):
+                if len(data) != row['bytes']:
+                    raise ValueError('Evidence size mismatch: ' + row['path'])
+                write(root, row['path'], data)
+    if wanted:
+        raise ValueError('Missing payload members: ' + ', '.join(sorted(wanted)))
+    chunks = json.loads((root / 'CHUNKED_FILES.json').read_text())
+    for row in chunks:
+        data = checked(b''.join(target(root, p).read_bytes() for p in row['parts']),
+                       row['sha256'], row['path'])
+        if len(data) != row['bytes']:
+            raise ValueError('Chunked evidence size mismatch: ' + row['path'])
+        write(root, row['path'], data)
+    files = json.loads((root / 'IMPORT_MANIFEST.json').read_text())['files']
+    for row in files:
+        if row.get('storage') == 'gzip':
+            data = checked(gzip.decompress(target(root, row['stored_path']).read_bytes()),
+                           row['sha256'], row['path'])
+            if len(data) != row['bytes']:
+                raise ValueError('Decompressed evidence size mismatch: ' + row['path'])
+            write(root, row['path'], data)
+    print('Restored and SHA-256-verified all Git-hosted compressed evidence: '
+          f'{len(idx["files"])} payload paths, {len(chunks)} chunked objects, '
+          f'{sum(r.get("storage") == "gzip" for r in files)} gzip paths.')
+
+
+if __name__ == '__main__':
+    restore(Path(__file__).resolve().parent)

@@ -1,0 +1,795 @@
+{
+  "schema": "nonagon.public-reproducibility-audit.v1",
+  "date": "2026-11-06",
+  "base_commit": "b7bcf59ec7e02e408f92ea4a974b63fc6b749a46",
+  "publication_status": "local proposal; no remote changes",
+  "preservation": {
+    "rows": 5518,
+    "storage": {
+      "direct": 5400,
+      "gzip": 118
+    },
+    "missing": [],
+    "mismatches": []
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "python-flint": "0.9.0",
+      "sympy": "1.14.0",
+      "mpmath": "1.3.0",
+      "scikit-rf": "2.2.0"
+    },
+    "perfectjet_commit": "8f38d6f2ee66c25a0618c45c36212e61905355c2",
+    "compiled_kernel": "gcc -O2; original public tomo.c; no native CPU flags",
+    "threads": {
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1,
+      "MKL_NUM_THREADS": 1
+    },
+    "absent_executables": [
+      "ngspice",
+      "sage"
+    ]
+  },
+  "measured_profile": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "mpmath": "1.4.1"
+  },
+  "checks": [
+    {
+      "name": "adaptive",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/frontier/adaptive",
+      "command": [
+        "python",
+        "replay.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 44.762,
+      "stdout_sha256": "07c7615d0ad5501cdc9f5ed2ad732e10f7a0726f4ba8cc73915a8468c62a6043",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "ec6f4b5159e0674b232fafb3c4a1227cb111acf08c3a5864e58023b4b410b9c5"
+    },
+    {
+      "name": "ambient118",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XV",
+      "command": [
+        "python",
+        "ambient15.py",
+        "case118",
+        "inj:all,amb:all,both1:all"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 3.788,
+      "stdout_sha256": "3cdbd740b99aaf4bc3639a66ee2369a260339838f37da2e50a522ac9b8669fa7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "interpretation": "Audit invocation corrected later: ambient_correct118 / grid_negative_control are the intended controls; this is not evidence of a repository mathematical failure.",
+      "source_sha256_at_packaging": "7ad66d347357e9db17d37228d5093c0b72785cf9e8b1451a04e78c21192115d5"
+    },
+    {
+      "name": "ambient_correct118",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XV",
+      "command": [
+        "python",
+        "ambient15.py",
+        "case118",
+        "inj:all,amb:all,amb1:all,amb1l:all"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 3.793,
+      "stdout_sha256": "8a41791c3d05e601c0e41f34678afb056e9656fec96927ae20bc33c1a4f6c9ad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "7ad66d347357e9db17d37228d5093c0b72785cf9e8b1451a04e78c21192115d5"
+    },
+    {
+      "name": "dpp_obstruction",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/studies/full_campaign/r2k_full_campaign/arithmetic_fourpoint",
+      "command": [
+        "python",
+        "dpp_obstruction.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 2.575,
+      "stdout_sha256": "0abee50e61f5b6c9bdd0e1ebfbcd939a98e61334938f427934c2c2ce5ce5f875",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "67df29681a5e690fb22b4b6152decb73dc40fe2fbeaef7566e2f4f4e18d6682d"
+    },
+    {
+      "name": "external",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/frontier/external",
+      "command": [
+        "python",
+        "external_suite.py",
+        "--phase",
+        "confirmation"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 11.156,
+      "stdout_sha256": "1355103d603f7bbb97b664b5d5fd69bd017dbb48f8087cd787abb9191c9dd50a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "501d3f908f75acacfdf48d8ce4ac303e06c9cce0c73db6bca3b6b53d1dcbc634"
+    },
+    {
+      "name": "external_diagnosis",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/frontier/external",
+      "command": [
+        "python",
+        "diagnose_model.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.12,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "b403b7d55befd17f48d26c63250d2ca590a6b16836f0e43752c740eb1b1b2627"
+    },
+    {
+      "name": "external_pinned",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/frontier/external",
+      "command": [
+        "python",
+        "external_suite.py",
+        "--phase",
+        "confirmation"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 12.662,
+      "stdout_sha256": "1355103d603f7bbb97b664b5d5fd69bd017dbb48f8087cd787abb9191c9dd50a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "501d3f908f75acacfdf48d8ce4ac303e06c9cce0c73db6bca3b6b53d1dcbc634"
+    },
+    {
+      "name": "external_summary",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/frontier/external",
+      "command": [
+        "python",
+        "summarize.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.219,
+      "stdout_sha256": "49037647b3c3d8454cfcbc21a95c98584bf20630bd7da4738a4532dcb531e427",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "321651c92452c3b57b80687496494c550fa48be4977256a788501dce270d1b20"
+    },
+    {
+      "name": "fixed_line_controls",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/studies/full_campaign/r2k_full_campaign/fixed_line",
+      "command": [
+        "python",
+        "exact_controls.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.575,
+      "stdout_sha256": "17e9b8c1604af4dda71ab7ffacc71955edc1ac38b00acbd9bd27d72a5f07879a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "2a269f5c3ed63f994bbcb0c52969701f7b8891248ededaf5570acfc1ba6b9f8f"
+    },
+    {
+      "name": "fixed_matrix_stored",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/studies/full_campaign/r2k_full_campaign/fixed_line",
+      "command": [
+        "python",
+        "validate_full_matrix.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 1.89,
+      "stdout_sha256": "280537cd90147398750536eef55324f0a9c9e46b4147631dddb3e81e7932a010",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "a2687c8fb9370f14a776a61b8bc50c8a5f5c5f960bfa8aeb82eb71584c8ba93f"
+    },
+    {
+      "name": "frontier_contours",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/frontier/independent_certification",
+      "command": [
+        "python",
+        "replay.py",
+        "--recompute"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 82.349,
+      "stdout_sha256": "ed6bf5301149d9a515b48a47442e353ddf106b8daf8e55fe061d9fb9ab1f1322",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "ae77e9d389ae3cc4fa3fca4d2a68af5d19f618e419131bcadefd934795d84929"
+    },
+    {
+      "name": "frontier_quick",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/frontier",
+      "command": [
+        "python",
+        "replay.py",
+        "--mode",
+        "quick",
+        "--destination",
+        "/workspace/scratch/ea05c7625203/frontier_quick"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 4.179,
+      "stdout_sha256": "c16998ccc870a17a1c6775318f95e212539445e47f17e4aec4c3e95a42faebe9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "bda85aadb7ca83f83bcc93487d07259fc4a5df868be5f02bf89030600fca0f62"
+    },
+    {
+      "name": "full_campaign_controls",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/studies/full_campaign/r2k_full_campaign",
+      "command": [
+        "python",
+        "proof_checks.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.169,
+      "stdout_sha256": "f3056fcd901ac2ee6d640147a3bd15fbbf4b2d7241002377c23f64b5ac246b41",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "14035db4f0fccdf3337013f9783b2a9b0fab4b4decef969d56fea732bf36672c"
+    },
+    {
+      "name": "full_campaign_stored",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/studies/full_campaign/r2k_full_campaign",
+      "command": [
+        "python",
+        "validate_deliverable.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.165,
+      "stdout_sha256": "2590570c275db1eeaaf23a6907d99effd078f24844ba378a9e860f26e67d2092",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "8aab5d44201fcb3f63232387b22c9144c72622b700fec7d5c940b6a1f26e9df4"
+    },
+    {
+      "name": "grid118",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XIII",
+      "command": [
+        "python",
+        "verify13.py",
+        "case118"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.068,
+      "stdout_sha256": "e5cd46afa4029621081866b204619b17750ab293fcce44c1fa1ed985540083e1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "56f750c888cc5805c4a3c80e9a2ecd01a328863a460dd04b57cbb6e979a7f5ca"
+    },
+    {
+      "name": "grid1354",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XIII",
+      "command": [
+        "python",
+        "verify13s.py",
+        "case1354pegase"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 2.129,
+      "stdout_sha256": "b015831e0b06dc30425765656d3b15c566a2a8242dfb0cb4b89e0729bc0ee9bb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "b427a6414c6be512a943d9ba04e3d53bc5bc79b27721d1b6de48de2aca567dee"
+    },
+    {
+      "name": "grid2869",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XIII",
+      "command": [
+        "python",
+        "verify13s.py",
+        "case2869pegase"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 14.562,
+      "stdout_sha256": "8b4ac803a9079705f5ae8cd691130fe48eff7894701d6c9997e7f99febc698cc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "b427a6414c6be512a943d9ba04e3d53bc5bc79b27721d1b6de48de2aca567dee"
+    },
+    {
+      "name": "grid300",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XIII",
+      "command": [
+        "python",
+        "verify13.py",
+        "case300"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.168,
+      "stdout_sha256": "72627bc6ba8f2af26ebfe0792af4e231dedefd797b7835c5b178222766ecd694",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "56f750c888cc5805c4a3c80e9a2ecd01a328863a460dd04b57cbb6e979a7f5ca"
+    },
+    {
+      "name": "grid_exact118",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/",
+      "command": [
+        "python",
+        "part_XI/grid_exact.py",
+        "case118"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 2.685,
+      "stdout_sha256": "09fda8a9153728039dd400f59256476d7f26380423bd1985ab67dcd401a45bef",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "041b0538c3b6cbb60fb64c25b48f174400aca7ac4b09a761c9c71eea1a41f48d"
+    },
+    {
+      "name": "grid_negative",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XIII",
+      "command": [
+        "python",
+        "verify13s.py",
+        "negative_control_case118"
+      ],
+      "status": "failed",
+      "returncode": 1,
+      "seconds": 0.122,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "acaa457bd6fbe29a579411a2ddd5da76008b0d2810c0ff305c96c9fe8d4d82f0",
+      "interpretation": "Audit invocation corrected later: ambient_correct118 / grid_negative_control are the intended controls; this is not evidence of a repository mathematical failure.",
+      "source_sha256_at_packaging": "b427a6414c6be512a943d9ba04e3d53bc5bc79b27721d1b6de48de2aca567dee"
+    },
+    {
+      "name": "grid_negative_control",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/grid-negative",
+      "command": [
+        "python",
+        "verify13.py",
+        "case118"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.115,
+      "stdout_sha256": "495c8c6c2597b3b098335480a8c6fe991c7547741366a86c7b37e507b28500c9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "56f750c888cc5805c4a3c80e9a2ecd01a328863a460dd04b57cbb6e979a7f5ca"
+    },
+    {
+      "name": "grid_pockets",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XIII",
+      "command": [
+        "python",
+        "pocket_synth.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.672,
+      "stdout_sha256": "519dfbad10a09cf92e5c54a45371bba22f1586b7743b154819df018bd4ba645c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "2726ed442b039ac42763caff08e6c251c667959d019a100808cb704461207462"
+    },
+    {
+      "name": "grid_reconstruct10k",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XIII",
+      "command": [
+        "python",
+        "record.py",
+        "case_ACTIVSg10k"
+      ],
+      "status": "failed",
+      "returncode": 1,
+      "seconds": 0.616,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "7442819a118da7a19f562fecee3434523bd2a8516aac44cccc7f7ce52d93cc53",
+      "source_sha256_at_packaging": "a7192cca4874c6328f38a3ceeed0be19aecb5d880af70bf8679371180745c27e"
+    },
+    {
+      "name": "grid_reconstruct10k_ready",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XIII",
+      "command": [
+        "python",
+        "record.py",
+        "case_ACTIVSg10k"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 5.366,
+      "stdout_sha256": "d500217d847ae5abc178a8109d1127db385986734eea640b0b4c2cc0ae2b5177",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "a7192cca4874c6328f38a3ceeed0be19aecb5d880af70bf8679371180745c27e"
+    },
+    {
+      "name": "grid_reconstruct118",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XIII",
+      "command": [
+        "python",
+        "record.py",
+        "case118"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.728,
+      "stdout_sha256": "a631888b79d1faacf40f91909709b1ce92b66819f6abe6e0ebcfea3599aed9e6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "a7192cca4874c6328f38a3ceeed0be19aecb5d880af70bf8679371180745c27e"
+    },
+    {
+      "name": "grid_reconstruct2869",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XIII",
+      "command": [
+        "python",
+        "record.py",
+        "case2869pegase"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 2.932,
+      "stdout_sha256": "f6bd36c202fe477dae056a4ac10d6c783e6471e9ad10e448544dce70d73deb55",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "a7192cca4874c6328f38a3ceeed0be19aecb5d880af70bf8679371180745c27e"
+    },
+    {
+      "name": "grid_record_dependency",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XIII",
+      "command": [
+        "python",
+        "record.py",
+        "case118"
+      ],
+      "status": "failed",
+      "returncode": 1,
+      "seconds": 0.366,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "0df09d46dae1a8ba4488c10bf7804396cef38a6023e47cadefd7d5bdaec7cb2c",
+      "source_sha256_at_packaging": "a7192cca4874c6328f38a3ceeed0be19aecb5d880af70bf8679371180745c27e"
+    },
+    {
+      "name": "grid_unprepared",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_XIII",
+      "command": [
+        "python",
+        "verify13.py",
+        "case118"
+      ],
+      "status": "failed",
+      "returncode": 1,
+      "seconds": 0.115,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "02e34c9c2489272b99f32cb338a90ab252cc0744b824ea8b1656ad23af21e29d",
+      "source_sha256_at_packaging": "56f750c888cc5805c4a3c80e9a2ecd01a328863a460dd04b57cbb6e979a7f5ca"
+    },
+    {
+      "name": "hardened_46",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/studies/full_campaign/r2k_full_campaign/root_hardening",
+      "command": [
+        "python",
+        "replay_retained_contours.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 159.345,
+      "stdout_sha256": "53ae445753a6eaaa6d5d3da4f167f3fa0c840e7573985e4221c9f5ec6a730782",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "8ee7cbdfaee0767c361c4bce5819e80ea7932b219bea8709159676d7b42d90a8"
+    },
+    {
+      "name": "hardened_controls",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/studies/full_campaign/r2k_full_campaign/root_hardening",
+      "command": [
+        "python",
+        "check_hardening.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.666,
+      "stdout_sha256": "326b5ae943d1bfc8a7d9f4146de79c318c764a8d94e2a6f56ac4226458047d70",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "b8cd1e1755fc715941b7576a79804cb76ef6e98a366a441ca94f4b6f38eb0258"
+    },
+    {
+      "name": "hardened_e10",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/studies/full_campaign/r2k_full_campaign/root_hardening",
+      "command": [
+        "python",
+        "r2kverify_hardened.py",
+        "certs/V_e10.json",
+        "--full"
+      ],
+      "status": "timeout",
+      "returncode": null,
+      "seconds": 180.003,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "803f39523636102ed4f3972c0c31800b4663068852b89e08c86c7045c8ead6d2"
+    },
+    {
+      "name": "hardened_e10_extended",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/studies/full_campaign/r2k_full_campaign/root_hardening",
+      "command": [
+        "python",
+        "r2kverify_hardened.py",
+        "certs/V_e10.json",
+        "--full"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 193.237,
+      "stdout_sha256": "caeea4ab2f8294e60b6b3a83ef8596b27a9940d2be655e66de1f153090029b3f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "803f39523636102ed4f3972c0c31800b4663068852b89e08c86c7045c8ead6d2"
+    },
+    {
+      "name": "hardened_first",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/studies/full_campaign/r2k_full_campaign/root_hardening",
+      "command": [
+        "python",
+        "r2kverify_hardened.py",
+        "certs/zero_1_b0p45.json",
+        "--full"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.581,
+      "stdout_sha256": "0c8c8907ae0cd5b31c1bd970ceca3d93a22fe266ee89ee74f21e458da0fd9f95",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "803f39523636102ed4f3972c0c31800b4663068852b89e08c86c7045c8ead6d2"
+    },
+    {
+      "name": "height_identity",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/studies/full_campaign/r2k_full_campaign",
+      "command": [
+        "python",
+        "height_identity_checks.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.175,
+      "stdout_sha256": "6cad71ed008eff8b46f50667d4c8e2f3789b6477954da7ff233cddccde3abb39",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "fdcbf306bcf99b2bcec134f19c9b0c3affdcc0e4003721d8a60eee4f53117c28"
+    },
+    {
+      "name": "part_x",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_X",
+      "command": [
+        "python",
+        "replay.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 45.605,
+      "stdout_sha256": "f431c205c984654a6a8d9b8eda64d2a5c7ece828199bc28429d23c4853eab8e4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "8a42b961124fe47ef013b59d0110c8ede3106c5851159422ed83792388fcecc6"
+    },
+    {
+      "name": "policy",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/frontier/policy",
+      "command": [
+        "python",
+        "experiment.py",
+        "confirmation"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 30.146,
+      "stdout_sha256": "230f81d83778fdd1c5e0901869d5c050d7609d97542b8a9f644eb2d9f7c7ff64",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "06d0e131e29aefe2821e89cb2309ccda51c2dee179010c3c7c219f3bd0384b76"
+    },
+    {
+      "name": "policy_audit",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/frontier/policy",
+      "command": [
+        "python",
+        "audit.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 30.717,
+      "stdout_sha256": "9f5d4590ba4eb54c35ba67b79a4fd5542d35d68e4f8be877c5f9a4c984d7a780",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "4be1b12d3c6064d1a32c3922262091c1508f0a97d2b7dcb19ade4c29688fb42f"
+    },
+    {
+      "name": "proposed_controls",
+      "cwd": "/workspace/scratch/ea05c7625203/proposal",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reproducibility.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.064,
+      "stdout_sha256": "079257b5e0510a9760e0b5f24b8324c16aab762ce697dcead67918f07541f5e4",
+      "stderr_sha256": "baf49b59538192f3e136ca0404cac516ecb8dd2fe5ba1416604056f3080fa49c"
+    },
+    {
+      "name": "proposed_controls_optimized",
+      "cwd": "/workspace/scratch/ea05c7625203/proposal",
+      "command": [
+        "python",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reproducibility.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.265,
+      "stdout_sha256": "079257b5e0510a9760e0b5f24b8324c16aab762ce697dcead67918f07541f5e4",
+      "stderr_sha256": "2d014bb427120fb1a5014d7499096989061fd0fdf40acb471c2e2667de60e71e"
+    },
+    {
+      "name": "proposed_grid10k",
+      "cwd": "/workspace/scratch/ea05c7625203",
+      "command": [
+        "python",
+        "/workspace/scratch/ea05c7625203/proposal/part_XIII/record.py",
+        "case_ACTIVSg10k"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 5.391,
+      "stdout_sha256": "2af37871cfe6c948af50d270cbb92e572a5b95cf84446e740f038aefd2b084fd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "001a29ffd7528b8dc3e1bd4d89ff90ba8f5a887dcc249292cde031706afd119b"
+    },
+    {
+      "name": "proposed_grid118",
+      "cwd": "/workspace/scratch/ea05c7625203",
+      "command": [
+        "python",
+        "/workspace/scratch/ea05c7625203/proposal/part_XIII/record.py",
+        "case118"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.668,
+      "stdout_sha256": "57aef2335e6d09a69ae5c44c1f66be83c2e1c516322a9c76ecf972a4cac8fb2c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "001a29ffd7528b8dc3e1bd4d89ff90ba8f5a887dcc249292cde031706afd119b"
+    },
+    {
+      "name": "proposed_grid2869",
+      "cwd": "/workspace/scratch/ea05c7625203",
+      "command": [
+        "python",
+        "/workspace/scratch/ea05c7625203/proposal/part_XIII/record.py",
+        "case2869pegase"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 3.128,
+      "stdout_sha256": "cd5c8b2e6d01102282a37213769df330da1061f527fc7cf16652e9d1c4f0b69f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "001a29ffd7528b8dc3e1bd4d89ff90ba8f5a887dcc249292cde031706afd119b"
+    },
+    {
+      "name": "proposed_rank1354",
+      "cwd": "/workspace/scratch/ea05c7625203",
+      "command": [
+        "python",
+        "/workspace/scratch/ea05c7625203/proposal/part_XIII/verify13s.py",
+        "case1354pegase"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 1.824,
+      "stdout_sha256": "a73f21d9e4157453eabb613ecbddacf2bb8797a3102fa647b7f3a39420882479",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "de54fffd1c2d319e38e16aeb4739c3a5e77a6378a459e5a63bcc9f98b1a49ba0"
+    },
+    {
+      "name": "proposed_restore",
+      "cwd": "/workspace/scratch/ea05c7625203/proposal",
+      "command": [
+        "python",
+        "restore_evidence.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 1.519,
+      "stdout_sha256": "c180cadcf2680e7739dafb17eece0b0af60a36a31ac0173666b9c52d8a1ac77d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "bb42c75707988101095010e39f32fcaf61eb0566426aa1aae2c3f4f5ef586ca6"
+    },
+    {
+      "name": "root_integration",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/",
+      "command": [
+        "python",
+        "replay_all.py",
+        "--output",
+        "/workspace/scratch/ea05c7625203/audit/integration_fresh.json",
+        "--output-dir",
+        "/workspace/scratch/ea05c7625203/audit/integration_outputs"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 113.293,
+      "stdout_sha256": "2847da1a528158cf144e16f708e018a89f00c567aff229d25e1d968c279337e9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "5af496d3ceed1ff2053414cc7a88040e654664a548d7e56cef13c7aeaeaf2cbf"
+    },
+    {
+      "name": "serialization",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/frontier/independent_certification",
+      "command": [
+        "python",
+        "serialization_regression.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.115,
+      "stdout_sha256": "5e51e9383714041e5860718c110cc914396fe72cb87f3cc3b466d8bc63f65f23",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "64c0e84a26948290bd7b6b363a26fd5cb5f36f079c5ba35b065afc922564952f"
+    },
+    {
+      "name": "variance",
+      "cwd": "/workspace/scratch/ea05c7625203/replay/part_IX",
+      "command": [
+        "python",
+        "test_variance_quadrature.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.583,
+      "stdout_sha256": "19049c58871ff52b802ea858580cbd4dd2399c43639bce9f9870b1920f11988b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256_at_packaging": "02b6db8577d70a7a5b5c284ba73654aae53c8d3e56981d1228abc96dd56c9be3"
+    }
+  ],
+  "grid_hash_comparisons": {
+    "case118": {
+      "original_solution_sha256": "a567ca4418858a864c97f85883c63ec368f8bf95cc7fa755abcd17aa2fe2593e",
+      "fresh_solution_sha256": "a567ca4418858a864c97f85883c63ec368f8bf95cc7fa755abcd17aa2fe2593e",
+      "patched_solution_sha256": "a567ca4418858a864c97f85883c63ec368f8bf95cc7fa755abcd17aa2fe2593e",
+      "all_equal": true,
+      "unknowns": 179,
+      "readings": 440,
+      "rational_mismatches": 0
+    },
+    "case2869pegase": {
+      "original_solution_sha256": "134e17440ab2823c3fee9e7a803f63a0c2c3a93e408f4b9fb5f967fb7f28fd2f",
+      "fresh_solution_sha256": "134e17440ab2823c3fee9e7a803f63a0c2c3a93e408f4b9fb5f967fb7f28fd2f",
+      "patched_solution_sha256": "134e17440ab2823c3fee9e7a803f63a0c2c3a93e408f4b9fb5f967fb7f28fd2f",
+      "all_equal": true,
+      "unknowns": 3968,
+      "readings": 11341,
+      "rational_mismatches": 0
+    },
+    "case_ACTIVSg10k": {
+      "original_solution_sha256": "b632b262763b07630a8c304e62a2313f4cc4ba8cb68de2e43979f1adf7b0ab80",
+      "fresh_solution_sha256": "b632b262763b07630a8c304e62a2313f4cc4ba8cb68de2e43979f1adf7b0ab80",
+      "patched_solution_sha256": "b632b262763b07630a8c304e62a2313f4cc4ba8cb68de2e43979f1adf7b0ab80",
+      "all_equal": true,
+      "unknowns": 12217,
+      "readings": 32214,
+      "rational_mismatches": 0
+    }
+  },
+  "limits": [
+    "Not all historical calculations replayed",
+    "Two 10^12-height contour certificates retained but not fully replayed",
+    "25k and 70k exact tomography retained but not regenerated",
+    "Full variance quadrature, ordinate acquisition and full covariance panel generation not regenerated",
+    "ngspice not rerun; engineering packets checked",
+    "RL predictive accuracy not validated on new protected measurements",
+    "Finite analytic model certificates do not prove the zeta sampling law or global RH"
+  ]
+}

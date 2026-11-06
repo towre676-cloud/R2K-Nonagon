@@ -3,13 +3,16 @@ Dense FLINT nmod_mat inverse of K modulo a prime NOT used by record.py, the same
 (port column; diagonal (s,s) for every source; neighbour rows for the R=1 extra sources), rank by FLINT.
 Usage: python3 verify13.py CASE [prime]"""
 import sys, json, time
-sys.path[:0] = ['../p11']
+from pathlib import Path
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+sys.path.insert(0, str(ROOT / 'part_XI'))
 from fractions import Fraction as Fr
 import flint, gridlib
 case = sys.argv[1]; p = int(sys.argv[2]) if len(sys.argv) > 2 else 1000000007
 t0 = time.time()
-rec = json.load(open('record_%s.json' % case))
-nodes, edges, ground, meta = gridlib.network('../p11/data/%s.m' % case)
+rec = json.load(open(HERE / ('record_%s.json' % case)))
+nodes, edges, ground, meta = gridlib.network(ROOT / 'part_XIII/data' / (case + '.m'))
 # same visibility restriction as record.py, recomputed here independently by breadth-first search from the port
 _i = {b: k for k, b in enumerate(nodes)}; _adj = {k: [] for k in range(len(nodes))}
 for a, c in edges: _adj[a].append(c); _adj[c].append(a)
@@ -63,4 +66,4 @@ for k, r in enumerate(rows):
 rk = M.rank()
 out = {'case': case, 'prime': p, 'rows': len(rows), 'unknowns': U, 'rank': rk, 'identifiable': rk == U,
        'agrees_with_record': (rk == U) == rec['identifiable'], 'seconds': time.time() - t0}
-print(json.dumps(out)); json.dump(out, open('verify_%s.json' % case, 'w'), indent=1)
+print(json.dumps(out)); json.dump(out, open(HERE / ('verify_%s.json' % case), 'w'), indent=1)

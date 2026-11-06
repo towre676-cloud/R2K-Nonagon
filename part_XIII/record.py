@@ -1,11 +1,14 @@
-"""XIII: exact one-port known-support tomography at grid scale. C kernel (tomo.c) modulo three word primes, CRT, and
-PerfectJet's rational reconstruction (Wang) -> exact rational susceptances, compared with the MATPOWER source exactly."""
+"""XIII: exact one-port known-support tomography at grid scale. C kernel (tomo.c) modulo word primes, CRT, and
+bounded rational reconstruction (extended Euclidean algorithm) -> exact rational susceptances, compared with the MATPOWER source exactly."""
 import sys, json, time, subprocess, os
-sys.path[:0] = ['../p11', '/tmp/claude-0/repos/PerfectJet/src']
+from pathlib import Path
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+sys.path.insert(0, str(ROOT / 'part_XI'))
 from fractions import Fraction as Fr
 import numpy as np, scipy.sparse as sp, scipy.sparse.linalg as spl
 import gridlib
-from perfectjet.modular import rational_reconstruction
+from reconstruction import rational_reconstruction
 import sympy
 ALLP = []; _c = int(os.environ.get('PRIME_TOP', '2147483647'))
 while len(ALLP) < 24:
@@ -13,7 +16,7 @@ while len(ALLP) < 24:
     _c -= 2
 PRIMES = ALLP[:1]
 case = sys.argv[1]; t0 = time.time()
-nodes, edges, ground, meta = gridlib.network('../p11/data/%s.m' % case); n = len(nodes)
+nodes, edges, ground, meta = gridlib.network(ROOT / 'part_XIII/data' / (case + '.m')); n = len(nodes)
 deg = np.zeros(n, int)
 for a, c in edges: deg[a] += 1; deg[c] += 1
 port = int(np.argmax(deg))
@@ -47,7 +50,7 @@ def run(p, extra):
     lines = ['%d %d %d %d %d' % (p, n, port, len(E), len(Gs)), ' '.join(map(str, perm))]
     lines += ['%d %d %d' % (a, c, res(edges[(a, c)], p)) for a, c in E] + ['%d %d' % (i, res(ground[i], p)) for i in Gs]
     lines += [str(len(extra)), ' '.join(map(str, extra)), str(len(extra)), ' '.join(str(radius.get(x, 1)) for x in extra)]
-    r = subprocess.run(['./tomo'], input='\n'.join(lines) + '\n', capture_output=True, text=True)
+    r = subprocess.run([str(HERE / ('tomo.exe' if os.name == 'nt' else 'tomo'))], input='\n'.join(lines) + '\n', capture_output=True, text=True)
     if r.returncode: raise RuntimeError(r.stderr[-500:])
     out = r.stdout.split('\n'); rank, UU, nrows = map(int, out[0].split())
     if rank == UU: return rank, [int(x) for x in out[1:1 + UU]], [], r.stderr
@@ -125,4 +128,4 @@ out = {'case': case, 'buses': meta['buses'], 'hidden_nodes': n, 'nodes_total': m
        'primes': PRIMES, 'exact_rational_recovery': exact, 'rational_mismatches': mismatches, 'crt_log': recon_log, 'log2_modulus': sum(p.bit_length() for p in PRIMES), 'max_height_bits_of_truth': hbits if rank == U else None, 'iterations': log, 'islands': islands, 'physical': physical, 'extra_source_buses': [nodes[i] for i in extra], 'widened_sources': {str(nodes[i]): r for i, r in radius.items()}, 'port_index': port, 'seconds_total': time.time() - t0}
 print(json.dumps({k: v for k, v in out.items() if k != 'iterations'}), flush=True)
 out['ordering'] = ORDER; out['solution_sha256'] = sol_hash
-json.dump(out, open('record_%s%s.json' % (case, os.environ.get('TAG', '')), 'w'), indent=1)
+json.dump(out, open(HERE / ('record_%s%s.json' % (case, os.environ.get('TAG', ''))), 'w'), indent=1)

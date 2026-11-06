@@ -6,13 +6,16 @@ Shares no code with tomo.c or record.py:
     pivot on the LARGEST column index present, rows kept as dicts), so the elimination path is unrelated.
 Usage: python3 verify13s.py CASE [prime]"""
 import sys, json, time, gc
-sys.path[:0] = ['../p11']
+from pathlib import Path
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+sys.path.insert(0, str(ROOT / 'part_XI'))
 from fractions import Fraction as Fr
 import flint, gridlib
 case = sys.argv[1]; p = int(sys.argv[2]) if len(sys.argv) > 2 else 998244353
 t0 = time.time()
-rec = json.load(open('record_%s.json' % case))
-nodes, edges, ground, meta = gridlib.network('../p11/data/%s.m' % case)
+rec = json.load(open(HERE / ('record_%s.json' % case)))
+nodes, edges, ground, meta = gridlib.network(ROOT / 'part_XIII/data' / (case + '.m'))
 _i = {b: k for k, b in enumerate(nodes)}; _adj = {k: [] for k in range(len(nodes))}
 for a, c in edges: _adj[a].append(c); _adj[c].append(a)
 _seen = {_i[rec['port_bus']]}; _st = list(_seen)
@@ -75,4 +78,4 @@ rank = len(piv)
 out = {'case': case, 'prime': p, 'rows': len(rows), 'unknowns': U, 'rank': rank, 'identifiable': rank == U,
        'agrees_with_record': (rank == U) == rec['identifiable'], 'pivot_rule': 'shortest row first, largest column',
        'seconds_inverse': t_inv, 'seconds_rows': t_rows - t_inv, 'seconds': time.time() - t0}
-print(json.dumps(out)); json.dump(out, open('verify2_%s.json' % case, 'w'), indent=1)
+print(json.dumps(out)); json.dump(out, open(HERE / ('verify2_%s.json' % case), 'w'), indent=1)
